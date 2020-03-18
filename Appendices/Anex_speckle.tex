@@ -1,0 +1,30 @@
+\chapter{Calculs de champs de tavelures}
+\section{Champ rayonné}
+Champ rayonné (Huygens-Fresnel paraxial):
+\begin{equation}
+E(x,y,d)=\frac{e^{i k \left( d + \frac{x^2 + y^2}{2 d}\right) }}{i \lambda} \int{dx_0 dy_0 E_0(x_0,y_0) t(x_0,y_0) e^{ik \frac{(x_0^2+y_0^2)}{2 d_{eff}}} e^{-ik\frac{(x x_0 + y y_0)}{d}}}
+\end{equation}
+avec $1/d_{eff}=1/d-1/f$ et $k=2\pi /\lambda$.
+
+\section{Fonction de corrélation}
+\begin{equation}
+\begin{split}
+C _{\delta I} \left( x_1, x_2, \lambda _1, \lambda _2 \right) &= \left\langle \left( I \left( x_1, \lambda _1 \right) - \left\langle I \left( x_1, \lambda _1 \right) \right\rangle \right) \left( I \left( x_2, \lambda _2 \right) - \left\langle I \left( x_2, \lambda _2 \right) \right\rangle \right) \right\rangle \\
+&= \left| C_E \left( x_1, x_2, \lambda _1, \lambda _2 \right) \right| ^2
+\end{split}
+\end{equation}
+avec
+\begin{equation}
+C_E(x_1 ,x_2 ,y_1 ,y_2 ,d_1 ,d_2 ,\lambda _1,\lambda _2)= \left\langle E(x_1 ,y_1 ,d_1 ,\lambda _1) E^*(x_2 ,y_2 ,d_2 ,\lambda _2) \right\rangle
+\end{equation}
+donne:
+\begin{equation}
+C_E \propto \mathrm{TF} \left[ I_{eff}(x_0,y_0) \times G_{0eff}(x_0,y_0) \right] _{\left[ \frac{x_1 k_1}{d_1}-\frac{x_2 k_2}{d_2} \right]}
+\end{equation}
+avec
+\begin{equation*}
+I_{eff}(x_0)= I_0(x_0) \times e^{i \frac{x_0^2}{2} \left( \frac{k_1}{d_{eff1}} + \frac{k_2}{d_{eff2}}\right)}
+\end{equation*}
+\begin{equation*}
+G_{0eff}(x_0)=\mathrm{TF}^{-1} \left( C_{diff}(\Delta x) \right)_{\left[ \frac{x_0}{2} \left( \frac{k_1}{d_{eff1}} + \frac{k_2}{d_{eff2}} \right) -\frac{x_1 k_1}{d_1} - \frac{x_2 k_2}{d_2}\right]}
+\end{equation*}
