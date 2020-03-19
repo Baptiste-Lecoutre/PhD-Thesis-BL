@@ -1,26 +1,41 @@
 \chapter{Propriétés d'un désordre de type speckle}
 %\begin{tikzpicture}[remember picture, overlay]
-%\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Chapter1/g825.png}};
+%\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Speckle/g825.png}};
 %\end{tikzpicture}
 
+Le chapitre \ref{ch:BECmanip} nous a renseigné quant aux propriétés de notre onde de matière ainsi que sa production. Dans ce chapitre, nous allons nous attacher à décrire le second élément clé à la localisation d'Anderson: le désordre. 
 
-propriétés speckle "simple", proriétés statistiques, spatiales 3D...
-meilleure modélisation avec effets non paraxiaux?
-
-propriétés double speckle (stage M2? - ou alors à compléter rapidement)
+La première partie se concentrera sur la statistique d'un champ de tavelures (ou \emph{Speckle}, anglicisme communément admis), c'est à dire la distribution statistique d'intensité. Dans un second temps, nous décrirons les propriétés spatiales d'un speckle, en particulier la taille des grains de lumière dans les directions transverses et longitudinale. Dans une troisième partie nous parlerons du potentiel ressenti par les atomes ainsi que des possibilités offertes, puis dans une ultime partie nous étudierons une approche à deux longueurs d'onde pour dépasser les limitations d'une unique longueur d'onde pour l'étude de la transition d'Anderson à énergie résolue.
 
 \section{Propriétés statistiques d'un champ de speckle}
+
 \subsection{Propriétés du diffuseur}
+Propriétés du diffuseur: variables gaussiennes sur l'épaisseur, transmittance, définition $r_e$ et $r_{diff}$, phases, fonction de corrélation $C_{diff}$, insister sur $\sigma_{\phi}$ qui permettra de définir correctement un speckle pleinement développé dans la sous-section d'après
+
 \subsection{Statistiques de l'intensité d'un speckle}
+Marche aléatoire dans le plan complexe pour $\vec{E}$ car $\sigma_{phi} \gg 2\pi$ ce qui valide l'approche de marche aléatoire (faire une figure de marche aléatoire avec beaucoup d'angles différents pour monter que $\left\langle t \right\rangle\approx 0$, et que sinon $\left\langle t \right\rangle\neq 0$.
+
+ loi exponentielle pour l'intensité, contraste de 1 pour un speckle pleinement développé.
 
 \section{Corrélations spatiales d'un champ de speckle}
+\subsection{Implémentation expérimentale}
+Présenter brièvement la méthode de mesure des corrélations et surtout la géométrie du problème.
+
 \subsection{Corrélation transverse}
+Calcul de la corrélation transverse aux alentours du plan de Fourier, forme gaussienne bien reproduite car la pupille ne coupe que quelques \% de la lumière du faisceau laser gaussien incident: la TF d'une gaussienne faiblement tronquée est une gaussienne correcte.
+
 \subsection{Corrélation longitudinale}
+Modélisation en tenant compte des effets non-paraxiaux pour vraiment reproduire la corrélation longitudinale. Calculs lourds numériquement et théoriquement, donc on met en place un modèle paraxial à ON effective.
 
 \section{Propriétés du potentiel de type speckle}
 \subsection{Propriétés du potentiel}
+Traduction de $P_I(I)$ pour le potentiel dipolaire $V$, Taille des grains de potentiel $\sigma$, potentiel moyen $V_{\mathrm{R}}$, possibilité de faire un potentiel attractif $\delta <0$ ou répulsif $\delta > 0$
 \subsection{Possibilité d'un potentiel dépendant de l'état interne}
 
 \section{Potentiel composé d'un speckle bichromatique}
 \subsection{S'éloigner de résonance}
+Grosse limitation de l'approche précédente utilisée pour les fonctions spectrales: implique qu'on est proche de résonance pour l'état $\left| F=2 \right\rangle$, donc taux d'absorption et d'émission spontanée important: grosse décohérence dans le désordre et donc impossible d'observer la localisation.
+Donc on s'éloigne de résonance, donc le potentiel sur $\left| F=1 \right\rangle$ n'est plus négligeable, il faut le compenser: second speckle! 
 \subsection{Étude de la similitude de deux speckles}
+Physique avec les mains de la similitude entre 2 speckles de longueurs d'onde faiblement différentes. introduction de la finesse $\lambda / \delta\lambda$ ou de la longueur de cohérence $l_{coh}=\lambda^2/\delta\lambda$.
+Décorrélation initiale et globale dûe à la propagation dans le diffuseur, puis décorrélation par la différence dans la taille des grains en s'éloignant de l'axe optique.

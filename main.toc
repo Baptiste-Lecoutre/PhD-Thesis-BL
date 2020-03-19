@@ -43,14 +43,15 @@
 \contentsline {subsection}{\numberline {4.1.1}Propriétés du diffuseur}{17}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Statistiques de l'intensité d'un speckle}{17}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Corrélations spatiales d'un champ de speckle}{17}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Corrélation transverse}{17}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Corrélation longitudinale}{17}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Propriétés du potentiel de type speckle}{17}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Propriétés du potentiel}{17}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Possibilité d'un potentiel dépendant de l'état interne}{17}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Potentiel composé d'un speckle bichromatique}{17}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}S'éloigner de résonance}{17}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Étude de la similitude de deux speckles}{17}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Implémentation expérimentale}{17}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Corrélation transverse}{17}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Corrélation longitudinale}{18}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Propriétés du potentiel de type speckle}{18}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Propriétés du potentiel}{18}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Possibilité d'un potentiel dépendant de l'état interne}{18}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Potentiel composé d'un speckle bichromatique}{18}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}S'éloigner de résonance}{18}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Étude de la similitude de deux speckles}{18}{subsection.4.4.2}%
 \contentsline {part}{\@mypartnumtocformat {III}{Temps de diffusion élastique}}{19}{part.3}%
 \contentsline {chapter}{\numberline {5}Temps de diffusion élastique}{21}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Approximation de Born}{21}{section.5.1}%
