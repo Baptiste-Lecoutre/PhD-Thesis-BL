@@ -80,7 +80,7 @@
 \vspace \bigskipamount 
 \contentsline {part}{\@mypartnumtocformat {IV}{Annexes}}{31}{part.4}%
 \contentsline {chapter}{\numberline {A}Calculs de champs de tavelures}{33}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Champ rayonné}{33}{section.A.1}%
+\contentsline {section}{\numberline {A.1}Amplitude rayonnée}{33}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Fonction de corrélation}{33}{section.A.2}%
 \contentsline {chapter}{\numberline {B}Calcul du temps de diffusion élastique par le développement de Born}{35}{appendix.B}%
 \vspace \bigskipamount 

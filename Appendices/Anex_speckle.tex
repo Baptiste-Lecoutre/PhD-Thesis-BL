@@ -1,10 +1,28 @@
 \chapter{Calculs de champs de tavelures}
-\section{Champ rayonné}
-Champ rayonné (Huygens-Fresnel paraxial):
+\section{Amplitude rayonnée}
+Notons $\mathbf{x} \equiv \left\lbrace x,y,d \right\rbrace$ et $\mathbf{x}_0 \equiv \left\lbrace x_0,y_0,0 \right\rbrace$
+Pour calculer le champ rayonné au point $\mathbf{x}$, on utilise le principe de Huygens-Fresnel:
 \begin{equation}
-E(x,y,d)=\frac{e^{i k \left( d + \frac{x^2 + y^2}{2 d}\right) }}{i \lambda} \int{dx_0 dy_0 E_0(x_0,y_0) t(x_0,y_0) e^{ik \frac{(x_0^2+y_0^2)}{2 d_{eff}}} e^{-ik\frac{(x x_0 + y y_0)}{d}}}
+E(\mathbf{x})=\frac{1}{i \lambda} \int {\mathrm{d}\mathbf{x}_0 \: t(\mathbf{x}_0) E_0(\mathbf{x}_0) \frac{e^{ik \left| \mathbf{x}-\mathbf{x}_0 \right| }}{\left| \mathbf{x} - \mathbf{x}_0 \right| }}
+\label{eq:Huygens-Fresnel}
 \end{equation}
-avec $1/d_{eff}=1/d-1/f$ et $k=2\pi /\lambda$.
+avec $t(\mathbf{x}_0)$ la transmittance complexe du diffuseur au point $\mathbf{x}_0$, $k=2\pi /\lambda$, et $t(\mathbf{x}_0)$ est une transmittance comportant l'effet du diffuseur et de la lentille.
+Appliquons alors l'approximation paraxiale:
+\begin{align}
+\nonumber \left| \mathbf{x} - \mathbf{x}_0 \right| &= \sqrt{(x-x_0)^2+(y-y_0)^2+d^2} \\
+\nonumber & = d \sqrt{1+\frac{(x-x_0)^2+(y-y_0)^2}{d^2}} \\
+& \approx d+ \frac{(x-x_0)^2+(y-y_0)^2}{2d}
+\label{eq:paraxial}
+\end{align}
+et reportons \ref{eq:paraxial} dans \ref{eq:Huygens-Fresnel}:
+\begin{equation}
+E(\mathbf{x})=\frac{e^{ikd}}{i \lambda d} \int{\mathrm{d} \mathbf{x}_0 \: t_{\mathrm{diff}}(\mathbf{x}_0) E_0(\mathbf{x}_0) \: e^{-ik \frac{x_0^2+y_0^2}{2f}} e^{ik \frac{(x-x_0)^2+(y-y_0)^2}{2d}}}
+\end{equation}
+avec $t_{\mathrm{diff}}(\mathbf{x}_0)$ la transmittance du diffuseur. Développons alors cette dernière expression:
+\begin{equation}
+E(x,y,d)=\frac{e^{i k \left( d + \frac{x^2 + y^2}{2 d}\right) }}{i \lambda d} \int{\mathrm{d} \mathbf{x}_0 \: t_{\mathrm{diff}}(\mathbf{x}_0) E_0(\mathbf{x}_0) \: e^{ik \frac{(x_0^2+y_0^2)}{2 d_{eff}}} e^{-ik\frac{(x x_0 + y y_0)}{d}}}
+\end{equation}
+avec $1/d_{eff}=1/d-1/f$.
 
 \section{Fonction de corrélation}
 \begin{equation}
