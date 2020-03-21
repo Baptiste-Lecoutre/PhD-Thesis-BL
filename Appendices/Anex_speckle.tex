@@ -20,11 +20,29 @@ E(\mathbf{x})=\frac{e^{ikd}}{i \lambda d} \int{\mathrm{d} \mathbf{x}_0 \: t_{\ma
 \end{equation}
 avec $t_{\mathrm{diff}}(\mathbf{x}_0)$ la transmittance du diffuseur. Développons alors cette dernière expression:
 \begin{equation}
-E(x,y,d)=\frac{e^{i k \left( d + \frac{x^2 + y^2}{2 d}\right) }}{i \lambda d} \int{\mathrm{d} \mathbf{x}_0 \: t_{\mathrm{diff}}(\mathbf{x}_0) E_0(\mathbf{x}_0) \: e^{ik \frac{(x_0^2+y_0^2)}{2 d_{eff}}} e^{-ik\frac{(x x_0 + y y_0)}{d}}}
+E(\mathbf{x})=\frac{e^{i k \left( d + \frac{x^2 + y^2}{2 d}\right) }}{i \lambda d} \int{\mathrm{d} \mathbf{x}_0 \: t_{\mathrm{diff}}(\mathbf{x}_0) E_0(\mathbf{x}_0) \: e^{ik \frac{\mathbf{x}_0^2}{2 d_{\mathrm{eff}}}} e^{-ik\frac{\mathbf{x} \mathbf{x}_0}{d}}}
 \end{equation}
-avec $1/d_{eff}=1/d-1/f$.
+avec $1/d_{\mathrm{eff}}=1/d-1/f$.
 
 \section{Fonction de corrélation}
+La fonction de corrélation en amplitude s'écrit
+\begin{align}
+C_E(\mathbf{x},\mathbf{x}',\lambda,\lambda')&=\overline{E(\mathbf{x},\lambda) E^*(\mathbf{x}',\lambda')} \\
+\nonumber &=\frac{e^{i \left( k (d+ \frac{x^2+y^2}{2d})-k'(d'+\frac{x'^2+y'^2}{2d'}) \right)}}{\lambda \lambda' d d'} 
+&& \int{ \mathrm{d}\mathbf{x}_0 \mathrm{d}\mathbf{x}'_0 \: \overline{t_{\mathrm{diff}}(\mathbf{x}_0) t^*_{\mathrm{diff}}(\mathbf{x}_0)} \: E_0(\mathbf{x}_0) E^*_0(\mathbf{x}'_0)} \\ 
+& && \; e^{i\frac{k \mathbf{x}^2_0}{2d_{\mathrm{eff}}}} e^{-i\frac{k' \mathbf{x}'^2_0}{2d_{\mathrm{eff}}'}} e^{-i\frac{k(\mathbf{x}.\mathbf{x}_0)}{d}} e^{i\frac{k'(\mathbf{x}'.\mathbf{x}'_0)}{d'}}
+\end{align}
+Appliquons alors le changement de variables $\left\lbrace \mathbf{x}_0, \mathbf{x}'_0\right\rbrace \rightarrow \left\lbrace \mathbf{x}_0, \Delta\mathbf{x}= \mathbf{x}'_0-\mathbf{x}_0\right\rbrace$ (par commodité on omettra le facteur devant l'intégrale):
+\begin{align}
+  C_E \propto &\int{\mathrm{d}\mathbf{x}_0 \mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: E_0(\mathbf{x}_0)E^*_0(\mathbf{x}_0+\Delta\mathbf{x})} \\ 
+  \nonumber & e^{i \frac{\mathbf{x}^2_0}{2}(\frac{k}{d_{\mathrm{eff}}}-\frac{k'}{d_{\mathrm{eff}}'})} e^{-i\frac{k'\Delta\mathbf{x}'^2}{2d_{\mathrm{eff}}'}} e^{-i\frac{k'\mathbf{x}'_0 \Delta\mathbf{x}}{d_{\mathrm{eff}}'}} e^{i\frac{k'\mathbf{x} \Delta\mathbf{x}}{d'}} e^{i \mathbf{x}_0.(\frac{k'\mathbf{x}'}{d'}-\frac{k\mathbf{x}}{d})}
+\end{align}
+Supposons à présent que la taille des grains du diffuseur sont très petits devant la taille typique de l'éclairement incident, c'est à dire qu'à l'échelle de variation de $C_{\mathrm{diff}}$, l'éclairement incident sera constant. $E_0(\mathbf{x}_0)E^*_0(\mathbf{x}_0+\Delta\mathbf{x}) \approx E_0(\mathbf{x}_0)E^*_0(\mathbf{x}_0)=I_0(\mathbf{x}_0)$. En supprimant le terme en $\Delta\mathbf{x}^2$, on a: 
+\begin{equation}
+C_E \propto \int{\mathrm{d}\mathbf{x}_0  \: I_0(\mathbf{x}_0) \: e^{i \frac{\mathbf{x}^2_0}{2}(\frac{k}{d_{\mathrm{eff}}}-\frac{k'}{d_{\mathrm{eff}}'})} e^{i \mathbf{x}_0.(\frac{k'\mathbf{x}'}{d'}-\frac{k\mathbf{x}}{d})} \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: e^{i \Delta\mathbf{x} (\frac{k'\mathbf{x}'}{d'}-\frac{k'\mathbf{x'}_0}{d_{\mathrm{eff}}'})}}}
+\end{equation}
+
+
 \begin{equation}
 \begin{split}
 C _{\delta I} \left( x_1, x_2, \lambda _1, \lambda _2 \right) &= \left\langle \left( I \left( x_1, \lambda _1 \right) - \left\langle I \left( x_1, \lambda _1 \right) \right\rangle \right) \left( I \left( x_2, \lambda _2 \right) - \left\langle I \left( x_2, \lambda _2 \right) \right\rangle \right) \right\rangle \\
@@ -41,7 +59,10 @@ C_E \propto \mathrm{TF} \left[ I_{eff}(x_0,y_0) \times G_{0eff}(x_0,y_0) \right]
 \end{equation}
 avec
 \begin{equation*}
-I_{eff}(x_0)= I_0(x_0) \times e^{i \frac{x_0^2}{2} \left( \frac{k_1}{d_{eff1}} + \frac{k_2}{d_{eff2}}\right)}
+\begin{split}
+I_{eff}(x_0)= I_0(x_0) \times e^{i \frac{x_0^2}{2} \left( \frac{k_1}{d_{eff1}} + \frac{k_2}{d_{eff2}}\right)} \\ 
+\mathrm{probablement erreur de signe dans cette exponentielle, le + serait sans doute un -}
+\end{split}
 \end{equation*}
 \begin{equation*}
 G_{0eff}(x_0)=\mathrm{TF}^{-1} \left( C_{diff}(\Delta x) \right)_{\left[ \frac{x_0}{2} \left( \frac{k_1}{d_{eff1}} + \frac{k_2}{d_{eff2}} \right) -\frac{x_1 k_1}{d_1} - \frac{x_2 k_2}{d_2}\right]}
