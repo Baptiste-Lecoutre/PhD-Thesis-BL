@@ -81,8 +81,12 @@
 \contentsline {part}{\@mypartnumtocformat {IV}{Annexes}}{31}{part.4}%
 \contentsline {chapter}{\numberline {A}Calculs de champs de tavelures}{33}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Amplitude rayonnée}{33}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Fonction de corrélation}{33}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Calcul du temps de diffusion élastique par le développement de Born}{35}{appendix.B}%
+\contentsline {section}{\numberline {A.2}Fonction de corrélation}{34}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Calcul général}{34}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Corrélation transverse d'un unique speckle selon l'axe optique}{34}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Corrélation longitudinale d'un unique speckle autour du plan de Fourier}{34}{subsection.A.2.3}%
+\contentsline {subsection}{\numberline {A.2.4}Corrélation transverse d'un speckle bichromatique dans le plan de Fourier}{35}{subsection.A.2.4}%
+\contentsline {chapter}{\numberline {B}Calcul du temps de diffusion élastique par le développement de Born}{37}{appendix.B}%
 \vspace \bigskipamount 
-\contentsline {chapter}{Bibliographie}{35}{appendix.B}%
+\contentsline {chapter}{Bibliographie}{37}{appendix.B}%
 \contentsfinish 
