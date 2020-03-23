@@ -1,12 +1,114 @@
 \chapter{Calculs de champs de tavelures}
-\section{Champ rayonné}
-Champ rayonné (Huygens-Fresnel paraxial):
+\section{Amplitude rayonnée}
+Notons $\mathbf{x} \equiv \left\lbrace x,y,d \right\rbrace$ et $\mathbf{x}_0 \equiv \left\lbrace x_0,y_0,0 \right\rbrace$
+Pour calculer le champ rayonné au point $\mathbf{x}$, on utilise le principe de Huygens-Fresnel:
 \begin{equation}
-E(x,y,d)=\frac{e^{i k \left( d + \frac{x^2 + y^2}{2 d}\right) }}{i \lambda} \int{dx_0 dy_0 E_0(x_0,y_0) t(x_0,y_0) e^{ik \frac{(x_0^2+y_0^2)}{2 d_{eff}}} e^{-ik\frac{(x x_0 + y y_0)}{d}}}
+E(\mathbf{x})=\frac{1}{i \lambda} \int {\mathrm{d}\mathbf{x}_0 \: t(\mathbf{x}_0) E_0(\mathbf{x}_0) \frac{e^{ik \left| \mathbf{x}-\mathbf{x}_0 \right| }}{\left| \mathbf{x} - \mathbf{x}_0 \right| }}
+\label{eq:Huygens-Fresnel}
 \end{equation}
-avec $1/d_{eff}=1/d-1/f$ et $k=2\pi /\lambda$.
+avec $t(\mathbf{x}_0)$ la transmittance complexe du diffuseur au point $\mathbf{x}_0$, $k=2\pi /\lambda$, et $t(\mathbf{x}_0)$ est une transmittance comportant l'effet du diffuseur et de la lentille.
+Appliquons alors l'approximation paraxiale:
+\begin{align}
+\nonumber \left| \mathbf{x} - \mathbf{x}_0 \right| &= \sqrt{(x-x_0)^2+(y-y_0)^2+d^2} \\
+\nonumber & = d \sqrt{1+\frac{(x-x_0)^2+(y-y_0)^2}{d^2}} \\
+& \approx d+ \frac{(x-x_0)^2+(y-y_0)^2}{2d}
+\label{eq:paraxial}
+\end{align}
+et reportons \ref{eq:paraxial} dans \ref{eq:Huygens-Fresnel}:
+\begin{equation}
+E(\mathbf{x})=\frac{e^{ikd}}{i \lambda d} \int{\mathrm{d} \mathbf{x}_0 \: t_{\mathrm{diff}}(\mathbf{x}_0) E_0(\mathbf{x}_0) \: e^{-ik \frac{x_0^2+y_0^2}{2f}} e^{ik \frac{(x-x_0)^2+(y-y_0)^2}{2d}}}
+\end{equation}
+avec $t_{\mathrm{diff}}(\mathbf{x}_0)$ la transmittance du diffuseur. Développons alors cette dernière expression:
+\begin{equation}
+E(\mathbf{x})=\frac{e^{i k \left( d + \frac{x^2 + y^2}{2 d}\right) }}{i \lambda d} \int{\mathrm{d} \mathbf{x}_0 \: t_{\mathrm{diff}}(\mathbf{x}_0) E_0(\mathbf{x}_0) \: e^{ik \frac{\mathbf{x}_0^2}{2 d_{\mathrm{eff}}}} e^{-ik\frac{\mathbf{x} \mathbf{x}_0}{d}}}
+\end{equation}
+avec $1/d_{\mathrm{eff}}=1/d-1/f$.
 
 \section{Fonction de corrélation}
+\subsection{Calcul général}
+La fonction de corrélation en amplitude s'écrit
+\begin{align}
+C_E(\mathbf{x},\mathbf{x}',\lambda,\lambda')&=\overline{E(\mathbf{x},\lambda) E^*(\mathbf{x}',\lambda')} \\
+\nonumber &=\frac{e^{i \left( k (d+ \frac{x^2+y^2}{2d})-k'(d'+\frac{x'^2+y'^2}{2d'}) \right)}}{\lambda \lambda' d d'} 
+&& \int{ \mathrm{d}\mathbf{x}_0 \mathrm{d}\mathbf{x}'_0 \: \overline{t_{\mathrm{diff}}(\mathbf{x}_0) t^*_{\mathrm{diff}}(\mathbf{x}_0)} \: E_0(\mathbf{x}_0) E^*_0(\mathbf{x}'_0)} \\ 
+& && \; e^{i\frac{k \mathbf{x}^2_0}{2d_{\mathrm{eff}}}} e^{-i\frac{k' \mathbf{x}'^2_0}{2d_{\mathrm{eff}}'}} e^{-i\frac{k(\mathbf{x}.\mathbf{x}_0)}{d}} e^{i\frac{k'(\mathbf{x}'.\mathbf{x}'_0)}{d'}}
+\end{align}
+Appliquons alors le changement de variables $\left\lbrace \mathbf{x}_0, \mathbf{x}'_0\right\rbrace \rightarrow \left\lbrace \mathbf{x}_0, \Delta\mathbf{x}= \mathbf{x}'_0-\mathbf{x}_0\right\rbrace$ (par commodité on omettra le facteur devant l'intégrale):
+\begin{align}
+  C_E \propto &\int{\mathrm{d}\mathbf{x}_0 \mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: E_0(\mathbf{x}_0)E^*_0(\mathbf{x}_0+\Delta\mathbf{x})} \\ 
+  \nonumber & e^{i \frac{\mathbf{x}^2_0}{2}(\frac{k}{d_{\mathrm{eff}}}-\frac{k'}{d_{\mathrm{eff}}'})} e^{-i\frac{k'\Delta\mathbf{x}'^2}{2d_{\mathrm{eff}}'}} e^{-i\frac{k'\mathbf{x}_0 \Delta\mathbf{x}}{d_{\mathrm{eff}}'}} e^{i\frac{k'\mathbf{x} \Delta\mathbf{x}}{d'}} e^{i \mathbf{x}_0.(\frac{k'\mathbf{x}'}{d'}-\frac{k\mathbf{x}}{d})}
+\end{align}
+Supposons à présent que la taille des grains du diffuseur sont très petits devant la taille typique de l'éclairement incident, c'est à dire qu'à l'échelle de variation de $C_{\mathrm{diff}}$, l'éclairement incident sera constant. $E_0(\mathbf{x}_0)E^*_0(\mathbf{x}_0+\Delta\mathbf{x}) \approx E_0(\mathbf{x}_0)E^*_0(\mathbf{x}_0)=I_0(\mathbf{x}_0)$. En supprimant le terme en $\Delta\mathbf{x}^2$, on a: 
+\begin{equation}
+C_E \propto \int{\mathrm{d}\mathbf{x}_0  \: I_0(\mathbf{x}_0) \: e^{i \frac{\mathbf{x}^2_0}{2}(\frac{k}{d_{\mathrm{eff}}}-\frac{k'}{d_{\mathrm{eff}}'})} e^{i \mathbf{x}_0.(\frac{k'\mathbf{x}'}{d'}-\frac{k\mathbf{x}}{d})} \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: e^{i \Delta\mathbf{x} (\frac{k'\mathbf{x}'}{d'}-\frac{k'\mathbf{x}_0}{d_{\mathrm{eff}}'})}}}
+\end{equation}
+
+\subsection{Corrélation transverse d'un unique speckle selon l'axe optique}
+Considérons le cas d'un unique speckle, que l'on étudie dans un plan orthogonal à l'axe optique. Posons $\lambda = \lambda'$, $d=d'$ et $\mathbf{x}'=0$:
+\begin{align}
+C_E(\mathrm{x})&=\overline{E(x,y,d)E^*(0,0,d)}\\
+&\propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{-ik\frac{\mathbf{x} \mathbf{x}_0}{d}} \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x})\: e^{-ik\frac{\Delta\mathbf{x}.\mathbf{x}_0}{d_{\mathrm{eff}}}}}}
+\end{align}
+On retrouve bien le résultat de la thèse de Jérémie, équation C.26.
+
+\subsection{Corrélation longitudinale d'un unique speckle autour du plan de Fourier}
+Plaçons nous sur l'axe optique, autour du plan de Fourier, pour une seule longueur d'onde. Pour $\mathbf{x}=\mathbf{x}_0=0$, $\lambda'=\lambda$ et $d'=f$:
+\begin{align}
+C_E&=\overline{E(0,0,d)E^*(0,0,f)} \\
+& \propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{i\frac{\mathbf{x}_0^2 k}{2 d_{\mathrm{eff}}}} \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x})}}
+\end{align}
+Proche du plan de Fourier, on pose $d=f+\delta z$, donc $1/d_{\mathrm{eff}}=1/d-1/f\approx-\delta z/f^2$. Finalement, on obtient:
+\begin{equation}
+C_E \propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{-i\frac{\delta z k \mathbf{x}_0^2}{2f^2}}}
+\end{equation}
+On retrouve l'expression 4.10 de la thèse de Fred. Supposons à présent un éclairement incident gaussien de taille $w_0$:
+\begin{align}
+C_E &\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\mathbf{x}_0^2 \left( 2/w_0^2-i\frac{k}{2d_{\mathrm{eff}}}\right)}} \\
+&\propto \frac{1}{2/w_0^2-i\frac{k}{2d_{\mathrm{eff}}}}
+\end{align}
+Et donc pour le degré en cohérence $\left| \mu \right|^2=\left| C_E \right|^2$:
+\begin{align}
+\left| C_E \right| ^2 &\propto \frac{1}{\frac{4}{w_0^4}+\frac{k^2}{4d_{\mathrm{eff}}^2}} \\
+&\propto \frac{1}{\frac{4}{w_0^4}+\frac{k^2 \delta z^2}{4f^4}} \\
+&\propto \frac{1}{1+\delta z^2 \frac{k^2 w_0^4}{16f^4}} \\
+&\propto \frac{1}{1+\delta z^2/\sigma_{\parallel}^2}
+\end{align}
+On retrouve bien la lorentzienne avec $\sigma_{\parallel}=4 \sigma_{\perp} / \mathrm{ON}$, c'est à dire la distance de rayleigh. Interprétation: Magati2008 et Magati2009 montrent que dans une géométrie sans lentille, et à grande distance (régime de Fraunhofer), les grains de speckle s'apparentent à des tubes de lumière de corrélation longitudinale tendant vers l'infini (ils font de la physique avec les mains pour expliquer pourquoi). Avec une lentille, ce régime se retrouve autour du plan focal, sur une distance donnée par la longueur de Rayleigh. La forme lorentzienne est aussi typique d'effets longitudinaux en optique gaussienne autour du plan de focalisation.
+
+\subsection{Corrélation transverse d'un speckle bichromatique dans le plan de Fourier}
+Considérons le cas de deux longueurs d'ondes, étudiées à la même position dans le plan de Fourier. Posons $d=d'=f$, $\mathbf{x}=\mathbf{x}'$:
+\begin{align}
+C_E(\mathrm{x},\lambda,\lambda')&=\overline{E(\mathbf{x},\lambda)E^*(\mathbf{x},\lambda')}\\
+&\propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{i\frac{\mathbf{x}_0.\mathbf{x}}{f}(k'-k)} \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: e^{i\frac{\Delta\mathbf{x}.\mathbf{x}}{f}k'}}}
+\end{align}
+On retrouve le résultat de mon rapport de stage. Warning: $C_{\mathrm{diff}}$ est plus compliqué dans cette expression, il faut tenir compte des deux longueurs d'onde dedans. Idem avec $I_0$, il s'agit en réalité du produit des amplitudes à chaque longueur d'onde. Aller un peu plus loin pour donner l'expression de la longueur de corrélation.
+
+
+\subsection{Corrélation longitudinale d'un speckle bichromatique autour du plan de Fourier}
+Prenons un speckle composé de deux longueurs d'onde, étudié selon l'axe optique. Fixons: $\mathbf{x}=\mathbf{x}'=0$ et $d=d'$:
+\begin{align}
+C_E &= \overline{E(0,0,d,\lambda)E^*(0,0,d,\lambda')} \\
+& \propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{i\frac{\mathbf{x}_0^2}{2d_{\mathrm{eff}}}(k-k')} \: \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: e^{-i\Delta\mathbf{x} \frac{k' \mathbf{x}_0}{d_{\mathrm{eff}}}}}}
+\end{align}
+Supposons à présent que l'on s'éloigne peu du plan de Fourier tel que $r_{\mathrm{diff}} w_0 k'/d_{\mathrm{eff}} \ll 1$, c'est à dire $\delta z \ll W_{\mathrm{speckle}} / \mathrm{ON}$ avec $ \delta z$ tel que définit avant, $W_{\mathrm{speckle}}$ l'extension du faisceau de speckle dans le plan de Fourier et $w_0$ la taille du faisceau incident. Dans ce cas, on peut négliger la dernière exponentielle et on a pour un faisceau gaussien:
+\begin{align}
+C_E &\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\frac{2\mathbf{x}_0^2}{w_0^2}} \: e^{i\frac{\mathbf{x}_0^2}{2d_{\mathrm{eff}}}(k-k')}} \\ 
+&\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\mathbf{x}_0^2 (2/w_0^2-i\frac{k-k'}{2d_{\mathrm{eff}}})}} \\
+&\propto \frac{1}{2/w_0^2-i\frac{k-k'}{2d_{\mathrm{eff}}}}
+\end{align}
+Alors,
+\begin{align}
+\left| C_E \right| ^2 &\propto \left| \frac{1}{2/w_0^2-i\frac{k-k'}{2d_{\mathrm{eff}}}} \right| ^2 \\
+&\propto \frac{1}{4/w_0^2+\delta z^2 \frac{(k-k')^2}{4f^4}} \\
+&\propto \frac{1}{1+\delta z^2 \left( \frac{\delta \lambda}{\lambda} \right)^2 \frac{k^2 w_0^4}{16f^4}} \\
+&\propto \frac{1}{1+\frac{\delta z^2}{\sigma_{\parallel}^2} \left(\frac{\delta \lambda}{\lambda}\right)^2}
+\end{align}
+
+
+
+
+
+\begin{comment}
 \begin{equation}
 \begin{split}
 C _{\delta I} \left( x_1, x_2, \lambda _1, \lambda _2 \right) &= \left\langle \left( I \left( x_1, \lambda _1 \right) - \left\langle I \left( x_1, \lambda _1 \right) \right\rangle \right) \left( I \left( x_2, \lambda _2 \right) - \left\langle I \left( x_2, \lambda _2 \right) \right\rangle \right) \right\rangle \\
@@ -23,8 +125,12 @@ C_E \propto \mathrm{TF} \left[ I_{eff}(x_0,y_0) \times G_{0eff}(x_0,y_0) \right]
 \end{equation}
 avec
 \begin{equation*}
-I_{eff}(x_0)= I_0(x_0) \times e^{i \frac{x_0^2}{2} \left( \frac{k_1}{d_{eff1}} + \frac{k_2}{d_{eff2}}\right)}
+\begin{split}
+I_{eff}(x_0)= I_0(x_0) \times e^{i \frac{x_0^2}{2} \left( \frac{k_1}{d_{eff1}} + \frac{k_2}{d_{eff2}}\right)} \\ 
+\mathrm{probablement erreur de signe dans cette exponentielle, le + serait sans doute un -}
+\end{split}
 \end{equation*}
 \begin{equation*}
 G_{0eff}(x_0)=\mathrm{TF}^{-1} \left( C_{diff}(\Delta x) \right)_{\left[ \frac{x_0}{2} \left( \frac{k_1}{d_{eff1}} + \frac{k_2}{d_{eff2}} \right) -\frac{x_1 k_1}{d_1} - \frac{x_2 k_2}{d_2}\right]}
 \end{equation*}
+\end{comment}
