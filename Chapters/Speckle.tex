@@ -3,22 +3,23 @@
 %\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Speckle/g825.png}};
 %\end{tikzpicture}
 
-Le chapitre \ref{ch:BECmanip} nous a renseigné quant aux propriétés de notre onde de matière ainsi que sa production. En particulier, on a vu qu'il était possible d'appliquer des potentiels externes conservatifs aux atomes par le biais du potentiel dipolaire. Ce potentiel étant proportionnel à l'intensité lumineuse $I$, on peut alors appliquer un désordre à nos atomes, pourvu que l'on soit capable de créer un désordre optique. 
+Le chapitre \ref{ch:BECmanip} nous a renseigné quant aux propriétés de notre onde de matière ainsi que sa production. En particulier, on a vu qu'il était possible d'appliquer des potentiels externes conservatifs aux atomes par le biais du potentiel dipolaire. Ce potentiel étant proportionnel à l'intensité lumineuse $I$, on peut alors appliquer un désordre à nos atomes, pourvu que l'on soit capable de créer un désordre optique. En effet, une originalité de notre expérience est "d'inverser" les rôles habituels de la matière et de la lumière.
 
 Ainsi, dans ce chapitre, nous allons nous attacher à décrire le second élément clé à la localisation d'Anderson: le désordre. Nous montrerons que la génération d'un tel désordre est aisée: la diffraction d'un faisceau laser au travers d'une lame de verre rugueuse produit un motif d'intensité lumineuse aléatoire et à fort contraste, appelé champs de tavelures optiques, ou encore \emph{Speckle} (anglicisme communément admis). Citons deux énormes avantages d'un tel désordre: on en connaît toutes les propriétés, régies par la diffraction, et on contrôle ce désordre. 
 
-La première partie se concentrera sur la statistique d'un champ de speckle, c'est à dire la distribution statistique d'intensité. Dans un second temps, nous décrirons les propriétés spatiales d'un speckle, en particulier la taille des grains de lumière dans les directions transverses et longitudinale. Dans une troisième partie nous parlerons du potentiel ressenti par les atomes ainsi que des possibilités offertes, puis dans une ultime partie nous étudierons une approche à deux longueurs d'onde pour dépasser les limitations d'une unique longueur d'onde pour l'étude de la transition d'Anderson à énergie résolue.
+La première partie se concentrera sur la statistique d'un champ de speckle, c'est à dire comment l'intensité lumineuse se répartit de manière statistique. Dans un second temps, nous décrirons les propriétés spatiales d'un speckle, en particulier la taille des grains de lumière dans les directions transverses et longitudinale. Dans une troisième partie nous parlerons du potentiel ressenti par les atomes ainsi que des possibilités offertes, puis dans une ultime partie nous étudierons une approche à deux longueurs d'onde pour dépasser les limitations d'un speckle monochromatique pour l'étude de la transition d'Anderson à énergie résolue.
 
-\section{Propriétés statistiques d'un champ de speckle}
-C'est avec le développement des premiers lasers qu'a été observée la structure granulaire de la lumière réfléchie par certaines surfaces rugueuse. Rapidement, il a été compris que ce motif provenait de la diffraction aléatoire et cohérente par une surface rugueuse. 
+\section{Génération d'un champ de speckle}
+%\section{Propriétés statistiques d'un champ de speckle}
+C'est avec le développement des premiers lasers qu'a été observée la structure granulaire de la lumière réfléchie par certaines surfaces rugueuses. Rapidement, il a été compris que ce motif provenait de la diffraction aléatoire et cohérente par une surface rugueuse. 
 Cette surface rugueuse peut-être considérée comme un ensemble d'émetteurs cohérents de déphasages aléatoires, et le profil d'intensité obtenu est le résultat de l'interférence multiple de l'ensemble de la surface. Un profil typique est montré figure \ref{fig:speckle_pattern}. Celui-ci comporte un ensemble de grains lumineux séparés par des zones d'obscurité.
-Souvent considéré néfaste dans le domaine de l'imagerie, le speckle est pour nous une superbe source de désordre optique. 
+Souvent considéré néfaste dans le domaine de l'imagerie, le speckle est pour nous une formidable source de désordre optique. 
 
 \begin{figure}
 \centering
 \includegraphics[scale=1]{Fig/Speckle/speckle_pattern.pdf}
+\caption{\textbf{a:} Motif de speckle. Un tel motif est composé de grains lumineux entourés de zones d'ombre, où l'intensité est quasiment nulle. \textbf{b:} Génération d'une figure de speckle. La diffraction d'une onde cohérente par une surface rugueuse appelée diffuseur résulte en l'interférence multiple d'une grand nombre d'ondes à déphasage aléatoires. La phase de chacun de ces ondes est déterminée par l'épaisseur de verre traversée en chaque point.}
 \label{fig:speckle_pattern}
-\caption{Figure typique de speckle}
 \end{figure}
 
 \subsection{Propriétés du diffuseur}
@@ -49,7 +50,7 @@ ce qui se traduit en terme de champ
 \begin{equation}
 E=\overline{E}+E_{speckle}
 \end{equation}
-La conséquence est alors immédiate: si $\sigma_{\phi} \gg 2\pi$ ou de manière équivalente $\sigma_e \gg \lambda$, alors $\overline{t_{\mathrm{diff}}} =0$ et donc le champ rayonné ne sera composé que du champ de speckle: on parle alors de speckle entièrement développé. C'est ce que l'on considèrera dans la suite.
+La conséquence est alors immédiate: si $\sigma_{\phi} \gg 2\pi$ ou de manière équivalente $\sigma_e \gg \lambda$, alors $\overline{t_{\mathrm{diff}}} =0$ et donc le champ rayonné ne sera composé que du champ de speckle: on parle alors de speckle entièrement développé. La valeur déterministe $\overline{E}$ liée à $\overline{t_{mathrm{diff}}}$ est supprimée. C'est ce que l'on considèrera dans la suite.
 
 \begin{figure}
 \centering
@@ -107,19 +108,27 @@ avec $E_{\mathcal{R}}$ et $E_{\mathcal{I}}$ les parties réelle et imaginaire du
 Cette loi de probabilité permet alors d'obtenir l'intensité moyenne $\overline{I}=2\sigma_E^2$ et l'écart-type en intensité $\sigma_I=\overline{I}$. Le contraste d'une telle figure de speckle est alors de 1, ce qui se traduit par des pics très brillants entourés de régions sombres d'intensité quasinulle.
 
 
-\section{Corrélations spatiales d'un champ de speckle}
-Bien que les figures de speckle soient déterministes car régies par la diffraction, on peut considérer leurs réalisations comme étant aléatoires. Néanmoins, les propriétés spatiales d'un champ de speckle ne dépendent pas de la réalisation, mais seulement de la géométrie du problème. Dans cette section, nous allons nous attacher à décrire les grandeurs spatiales caractéristiques d'un champ de speckle: son extension, et la taille des grains, donnée par la fonction d'autocorrélation en intensité. Ces quantités on été mesurées expérimentalement sur un montage reproduisant exactement les conditions réelles de la cellule à vide, celle-ci empêchant de faire des mesures in-situ. Pour le détail de ces mesures, thèse de Jérémie.
+%\section{Corrélations spatiales d'un champ de speckle}
+%Bien que les figures de speckle soient déterministes car régies par la diffraction, on peut considérer leurs réalisations comme étant aléatoires. Néanmoins, les propriétés spatiales d'un champ de speckle ne dépendent pas de la réalisation, mais seulement de la géométrie du problème. Dans cette section, nous allons nous attacher à décrire les grandeurs spatiales caractéristiques d'un speckle: son extension et la taille des grains, donnée par la fonction d'autocorrélation en intensité. Ces quantités on été mesurées expérimentalement sur un montage reproduisant exactement les conditions réelles de la cellule à vide, celle-ci empêchant de faire des mesures in-situ. La description de ces mesures et de leur traitement sont référencées dans la thèse de Jérémie Richard.
 
 \subsection{Implémentation expérimentale}
-Commençons par présenter la géométrie de notre dispositif de génération du speckle. Laser Toptica TA-Pro 2W accordable autour de 780nm: possibilité de réaliser un potentiel attractif (désaccord négatif) ou répulsif (désaccord positif). Avant: laser à 532nm très désaccordé vers le bleu pour pouvoir s'affranchir de l'émission spontanée, nécessaire sur des très longs temps pour l'étude de la localisation d'Anderson. Donc aujourd'hui travail à très faible puissance. Filtrage du mode par une fibre et filtrage de la polarisation par cubes consécutifs, asservissement en puissance. 
+À présent, étudions la géométrie de notre dispositif de génération du speckle. Le faisceau est émis par un laser Toptica TA-Pro 2W accordable autour de 780nm (Raie $\mathrm{D}_2$ du ${}^{87}\text{Rb}$). Cette accordabilité nous offre la possibilité de réaliser un potentiel désaccordé vers le rouge et donc attractif ($\delta < 0$) ou bien désaccordé vers le bleu, et donc avoir un potentiel répulsif ($\delta > 0$). Historiquement, le laser auparavant utilisé pour générer le speckle était un laser Verdi à 532nm très désaccordé vers le bleu afin de s'affranchir de l'émission spontanée, nécessaire sur des très longs temps pour l'étude de la localisation d'Anderson. Étant donnée la proximité de la résonance avec ce nouveau système autour de 780nm, nous travaillons à bien plus basse puissance (typiquement quelques µW). Le mode du laser est filtré à l'aide d'une fibre optique, sa polarisation est fixée linéaire à l'aide de cubes séparateurs de polarisations, et l'ensemble est asservi en puissance (l'essentiel de la puissance du laser sert d'ailleurs à cette boucle d'asservissement). Les détails de ce montage peuvent être retrouvés dans la thèse de Vincent Denechaud. 
+
 \begin{figure}
 \centering
 \includegraphics[scale=0.7]{Fig/Speckle/montage_diffuseur.pdf}
+\caption{Géométrie du montage de génération du speckle. Un faisceau gaussien incident est tronqué dans un diaphragme qui supporte le diffuseur. Le plan de focalisation est déplacé d'environ 1mm à cause de la paroi de la cellule à vide.}
 \label{fig:montage_diffuseur}
-\caption{Montage du diffuseur}
 \end{figure}
-Géométrie du montage du diffuseur
 
+La génération du speckle se fait donc selon le montage représenté figure \ref{fig:montage_diffuseur}. Un faisceau gaussien collimaté de taille 14.6mm est tronqué par un diaphragme de diamètre 22.9mm. Ce faisceau passe ensuite au travers d'une lentille asphérique (\textit{Thorlabs ACL2520-B}) de focale 16mm (et de frontale 15.7mm). Le diffuseur \textit{Newport FSD10-3} possède une épaisseur de 0.3mm (initialement 3mm avant d'être aminci par l'atelier d'optique de l'IOGS) et diffuse selon un angle $\theta_{\mathrm{diff}}\approx$ 5° (données constructeur). Le faisceau traverse ensuite la paroi de la cellule en vycor (d'indice optique $n=1.46$) d'épaisseur $e=3$mm. La présence de la paroi entraîne un déplacement du plan de focalisation de $\Delta d=e(1-1/n)\approx1$mm. En positionnant l'origine sur la surface du diffuseur, le plan de focalisation se trouve à $f=16.4$mm. La position des atomes est estimée quant à elle a $d=16\pm0.5$mm.
+
+
+
+\section{Propriétés spatiales d'un champ de speckle}
+Bien que les figures de speckle soient déterministes car régies par la diffraction, on peut considérer leurs réalisations comme étant aléatoires. Néanmoins, les propriétés spatiales d'un champ de speckle ne dépendent pas de la réalisation, mais seulement de la géométrie du problème. Dans cette section, nous allons nous attacher à décrire les grandeurs spatiales caractéristiques d'un speckle: son extension et la taille des grains, donnée par la fonction d'autocorrélation en intensité. Ces quantités on été mesurées expérimentalement sur un montage reproduisant exactement les conditions réelles de la cellule à vide, celle-ci empêchant de faire des mesures in-situ. La description de ces mesures et de leur traitement sont référencées dans la thèse de Jérémie Richard.
+\subsection{Intensité moyenne}
+Calcul de l'intensité moyenne le long de l'axe de propagation.
 \subsection{Corrélation transverse}
 Calcul de la corrélation transverse aux alentours du plan de Fourier, forme gaussienne bien reproduite car la pupille ne coupe que quelques \% de la lumière du faisceau laser gaussien incident: la TF d'une gaussienne faiblement tronquée est une gaussienne correcte.
 
