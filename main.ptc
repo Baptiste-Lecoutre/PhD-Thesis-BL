@@ -48,14 +48,14 @@
 \contentsline {subsection}{\numberline {4.1.2}Statistiques de l'intensité d'un speckle}{19}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Corrélations spatiales d'un champ de speckle}{20}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Implémentation expérimentale}{20}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Corrélation transverse}{20}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Corrélation longitudinale}{20}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Propriétés du potentiel de type speckle}{20}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Propriétés du potentiel}{20}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Possibilité d'un potentiel dépendant de l'état interne}{20}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Potentiel composé d'un speckle bichromatique}{20}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}S'éloigner de résonance}{20}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Étude de la similitude de deux speckles}{21}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.2.2}Corrélation transverse}{21}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Corrélation longitudinale}{21}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Propriétés du potentiel de type speckle}{21}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Propriétés du potentiel}{21}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Possibilité d'un potentiel dépendant de l'état interne}{21}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Potentiel composé d'un speckle bichromatique}{22}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}S'éloigner de résonance}{22}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Étude de la similitude de deux speckles}{22}{subsection.4.4.2}%
 \ttl@stoptoc {default@2}
 \contentsline {part}{\@mypartnumtocformat {III}{Temps de diffusion élastique}}{23}{part.3}%
 \ttl@stoptoc {default@2}
@@ -84,7 +84,7 @@
 \contentsline {subsection}{\numberline {6.2.3}Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}{27}{subsection.6.2.3}%
 \ttl@stoptoc {default@3}
 \vspace \bigskipamount 
-\contentsline {chapter}{Conclusion et perspectives}{29}{chapter*.5}%
+\contentsline {chapter}{Conclusion et perspectives}{29}{chapter*.7}%
 \vspace \bigskipamount 
 \contentsline {part}{\@mypartnumtocformat {IV}{Annexes}}{31}{part.4}%
 \ttl@stoptoc {default@3}

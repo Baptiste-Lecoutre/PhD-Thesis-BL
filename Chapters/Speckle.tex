@@ -12,7 +12,7 @@ La première partie se concentrera sur la statistique d'un champ de speckle, c'e
 \section{Propriétés statistiques d'un champ de speckle}
 C'est avec le développement des premiers lasers qu'a été observée la structure granulaire de la lumière réfléchie par certaines surfaces rugueuse. Rapidement, il a été compris que ce motif provenait de la diffraction aléatoire et cohérente par une surface rugueuse. 
 Cette surface rugueuse peut-être considérée comme un ensemble d'émetteurs cohérents de déphasages aléatoires, et le profil d'intensité obtenu est le résultat de l'interférence multiple de l'ensemble de la surface. Un profil typique est montré figure \ref{fig:speckle_pattern}. Celui-ci comporte un ensemble de grains lumineux séparés par des zones d'obscurité.
-Souvent considéré néfaste, le speckle est pour nous une superbe source de désordre optique. 
+Souvent considéré néfaste dans le domaine de l'imagerie, le speckle est pour nous une superbe source de désordre optique. 
 
 \begin{figure}
 \centering
@@ -89,6 +89,13 @@ En première approximation, on peut supposer que le champ rayonné est la somme 
 \begin{equation}
 E(\mathbf{x})=\sum_{j}^{N} E_0 e^{i \phi_j}
 \end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{Fig/Speckle/random_walk_speckle.pdf}
+\label{fig:random_walk_speckle}
+\caption{Marche aléatoire dans le plan complexe $E_{\mathcal{R}},E_{\mathcal{I}}$ dans le cas où $\sigma_{\phi} \gg 2\pi$}
+\end{figure}
 Théorème central limite car $r_{diff} \ll D$, $D$ étant la taille typique de l'éclairement incident.
 \begin{equation}
 \mathcal{P}(E_{\mathcal{R,I}})=\frac{1}{\sigma_E\sqrt{2\pi}} e^{-\frac{E_{\mathcal{R,I}}^2}{2 \sigma_E^2}}
@@ -97,12 +104,21 @@ avec $E_{\mathcal{R}}$ et $E_{\mathcal{I}}$ les parties réelle et imaginaire du
 \begin{equation}
 \mathcal{P}(I)=\frac{1}{2\sigma_E^2}e^{-\frac{I}{2\sigma_E^2}}
 \end{equation}
-Cette loi de probabilité permet alors d'obtenir l'intensité moyenne $\overline{I}=2\sigma_E^2$ et l'écart-type en intensité $\sigma_I=\overline{I}$. Le contraste d'une telle figure de speckle est alors de 1, ce qui se traduit par des pics très brillants entourés de régions sombres d'intensité quasinulle. à débuguer.
+Cette loi de probabilité permet alors d'obtenir l'intensité moyenne $\overline{I}=2\sigma_E^2$ et l'écart-type en intensité $\sigma_I=\overline{I}$. Le contraste d'une telle figure de speckle est alors de 1, ce qui se traduit par des pics très brillants entourés de régions sombres d'intensité quasinulle.
 
 
 \section{Corrélations spatiales d'un champ de speckle}
+Bien que les figures de speckle soient déterministes car régies par la diffraction, on peut considérer leurs réalisations comme étant aléatoires. Néanmoins, les propriétés spatiales d'un champ de speckle ne dépendent pas de la réalisation, mais seulement de la géométrie du problème. Dans cette section, nous allons nous attacher à décrire les grandeurs spatiales caractéristiques d'un champ de speckle: son extension, et la taille des grains, donnée par la fonction d'autocorrélation en intensité. Ces quantités on été mesurées expérimentalement sur un montage reproduisant exactement les conditions réelles de la cellule à vide, celle-ci empêchant de faire des mesures in-situ. Pour le détail de ces mesures, thèse de Jérémie.
+
 \subsection{Implémentation expérimentale}
-Présenter brièvement la méthode de mesure des corrélations et surtout la géométrie du problème.
+Commençons par présenter la géométrie de notre dispositif de génération du speckle. Laser Toptica TA-Pro 2W accordable autour de 780nm: possibilité de réaliser un potentiel attractif (désaccord négatif) ou répulsif (désaccord positif). Avant: laser à 532nm très désaccordé vers le bleu pour pouvoir s'affranchir de l'émission spontanée, nécessaire sur des très longs temps pour l'étude de la localisation d'Anderson. Donc aujourd'hui travail à très faible puissance. Filtrage du mode par une fibre et filtrage de la polarisation par cubes consécutifs, asservissement en puissance. 
+\begin{figure}
+\centering
+\includegraphics[scale=0.7]{Fig/Speckle/montage_diffuseur.pdf}
+\label{fig:montage_diffuseur}
+\caption{Montage du diffuseur}
+\end{figure}
+Géométrie du montage du diffuseur
 
 \subsection{Corrélation transverse}
 Calcul de la corrélation transverse aux alentours du plan de Fourier, forme gaussienne bien reproduite car la pupille ne coupe que quelques \% de la lumière du faisceau laser gaussien incident: la TF d'une gaussienne faiblement tronquée est une gaussienne correcte.
@@ -114,6 +130,7 @@ Modélisation en tenant compte des effets non-paraxiaux pour vraiment reproduire
 \subsection{Propriétés du potentiel}
 Traduction de $P_I(I)$ pour le potentiel dipolaire $V$, Taille des grains de potentiel $\sigma$, potentiel moyen $V_{\mathrm{R}}$, possibilité de faire un potentiel attractif $\delta <0$ ou répulsif $\delta > 0$
 \subsection{Possibilité d'un potentiel dépendant de l'état interne}
+En choisissant un désaccord très petit vis à vis d'un état hyperfin, on peut réaliser un potentiel très grand sur cet état tandis qu'on peut le négliger pour le second état. Pour cela, il faut que le désaccord soit très petit devant la séparation hyperfine de ces états. Par contre, il faut garder un désaccord suffisamment grand pour continuer de pouvoir considérer ce champ comme un potentiel conservatif, sinon on va avoir des processus inélastiques. Exemple de mesure des fonctions spectrales, où le temps de vie à cause des processus inélastiques n'était que 100ms, très insuffisant pour l'étude de la localisation d'Anderson, qui nécessite des temps d'évolution dans le désordre de plusieurs secondes.
 
 \section{Potentiel composé d'un speckle bichromatique}
 \subsection{S'éloigner de résonance}
