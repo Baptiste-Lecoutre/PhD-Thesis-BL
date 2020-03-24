@@ -7,7 +7,7 @@ Le chapitre \ref{ch:BECmanip} nous a renseigné quant aux propriétés de notre 
 
 Ainsi, dans ce chapitre, nous allons nous attacher à décrire le second élément clé à la localisation d'Anderson: le désordre. Nous montrerons que la génération d'un tel désordre est aisée: la diffraction d'un faisceau laser au travers d'une lame de verre rugueuse produit un motif d'intensité lumineuse aléatoire et à fort contraste, appelé champs de tavelures optiques, ou encore \emph{Speckle} (anglicisme communément admis). Citons deux énormes avantages d'un tel désordre: on en connaît toutes les propriétés, régies par la diffraction, et on contrôle ce désordre. 
 
-La première partie se concentrera sur la statistique d'un champ de speckle, c'est à dire comment l'intensité lumineuse se répartit de manière statistique. Dans un second temps, nous décrirons les propriétés spatiales d'un speckle, en particulier la taille des grains de lumière dans les directions transverses et longitudinale. Dans une troisième partie nous parlerons du potentiel ressenti par les atomes ainsi que des possibilités offertes, puis dans une ultime partie nous étudierons une approche à deux longueurs d'onde pour dépasser les limitations d'un speckle monochromatique pour l'étude de la transition d'Anderson à énergie résolue.
+La première partie se concentrera sur la statistique d'un champ de speckle, c'est à dire comment l'intensité lumineuse se répartit de manière statistique. Dans un second temps, nous décrirons les propriétés spatiales d'un speckle, en particulier la taille des grains de lumière dans les directions transverses et longitudinale. Dans une troisième partie nous parlerons du potentiel ressenti par les atomes ainsi que des possibilités offertes par la structure multi-niveaux du ${}^{87}Rb$ et l'excellent contrôle du désordre dont nous disposons, puis dans une ultime partie nous étudierons une approche à deux longueurs d'onde pour dépasser les limitations d'un speckle monochromatique pour l'étude de la transition d'Anderson à énergie résolue.
 
 \section{Génération d'un champ de speckle}
 %\section{Propriétés statistiques d'un champ de speckle}
@@ -18,17 +18,20 @@ Souvent considéré néfaste dans le domaine de l'imagerie, le speckle est pour 
 \begin{figure}
 \centering
 \includegraphics[scale=1]{Fig/Speckle/speckle_pattern.pdf}
-\caption{\textbf{a:} Motif de speckle. Un tel motif est composé de grains lumineux entourés de zones d'ombre, où l'intensité est quasiment nulle. \textbf{b:} Génération d'une figure de speckle. La diffraction d'une onde cohérente par une surface rugueuse appelée diffuseur résulte en l'interférence multiple d'une grand nombre d'ondes à déphasage aléatoires. La phase de chacun de ces ondes est déterminée par l'épaisseur de verre traversée en chaque point.}
+\caption{\textbf{a:} Motif de speckle. Un tel motif est composé de grains lumineux entourés de zones d'ombre, où l'intensité est quasiment nulle. \textbf{b:} Génération d'une figure de speckle. La diffraction d'une onde cohérente par une surface rugueuse appelée diffuseur résulte en l'interférence multiple d'une grand nombre d'ondes à déphasage aléatoire. La phase de chacune de ces ondes est déterminée par l'épaisseur de verre traversée en chaque point.}
 \label{fig:speckle_pattern}
 \end{figure}
 
 \subsection{Propriétés du diffuseur}
+\label{sec:propriete_diffuseur}
+Avant de nous intéresser aux propriétés du désordre à proprement parler, commençons par nous concentrer sur les propriétés de l'élement générant le speckle: le diffuseur. Il s'agit d'une lame de verre dépolie, d'épaisseur locale $e(\mathbf{x}_0)$ aléatoire. On supposera que cette lame a été dépolie de manière homogène. Ainsi, la statistique de l'épaisseur ne dépend pas de la position considérée sur la surface du diffuseur, et l'on considèrera que l'on a affaire à un processus stationnaire. 
 
-Lame de verre rugueuse, son épaisseur $e(\mathbf{x}_0)$ est une variable aléatoire et donne lieu à une phase $\phi(\mathbf{x}_0)$ elle aussi aléatoire:
+La phase accumulée par le faisceau laser incident lors de la traversée du diffuseur étant proportionnelle à l'épaisseur traversée, cette phase $\phi(\mathbf{x}_0)$ est elle aussi une variable aléatoire donnée localement par:
 \begin{equation}
 \phi(\mathbf{x}_0)=2\pi (n-1) \frac{e(\mathbf{x}_0)}{\lambda}
 \end{equation}
-et donc une transmittance du diffuseur 
+avec $n$ l'indice du verre et $\lambda\approx 780$nm la longueur d'onde de l'onde laser.
+L'effet de cette phase aléatoire locale se traduit en terme d'amplitude via la transmittance du diffuseur. De même que l'épaisseur et la phase, il s'agit d'une grandeur locale définie par:
 \begin{equation}
 t_{\mathrm{diff}}(\mathbf{x}_0)=e^{i\phi(\mathbf{x}_0)}
 \end{equation}
@@ -50,7 +53,7 @@ ce qui se traduit en terme de champ
 \begin{equation}
 E=\overline{E}+E_{speckle}
 \end{equation}
-La conséquence est alors immédiate: si $\sigma_{\phi} \gg 2\pi$ ou de manière équivalente $\sigma_e \gg \lambda$, alors $\overline{t_{\mathrm{diff}}} =0$ et donc le champ rayonné ne sera composé que du champ de speckle: on parle alors de speckle entièrement développé. La valeur déterministe $\overline{E}$ liée à $\overline{t_{mathrm{diff}}}$ est supprimée. C'est ce que l'on considèrera dans la suite.
+La conséquence est alors immédiate: si $\sigma_{\phi} \gg 2\pi$ ou de manière équivalente $\sigma_e \gg \lambda$, alors $\overline{t_{\mathrm{diff}}} =0$ et donc le champ rayonné ne sera composé que du champ de speckle: on parle alors de speckle entièrement développé. La valeur déterministe $\overline{E}$ liée à $\overline{t_{\mathrm{diff}}}$ est supprimée. C'est ce que l'on considèrera dans la suite.
 
 \begin{figure}
 \centering
@@ -121,19 +124,41 @@ Cette loi de probabilité permet alors d'obtenir l'intensité moyenne $\overline
 \label{fig:montage_diffuseur}
 \end{figure}
 
-La génération du speckle se fait donc selon le montage représenté figure \ref{fig:montage_diffuseur}. Un faisceau gaussien collimaté de taille 14.6mm est tronqué par un diaphragme de diamètre 22.9mm. Ce faisceau passe ensuite au travers d'une lentille asphérique (\textit{Thorlabs ACL2520-B}) de focale 16mm (et de frontale 15.7mm). Le diffuseur \textit{Newport FSD10-3} possède une épaisseur de 0.3mm (initialement 3mm avant d'être aminci par l'atelier d'optique de l'IOGS) et diffuse selon un angle $\theta_{\mathrm{diff}}\approx$ 5° (données constructeur). Le faisceau traverse ensuite la paroi de la cellule en vycor (d'indice optique $n=1.46$) d'épaisseur $e=3$mm. La présence de la paroi entraîne un déplacement du plan de focalisation de $\Delta d=e(1-1/n)\approx1$mm. En positionnant l'origine sur la surface du diffuseur, le plan de focalisation se trouve à $f=16.4$mm. La position des atomes est estimée quant à elle a $d=16\pm0.5$mm.
+La génération du speckle se fait donc selon le montage représenté figure \ref{fig:montage_diffuseur}. Un faisceau gaussien collimaté de taille 14.6mm est tronqué par un diaphragme de diamètre 22.9mm. Ce faisceau passe ensuite au travers d'une lentille asphérique (\textit{Thorlabs ACL2520-B}) de focale 16mm (et de frontale 15.7mm). Le diffuseur \textit{Newport FSD10-3} possède une épaisseur de 0.3mm (initialement 3mm avant d'être aminci par l'atelier d'optique de l'IOGS) et diffuse selon un angle $\theta_{\mathrm{diff}}\approx$ 5° (données constructeur). Le faisceau traverse ensuite la paroi de la cellule en vycor (d'indice optique $n=1.46$) d'épaisseur $e=3$mm. La présence de la paroi entraîne un déplacement du plan de focalisation de $\Delta d=e(1-1/n)\approx1$mm. En positionnant l'origine sur la surface du diffuseur, le plan de focalisation se trouve à $f=16.4$mm. La position des atomes est estimée quant à elle a $d=16\pm0.5$mm. L'incertitude liée à cette dernière position est primordiale: nous devons connaître les proriétés du speckle autour du plan de focalisation. 
+{\Large TODO: Faire un calcul rapide d'ODG pour justifier la lentille: besoin de focaliser la lumière pour avoir un potentiel raisonable sur les atomes à puissance raisonnable.}
 
 
 
 \section{Propriétés spatiales d'un champ de speckle}
 Bien que les figures de speckle soient déterministes car régies par la diffraction, on peut considérer leurs réalisations comme étant aléatoires. Néanmoins, les propriétés spatiales d'un champ de speckle ne dépendent pas de la réalisation, mais seulement de la géométrie du problème. Dans cette section, nous allons nous attacher à décrire les grandeurs spatiales caractéristiques d'un speckle: son extension et la taille des grains, donnée par la fonction d'autocorrélation en intensité. Ces quantités on été mesurées expérimentalement sur un montage reproduisant exactement les conditions réelles de la cellule à vide, celle-ci empêchant de faire des mesures in-situ. La description de ces mesures et de leur traitement sont référencées dans la thèse de Jérémie Richard.
-\subsection{Intensité moyenne}
-Calcul de l'intensité moyenne le long de l'axe de propagation.
-\subsection{Corrélation transverse}
+
+\subsection{Extension transverse du champ de speckle le long le l'axe optique}
+Afin de connaître l'extension spatiale du champ de speckle, il nous faut dans un premier temps calculer l'amplitude rayonnée. Appliquons l'approximation paraxiale au principe de Huygens-Fresnel:
+\begin{align}
+E(x,y,d)&\propto \int{\mathrm{d}x_0 \mathrm{d}y_0 \: E_0(x_0,y_0) \: t_{\mathrm{diff}}(x_0,y_0) \: \exp{\left( -ik\frac{x_0^2+y_0^2}{2f} \right) } \: \exp{ \left( ik\frac{(x-x_0)^2+(y-y_0)^2}{2d} \right) }} \\
+&\propto \int{\mathrm{d}x_0 \mathrm{d}y_0 \: E_0(x_0,y_0) \: t_{\mathrm{diff}}(x_0,y_0) \: \exp{\left( ik\frac{x_0^2+y_0^2}{2d_{\mathrm{eff}}} \right) } \: \exp{\left( -ik \frac{xx_0+yy_0}{d} \right) }}
+\end{align}
+avec $1/d_{\mathrm{eff}}=1/d-1/f$. Le profil d'intensité moyenne est donné par la fonction de corrélation en amplitude, évaluée aux deux mêmes points:
+\begin{equation}
+\overline{I}(x,y,d)=\overline{E(x,y,d)E^*(x,y,d)}
+\end{equation}
+On peut alors montrer que l'intensité moyenne est issue de la convolution de deux termes:
+\begin{equation}
+\overline{I}(x,y,d)\propto \left[ I_0(\frac{d_{\mathrm{eff}}}{d}x_0,\frac{d_{\mathrm{eff}}}{d}y_0) \ast \widetilde{C_{\mathrm{diff}}}(kx_0/d,ky_0/d) \right] (x,y)
+\end{equation}
+Explicitons la physique qui se trouve derrière cette formule. Pour cela, discutons des deux termes de la convolution. 
+
+Le premier terme n'est autre que l'intensité incidente sur le diffuseur, redimensionnée par l'effet de la lentille. En effet, le changement d'échelle par $d/d_{\mathrm{eff}}=\left| d-f \right| /f$ montre qu'au cours de la propagation, la taille du faisceau en l'absence du diffuseur diminue jusqu'au plan de focalisation ($d=f$), puis augmente indéfiniment. Le caractère linéaire de cette loi d'échelle se comprend aisément dans le cadre de l'optique géométrique: le faisceau se focalise dans le plan $z=f$, où tous les rayons lumineux se croisent puis s'écartent. Il s'agit du terme prépondérant dans les régions éloignées du plan focal.
+
+Le second terme traduit la diffraction des différents grains du diffuseur. Ces grains ont une taille typique $r_{\mathrm{diff}}$ et vont donc diffracter selon un angle $\theta_{\mathrm{diff}}=\lambda/r_{\mathrm{diff}}$. Cela va donc se traduire par une taille transverse $w_{\mathrm{diff}}=\theta_{\mathrm{diff}} d$, qui augmente linéraire avec la distance $d$. Il s'agit du terme prépondérant aux alentours du plan de Fourier. 
+
+On a vu en section \ref{sec:propriete_diffuseur} que la fonction de corrélation $C_{\mathrm{diff}}$ est en bonne approximation une gaussienne. En supposant un éclairement incident gaussien (on néglige l'effet du diaphragme), 
+
+\subsection{Longueur de corrélation transverse le long de l'axe optique}
 Calcul de la corrélation transverse aux alentours du plan de Fourier, forme gaussienne bien reproduite car la pupille ne coupe que quelques \% de la lumière du faisceau laser gaussien incident: la TF d'une gaussienne faiblement tronquée est une gaussienne correcte.
 
 \subsection{Corrélation longitudinale}
-Modélisation en tenant compte des effets non-paraxiaux pour vraiment reproduire la corrélation longitudinale. Calculs lourds numériquement et théoriquement, donc on met en place un modèle paraxial à ON effective.
+Calculs de la corrélation longitudinale. Formule de la thèse de Fred redémontrée en annexe. Application à un éclairement gaussien, et un éclairement homogène tronqué. Réalité entre les deux, donc la fonction de corrélaiton réelle est quelque part entre une lorentzienne et un sinus cardinal. C'est pas parfait partout, alors modélisation en tenant compte des effets non-paraxiaux pour vraiment reproduire la corrélation longitudinale. Calculs lourds numériquement et théoriquement, donc on met en place un modèle paraxial à ON effective. Avecun facteur de scaling sur la taille du faisceau incident et sur la pupille, on arrive à reproduire de manière convenable la corrélation longitudinale. Avantage: ça reste paraxial donc on peut en tirer des grandeurs. 
 
 \section{Propriétés du potentiel de type speckle}
 \subsection{Propriétés du potentiel}

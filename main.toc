@@ -41,56 +41,56 @@
 \contentsline {chapter}{\numberline {4}Propriétés d'un désordre de type speckle}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Génération d'un champ de speckle}{17}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Propriétés du diffuseur}{18}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Statistiques de l'intensité d'un speckle}{19}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Statistiques de l'intensité d'un speckle}{20}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Implémentation expérimentale}{20}{subsection.4.1.3}%
 \contentsline {section}{\numberline {4.2}Propriétés spatiales d'un champ de speckle}{21}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Intensité moyenne}{21}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Corrélation transverse}{22}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Corrélation longitudinale}{22}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Propriétés du potentiel de type speckle}{22}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Propriétés du potentiel}{22}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Possibilité d'un potentiel dépendant de l'état interne}{22}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Potentiel composé d'un speckle bichromatique}{22}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}S'éloigner de résonance}{22}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Étude de la similitude de deux speckles}{22}{subsection.4.4.2}%
-\contentsline {part}{\@mypartnumtocformat {III}{Temps de diffusion élastique}}{23}{part.3}%
-\contentsline {chapter}{\numberline {5}Temps de diffusion élastique}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Approximation de Born}{25}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Règle d'or de Fermi}{25}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Régimes de diffusion}{25}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Mesure du temps de diffusion élastique}{25}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Procédure expérimentale}{25}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Extraction du temps de diffusion élastique}{25}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Calibration de l'amplitude du désordre}{25}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Comportement du temps de diffusion élastique}{25}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Régime de Born}{25}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Déviations au régime de Born}{25}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Départ quadratique}{25}{subsection.5.3.3}%
-\contentsline {chapter}{\numberline {6}Approche spectrale}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Temps de diffusion élastique et fonctions spectrales}{27}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Généralités sur la fonction spectrale}{27}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Approximation de Born: premier ordre}{27}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Approximation de Born: second ordre}{27}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Approximation de Born auto-consistante}{27}{subsection.6.1.4}%
-\contentsline {section}{\numberline {6.2}Temps de diffusion élastique et fonctions spectrales mesurées pour un désordre de type speckle}{27}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Limite de l'approche auto-consistante pour un désordre de type speckle}{27}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Mesure des fonctions spectrales}{27}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}{27}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {4.2.1}Extension transverse du champ de speckle le long le l'axe optique}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Longueur de corrélation transverse le long de l'axe optique}{22}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Corrélation longitudinale}{23}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Propriétés du potentiel de type speckle}{23}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Propriétés du potentiel}{23}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Possibilité d'un potentiel dépendant de l'état interne}{23}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Potentiel composé d'un speckle bichromatique}{23}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}S'éloigner de résonance}{23}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Étude de la similitude de deux speckles}{23}{subsection.4.4.2}%
+\contentsline {part}{\@mypartnumtocformat {III}{Temps de diffusion élastique}}{25}{part.3}%
+\contentsline {chapter}{\numberline {5}Temps de diffusion élastique}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Approximation de Born}{27}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Règle d'or de Fermi}{27}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Régimes de diffusion}{27}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Mesure du temps de diffusion élastique}{27}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Procédure expérimentale}{27}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Extraction du temps de diffusion élastique}{27}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Calibration de l'amplitude du désordre}{27}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Comportement du temps de diffusion élastique}{27}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Régime de Born}{27}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Déviations au régime de Born}{27}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Départ quadratique}{27}{subsection.5.3.3}%
+\contentsline {chapter}{\numberline {6}Approche spectrale}{29}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Temps de diffusion élastique et fonctions spectrales}{29}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Généralités sur la fonction spectrale}{29}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Approximation de Born: premier ordre}{29}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Approximation de Born: second ordre}{29}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Approximation de Born auto-consistante}{29}{subsection.6.1.4}%
+\contentsline {section}{\numberline {6.2}Temps de diffusion élastique et fonctions spectrales mesurées pour un désordre de type speckle}{29}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Limite de l'approche auto-consistante pour un désordre de type speckle}{29}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Mesure des fonctions spectrales}{29}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}{29}{subsection.6.2.3}%
 \vspace \bigskipamount 
-\contentsline {chapter}{Conclusion et perspectives}{29}{chapter*.7}%
+\contentsline {chapter}{Conclusion et perspectives}{31}{chapter*.7}%
 \vspace \bigskipamount 
-\contentsline {part}{\@mypartnumtocformat {IV}{Annexes}}{31}{part.4}%
-\contentsline {chapter}{\numberline {A}Calculs de champs de tavelures}{33}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Amplitude rayonnée}{33}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Fonction de corrélation}{34}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Calcul général}{34}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Expression de l'extension du champ de tavelures selon l'axe optique}{34}{subsection.A.2.2}%
-\contentsline {section}{\numberline {A.3}Corrélations pour des speckles monochromatiques et bichromatiques}{34}{section.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Corrélation transverse d'un unique speckle selon l'axe optique}{34}{subsection.A.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}Corrélation longitudinale d'un unique speckle autour du plan de Fourier}{35}{subsection.A.3.2}%
-\contentsline {subsection}{\numberline {A.3.3}Corrélation transverse d'un speckle bichromatique dans le plan de Fourier}{35}{subsection.A.3.3}%
-\contentsline {subsection}{\numberline {A.3.4}Corrélation longitudinale d'un speckle bichromatique autour du plan de Fourier}{36}{subsection.A.3.4}%
-\contentsline {chapter}{\numberline {B}Calcul du temps de diffusion élastique par le développement de Born}{37}{appendix.B}%
+\contentsline {part}{\@mypartnumtocformat {IV}{Annexes}}{33}{part.4}%
+\contentsline {chapter}{\numberline {A}Calculs de champs de tavelures}{35}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Amplitude rayonnée}{35}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Fonction de corrélation}{36}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Calcul général}{36}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Expression de l'extension transverse du champ de tavelures le long de l'axe optique}{36}{subsection.A.2.2}%
+\contentsline {section}{\numberline {A.3}Corrélations pour des speckles monochromatiques et bichromatiques}{36}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Corrélation transverse d'un unique speckle le long de l'axe optique}{36}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Corrélation longitudinale d'un unique speckle autour du plan de Fourier}{37}{subsection.A.3.2}%
+\contentsline {subsection}{\numberline {A.3.3}Corrélation transverse d'un speckle bichromatique dans le plan de Fourier}{37}{subsection.A.3.3}%
+\contentsline {subsection}{\numberline {A.3.4}Corrélation longitudinale d'un speckle bichromatique autour du plan de Fourier}{38}{subsection.A.3.4}%
+\contentsline {chapter}{\numberline {B}Calcul du temps de diffusion élastique par le développement de Born}{39}{appendix.B}%
 \vspace \bigskipamount 
-\contentsline {chapter}{Bibliographie}{37}{appendix.B}%
+\contentsline {chapter}{Bibliographie}{39}{appendix.B}%
 \contentsfinish 
