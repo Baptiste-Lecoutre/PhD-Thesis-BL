@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  25 MAR 2020 08:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  25 MAR 2020 10:37
 entering extended mode
 **./main.tex
 (main.tex
@@ -1471,33 +1471,48 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [12] (Chapters/BEC_manip.tex
 Chapitre 2.
-) (Chapters/Modif_exp.tex [13
+[13
 
-] [14
+]
+<Fig/BEC_manip/stat_bose.pdf, id=385, 403.5041pt x 116.06998pt>
+File: Fig/BEC_manip/stat_bose.pdf Graphic file (type pdf)
+<use Fig/BEC_manip/stat_bose.pdf>
+Package pdftex.def Info: Fig/BEC_manip/stat_bose.pdf  used on input line 27.
+(pdftex.def)             Requested size: 426.79135pt x 122.7679pt.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 34.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+
+
+Package natbib Warning: Citation `diu1989elements' on page 14 undefined on inpu
+t line 34.
+
+) (Chapters/Modif_exp.tex [14 <./Fig/BEC_manip/stat_bose.pdf>] [15] [16
 
 ]
 Chapitre 3.
-) (Chapters/Speckle.tex [15] [16
+) (Chapters/Speckle.tex [17] [18
 
 ]
 Chapitre 4.
-<Fig/Speckle/speckle_pattern.pdf, id=392, 404.94328pt x 187.88626pt>
+<Fig/Speckle/speckle_pattern.pdf, id=769, 404.94328pt x 187.88626pt>
 File: Fig/Speckle/speckle_pattern.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_pattern.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 20
 .
 (pdftex.def)             Requested size: 404.94228pt x 187.88579pt.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-[17] [18 <./Fig/Speckle/speckle_pattern.pdf>]
-<Fig/Speckle/diffus_prop.pdf, id=484, 300.06396pt x 226.78568pt>
+[19] [20 <./Fig/Speckle/speckle_pattern.pdf>]
+<Fig/Speckle/diffus_prop.pdf, id=854, 300.06396pt x 226.78568pt>
 File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
 <use Fig/Speckle/diffus_prop.pdf>
 Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 60.
 (pdftex.def)             Requested size: 300.06323pt x 226.78511pt.
- [19 <./Fig/Speckle/diffus_prop.pdf>]
-<Fig/Speckle/random_walk_speckle.pdf, id=591, 208.17155pt x 207.50287pt>
+ [21 <./Fig/Speckle/diffus_prop.pdf>]
+<Fig/Speckle/random_walk_speckle.pdf, id=960, 208.17155pt x 207.50287pt>
 File: Fig/Speckle/random_walk_speckle.pdf Graphic file (type pdf)
 <use Fig/Speckle/random_walk_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/random_walk_speckle.pdf  used on input lin
@@ -1507,19 +1522,19 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
 18.
  ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [20 <./Fig/Speckle/random_walk_speckle.pdf>]
-<Fig/Speckle/montage_diffuseur.pdf, id=620, 489.34206pt x 294.36562pt>
+) [22 <./Fig/Speckle/random_walk_speckle.pdf>]
+<Fig/Speckle/montage_diffuseur.pdf, id=989, 489.34206pt x 294.36562pt>
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
 122.
 (pdftex.def)             Requested size: 342.53711pt x 206.05452pt.
- [21 <./Fig/Speckle/montage_diffuseur.pdf>]
+ [23 <./Fig/Speckle/montage_diffuseur.pdf>]
 Overfull \hbox (8.747pt too wide) detected at line 140
 []
  []
 
-[22]) [23] [24
+[24]) [25] [26
 
 ]
 
@@ -1530,17 +1545,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\thepart' on input line 122.
 
-(main.ptc) [25] [26] (Chapters/Taus_PRL.tex
+(main.ptc) [27] [28] (Chapters/Taus_PRL.tex
 Chapitre 5.
-) (Chapters/TauS_NJP.tex [27
+) (Chapters/TauS_NJP.tex [29
 
-] [28
+] [30
 
 ]
 Chapitre 6.
-) (Chapters/Conclusion.tex [29] [30
+) (Chapters/Conclusion.tex [31] [32
 
-]) [31] [32
+]) [33] [34
 
 ]
 
@@ -1551,22 +1566,25 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\thepart' on input line 131.
 
-(main.ptc) [33] [34] (Appendices/Anex_speckle.tex
+(main.ptc) [35] [36] (Appendices/Anex_speckle.tex
 Annexe A.
 
 Underfull \vbox (badness 2418) has occurred while \output is active []
 
- [35
+ [37
 
 ]
-[36] [37]) (Appendices/Anex_Born.tex [38]
+[38] [39]) (Appendices/Anex_Born.tex [40]
 Annexe B.
 )
 No file main.bbl.
+
+Package natbib Warning: There were undefined citations.
+
 \tf@ptc=\write6
 \openout6 = `main.ptc'.
 
-[39
+[41
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
@@ -1577,11 +1595,11 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 143.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 29594 strings out of 480934
- 562659 string characters out of 2899917
- 1103755 words of memory out of 3000000
- 44456 multiletter control sequences out of 15000+200000
- 675965 words of font info for 191 fonts, out of 3000000 for 9000
+ 29648 strings out of 480934
+ 563503 string characters out of 2899917
+ 1103833 words of memory out of 3000000
+ 44485 multiletter control sequences out of 15000+200000
+ 687579 words of font info for 207 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,62p,1632b,1334s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
@@ -1597,21 +1615,29 @@ ype1/public/lm/lmbx8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/lecou/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/lecou/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/lecou/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/l
-ecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Use
-rs/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/
-Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (39 pages, 647062 bytes).
+KTeX 2.9/fonts/type1/public/lm/lmmi5.pfb><C:/Users/lecou/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/lecou/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/lecou/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr5.pfb><C:/Users/lecou/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/leco
+u/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/le
+cou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/
+lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Us
+ers/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C
+:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.
+pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lms
+y10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
+/lmsy6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmsy7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmsy8.pfb>
+Output written on main.pdf (41 pages, 813569 bytes).
 PDF statistics:
- 1008 PDF objects out of 1200 (max. 8388607)
- 186 named destinations out of 1000 (max. 500000)
- 51022 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1402 PDF objects out of 1440 (max. 8388607)
+ 193 named destinations out of 1000 (max. 500000)
+ 55635 words of extra memory for PDF output out of 61914 (max. 10000000)
 

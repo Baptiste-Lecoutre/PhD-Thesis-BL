@@ -12,9 +12,34 @@ Partie précédente = introduction à la physique de cette thèse: propagation d
 Dans ce chapitre, nous nous attacherons à décrire un condensat de Bose-Einstein et ses principales propriétés, les outils dont nous disposons pour manipuler les atomes, et enfin la manière dont ces outils sont implémentés sur notre expérience.
 
 \section{Condensation de Bose-Einstein}
-Commençons par décrire ce qu'est un condensat de Bose-Einstein.
+Commençons par décrire ce qu'est un condensat de Bose-Einstein. Le phénomène de condensation a été prédit par Albert Einstein dans les années 1920 en s'appuyant sur les travaux de Satyendranath Bose traitant des statistiques quantiques pour des particules plus tard appelées \emph{Bosons}. Il a cependant fallu attendre les années 1960 et le développement des premiers lasers pour voir émerger les premières techniques de manipulation d'atomes. La mise au point de telles technologies a d'ailleurs valu le prix Nobel à ses principaux architectes Claude Cohen-Tannoudji, Steven Chu et William D. Phillips en 1997. Enfin, le premier condensat de Bose-Einstein gazeux de ${}^{87}$Rb a été obtenu par l'équipe de Eric Cornell et Carl Wieman, rapidement suivi par un condensat de ${}^{23}$Na obtenu par Wolfgang Ketterle. Ces travaux ont été récompensés par le prix Nobel de 2001.
+
 \subsection{Statistique de Bose-Einstein}
+Le phénomène de condensation de Bose-Einstein trouve son origine dans la statistique de Bose-Einstein. Celle-ci se différencie de la statistique classique de Boltzmann dans le formalisme grand-canonique donnée par:
+\begin{equation}
+N_n=g_n \exp{\left( -(E_n-\mu)/k_{\mathrm{B}}T \right)}
+\end{equation}
+pour un gaz de $N$ particules, avec $N_n$ le nombre moyen d'atomes présents dans l'état d'énergie $E_n$ et de dégénérescence $g_n$, $\mu$ le potentiel chimique, $T$ la température et $k_{\mathrm{B}}$ la constante de Boltzmann. L'origine de cette différence provient de l'indiscernabilité des particules: dans le cadre de la physique classique, les particules identiques sont discernables. Il est possible "d'étiqueter" les particules et de suivre leurs mouvements individuels grâce au déterminisme des lois de la physique classique.
+Dans le cadre de la mécanique quantique, une telle approche n'est pas possible car les particules sont décrites par des fonctions, étalées dans l'espace. Lors de collisions de particules identiques, il n'est pas possible de déterminer les trajectoires suivies par les particules. L'indiscernabilité des particules dans le cadre de la mécanique quantique est donc essentielle.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/BEC_manip/stat_bose.pdf}
+\caption{Effet de l'indiscerbabilité des particules}
+\label{fig:stat_bose}
+\end{figure}
+
+Considérons alors le cas simple de la répartition de deux particules sur deux niveaux d'énergie. Dans le cadre de la physique classique, il est possible d'attribuer un numéro à chaque particule, et il on peut placer chaque particule dans n'importe quel niveau d'énergie. Il existe alors quatre configurations que l'on supposera équiprobables, chacune de probabilité $p=1/4$ (voir figure \ref{fig:stat_bose}a). L'approche quantique, dans laquelle il n'est pas possible de discerner les particules, restreint le nombre de possibilités à trois et donc la probabilité de chacune des configuration est alors de $p=1/3$ (voir figure \ref{fig:stat_bose}b). Calculons maintenant la probabilité que deux particules soient dans le même état. En physique classique, cette probabilité est de $p=2/4=1/2$, tandis qu'en mécanique quantique, celle-ci est $p=2/3$. On s'attend alors à ce que l'indiscernabilité des particules en mécanique quantique modifie la statistique de Boltzmann en favorisant l'agrégation de particules dans le même état \footnote{Ce raisonnement est valable pour des particules bosoniques, qui peuvent se retrouver dans le même état quantique. Pour des particules fermioniques, qui ne peuvent pas se retrouver dans le même état quantique, les statistiques en sont donc profondément changées. En guise d'illustration, la seule configuration possible de la figure \ref{fig:stat_bose}b pour des fermions est la seconde configuration.}.
+
+Il est ainsi possible de montrer que pour un gaz de $N$ bosons identiques, le nombre moyen de particules est donné par la distribution de Bose-Einstein \footnote{Pour un gaz de $N$ fermions identiques, le nombre moyen de particules est donné par la distribution de Fermi-Dirac $ N_n=\frac{g_n}{\exp{\left( (E_n-\mu)/k_{\mathrm{B}}T\right)}+1}$.}:\citep{diu1989elements}
+\begin{equation}
+N_n=\frac{g_n}{\exp{\left( (E_n-\mu)/k_{\mathrm{B}}T \right)}-1}
+\end{equation}
+
+
 \subsection{Propriétés d'un condensat de Bose-Einstein}
+Gross-Pitaievskii, Thomas-Fermi, toutes les quantités en particulier le potentiel chimique, etc
+Citer quelques travaux d'interférométrie et/ou de diffraction de condensats pour montrer la cohérence d'un condensat.
 
 \section{Processus d'interaction lumière-matière} 
 \subsection{Potentiel dipolaire}
