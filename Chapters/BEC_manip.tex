@@ -12,23 +12,15 @@ Partie précédente = introduction à la physique de cette thèse: propagation d
 Dans ce chapitre, nous nous attacherons à décrire un condensat de Bose-Einstein et ses principales propriétés, les outils dont nous disposons pour manipuler les atomes, et enfin la manière dont ces outils sont implémentés sur notre expérience.
 
 \section{Condensation de Bose-Einstein}
-Commençons par décrire ce qu'est un condensat de Bose-Einstein. Le phénomène de condensation a été prédit par Albert Einstein dans les années 1920 en s'appuyant sur les travaux de Satyendranath Bose traitant des statistiques quantiques pour des particules plus tard appelées \emph{bosons}. Il a cependant fallu attendre les années 1960 et le développement des premiers lasers pour voir émerger les premières techniques de manipulation d'atomes. La mise au point de telles technologies a d'ailleurs valu le prix Nobel à ses principaux architectes Claude Cohen-Tannoudji, Steven Chu et William D. Phillips en 1997. Enfin, le premier condensat de Bose-Einstein gazeux de ${}^{87}$Rb a été obtenu par l'équipe de Eric Cornell et Carl Wieman, rapidement suivi par un condensat de ${}^{23}$Na obtenu par Wolfgang Ketterle. Ces travaux ont été récompensés par le prix Nobel de 2001.
+Commençons par décrire ce qu'est un condensat de Bose-Einstein. Le phénomène de condensation a été prédit par Albert Einstein dans les années 1920 en s'appuyant sur les travaux de Satyendranath Bose traitant des statistiques quantiques pour des particules plus tard appelées \emph{bosons}. Il a cependant fallu attendre les années 1960 et le développement des premiers lasers pour voir émerger les premières techniques de manipulation d'atomes. La mise au point de telles technologies a d'ailleurs valu le prix Nobel à ses principaux architectes Claude Cohen-Tannoudji, Steven Chu et William D. Phillips en 1997. Enfin, le premier condensat de Bose-Einstein gazeux de ${}^{87}$Rb a été obtenu par l'équipe de Eric Cornell et Carl Wieman \citep{anderson1995observation}, rapidement suivi par un condensat de ${}^{23}$Na obtenu par Wolfgang Ketterle \citep{davis1995bose}. Ces travaux ont été récompensés par le prix Nobel de 2001.
 
 \subsection{Statistique de Bose-Einstein}
 Le phénomène de condensation de Bose-Einstein trouve son origine dans la statistique de Bose-Einstein. Celle-ci se différencie de la statistique classique de Boltzmann dans le formalisme grand-canonique donnée par:
 \begin{equation}
-N_n=g_n \exp{\left( -(E_n-\mu)/k_{\mathrm{B}}T \right)}
+N_{\mathbf{n}}=g_{\mathbf{n}} \exp{\left( -(E_{\mathbf{n}}-\mu)/k_{\mathrm{B}}T \right)}
 \end{equation}
-pour un gaz de $N$ particules, avec $N_n$ le nombre moyen d'atomes présents dans l'état d'énergie $E_n$ et de dégénérescence $g_n$, $\mu$ le potentiel chimique, $T$ la température et $k_{\mathrm{B}}$ la constante de Boltzmann. Dans un piège harmonique
-\begin{equation}
-V(x,y,z)=\frac{1}{2}m \omega_x^2 x^2 + \frac{1}{2}m \omega_y^2 y^2 + \frac{1}{2}m \omega_z^2 z^2
-\end{equation}
-les énergies $E_n$ sont celles des états liés
-\begin{equation}
-E_n=(n_x+\frac{1}{2}) \omega_x + (n_y+\frac{1}{2}) \omega_y + (n_z+\frac{1}{2}) \omega_z
-\end{equation}
-L'origine de cette différence provient de l'indiscernabilité des particules: dans le cadre de la physique classique, les particules identiques sont discernables. Il est possible "d'étiqueter" les particules et de suivre leurs mouvements individuels grâce au déterminisme des lois de la physique classique.
-Dans le cadre de la mécanique quantique, une telle approche n'est pas possible car les particules sont décrites par des fonctions, étalées dans l'espace. Lors de collisions de particules identiques, il n'est pas possible de déterminer les trajectoires suivies par les particules. L'indiscernabilité des particules dans le cadre de la mécanique quantique est donc essentielle.
+pour un gaz de $N$ particules à l'équilibre thermique, avec $N_{\mathbf{n}}$ le nombre moyen d'atomes présents dans l'état d'énergie $E_{\mathbf{n}}$ et de dégénérescence $g_{\mathbf{n}}$, $\mu$ le potentiel chimique, $T$ la température et $k_{\mathrm{B}}$ la constante de Boltzmann. L'origine de cette différence provient de l'indiscernabilité des particules: dans le cadre de la physique classique, les particules identiques sont discernables, c'est à dire qu'il est possible "d'étiqueter" les particules et de suivre leurs mouvements individuels.
+Dans le cadre de la mécanique quantique, une telle approche n'est pas possible car les particules sont décrites par des fonctions d'onde, étalées dans l'espace. Lors de collisions de particules identiques, le recouvrement de leur fonction d'onde fait qu'il est impossible de déterminer les trajectoires suivies par les particules. L'indiscernabilité des particules dans le cadre de la mécanique quantique est donc essentielle.
 
 \begin{figure}
 \centering
@@ -37,23 +29,92 @@ Dans le cadre de la mécanique quantique, une telle approche n'est pas possible 
 \label{fig:stat_bose}
 \end{figure}
 
-Considérons alors le cas simple de la répartition de deux particules sur deux niveaux d'énergie. Dans le cadre de la physique classique, il est possible d'attribuer un numéro à chaque particule, et il on peut placer chaque particule dans n'importe quel niveau d'énergie. Il existe alors quatre configurations que l'on supposera équiprobables, chacune de probabilité $p=1/4$ (voir figure \ref{fig:stat_bose}a). L'approche quantique, dans laquelle il n'est pas possible de discerner les particules, restreint le nombre de possibilités à trois et donc la probabilité de chacune des configuration est alors de $p=1/3$ (voir figure \ref{fig:stat_bose}b). Calculons maintenant la probabilité que deux particules soient dans le même état. En physique classique, cette probabilité est de $p=2/4=1/2$, tandis qu'en mécanique quantique, celle-ci est $p=2/3$. On s'attend alors à ce que l'indiscernabilité des particules en mécanique quantique modifie la statistique de Boltzmann en favorisant l'agrégation de particules dans le même état \footnote{Ce raisonnement est valable pour des particules bosoniques, qui peuvent se retrouver dans le même état quantique. Pour des particules fermioniques, qui ne peuvent pas se retrouver dans le même état quantique, les statistiques en sont donc profondément changées. En guise d'illustration, la seule configuration possible de la figure \ref{fig:stat_bose}b pour des fermions est la seconde configuration.}.
+Considérons alors le cas simple de la répartition de deux particules sur deux niveaux d'énergie. Dans le cadre de la physique classique, il est possible d'attribuer un numéro à chaque particule, et il on peut placer chaque particule dans n'importe quel niveau d'énergie. Il existe alors quatre configurations que l'on supposera équiprobables, chacune de probabilité $p=1/4$ (voir figure \ref{fig:stat_bose}a). L'approche quantique, dans laquelle il n'est pas possible de discerner les particules, restreint le nombre de possibilités à trois et donc la probabilité de chacune des configurations est alors de $p=1/3$ (voir figure \ref{fig:stat_bose}b). Calculons maintenant la probabilité que deux particules soient dans le même état. En physique classique, cette probabilité est de $p=2/4=1/2$, tandis qu'en mécanique quantique, celle-ci est de $p=2/3$. On s'attend alors à ce que l'indiscernabilité des particules en mécanique quantique modifie la statistique de Boltzmann en favorisant l'agrégation de particules dans le même état \footnote{Ce raisonnement est valable pour des particules bosoniques, qui peuvent se retrouver dans le même état quantique. Pour des particules fermioniques, qui ne peuvent pas se retrouver dans le même état quantique, les statistiques en sont donc profondément changées. En guise d'illustration, la seule configuration possible de la figure \ref{fig:stat_bose}b pour des fermions est la seconde configuration.}.
 
-Il est ainsi possible de montrer que pour un gaz de $N$ bosons identiques, le nombre moyen de particules est donné par la distribution de Bose-Einstein \footnote{Pour un gaz de $N$ fermions identiques, le nombre moyen de particules est donné par la distribution de Fermi-Dirac $ N_n=\frac{g_n}{\exp{\left( (E_n-\mu)/k_{\mathrm{B}}T\right)}+1}$.}:\citep{diu1989elements}
+\paragraph*{Condensation de Bose-Einstein}
+Considérons alors le cas d'un gaz de $N$ bosons identiques dans un piège harmonique:
 \begin{equation}
-N_n=\frac{g_n}{\exp{\left( (E_n-\mu)/k_{\mathrm{B}}T \right)}-1}
+V(x,y,z)=\frac{1}{2}m \omega_x^2 x^2 + \frac{1}{2}m \omega_y^2 y^2 + \frac{1}{2}m \omega_z^2 z^2
+\end{equation}
+où $m$ correspond à la masse des particules, et les $\omega_i$ correspondent aux fréquences de piégeage dans chaque direction de l'espace. Les énergies $E_{\mathbf{n}}$ sont donc celles des états liés
+\begin{equation}
+E_{\mathbf{n}}=\left(n_x+\frac{1}{2}\right) \hb \omega_x + \left(n_y+\frac{1}{2}\right) \hb \omega_y + \left(n_z+\frac{1}{2}\right) \hb \omega_z \quad \text{avec}\quad \mathbf{n}=\lbrace n_x,n_y,n_z\rbrace
 \end{equation}
 
-On peut alors formuler le critère phénoménologique suivant:
+On peut alors montrer que le nombre moyen de particules est donné par la distribution de Bose-Einstein \footnote{Pour un gaz de $N$ fermions identiques, le nombre moyen de particules est donné par la distribution de Fermi-Dirac $ N_{\mathbf{n}}=\frac{g_{\mathbf{n}}}{\exp{\left( (E_{\mathbf{n}}-\mu)/k_{\mathrm{B}}T\right)}+1}$.}:\citep{diu1989elements}
+\begin{equation}
+N_{\mathbf{n}}=\frac{g_{\mathbf{n}}}{\exp{\left( (E_{\mathbf{n}}-\mu)/k_{\mathrm{B}}T \right)}-1}
+\end{equation}
+Une condition de validité de cette équation est que le potentiel chimique $\mu$ soit plus petit que l'énergie $E_{\mathbf{0}}$ du niveau de plus basse énergie, appelé niveau fondamental. Autrement, le nombre moyen de particules du niveau fondamental serait négatif (et cela impliquerait que la totalité du réservoir de particules vienne se déverser dans le niveau fondamental). Il est donc nécessaire que $\mu < E_0$. Une conséquence remarquable cette condition est que la population totale des états excités est bornée par:
+\begin{equation}
+N_e(\mu,T)=\sum_{\mathbf{n}\neq\mathbf{0}} N_{\mathbf{n}} \leq \sum_{\mathbf{n} \neq \mathbf{0}} \frac{g_{\mathbf{n}}}{\exp{\left( (E_{\mathbf{n}}-E_{\mathbf{0}})/k_{\mathrm{B}}T \right)}-1}
+\end{equation}
+Ainsi, chaque particule supplémentaire peuplera forcément l'état fondamental. On a donc ici le moyen d'accumuler un grand nombre de particules dans le même état quantique. La condensation de Bose-Einstein correspond, par définition, à cette accumulation d'un nombre macroscopique de particules dans l'état fondamental. Toutes ces particules peuplant cet état partagent alors le même état quantique. Afin d'atteindre un tel régime, il est nécessaire que les paquets d'onde des particules individuelles se recouvrent, c'est à dire que l'extension typique d'un paquet d'onde soit plus grande que la distance moyenne entre particules. L'extension typique de la fonction d'onde d'une particule peut être estimée à l'aide du principe d'incertitude de Heisenberg: $\Delta x \sim \hb / \Delta p$ avec $\Delta p \sim h/\lambda_{\mathrm{dB}}$. La grandeur $\lambda_{\mathrm{dB}}$ est homogène à une longueur et s'appelle la longueur d'onde thermique de de Broglie. Elle correspond à la taille typique d'un paquet d'onde quantique dont la largeur de la distribution en impulsion est donnée par la température. Celle-ci est donnée par \citep{diu1989elements}
+\begin{equation}
+\lambda_{\mathrm{dB}}=\sqrt{\frac{2\pi \hb^2}{m k_{\mathrm{B}}T}}
+\end{equation}
+avec m la masse de la particule, un atome de ${}^{87}$Rb dans le cas de notre expérience. La distance inter-particules dans un piège est estimée à partir de la densité de particules $d \sim n^{-1/3}$. On peut alors formuler le critère phénoménologique suivant:
 \begin{equation}
 n \lambda_{dB}^3 \geq 1
 \label{eq:critere_condensation}
 \end{equation}
-La quantité $n \lambda_{\mathrm{dB}}^3$ est appelée \emph{densité dans l'espace des phases}. Tout l'enjeu des expériences d'atomes ultrafroids est d'arriver à augmenter la densité dans l'espace des phases afin de franchir le seuil donné par l'équation \ref{eq:critere_condensation}.
+La quantité $n \lambda_{\mathrm{dB}}^3$ est appelée \emph{densité dans l'espace des phases}. Tout l'enjeu des expériences d'atomes ultrafroids est d'arriver à augmenter la densité dans l'espace des phases afin de franchir le seuil donné par l'équation \ref{eq:critere_condensation}. Cette condition peut se réécrire en terme de \emph{température critique}:
+\begin{equation}
+T_{\mathrm{C}}\sim \frac{\hb \overline{\omega}}{k_{\mathrm{B}}}N^{1/3}
+\label{eq:temperature_critique}
+\end{equation}
+où $\overline{\omega}=(\omega_x \omega_y \omega_z)^{1/3}$ est la fréquence moyenne du piège. Cette température critique est de l'ordre de quelques centaines de nano-kelvin pour les expériences typiques d'atomes ultra-froids.
 
 \subsection{Propriétés d'un condensat de Bose-Einstein}
 Gross-Pitaievskii, Thomas-Fermi, toutes les quantités en particulier le potentiel chimique, etc
 Citer quelques travaux d'interférométrie et/ou de diffraction de condensats pour montrer la cohérence d'un condensat.
+En dessous de la température critique \ref{eq:temperature_critique}, les atomes s'accumulent dans l'état fondamental du piège. Il en résulte 
+Dans ce régime, on ne peut plus négliger les interactions entre atomes. Collisions à deux corps en onde \emph{s}, interaction de contact avec $g=\frac{4 \pi \hb^2}{m}a$, et $a$ est appelée longueur de diffusion, et vaut environ 100$a_0$ pour le ${}^{87}$Rb (interactions répulsives).
+La description en champ moyen du condensat est donnée par l'équation de Gross-Pitaevskii.
+
+\begin{equation}
+i\hb \frac{\partial}{\partial t} \psi(\mathbf{r},t)=\left[-\frac{\hb^2}{2m}\Delta +V(\mathrm{r})+g\left| \psi(\mathbf{r},t) \right|^2 \right] \psi(\mathbf{r},t)
+\end{equation}
+$\psi(\mathbf{r})$ est alors considérée comme la fonction d'onde macroscopique du condensat et est normalisée pour donner le nombre de particules dans le condensat:
+\begin{equation}
+\int{\mathrm{d}\mathbf{r} \: \left| \psi(\mathbf{r}) \right|^2}=N_{\mathbf{0}}
+\end{equation}
+La densité est donnée par $n(\mathbf{r})= \left| \psi(\mathbf{r}) \right|^2$. 
+Le premier terme décrit l'énergie cinétique, le second le terme d'énergie potentielle provenant du piège, et le dernier décrit l'énergie d'interaction entre particules. La somme de ces énergies donne le potentiel chimique $\mu$, qui correspond à l'énergie qu'il faut fournir pour rajouter une particule supplémentaire au système de $N$ particules. C'est donné par l'équation de Gross-Pitaevskii stationnaire:
+\begin{equation}
+\left[ -\frac{\hb^2}{2m}\Delta + V(\mathbf{r}) + g\left|\psi(\mathbf{r})\right|^2 \right] \psi(\mathbf{r}) = \mu \psi(\mathbf{r})
+\end{equation}
+
+\paragraph*{Régime de Thomas-Fermi}
+Dans le régime de Thomas-Fermi, on néglige le terme d'énergie cinétique devant les autres termes. 
+Dans ce cas, le profil de densité s'écrit
+\begin{equation}
+n(\mathbf{r})=\left\{
+					\begin{array}{ll}
+						(\mu-V(\mathbf{r}))/g &\quad \text{lorsque} \quad \mu>V(\mathbf{r})\\
+						0 &\quad \text{sinon}
+					\end{array} 
+				\right.
+\end{equation}
+soit
+\begin{equation}
+n(\mathbf{r})=\left\{
+					\begin{array}{ll}
+						\mu/g-\sum_{i=x,y,z}\frac{m\omega_i^2}{2g}r_i^2 &\quad \text{lorsque} \quad \mu>V(\mathbf{r})\\
+						0 &\quad \text{sinon}
+					\end{array} 
+				\right.
+\end{equation}
+Le profil de densité est donc une parabole inversée de rayons
+\begin{equation}
+r_{\mathrm{TF},i}=\sqrt{\frac{2\mu}{m\omega_i^2}}
+\end{equation}
+
+le potentiel chimique est donné par 
+\begin{equation}
+\mu=\frac{1}{2} \left( 15a N_{\mathbf{0}} \hb^2 \overline{\omega}^3 \right) ^{2/5} m^{1/5}
+\end{equation}
+et vaut environ $\mu/h\approx40$Hz sur notre manip.
 
 \section{Processus d'interaction lumière-matière} 
 \subsection{Potentiel dipolaire}
