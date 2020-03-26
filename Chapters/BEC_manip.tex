@@ -35,6 +35,7 @@ Considérons alors le cas simple de la répartition de deux particules sur deux 
 Considérons alors le cas d'un gaz de $N$ bosons identiques dans un piège harmonique:
 \begin{equation}
 V(x,y,z)=\frac{1}{2}m \omega_x^2 x^2 + \frac{1}{2}m \omega_y^2 y^2 + \frac{1}{2}m \omega_z^2 z^2
+\label{eq:piege_harmonique}
 \end{equation}
 où $m$ correspond à la masse des particules, et les $\omega_i$ correspondent aux fréquences de piégeage dans chaque direction de l'espace. Les énergies $E_{\mathbf{n}}$ sont donc celles des états liés
 \begin{equation}
@@ -55,7 +56,7 @@ Ainsi, chaque particule supplémentaire peuplera forcément l'état fondamental.
 \end{equation}
 avec m la masse de la particule, un atome de ${}^{87}$Rb dans le cas de notre expérience. La distance inter-particules dans un piège est estimée à partir de la densité de particules $d \sim n^{-1/3}$. On peut alors formuler le critère phénoménologique suivant:
 \begin{equation}
-n \lambda_{dB}^3 \geqslant 1
+n \lambda_{dB}^3 \gtrsim 1
 \label{eq:critere_condensation}
 \end{equation}
 La quantité $n \lambda_{\mathrm{dB}}^3$ est appelée \emph{densité dans l'espace des phases}. Tout l'enjeu des expériences d'atomes ultrafroids est d'arriver à augmenter la densité dans l'espace des phases afin de franchir le seuil donné par l'équation \ref{eq:critere_condensation}. Cette condition peut se réécrire en terme de \emph{température critique}:
@@ -67,28 +68,25 @@ où $\overline{\omega}=(\omega_x \omega_y \omega_z)^{1/3}$ est la fréquence moy
 
 
 \subsection{Propriétés d'un condensat de Bose-Einstein}
-Gross-Pitaevskii, Thomas-Fermi, toutes les quantités en particulier le potentiel chimique, etc
-Citer quelques travaux d'interférométrie et/ou de diffraction de condensats pour montrer la cohérence d'un condensat.
+En dessous de la température critique \ref{eq:temperature_critique}, les atomes s'accumulent dans l'état fondamental du piège. Il en résulte une forte augmentation de la densité, si bien qu'on ne peut plus négliger les interactions entre particules. Dans le cas d'un gaz suffisamment dilué, ce que l'on considèrera dans la suite, les interactions entre atomes peuvent être traitées comme des collisions à basse énergie, c'est à dire des collisions uniquement dans l'onde \emph{s}. Le potentiel d'interaction est alors celui de contact, donné par $U(\mathbf{r}_1-\mathbf{r}_2)=g\delta(\mathbf{r}_1-\mathbf{r}_2)$. Le paramètre $g$, qui caractérise la force des interactions, est donné par $g=\frac{4 \pi \hb^2}{m}a_{\mathrm{s}}$, avec $a_{\mathrm{s}}$ la longueur de diffusion, et ne dépend que de ce paramètre. Ce régime dilué est atteint lorsque $na_{\mathrm{s}}^3\ll 1$\footnote{Dans ce régime, la distance inter-atomique est plus grande que la portée des interactions. Ainsi, les atomes ne voient pas le détail du potentiel d'interaction avec leur voisin, et donc il est possible d'approximer ce potentiel par un potentiel de contact.}. Pour le ${}^{87}$Rb, cette longueur de diffusion vaut 100$a_{\mathrm{0}}>0$, avec $a_{\mathrm{0}}$ le rayon de Bohr. La longueur de diffusion étant positive, les interactions sont donc répulsives pour notre atome.
 
-En dessous de la température critique \ref{eq:temperature_critique}, les atomes s'accumulent dans l'état fondamental du piège. Il en résulte une forte augmentation de la densité, si bien qu'on ne peut plus négliger les interactions entre particules. Dans le cas d'un gaz suffisamment dilué, ce que l'on considèrera dans la suite, les interactions entre atomes peuvent être traitées comme des collisions à basse énergie, c'est à dire des collisions uniquement dans l'onde \emph{s}. Le potentiel d'interaction est alors celui de contact, donné par $U(\mathbf{r}_1-\mathbf{r}_2)=g\delta(\mathbf{r}_1-\mathbf{r}_2)$. Le paramètre $g$, qui caractérise la force des interactions, est donné par $g=\frac{4 \pi \hb^2}{m}a_{\mathrm{s}}$, avec $a_{\mathrm{s}}$ la longueur de diffusion, et ne dépend que de ce paramètre. Ce régime dilué est atteint lorsque $na_{\mathrm{s}}^3\leqslant 1$\footnote{Dans ce régime, la distance inter-atomique est plus grande que la portée des interactions. Ainsi, les atomes ne voient pas le détail du potentiel d'interaction avec leur voisin, et donc il est possible d'approximer ce potentiel par un potentiel de contact.}. Pour le ${}^{87}$Rb, cette longueur de diffusion vaut 100$a_{\mathrm{0}}$, avec $a_{\mathrm{0}}$ le rayon de Bohr. Pour notre atome, les interactions sont donc répulsives.
-
-La description en champ moyen du condensat est donnée par l'équation de Gross-Pitaevskii.
-
+On peut écrire l'équation de Schrödinger pour l'état fondamental en tenant compte de ce terme d'interaction entre particules. La description en champ moyen du condensat est alors donnée par l'équation de Gross-Pitaevskii (aussi connue sous le nom d'\emph{équation de Schrödinger non-linéaire}):
 \begin{equation}
 i\hb \frac{\partial}{\partial t} \psi(\mathbf{r},t)=\left[-\frac{\hb^2}{2m}\Delta +V(\mathrm{r})+g\left| \psi(\mathbf{r},t) \right|^2 \right] \psi(\mathbf{r},t)
+\label{eq:gross_pitaevskii}
 \end{equation}
-où $\psi(\mathbf{r})$ est la fonction d'onde macroscopique du condensat. Elle est normalisée pour donner le nombre de particules dans le condensat:
+où $\psi(\mathbf{r},t)$ est la fonction d'onde macroscopique du condensat. La densité d'atomes est donnée par $n(\mathbf{r})= \left| \psi(\mathbf{r}) \right|^2$. Ainsi, la fonction d'onde du condensat $\psi(\mathbf{r},t)$ est normalisée pour donner le nombre de particules dans le condensat:
 \begin{equation}
-\int{\mathrm{d}\mathbf{r} \: \left| \psi(\mathbf{r}) \right|^2}=N_{\mathbf{0}}
+\int{\mathrm{d}\mathbf{r} \: \left| \psi(\mathbf{r},t) \right|^2}=N_{\mathbf{0}}
 \end{equation}
-La densité est donnée par $n(\mathbf{r})= \left| \psi(\mathbf{r}) \right|^2$. 
-Le premier terme décrit l'énergie cinétique, le second le terme d'énergie potentielle provenant du piège, et le dernier décrit l'énergie d'interaction entre particules. La somme de ces énergies donne le potentiel chimique $\mu$, qui correspond à l'énergie qu'il faut fournir pour rajouter une particule supplémentaire au système de $N$ particules. C'est donné par l'équation de Gross-Pitaevskii stationnaire:
+Dans le régime stationnaire, on peut écrire $\psi(\mathbf{r},t)=\psi_0(\mathbf{r}) e^{i\mu t/\hb}$ avec $\mu$ le potentiel chimique du condensat, et l'injecter dans l'équation \ref{eq:gross_pitaevskii}. On obtient l'équation de Gross-Pitaevskii stationnaire:
 \begin{equation}
-\left[ -\frac{\hb^2}{2m}\Delta + V(\mathbf{r}) + g\left|\psi(\mathbf{r})\right|^2 \right] \psi(\mathbf{r}) = \mu \psi(\mathbf{r})
+\left[ -\frac{\hb^2}{2m}\Delta + V(\mathbf{r}) + g\left|\phi_0(\mathbf{r})\right|^2 \right] \phi_0((\mathbf{r}) = \mu \phi_0(\mathbf{r})
 \end{equation}
+Le premier terme de gauche décrit l'énergie cinétique, le second le terme d'énergie potentielle provenant du piège, et le dernier décrit l'énergie d'interaction entre particules, proportionnelle à la densité locale $n(\mathbf{r})=\left| \psi(\mathbf{r})\right|^2=\left| \phi_0(\mathbf{r}) \right|^2$. La somme de ces énergies donne le potentiel chimique $\mu$, qui correspond à l'énergie qu'il faut fournir pour rajouter une particule supplémentaire au système de $N$ particules.
 
 \paragraph*{Régime de Thomas-Fermi}
-Dans le régime de Thomas-Fermi, on néglige le terme d'énergie cinétique devant les autres termes. 
+Considérons le cas d'un condensat comportant un grand nombre de particules $N_0$. L'énergie cinétique totale du condensat varie avec $N_0$ de manière linéaire: $\mean{E_{\mathrm{k}}}\propto N_0$. L'énergie totale d'interaction varie quant à elle en $E_{\mathrm{int}}\propto N_0^2$. Pour un nombre suffisamment grand de particules, il devient possible de négliger le terme d'énergie cinétique dans l'équation de Gross-Pitaevskii stationnaire: il s'agit du régime de Thomas-Fermi.
 Dans ce cas, le profil de densité s'écrit
 \begin{equation}
 n(\mathbf{r})=\left\{
@@ -98,7 +96,7 @@ n(\mathbf{r})=\left\{
 					\end{array} 
 				\right.
 \end{equation}
-soit
+et en considérant le piège harmonique de l'équation \ref{eq:piege_harmonique},
 \begin{equation}
 n(\mathbf{r})=\left\{
 					\begin{array}{ll}
@@ -111,15 +109,27 @@ Le profil de densité est donc une parabole inversée de rayons
 \begin{equation}
 r_{\mathrm{TF},i}=\sqrt{\frac{2\mu}{m\omega_i^2}}
 \end{equation}
-L'énergie est donc constante sur l'ensemble du condensat, excepté dans une petite région sur les bords du condensat où la densité est faible, et donc l'énergie cinétique ne peut plus être négligée devant l'énergie d'interaction. Cette échelle de longueur s'appelle la longueur de cicatrisation, donnée par 
+Ces rayons ont été déterminés par la condition $n(\mathbf{r})=0$. Il est intéressant de noter que le potentiel effectif vu par une particule $V_{\mathrm{eff}}(\mathbf{r})=V(\mathbf{r})+gn(\mathbf{r})$ est constant sur l'ensemble du condensat:
 \begin{equation}
-\mathrm{formulehealinglength}
+V_{\mathrm{eff}}(\mathbf{r})= \left\{
+									\begin{array}{ll}
+										\mu &\quad \text{lorsque} \quad \mu>V(\mathbf{r})\\
+										V(\mathbf{r}) &\quad \text{sinon}
+									\end{array}
+							\right.
 \end{equation}
-le potentiel chimique est donné par 
+Enfin, il est possible d'obtenir une expression pour le potentiel chimique \citep{pethick2008bose}: 
 \begin{equation}
 \mu=\frac{1}{2} \left( 15a N_{\mathbf{0}} \hb^2 \overline{\omega}^3 \right) ^{2/5} m^{1/5}
 \end{equation}
-et vaut environ $\mu/h\approx40$Hz sur notre manip.
+et vaut environ $\mu/h\approx40$Hz pour notre expérience.
+
+En réalité, l'approximation de Thomas-Fermi décrit bien les zones à l'intérieur des condensats, cependant, il existe une petite région sur les bords du condensat où la densité est faible, et donc l'énergie cinétique ne peut plus être négligée devant l'énergie d'interaction. Cette échelle de longueur s'appelle la longueur de cicatrisation, donnée par 
+\begin{equation}
+\xi=\sqrt{\frac{\hb^2}{n_{\mathbf{0}} mg}}
+\end{equation}
+avec $n_{\mathbf{0}}$ la ensité moyenne du condensat. $\xi$ représente donc la longueur sur laquelle le potentiel chimique n'écrante pas le potentiel externe.
+
 
 \section{Processus d'interaction lumière-matière} 
 \subsection{Potentiel dipolaire}
