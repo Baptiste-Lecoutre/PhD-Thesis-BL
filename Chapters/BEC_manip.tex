@@ -55,7 +55,7 @@ Ainsi, chaque particule supplémentaire peuplera forcément l'état fondamental.
 \end{equation}
 avec m la masse de la particule, un atome de ${}^{87}$Rb dans le cas de notre expérience. La distance inter-particules dans un piège est estimée à partir de la densité de particules $d \sim n^{-1/3}$. On peut alors formuler le critère phénoménologique suivant:
 \begin{equation}
-n \lambda_{dB}^3 \geq 1
+n \lambda_{dB}^3 \geqslant 1
 \label{eq:critere_condensation}
 \end{equation}
 La quantité $n \lambda_{\mathrm{dB}}^3$ est appelée \emph{densité dans l'espace des phases}. Tout l'enjeu des expériences d'atomes ultrafroids est d'arriver à augmenter la densité dans l'espace des phases afin de franchir le seuil donné par l'équation \ref{eq:critere_condensation}. Cette condition peut se réécrire en terme de \emph{température critique}:
@@ -65,17 +65,19 @@ T_{\mathrm{C}}\sim \frac{\hb \overline{\omega}}{k_{\mathrm{B}}}N^{1/3}
 \end{equation}
 où $\overline{\omega}=(\omega_x \omega_y \omega_z)^{1/3}$ est la fréquence moyenne du piège. Cette température critique est de l'ordre de quelques centaines de nano-kelvin pour les expériences typiques d'atomes ultra-froids.
 
+
 \subsection{Propriétés d'un condensat de Bose-Einstein}
-Gross-Pitaievskii, Thomas-Fermi, toutes les quantités en particulier le potentiel chimique, etc
+Gross-Pitaevskii, Thomas-Fermi, toutes les quantités en particulier le potentiel chimique, etc
 Citer quelques travaux d'interférométrie et/ou de diffraction de condensats pour montrer la cohérence d'un condensat.
-En dessous de la température critique \ref{eq:temperature_critique}, les atomes s'accumulent dans l'état fondamental du piège. Il en résulte 
-Dans ce régime, on ne peut plus négliger les interactions entre atomes. Collisions à deux corps en onde \emph{s}, interaction de contact avec $g=\frac{4 \pi \hb^2}{m}a$, et $a$ est appelée longueur de diffusion, et vaut environ 100$a_0$ pour le ${}^{87}$Rb (interactions répulsives).
+
+En dessous de la température critique \ref{eq:temperature_critique}, les atomes s'accumulent dans l'état fondamental du piège. Il en résulte une forte augmentation de la densité, si bien qu'on ne peut plus négliger les interactions entre particules. Dans le cas d'un gaz suffisamment dilué, ce que l'on considèrera dans la suite, les interactions entre atomes peuvent être traitées comme des collisions à basse énergie, c'est à dire des collisions uniquement dans l'onde \emph{s}. Le potentiel d'interaction est alors celui de contact, donné par $U(\mathbf{r}_1-\mathbf{r}_2)=g\delta(\mathbf{r}_1-\mathbf{r}_2)$. Le paramètre $g$, qui caractérise la force des interactions, est donné par $g=\frac{4 \pi \hb^2}{m}a_{\mathrm{s}}$, avec $a_{\mathrm{s}}$ la longueur de diffusion, et ne dépend que de ce paramètre. Ce régime dilué est atteint lorsque $na_{\mathrm{s}}^3\leqslant 1$\footnote{Dans ce régime, la distance inter-atomique est plus grande que la portée des interactions. Ainsi, les atomes ne voient pas le détail du potentiel d'interaction avec leur voisin, et donc il est possible d'approximer ce potentiel par un potentiel de contact.}. Pour le ${}^{87}$Rb, cette longueur de diffusion vaut 100$a_{\mathrm{0}}$, avec $a_{\mathrm{0}}$ le rayon de Bohr. Pour notre atome, les interactions sont donc répulsives.
+
 La description en champ moyen du condensat est donnée par l'équation de Gross-Pitaevskii.
 
 \begin{equation}
 i\hb \frac{\partial}{\partial t} \psi(\mathbf{r},t)=\left[-\frac{\hb^2}{2m}\Delta +V(\mathrm{r})+g\left| \psi(\mathbf{r},t) \right|^2 \right] \psi(\mathbf{r},t)
 \end{equation}
-$\psi(\mathbf{r})$ est alors considérée comme la fonction d'onde macroscopique du condensat et est normalisée pour donner le nombre de particules dans le condensat:
+où $\psi(\mathbf{r})$ est la fonction d'onde macroscopique du condensat. Elle est normalisée pour donner le nombre de particules dans le condensat:
 \begin{equation}
 \int{\mathrm{d}\mathbf{r} \: \left| \psi(\mathbf{r}) \right|^2}=N_{\mathbf{0}}
 \end{equation}
