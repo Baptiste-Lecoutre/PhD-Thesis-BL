@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,5 +23,10 @@ K.~B. Davis, M.-O. Mewes, M.~R. Andrews, N.~J. van Druten, D.~S. Durfee,
 B.~Diu, B.~Roulet, C.~Guthmann, and D.~Lederer.
 \newblock \emph{El{\'e}ments de physique statistique}.
 \newblock Hermann, 1989.
+
+\bibitem[Pethick and Smith(2008)]{pethick2008bose}
+C.~J. Pethick and H.~Smith.
+\newblock \emph{Bose--Einstein condensation in dilute gases}.
+\newblock Cambridge university press, 2008.
 
 \end{thebibliography}
