@@ -144,6 +144,16 @@ Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre e
 
 La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 895nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscript, nos fréquences optiques se trouvant à 780nm. La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. 
 
+
+\subsection{Potentiel magnétique}
+\begin{equation}
+\begin{array}{lll}
+E_{F=2} &=\mu_{\mathrm{B}} g_{\mathrm{I}} m_F B + \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2} \\
+\\
+E_{F=1} &=\mu_{\mathrm{B}} g_{\mathrm{I}} m_F B - \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2}
+\end{array}
+\end{equation}
+et $\beta=(g_{\mathrm{J}}-g_{\mathrm{I}})\mu_{\mathrm{B}} B/h \Delta_{\mathrm{hf}}$
 \subsection{Potentiel dipolaire}
 \begin{equation}
 U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 \Gamma I(\mathbf{r})}{2 \omega_0^3} \left( \frac{1}{\omega - \omega_0} - \frac{1}{\omega + \omega_0} \right)
@@ -158,15 +168,7 @@ s=\frac{I/I_{\mathrm{sat}}}{1+4(\omega-\omega_0)^2/\Gamma^2}
 \begin{equation}
 I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_o^3}
 \end{equation}
-\subsection{Potentiel magnétique}
-\begin{equation}
-\begin{array}{lll}
-E_{F=2} &=\mu_{\mathrm{B}} g_{\mathrm{I}} m_F B + \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2} \\
-\\
-E_{F=1} &=\mu_{\mathrm{B}} g_{\mathrm{I}} m_F B - \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2}
-\end{array}
-\end{equation}
-et $\beta=(g_{\mathrm{J}}-g_{\mathrm{I}})\mu_{\mathrm{B}} B/h \Delta_{\mathrm{hf}}$
+
 \subsection{Couplage radio-fréquence} 
 
 \section{Description d'un cycle expérimental}
