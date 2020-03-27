@@ -142,8 +142,10 @@ Précédemment, nous avons brièvement présenté le phénomène de condensation
 \subsection{Le rubidium ${}^{87}$Rb}
 Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre expérience est le rubidium ${}^{87}$Rb, le second isotope le plus abondant après le rubidium ${}^{85}$Rb (l'abondance naturelle du ${}^{87}$Rb est de 27.8\%). Il s'agit d'un alcalin (il possède donc un seul électron de valence) avec un spin nucléaire $\mathbf{I}=3/2$. Le choix de cet isotope repose sur l'existence d'une transition optique cyclante dans sa raie $D$. De plus, sa longueur de diffusion $a_{\mathrm{s}}=5.3$nm résulte en des taux de collisions relativement élevés, permettant une thermalisation rapide du nuage. À ce propos, il s'agit de l'atome ayant été condensé en premier. \citep{anderson1995observation}
 
-La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 895nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, nos fréquences optiques se trouvant à 780nm. La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. 
+La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 895nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, nos fréquences optiques se trouvant à 780nm. La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. Une vue simplifiée de cette structure est donnée figure \ref{fig:Rb87}, et un tableau récapitulatif des principales grandeurs du ${}^{87}$Rb peut être trouvé table \ref{tbl:Rb87}.
 
+
+\begin{table}[!ht]
 \begin{center}
 \begin{tabular}{ |c|c|c| }
 \hline
@@ -151,16 +153,37 @@ La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ corres
 \hline
 Masse & m & $1.44 \times 10^{-25}$kg \\
 \hline
+Fréquence de transition $D_2$ & $\omega_0$ & $2\pi \times 384.230$THz \\
+\hline
 Longueur d'onde dans le vide ($D_2$) & $\lambda_{\mathrm{0}}$ & 780.241nm \\
 \hline
 Largeur naturelle de la transition $D_2$ & $\Gamma$ & $2\pi \times 6.07$MHz \\
+\hline
+Fréquence de transition $D_1$ & $\omega_{D_1}$ & $2\pi \times 377.107$THz \\
+\hline
+Longueur d'onde dans le vide ($D_1$) & $\lambda_{D_1}$ & 794.979nm \\
+\hline
+Largeur naturelle de la transition $D_1$ & $\Gamma_{D_1}$ & $2\pi \times 5.75$MHz \\
 \hline
 Séparation hyperfine & $\Delta_{\mathrm{hf}}$ & 6.834682611GHz \\
 \hline
 Moment cinétique nucléaire & $\mathbf{I}$ & $3/2$ \\
 \hline
+Facteur de Landé électronique & $g_{\mathrm{S}}$ & 2.002319 \\
+\hline
+Facteur de Landé orbital & $g_{\mathrm{L}}$ & 0.999993\\
+\hline
+Facteur de Landé nucléaire & $g_{\mathrm{I}}$ & $-0.9951414 \times 10^{-3}$ \\
+\hline
+Intensité de saturation & $I_{\mathrm{sat}}$ & 1.66mW.cm${}^{-2}$ \\
+\hline
+Longueur de diffusion & $a_{\mathrm{s}}$ & 5.3nm \\
+\hline
 \end{tabular}
 \end{center}
+\caption{Tableau récapitulatif des grandeurs physiques du rubidium ${}^{87}$Rb que nous utiliserons dans la suite. Ces valeurs sont tirées de \citep{steck2001rubidium}.}
+\label{tbl:Rb87}
+\end{table}
 
 \begin{figure}
 \centering
@@ -176,26 +199,28 @@ Le moment cinétique total $\hat{\mathbf{F}}$ est donné par la somme des moment
 \begin{equation}
 \hat{\mathbf{F}}=\hat{\mathbf{I}}+\hat{\mathbf{L}}+\hat{\mathbf{S}}
 \end{equation}
-avec $\hat{\mathbf{I}}$ le spin total nucléaire, $\hat{\mathbf{L}}$ le moment cinétique orbital et $\hat{\mathbf{S}}$ le moment cinétique de spin électronique. On a alors un moment magnétique total $\hat{\boldsymbol\mu}=\mu_{\mathrm{B}} (g_{\mathrm{I}} \hat{\mathbf{I}} + g_{\mathrm{L}} \hat{\mathbf{L}} + g_{\mathrm{S}} \hat{\mathbf{S}})$ où les $g_{\mathrm{I},\mathrm{L},\mathrm{S}}$ sont les facteurs de Landé et $\mu_{\mathrm{B}}$ est le magnéton de Bohr. L'énergie d'interaction avec un champ magnétique $\mathbf{B}$ est donnée par $\hat{V}=-\hat{\boldsymbol\mu}.\mathbf{B}$. La formule de Breit-Rabi donne donc pour les états $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$:
-
+avec $\hat{\mathbf{I}}$ le spin total nucléaire, $\hat{\mathbf{L}}$ le moment cinétique orbital et $\hat{\mathbf{S}}$ le moment cinétique de spin électronique. On a alors un moment magnétique total $\hat{\boldsymbol\mu}=\mu_{\mathrm{B}} (g_{\mathrm{I}} \hat{\mathbf{I}} + g_{\mathrm{L}} \hat{\mathbf{L}} + g_{\mathrm{S}} \hat{\mathbf{S}})$ où les $g_{\mathrm{I},\mathrm{L},\mathrm{S}}$ sont les facteurs de Landé et $\mu_{\mathrm{B}}$ est le magnéton de Bohr. L'énergie d'interaction de ce moment magnétique avec un champ magnétique $\mathbf{B}$ est donnée par $\hat{V}=-\hat{\boldsymbol\mu}.\mathbf{B}$. On obtient les énergies propres par la formule de Breit-Rabi, dont l'application aux états $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ fournit:
 \begin{equation}
 \begin{aligned}
-E_{F=2} &=\mu_{\mathrm{B}} g_{\mathrm{I}} m_{\mathrm{F}} B + \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2} \\
-E_{F=1} &=\mu_{\mathrm{B}} g_{\mathrm{I}} m_{\mathrm{F}} B - \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2}
+E_{F=2} &\simeq + \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2} \\
+E_{F=1} &\simeq - \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2}
 \end{aligned}
 \end{equation}
-et $\beta=(g_{\mathrm{J}}-g_{\mathrm{I}}) \mu_{\mathrm{B}} B/h \Delta_{\mathrm{hf}}$.
-
-Dans le cas où $\beta \ll 1$ (ou encore $\left| B \right| \ll$2300G), on retrouve l'effet Zeeman linéaire avec 
+avec $\beta \simeq 2 \mu_{\mathrm{B}} \left| B \right| /h \Delta_{\mathrm{hf}}$. À faible champ magnétique $\left| B \right| \ll h \Delta_{\mathrm{hf}} / \mu_{\mathrm{B}}$ (régime où $\beta \ll 1$), on retrouve l'effet Zeeman linéaire avec
 \begin{equation}
-U_{\mathrm{mag}}=m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} B
+U_{\mathrm{mag}}=m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} \left| B \right|
 \end{equation}
-
-et $g_{\mathrm{F}=2} \simeq 1/2$ et $g_{\mathrm{F}=1} \simeq -1/2$
-Un champ magnétique de pendant de la position permet donc de créer un potentiel externe que l'on peut utiliser pour la manipulation d'atomes:
+et $g_{\mathrm{F}=2}= 1/2$ et $g_{\mathrm{F}=1} =-1/2$. L'utilisation d'un champ magnétique non homogène génère donc un potentiel dépendant de la position, tel que dans l'expérience de Stern \& Gerlach. 
 \begin{equation}
 U_{\mathrm{mag}} (\mathbf{r}) = m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} \left| B(\mathbf{r}) \right|
 \end{equation}
+L'utilisation de tels champs inhomogènes est très répandue dans le domaine des atomes ultra-froids, en particulier pour la génération de pièges magnétiques.
+
+
+
+
+
+
 
 \subsection{Forces lumineuses}
 \paragraph*{Potentiel dipolaire}
@@ -211,7 +236,7 @@ U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 \Gamma I(\mathbf{r})}{2 \omega_0^3} 
 s=\frac{I/I_{\mathrm{sat}}}{1+4(\omega-\omega_0)^2/\Gamma^2}
 \end{equation}
 \begin{equation}
-I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_o^3}
+I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}
 \end{equation}
 
 \subsection{Couplage radio-fréquence} 
