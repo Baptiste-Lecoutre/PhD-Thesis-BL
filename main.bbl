@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -28,5 +28,9 @@ B.~Diu, B.~Roulet, C.~Guthmann, and D.~Lederer.
 C.~J. Pethick and H.~Smith.
 \newblock \emph{Bose--Einstein condensation in dilute gases}.
 \newblock Cambridge university press, 2008.
+
+\bibitem[Steck(2001)]{steck2001rubidium}
+D.~A. Steck.
+\newblock Rubidium 87 d line data, 2001.
 
 \end{thebibliography}
