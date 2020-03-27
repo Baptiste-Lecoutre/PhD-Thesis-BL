@@ -134,34 +134,77 @@ En réalité, l'approximation de Thomas-Fermi décrit bien les zones à l'intér
 \begin{equation}
 \xi=\sqrt{\frac{\hb^2}{n_{\mathbf{0}} mg}}
 \end{equation}
-avec $n_{\mathbf{0}}$ la ensité moyenne du condensat. $\xi$ représente donc la longueur sur laquelle le potentiel chimique n'écrante pas le potentiel externe.
+avec $n_{\mathbf{0}}$ la densité moyenne du condensat. $\xi$ représente donc la longueur sur laquelle le potentiel chimique n'écrante pas le potentiel externe.
 
 
 \section{Processus d'interaction lumière-matière}
 Précédemment, nous avons brièvement présenté le phénomène de condensation de Bose-Einstein ainsi que les principales propriétés d'un condensat. En particulier, nous avons identifié un critère de condensation, qui sert de ligne à atteindre sur notre dispositif. À présent, nous allons présenter les différents outils de manipulation d'atomes dont nous disposons pour obtenir la condensation d'un nuage de rubidium ${}^{87}$Rb.
 \subsection{Le rubidium ${}^{87}$Rb}
-Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre expérimence est le rubidium ${}^{87}$Rb, le second isotope le plus abondant après le rubidium ${}^{85}$Rb (l'abondance naturelle du ${}^{87}$Rb est de 27.8\%). Il s'agit d'un alcalin (il possède donc un seul électron de valence) avec un spin nucléaire $I=3/2$. Le choix de cet isotope repose sur l'existence d'une transition optique cyclante dans sa raie $D$. De plus, sa longueur de diffusion $a_{\mathrm{s}}=5.3$nm résulte en des taux de collisions relativement élevés, permettant une thermalisation rapide du nuage. Il s'agit d'ailleurs de l'atome ayant été condensé en premier. \citep{anderson1995observation}
+Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre expérience est le rubidium ${}^{87}$Rb, le second isotope le plus abondant après le rubidium ${}^{85}$Rb (l'abondance naturelle du ${}^{87}$Rb est de 27.8\%). Il s'agit d'un alcalin (il possède donc un seul électron de valence) avec un spin nucléaire $I=3/2$. Le choix de cet isotope repose sur l'existence d'une transition optique cyclante dans sa raie $D$. De plus, sa longueur de diffusion $a_{\mathrm{s}}=5.3$nm résulte en des taux de collisions relativement élevés, permettant une thermalisation rapide du nuage. À ce propos, il s'agit de l'atome ayant été condensé en premier. \citep{anderson1995observation}
 
-La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 895nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscript, nos fréquences optiques se trouvant à 780nm. La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. 
+La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 895nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, nos fréquences optiques se trouvant à 780nm. La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. 
 
+\begin{center}
+\begin{tabular}{ |c|c|c| }
+\hline
+\textbf{Quantité physique} & \textbf{Symbole} & \textbf{Valeur} \\
+\hline
+Masse & m & $1.44 \times 10^{-25}$kg \\
+\hline
+Longueur d'onde dans le vide ($D_2$) & $\lambda_{\mathrm{0}}$ & 780.241nm \\
+\hline
+Largeur naturelle de la transition $D_2$ & $\Gamma$ & $2\pi \times 6.07$MHz \\
+\hline
+Séparation hyperfine & $\Delta_{\mathrm{hf}}$ & 6.834682611GHz \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Fig/BEC_manip/Rb87.pdf}
+\caption{Structure de la raie $D$ du rubidium ${}^{87}$Rb. Celle-ci est composée de deux transitions, la $D_1$ à 795nm, et la transition $D_2$ à 780nm que nous utilisons sur l'expérience. L'état fondamental $5^2S_{1/2}$ est dégénéré en deux sous-niveaux hyperfins séparés d'une énergie $h \Delta_{\mathrm{hf}}$ avec $\Delta_{\mathrm{hf}}=6.835$GHz.}
+\label{fig:Rb87}
+\end{figure}
 
 \subsection{Potentiel magnétique}
+Commençons par décrire l'interaction d'un atome de rubidium avec un champ magnétique statique. Ces champs magnétiques sont couramment utilisés dans les expériences d'atomes ultra-froids pour réaliser des pièges conservatifs à l'aide champs inhomogènes (après un refroidissement laser par exemple). En particulier, l'expérience de Stern \& Gerlach montre que la force appliquée aux atomes par un gradient de champ magnétique dépend de l'état interne de l'atome. Explicitons cela.
+
+Le moment cinétique total $\hat{\mathbf{F}}$ est donné par la somme des moments cinétique des composants de l'atome:
 \begin{equation}
-\begin{array}{lll}
-E_{F=2} &=\mu_{\mathrm{B}} g_{\mathrm{I}} m_F B + \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2} \\
-\\
-E_{F=1} &=\mu_{\mathrm{B}} g_{\mathrm{I}} m_F B - \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2}
-\end{array}
+\hat{\mathbf{F}}=\hat{\mathbf{I}}+\hat{\mathbf{L}}+\hat{\mathbf{S}}
 \end{equation}
-et $\beta=(g_{\mathrm{J}}-g_{\mathrm{I}})\mu_{\mathrm{B}} B/h \Delta_{\mathrm{hf}}$
-\subsection{Potentiel dipolaire}
+avec $\hat{\mathbf{I}}$ le spin total nucléaire, $\hat{\mathbf{L}}$ le moment cinétique orbital et $\hat{\mathbf{S}}$ le moment cinétique de spin électronique. On a alors un moment magnétique total $\hat{\boldsymbol\mu}=\mu_{\mathrm{B}} (g_{\mathrm{I}} \hat{\mathbf{I}} + g_{\mathrm{L}} \hat{\mathbf{L}} + g_{\mathrm{S}} \hat{\mathbf{S}})$ où les $g_{\mathrm{I},\mathrm{L},\mathrm{S}}$ sont les facteurs de Landé et $\mu_{\mathrm{B}}$ est le magnéton de Bohr. L'énergie d'interaction avec un champ magnétique $\mathbf{B}$ est donnée par $\hat{V}=-\hat{\boldsymbol\mu}.\mathbf{B}$. La formule de Breit-Rabi donne donc pour les états $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$:
+
+\begin{equation}
+\begin{aligned}
+E_{F=2} &=\mu_{\mathrm{B}} g_{\mathrm{I}} m_{\mathrm{F}} B + \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2} \\
+E_{F=1} &=\mu_{\mathrm{B}} g_{\mathrm{I}} m_{\mathrm{F}} B - \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2}
+\end{aligned}
+\end{equation}
+et $\beta=(g_{\mathrm{J}}-g_{\mathrm{I}}) \mu_{\mathrm{B}} B/h \Delta_{\mathrm{hf}}$.
+
+Dans le cas où $\beta \ll 1$ (ou encore $\left| B \right| \ll$2300G), on retrouve l'effet Zeeman linéaire avec 
+\begin{equation}
+U_{\mathrm{mag}}=m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} B
+\end{equation}
+
+et $g_{\mathrm{F}=2} \simeq 1/2$ et $g_{\mathrm{F}=1} \simeq -1/2$
+Un champ magnétique de pendant de la position permet donc de créer un potentiel externe que l'on peut utiliser pour la manipulation d'atomes:
+\begin{equation}
+U_{\mathrm{mag}} (\mathbf{r}) = m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} \left| B(\mathbf{r}) \right|
+\end{equation}
+
+\subsection{Forces lumineuses}
+\paragraph*{Potentiel dipolaire}
 \begin{equation}
 U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 \Gamma I(\mathbf{r})}{2 \omega_0^3} \left( \frac{1}{\omega - \omega_0} - \frac{1}{\omega + \omega_0} \right)
 \end{equation}
 \begin{equation}
 \Gamma_{\mathrm{sp}}=\frac{3 \pi c^2 \omega^3 I(\mathbf{r})}{2\hb \omega_0^6} \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
 \end{equation}
-\subsection{Force de pression de radiation}
+
+\paragraph*{Force de pression de radiation}
 \begin{equation}
 s=\frac{I/I_{\mathrm{sat}}}{1+4(\omega-\omega_0)^2/\Gamma^2}
 \end{equation}
