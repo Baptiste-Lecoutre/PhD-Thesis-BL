@@ -142,9 +142,9 @@ Précédemment, nous avons brièvement présenté le phénomène de condensation
 \subsection{Le rubidium ${}^{87}$Rb}
 Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre expérience est le rubidium ${}^{87}$Rb, le second isotope le plus abondant après le rubidium ${}^{85}$Rb (l'abondance naturelle du ${}^{87}$Rb est de 27.8\%). Il s'agit d'un alcalin (il possède donc un seul électron de valence) avec un spin nucléaire $\mathbf{I}=3/2$. Le choix de cet isotope repose sur l'existence d'une transition optique cyclante dans sa raie $D$. De plus, sa longueur de diffusion $a_{\mathrm{s}}=5.3$nm résulte en des taux de collisions relativement élevés, permettant une thermalisation rapide du nuage. À ce propos, il s'agit de l'atome ayant été condensé en premier. \citep{anderson1995observation}
 
-La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 895nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, nos fréquences optiques se trouvant à 780nm. La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. Une vue simplifiée de cette structure est donnée figure \ref{fig:Rb87}, et un tableau récapitulatif des principales grandeurs du ${}^{87}$Rb peut être trouvé table \ref{tbl:Rb87}.
+La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 895nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, la plupart de nos fréquences optiques se trouvant à 780nm. La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. Une vue simplifiée de cette structure est donnée figure \ref{fig:Rb87}, et un tableau récapitulatif des principales grandeurs du ${}^{87}$Rb peut être trouvé table \ref{tbl:Rb87}.
 
-
+\renewcommand{\arraystretch}{1.1}
 \begin{table}[!ht]
 \begin{center}
 \begin{tabular}{ |c|c|c| }
@@ -223,7 +223,19 @@ L'utilisation de tels champs inhomogènes est très répandue dans le domaine de
 
 
 \subsection{Forces lumineuses}
+On se concentre à présent sur l'interaction entre un atome et un champ laser incident. Ce champ laser comporte un grand nombre de photons émis par seconde (typiquement $10^{12}$ pour une puissance de 1µW), on peut donc décrire ce champ laser par une onde classique 
+\begin{equation}
+\mathbf{E}(\mathbf{r},t)= \mathrm{Re} \left( \underline{\mathbf{E}}(\mathbf{r}) e^{-i \omega t - i\phi (\mathbf{r})} \right)
+\end{equation}
+dont l'effet sur un atome est donné par le hamiltonien $H_{\mathrm{AL}}=-\mathbf{D}.\mathbf{E}(\mathbf{r},t)$. 
+Dans la cadre de la théorie de la réponse linéaire, on introduit la polarisabilité atomique $\alpha(\omega)$ et on montre alors que la force moyenne exercée sur un atome est la somme de deux termes:
+\begin{equation}
+\mathbf{F}=\frac{1}{2} \mathrm{Re}(\alpha(\omega)) E(\mathbf{r}) \nabla E(\mathbf{r})+\frac{1}{2}\mathrm{Im}(\alpha(\omega)) E^2(\mathbf{r}) \nabla \phi(\mathbf{r})
+\end{equation}
+
 \paragraph*{Potentiel dipolaire}
+Le premier terme est proportionnel à la partie réelle de la polarisabilité atomique. Ce terme décrit donc comment un moment dipolaire électrique induit interagit avec son champ polarisateur. 
+
 Cas d'un faisceau laser très désaccordé polarisé linéairement, tel qu'on ne résout pas la structure hyperfine de la transition. On ne voit pas la différence entre la $D_1$ et la $D_2$.
 \begin{equation}
 U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 I(\mathbf{r})}{2 \omega_0^3} \left( \frac{\Gamma}{\omega - \omega_0} - \frac{\Gamma}{\omega + \omega_0} \right)
@@ -232,18 +244,29 @@ U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 I(\mathbf{r})}{2 \omega_0^3} \left( 
 \Gamma_{\mathrm{sp}}=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
 \end{equation}
 
-Cas d'un faisceau moyennement désaccordé polarisé linéairement, on résout les raies $D_1$ et $D_2$, sans toutefois résoudre les sous-niveaux Zeeman.
+Cas d'un faisceau moyennement désaccordé polarisé linéairement, on résout les raies $D_1$ et $D_2$, sans toutefois résoudre les niveaux hyperfins.
 \begin{equation}
 U_{\mathrm{dip}}(\mathbf{r})=\frac{\pi c^2 I(\mathbf{r})}{2\omega_0^3} \left( \frac{\Gamma_{D_1}}{\omega-\omega_{D_1}} - \frac{\Gamma_{D_1}}{\omega+\omega_{D_1}} + \frac{2\Gamma}{\omega-\omega_0}-\frac{2\Gamma}{\omega+\omega_0}\right)
 \end{equation}
+\begin{equation}
+\Gamma_{\mathrm{sp}}=\frac{\pi c^2 I(\mathrm{r})}{2 \hb \omega_0^3} \left[ \left(\frac{\omega}{\omega_{D_1}} \right)^3 \left( \frac{\Gamma_{D_1}}{\omega-\omega_{D_1}} - \frac{\Gamma_{D_1}}{\omega+\omega_{D_1}} \right)^2 + 2\left( \frac{\omega}{\omega_0} \right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2 \right]
+\end{equation}
 
 \paragraph*{Force de pression de radiation}
+Le second terme s'appelle \emph{force de pression de radiation}. Il provient de la partie imaginaire de la polarisabilité atomique, qui caractérise l'absorption des atomes. 
 \begin{equation}
 s=\frac{I/I_{\mathrm{sat}}}{1+4(\omega-\omega_0)^2/\Gamma^2}
 \end{equation}
 \begin{equation}
 I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}
 \end{equation}
+\begin{equation}
+\Gamma_{\mathrm{sp}}=\frac{\Gamma}{2} \frac{s}{1+s}
+\end{equation}
+\begin{equation}
+\mathbf{F}_{\mathrm{PR}}=\hb \mathbf{k} \Gamma_{\mathrm{sp}} 
+\end{equation}
+
 
 \subsection{Couplage radio-fréquence} 
 
