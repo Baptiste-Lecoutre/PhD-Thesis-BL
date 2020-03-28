@@ -224,11 +224,17 @@ L'utilisation de tels champs inhomogènes est très répandue dans le domaine de
 
 \subsection{Forces lumineuses}
 \paragraph*{Potentiel dipolaire}
+Cas d'un faisceau laser très désaccordé polarisé linéairement, tel qu'on ne résout pas la structure hyperfine de la transition. On ne voit pas la différence entre la $D_1$ et la $D_2$.
 \begin{equation}
-U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 \Gamma I(\mathbf{r})}{2 \omega_0^3} \left( \frac{1}{\omega - \omega_0} - \frac{1}{\omega + \omega_0} \right)
+U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 I(\mathbf{r})}{2 \omega_0^3} \left( \frac{\Gamma}{\omega - \omega_0} - \frac{\Gamma}{\omega + \omega_0} \right)
 \end{equation}
 \begin{equation}
-\Gamma_{\mathrm{sp}}=\frac{3 \pi c^2 \omega^3 I(\mathbf{r})}{2\hb \omega_0^6} \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
+\Gamma_{\mathrm{sp}}=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
+\end{equation}
+
+Cas d'un faisceau moyennement désaccordé polarisé linéairement, on résout les raies $D_1$ et $D_2$, sans toutefois résoudre les sous-niveaux Zeeman.
+\begin{equation}
+U_{\mathrm{dip}}(\mathbf{r})=\frac{\pi c^2 I(\mathbf{r})}{2\omega_0^3} \left( \frac{\Gamma_{D_1}}{\omega-\omega_{D_1}} - \frac{\Gamma_{D_1}}{\omega+\omega_{D_1}} + \frac{2\Gamma}{\omega-\omega_0}-\frac{2\Gamma}{\omega+\omega_0}\right)
 \end{equation}
 
 \paragraph*{Force de pression de radiation}
