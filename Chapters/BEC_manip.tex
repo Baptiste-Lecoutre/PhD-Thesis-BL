@@ -142,9 +142,9 @@ Précédemment, nous avons brièvement présenté le phénomène de condensation
 \subsection{Le rubidium ${}^{87}$Rb}
 Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre expérience est le rubidium ${}^{87}$Rb, le second isotope le plus abondant après le rubidium ${}^{85}$Rb (l'abondance naturelle du ${}^{87}$Rb est de 27.8\%). Il s'agit d'un alcalin (il possède donc un seul électron de valence) avec un spin nucléaire $\mathbf{I}=3/2$. Le choix de cet isotope repose sur l'existence d'une transition optique cyclante dans sa raie $D$. De plus, sa longueur de diffusion $a_{\mathrm{s}}=5.3$nm résulte en des taux de collisions relativement élevés, permettant une thermalisation rapide du nuage. À ce propos, il s'agit de l'atome ayant été condensé en premier. \citep{anderson1995observation}
 
-La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 895nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, nos fréquences optiques se trouvant à 780nm. La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. Une vue simplifiée de cette structure est donnée figure \ref{fig:Rb87}, et un tableau récapitulatif des principales grandeurs du ${}^{87}$Rb peut être trouvé table \ref{tbl:Rb87}.
+La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 895nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, la plupart de nos fréquences optiques se trouvant à 780nm. La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. Une vue simplifiée de cette structure est donnée figure \ref{fig:Rb87}, et un tableau récapitulatif des principales grandeurs du ${}^{87}$Rb peut être trouvé table \ref{tbl:Rb87}.
 
-
+\renewcommand{\arraystretch}{1.1}
 \begin{table}[!ht]
 \begin{center}
 \begin{tabular}{ |c|c|c| }
@@ -175,7 +175,7 @@ Facteur de Landé orbital & $g_{\mathrm{L}}$ & 0.999993\\
 \hline
 Facteur de Landé nucléaire & $g_{\mathrm{I}}$ & $-0.9951414 \times 10^{-3}$ \\
 \hline
-Intensité de saturation & $I_{\mathrm{sat}}$ & 1.66mW.cm${}^{-2}$ \\
+Intensité de saturation & $I_{\mathrm{sat}}$ & 1.67mW.cm${}^{-2}$ \\
 \hline
 Longueur de diffusion & $a_{\mathrm{s}}$ & 5.3nm \\
 \hline
@@ -223,23 +223,62 @@ L'utilisation de tels champs inhomogènes est très répandue dans le domaine de
 
 
 \subsection{Forces lumineuses}
-\paragraph*{Potentiel dipolaire}
+On se concentre à présent sur l'interaction entre un atome et un champ laser incident. Ce champ laser comporte un grand nombre de photons émis par seconde (typiquement $10^{12}$ pour une puissance de 1µW), on peut donc décrire ce champ laser par une onde classique 
 \begin{equation}
-U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 \Gamma I(\mathbf{r})}{2 \omega_0^3} \left( \frac{1}{\omega - \omega_0} - \frac{1}{\omega + \omega_0} \right)
+\mathbf{E}(\mathbf{r},t)= \mathrm{Re} \left( \underline{\mathbf{E}}(\mathbf{r}) e^{-i \omega t - i\phi (\mathbf{r})} \right)
+\end{equation}
+dont l'effet sur un atome est donné par le hamiltonien $H_{\mathrm{AL}}=-\mathbf{D}.\mathbf{E}(\mathbf{r},t)$. 
+Dans la cadre de la théorie de la réponse linéaire, on introduit la polarisabilité atomique $\alpha(\omega)$ et on montre alors que la force moyenne exercée sur un atome est la somme de deux termes:
+\begin{equation}
+\mathbf{F}=\frac{1}{2} \mathrm{Re}(\alpha(\omega)) E(\mathbf{r}) \nabla E(\mathbf{r})+\frac{1}{2}\mathrm{Im}(\alpha(\omega)) E^2(\mathbf{r}) \nabla \phi(\mathbf{r})
+\end{equation}
+
+\paragraph*{Potentiel dipolaire}
+Le premier terme est proportionnel à la partie réelle de la polarisabilité atomique. Ce terme décrit donc comment un moment dipolaire électrique induit interagit avec le gradient d'intensité lumineuse. On peut considérer cette force comme étant conservative et dérivant d'un potentiel qui est proportionnel à l'intensité lumineuse: on parle de \emph{potentiel dipolaire}. Dans le cas d'un faisceau très désaccordé, ce potentiel s'écrit:
+\begin{equation}
+U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 I(\mathbf{r})}{2 \omega_0^3} \left( \frac{\Gamma}{\omega - \omega_0} - \frac{\Gamma}{\omega + \omega_0} \right)
+\end{equation}
+avec $I(\mathbf{r})$ l'intensité lumineuse à la position $\mathbf{r}$. Cette expression est valable très loin de résonance: cela signifie que le laser ne voit pas le détail de la raie $D$ du ${}^{87}$Rb, c'est à dire que le désaccord $\omega-\omega_0$ doit être très grand devant la structure fine séparant les transitions $D_1$ et $D_2$. De plus, on a $\omega-\omega_0 \gg \Gamma$, avec $\Gamma$ la largeur de la transition.
+
+Un tel potentiel présente de nombreux avantages pour les expériences d'atomes ultrafroids. Suivant le signe de la quantité $1/\overline{\Delta} = 1/(\omega-\omega_0)-1/(\omega+\omega_0)$, ce potentiel peut être soit attractif ($\overline{\Delta}<0$, on parlera alors de potentiel désaccordé vers le \emph{rouge}), soit répulsif ($\overline{\Delta}>0$, potentiel désaccordé vers le \emph{bleu}). Les atomes seront alors attirés par les maximas d'intensité lumineuse (pour un faisceau désaccordé vers le rouge) ou bien vers les zones d'ombre (pour les faisceaux désaccordés vers le bleu). Un faisceau gaussien focalisé désaccordé vers le rouge permet ainsi de piéger les atomes en son foyer: la forme gaussienne du faisceau attire les atomes vers le centre du faisceau.
+
+Cependant, l'utilisation de tels désaccords (plusieurs centaines de nano-mètres) contraint l'utilisation de grosses puissances optiques afin d'obtenir des potentiels suffisamment importants. Ainsi, il est courant que les expériences d'atomes ultrafroids utilisent des lasers de puissances de plusieurs Watts \footnote{À titre de comparaison, il ne suffit que de quelques milli-Watts pour endommager l'œil humain.} focalisés sur de petites tailles, typiquement quelques 10-100µm. Il se pose alors la question de la dissipation, liée à l'émission spontanée. Le taux d'émission spontanée peut être estimé par:
+\begin{equation}
+\Gamma_{\mathrm{sp}}(\mathbf{r})=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
+\end{equation}
+
+Cas d'un faisceau moyennement désaccordé polarisé linéairement, on résout les raies $D_1$ et $D_2$, sans toutefois résoudre les niveaux hyperfins.
+\begin{equation}
+U_{\mathrm{dip}}(\mathbf{r})=\frac{\pi c^2 I(\mathbf{r})}{2\omega_0^3} \left( \frac{\Gamma_{D_1}}{\omega-\omega_{D_1}} - \frac{\Gamma_{D_1}}{\omega+\omega_{D_1}} + \frac{2\Gamma}{\omega-\omega_0}-\frac{2\Gamma}{\omega+\omega_0}\right)
 \end{equation}
 \begin{equation}
-\Gamma_{\mathrm{sp}}=\frac{3 \pi c^2 \omega^3 I(\mathbf{r})}{2\hb \omega_0^6} \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
+\Gamma_{\mathrm{sp}}=\frac{\pi c^2 I(\mathrm{r})}{2 \hb \omega_0^3} \left[ \left(\frac{\omega}{\omega_{D_1}} \right)^3 \left( \frac{\Gamma_{D_1}}{\omega-\omega_{D_1}} - \frac{\Gamma_{D_1}}{\omega+\omega_{D_1}} \right)^2 + 2\left( \frac{\omega}{\omega_0} \right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2 \right]
 \end{equation}
 
 \paragraph*{Force de pression de radiation}
+Le second terme s'appelle \emph{force de pression de radiation}. Il provient de la partie imaginaire de la polarisabilité atomique, qui caractérise l'absorption de photons par l'atome. Il s'agit donc d'une force inélastique qui résulte d'un grand nombre de cycles d'absorption de photons du faisceau laser et d'émission spontanée dans des directions aléatoires de l'espace \footnote{Pour réaliser de tels cycles, il est nécessaire d'avoir une transition cyclante, c'est à dire de disposer d'un état excité dont la désexcitation renvoie forcément sur l'état d'origine}. L'impulsion totale cédée par émission spontanée s'annule donc, et en moyenne le transfert d'impulsion ne provient que de l'absorption de photons du faisceau laser. Cette force est donnée par
 \begin{equation}
-s=\frac{I/I_{\mathrm{sat}}}{1+4(\omega-\omega_0)^2/\Gamma^2}
+\mathbf{F}_{\mathrm{PR}}=\hb \mathbf{k} \Gamma_{\mathrm{sp}} 
 \end{equation}
+avec $\Gamma_{\mathrm{sp}}$ le taux d'émission spontanée en présence du champ laser, et $\mathbf{k}$ le vecteur d'onde associé à l'onde laser. L'interprétation est directe: en moyenne, l'atome acquiert une impulsion $\hb \mathbf{k}$ à un taux $\Gamma_{\mathrm{sp}}$. Ce taux vaut:
 \begin{equation}
-I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}
+\Gamma_{\mathrm{sp}}=\frac{\Gamma}{2} \frac{s}{1+s}
 \end{equation}
+et $s$ s'appelle le paramètre de saturation. Celui-ci dépend de l'intensité lumineuse incidente (et donc du nombre de photons incidents) ainsi que du désaccord du laser par rapport à la résonance atomique $\delta = \omega-\omega_0$. Il s'exprime
+\begin{equation}
+s=\frac{I/I_{\mathrm{sat}}}{1+4\delta^2/\Gamma^2}
+\end{equation}
+où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}=1.67$mW.cm${}^{-2}$ est une constante de l'atome de ${}^{87}$Rb. Le paramètre de saturation est maximal en $\delta=0$, c'est à dire lorsque le laser est à résonance. Dans le cas d'un laser très saturant $s \gg 1$, la force de pression de radiation s'écrit
+\begin{equation}
+\mathbf{F}_{\mathrm{PR}}=\frac{\hb \mathbf{k} \Gamma}{2}
+\end{equation}
+où le facteur 2 indique que à forte saturation, un atome autant de chance d'être dans l'état excité que dans l'état fondamental. Enfin, mentionnons que pour un atome se déplaçant à une vitesse $\mathbf{v}$ dans le référentiel du laboratoire, le désaccord devient $\delta=\omega-\omega_0-\mathbf{k}.\mathbf{v}$ par effet Doppler.
+
 
 \subsection{Couplage radio-fréquence} 
+La séparation entre les états fondamentaux $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ est $\Delta_{\mathrm{hf}}$ de l'ordre du GHz, donc accessible via électronique. Donne la possibilité de manipuler l'état interne de l'atome, et donc permet de multiplier les possibilités de processus réalisables expérimentalement. Exemple: spectroscopie des fonctions spectrales, évaporation RF etc.
+
+Présenter oscillations de Rabi rapidement
 
 \section{Description d'un cycle expérimental}
 \subsection{Première chambre}
