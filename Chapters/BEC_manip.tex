@@ -234,14 +234,17 @@ Dans la cadre de la théorie de la réponse linéaire, on introduit la polarisab
 \end{equation}
 
 \paragraph*{Potentiel dipolaire}
-Le premier terme est proportionnel à la partie réelle de la polarisabilité atomique. Ce terme décrit donc comment un moment dipolaire électrique induit interagit avec son champ polarisateur. 
-
-Cas d'un faisceau laser très désaccordé polarisé linéairement, tel qu'on ne résout pas la structure hyperfine de la transition. On ne voit pas la différence entre la $D_1$ et la $D_2$.
+Le premier terme est proportionnel à la partie réelle de la polarisabilité atomique. Ce terme décrit donc comment un moment dipolaire électrique induit interagit avec le gradient d'intensité lumineuse. On peut considérer cette force comme étant conservative et dérivant d'un potentiel qui est proportionnel à l'intensité lumineuse: on parle de \emph{potentiel dipolaire}. Dans le cas d'un faisceau très désaccordé, ce potentiel s'écrit:
 \begin{equation}
 U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 I(\mathbf{r})}{2 \omega_0^3} \left( \frac{\Gamma}{\omega - \omega_0} - \frac{\Gamma}{\omega + \omega_0} \right)
 \end{equation}
+avec $I(\mathbf{r})$ l'intensité lumineuse à la position $\mathbf{r}$. Cette expression est valable très loin de résonance: cela signifie que le laser ne voit pas le détail de la raie $D$ du ${}^{87}$Rb, c'est à dire que le désaccord $\omega-\omega_0$ doit être très grand devant la structure fine séparant les transitions $D_1$ et $D_2$. De plus, on a $\omega-\omega_0 \gg \Gamma$, avec $\Gamma$ la largeur de la transition.
+
+Un tel potentiel présente de nombreux avantages pour les expériences d'atomes ultrafroids. Suivant le signe de la quantité $1/\overline{\Delta} = 1/(\omega-\omega_0)-1/(\omega+\omega_0)$, ce potentiel peut être soit attractif ($\overline{\Delta}<0$, on parlera alors de potentiel désaccordé vers le \emph{rouge}), soit répulsif ($\overline{\Delta}>0$, potentiel désaccordé vers le \emph{bleu}). Les atomes seront alors attirés par les maximas d'intensité lumineuse (pour un faisceau désaccordé vers le rouge) ou bien vers les zones d'ombre (pour les faisceaux désaccordés vers le bleu). Un faisceau gaussien focalisé désaccordé vers le rouge permet ainsi de piéger les atomes en son foyer: la forme gaussienne du faisceau attire les atomes vers le centre du faisceau.
+
+Cependant, l'utilisation de tels désaccords (plusieurs centaines de nano-mètres) contraint l'utilisation de grosses puissances optiques afin d'obtenir des potentiels suffisamment importants. Ainsi, il est courant que les expériences d'atomes ultrafroids utilisent des lasers de puissances de plusieurs Watts \footnote{À titre de comparaison, il ne suffit que de quelques milli-Watts pour endommager l'œil humain.} focalisés sur de petites tailles, typiquement quelques 10-100µm. Il se pose alors la question de la dissipation, liée à l'émission spontanée. Le taux d'émission spontanée peut être estimé par:
 \begin{equation}
-\Gamma_{\mathrm{sp}}=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
+\Gamma_{\mathrm{sp}}(\mathbf{r})=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
 \end{equation}
 
 Cas d'un faisceau moyennement désaccordé polarisé linéairement, on résout les raies $D_1$ et $D_2$, sans toutefois résoudre les niveaux hyperfins.

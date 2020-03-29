@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  29 MAR 2020 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  29 MAR 2020 18:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -1518,35 +1518,35 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-[20]) (Chapters/Modif_exp.tex [21] [22
-
-]
+[20]) (Chapters/Modif_exp.tex [21] [22]
 Chapitre 3.
-) (Chapters/Speckle.tex [23] [24
+) (Chapters/Speckle.tex [23
+
+] [24
 
 ]
 Chapitre 4.
-<Fig/Speckle/speckle_pattern.pdf, id=979, 404.94328pt x 187.88626pt>
+<Fig/Speckle/speckle_pattern.pdf, id=981, 404.94328pt x 187.88626pt>
 File: Fig/Speckle/speckle_pattern.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_pattern.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 20
 .
 (pdftex.def)             Requested size: 404.94228pt x 187.88579pt.
 [25] [26 <./Fig/Speckle/speckle_pattern.pdf>]
-<Fig/Speckle/diffus_prop.pdf, id=1058, 300.06396pt x 226.78568pt>
+<Fig/Speckle/diffus_prop.pdf, id=1060, 300.06396pt x 226.78568pt>
 File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
 <use Fig/Speckle/diffus_prop.pdf>
 Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 60.
 (pdftex.def)             Requested size: 300.06323pt x 226.78511pt.
  [27 <./Fig/Speckle/diffus_prop.pdf>]
-<Fig/Speckle/random_walk_speckle.pdf, id=1164, 208.17155pt x 207.50287pt>
+<Fig/Speckle/random_walk_speckle.pdf, id=1166, 208.17155pt x 207.50287pt>
 File: Fig/Speckle/random_walk_speckle.pdf Graphic file (type pdf)
 <use Fig/Speckle/random_walk_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/random_walk_speckle.pdf  used on input lin
 e 99.
 (pdftex.def)             Requested size: 208.17102pt x 207.50235pt.
  [28 <./Fig/Speckle/random_walk_speckle.pdf>]
-<Fig/Speckle/montage_diffuseur.pdf, id=1193, 489.34206pt x 294.36562pt>
+<Fig/Speckle/montage_diffuseur.pdf, id=1195, 489.34206pt x 294.36562pt>
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
@@ -1616,11 +1616,11 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 143.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 29846 strings out of 480934
- 566825 string characters out of 2899917
+ 29851 strings out of 480934
+ 566878 string characters out of 2899917
  1105834 words of memory out of 3000000
  44584 multiletter control sequences out of 15000+200000
- 716235 words of font info for 253 fonts, out of 3000000 for 9000
+ 716448 words of font info for 255 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,62p,1632b,1334s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
@@ -1660,9 +1660,9 @@ ublic/lm/lmsy6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 ype1/public/lm/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (49 pages, 1040626 bytes).
+Output written on main.pdf (49 pages, 1044755 bytes).
 PDF statistics:
- 1637 PDF objects out of 1728 (max. 8388607)
- 245 named destinations out of 1000 (max. 500000)
+ 1639 PDF objects out of 1728 (max. 8388607)
+ 246 named destinations out of 1000 (max. 500000)
  66909 words of extra memory for PDF output out of 74296 (max. 10000000)
 
