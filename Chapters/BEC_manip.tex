@@ -175,7 +175,7 @@ Facteur de Landé orbital & $g_{\mathrm{L}}$ & 0.999993\\
 \hline
 Facteur de Landé nucléaire & $g_{\mathrm{I}}$ & $-0.9951414 \times 10^{-3}$ \\
 \hline
-Intensité de saturation & $I_{\mathrm{sat}}$ & 1.66mW.cm${}^{-2}$ \\
+Intensité de saturation & $I_{\mathrm{sat}}$ & 1.67mW.cm${}^{-2}$ \\
 \hline
 Longueur de diffusion & $a_{\mathrm{s}}$ & 5.3nm \\
 \hline
@@ -253,22 +253,29 @@ U_{\mathrm{dip}}(\mathbf{r})=\frac{\pi c^2 I(\mathbf{r})}{2\omega_0^3} \left( \f
 \end{equation}
 
 \paragraph*{Force de pression de radiation}
-Le second terme s'appelle \emph{force de pression de radiation}. Il provient de la partie imaginaire de la polarisabilité atomique, qui caractérise l'absorption des atomes. 
-\begin{equation}
-s=\frac{I/I_{\mathrm{sat}}}{1+4(\omega-\omega_0)^2/\Gamma^2}
-\end{equation}
-\begin{equation}
-I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}
-\end{equation}
-\begin{equation}
-\Gamma_{\mathrm{sp}}=\frac{\Gamma}{2} \frac{s}{1+s}
-\end{equation}
+Le second terme s'appelle \emph{force de pression de radiation}. Il provient de la partie imaginaire de la polarisabilité atomique, qui caractérise l'absorption de photons par l'atome. Il s'agit donc d'une force inélastique qui résulte d'un grand nombre de cycles d'absorption de photons du faisceau laser et d'émission spontanée dans des directions aléatoires de l'espace \footnote{Pour réaliser de tels cycles, il est nécessaire d'avoir une transition cyclante, c'est à dire de disposer d'un état excité dont la désexcitation renvoie forcément sur l'état d'origine}. L'impulsion totale cédée par émission spontanée s'annule donc, et en moyenne le transfert d'impulsion ne provient que de l'absorption de photons du faisceau laser. Cette force est donnée par
 \begin{equation}
 \mathbf{F}_{\mathrm{PR}}=\hb \mathbf{k} \Gamma_{\mathrm{sp}} 
 \end{equation}
+avec $\Gamma_{\mathrm{sp}}$ le taux d'émission spontanée en présence du champ laser, et $\mathbf{k}$ le vecteur d'onde associé à l'onde laser. L'interprétation est directe: en moyenne, l'atome acquiert une impulsion $\hb \mathbf{k}$ à un taux $\Gamma_{\mathrm{sp}}$. Ce taux vaut:
+\begin{equation}
+\Gamma_{\mathrm{sp}}=\frac{\Gamma}{2} \frac{s}{1+s}
+\end{equation}
+et $s$ s'appelle le paramètre de saturation. Celui-ci dépend de l'intensité lumineuse incidente (et donc du nombre de photons incidents) ainsi que du désaccord du laser par rapport à la résonance atomique $\delta = \omega-\omega_0$. Il s'exprime
+\begin{equation}
+s=\frac{I/I_{\mathrm{sat}}}{1+4\delta^2/\Gamma^2}
+\end{equation}
+où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}=1.67$mW.cm${}^{-2}$ est une constante de l'atome de ${}^{87}$Rb. Le paramètre de saturation est maximal en $\delta=0$, c'est à dire lorsque le laser est à résonance. Dans le cas d'un laser très saturant $s \gg 1$, la force de pression de radiation s'écrit
+\begin{equation}
+\mathbf{F}_{\mathrm{PR}}=\frac{\hb \mathbf{k} \Gamma}{2}
+\end{equation}
+où le facteur 2 indique que à forte saturation, un atome autant de chance d'être dans l'état excité que dans l'état fondamental. Enfin, mentionnons que pour un atome se déplaçant à une vitesse $\mathbf{v}$ dans le référentiel du laboratoire, le désaccord devient $\delta=\omega-\omega_0-\mathbf{k}.\mathbf{v}$ par effet Doppler.
 
 
 \subsection{Couplage radio-fréquence} 
+La séparation entre les états fondamentaux $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ est $\Delta_{\mathrm{hf}}$ de l'ordre du GHz, donc accessible via électronique. Donne la possibilité de manipuler l'état interne de l'atome, et donc permet de multiplier les possibilités de processus réalisables expérimentalement. Exemple: spectroscopie des fonctions spectrales, évaporation RF etc.
+
+Présenter oscillations de Rabi rapidement
 
 \section{Description d'un cycle expérimental}
 \subsection{Première chambre}
