@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  29 MAR 2020 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  30 MAR 2020 12:33
 entering extended mode
 **./main.tex
 (main.tex
@@ -1482,27 +1482,31 @@ Chapitre 2.
 [13
 
 ]
-<Fig/BEC_manip/stat_bose.pdf, id=393, 403.5041pt x 116.06998pt>
+<Fig/BEC_manip/stat_bose.pdf, id=394, 403.5041pt x 116.06998pt>
 File: Fig/BEC_manip/stat_bose.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/stat_bose.pdf>
-Package pdftex.def Info: Fig/BEC_manip/stat_bose.pdf  used on input line 27.
+Package pdftex.def Info: Fig/BEC_manip/stat_bose.pdf  used on input line 26.
 (pdftex.def)             Requested size: 426.79135pt x 122.7679pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
+
+Underfull \vbox (badness 1939) has occurred while \output is active []
+
+ [14 <./Fig/BEC_manip/stat_bose.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 45.
+(Font)              <5> on input line 44.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
- [14 <./Fig/BEC_manip/stat_bose.pdf>] [15] [16]
-<Fig/BEC_manip/thomas_fermi.pdf, id=797, 457.74942pt x 163.38528pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
+ [15] [16]
+<Fig/BEC_manip/thomas_fermi.pdf, id=798, 457.74942pt x 163.38528pt>
 File: Fig/BEC_manip/thomas_fermi.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/thomas_fermi.pdf>
-Package pdftex.def Info: Fig/BEC_manip/thomas_fermi.pdf  used on input line 123
+Package pdftex.def Info: Fig/BEC_manip/thomas_fermi.pdf  used on input line 122
 .
 (pdftex.def)             Requested size: 426.79135pt x 152.34312pt.
  [17 <./Fig/BEC_manip/thomas_fermi.pdf>]
-<Fig/BEC_manip/Rb87.pdf, id=826, 440.87213pt x 257.70801pt>
+<Fig/BEC_manip/Rb87.pdf, id=827, 440.87213pt x 257.70801pt>
 File: Fig/BEC_manip/Rb87.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/Rb87.pdf>
 Package pdftex.def Info: Fig/BEC_manip/Rb87.pdf  used on input line 190.
@@ -1518,46 +1522,55 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-[20]) (Chapters/Modif_exp.tex [21] [22]
-Chapitre 3.
-) (Chapters/Speckle.tex [23
+[20]
+<Fig/BEC_manip/V_dip.png, id=956, 361.35pt x 331.99031pt>
+File: Fig/BEC_manip/V_dip.png Graphic file (type png)
+<use Fig/BEC_manip/V_dip.png>
+Package pdftex.def Info: Fig/BEC_manip/V_dip.png  used on input line 261.
+(pdftex.def)             Requested size: 216.81168pt x 199.19571pt.
 
-] [24
+Underfull \vbox (badness 2781) has occurred while \output is active []
+
+ [21 <./Fig/BEC_manip/V_dip.png>] [22]) (Chapters/Modif_exp.tex [23] [24
+
+]
+Chapitre 3.
+) (Chapters/Speckle.tex [25] [26
 
 ]
 Chapitre 4.
-<Fig/Speckle/speckle_pattern.pdf, id=981, 404.94328pt x 187.88626pt>
+<Fig/Speckle/speckle_pattern.pdf, id=998, 404.94328pt x 187.88626pt>
 File: Fig/Speckle/speckle_pattern.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_pattern.pdf>
-Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 20
+Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 21
 .
 (pdftex.def)             Requested size: 404.94228pt x 187.88579pt.
-[25] [26 <./Fig/Speckle/speckle_pattern.pdf>]
-<Fig/Speckle/diffus_prop.pdf, id=1060, 300.06396pt x 226.78568pt>
+[27] [28 <./Fig/Speckle/speckle_pattern.pdf>]
+<Fig/Speckle/diffus_prop.pdf, id=1076, 300.06396pt x 226.78568pt>
 File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
 <use Fig/Speckle/diffus_prop.pdf>
-Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 60.
+Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 61.
 (pdftex.def)             Requested size: 300.06323pt x 226.78511pt.
- [27 <./Fig/Speckle/diffus_prop.pdf>]
-<Fig/Speckle/random_walk_speckle.pdf, id=1166, 208.17155pt x 207.50287pt>
+ [29 <./Fig/Speckle/diffus_prop.pdf>]
+<Fig/Speckle/random_walk_speckle.pdf, id=1182, 208.17155pt x 207.50287pt>
 File: Fig/Speckle/random_walk_speckle.pdf Graphic file (type pdf)
 <use Fig/Speckle/random_walk_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/random_walk_speckle.pdf  used on input lin
-e 99.
+e 100.
 (pdftex.def)             Requested size: 208.17102pt x 207.50235pt.
- [28 <./Fig/Speckle/random_walk_speckle.pdf>]
-<Fig/Speckle/montage_diffuseur.pdf, id=1195, 489.34206pt x 294.36562pt>
+ [30 <./Fig/Speckle/random_walk_speckle.pdf>]
+<Fig/Speckle/montage_diffuseur.pdf, id=1211, 489.34206pt x 294.36562pt>
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
-122.
+123.
 (pdftex.def)             Requested size: 342.53711pt x 206.05452pt.
- [29 <./Fig/Speckle/montage_diffuseur.pdf>]
-Overfull \hbox (8.747pt too wide) detected at line 140
+ [31 <./Fig/Speckle/montage_diffuseur.pdf>]
+Overfull \hbox (8.747pt too wide) detected at line 141
 []
  []
 
-[30]) [31] [32
+[32]) [33] [34
 
 ]
 
@@ -1568,17 +1581,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\thepart' on input line 122.
 
-(main.ptc) [33] [34] (Chapters/Taus_PRL.tex
+(main.ptc) [35] [36] (Chapters/Taus_PRL.tex
 Chapitre 5.
-) (Chapters/TauS_NJP.tex [35
+) (Chapters/TauS_NJP.tex [37
 
-] [36
+] [38
 
 ]
 Chapitre 6.
-) (Chapters/Conclusion.tex [37] [38
+) (Chapters/Conclusion.tex [39] [40
 
-]) [39] [40
+]) [41] [42
 
 ]
 
@@ -1589,25 +1602,25 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\thepart' on input line 131.
 
-(main.ptc) [41] [42] (Appendices/Anex_speckle.tex
+(main.ptc) [43] [44] (Appendices/Anex_speckle.tex
 Annexe A.
 
 Underfull \vbox (badness 2418) has occurred while \output is active []
 
- [43
+ [45
 
 ]
-[44] [45]) (Appendices/Anex_Born.tex [46]
+[46] [47]) (Appendices/Anex_Born.tex [48]
 Annexe B.
-) (main.bbl [47
+) (main.bbl [49
 
-] [48
+] [50
 
 ])
 \tf@ptc=\write6
 \openout6 = `main.ptc'.
 
- [49]
+ [51]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
  (main.aux)
@@ -1616,11 +1629,11 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 143.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 29851 strings out of 480934
- 566878 string characters out of 2899917
- 1105834 words of memory out of 3000000
- 44584 multiletter control sequences out of 15000+200000
- 716448 words of font info for 255 fonts, out of 3000000 for 9000
+ 29864 strings out of 480934
+ 567119 string characters out of 2899917
+ 1106371 words of memory out of 3000000
+ 44592 multiletter control sequences out of 15000+200000
+ 716365 words of font info for 254 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,62p,1632b,1334s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
@@ -1660,9 +1673,9 @@ ublic/lm/lmsy6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 ype1/public/lm/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (49 pages, 1044755 bytes).
+Output written on main.pdf (51 pages, 1094126 bytes).
 PDF statistics:
- 1639 PDF objects out of 1728 (max. 8388607)
- 246 named destinations out of 1000 (max. 500000)
- 66909 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1656 PDF objects out of 1728 (max. 8388607)
+ 252 named destinations out of 1000 (max. 500000)
+ 66914 words of extra memory for PDF output out of 74296 (max. 10000000)
 
