@@ -306,18 +306,40 @@ Dans ces conditions, les états fondamentaux hyperfins du ${}^{87}$Rb s'avèrent
 \end{equation}
 Le couplage par radio-fréquences est quant à lui décrit par le hamiltonien
 \begin{equation}
-\hat{W}(t)=\hb \Omega e^{i \omega t - i \phi} \begin{pmatrix}
-0 & 1 \\
-1 & 0
+\hat{V}(t)=\frac{\hb}{2} \begin{pmatrix}
+0 & \Omega e^{i \omega t} \\
+\Omega e^{-i\omega t} & 0
+\end{pmatrix}
+\label{eq:couplage_rabi}
+\end{equation}
+avec $\omega$ la fréquence de l'onde radio-fréquence rayonnée sur les atomes, et $\Omega$ la pulsation de Rabi qui caractérise l'amplitude rayonnée sur les atomes. Le terme de couplage \ref{eq:couplage_rabi} est obtenu en appliquant l'approximation de l'onde tournante, c'est à dire que l'on néglige les termes en $\omega +\Delta_{\mathrm{hf}}$ devant les termes en $\omega - \Delta_{\mathrm{hf}}$ car on estime qu'ils évoluent rapidement, et donc qu'ils s'apparentent à leur valeur moyenne qui est nulle. En se plaçant dans le référentiel tournant, le hamiltonien $\hat{H}_0+\hat{V}$ du système devient
+\begin{equation}
+\hat{H}=\frac{\hb}{2} \begin{pmatrix}
+\delta & \Omega \\
+\Omega & -\delta
 \end{pmatrix}
 \end{equation}
-
-Présenter oscillations de Rabi rapidement
-Approximation de l'onde tournante: $\delta \ll \omega$ et donc on néglige les termes en $\omega+\omega_0$ devant les termes en $\omega-\omega_0=\delta$ et ici $\omega_0=\Delta_{\mathrm{hf}}$ En fait, ça consiste à assimiler les termes tournant rapidement à leur valeur moyenne temporelle, qui est nulle.
-
+avec $\delta=\omega- \Delta_{\mathrm{hf}}$. En supposant que à $t=0$ le système est dans l'état $\left| F=1 \right\rangle$, la probabilité d'avoir l'atome dans l'état $\left| F=2 \right\rangle$ est donnée par la formule de Rabi \citep{basdevant2002mecanique}
 \begin{equation}
-\left| \left\langle F=2 \middle| \psi(t) \right\rangle \right|^2= \frac{\Omega^2}{\sqrt{\Omega^2+\delta^2}} \sin^2{\left(\pi \sqrt{\Omega^2+\delta^2} t\right) }
+\mathcal{P}_{\left| F=2 \right\rangle}(t)= \frac{\Omega^2}{\Omega^2+\delta^2} \sin^2{\left(\sqrt{\Omega^2+\delta^2} \frac{t}{2} \right) }
+\label{eq:rabi_formule}
 \end{equation}
+Cette formule met en évidence un caractère résonant des transitions radio-fréquences:
+\begin{itemize}
+\item[\textendash] Dans le cas d'un grand désaccord $\delta \gg \Omega$, la probabilité de transition est très faible à n'importe quel instant.
+\item[\textendash] À résonance $\delta=0$, la probabilité de transition peut atteindre 1, même si l'amplitude de l'onde rayonnée est très faible ($\Omega$ petit).
+\end{itemize}
+Ces caractéristiques peuvent être retrouvées figure \ref{fig:rabi}. En effet, l'enveloppe lorentzienne représentée figure \ref{fig:rabi}b montre les populations maximales transférées, faibles lorsque $\| \delta \| > \Omega$. On retrouve la condition de résonance à $\delta=0$, et le transfert est maximale lorsque la durée d'application du champ radio-fréquence $t_p$ satisfait
+\begin{equation}
+t_p=(2n+1) \frac{\pi}{\Omega}
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{fig/BEC_manip/rabi.pdf}
+\caption{\textbf{a}: Oscillations de Rabi tracées pour différents désaccords. Les populations oscillent à la fréquence $\sqrt{\Omega^2+\delta^2}$ avec une amplitude qui dépend du désaccord. L'amplitude est maximale et atteint 1 lorsque l'onde radio-fréquence est à résonance, et la population maximale transférée décroît avec l'augmentation du désaccord. \textbf{b}: Spectres de Rabi pour différentes durées d'application $t_p$. Le transfert de population est le plus efficace à résonance ($\delta=0$) pour certaines durées telles que $t_p= (2n+1) \pi/ \Omega$. On retrouve bien l'enveloppe lorentzienne de l'équation \ref{eq:rabi_formule}.}
+\label{fig:rabi}
+\end{figure}
 
 \section{Description d'un cycle expérimental}
 \subsection{Première chambre}

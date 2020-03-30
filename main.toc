@@ -77,7 +77,7 @@
 \contentsline {subsection}{\numberline {6.2.2}Mesure des fonctions spectrales}{39}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}{39}{subsection.6.2.3}%
 \vspace \bigskipamount 
-\contentsline {chapter}{Conclusion et perspectives}{41}{chapter*.16}%
+\contentsline {chapter}{Conclusion et perspectives}{41}{chapter*.17}%
 \vspace \bigskipamount 
 \contentsline {part}{\@mypartnumtocformat {IV}{Annexes}}{43}{part.4}%
 \contentsline {chapter}{\numberline {A}Calculs de champs de tavelures}{45}{appendix.A}%
@@ -92,5 +92,5 @@
 \contentsline {subsection}{\numberline {A.3.4}Corrélation longitudinale d'un speckle bichromatique autour du plan de Fourier}{48}{subsection.A.3.4}%
 \contentsline {chapter}{\numberline {B}Calcul du temps de diffusion élastique par le développement de Born}{49}{appendix.B}%
 \vspace \bigskipamount 
-\contentsline {chapter}{Bibliographie}{51}{appendix*.17}%
+\contentsline {chapter}{Bibliographie}{51}{appendix*.18}%
 \contentsfinish 
