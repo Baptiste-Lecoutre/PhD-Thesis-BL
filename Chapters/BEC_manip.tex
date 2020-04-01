@@ -351,42 +351,51 @@ zeeman, mélasse transverse, mot, piège mag + RF
 Présentation du transport, du piège croisé, de la lévitation, éventuellement des spin-flips. Delta-kick
 
 \subsection{Imagerie}
-À la fin de la majorité de nos cycles expérimentaux, nous souhaitons obtenir des informations à propos de notre gaz d'atomes. Une grande partie de ces informations peut être extraite d'une image du nuage, que l'on obtient à l'aide d'une caméra et l'utilisation de lasers à résonance avec les atomes \footnote{L'utilisation de lasers à résonance conduit inévitablement à la destruction du nuage sur notre expérience. Il est donc nécessaire de répéter l'ensemble du cycle expérimental pour obtenir une seconde image des atomes.}.
+À la fin de la majorité de nos cycles expérimentaux, nous souhaitons obtenir des informations à propos de notre gaz d'atomes. Une grande partie de ces informations peut être extraite d'une image du nuage après extinction du piège, image que l'on obtient à l'aide d'une caméra et l'utilisation de lasers à résonance avec les atomes \footnote{L'utilisation de lasers à résonance conduit inévitablement à la destruction du nuage sur notre expérience. Il est donc nécessaire de répéter l'ensemble du cycle expérimental pour obtenir une seconde image des atomes.}.
 
 \paragraph*{Dispositif d'imagerie}
-L'expérience est équipée de trois caméras \textit{EMCCD C9102} de chez \textit{Hamamatsu}. Chacune de ces caméras comporte une matrice de $1000 \times 1000$ pixels de taille 8µm $\times$ 8µm. Ces trois caméras sont contrôlées via l'outil d'acquisition d'images de MATLAB, qui permet aussi de récupérer et traiter les images obtenues. L'acquisition des images est déclenchée de manière externe par le séquenceur.\\
-Une première caméra acquiert des images des atomes dans la première chambre selon l'axe horizontal $\vec{x}$ avec un grandissement de 1. La zone imageable est donc de 8mm $\times$ 8mm. Il est possible de réaliser de l'imagerie par fluorescence, tout comme de l'imagerie par absorption grâce à un montage 4$f$.\\
-Les deux autres caméras sont positionnées autour de la chambre de science selon l'axe horizontal $\vec{x}$ et vertical $\vec{y}$. Toutes deux voient le nuage au travers d'un système optique de grandissement 3\footnote{Ce grandissement a été mesuré on observant la chute libre du nuage en absence de lévitation.}, conduisant à une résolution de 2.71µm pour une zone imageable de 2.71mm $\times$ 2.71mm. Seule de l'imagerie par fluorescence est possible dans cette chambre, en revanche il est possible d'utiliser ces deux caméras simultanément.
+L'expérience est équipée de trois caméras \textit{EMCCD C9102} de chez \textit{Hamamatsu}, chacune comportant une matrice de $1000 \times 1000$ pixels de taille 8µm $\times$ 8µm. Ces trois caméras sont contrôlées via l'outil d'acquisition d'images de MATLAB, qui permet aussi de récupérer et traiter les images obtenues. L'acquisition des images est déclenchée de manière externe par le séquenceur.\\
+Une première caméra acquiert des images des atomes dans la première chambre selon l'axe horizontal $\vec{x}$ avec un grandissement de 1, la zone imageable est donc de 8mm $\times$ 8mm. Il est possible d'utiliser cette caméra pour de l'imagerie par absorption (représentée figure \ref{fig:img_mot}) aussi que pour de l'imagerie par fluoresence grâce à un montage 4$f$. Néanmoins, l'observation selon une direction induit forcément une intégration de la densité suivant cette direction: on ne peut mesurer qu'une densité intégrée.
+\begin{equation}
+n_{\mathrm{2D}}(y,z) =\int{\mathrm{d}x \: n(x,y,z)}
+\end{equation}
+avec $n$ la densité à trois dimensions.\\
+Les deux autres caméras sont positionnées autour de la chambre de science selon l'axe horizontal $\vec{x}$ et vertical $\vec{y}$. Toutes deux voient le nuage au travers d'un système optique de grandissement 3\footnote{Ce grandissement a été mesuré on observant la chute libre du nuage en l'absence de la lévitation.}, conduisant à une résolution de 2.71µm pour une zone imageable de 2.71mm $\times$ 2.71mm. Seule de l'imagerie par fluorescence est utilisable dans cette chambre, en revanche il est possible d'utiliser ces deux caméras simultanément pour obtenir les densités intégrés suivant deux directions $n_{\mathrm{2D}}(y,z)$ et $n_{\mathrm{2D}}(x,y)$ pour le même nuage.
 
 \paragraph*{Imagerie par absorption}
-Le principe de l'imagerie par absorption repose sur la loi de Beer-Lambert. 
-Très basse saturation, $s \ll 1$, en pratique on garde la puissance du faisceau \emph{sonde} en dessous des 100µW pour s'en assurer. Impulsion lumineuse de 50µs avec un laser à résonance avec la transition $\left| F=2 \right\rangle \rightarrow \left| F'=3 \right\rangle$. En pratique, pour mesurer aussi les atomes qui sont dans $\left| F=1 \right\rangle$, on ajoute une impulsion de faisceau de pompage optique pour transférer les atomes dans $\left| F=2 \right\rangle$, impulsion de 40µs accordé sur la transition $\left| F=1 \right\rangle \rightarrow \left| F'=2 \right\rangle$. On fait ce transfert avant le déclenchement de la caméra pour éviter de polluer la mesure. 
-\begin{align}
-n_{\mathrm{2D}}(y,z) &=\int{\mathrm{d}x \: n(x,y,z)} \\
-&= \frac{1}{\sigma} \mathrm{ln}\left( \frac{I_0(y,z)}{I(y,z)} \right)
-\end{align}
-L'opération de reconstruction du profil de densité atomique nécessite donc 2 images. En pratique, on en prend une troisième afin de soustraire le bruit de fond. Besoin d'un régime où on sature ni la caméra (borne supérieure de l'intensité), ni l'absorption de photons (borne inférieure de l'intensité, il ne faut pas de zéro d'intensité pour des nuages denses).
-
+Le principe de l'imagerie par absorption repose sur la loi de Beer-Lambert. En effet, lorsque qu'un faisceau laser traverse un milieu, son absorption dépend directement de la densité du milieu en particules absorbantes (la densité atomique dans notre cas). Pour sonder cette densité atomique, on envoie donc un faisceau laser à résonance directement sur les atomes et la caméra comme illustré figure \ref{fig:img_mot}. 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{fig/BEC_manip/img_mot.pdf}
 \caption{Imagerie par absorption. Un faisceau collimaté est envoyé sur les atomes, qui absorbent une partie des photons qui traversent le nuage. Le signal détecté à la caméra correspond à "l'ombre" des atomes, et la comparaison avec une image du faisceau incident sans atomes permet de remonter à la densité atomique intégrée selon la direction longitudinale.}
 \label{fig:img_mot}
 \end{figure}
+Dans un régime de très basse saturation $s \ll 1$, on peut montrer que la section efficace d'absorption de photons $\sigma$ est indépendante de l'intensité incidente $I_0(y,z)$. En pratique, on garde la puissance du faisceau \emph{sonde} en dessous de 100µW pour s'en assurer. Le faisceau \emph{sonde} correspond à une impulsion lumineuse d'une durée de 50µs réalisée par un laser à résonance avec la transition $\left| F=2 \right\rangle \rightarrow \left| F'=3 \right\rangle$ et permet ainsi de mesurer la densité atomique dans l'état $\left| F=2 \right\rangle$. \\
+Afin de mesurer aussi les atomes qui sont dans l'état $\left| F=1 \right\rangle$, on procède à un transfert de population vers l'état $\left| F=2 \right\rangle$ à l'aide d'une impulsion du faisceau repompeur accordé sur la transition $\left| F=1 \right\rangle \rightarrow \left| F'=2 \right\rangle$ pendant une durée de 40µs . Ce transfert est réalisé à la fin du temps de vol, juste avant le déclenchement de la caméra. \\
+L'application de la loi de Beer-Lambert permet de déterminer la densité atomique intégrée suivant l'axe longitudinal:
+\begin{equation}
+n_{\mathrm{2D}}(y,z)= \frac{1}{\sigma} \mathrm{ln}\left( \frac{I_0(y,z)}{I(y,z)} \right)
+\end{equation}
+L'opération de reconstruction du profil de densité atomique nécessite donc deux images: une image des atomes absorbant une partie du faisceau \emph{sonde}, et une image de ce faisceau sans les atomes pour connaître le profil d'intensité $I_0(y,z)$. En pratique, on prend une troisième image afin de soustraire le bruit de fond. De plus, une bonne reconstruction du profil nécessite des contraintes supplémentaires. En effet, nous nous fixons de travailler dans un régime où la sonde ne sature pas la caméra (cela fixe une borne supérieure pour l'intensité du faisceau), et où l'absorption de photons n'est pas totale dans les régions les plus denses.
+
+
 
 \paragraph*{Imagerie par fluorescence}
-Imagerie par fluorescence dans la première et seconde chambre, que l'on calibre sur l'absorption. En envoie des faisceaux saturants $s \gg 1$ pour que le taux d'émission spontanée ne dépende plus de l'intensité incidente, et on récolte une partie de la lumière diffusée.
-\begin{equation}
-I_{\mathrm{fluo}}(y,z)=\frac{\Omega}{4\pi} \frac{s}{1+s} \frac{ \Gamma \hb \omega_0}{2} n_{\mathrm{2D}}(y,z)
-\end{equation}
-avec $\Omega$ l'angle solide dans lequel sont captés les photons de fluorescence, $\Omega \sim \pi \mathrm{ON}^2$.
-Théoriquement, une seule image suffit à obtenir le profil de densité atomique. Cependant, on décide de prendre une seconde image avec les faisceaux de fluorescence allumés afin de soustraire un éventuel bruit dû à ces faisceaux. Pour des raisons de simplicité de configuration des caméras, on décide aussi de prendre une troisième image du bruit de fond, non utilisée pour le calcul de densité atomique.
-Les faisceaux illuminant les atomes sont à résonance avec la transition $\left| F=2 \right\rangle \rightarrow \left| F'=3 \right\rangle$. Pour aussi sonder les atomes qui sont dans l'état $\left| F=1 \right\rangle$, on y superpose le faisceau repompeur, accordé sur $\left| F=1 \right\rangle \rightarrow \left| F'=2 \right\rangle$ pendant toute la durée de l'impulsion lumineuse. 
-L'imagerie dans la première chambre est réalisée à l'aide des faisceaux MOT, tandis que l'imagerie de la seconde chambre est réalisée à l'aide de deux autres faisceaux dédiés. L'impulsion lumineuse dure typiquement 50µs.
-
+Le principe de l'imagerie par fluorescence consiste à éclairer les atomes avec de la lumière à résonance, puis à détecter la lumière que les atomes diffusent comme illustré figure \ref{fig:img_science}. Pour cela, on envoie des faisceaux très saturants $s \gg 1$ sur les atomes afin que le taux d'émission spontanée ne dépende plus de l'intensité incidente. Un avantage de cette technique par rapport à l'imagerie par absorption est sa capacité à détecter de très faibles nombres d'atomes, rendu possible grâce à l'amplification des caméras. Un deuxième avantage réside dans la simplicité de sa mise en œuvre: l'imagerie dans la première chambre est réalisée à l'aide des faisceaux MOT. L'imagerie de la seconde chambre est quant à elle réalisée à l'aide de deux autres faisceaux dédiés.
 \begin{figure}
 \centering
 \includegraphics[scale=1]{fig/BEC_manip/img_science_3.pdf}
-\caption{Dispositif d'imagerie pour la chambre de science. Une caméra capte les photons de fluorescence émis par les atomes selon une direction horizontale (\emph{Science Cam}), tandis qu'une autre capte ceux émis vers le bas avec un transport d'image (\emph{Bottom Cam}).}
+\caption{Dispositif d'imagerie par fluorescence pour la chambre de science. Une caméra capte les photons de fluorescence émis par les atomes selon une direction horizontale (\emph{Science Cam}), tandis qu'une autre capte ceux émis vers le bas avec un transport d'image (\emph{Bottom Cam}). Les faisceaux de fluorescence ne sont pas représentés ici (selon l'axe $\vec{z}$).}
 \label{fig:img_science}
 \end{figure}
+Les faisceaux d'imagerie sont à résonance avec la transition $\left| F=2 \right\rangle \rightarrow \left| F'=3 \right\rangle$ et permettent donc de sonder les atomes se trouvant dans l'état $\left| F=2 \right\rangle$. Comme pour l'imagerie par absorption, il est aussi possible d'adresser les atomes qui sont dans l'état $\left| F=1 \right\rangle$. Pour cela, on superpose aux faisceaux de fluorescence le faisceau repompeur\footnote{Les faisceaux de refroidissement laser et de fluorescence comportent déjà une partie de repompeur: le mélange se fait avant les amplificateurs optiques et il est possible de couper la partie repompeur à l'aide d'un obturateur mécanique, voir figure \ref{fig:table_optique}.}, accordé sur $\left| F=1 \right\rangle \rightarrow \left| F'=2 \right\rangle$ pendant toute la durée de l'impulsion lumineuse, qui est typiquement de 50µs. \\
+L'intensité fluorescée captée dans le plan d'imagerie est alors donnée par:
+\begin{equation}
+I_{\mathrm{fluo}}(y,z)=\frac{\Omega}{4\pi} \frac{s}{1+s} \frac{ \Gamma \hb \omega_0}{2} n_{\mathrm{2D}}(y,z)
+\label{eq:img_fluo}
+\end{equation}
+avec $\Omega \simeq \pi \mathrm{ON}^2$ l'angle solide dans lequel les photons de fluorescence sont captés par le système d'imagerie d'ouverture numérique $\mathrm{ON}\sim 0.4$. \\
+Théoriquement, une seule image suffit à obtenir le profil de densité atomique. Cependant, on décide de prendre une seconde image avec les faisceaux de fluorescence allumés afin de soustraire un éventuel bruit dû à ces faisceaux. Pour des raisons de simplicité de configuration des caméras, on décide aussi de prendre une troisième image du bruit de fond, non utilisée pour le calcul de densité atomique.\\
+Étant donné le nombre de paramètres non parfaitement connus dans la formule \ref{eq:img_fluo}, il est nécessaire de calibrer cette méthode d'imagerie. La calibration du nombre d'atomes se fait par comparaison avec l'imagerie par absorption. Si la comparaison est directe dans la première chambre, celle de l'imagerie dans la chambre de science est un peu plus délicate. La méthode retenue par l'équipe consiste à calibrer l'efficacité du transfert par la pince optique à l'aide d'allers-retours pour déterminer le nombre d'atomes attendu dans la seconde chambre.
+
+
