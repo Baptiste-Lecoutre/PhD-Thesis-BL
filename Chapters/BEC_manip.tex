@@ -223,7 +223,7 @@ L'utilisation de tels champs inhomogènes est très répandue dans le domaine de
 
 
 \subsection{Forces lumineuses}
-On se concentre à présent sur l'interaction entre un atome et un champ laser incident. Ce champ laser comporte un grand nombre de photons émis par seconde (typiquement $10^{12}$ pour une puissance de 1µW), on peut donc décrire ce champ laser par une onde classique 
+On se concentre à présent sur l'interaction entre un atome et un champ laser incident. Ce champ laser comporte un grand nombre de photons émis par seconde (typiquement $10^{12}$ photons par seconde pour une puissance de 1µW), on peut donc décrire ce champ laser par une onde classique 
 \begin{equation}
 \mathbf{E}(\mathbf{r},t)= \mathrm{Re} \left( \underline{\mathbf{E}}(\mathbf{r}) e^{-i \omega t - i\phi (\mathbf{r})} \right)
 \end{equation}
@@ -344,14 +344,58 @@ t_p=(2n+1) \frac{\pi}{\Omega}
 \section{Description d'un cycle expérimental}
 Dans la partie précédente, nous nous familiarisés avec quelques outils couramment utilisés sur les expériences d'atomes ultrafroids pour piéger et manipuler les atomes. Dans cette nouvelle partie, nous nous pencherons sur l'implémentation de ces outils sur notre expérience afin d'obtenir un condensat de Bose-Einstein de ${}^{87}$Rb. La présentation qui en sera donnée ici se verra succincte, nous présenterons brièvement les différentes étapes de refroidissement qui mènent à la condensation. de nombreux détails pourront être trouvés dans les thèses des doctorants qui ont contribué à faire de cette expérience ce qu'elle est aujourd'hui: \citep{fauquembergue2004realisation}, \citep{riou2006etude}, \citep{bernard2010transport}, \citep{jendrzejewski2012quantum}, \citep{muller2015coherent}, \citep{denechaud2018vers}... 
 
+
+
+
+
+\subsection{Présentation général du dispositif}
+Comme toutes les expériences d'atomes ultra-froids, la manipulation des atomes se déroule sous ultra-vide afin de s'affranchir des conditions extérieures. En particulier, on évite ainsi les collisions avec des particules extérieures à température ambiante, ce qui chaufferait notre gaz et détruirait la cohérence d'un éventuel condensat. Une vue d'ensemble de l'enceinte à vide est donnée figure \ref{fig:manip} qui montre aussi les pompes utilisées en continu pour maintenir le vide. Notre dispositif est composé d'un four chauffé à 120°C qui éjecte les atomes de rubidium. Un obturateur mécanique permet de couper le jet d'atomes lorsqu'on ne cherche pas à accumuler des atomes lors du début du cycle. Les atomes sont ralentis dans le ralentisseur Zeeman et capturés dans la première cellule où ils subissent les premières étapes de refroidissement. Ils sont ensuite transportés dans la seconde cellule où ils sont refroidis jusqu'à condensation. C'est dans cette seconde cellule que se déroulent les expériences de science, on l'appelle alors \emph{Chambre de science}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/BEC_manip/manip.pdf}
+\caption{Vue d'ensemble du corps de l'expérience. Les atomes se trouvent dans un montage sous ultra-vide, composé de deux chambres dans lesquelles les atomes sont manipulés.}
+\label{fig:manip}
+\end{figure}
+
+
+
 \subsection{Première chambre}
 zeeman, mélasse transverse, mot, piège mag + RF
+
+C'est dans la première chambre que se déroulent les premières étapes de refroidissement. 
+
+\paragraph*{Refoidrissement laser}
+bousin avec l'effet doppler, l'effet zeeman, toussa.
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Fig/BEC_manip/table_optique.pdf}
+\caption{Les lasers de tes morts}
+\label{fig:table_optique}
+\end{figure}
 
 \subsection{Chambre de science}
 Présentation du transport, du piège croisé, de la lévitation, éventuellement des spin-flips. Delta-kick
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{Imagerie}
-À la fin de la majorité de nos cycles expérimentaux, nous souhaitons obtenir des informations à propos de notre gaz d'atomes. Une grande partie de ces informations peut être extraite d'une image du nuage après extinction du piège, image que l'on obtient à l'aide d'une caméra et l'utilisation de lasers à résonance avec les atomes \footnote{L'utilisation de lasers à résonance conduit inévitablement à la destruction du nuage sur notre expérience. Il est donc nécessaire de répéter l'ensemble du cycle expérimental pour obtenir une seconde image des atomes.}.
+À la fin de la majorité de nos cycles expérimentaux, nous souhaitons obtenir des informations à propos de notre gaz d'atomes. Une grande partie de ces informations peut être extraite d'une image du nuage après extinction du piège, image que l'on obtient à l'aide d'une caméra et l'utilisation de lasers à résonance avec les atomes \footnote{L'utilisation de lasers à résonance conduit inévitablement à la destruction du nuage sur notre expérience. Il est donc nécessaire de répéter l'ensemble du cycle expérimental pour obtenir une seconde image des atomes.}. L'utilisation d'un retard (appelé \emph{temps de vol} et abrégé en \emph{TOF} pour l'anglais \textit{Time Of Flight}) entre l'extinction du piège et la prise de l'image est extrêmement courant fournit de précieux renseignements.
 
 \paragraph*{Dispositif d'imagerie}
 L'expérience est équipée de trois caméras \textit{EMCCD C9102} de chez \textit{Hamamatsu}, chacune comportant une matrice de $1000 \times 1000$ pixels de taille 8µm $\times$ 8µm. Ces trois caméras sont contrôlées via l'outil d'acquisition d'images de MATLAB, qui permet aussi de récupérer et traiter les images obtenues. L'acquisition des images est déclenchée de manière externe par le séquenceur.\\
