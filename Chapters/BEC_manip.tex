@@ -342,23 +342,16 @@ t_p=(2n+1) \frac{\pi}{\Omega}
 \label{fig:rabi}
 \end{figure}
 
+
+
+
+
+
 \section{Description d'un cycle expérimental}
-Dans la partie précédente, nous nous familiarisés avec quelques outils couramment utilisés sur les expériences d'atomes ultrafroids pour piéger et manipuler les atomes. Dans cette nouvelle partie, nous nous pencherons sur l'implémentation de ces outils sur notre expérience afin d'obtenir un condensat de Bose-Einstein de ${}^{87}$Rb. La présentation qui en sera donnée ici se verra succincte, nous présenterons brièvement les différentes étapes de refroidissement qui mènent à la condensation. de nombreux détails pourront être trouvés dans les thèses des doctorants qui ont contribué à faire de cette expérience ce qu'elle est aujourd'hui: \citep{fauquembergue2004realisation}, \citep{riou2006etude}, \citep{bernard2010transport}, \citep{jendrzejewski2012quantum}, \citep{muller2015coherent}, \citep{denechaud2018vers}... 
+Dans la partie précédente, nous nous sommes familiarisés avec quelques outils couramment utilisés sur les expériences d'atomes ultrafroids pour piéger et manipuler les atomes. Dans cette nouvelle partie, nous nous pencherons sur l'implémentation de ces outils sur notre expérience afin d'obtenir un condensat de Bose-Einstein de ${}^{87}$Rb. La présentation qui en sera donnée ici se verra succincte, nous nous contenterons d'illustrer brièvement les différentes étapes de refroidissement qui mènent à la condensation. De nombreux détails pourront être trouvés dans les thèses des doctorants qui ont contribué à faire de cette expérience ce qu'elle est aujourd'hui: \citep{fauquembergue2004realisation}, \citep{riou2006etude}, \citep{bernard2010transport}, \citep{jendrzejewski2012quantum}, \citep{muller2015coherent}, \citep{denechaud2018vers}... 
 
-
-
-
-
-
-
-
-
-
-
-
-
-\subsection{Présentation général du dispositif}
-Comme toutes les expériences d'atomes ultra-froids, la manipulation des atomes se déroule sous ultra-vide afin de s'affranchir des conditions extérieures. En particulier, on évite ainsi les collisions avec des particules extérieures à température ambiante, ce qui chaufferait notre gaz et détruirait la cohérence d'un éventuel condensat. Une vue d'ensemble de l'enceinte à vide est donnée figure \ref{fig:manip} qui montre aussi les pompes utilisées en continu pour maintenir le vide. Notre dispositif est composé d'un four chauffé à 120°C qui éjecte les atomes de rubidium. Un doigt froid refroidit à -30°C permet de filtrer le jet d'atomes et d'adsorber ceux qu isont bloqués afin de pas polluer le vide. Un obturateur mécanique permet de couper le jet lorsqu'on ne cherche pas à accumuler des atomes lors du début du cycle. Les atomes sont décélérés dans le ralentisseur Zeeman et capturés dans la première cellule où ils subissent les premières étapes de refroidissement. Ils sont ensuite transportés dans la seconde cellule où ils sont refroidis jusqu'à condensation. C'est dans cette seconde cellule que se déroulent les expériences de science, on l'appelle alors \emph{Chambre de science}.
+\subsection{Présentation générale du dispositif}
+Comme toutes les expériences d'atomes ultra-froids, la manipulation des atomes se déroule sous ultra-vide afin de s'affranchir des conditions extérieures. En particulier, on évite ainsi les collisions avec des particules extérieures à température ambiante, ce qui chaufferait notre gaz et détruirait la cohérence d'un nuage condensé. Une vue d'ensemble de l'enceinte à vide est donnée figure \ref{fig:manip} qui montre aussi les pompes utilisées en continu pour maintenir le vide. Notre dispositif est composé d'un four chauffé à 120°C qui éjecte les atomes de rubidium, il s'agit de notre source d'atomes. Un doigt froid refroidi à -30°C sert de diaphragme et permet de filtrer le jet d'atomes tout en adsorbant les atomes qui sont bloqués afin de pas polluer le vide. Un obturateur mécanique permet de couper le jet lorsqu'on ne souhaite pas accumuler des atomes en cours de cycle. Les atomes sont décélérés dans le ralentisseur Zeeman et capturés dans la première cellule où ils subissent les premières étapes de refroidissement. Ils sont ensuite transportés dans la seconde cellule où ils sont refroidis jusqu'à la condensation. C'est dans cette seconde cellule que se déroulent les expériences de science, on l'appelle alors \emph{Chambre de science}.
 
 \begin{figure}
 \centering
@@ -367,12 +360,8 @@ Comme toutes les expériences d'atomes ultra-froids, la manipulation des atomes 
 \label{fig:manip}
 \end{figure}
 
-
-
 \subsection{Première chambre}
-zeeman, mélasse transverse, mot, piège mag + RF
-
-C'est dans la première chambre que se déroulent les premières étapes de refroidissement du gaz de rubidium. Celles-ci sont dans un premier temps basées sur le refroidissement laser, puis dans un second temps sur un piégeage magnétique et l'évaporation forcée à l'aide d'un couteau radio-fréquences.
+C'est dans la première chambre que se déroulent les premières étapes de refroidissement du gaz de rubidium. Celles-ci sont dans un premier temps basées sur le refroidissement laser, puis dans un second temps sur un piégeage magnétique et l'évaporation forcée à l'aide d'un couteau radio-fréquence.
 
 \paragraph*{Refoidrissement laser}
 Le refroidissement laser se base sur la force de pression de radiation, présentée section \ref{sc:forces_lumineuses}. Une compréhension du phénomène de refroidissement laser peut être donnée à l'aide du désaccord $\delta=\omega-\omega_0- \mathbf{k}. \mathbf{v}$ dans le cas d'un atome se déplaçant à vitesse $\mathbf{v}$ dans le référentiel du laboratoire.
@@ -400,8 +389,39 @@ De plus, deux bobines en configuration anti-Helmholtz permettent de générer un
 On charge environ 2e9 atomes en moins d'une seconde grâce à la mélasse transverse qui permet de collimater le jet d'atomes et donc d'améliorer le flux. 
 Ensuite on coupe le champ magnétique pendant quelques millisecondes afin de réduite fortement la température: c'est l'étape de mélasse qui permet de descendre la température à environ 50µK. 
 
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/BEC_manip/MOT_magtrap.pdf}
+\caption{\textbf{a}: Éléments du piège magnéto-optique. Il est réalisé à l'aide de trois paires de faisceaux contra-propageants et de deux bobines formant un champ quadrupolaire. Ces bobines sont faites à partir de circuits imprimés posés sur la cellule. \textbf{b}: Géométrie du piège magnétique. Un champ quadrupolaire intense est créé selon les directions $\vec{y}$ et $\vec{z}$ par un électroaimant. Un champ de biais est généré par deux paires de bobines suivant la direction $\vec{x}$. Ce champ possède une courbure longitudinale et est responsable du confinement suivant cette direction. }
+\label{fig:MOT_magtrap}
+\end{figure}
+
 \paragraph*{Piège magnétique et évaporation radio-fréquence}
-stuff.
+Après l'étape de mélasse, on souhaite à présent manipuler les atomes dans un piège magnétique. Afin d'augmener le nombre d'atomes piégeables magnétiquement, il est nécessaire de manipuler l'état interne des atomes. On procède ainsi à une étape de dépompage en éteigant le faisceau de repompage et en accordant le faisceau de refroidissement sur la transition $\left| F=2 \right\rangle \rightarrow\left| F'=2 \right\rangle$: en quelques dizaines de microsecondes, les atomes se trouvent dans l'état $\left| F=1 \right\rangle$, dont seul le sous-état zeeman $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ peut être piégé\footnote{Il est le seul des trois sous-états zeeman à avoir le produit $g_{\mathrm{F}} m_{\mathrm{F}} > 0$, c'est à dire qu'il s'agit d'un état \emph{Low Field Seeker}, qui est attiré par les zones de faible champ magnétique. C'est à l'aide d'un minimum de champ magnétique que l'on réalise ce piège, le théorème de Wing interdisant les maximas de champ magnétique.}. Afin de maximiser la population de ce sous-état, on allume un faisceau de pompage optique accordé sur la transition $\left| F=1 \right\rangle \rightarrow \left| F'=1 \right\rangle$ et polarisé $\sigma^-$ pendant 40µs. En parallèle, on allume le champ du dipôle afin de définir un axe de quantification.
+
+Le piège magnétique que l'on utilise est un piège de type \emph{Ioffe-Pritchard}. Il est composé essentiellement de deux éléments:
+\begin{itemize}
+\item[\textendash] Un champ de biais orienté dans la direction $\vec{x}$, généré par une paire de bobines \emph{dipôle} de configuration légèrement plus éloignée que celle de Helmholtz: on a ainsi une courbure positive dans la direction longitudinale au centre des bobines. Une seconde paire de bobines \emph{Anti-dipôle} permet d'abaisser le champ constant au centre du piège.
+\item[\textendash] Un champ quadrupolaire dans le plan $(\vec{y},\vec{z})$ généré par un électroaimant ferromagnétique épais \emph{quadrupôle} comportant deux entrefers et deux bobines excitatrices dans deux sens opposés. L'épaisseur importante du matériau magnétique minimise l'effet de l'électroaimant dans la direction $\vec{x}$.
+\end{itemize}
+Le confinement dans la direction $\vec{x}$ est donc réalisée par le champ de \emph{dipôle}, tandis que le confinement dans les directions $\vec{y}$ et $\vec{z}$ est fait par le \emph{quadrupôle}. 
+La présence du champ de dipôle permet aussi de s'affranchir des pertes par transition Majorana, le champ ne s'annulant à aucun endroit de l'espace.
+On obtient ainsi un nuage piégé magnétiquement comportant environ 1e9 atomes tous dans le même sous-état zeeman à une température de $\sim 300$ µK.
+
+Une fois le nuage thermalisé, on procède à une étape de refroidissement évaporatif grâce à la méthode de \emph{couteau radio-fréquence}. Le principe du refroidissement évaporatif est le suivant:
+\begin{itemize}
+\item[•]On tronque le piège de telle sorte que quelques atomes très énergétiques (la queue de la distribution de vitesses de Maxwell-Boltzmann) puisse s'échapper du piège.
+\item[•]Les collisions entre les particules étant restées dans le piège permettent au système de retourner à l'équilibre thermique à une température plus basse.
+\end{itemize}
+La troncature du piège se fait à l'aide d'une onde radio-fréquence rayonnée par les bobines MOT. Celle-ci induit une transition de l'état piégé $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ à l'état non piégé $\left| F=1, m_{\mathrm{F}}=0 \right\rangle$ lorsque la condition de résonance $\hb \omega_{\mathrm{RF}} = m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} B(\mathbf{r})$ est vérifée. En abaissant progressivement la fréquence rayonnée pendant une dizaine de secondes, on obtient finalement un nuage de 50e6 atomes à une température de 10µK.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{Fig/BEC_manip/evapRF.pdf}
+\caption{Principe de l'évaporation radio-fréquence. L'application d'une radio-fréquence permet de tronquer le piège magnétique, et d'éliminer les atomes les plus énergétiques. L'énergie moyenne par particule étant plus basse, la température s'en retrouve abaissée après thermalisation.}
+\label{fig:evapRF}
+\end{figure}
+
 
 \subsection{Chambre de science}
 Présentation du transport, du piège croisé, de la lévitation, éventuellement des spin-flips. Delta-kick

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  2 APR 2020 12:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  2 APR 2020 17:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -1464,69 +1464,85 @@ Package pdftex.def Info: fig/BEC_manip/rabi.pdf  used on input line 340.
 <Fig/BEC_manip/manip.pdf, id=1011, 433.61185pt x 283.43782pt>
 File: Fig/BEC_manip/manip.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/manip.pdf>
-Package pdftex.def Info: Fig/BEC_manip/manip.pdf  used on input line 365.
+Package pdftex.def Info: Fig/BEC_manip/manip.pdf  used on input line 358.
 (pdftex.def)             Requested size: 426.79135pt x 278.98679pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [24 <./fig/BEC_manip/rabi.pdf>]
 <Fig/BEC_manip/table_optique.pdf, id=1147, 436.53725pt x 348.388pt>
 File: Fig/BEC_manip/table_optique.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/table_optique.pdf>
-Package pdftex.def Info: Fig/BEC_manip/table_optique.pdf  used on input line 38
-8.
+Package pdftex.def Info: Fig/BEC_manip/table_optique.pdf  used on input line 37
+7.
 (pdftex.def)             Requested size: 341.43437pt x 272.49107pt.
- [25 <./Fig/BEC_manip/manip.pdf>] [26 <./Fig/BEC_manip/table_optique.pdf>] [27]
-<fig/BEC_manip/img_mot.pdf, id=1181, 431.52072pt x 114.65497pt>
+ [25 <./Fig/BEC_manip/manip.pdf>] [26 <./Fig/BEC_manip/table_optique.pdf>]
+<Fig/BEC_manip/MOT_magtrap.pdf, id=1170, 359.96951pt x 197.41629pt>
+File: Fig/BEC_manip/MOT_magtrap.pdf Graphic file (type pdf)
+<use Fig/BEC_manip/MOT_magtrap.pdf>
+Package pdftex.def Info: Fig/BEC_manip/MOT_magtrap.pdf  used on input line 394.
+
+(pdftex.def)             Requested size: 426.79135pt x 234.08183pt.
+ [27 <./Fig/BEC_manip/MOT_magtrap.pdf>]
+<Fig/BEC_manip/evapRF.pdf, id=1214, 388.57635pt x 204.5393pt>
+File: Fig/BEC_manip/evapRF.pdf Graphic file (type pdf)
+<use Fig/BEC_manip/evapRF.pdf>
+Package pdftex.def Info: Fig/BEC_manip/evapRF.pdf  used on input line 420.
+(pdftex.def)             Requested size: 384.1096pt x 202.19177pt.
+ [28 <./Fig/BEC_manip/evapRF.pdf>]
+<fig/BEC_manip/img_mot.pdf, id=2387, 431.52072pt x 114.65497pt>
 File: fig/BEC_manip/img_mot.pdf Graphic file (type pdf)
 <use fig/BEC_manip/img_mot.pdf>
-Package pdftex.def Info: fig/BEC_manip/img_mot.pdf  used on input line 442.
+Package pdftex.def Info: fig/BEC_manip/img_mot.pdf  used on input line 462.
 (pdftex.def)             Requested size: 426.79135pt x 113.40204pt.
- [28 <./fig/BEC_manip/img_mot.pdf>]
-<fig/BEC_manip/img_science_3.pdf, id=1238, 318.99263pt x 189.45609pt>
+ [29]
+<fig/BEC_manip/img_science_3.pdf, id=2399, 318.99263pt x 189.45609pt>
 File: fig/BEC_manip/img_science_3.pdf Graphic file (type pdf)
 <use fig/BEC_manip/img_science_3.pdf>
-Package pdftex.def Info: fig/BEC_manip/img_science_3.pdf  used on input line 46
+Package pdftex.def Info: fig/BEC_manip/img_science_3.pdf  used on input line 48
 0.
 (pdftex.def)             Requested size: 318.99184pt x 189.45561pt.
- [29 <./fig/BEC_manip/img_science_3.pdf>])
-(Chapters/Modif_exp.tex [30]
-Chapitre 3.
-) (Chapters/Speckle.tex [31
+ [30 <./fig/BEC_manip/img_mot.pdf>]) (Chapters/Modif_exp.tex
+[31 <./fig/BEC_manip/img_science_3.pdf>] [32
 
-] [32
+]
+Chapitre 3.
+) (Chapters/Speckle.tex [33] [34
 
 ]
 Chapitre 4.
-<Fig/Speckle/speckle_pattern.pdf, id=1329, 404.94328pt x 187.88626pt>
+<Fig/Speckle/speckle_pattern.pdf, id=2539, 404.94328pt x 187.88626pt>
 File: Fig/Speckle/speckle_pattern.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_pattern.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 21
 .
 (pdftex.def)             Requested size: 404.94228pt x 187.88579pt.
-[33] [34 <./Fig/Speckle/speckle_pattern.pdf>]
-<Fig/Speckle/diffus_prop.pdf, id=1407, 300.06396pt x 226.78568pt>
+[35] [36 <./Fig/Speckle/speckle_pattern.pdf>]
+<Fig/Speckle/diffus_prop.pdf, id=2617, 300.06396pt x 226.78568pt>
 File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
 <use Fig/Speckle/diffus_prop.pdf>
 Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 61.
 (pdftex.def)             Requested size: 300.06323pt x 226.78511pt.
- [35 <./Fig/Speckle/diffus_prop.pdf>]
-<Fig/Speckle/random_walk_speckle.pdf, id=1513, 208.17155pt x 207.50287pt>
+ [37 <./Fig/Speckle/diffus_prop.pdf>]
+<Fig/Speckle/random_walk_speckle.pdf, id=2724, 208.17155pt x 207.50287pt>
 File: Fig/Speckle/random_walk_speckle.pdf Graphic file (type pdf)
 <use Fig/Speckle/random_walk_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/random_walk_speckle.pdf  used on input lin
 e 100.
 (pdftex.def)             Requested size: 208.17102pt x 207.50235pt.
- [36 <./Fig/Speckle/random_walk_speckle.pdf>]
-<Fig/Speckle/montage_diffuseur.pdf, id=1542, 489.34206pt x 294.36562pt>
+ [38 <./Fig/Speckle/random_walk_speckle.pdf>]
+<Fig/Speckle/montage_diffuseur.pdf, id=2753, 489.34206pt x 294.36562pt>
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
 123.
 (pdftex.def)             Requested size: 342.53711pt x 206.05452pt.
- [37 <./Fig/Speckle/montage_diffuseur.pdf>]
+ [39 <./Fig/Speckle/montage_diffuseur.pdf>]
 Overfull \hbox (8.747pt too wide) detected at line 141
 []
  []
 
-[38]) [39] [40
+[40]) [41] [42
 
 ]
 
@@ -1537,17 +1553,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\thepart' on input line 122.
 
-(main.ptc) [41] [42] (Chapters/Taus_PRL.tex
+(main.ptc) [43] [44] (Chapters/Taus_PRL.tex
 Chapitre 5.
-) (Chapters/TauS_NJP.tex [43
+) (Chapters/TauS_NJP.tex [45
 
-] [44
+] [46
 
 ]
 Chapitre 6.
-) (Chapters/Conclusion.tex [45] [46
+) (Chapters/Conclusion.tex [47] [48
 
-]) [47] [48
+]) [49] [50
 
 ]
 
@@ -1558,95 +1574,80 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\thepart' on input line 131.
 
-(main.ptc) [49] [50] (Appendices/Anex_speckle.tex
+(main.ptc) [51] [52] (Appendices/Anex_speckle.tex
 Annexe A.
 
 Underfull \vbox (badness 2418) has occurred while \output is active []
 
- [51
+ [53
 
 ]
-[52] [53]) (Appendices/Anex_Born.tex [54]
+[54] [55]) (Appendices/Anex_Born.tex [56]
 Annexe B.
-) (main.bbl [55
+) (main.bbl [57
 
-] [56
+] [58
 
 ])
 \tf@ptc=\write6
 \openout6 = `main.ptc'.
 
- [57]
+ [59]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 144.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 30005 strings out of 481511
- 565700 string characters out of 2913122
- 1106607 words of memory out of 3000000
- 44060 multiletter control sequences out of 15000+200000
- 718208 words of font info for 271 fonts, out of 3000000 for 9000
+ 30040 strings out of 481511
+ 566347 string characters out of 2913122
+ 1107554 words of memory out of 3000000
+ 44075 multiletter control sequences out of 15000+200000
+ 723406 words of font info for 280 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,62p,1632b,1330s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.22} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.28} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.27} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C
-:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/
-Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C
-:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:
-/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{
-C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc
-}<C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.p
-fb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx5.
-pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx6
+{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
+{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C
+:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}
+{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{
+C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc
+}{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.e
+nc}<C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10
 .pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx
-7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmb
-x8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-csc10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmex10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-lm/lmmi10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmmi6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmmi7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmmi8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmmi9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmmib10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmr10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmr12.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr5.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmri10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmss10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmssbx10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/lm/lmsy10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nop/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (57 pages, 1824803 bytes).
+5.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmb
+x6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
+bx7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
+mbx8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmcsc10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+lm/lmex10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmmi10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmmi6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmmi7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmmi8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmmi9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmmib10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmr10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmr12.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmr5.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmr6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmr7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmr8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmr9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmri10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/lm/lmri9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmss10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/lm/lmssbx10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Nop/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nop/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (59 pages, 2204994 bytes).
 PDF statistics:
- 1998 PDF objects out of 2073 (max. 8388607)
- 290 named destinations out of 1000 (max. 500000)
- 66939 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 3209 PDF objects out of 3580 (max. 8388607)
+ 291 named destinations out of 1000 (max. 500000)
+ 68997 words of extra memory for PDF output out of 74296 (max. 10000000)
 
