@@ -356,7 +356,7 @@ Comme toutes les expériences d'atomes ultra-froids, la manipulation des atomes 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/BEC_manip/manip.pdf}
-\caption{Vue d'ensemble du corps de l'expérience. Les atomes se trouvent dans un montage sous ultra-vide, composé de deux chambres dans lesquelles les atomes sont manipulés.}
+\caption{\textbf{Vue d'ensemble du corps de l'expérience.} Les atomes se trouvent dans un montage sous ultra-vide, composé de deux chambres dans lesquelles les atomes sont manipulés.}
 \label{fig:manip}
 \end{figure}
 
@@ -364,69 +364,95 @@ Comme toutes les expériences d'atomes ultra-froids, la manipulation des atomes 
 C'est dans la première chambre que se déroulent les premières étapes de refroidissement du gaz de rubidium. Celles-ci sont dans un premier temps basées sur le refroidissement laser, puis dans un second temps sur un piégeage magnétique et l'évaporation forcée à l'aide d'un couteau radio-fréquence.
 
 \paragraph*{Refoidrissement laser}
-Le refroidissement laser se base sur la force de pression de radiation, présentée section \ref{sc:forces_lumineuses}. Une compréhension du phénomène de refroidissement laser peut être donnée à l'aide du désaccord $\delta=\omega-\omega_0- \mathbf{k}. \mathbf{v}$ dans le cas d'un atome se déplaçant à vitesse $\mathbf{v}$ dans le référentiel du laboratoire.
-Dans le référentiel de l'atome, la condition de résonance s'écrit $\omega_0=\omega-\mathbf{k}.\mathbf{v}$. L'atome va donc absorber un photon d'énergie $\hb \omega$ et en émettre un d'énergie $\hb \omega_0$ (d'énergie plus grande que le photon absorbé dans la cas d'un décalage vers le rouge). Il y a donc eu un transfert d'énergie entre l'énergie cinétique et le désaccord.
+Le principe du refroidissement laser repose sur la force de pression de radiation, présentée section \ref{sc:forces_lumineuses}. Une compréhension du phénomène de refroidissement laser peut être donnée à l'aide du désaccord $\delta=\omega-\omega_0- \mathbf{k}. \mathbf{v}$ dans le cas d'un atome se déplaçant à vitesse $\mathbf{v}$.
+Dans le référentiel de l'atome, la condition de résonance $\delta=0$ s'écrit $\omega_0=\omega-\mathbf{k}.\mathbf{v}$. L'atome va donc absorber un photon d'énergie $\hb \omega$ et en émettre un d'énergie $\hb \omega_0$ (d'énergie plus grande que le photon absorbé dans la cas d'un décalage vers le rouge par effet Doppler). Il y a donc eu un transfert d'énergie entre l'énergie cinétique et le désaccord. La répétition de tels cycles permet ainsi de transférer beaucoup d'énergie cinétique de l'atome vers le désaccord entre photons absorbés et photons rayonnés.
 
-Transition cyclante entre $\left| F=2 \right\rangle$ et $\left| F'=3 \right\rangle$ car les règles de sélection donnent $F'-F= \lbrace 0, \pm 1 \rbrace$.
-En revanche on peut accidentellement envoyer des atomes dans $\left| F'=2 \right\rangle$ car le désaccord n'est que de 266MHz. On arrose cet état tous les 50 cycles environ, et sa désexcitation pour faire tomber les atomes dans l'état $\left|F=1\right\rangle$ qu'il faut recycler. Pour conserver les atomes, on doit alors utiliser un second laser appelé \emph{repompeur} qui permet de recycler les atomes perdus vers la transition cyclante. Il est accordé sur $\left| F=1 \right\rangle \rightarrow \left| F'=2 \right\rangle$
+La possibilité de répéter ces cycles d'absorption de photons et d'émission spontanée repose sur l'existence d'une transition cyclante entre les états hyperfins $\left| F=2 \right\rangle$ et $\left| F'=3 \right\rangle$. La désexcitation de $\left|F'=3\right\rangle$ renvoie forcément l'atome dans l'état $\left| F=2 \right\rangle$ car les règles de sélection imposent $F'-F= \lbrace 0, \pm 1 \rbrace$.
+En revanche, on peut accidentellement envoyer des atomes dans l'état excité $\left| F'=2 \right\rangle$ car la séparation avec l'état ciblé $\left| F'=3 \right\rangle$ n'est que de 266MHz. Statistiquement, un atome visite cet état tous les 50 cycles environ, et sa désexcitation peut faire tomber les atomes dans l'état $\left|F=1\right\rangle$. Cet état étant un état noir, pour conserver les atomes, on doit alors utiliser un second laser appelé \emph{repompeur} qui permet de recycler les atomes perdus vers la transition cyclante\footnote{À titre d'illustration, le temps de vie du piège magnéto-optique a été mesuré à une dizaine de secondes. Sans le faisceau repompeur, les atomes tombent dans l'état noir $\left| F=1 \right\rangle$ en quelques micro-secondes seulement.}. Il est accordé sur la transition $\left| F=1 \right\rangle \rightarrow \left| F'=2 \right\rangle$.
 
-Le dispositif laser se compose alors d'un laser principal de refroidissement accordé sur la transition $\left| F=2 \right\rangle \rightarrow \left| F'=3 \right\rangle$. Il est secondé d'un second laser \emph{repompeur} accordé sur la transition $\left| F=1 \right\rangle \rightarrow \left| F'=2 \right\rangle$. Enfin un dernier laser sert de référence de fréquence pour les deux précédents en étant asservi par absorption saturée. Une représentation schématique de l'ensemble de ces lasers et de leur amplification peut être trouvée figure \ref{fig:table_optique}.
+Notre dispositif laser se compose alors d'un laser principal de refroidissement accordé sur la transition $\left| F=2 \right\rangle \rightarrow \left| F'=3 \right\rangle$. Il est secondé d'un second laser \emph{repompeur} accordé sur la transition $\left| F=1 \right\rangle \rightarrow \left| F'=2 \right\rangle$. Enfin un dernier laser sert de référence de fréquence pour les deux précédents en étant asservi par absorption saturée. Une représentation schématique de l'ensemble de ces lasers et de leur amplification peut être trouvée figure \ref{fig:table_optique}.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{Fig/BEC_manip/table_optique.pdf}
-\caption{Représentation schématique de notre montage laser. Le laser maître \emph{L1} sert de référence de fréquence en étant asservi par absorption saturée. Le laser de refroidissement Doppler \emph{L3} est asservi par battements avec L1. Le laser repompeur \emph{L2} est lui aussi asservi par battements avec L2 grâce à l'utilisation d'électronique rapide. Notons enfin que les faisceaux de L2 et L3 sont mélangés avant amplification (TA). Les faisceaux arrivant sur les atomes comporteront alors les fréquences provenant de ces deux lasers. Un obturateur mécanique (non représenté) permet de couper le faisceau de L2 allant vers les amplificateurs.}
+\caption{\textbf{Représentation schématique de notre montage laser.} Le laser maître \emph{L1} sert de référence de fréquence en étant asservi par absorption saturée. Le laser de refroidissement Doppler \emph{L3} est asservi par battements avec \emph{L1}. Le laser repompeur \emph{L2} est lui aussi asservi par battements avec L2 grâce à l'utilisation d'électronique rapide. Notons enfin que les faisceaux de \emph{L2} et \emph{L3} sont mélangés avant amplification (TA). Les faisceaux arrivant sur les atomes comporteront alors les fréquences provenant de ces deux lasers. Un obturateur mécanique (non représenté) permet de couper le faisceau de \emph{L2} allant vers les amplificateurs. {\LARGE POMPAGE OPTIQUE}}
 \label{fig:table_optique}
 \end{figure}
 
 \paragraph*{Le ralentisseur Zeeman}
-La première étape consiste à ralentir suffisamment le jet d'atomes pour pouvoir les capturer dans un premier piège. Un laser désaccordé vers le rouge par rapport à la transition cyclante $\left| F=2 \right\rangle \rightarrow\left| F'=3 \right\rangle$ permet de réaliser de ralentir les atomes à l'aide de cycles d'absorption et d'émission spontanée de photons. Cependant, le ralentissement des atomes entraîne un eloignement de la résonance à cause de l'effet Doppler. Pour palier à ce problème, on applique un champ magnétique pour satisfaire localement la condition de résonance par effet Zeeman.
-Ainsi, on est capable de réduire la vitesse des atomes de 100m.s${}^{-1}$ à environ 20m.s${}^{-1}$ sur une distance de seulement 1 mètre.
+La première étape consiste à ralentir suffisamment le jet d'atomes pour pouvoir les capturer dans un premier piège. Un laser désaccordé vers le rouge par rapport à la transition cyclante $\left| F=2 \right\rangle \rightarrow\left| F'=3 \right\rangle$ permet de réaliser une décélération des atomes à l'aide de cycles d'absorption et d'émission spontanée de photons. Cependant, le ralentissement des atomes entraîne un eloignement de la résonance à cause de l'effet Doppler. Pour palier à ce problème, on applique un champ magnétique pour satisfaire localement la condition de résonance par effet Zeeman. Ce champ est appliqué à l'aide d'une bobine comportant un nombre de tours par unité de longueur variable, représentée figure \ref{fig:manip} entre le four et la première chambre.
+Ainsi, on est capable de réduire la vitesse des atomes de 100m.s${}^{-1}$ à environ 20m.s${}^{-1}$ sur une distance de seulement 1m.
 
 \paragraph*{Le piège magnéto-optique}
 Une fois les atomes suffisamment ralentis, ils sont capturés dans le piège magnéto-optique (abrégé en \emph{MOT} pour l'anglais \textit{Magneto-Optical Trap}). Celui-ci est composé de trois paires de faisceaux contra-propageants désaccordés vers le rouge d'environ $\delta=-16$MHz, de polarisations opposées $\sigma^+$ et $\sigma^-$. Chacun de ces faisceaux possède une puissance d'environ 12mW.
 De plus, deux bobines en configuration anti-Helmholtz permettent de générer un champ quadrupolaire, donc un gradient magnétique dans les trois directions de l'espace, afin de créer une force de rappel.
-On charge environ 2e9 atomes en moins d'une seconde grâce à la mélasse transverse qui permet de collimater le jet d'atomes et donc d'améliorer le flux. 
-Ensuite on coupe le champ magnétique pendant quelques millisecondes afin de réduite fortement la température: c'est l'étape de mélasse qui permet de descendre la température à environ 50µK. 
+On charge environ $2 \times 10^9$ atomes en moins d'une seconde grâce à la mélasse transverse qui permet de collimater le jet d'atomes et donc d'améliorer le flux. 
+Une fois le chargement saturé, on coupe le champ magnétique pendant quelques millisecondes afin de réduite fortement la température: c'est l'étape de mélasse optique qui permet de descendre la température à environ 50µK. 
 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/BEC_manip/MOT_magtrap.pdf}
-\caption{\textbf{a}: Éléments du piège magnéto-optique. Il est réalisé à l'aide de trois paires de faisceaux contra-propageants et de deux bobines formant un champ quadrupolaire. Ces bobines sont faites à partir de circuits imprimés posés sur la cellule. \textbf{b}: Géométrie du piège magnétique. Un champ quadrupolaire intense est créé selon les directions $\vec{y}$ et $\vec{z}$ par un électroaimant. Un champ de biais est généré par deux paires de bobines suivant la direction $\vec{x}$. Ce champ possède une courbure longitudinale et est responsable du confinement suivant cette direction. }
+\caption{\textbf{a: Éléments du piège magnéto-optique.} Il est réalisé à l'aide de trois paires de faisceaux contra-propageants et de deux bobines formant un champ quadrupolaire. Ces bobines sont faites à partir de circuits imprimés posés sur la cellule. \textbf{b: Géométrie du piège magnétique.} Un champ quadrupolaire intense est créé selon les directions $\vec{y}$ et $\vec{z}$ par un électroaimant. Un champ de biais est généré par deux paires de bobines suivant la direction $\vec{x}$. Ce champ possède une courbure longitudinale et est responsable du confinement suivant cette direction. }
 \label{fig:MOT_magtrap}
 \end{figure}
 
 \paragraph*{Piège magnétique et évaporation radio-fréquence}
-Après l'étape de mélasse, on souhaite à présent manipuler les atomes dans un piège magnétique. Afin d'augmener le nombre d'atomes piégeables magnétiquement, il est nécessaire de manipuler l'état interne des atomes. On procède ainsi à une étape de dépompage en éteigant le faisceau de repompage et en accordant le faisceau de refroidissement sur la transition $\left| F=2 \right\rangle \rightarrow\left| F'=2 \right\rangle$: en quelques dizaines de microsecondes, les atomes se trouvent dans l'état $\left| F=1 \right\rangle$, dont seul le sous-état zeeman $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ peut être piégé\footnote{Il est le seul des trois sous-états zeeman à avoir le produit $g_{\mathrm{F}} m_{\mathrm{F}} > 0$, c'est à dire qu'il s'agit d'un état \emph{Low Field Seeker}, qui est attiré par les zones de faible champ magnétique. C'est à l'aide d'un minimum de champ magnétique que l'on réalise ce piège, le théorème de Wing interdisant les maximas de champ magnétique.}. Afin de maximiser la population de ce sous-état, on allume un faisceau de pompage optique accordé sur la transition $\left| F=1 \right\rangle \rightarrow \left| F'=1 \right\rangle$ et polarisé $\sigma^-$ pendant 40µs. En parallèle, on allume le champ du dipôle afin de définir un axe de quantification.
+Après l'étape de mélasse, on souhaite manipuler les atomes dans un piège magnétique. Afin d'augmenter le nombre d'atomes piégeables magnétiquement, il est nécessaire de manipuler l'état interne des atomes. On procède ainsi à une étape de dépompage en éteigant le faisceau de repompage et en accordant le faisceau de refroidissement sur la transition $\left| F=2 \right\rangle \rightarrow\left| F'=2 \right\rangle$: en moins d'une milliseconde, les atomes se trouvent dans l'état $\left| F=1 \right\rangle$, dont seul le sous-état zeeman $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ peut être piégé\footnote{Il est le seul des trois sous-états zeeman de $\left| F=1 \right\rangle$ à avoir le produit $g_{\mathrm{F}} m_{\mathrm{F}} > 0$, c'est à dire qu'il s'agit d'un état \emph{Low Field Seeker}, qui est attiré par les zones de faible champ magnétique. En effet, c'est à l'aide d'un minimum de champ magnétique que l'on réalise ce piège, le théorème de Wing interdisant les maximas de champ magnétique. }\footnote{Des huit sous-états zeeman fondamentaux, il s'agit de celui ayant la plus grande probabilité d'occupation tout en étant piégeable, justifiant son choix. }. Afin de maximiser la population de ce sous-état, on allume un faisceau de pompage optique accordé sur la transition $\left| F=1 \right\rangle \rightarrow \left| F'=1 \right\rangle$ et polarisé $\sigma^-$ pendant 40µs. En parallèle, on allume le champ du dipôle afin de définir un axe de quantification.
 
 Le piège magnétique que l'on utilise est un piège de type \emph{Ioffe-Pritchard}. Il est composé essentiellement de deux éléments:
 \begin{itemize}
-\item[\textendash] Un champ de biais orienté dans la direction $\vec{x}$, généré par une paire de bobines \emph{dipôle} de configuration légèrement plus éloignée que celle de Helmholtz: on a ainsi une courbure positive dans la direction longitudinale au centre des bobines. Une seconde paire de bobines \emph{Anti-dipôle} permet d'abaisser le champ constant au centre du piège.
-\item[\textendash] Un champ quadrupolaire dans le plan $(\vec{y},\vec{z})$ généré par un électroaimant ferromagnétique épais \emph{quadrupôle} comportant deux entrefers et deux bobines excitatrices dans deux sens opposés. L'épaisseur importante du matériau magnétique minimise l'effet de l'électroaimant dans la direction $\vec{x}$.
+\item[\textendash] Un champ de biais orienté dans la direction $\vec{x}$, généré par une paire de bobines (\emph{dipôle}) de configuration légèrement plus éloignée que celle de Helmholtz: on a ainsi une courbure positive dans la direction longitudinale au centre des bobines. Une seconde paire de bobines (\emph{anti-dipôle}) permet d'abaisser le champ constant au centre du piège, et donc de le comprimer \citep{fauquembergue2004realisation}.
+\item[\textendash] Un champ quadrupolaire dans le plan $(\vec{y},\vec{z})$ généré par un électroaimant ferromagnétique épais (\emph{quadrupôle}) comportant deux entrefers et deux bobines excitatrices dans deux sens opposés. L'épaisseur importante du matériau magnétique minimise l'effet de l'électroaimant dans la direction $\vec{x}$.
 \end{itemize}
 Le confinement dans la direction $\vec{x}$ est donc réalisée par le champ de \emph{dipôle}, tandis que le confinement dans les directions $\vec{y}$ et $\vec{z}$ est fait par le \emph{quadrupôle}. 
 La présence du champ de dipôle permet aussi de s'affranchir des pertes par transition Majorana, le champ ne s'annulant à aucun endroit de l'espace.
-On obtient ainsi un nuage piégé magnétiquement comportant environ 1e9 atomes tous dans le même sous-état zeeman à une température de $\sim 300$ µK.
+On obtient ainsi un nuage piégé magnétiquement comportant environ $1 \times 10^9$ atomes tous dans le même sous-état zeeman à une température de $\sim 300$ µK.
 
-Une fois le nuage thermalisé, on procède à une étape de refroidissement évaporatif grâce à la méthode de \emph{couteau radio-fréquence}. Le principe du refroidissement évaporatif est le suivant:
+Une fois le nuage thermalisé, on procède à une étape de refroidissement évaporatif grâce à la méthode de \emph{couteau radio-fréquence}. Le principe du refroidissement évaporatif sera détaillé section \ref{sc:evap_optique}, mais on peut le résumer de la manière suivante:
 \begin{itemize}
-\item[•]On tronque le piège de telle sorte que quelques atomes très énergétiques (la queue de la distribution de vitesses de Maxwell-Boltzmann) puisse s'échapper du piège.
-\item[•]Les collisions entre les particules étant restées dans le piège permettent au système de retourner à l'équilibre thermique à une température plus basse.
+\item[\textendash]On tronque le piège de telle sorte que quelques atomes très énergétiques (la queue de la distribution de vitesses de Maxwell-Boltzmann) puisse s'échapper du piège.
+\item[\textendash]Les collisions entre les particules étant restées dans le piège permettent au système de retourner à l'équilibre thermique à une température plus basse.
 \end{itemize}
-La troncature du piège se fait à l'aide d'une onde radio-fréquence rayonnée par les bobines MOT. Celle-ci induit une transition de l'état piégé $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ à l'état non piégé $\left| F=1, m_{\mathrm{F}}=0 \right\rangle$ lorsque la condition de résonance $\hb \omega_{\mathrm{RF}} = m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} B(\mathbf{r})$ est vérifée. En abaissant progressivement la fréquence rayonnée pendant une dizaine de secondes, on obtient finalement un nuage de 50e6 atomes à une température de 10µK.
+La troncature du piège se fait à l'aide d'une onde radio-fréquence rayonnée par les bobines MOT. Celle-ci induit une transition de l'état piégé $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ à l'état non piégé $\left| F=1, m_{\mathrm{F}}=0 \right\rangle$ lorsque la condition de résonance $\hb \omega_{\mathrm{RF}} = m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} B(\mathbf{r})$ est vérifée. En abaissant progressivement la fréquence rayonnée pendant une dizaine de secondes, on obtient finalement un nuage de $50 \times 10^6$ atomes à une température de 10µK.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{Fig/BEC_manip/evapRF.pdf}
-\caption{Principe de l'évaporation radio-fréquence. L'application d'une radio-fréquence permet de tronquer le piège magnétique, et d'éliminer les atomes les plus énergétiques. L'énergie moyenne par particule étant plus basse, la température s'en retrouve abaissée après thermalisation.}
+\caption{\textbf{Principe de l'évaporation radio-fréquence.} L'application d'une radio-fréquence permet de tronquer le piège magnétique, et d'éliminer les atomes les plus énergétiques. L'énergie moyenne par particule étant plus basse, la température s'en retrouve abaissée après thermalisation.}
 \label{fig:evapRF}
 \end{figure}
 
 
 \subsection{Chambre de science}
-Présentation du transport, du piège croisé, de la lévitation, éventuellement des spin-flips. Delta-kick
+Présentation du transport, du piège croisé, de la lévitation, spin-flips. Delta-kick
 
+Après ces premières étapes de refroidissement, les atomes sont transportés dans une seconde cellule où l'on procède à une évaporation tout-optique pour franchir le seuil de condensation. La raison d'être de cette seconde cellule est de profiter d'un maximum d'accès optiques tout en s'affranchissant de l'environnement magnétique de la première chambre, en particulier celui du ferromagnétique.
 
+\ref{ch:new_exp}
+
+\paragraph*{Transport dans une pince optique et piège dipolaire croisé}
+Le transfert se fait dans une pince optique. Il s'agit d'un piège dipolaire focalisé sur les atomes. La forme du piège est alors donnée par la forme du faisceau de piégeage, régie par l'optique gaussienne. Les atomes sont piégés autout du \textit{waist} du faisceau. La longueur d'onde du faisceau de piégeage est $\lambda=$1070nm. La taille transverse du faisceau est $w_{\mathrm{0}}=$28µm. La longueur de piégeage longitudinale est donnée par la longueur de Rayleigh, $z_{\mathrm{R}}= \pi w_{\mathrm{0}}^2 / \lambda$ = 2.3mm. On déplace ce point focal est donc les tomes retenus dedans à l'aide d'une platine de translation sur laquelle sont montées les optiques de focalisation de la pince. Le déplacement de 40cm se fait en 2s. On estime une puissance de 1W sur les atomes. L'efficacité de transfert est estimée à 75%. 
+
+Une fois dans la seconde chambre, on allume un deuxième faisceau afin de comprimer le nuage suivant la direction $\vec{z}$ qui correspond à la direction longitudinale de la pince. Le faisceau \emph{Dimple} est de forme elliptique, de tailles 180µm $\times$ 90µm dans les directions $\vec{x}$ et $\vec{z}$ respectivement. Dans le piège dipolaire croisé, le confinement suivant les directions $\vec{x}$ et $\vec{y}$, est fait par la pince, tandis que le confinement suivant la direction $\vec{z}$ est fait par le faisceau vertical. 7W dans le faisceau vertical. Le faisceau vertical est estimé collimaté.
+Le tout est à 10µK, pour un nombre d'atomes estimé à $3 \times 10^6$.
+figure transport de vincent, rajouter le dimple dans la seconde chambre.
+
+\paragraph*{Lévitation magnétique}
+Afin d'obtenir des temps de propagation dans le désordre très longs et de s'affranchir de toutes les forces extérieures, on doit compenser la gravité. Pour cela, lévitation magnétique. Composée de 2 biais et d'un gradient. 
+L'état $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ est lévité, les courbures résiduelles sont piégeantes pour le nuage. 
+Une autre stratégie est d'utiliser l'état $\left|F=2,m_{\mathrm{F}}=-2 \right\rangle$ qui est \textit{High Field Seeker}, il sera donc expulsé de la lévitation par les courbures résiduelles. 
+La gravité diminue la profindeur du piège en le penchant, en s'affranchissant de la gravité on peut aller évaporer beaucoup plus loin: on peut atteindre des températures record.
+figure d'illustration de la lévitation.
+
+\paragraph*{Evaporation tout-optique}
+Afin de passer le seuil de condensation, on fait une nouvelle étape d'évaporation , cette fois-ci en diminuant la puissance des lasers la profondeur du potentiel de piégeage. Cette étape sera discutée en détail plus tard. Paragraphe à mettre sans doute dans le paragraphe piège optique.
+
+\paragraph*{Refroidir encore plus loin}
+On peut vouloir refroidir encore plus.
+Ouverture adiabatique du piège: on décomprime la pince en déplaçant la platine de translation de quelques mm: La taille du faisceau au niveau des atomes est plus grande, on diminue les fréquences de piégeage et donc la température.
+delta-kick cooling: on cherche à affiner la distribution de vitesses. Pour cela on éteint le piège, et l'énergie d'interaction du condensat se transforme en énergie cinétique. Une fois suffisamment dilué, on applique un kick de potentiel pour figer la vitesse des atomes. 
+figure delta-kick à créer, basée sur celle de kilian figure 25. 
+figure ouverture adiabatique.
 
 
 
@@ -460,7 +486,7 @@ Le principe de l'imagerie par absorption repose sur la loi de Beer-Lambert. En e
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{fig/BEC_manip/img_mot.pdf}
-\caption{Imagerie par absorption. Un faisceau collimaté est envoyé sur les atomes, qui absorbent une partie des photons qui traversent le nuage. Le signal détecté à la caméra correspond à "l'ombre" des atomes, et la comparaison avec une image du faisceau incident sans atomes permet de remonter à la densité atomique intégrée selon la direction longitudinale.}
+\caption{\textbf{Imagerie par absorption.} Un faisceau collimaté est envoyé sur les atomes, qui absorbent une partie des photons qui traversent le nuage. Le signal détecté à la caméra correspond à "l'ombre" des atomes, et la comparaison avec une image du faisceau incident sans atomes permet de remonter à la densité atomique intégrée selon la direction longitudinale.}
 \label{fig:img_mot}
 \end{figure}
 Dans un régime de très basse saturation $s \ll 1$, on peut montrer que la section efficace d'absorption de photons $\sigma$ est indépendante de l'intensité incidente $I_0(y,z)$. En pratique, on garde la puissance du faisceau \emph{sonde} en dessous de 100µW pour s'en assurer. Le faisceau \emph{sonde} correspond à une impulsion lumineuse d'une durée de 50µs réalisée par un laser à résonance avec la transition $\left| F=2 \right\rangle \rightarrow \left| F'=3 \right\rangle$ et permet ainsi de mesurer la densité atomique dans l'état $\left| F=2 \right\rangle$. \\
@@ -478,7 +504,7 @@ Le principe de l'imagerie par fluorescence consiste à éclairer les atomes avec
 \begin{figure}
 \centering
 \includegraphics[scale=1]{fig/BEC_manip/img_science_3.pdf}
-\caption{Dispositif d'imagerie par fluorescence pour la chambre de science. Une caméra capte les photons de fluorescence émis par les atomes selon une direction horizontale (\emph{Science Cam}), tandis qu'une autre capte ceux émis vers le bas avec un transport d'image (\emph{Bottom Cam}). Les faisceaux de fluorescence ne sont pas représentés ici (selon l'axe $\vec{z}$).}
+\caption{\textbf{Dispositif d'imagerie par fluorescence pour la chambre de science.} Une caméra capte les photons de fluorescence émis par les atomes selon une direction horizontale (\emph{Science Cam}), tandis qu'une autre capte ceux émis vers le bas avec un transport d'image (\emph{Bottom Cam}). Les faisceaux de fluorescence ne sont pas représentés ici (selon l'axe $\vec{z}$).}
 \label{fig:img_science}
 \end{figure}
 Les faisceaux d'imagerie sont à résonance avec la transition $\left| F=2 \right\rangle \rightarrow \left| F'=3 \right\rangle$ et permettent donc de sonder les atomes se trouvant dans l'état $\left| F=2 \right\rangle$. Comme pour l'imagerie par absorption, il est aussi possible d'adresser les atomes qui sont dans l'état $\left| F=1 \right\rangle$. Pour cela, on superpose aux faisceaux de fluorescence le faisceau repompeur\footnote{Les faisceaux de refroidissement laser et de fluorescence comportent déjà une partie de repompeur: le mélange se fait avant les amplificateurs optiques et il est possible de couper la partie repompeur à l'aide d'un obturateur mécanique, voir figure \ref{fig:table_optique}.}, accordé sur $\left| F=1 \right\rangle \rightarrow \left| F'=2 \right\rangle$ pendant toute la durée de l'impulsion lumineuse, qui est typiquement de 50µs. \\

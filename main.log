@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  2 APR 2020 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  3 APR 2020 12:21
 entering extended mode
 **./main.tex
 (main.tex
@@ -1107,24 +1107,24 @@ Package: gensymb 2003/07/02 v1.0 (WaS)
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 10
-5.
+6.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1185,29 +1185,29 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 ) ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \degres on input line 105.
-LaTeX Info: Redefining \dots on input line 105.
+LaTeX Info: Redefining \degres on input line 106.
+LaTeX Info: Redefining \dots on input line 106.
 
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 105.
+(french.ldf)                BEFORE babel/french; reported on input line 106.
 
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 105.
+(french.ldf)             reported on input line 106.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 105.
-LaTeX Info: Redefining \up on input line 105.
+(french.ldf)             reported on input line 106.
+LaTeX Info: Redefining \up on input line 106.
 \c@lstlisting=\count365
-LaTeX Info: Redefining \microtypecontext on input line 105.
+LaTeX Info: Redefining \microtypecontext on input line 106.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 105.
+LaTeX Info: Redefining \showhyphens on input line 106.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1216,7 +1216,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box77
-Package hyperref Info: Link coloring ON on input line 105.
+Package hyperref Info: Link coloring ON on input line 106.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty
 "
@@ -1229,9 +1229,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count366
 )
-LaTeX Info: Redefining \ref on input line 105.
-LaTeX Info: Redefining \pageref on input line 105.
-LaTeX Info: Redefining \nameref on input line 105.
+LaTeX Info: Redefining \ref on input line 106.
+LaTeX Info: Redefining \pageref on input line 106.
+LaTeX Info: Redefining \nameref on input line 106.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1242,63 +1242,63 @@ Dictionary: translator-basic-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex/latex\siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \celsius on input line 105.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 105
+LaTeX Info: Redefining \celsius on input line 106.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 106
 .
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 105.
-Package gensymb Info: Using \upOmega for \ohm on input line 105.
+LaTeX Info: Redefining \ohm on input line 106.
+Package gensymb Info: Using \upOmega for \ohm on input line 106.
 
 Package gensymb Warning: Not defining \micro.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-05.
+06.
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-05.
+06.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-105.
+106.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-105.
+106.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 105.
+(Font)              <10.95> on input line 106.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 105.
+(Font)              <8> on input line 106.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 105.
+(Font)              <6> on input line 106.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-05.
+06.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex\microtype\mt-ptm.cfg"
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1307,7 +1307,7 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-105.
+106.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1317,7 +1317,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-105.
+106.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1327,7 +1327,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-09.
+10.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1373,11 +1373,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 112.
+(hyperref)                removing `\<def>-command' on input line 113.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thepart' on input line 112.
+(hyperref)                removing `\thepart' on input line 113.
 
 \c@ttl@toc@default=\count367
 (main.ptc) [7] [8] (Chapters/Localisation.tex
@@ -1392,11 +1392,11 @@ Package pdftex.def Info: Fig/Localisation/g825.png  used on input line 3.
  <./Fig/Localisation/g825.png>]) [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 116.
+(hyperref)                removing `\<def>-command' on input line 117.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thepart' on input line 116.
+(hyperref)                removing `\thepart' on input line 117.
 
 (main.ptc) [11
 
@@ -1469,143 +1469,143 @@ Package pdftex.def Info: Fig/BEC_manip/manip.pdf  used on input line 358.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24 <./fig/BEC_manip/rabi.pdf>]
-<Fig/BEC_manip/table_optique.pdf, id=1147, 436.53725pt x 348.388pt>
+ [24 <./fig/BEC_manip/rabi.pdf>] [25 <./Fig/BEC_manip/manip.pdf>]
+<Fig/BEC_manip/table_optique.pdf, id=1161, 436.53725pt x 348.388pt>
 File: Fig/BEC_manip/table_optique.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/table_optique.pdf>
 Package pdftex.def Info: Fig/BEC_manip/table_optique.pdf  used on input line 37
 7.
 (pdftex.def)             Requested size: 341.43437pt x 272.49107pt.
- [25 <./Fig/BEC_manip/manip.pdf>] [26 <./Fig/BEC_manip/table_optique.pdf>]
-<Fig/BEC_manip/MOT_magtrap.pdf, id=1170, 359.96951pt x 197.41629pt>
+ [26 <./Fig/BEC_manip/table_optique.pdf>]
+<Fig/BEC_manip/MOT_magtrap.pdf, id=1174, 359.96951pt x 197.41629pt>
 File: Fig/BEC_manip/MOT_magtrap.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/MOT_magtrap.pdf>
 Package pdftex.def Info: Fig/BEC_manip/MOT_magtrap.pdf  used on input line 394.
 
 (pdftex.def)             Requested size: 426.79135pt x 234.08183pt.
  [27 <./Fig/BEC_manip/MOT_magtrap.pdf>]
-<Fig/BEC_manip/evapRF.pdf, id=1214, 388.57635pt x 204.5393pt>
+<Fig/BEC_manip/evapRF.pdf, id=1221, 388.57635pt x 204.5393pt>
 File: Fig/BEC_manip/evapRF.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/evapRF.pdf>
 Package pdftex.def Info: Fig/BEC_manip/evapRF.pdf  used on input line 420.
 (pdftex.def)             Requested size: 384.1096pt x 202.19177pt.
- [28 <./Fig/BEC_manip/evapRF.pdf>]
-<fig/BEC_manip/img_mot.pdf, id=2387, 431.52072pt x 114.65497pt>
+ [28] [29 <./Fig/BEC_manip/evapRF.pdf>]
+<fig/BEC_manip/img_mot.pdf, id=2404, 431.52072pt x 114.65497pt>
 File: fig/BEC_manip/img_mot.pdf Graphic file (type pdf)
 <use fig/BEC_manip/img_mot.pdf>
-Package pdftex.def Info: fig/BEC_manip/img_mot.pdf  used on input line 462.
+Package pdftex.def Info: fig/BEC_manip/img_mot.pdf  used on input line 488.
 (pdftex.def)             Requested size: 426.79135pt x 113.40204pt.
- [29]
-<fig/BEC_manip/img_science_3.pdf, id=2399, 318.99263pt x 189.45609pt>
+ [30]
+<fig/BEC_manip/img_science_3.pdf, id=2417, 318.99263pt x 189.45609pt>
 File: fig/BEC_manip/img_science_3.pdf Graphic file (type pdf)
 <use fig/BEC_manip/img_science_3.pdf>
-Package pdftex.def Info: fig/BEC_manip/img_science_3.pdf  used on input line 48
-0.
+Package pdftex.def Info: fig/BEC_manip/img_science_3.pdf  used on input line 50
+6.
 (pdftex.def)             Requested size: 318.99184pt x 189.45561pt.
- [30 <./fig/BEC_manip/img_mot.pdf>]) (Chapters/Modif_exp.tex
-[31 <./fig/BEC_manip/img_science_3.pdf>] [32
+ [31 <./fig/BEC_manip/img_mot.pdf>])
+(Chapters/Modif_exp.tex [32 <./fig/BEC_manip/img_science_3.pdf>] [33] [34
 
 ]
 Chapitre 3.
-) (Chapters/Speckle.tex [33] [34
+) (Chapters/Speckle.tex [35] [36
 
 ]
 Chapitre 4.
-<Fig/Speckle/speckle_pattern.pdf, id=2539, 404.94328pt x 187.88626pt>
+<Fig/Speckle/speckle_pattern.pdf, id=2562, 404.94328pt x 187.88626pt>
 File: Fig/Speckle/speckle_pattern.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_pattern.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 21
 .
 (pdftex.def)             Requested size: 404.94228pt x 187.88579pt.
-[35] [36 <./Fig/Speckle/speckle_pattern.pdf>]
-<Fig/Speckle/diffus_prop.pdf, id=2617, 300.06396pt x 226.78568pt>
+[37] [38 <./Fig/Speckle/speckle_pattern.pdf>]
+<Fig/Speckle/diffus_prop.pdf, id=2641, 300.06396pt x 226.78568pt>
 File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
 <use Fig/Speckle/diffus_prop.pdf>
 Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 61.
 (pdftex.def)             Requested size: 300.06323pt x 226.78511pt.
- [37 <./Fig/Speckle/diffus_prop.pdf>]
-<Fig/Speckle/random_walk_speckle.pdf, id=2724, 208.17155pt x 207.50287pt>
+ [39 <./Fig/Speckle/diffus_prop.pdf>]
+<Fig/Speckle/random_walk_speckle.pdf, id=2747, 208.17155pt x 207.50287pt>
 File: Fig/Speckle/random_walk_speckle.pdf Graphic file (type pdf)
 <use Fig/Speckle/random_walk_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/random_walk_speckle.pdf  used on input lin
 e 100.
 (pdftex.def)             Requested size: 208.17102pt x 207.50235pt.
- [38 <./Fig/Speckle/random_walk_speckle.pdf>]
-<Fig/Speckle/montage_diffuseur.pdf, id=2753, 489.34206pt x 294.36562pt>
+ [40 <./Fig/Speckle/random_walk_speckle.pdf>]
+<Fig/Speckle/montage_diffuseur.pdf, id=2776, 489.34206pt x 294.36562pt>
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
 123.
 (pdftex.def)             Requested size: 342.53711pt x 206.05452pt.
- [39 <./Fig/Speckle/montage_diffuseur.pdf>]
+ [41 <./Fig/Speckle/montage_diffuseur.pdf>]
 Overfull \hbox (8.747pt too wide) detected at line 141
 []
  []
 
-[40]) [41] [42
+[42]) [43] [44
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 122.
+(hyperref)                removing `\<def>-command' on input line 123.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thepart' on input line 122.
+(hyperref)                removing `\thepart' on input line 123.
 
-(main.ptc) [43] [44] (Chapters/Taus_PRL.tex
+(main.ptc) [45] [46] (Chapters/Taus_PRL.tex
 Chapitre 5.
-) (Chapters/TauS_NJP.tex [45
+) (Chapters/TauS_NJP.tex [47
 
-] [46
+] [48
 
 ]
 Chapitre 6.
-) (Chapters/Conclusion.tex [47] [48
+) (Chapters/Conclusion.tex [49] [50
 
-]) [49] [50
+]) [51] [52
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 131.
+(hyperref)                removing `\<def>-command' on input line 132.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thepart' on input line 131.
+(hyperref)                removing `\thepart' on input line 132.
 
-(main.ptc) [51] [52] (Appendices/Anex_speckle.tex
+(main.ptc) [53] [54] (Appendices/Anex_speckle.tex
 Annexe A.
 
 Underfull \vbox (badness 2418) has occurred while \output is active []
 
- [53
+ [55
 
 ]
-[54] [55]) (Appendices/Anex_Born.tex [56]
+[56] [57]) (Appendices/Anex_Born.tex [58]
 Annexe B.
-) (main.bbl [57
+) (main.bbl [59
 
-] [58
+] [60
 
 ])
 \tf@ptc=\write6
 \openout6 = `main.ptc'.
 
- [59]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+ [61]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 144.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 145.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 30040 strings out of 481511
- 566347 string characters out of 2913122
- 1107554 words of memory out of 3000000
- 44075 multiletter control sequences out of 15000+200000
- 723406 words of font info for 280 fonts, out of 3000000 for 9000
+ 30041 strings out of 481511
+ 566356 string characters out of 2913122
+ 1107736 words of memory out of 3000000
+ 44077 multiletter control sequences out of 15000+200000
+ 725858 words of font info for 276 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,62p,1632b,1330s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
@@ -1630,24 +1630,26 @@ public/lm/lmmi9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/lm/lmmib10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmr10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmr12.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmr5.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmr6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmr7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmr8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmr9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmri10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmri9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/lm/lmss10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmssbx10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Nop/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nop/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (59 pages, 2204994 bytes).
+type1/public/lm/lmr17.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmr5.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmr6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmr7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmr8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmr9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmri10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmri9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/lm/lmss10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Nop/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Nop/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Nop/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nop/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (61 pages, 2242796 bytes).
 PDF statistics:
- 3209 PDF objects out of 3580 (max. 8388607)
- 291 named destinations out of 1000 (max. 500000)
- 68997 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 3240 PDF objects out of 3580 (max. 8388607)
+ 299 named destinations out of 1000 (max. 500000)
+ 69509 words of extra memory for PDF output out of 74296 (max. 10000000)
 
