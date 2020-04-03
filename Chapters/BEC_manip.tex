@@ -413,7 +413,7 @@ Une fois le nuage thermalisé, on procède à une étape de refroidissement éva
 \item[\textendash]On tronque le piège de telle sorte que quelques atomes très énergétiques (la queue de la distribution de vitesses de Maxwell-Boltzmann) puisse s'échapper du piège.
 \item[\textendash]Les collisions entre les particules étant restées dans le piège permettent au système de retourner à l'équilibre thermique à une température plus basse.
 \end{itemize}
-La troncature du piège se fait à l'aide d'une onde radio-fréquence rayonnée par les bobines MOT. Celle-ci induit une transition de l'état piégé $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ à l'état non piégé $\left| F=1, m_{\mathrm{F}}=0 \right\rangle$ lorsque la condition de résonance $\hb \omega_{\mathrm{RF}} = m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} B(\mathbf{r})$ est vérifée. En abaissant progressivement la fréquence rayonnée pendant une dizaine de secondes, on obtient finalement un nuage de $50 \times 10^6$ atomes à une température de 10µK.
+La troncature du piège se fait à l'aide d'une onde radio-fréquence rayonnée par les bobines MOT. Celle-ci induit une transition de l'état piégé $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ à l'état non piégé $\left| F=1, m_{\mathrm{F}}=0 \right\rangle$ lorsque la condition de résonance $\hb \omega_{\mathrm{RF}} = m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} B(\mathbf{r})$ est vérifée. En abaissant progressivement la fréquence rayonnée pendant une dizaine de secondes, on obtient finalement un nuage de $70 \times 10^6$ atomes à une température de 10µK.
 
 \begin{figure}
 \centering
@@ -427,33 +427,93 @@ La troncature du piège se fait à l'aide d'une onde radio-fréquence rayonnée 
 Présentation du transport, du piège croisé, de la lévitation, spin-flips. Delta-kick
 
 Après ces premières étapes de refroidissement, les atomes sont transportés dans une seconde cellule où l'on procède à une évaporation tout-optique pour franchir le seuil de condensation. La raison d'être de cette seconde cellule est de profiter d'un maximum d'accès optiques tout en s'affranchissant de l'environnement magnétique de la première chambre, en particulier celui du ferromagnétique.
-
-\ref{ch:new_exp}
+Nous nous contenterons ici de présenter les grandes lignes des éléments de cette seconde chambre, de nombreux détails pourront être trouvés dans la thèse d'Alain Bernard \citep{bernard2010transport}, dans la thèse de Fred Jendrzejewski \citep{jendrzejewski2012quantum} et de Kilian Muller \citep{muller2015coherent}. De plus, certains de ces éléments ont été modifiés au cours de ma thèse et une étude plus approfondie en sera présentée dans le chapitre \ref{ch:new_exp}.
 
 \paragraph*{Transport dans une pince optique et piège dipolaire croisé}
-Le transfert se fait dans une pince optique. Il s'agit d'un piège dipolaire focalisé sur les atomes. La forme du piège est alors donnée par la forme du faisceau de piégeage, régie par l'optique gaussienne. Les atomes sont piégés autout du \textit{waist} du faisceau. La longueur d'onde du faisceau de piégeage est $\lambda=$1070nm. La taille transverse du faisceau est $w_{\mathrm{0}}=$28µm. La longueur de piégeage longitudinale est donnée par la longueur de Rayleigh, $z_{\mathrm{R}}= \pi w_{\mathrm{0}}^2 / \lambda$ = 2.3mm. On déplace ce point focal est donc les tomes retenus dedans à l'aide d'une platine de translation sur laquelle sont montées les optiques de focalisation de la pince. Le déplacement de 40cm se fait en 2s. On estime une puissance de 1W sur les atomes. L'efficacité de transfert est estimée à 75%. 
+Après évaporation radio-fréquence, on transfert le nuage dans une pince optique. Il s'agit d'un piège dipolaire créé par focalisation sur les atomes d'un faisceau laser de longueur d'onde $\lambda=$1070nm et de puissance estimée d'environ 1.5W. Dans le plan focal, ce faisceau a une taille $\mathrm{w}_{\mathrm{0}}=$28µm et la distance de Rayleigh vaut donc $z_{\mathrm{R}}= \pi \mathrm{w}_{\mathrm{0}}^2 / \lambda$ = 2.3mm. On obtient ainsi $10 \times 10^6$ atomes à une température de 10µK aux alentours du foyer de la pince\footnote{Ce faible taux de transfert entre le piège magnétique et la pince porvient du mauvais recouvrement spatial entre ces deux pièges. La pince est très alongée suivant la direction $\vec{z}$, tandis que le piège magnétique est étendu suivant la direction $\vec{x}$. Cette géométrie est un héritage des débuts de cette expérience, originellement utlisée pour étudier le laser à atomes.}.
 
-Une fois dans la seconde chambre, on allume un deuxième faisceau afin de comprimer le nuage suivant la direction $\vec{z}$ qui correspond à la direction longitudinale de la pince. Le faisceau \emph{Dimple} est de forme elliptique, de tailles 180µm $\times$ 90µm dans les directions $\vec{x}$ et $\vec{z}$ respectivement. Dans le piège dipolaire croisé, le confinement suivant les directions $\vec{x}$ et $\vec{y}$, est fait par la pince, tandis que le confinement suivant la direction $\vec{z}$ est fait par le faisceau vertical. 7W dans le faisceau vertical. Le faisceau vertical est estimé collimaté.
-Le tout est à 10µK, pour un nombre d'atomes estimé à $3 \times 10^6$.
-figure transport de vincent, rajouter le dimple dans la seconde chambre.
+Le transport dans la seconde chambre se fait à l'aide d'une platine de translation montée sur coussin d'air \emph{Aerotech ABL80040}. Les optiques de focalisation de la pince se trouvant sur cette platine, on déplace ainsi les atomes de 40cm en moins de 2s, comme illustré figure \ref{fig:piege_optique}. On estime l'efficacité de transfert à 75\%, mesurée en effectuant un aller-retour pour retourner dans la première chambre.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{Fig/BEC_manip/piege_optique.pdf}
+\caption{\textbf{Illustration du transport et du piège optique.} Les atomes sont capturés autour du foyer de la pince dans la première chambre, et le point de focalisation est déplacé de 40cm à l'aide d'une platine de translation. Une fois le transport terminé, on allume un second faisceau de piegeage vertical (\emph{dimple}).}
+\label{fig:piege_optique}
+\end{figure}
+
+Une fois les atomes arrivés dans la seconde chambre, un second faisceau de piégeage dipolaire de longueur d'onde 1070nm et de puissance 7W est allumé afin de comprimer le nuage suivant la direction $\vec{z}$ qui correspond à la direction longitudinale de la pince. Ce faisceau \emph{Dimple} est de forme elliptique, de tailles 180µm $\times$ 90µm dans les directions $\vec{x}$ et $\vec{z}$ respectivement. Étant donnée sa grande longueur de Rayliegh (de l'ordre du centimètre), on suppose que le piégeage vertical induit est négligeable devant toutes les autres sources de piégeage. Ainsi, dans le piège dipolaire croisé, le confinement suivant les directions $\vec{x}$ et $\vec{y}$, est fait par la pince, tandis que le confinement suivant la direction $\vec{z}$ est fait par le faisceau vertical, comme illustré figure \ref{fig:piege_optique}. À ce stade, on estime disposer de $3 \times 10^6$ atomes à une température de 10µK.
+
+Enfin, une dernière étape d'évaporation est requise pour franchir le seuil de condensation. Succintement, celle-ci consiste à diminuer la puissance des lasers afin de diminuer la profondeur des potentiels de piégeage de telle sorte que les atomes les plus énergétiques puissent s'échapper. Cette étape sera étudiée plus en détails dans la partie \ref{sc:evap_optique}.
+
+
 
 \paragraph*{Lévitation magnétique}
-Afin d'obtenir des temps de propagation dans le désordre très longs et de s'affranchir de toutes les forces extérieures, on doit compenser la gravité. Pour cela, lévitation magnétique. Composée de 2 biais et d'un gradient. 
-L'état $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ est lévité, les courbures résiduelles sont piégeantes pour le nuage. 
-Une autre stratégie est d'utiliser l'état $\left|F=2,m_{\mathrm{F}}=-2 \right\rangle$ qui est \textit{High Field Seeker}, il sera donc expulsé de la lévitation par les courbures résiduelles. 
-La gravité diminue la profindeur du piège en le penchant, en s'affranchissant de la gravité on peut aller évaporer beaucoup plus loin: on peut atteindre des températures record.
-figure d'illustration de la lévitation.
+Une contrainte liée à l'étude la localisation d'Anderson réside dans les grands temps de propagation dans le désordre requis. Dans l'expérience visant à observer la localisation d'Anderson à trois dimensions, plusieurs secondes d'évolution dans le désordre ont été nécessaires \citep{jendrzejewski2012three}, ce qui n'est pas possible en présence de la gravité. En conséquence notre expérience dispose d'une lévitation magnétique permettant de s'affranchir de la gravité et donc de multiplier nos possibilités expérimentales. Celle-ci a été mise en place durant la thèse d'Alain Bernard et de nombreux détails concernant ce système et ses performances se trouvent dans son manuscrit. Cependant, la lévitation magnétique a fait l'objet d'une attention particulière durant ma thèse, aussi une étude appronfondie en sera donnée dans la partie \ref{sc:levitation}. Donnons en tout de même quelques caractéristiques.
 
-\paragraph*{Evaporation tout-optique}
-Afin de passer le seuil de condensation, on fait une nouvelle étape d'évaporation , cette fois-ci en diminuant la puissance des lasers la profondeur du potentiel de piégeage. Cette étape sera discutée en détail plus tard. Paragraphe à mettre sans doute dans le paragraphe piège optique.
+Le principe de la lévitation magnétique est de compenser la force de pesanteur à l'aide d'un gradient magnétique. Pour l'état $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ qui est \emph{Low Field Seeker}, il s'agit d'un gradient de 30G.cm${}^{-1}$. Cependant, le théorème de Wing impose une valeur minimale aux fréquences de piégeage dûes à la conservation du flux magnétique:
+\begin{equation}
+\sum_{i=x,y,z} \omega_i^2 \geq \left| \frac{mg^2}{2m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} B_0}\right|
+\end{equation} 
+avec $g$ l'accélération de la pesanteur et $B_0$ la norme du champ magnétique à la position des atomes. Une stratégie de réduction de ces fréquences de piégeage (les $\omega_i$ sont positifs pour l'état $\left|F=1, m_{\mathrm{F}}=-1 \right\rangle$) consiste à augmenter fortement le champ $B_0$, on utilise alors des bobines pour créer un tel champ, qui peut monter jusqu'à 2000G, entraînant des fréquences de piégeage de l'ordre de $\omega_i /2 \pi \sim 0.1$Hz. Une version simpliste du design de notre lévitation est donnée figure \ref{fig:levitation_simple}.
 
-\paragraph*{Refroidir encore plus loin}
-On peut vouloir refroidir encore plus.
-Ouverture adiabatique du piège: on décomprime la pince en déplaçant la platine de translation de quelques mm: La taille du faisceau au niveau des atomes est plus grande, on diminue les fréquences de piégeage et donc la température.
+Une autre stratégie couramment utilisée par l'équipe est de se placer dans l'état $\left|F=2,m_{\mathrm{F}}=-2 \right\rangle$ qui est \textit{High Field Seeker}, il sera donc expulsé de la lévitation par les courbures résiduelles. Il s'agit pour nous d'un avantage puisque cela favorise le processus d'évaporation, de plus on ne pourra pas attribuer à la lévitation un eventuel arrêt de l'expansion du nuage dans l'étude de la localisation d'Anderson. Pour atteindre cet état, on applique une transition radio-fréquence dans le piège optique croisé avant évaporation.
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{Fig/BEC_manip/levitation_simple.pdf}
+\caption{\textbf{Design simplifié de la lévitation magnétique}. Un gradient magnétique est appliqué aux atomes grâce à une paire de bobines parcourues par des courants opposés. La conservation du flux magnétique entraîne des gradients dans les autres directions de l'espace. L'application d'un fort champ de biais créé par d'autres bobines permet de minimiser l'impact de ces gradients et de diminuer les fréquences de piégeage (ou d'anti-piégeage) associées.}
+\label{fig:levitation_simple}
+\end{figure}
+
+Pour finir, citons un dernier avantage offert par la lévitation magnétique: la compensation de la gravité n'entraîne pas d'effet \emph{SAG}, c'est à dire que la gravité ne vient pas "pencher" le potentiel de notre piège optique. Nous avons donc la possibilité de pousser l'évaporation optique jusque dans un domaine où la gravité aurait normalement dû tirer les atomes en dehors du piège, nous pouvons ainsi évaporer beaucoup plus loin et atteindre des températures extrêmement basses.
+
+
+
+\paragraph*{Refroidir encore plus}
+L'assimilation d'un condensat de Bose-Einstein à une onde de matière monochomatique $\left| k=0 \right\rangle$ nécessite de pouvoir négliger la largeur de distribution de vitesses $\Delta k$, et implique donc d'obtenir des nuages extrêmement froids. Bien que la lévitation magnétique nous permette d'obtenir des températures particulièrement basses, le refroidissement peut être poussé encore plus loin. 
+
+Une première technique consiste en une décompression du nuage à l'aide de l'ouverture adiabatique du piège. Cette décompression se traduit par une diminution des fréquences de piégeage, que l'on obtient en changeant la taille des faisceaux de piégeage. En pratique, il nous suffit de reculer le plan de focalisation de la pince de 4.5mm en une seconde à l'aide de la platine de translation comme illustré figure \ref{fig:delta_kick}. La température obtenue est alors donnée par le théorème d'équipartition de l'énergie:
+\begin{equation}
+T'=\frac{\omega_{\mathrm{r}}'}{\omega_{\mathrm{r}}}T
+\end{equation}
+avec $\omega_{\mathrm{r}}$ la fréquence de piégeage de la pince dans la direction radiale. L'abaissement de la température est donc obtenu par diminution de la densité du nuage, c'est à dire par dilution. Cette étape se déroule en même temps que l'évaporation optique.
+
+À la fin du cycle d'évaporation et d'ouverture adiabatique, il reste environ $2 \times 10^5$ atomes dont environ 50\% forment un condensat de Bose-Einstein. Le potentiel chimique de la partie condensée est estimée à $\mu/h=40$Hz, et la température de la fraction thermique est d'environ 5nK. 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{Fig/BEC_manip/BEC_double_struct.pdf}
+\caption{\textbf{Image expérimentale d'un condensat de Bose-Einstein}. Cette image correspond à celle d'un condensat après expansion pendant un temps de vol de 150ms. L'image de droite correspond au profil de la densité intégrée suivant une direction, et montre la double structure témoingnant d'une partie condensée. La partie condensée a un profil parabolique (en rouge), tandis que la partie thermique est de forme gaussienne (en bleu).}
+\label{fig:BEC_double_struct}
+\end{figure}
+
+
+Après extinction du piège, l'énergie d'interaction de la partie condensée est convertie en énergie cinétique. 
+
+Une dernière technique reposant aussi sur le principe de la dilution existe
 delta-kick cooling: on cherche à affiner la distribution de vitesses. Pour cela on éteint le piège, et l'énergie d'interaction du condensat se transforme en énergie cinétique. Une fois suffisamment dilué, on applique un kick de potentiel pour figer la vitesse des atomes. 
-figure delta-kick à créer, basée sur celle de kilian figure 25. 
-figure ouverture adiabatique.
+En supposant que l'expansion des atomes est ballistique, la position des atomes après un temps d'expansion $t_{\mathrm{exp}}$ suffisamment grand est donnée par leur vitesse initiale:
+\begin{equation}
+\mathbf{r}(t_{\mathrm{exp}})=\mathbf{v} t_{\mathrm{exp}}
+\end{equation}
+Et appliquons un kick de potentiel pendant un temps $\Delta t$. La vitesse des atomes à la fin de ce kick est donnée par
+\begin{equation}
+\dot{\mathbf{r}}(\Delta t) = -\mathbf{r} \omega \sin{(\omega \Delta t)}+ \mathbf{v} \cos{(\omega \Delta t)}
+\end{equation}
+avec $\omega$ la fréquence du piège.
+On peut trouver $\Delta t$ tel que $\dot{\mathbf{r}}_i=0$:
+\begin{equation}
+\Delta t= \frac{1}{\omega} \arctan{(\frac{1}{t_{\mathrm{exp}} \omega})}
+\end{equation}
+On remarque que $\Delta t$ ne dépend pas de la vitesse initiale des atomes: on peut donc geler l'ensemble du nuage. 
+La mise en œuvre expérimentale de cette technique est détaillée dans le manuscrit de thèse de Kilian Muller \citep{muller2015coherent} et témoigne de résultats impressionnants: 
 
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Fig/BEC_manip/delta_kick.pdf}
+\caption{delta kick cooling}
+\label{fig:delta_kick}
+\end{figure}
 
 
 

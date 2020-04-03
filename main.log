@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  3 APR 2020 12:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  3 APR 2020 18:40
 entering extended mode
 **./main.tex
 (main.tex
@@ -1489,60 +1489,97 @@ File: Fig/BEC_manip/evapRF.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/evapRF.pdf>
 Package pdftex.def Info: Fig/BEC_manip/evapRF.pdf  used on input line 420.
 (pdftex.def)             Requested size: 384.1096pt x 202.19177pt.
- [28] [29 <./Fig/BEC_manip/evapRF.pdf>]
-<fig/BEC_manip/img_mot.pdf, id=2404, 431.52072pt x 114.65497pt>
+ [28]
+<Fig/BEC_manip/piege_optique.pdf, id=1238, 423.59935pt x 236.41693pt>
+File: Fig/BEC_manip/piege_optique.pdf Graphic file (type pdf)
+<use Fig/BEC_manip/piege_optique.pdf>
+Package pdftex.def Info: Fig/BEC_manip/piege_optique.pdf  used on input line 43
+9.
+(pdftex.def)             Requested size: 384.1096pt x 214.37856pt.
+ [29 <./Fig/BEC_manip/evapRF.pdf>]
+
+Package natbib Warning: Citation `jendrzejewski2012three' on page 30 undefined 
+on input line 451.
+
+[30 <./Fig/BEC_manip/piege_optique.pdf>]
+<Fig/BEC_manip/levitation_simple.pdf, id=2580, 252.72139pt x 181.6753pt>
+File: Fig/BEC_manip/levitation_simple.pdf Graphic file (type pdf)
+<use Fig/BEC_manip/levitation_simple.pdf>
+Package pdftex.def Info: Fig/BEC_manip/levitation_simple.pdf  used on input lin
+e 463.
+(pdftex.def)             Requested size: 252.72076pt x 181.67484pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31 <./Fig/BEC_manip/levitation_simple.pdf>]
+<Fig/BEC_manip/BEC_double_struct.pdf, id=2624, 376.78333pt x 155.57622pt>
+File: Fig/BEC_manip/BEC_double_struct.pdf Graphic file (type pdf)
+<use Fig/BEC_manip/BEC_double_struct.pdf>
+Package pdftex.def Info: Fig/BEC_manip/BEC_double_struct.pdf  used on input lin
+e 485.
+(pdftex.def)             Requested size: 384.1096pt x 158.60016pt.
+<Fig/BEC_manip/delta_kick.pdf, id=2625, 448.80824pt x 272.3275pt>
+File: Fig/BEC_manip/delta_kick.pdf Graphic file (type pdf)
+<use Fig/BEC_manip/delta_kick.pdf>
+Package pdftex.def Info: Fig/BEC_manip/delta_kick.pdf  used on input line 512.
+(pdftex.def)             Requested size: 341.43437pt x 207.18712pt.
+ [32 <./Fig/BEC_manip/BEC_double_struct.pdf>] [33 <./Fig/BEC_manip/delta_kick.p
+df>]
+<fig/BEC_manip/img_mot.pdf, id=2791, 431.52072pt x 114.65497pt>
 File: fig/BEC_manip/img_mot.pdf Graphic file (type pdf)
 <use fig/BEC_manip/img_mot.pdf>
-Package pdftex.def Info: fig/BEC_manip/img_mot.pdf  used on input line 488.
+Package pdftex.def Info: fig/BEC_manip/img_mot.pdf  used on input line 547.
 (pdftex.def)             Requested size: 426.79135pt x 113.40204pt.
- [30]
-<fig/BEC_manip/img_science_3.pdf, id=2417, 318.99263pt x 189.45609pt>
+<fig/BEC_manip/img_science_3.pdf, id=2793, 318.99263pt x 189.45609pt>
 File: fig/BEC_manip/img_science_3.pdf Graphic file (type pdf)
 <use fig/BEC_manip/img_science_3.pdf>
-Package pdftex.def Info: fig/BEC_manip/img_science_3.pdf  used on input line 50
-6.
+Package pdftex.def Info: fig/BEC_manip/img_science_3.pdf  used on input line 56
+5.
 (pdftex.def)             Requested size: 318.99184pt x 189.45561pt.
- [31 <./fig/BEC_manip/img_mot.pdf>])
-(Chapters/Modif_exp.tex [32 <./fig/BEC_manip/img_science_3.pdf>] [33] [34
 
-]
+Underfull \vbox (badness 6477) has occurred while \output is active []
+
+ [34 <./fig/BEC_manip/img_mot.pdf>] [35 <./fig/BEC_manip/img_science_3.pdf>])
+(Chapters/Modif_exp.tex [36]
 Chapitre 3.
-) (Chapters/Speckle.tex [35] [36
+) (Chapters/Speckle.tex [37
+
+] [38
 
 ]
 Chapitre 4.
-<Fig/Speckle/speckle_pattern.pdf, id=2562, 404.94328pt x 187.88626pt>
+<Fig/Speckle/speckle_pattern.pdf, id=2934, 404.94328pt x 187.88626pt>
 File: Fig/Speckle/speckle_pattern.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_pattern.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 21
 .
 (pdftex.def)             Requested size: 404.94228pt x 187.88579pt.
-[37] [38 <./Fig/Speckle/speckle_pattern.pdf>]
-<Fig/Speckle/diffus_prop.pdf, id=2641, 300.06396pt x 226.78568pt>
+[39] [40 <./Fig/Speckle/speckle_pattern.pdf>]
+<Fig/Speckle/diffus_prop.pdf, id=3012, 300.06396pt x 226.78568pt>
 File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
 <use Fig/Speckle/diffus_prop.pdf>
 Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 61.
 (pdftex.def)             Requested size: 300.06323pt x 226.78511pt.
- [39 <./Fig/Speckle/diffus_prop.pdf>]
-<Fig/Speckle/random_walk_speckle.pdf, id=2747, 208.17155pt x 207.50287pt>
+ [41 <./Fig/Speckle/diffus_prop.pdf>]
+<Fig/Speckle/random_walk_speckle.pdf, id=3118, 208.17155pt x 207.50287pt>
 File: Fig/Speckle/random_walk_speckle.pdf Graphic file (type pdf)
 <use Fig/Speckle/random_walk_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/random_walk_speckle.pdf  used on input lin
 e 100.
 (pdftex.def)             Requested size: 208.17102pt x 207.50235pt.
- [40 <./Fig/Speckle/random_walk_speckle.pdf>]
-<Fig/Speckle/montage_diffuseur.pdf, id=2776, 489.34206pt x 294.36562pt>
+ [42 <./Fig/Speckle/random_walk_speckle.pdf>]
+<Fig/Speckle/montage_diffuseur.pdf, id=3147, 489.34206pt x 294.36562pt>
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
 123.
 (pdftex.def)             Requested size: 342.53711pt x 206.05452pt.
- [41 <./Fig/Speckle/montage_diffuseur.pdf>]
+ [43 <./Fig/Speckle/montage_diffuseur.pdf>]
 Overfull \hbox (8.747pt too wide) detected at line 141
 []
  []
 
-[42]) [43] [44
+[44]) [45] [46
 
 ]
 
@@ -1553,17 +1590,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\thepart' on input line 123.
 
-(main.ptc) [45] [46] (Chapters/Taus_PRL.tex
+(main.ptc) [47] [48] (Chapters/Taus_PRL.tex
 Chapitre 5.
-) (Chapters/TauS_NJP.tex [47
+) (Chapters/TauS_NJP.tex [49
 
-] [48
+] [50
 
 ]
 Chapitre 6.
-) (Chapters/Conclusion.tex [49] [50
+) (Chapters/Conclusion.tex [51] [52
 
-]) [51] [52
+]) [53] [54
 
 ]
 
@@ -1574,38 +1611,45 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\thepart' on input line 132.
 
-(main.ptc) [53] [54] (Appendices/Anex_speckle.tex
+(main.ptc) [55] [56] (Appendices/Anex_speckle.tex
 Annexe A.
 
 Underfull \vbox (badness 2418) has occurred while \output is active []
 
- [55
+ [57
 
 ]
-[56] [57]) (Appendices/Anex_Born.tex [58]
+[58] [59]) (Appendices/Anex_Born.tex [60]
 Annexe B.
-) (main.bbl [59
+) (main.bbl [61
 
-] [60
+] [62
 
 ])
+
+Package natbib Warning: There were undefined citations.
+
 \tf@ptc=\write6
 \openout6 = `main.ptc'.
 
- [61]
+[63]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 145.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 30041 strings out of 481511
- 566356 string characters out of 2913122
- 1107736 words of memory out of 3000000
- 44077 multiletter control sequences out of 15000+200000
- 725858 words of font info for 276 fonts, out of 3000000 for 9000
+ 30091 strings out of 481511
+ 567602 string characters out of 2913122
+ 1107807 words of memory out of 3000000
+ 44102 multiletter control sequences out of 15000+200000
+ 726326 words of font info for 281 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,62p,1632b,1330s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
@@ -1647,9 +1691,9 @@ TeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Nop/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Nop/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nop/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (61 pages, 2242796 bytes).
+Output written on main.pdf (63 pages, 2558033 bytes).
 PDF statistics:
- 3240 PDF objects out of 3580 (max. 8388607)
- 299 named destinations out of 1000 (max. 500000)
- 69509 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 3613 PDF objects out of 4296 (max. 8388607)
+ 310 named destinations out of 1000 (max. 500000)
+ 69529 words of extra memory for PDF output out of 74296 (max. 10000000)
 
