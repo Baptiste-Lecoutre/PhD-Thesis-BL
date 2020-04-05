@@ -147,7 +147,7 @@ La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux nive
 \renewcommand{\arraystretch}{1.1}
 \begin{table}[!ht]
 \begin{center}
-%{\rowcolors{2}{niceblue!25}{niceblue!15}
+%{\rowcolors{2}{niceblue}{niceblue!15}
 \begin{tabular}{ |c|c|c| }
 \hline
 \textbf{Quantité physique} & \textbf{Symbole} & \textbf{Valeur} \\
@@ -288,26 +288,17 @@ où le facteur 2 indique que à forte saturation, un atome autant de chance d'ê
 
 
 \subsection{Couplage radio-fréquence} 
-Les outils de manipulation des atomes présentés précédemment offrent la possibilité de créer des potentiels conservatifs (comme le potentiel dipolaire ou le potentiel magnétique) ou encore des forces dissipatives à l'aide la force de pression de radiation. De manière générale, certaines d'entre elles dépendent de l'état interne de l'atome\footnote{Le potentiel magnétique dépend bien évidemment de l'état interne, tandis que ce n'est pas de le cas du potentiel dipolaire dans la limite des grands désaccords.}, une dernière possibilité de manipulation des atomes consiste donc à contrôler leur état électronique. Un bon contrôle de ce degré de liberté permet donc d'augmenter l'efficacité des processus qui en dépendent (le chargement d'un piège magnétique par exemple), ainsi que de proposer des solutions technologiques originales. 
+Les outils de manipulation des atomes présentés précédemment offrent la possibilité de créer des potentiels conservatifs (comme le potentiel dipolaire ou le potentiel magnétique) ou encore des forces dissipatives à l'aide la force de pression de radiation. De manière générale, certains de ces outils dépendent de l'état interne de l'atome\footnote{Le potentiel magnétique dépend bien évidemment de l'état interne, tandis que ce n'est pas de le cas du potentiel dipolaire dans la limite des grands désaccords.}, une dernière possibilité de manipulation des atomes consiste donc à contrôler leur état électronique. Un bon contrôle de ce degré de liberté permet donc d'augmenter l'efficacité des processus qui en dépendent (le chargement d'un piège magnétique par exemple), ainsi que de proposer des solutions technologiques originales. 
 
-Comme présenté section \ref{sc:Rb87}, la séparation entre les états fondamentaux $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ correspond à une fréquence $\Delta_{\mathrm{hf}}$ de l'ordre du GHz, donc à une fréquence qui se trouve accessible électroniquement. De plus, ces états étant fondamentaux, ils ne peuvent pas se désexciter. Un couplage radio-fréquence entre ces états apparaît alors comme un formidable outil de contrôle de l'état interne des atomes.
-
-Dans ces conditions, les états fondamentaux hyperfins du ${}^{87}$Rb s'avèrent réaliser une excellente approximation d'un système à deux niveaux dont le hamiltonien propre est donné dans la base $\left\lbrace \left|F=1\right\rangle, \left|F=2\right\rangle \right\rbrace$ par
+Comme présenté section \ref{sc:Rb87}, la séparation entre les états fondamentaux $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ correspond à une fréquence $\Delta_{\mathrm{hf}}$ de l'ordre du GHz, donc à une fréquence qui se trouve accessible électroniquement. Un couplage radio-fréquence entre ces états apparaît alors comme un formidable outil de contrôle de l'état interne des atomes, décrit par un système à deux niveaux dont le hamiltonien\footnote{Le terme de couplage \ref{eq:hamiltonien_rabi} est obtenu en appliquant l'approximation de l'onde tournante, c'est à dire que l'on néglige les termes en $\omega +\Delta_{\mathrm{hf}}$ devant les termes en $\omega - \Delta_{\mathrm{hf}}$ car on estime qu'ils évoluent rapidement, et donc qu'ils s'apparentent à leur valeur moyenne qui est nulle.} est donné dans la base $\left\lbrace \left|F=1\right\rangle, \left|F=2\right\rangle \right\rbrace$ par 
 \begin{equation}
-\hat{H}_0=\frac{\hb}{2} \begin{pmatrix}
--\Delta_{\mathrm{hf}} & 0 \\
-0 & \Delta_{\mathrm{hf}}
+\hat{H}(t)=\frac{\hb}{2} \begin{pmatrix}
+-\Delta_{\mathrm{hf}} & \Omega e^{i \omega t} \\
+\Omega e^{-i\omega t} & \Delta_{\mathrm{hf}}
 \end{pmatrix}
+\label{eq:hamiltonien_rabi}
 \end{equation}
-Le couplage par radio-fréquences est quant à lui décrit par le hamiltonien
-\begin{equation}
-\hat{V}(t)=\frac{\hb}{2} \begin{pmatrix}
-0 & \Omega e^{i \omega t} \\
-\Omega e^{-i\omega t} & 0
-\end{pmatrix}
-\label{eq:couplage_rabi}
-\end{equation}
-avec $\omega$ la fréquence de l'onde radio-fréquence rayonnée sur les atomes, et $\Omega$ la pulsation de Rabi qui caractérise l'amplitude rayonnée sur les atomes. Le terme de couplage \ref{eq:couplage_rabi} est obtenu en appliquant l'approximation de l'onde tournante, c'est à dire que l'on néglige les termes en $\omega +\Delta_{\mathrm{hf}}$ devant les termes en $\omega - \Delta_{\mathrm{hf}}$ car on estime qu'ils évoluent rapidement, et donc qu'ils s'apparentent à leur valeur moyenne qui est nulle. En se plaçant dans le référentiel tournant, le hamiltonien $\hat{H}_0+\hat{V}$ du système devient
+avec $\omega$ la fréquence de l'onde radio-fréquence, et $\Omega$ la pulsation de Rabi qui caractérise l'amplitude rayonnée sur les atomes.  En se plaçant dans le référentiel tournant, le hamiltonien du système devient
 \begin{equation}
 \hat{H}=\frac{\hb}{2} \begin{pmatrix}
 \delta & \Omega \\
@@ -324,15 +315,12 @@ Cette formule met en évidence un caractère résonant des transitions radio-fr�
 \item[\textendash] Dans le cas d'un grand désaccord $\delta \gg \Omega$, la probabilité de transition est très faible à n'importe quel instant.
 \item[\textendash] À résonance $\delta=0$, la probabilité de transition peut atteindre 1, même pour un couplage très faible ($\Omega$ petit).
 \end{itemize}
-Ces caractéristiques peuvent être retrouvées figure \ref{fig:rabi}. En effet, l'enveloppe lorentzienne représentée figure \ref{fig:rabi}b montre les populations maximales transférées, faibles lorsque $\| \delta \| > \Omega$. On retrouve la condition de résonance à $\delta=0$, et le transfert est maximal lorsque la durée d'application du champ radio-fréquence $t_p$ satisfait
-\begin{equation}
-t_p=(2n+1) \frac{\pi}{\Omega}
-\end{equation}
+Ces caractéristiques sont illustrées figure \ref{fig:rabi}. En effet, l'enveloppe lorentzienne représentée figure \ref{fig:rabi}b montre les populations maximales transférées, faibles lorsque $\left| \delta \right| > \Omega$. On retrouve la condition de résonance à $\delta=0$, où l'efficacité de transfert est maximale.
 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{fig/BEC_manip/rabi.pdf}
-\caption{\textbf{a: Oscillations de Rabi tracées pour différents désaccords.} Les populations oscillent à la fréquence $\sqrt{\Omega^2+\delta^2}$ avec une amplitude qui dépend du désaccord. L'amplitude est maximale et atteint 1 lorsque l'onde radio-fréquence est à résonance, et la population maximale transférée décroît avec l'augmentation du désaccord. \textbf{b: Spectres de Rabi pour différentes durées d'application $t_p$.} Le transfert de population est le plus efficace à résonance ($\delta=0$) pour certaines durées telles que $t_p= (2n+1) \pi/ \Omega$. On retrouve bien l'enveloppe lorentzienne de l'équation \ref{eq:rabi_formule}.}
+\caption{\textbf{a: Oscillations de Rabi tracées pour différents désaccords.} Les populations oscillent à la fréquence $\sqrt{\Omega^2+\delta^2}$ avec une amplitude qui dépend du désaccord. L'amplitude est maximale et atteint 1 lorsque l'onde radio-fréquence est à résonance, et la population maximale transférée décroît avec l'augmentation du désaccord. \textbf{b: Spectres de Rabi pour différentes durées d'application $t_p$.} Le transfert de population est le plus efficace à résonance ($\delta=0$), et l'utilisation d'un désaccord entraîne une diminitution de l'efficacité de transfert. Les populations maximales transférées sont décrites par l'enveloppe lorentzienne de l'équation \ref{eq:rabi_formule}.}
 \label{fig:rabi}
 \end{figure}
 

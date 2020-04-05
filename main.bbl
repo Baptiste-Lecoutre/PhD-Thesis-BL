@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -58,6 +58,19 @@
 \dinatlabel{Jendrzejewski 2012} \textsc{Jendrzejewski}, Fred:
 \newblock \emph{Quantum transport of ultracold atoms in disordered potentials},
   Paris 11, Dissertation, 2012
+
+\bibitem[Jendrzejewski et~al.(2012)Jendrzejewski, Bernard, Mueller, Cheinet,
+  Josse, Piraud, Pezz{\'e}, Sanchez-Palencia, Aspect and
+  Bouyer]{jendrzejewski2012three}
+\dinatlabel{Jendrzejewski et~al. 2012} \textsc{Jendrzejewski}, Fred~;
+  \textsc{Bernard}, Alain~; \textsc{Mueller}, Killian~; \textsc{Cheinet},
+  Patrick~; \textsc{Josse}, Vincent~; \textsc{Piraud}, Marie~;
+  \textsc{Pezz{\'e}}, Luca~; \textsc{Sanchez-Palencia}, Laurent~;
+  \textsc{Aspect}, Alain~; \textsc{Bouyer}, Philippe:
+\newblock Three-dimensional localization of ultracold atoms in an optical
+  disordered potential.
+\newblock In: \emph{Nature Physics}
+\newblock 8 (2012), Nr.~5, S.~398--403
 
 \bibitem[Muller(2015)]{muller2015coherent}
 \dinatlabel{Muller 2015} \textsc{Muller}, Kilian:
