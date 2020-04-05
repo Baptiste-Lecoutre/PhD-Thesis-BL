@@ -4,7 +4,7 @@
 %\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Chapter1/g825.png}};
 %\end{tikzpicture}
 
-Dans la partie précédente, nous nous sommes concentrés sur la physique que nous souhaitons étudier. En particulier, nous avons mis en évidence le fait que l'approche des atomes ultrafroids constitue une plateforme idéale pour l'étude de la propagation d'ondes dans un milieu désordonné, plateforme déjà éprouvée par l'observation de la localisation d'Anderson d'ondes de matières dans un désordre optique. 
+Dans la partie précédente, nous nous sommes concentrés sur la physique des atomes ultrafroids dans le désordre. En particulier, nous avons mis en évidence le fait que l'approche des atomes ultrafroids constitue une plateforme idéale pour l'étude de la propagation d'ondes dans un milieu désordonné, plateforme déjà éprouvée par l'observation de la localisation d'Anderson d'ondes de matières dans un désordre optique. 
 
 À présent, concentrons-nous sur la description de l'un des deux éléments-clé de la propagation d'ondes dans le désordre: notre source d'ondes de matière. Le second élément, notre désordre optique, sera quant à lui présenté dans le chapitre \ref{ch:Speckle}.
 
@@ -137,16 +137,17 @@ avec $n_{\mathbf{0}}$ la densité moyenne du condensat. $\xi$ représente donc l
 
 
 \section{Processus d'interaction lumière-matière}
-Précédemment, nous avons brièvement présenté le phénomène de condensation de Bose-Einstein ainsi que les principales propriétés d'un condensat. En particulier, nous avons identifié un critère de condensation, qui sert de ligne à atteindre sur notre dispositif. À présent, nous allons présenter les différents outils de manipulation d'atomes dont nous disposons pour obtenir la condensation d'un nuage de rubidium ${}^{87}$Rb.
-\subsection{Le rubidium ${}^{87}$Rb}
+Précédemment, nous avons brièvement présenté le phénomène de condensation de Bose-Einstein ainsi que les principales propriétés d'un condensat. En particulier, nous avons identifié $n \lambda_{\mathrm{dB}}^3 \gtrsim 1$ comme un critère de condensation, impliquant l'obtention de nuages denses à très basse température. Il s'agit donc de la ligne à atteindre sur notre dispositif. Dans cette partie, nous allons présenter les différents outils de manipulation d'atomes dont nous disposons, tels que des champs magnétiques, des champs lasers ou encore des radio-fréquences, afin d'obtenir la condensation d'un nuage de rubidium ${}^{87}$Rb.
+\subsection{Le rubidium ${}^{\mathbf{87}}$Rb}
 \label{sc:Rb87}
-Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre expérience est le rubidium ${}^{87}$Rb, le second isotope le plus abondant après le rubidium ${}^{85}$Rb (l'abondance naturelle du ${}^{87}$Rb est de 27.8\%). Il s'agit d'un alcalin (il possède donc un seul électron de valence) avec un spin nucléaire $\mathbf{I}=3/2$. Le choix de cet isotope repose sur l'existence d'une transition optique cyclante dans sa raie $D$. De plus, sa longueur de diffusion $a_{\mathrm{s}}=5.3$nm résulte en des taux de collisions relativement élevés, permettant une thermalisation rapide du nuage. À ce propos, il s'agit de l'atome ayant été condensé en premier. \citep{anderson1995observation}
+Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre expérience est le rubidium ${}^{87}$Rb, le second isotope le plus fréquent après le rubidium ${}^{85}$Rb (l'abondance naturelle du ${}^{87}$Rb est de 27.8\%). Il s'agit d'un alcalin bosonique (il possède donc un seul électron de valence) avec un spin nucléaire $\mathbf{I}=3/2$. Historiquement, le ${}^{87}$Rb est l'atome ayant été condensé en premier \citep{anderson1995observation}, son choix reposant sur l'existence d'une transition optique cyclante à 780nm dans sa raie $D$ ainsi que le développement rapide des technologies laser à cette longueur d'onde. La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 795nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, la plupart de nos fréquences optiques se trouvant autour de 780nm. Le choix de l'atome de rubidium est aussi dû à ses bonnes propriétés. En particulier, sa longueur de diffusion $a_{\mathrm{s}}=5.3$ nm résulte en des taux de collisions relativement élevés, permettant une thermalisation rapide du nuage. 
 
-La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 895nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, la plupart de nos fréquences optiques se trouvant à 780nm. La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. Une vue simplifiée de cette structure est donnée figure \ref{fig:Rb87}, et un tableau récapitulatif des principales grandeurs du ${}^{87}$Rb peut être trouvé table \ref{tbl:Rb87}.
+La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. Une vue simplifiée de cette structure est donnée figure \ref{fig:Rb87}, et un tableau récapitulatif des principales grandeurs du ${}^{87}$Rb peut être trouvé table \ref{tbl:Rb87}.
 
 \renewcommand{\arraystretch}{1.1}
 \begin{table}[!ht]
 \begin{center}
+%{\rowcolors{2}{niceblue!25}{niceblue!15}
 \begin{tabular}{ |c|c|c| }
 \hline
 \textbf{Quantité physique} & \textbf{Symbole} & \textbf{Valeur} \\
@@ -179,7 +180,7 @@ Intensité de saturation & $I_{\mathrm{sat}}$ & 1.67mW.cm${}^{-2}$ \\
 \hline
 Longueur de diffusion & $a_{\mathrm{s}}$ & 5.3nm \\
 \hline
-\end{tabular}
+\end{tabular}%}
 \end{center}
 \caption{Tableau récapitulatif des grandeurs physiques du rubidium ${}^{87}$Rb que nous utiliserons dans la suite. Ces valeurs sont tirées de \citep{steck2001rubidium}.}
 \label{tbl:Rb87}
@@ -199,22 +200,18 @@ Le moment cinétique total $\hat{\mathbf{F}}$ est donné par la somme des moment
 \begin{equation}
 \hat{\mathbf{F}}=\hat{\mathbf{I}}+\hat{\mathbf{L}}+\hat{\mathbf{S}}
 \end{equation}
-avec $\hat{\mathbf{I}}$ le spin total nucléaire, $\hat{\mathbf{L}}$ le moment cinétique orbital et $\hat{\mathbf{S}}$ le moment cinétique de spin électronique. On a alors un moment magnétique total $\hat{\boldsymbol\mu}=\mu_{\mathrm{B}} (g_{\mathrm{I}} \hat{\mathbf{I}} + g_{\mathrm{L}} \hat{\mathbf{L}} + g_{\mathrm{S}} \hat{\mathbf{S}})$ où les $g_{\mathrm{I},\mathrm{L},\mathrm{S}}$ sont les facteurs de Landé et $\mu_{\mathrm{B}}$ est le magnéton de Bohr. L'énergie d'interaction de ce moment magnétique avec un champ magnétique $\mathbf{B}$ est donnée par $\hat{V}=-\hat{\boldsymbol\mu}.\mathbf{B}$. On obtient les énergies propres par la formule de Breit-Rabi, dont l'application aux états $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ fournit:
+avec $\hat{\mathbf{I}}$ le spin total nucléaire, $\hat{\mathbf{L}}$ le moment cinétique orbital et $\hat{\mathbf{S}}$ le moment cinétique de spin électronique. On a alors un moment magnétique total $\hat{\boldsymbol\mu}=\mu_{\mathrm{B}} (g_{\mathrm{I}} \hat{\mathbf{I}} + g_{\mathrm{L}} \hat{\mathbf{L}} + g_{\mathrm{S}} \hat{\mathbf{S}})$ où les $g_{\mathrm{I},\mathrm{L},\mathrm{S}}$ sont les facteurs de Landé et $\mu_{\mathrm{B}}$ est le magnéton de Bohr\footnote{L'interaction avec le spin du noyau donne une correction très faible car $g_{\mathrm{I}}\propto 1/m_{\mathrm{P}}$ avec $m_{\mathrm{p}}$ la masse du proton, et $g_{\mathrm{L,S}} \propto 1/m_{\mathrm{e}}$ avec $m_{\mathrm{e}}$ la masse de l'électron. Ainsi, $g_{\mathrm{I}} \ll g_{\mathrm{L,S}}$ et donc on peut négliger l'effet du spin nucléaire lors de l'application d'un champ magnétique extérieur, voir table \ref{tbl:Rb87}.}. L'énergie d'interaction de ce moment magnétique avec un champ magnétique $\mathbf{B}$ est donnée par $\hat{V}=-\hat{\boldsymbol\mu}.\mathbf{B}$. On obtient les énergies propres par la formule de Breit-Rabi, dont l'application aux états $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ fournit:
 \begin{equation}
 \begin{aligned}
-E_{F=2} &\simeq + \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2} \\
-E_{F=1} &\simeq - \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2}
+E_{F=2} &= + \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2} \\
+E_{F=1} &= - \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2}
 \end{aligned}
 \end{equation}
 avec $\beta \simeq 2 \mu_{\mathrm{B}} \left| B \right| /h \Delta_{\mathrm{hf}}$. À faible champ magnétique $\left| B \right| \ll h \Delta_{\mathrm{hf}} / \mu_{\mathrm{B}}$ (régime où $\beta \ll 1$), on retrouve l'effet Zeeman linéaire avec
 \begin{equation}
-U_{\mathrm{mag}}=m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} \left| B \right|
-\end{equation}
-et $g_{\mathrm{F}=2}= 1/2$ et $g_{\mathrm{F}=1} =-1/2$. L'utilisation d'un champ magnétique non homogène génère donc un potentiel dépendant de la position, tel que dans l'expérience de Stern \& Gerlach. 
-\begin{equation}
 U_{\mathrm{mag}} (\mathbf{r}) = m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} \left| B(\mathbf{r}) \right|
 \end{equation}
-L'utilisation de tels champs inhomogènes est très répandue dans le domaine des atomes ultra-froids, en particulier pour la génération de pièges magnétiques.
+et $g_{\mathrm{F}=2}= 1/2$ et $g_{\mathrm{F}=1} =-1/2$. L'utilisation d'un champ magnétique non homogène génère donc un potentiel dépendant de la position, tel que dans l'expérience de Stern \& Gerlach. L'utilisation de tels champs inhomogènes est très répandue dans le domaine des atomes ultra-froids, en particulier pour la génération de pièges magnétiques, l'accélération de particules, mais aussi pour réaliser une lévitation magnétique comme c'est le cas sur notre expérience. 
 
 
 
@@ -232,6 +229,7 @@ dont l'effet sur un atome est donné par le hamiltonien $H_{\mathrm{AL}}=-\mathb
 Dans la cadre de la théorie de la réponse linéaire, on introduit la polarisabilité atomique $\alpha(\omega)$ et on montre alors que la force moyenne exercée sur un atome est la somme de deux termes:
 \begin{equation}
 \mathbf{F}=\frac{1}{2} \mathrm{Re}(\alpha(\omega)) E(\mathbf{r}) \nabla E(\mathbf{r})+\frac{1}{2}\mathrm{Im}(\alpha(\omega)) E^2(\mathbf{r}) \nabla \phi(\mathbf{r})
+\label{eq:forces_lumineuses}
 \end{equation}
 
 \paragraph*{Potentiel dipolaire}
@@ -274,23 +272,19 @@ et l'ordre de grandeur du temps de vie associé est de l'ordre de quelques secon
 Notons enfin qu'il est possible de se rapprocher encore plus de résonance et de devenir sensible à la structure hyperfine de la transition $D_2$ (dans ces conditions on peut négliger la contribution de la raie $D_1$). En revanche, le taux d'émission spontanée croît fortement et devient très contraignant.
 
 \paragraph*{Force de pression de radiation}
-Le second terme s'appelle \emph{force de pression de radiation}. Il provient de la partie imaginaire de la polarisabilité atomique, qui caractérise l'absorption de photons par l'atome. Il s'agit donc d'une force inélastique qui résulte d'un grand nombre de cycles d'absorption de photons du faisceau laser et d'émission spontanée dans des directions aléatoires de l'espace \footnote{Pour réaliser de tels cycles, il est nécessaire d'avoir une transition cyclante, c'est à dire de disposer d'un état excité dont la désexcitation renvoie forcément sur l'état d'origine}. L'impulsion totale cédée par émission spontanée s'annule donc, et en moyenne le transfert d'impulsion ne provient que de l'absorption de photons du faisceau laser. Cette force est donnée par
+Le second terme s'appelle \emph{force de pression de radiation}. Il provient de la partie imaginaire de la polarisabilité atomique, qui caractérise l'absorption de photons par l'atome. Il s'agit donc d'une force inélastique qui résulte d'un grand nombre de cycles d'absorption de photons du faisceau laser et d'émission spontanée dans des directions aléatoires de l'espace \footnote{Pour réaliser de tels cycles, il est nécessaire d'avoir une transition cyclante, c'est à dire de disposer d'un état excité dont la désexcitation renvoie forcément sur l'état d'origine.}. L'impulsion totale cédée par émission spontanée s'annule donc, et en moyenne le transfert d'impulsion ne provient que de l'absorption de photons du faisceau laser comme illustré par le terme de droite de l'équation \ref{eq:forces_lumineuses}. En effet, le gradient de la phase du laser vaut $\nabla \phi (\mathbf{r})=\mathbf{k}$. Cette force est donnée par
 \begin{equation}
 \mathbf{F}_{\mathrm{PR}}=\hb \mathbf{k} \Gamma_{\mathrm{sp}} 
 \end{equation}
 avec $\Gamma_{\mathrm{sp}}$ le taux d'émission spontanée en présence du champ laser, et $\mathbf{k}$ le vecteur d'onde associé à l'onde laser. L'interprétation est directe: en moyenne, l'atome acquiert une impulsion $\hb \mathbf{k}$ à un taux $\Gamma_{\mathrm{sp}}$. Ce taux vaut:
 \begin{equation}
-\Gamma_{\mathrm{sp}}=\frac{\Gamma}{2} \frac{s}{1+s}
+\Gamma_{\mathrm{sp}}=\frac{\Gamma}{2} \frac{s}{1+s} \quad \text{avec} \quad s=\frac{I/I_{\mathrm{sat}}}{1+4\delta^2/\Gamma^2}
 \end{equation}
-et $s$ s'appelle le paramètre de saturation. Celui-ci dépend de l'intensité lumineuse incidente (et donc du nombre de photons incidents) ainsi que du désaccord du laser par rapport à la résonance atomique $\delta = \omega-\omega_0$. Il s'exprime
-\begin{equation}
-s=\frac{I/I_{\mathrm{sat}}}{1+4\delta^2/\Gamma^2}
-\end{equation}
-où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}=1.67$mW.cm${}^{-2}$ est une constante de l'atome de ${}^{87}$Rb. Le paramètre de saturation est maximal en $\delta=0$, c'est à dire lorsque le laser est à résonance. Dans le cas d'un laser très saturant $s \gg 1$, la force de pression de radiation s'écrit
+où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}=1.67$mW.cm${}^{-2}$ est une constante de l'atome de ${}^{87}$Rb. La grandeur $s$ s'appelle le paramètre de saturation. Celui-ci dépend de l'intensité lumineuse incidente (et donc du nombre de photons incidents) ainsi que du désaccord du laser par rapport à la résonance atomique $\delta = \omega-\omega_0$.  Le paramètre de saturation est maximal en $\delta=0$, c'est à dire lorsque le laser est à résonance. Dans le cas d'un laser très saturant $s \gg 1$, la force de pression de radiation s'écrit
 \begin{equation}
 \mathbf{F}_{\mathrm{PR}}=\frac{\hb \mathbf{k} \Gamma}{2}
 \end{equation}
-où le facteur 2 indique que à forte saturation, un atome autant de chance d'être dans l'état excité que dans l'état fondamental. Enfin, mentionnons que pour un atome se déplaçant à une vitesse $\mathbf{v}$ dans le référentiel du laboratoire, le désaccord devient $\delta=\omega-\omega_0-\mathbf{k}.\mathbf{v}$ par effet Doppler.
+où le facteur 2 indique que à forte saturation, un atome autant de chance d'être dans l'état excité que dans l'état fondamental. Enfin, mentionnons que pour un atome se déplaçant à une vitesse $\mathbf{v}$ dans le référentiel du laboratoire, le désaccord devient $\delta=\omega-\omega_0-\mathbf{k}.\mathbf{v}$ par effet Doppler. Nous reviendrons sur ce point lorsque nous décrirons les mécanismes du refroidissement laser.
 
 
 \subsection{Couplage radio-fréquence} 

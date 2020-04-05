@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  4 APR 2020 12:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  5 APR 2020 13:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -1506,112 +1506,105 @@ Package pdftex.def Info: Fig/BEC_manip/thomas_fermi.pdf  used on input line 122
 <Fig/BEC_manip/Rb87.pdf, id=830, 440.87213pt x 257.70801pt>
 File: Fig/BEC_manip/Rb87.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/Rb87.pdf>
-Package pdftex.def Info: Fig/BEC_manip/Rb87.pdf  used on input line 190.
+Package pdftex.def Info: Fig/BEC_manip/Rb87.pdf  used on input line 191.
 (pdftex.def)             Requested size: 341.43437pt x 199.59186pt.
-
-Underfull \vbox (badness 4001) has occurred while \output is active []
-
- [18]
-[19 <./Fig/BEC_manip/Rb87.pdf>]
+ [18 <./Fig/BEC_manip/Rb87.pdf>] [19]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-27.
+24.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 [20]
-<Fig/BEC_manip/V_dip.png, id=959, 361.35pt x 331.99031pt>
+<Fig/BEC_manip/V_dip.png, id=961, 361.35pt x 331.99031pt>
 File: Fig/BEC_manip/V_dip.png Graphic file (type png)
 <use Fig/BEC_manip/V_dip.png>
-Package pdftex.def Info: Fig/BEC_manip/V_dip.png  used on input line 262.
+Package pdftex.def Info: Fig/BEC_manip/V_dip.png  used on input line 260.
 (pdftex.def)             Requested size: 216.81168pt x 199.19571pt.
-
-Underfull \vbox (badness 2781) has occurred while \output is active []
-
- [21 <./Fig/BEC_manip/V_dip.png>] [22]
-<fig/BEC_manip/rabi.pdf, id=984, 754.06688pt x 264.8047pt>
+ [21] [22 <./Fig/BEC_manip/V_dip.png>]
+<fig/BEC_manip/rabi.pdf, id=987, 754.06688pt x 264.8047pt>
 File: fig/BEC_manip/rabi.pdf Graphic file (type pdf)
 <use fig/BEC_manip/rabi.pdf>
-Package pdftex.def Info: fig/BEC_manip/rabi.pdf  used on input line 340.
+Package pdftex.def Info: fig/BEC_manip/rabi.pdf  used on input line 334.
 (pdftex.def)             Requested size: 426.79135pt x 149.87352pt.
  [23]
-<Fig/BEC_manip/manip.pdf, id=1011, 433.61185pt x 283.43782pt>
+<Fig/BEC_manip/manip.pdf, id=1014, 433.61185pt x 283.43782pt>
 File: Fig/BEC_manip/manip.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/manip.pdf>
-Package pdftex.def Info: Fig/BEC_manip/manip.pdf  used on input line 358.
+Package pdftex.def Info: Fig/BEC_manip/manip.pdf  used on input line 352.
 (pdftex.def)             Requested size: 426.79135pt x 278.98679pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24 <./fig/BEC_manip/rabi.pdf>] [25 <./Fig/BEC_manip/manip.pdf>]
-<Fig/BEC_manip/table_optique2.pdf, id=1161, 436.53725pt x 348.388pt>
+<Fig/BEC_manip/table_optique2.pdf, id=1164, 436.53725pt x 348.388pt>
 File: Fig/BEC_manip/table_optique2.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/table_optique2.pdf>
 Package pdftex.def Info: Fig/BEC_manip/table_optique2.pdf  used on input line 3
-77.
+71.
 (pdftex.def)             Requested size: 341.43437pt x 272.49107pt.
  [26 <./Fig/BEC_manip/table_optique2.pdf>]
-<Fig/BEC_manip/MOT_magtrap.pdf, id=1173, 359.96951pt x 197.41629pt>
+<Fig/BEC_manip/MOT_magtrap.pdf, id=1175, 359.96951pt x 197.41629pt>
 File: Fig/BEC_manip/MOT_magtrap.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/MOT_magtrap.pdf>
-Package pdftex.def Info: Fig/BEC_manip/MOT_magtrap.pdf  used on input line 394.
+Package pdftex.def Info: Fig/BEC_manip/MOT_magtrap.pdf  used on input line 388.
 
 (pdftex.def)             Requested size: 426.79135pt x 234.08183pt.
  [27 <./Fig/BEC_manip/MOT_magtrap.pdf>]
-<Fig/BEC_manip/evapRF.pdf, id=1220, 388.57635pt x 204.5393pt>
+<Fig/BEC_manip/evapRF.pdf, id=1222, 388.57635pt x 204.5393pt>
 File: Fig/BEC_manip/evapRF.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/evapRF.pdf>
-Package pdftex.def Info: Fig/BEC_manip/evapRF.pdf  used on input line 420.
+Package pdftex.def Info: Fig/BEC_manip/evapRF.pdf  used on input line 414.
 (pdftex.def)             Requested size: 384.1096pt x 202.19177pt.
  [28]
-<Fig/BEC_manip/piege_optique.pdf, id=1237, 423.59935pt x 236.41693pt>
+<Fig/BEC_manip/piege_optique.pdf, id=1239, 423.59935pt x 236.41693pt>
 File: Fig/BEC_manip/piege_optique.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/piege_optique.pdf>
 Package pdftex.def Info: Fig/BEC_manip/piege_optique.pdf  used on input line 43
-9.
+3.
 (pdftex.def)             Requested size: 384.1096pt x 214.37856pt.
  [29 <./Fig/BEC_manip/evapRF.pdf>]
 
 Package natbib Warning: Citation `jendrzejewski2012three' on page 30 undefined 
-on input line 451.
+on input line 445.
 
 [30 <./Fig/BEC_manip/piege_optique.pdf>]
-<Fig/BEC_manip/levitation_simple.pdf, id=2579, 252.72139pt x 181.6753pt>
+<Fig/BEC_manip/levitation_simple.pdf, id=2581, 252.72139pt x 181.6753pt>
 File: Fig/BEC_manip/levitation_simple.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/levitation_simple.pdf>
 Package pdftex.def Info: Fig/BEC_manip/levitation_simple.pdf  used on input lin
-e 463.
+e 457.
 (pdftex.def)             Requested size: 252.72076pt x 181.67484pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31 <./Fig/BEC_manip/levitation_simple.pdf>]
-<Fig/BEC_manip/BEC_double_struct.pdf, id=2623, 412.8108pt x 175.07729pt>
+<Fig/BEC_manip/BEC_double_struct.pdf, id=2625, 412.8108pt x 175.07729pt>
 File: Fig/BEC_manip/BEC_double_struct.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/BEC_double_struct.pdf>
 Package pdftex.def Info: Fig/BEC_manip/BEC_double_struct.pdf  used on input lin
-e 485.
+e 479.
 (pdftex.def)             Requested size: 384.1096pt x 162.9137pt.
  [32 <./Fig/BEC_manip/BEC_double_struct.pdf>]
-<Fig/BEC_manip/adia_opening_and_delta_kick2.pdf, id=2715, 765.07376pt x 306.008
+<Fig/BEC_manip/adia_opening_and_delta_kick2.pdf, id=2717, 765.07376pt x 306.008
 64pt>
 File: Fig/BEC_manip/adia_opening_and_delta_kick2.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/adia_opening_and_delta_kick2.pdf>
 Package pdftex.def Info: Fig/BEC_manip/adia_opening_and_delta_kick2.pdf  used o
-n input line 510.
+n input line 504.
 (pdftex.def)             Requested size: 426.79135pt x 170.70528pt.
 [33 <./Fig/BEC_manip/adia_opening_and_delta_kick2.pdf>]
-<fig/BEC_manip/img_mot.pdf, id=3409, 431.52072pt x 114.65497pt>
+<fig/BEC_manip/img_mot.pdf, id=3411, 431.52072pt x 114.65497pt>
 File: fig/BEC_manip/img_mot.pdf Graphic file (type pdf)
 <use fig/BEC_manip/img_mot.pdf>
-Package pdftex.def Info: fig/BEC_manip/img_mot.pdf  used on input line 545.
+Package pdftex.def Info: fig/BEC_manip/img_mot.pdf  used on input line 539.
 (pdftex.def)             Requested size: 426.79135pt x 113.40204pt.
  [34 <./fig/BEC_manip/img_mot.pdf>]
-<fig/BEC_manip/img_science_3.pdf, id=3465, 318.99263pt x 189.45609pt>
+<fig/BEC_manip/img_science_3.pdf, id=3467, 318.99263pt x 189.45609pt>
 File: fig/BEC_manip/img_science_3.pdf Graphic file (type pdf)
 <use fig/BEC_manip/img_science_3.pdf>
-Package pdftex.def Info: fig/BEC_manip/img_science_3.pdf  used on input line 56
-3.
+Package pdftex.def Info: fig/BEC_manip/img_science_3.pdf  used on input line 55
+7.
 (pdftex.def)             Requested size: 318.99184pt x 189.45561pt.
  [35 <./fig/BEC_manip/img_science_3.pdf>]) (Chapters/Modif_exp.tex
 [36]
@@ -1622,27 +1615,27 @@ Chapitre 3.
 
 ]
 Chapitre 4.
-<Fig/Speckle/speckle_pattern.pdf, id=3556, 404.94328pt x 187.88626pt>
+<Fig/Speckle/speckle_pattern.pdf, id=3558, 404.94328pt x 187.88626pt>
 File: Fig/Speckle/speckle_pattern.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_pattern.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 21
 .
 (pdftex.def)             Requested size: 404.94228pt x 187.88579pt.
 [39] [40 <./Fig/Speckle/speckle_pattern.pdf>]
-<Fig/Speckle/diffus_prop.pdf, id=3634, 300.06396pt x 226.78568pt>
+<Fig/Speckle/diffus_prop.pdf, id=3636, 300.06396pt x 226.78568pt>
 File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
 <use Fig/Speckle/diffus_prop.pdf>
 Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 61.
 (pdftex.def)             Requested size: 300.06323pt x 226.78511pt.
  [41 <./Fig/Speckle/diffus_prop.pdf>]
-<Fig/Speckle/random_walk_speckle.pdf, id=3740, 208.17155pt x 207.50287pt>
+<Fig/Speckle/random_walk_speckle.pdf, id=3742, 208.17155pt x 207.50287pt>
 File: Fig/Speckle/random_walk_speckle.pdf Graphic file (type pdf)
 <use Fig/Speckle/random_walk_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/random_walk_speckle.pdf  used on input lin
 e 100.
 (pdftex.def)             Requested size: 208.17102pt x 207.50235pt.
  [42 <./Fig/Speckle/random_walk_speckle.pdf>]
-<Fig/Speckle/montage_diffuseur.pdf, id=3769, 489.34206pt x 294.36562pt>
+<Fig/Speckle/montage_diffuseur.pdf, id=3771, 489.34206pt x 294.36562pt>
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
@@ -1715,11 +1708,11 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 145.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 30095 strings out of 480934
- 571973 string characters out of 2899917
- 1112458 words of memory out of 3000000
- 44694 multiletter control sequences out of 15000+200000
- 727914 words of font info for 284 fonts, out of 3000000 for 9000
+ 30107 strings out of 480934
+ 572133 string characters out of 2899917
+ 1113549 words of memory out of 3000000
+ 44699 multiletter control sequences out of 15000+200000
+ 734152 words of font info for 290 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,62p,1632b,1334s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
@@ -1762,9 +1755,9 @@ nts/type1/public/lm/lmsy7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9
 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (63 pages, 2844735 bytes).
+Output written on main.pdf (63 pages, 2849463 bytes).
 PDF statistics:
- 4235 PDF objects out of 4296 (max. 8388607)
- 311 named destinations out of 1000 (max. 500000)
- 69529 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 4237 PDF objects out of 4296 (max. 8388607)
+ 310 named destinations out of 1000 (max. 500000)
+ 70553 words of extra memory for PDF output out of 74296 (max. 10000000)
 
