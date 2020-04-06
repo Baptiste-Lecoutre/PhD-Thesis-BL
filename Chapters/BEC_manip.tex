@@ -13,6 +13,8 @@ Dans ce chapitre, nous nous attacherons donc à définir ce qu'est un condensat 
 \section{Condensation de Bose-Einstein}
 Commençons par décrire ce qu'est un condensat de Bose-Einstein. Le phénomène de condensation a été prédit par Albert Einstein dans les années 1920 en s'appuyant sur les travaux de Satyendranath Bose traitant des statistiques quantiques pour des particules plus tard appelées \emph{bosons}. Il a cependant fallu attendre les années 1960 et le développement des premiers lasers pour voir émerger les premières techniques de manipulation d'atomes. La mise au point de telles technologies a d'ailleurs valu le prix Nobel à ses principaux architectes Claude Cohen-Tannoudji, Steven Chu et William D. Phillips en 1997. Enfin, le premier condensat de Bose-Einstein gazeux de ${}^{87}$Rb a été obtenu par l'équipe de Eric Cornell et Carl Wieman \citep{anderson1995observation}, rapidement suivi par un condensat de ${}^{23}$Na obtenu par Wolfgang Ketterle \citep{davis1995bose}. Ces travaux ont été récompensés par le prix Nobel de 2001.
 
+Depuis, des condensats de Bose-Einstein ont été produits pour un grand nombre d'espèces chimique, pour des atomes comme pour des molécules. Aujourd'hui, les condensats sont couramment utilisés comme outils à des fins différentes, aussi leurs propriétés ont pu être abondamment étudiées par le passé et restent l'objet de l'investigation de plusieurs groupes dans le monde. Ainsi, nous n'en présenterons ici que les propriétés essentielles à la suite de ce manuscrit.
+
 \subsection{Statistique de Bose-Einstein}
 Le phénomène de condensation de Bose-Einstein trouve son origine dans la statistique de Bose-Einstein. Celle-ci se différencie de la statistique classique de Boltzmann dans le formalisme grand-canonique donnée par:
 \begin{equation}
@@ -28,7 +30,7 @@ Dans le cadre de la mécanique quantique, une telle approche n'est pas possible 
 \label{fig:stat_bose}
 \end{figure}
 
-Considérons alors le cas simple de la répartition de deux particules sur deux niveaux d'énergie. Dans le cadre de la physique classique, il est possible d'attribuer un numéro à chaque particule, et il on peut placer chaque particule dans n'importe quel niveau d'énergie. Il existe alors quatre configurations que l'on supposera équiprobables, chacune de probabilité $p=1/4$ (voir figure \ref{fig:stat_bose}a). L'approche quantique, dans laquelle il n'est pas possible de discerner les particules, restreint le nombre de possibilités à trois et donc la probabilité de chacune des configurations est alors de $p=1/3$ (voir figure \ref{fig:stat_bose}b). Calculons maintenant la probabilité que deux particules soient dans le même état. En physique classique, cette probabilité est de $p=2/4=1/2$, tandis qu'en mécanique quantique, celle-ci est de $p=2/3$. On s'attend alors à ce que l'indiscernabilité des particules en mécanique quantique modifie la statistique de Boltzmann en favorisant l'agrégation de particules dans le même état \footnote{Ce raisonnement est valable pour des particules bosoniques, qui peuvent se retrouver dans le même état quantique. Pour des particules fermioniques, qui ne peuvent pas se retrouver dans le même état quantique, les statistiques en sont donc profondément changées. En guise d'illustration, la seule configuration possible de la figure \ref{fig:stat_bose}b pour des fermions est la seconde configuration.}.
+Considérons alors le cas simple de la répartition de deux particules sur deux niveaux d'énergie. Dans le cadre de la physique classique, il est possible d'attribuer un numéro à chaque particule, et il on peut placer chaque particule dans n'importe quel niveau d'énergie. Il existe alors quatre configurations que l'on supposera équiprobables, chacune de probabilité $p=1/4$ (voir figure \ref{fig:stat_bose}a). L'approche quantique, dans laquelle il n'est pas possible de discerner les particules, restreint le nombre de possibilités à trois et donc la probabilité de chacune des configurations est alors de $p=1/3$ (voir figure \ref{fig:stat_bose}b). Calculons maintenant la probabilité que deux particules soient dans le même état. En physique classique, cette probabilité est de $p=2/4=1/2$, tandis qu'en mécanique quantique, celle-ci est de $p=2/3$. On s'attend alors à ce que l'indiscernabilité des particules en mécanique quantique modifie la statistique de Boltzmann en favorisant l'agrégation de particules dans le même état \footnote{Ce raisonnement est valable pour des particules bosoniques, qui peuvent se retrouver dans le même état quantique. Pour des particules fermioniques, qui ne peuvent pas occuper le même état quantique, les statistiques en sont donc profondément changées. En guise d'illustration, la seule configuration possible de la figure \ref{fig:stat_bose}b pour des fermions est la seconde configuration.}.
 
 \paragraph*{Condensation de Bose-Einstein}
 Considérons alors le cas d'un gaz de $N$ bosons identiques dans un piège harmonique:
@@ -49,7 +51,7 @@ Une condition de validité de cette équation est que le potentiel chimique $\mu
 \begin{equation}
 N_e(\mu,T)=\sum_{\mathbf{n}\neq\mathbf{0}} N_{\mathbf{n}} \leq \sum_{\mathbf{n} \neq \mathbf{0}} \frac{g_{\mathbf{n}}}{\exp{\left( (E_{\mathbf{n}}-E_{\mathbf{0}})/k_{\mathrm{B}}T \right)}-1}
 \end{equation}
-Ainsi, chaque particule supplémentaire peuplera forcément l'état fondamental. On a donc ici le moyen d'accumuler un grand nombre de particules dans le même état quantique. La condensation de Bose-Einstein correspond, par définition, à cette accumulation d'un nombre macroscopique de particules dans l'état fondamental. Toutes ces particules peuplant cet état partagent alors le même état quantique. Afin d'atteindre un tel régime, il est nécessaire que les paquets d'onde des particules individuelles se recouvrent, c'est à dire que l'extension typique d'un paquet d'onde soit plus grande que la distance moyenne entre particules. L'extension typique de la fonction d'onde d'une particule peut être estimée à l'aide du principe d'incertitude de Heisenberg: $\Delta x \sim \hb / \Delta p$ avec $\Delta p \sim h/\lambda_{\mathrm{dB}}$. La grandeur $\lambda_{\mathrm{dB}}$ est homogène à une longueur et s'appelle la longueur d'onde thermique de de Broglie. Elle correspond à la taille typique d'un paquet d'onde quantique dont la largeur de la distribution en impulsion est donnée par la température. Celle-ci est donnée par \citep{diu1989elements}
+Ainsi, chaque particule supplémentaire peuplera forcément l'état fondamental. On a donc ici le moyen d'accumuler un grand nombre de particules dans le même état quantique. La condensation de Bose-Einstein correspond, par définition, à cette accumulation d'un nombre macroscopique de particules dans l'état fondamental. C'est dans ce régime que les effets quantiques se manifestent, toutes ces particules partageant alors le même état quantique. Afin d'obtenir de tels effets, il est nécessaire que les fonctions d'onde des particules individuelles se recouvrent, c'est à dire que l'extension typique d'un paquet d'onde soit plus grande que la distance moyenne entre particules. Cette extension typique est donnée par la longueur d'onde thermique de de Broglie $\Delta x \sim \lambda_{\mathrm{dB}}$, qui correspond à la taille typique d'un paquet d'onde quantique dont la largeur de la distribution en impulsion est donnée par la température. Elle s'exprime \citep{diu1989elements}
 \begin{equation}
 \lambda_{\mathrm{dB}}=\sqrt{\frac{2\pi \hb^2}{m k_{\mathrm{B}}T}}
 \end{equation}
@@ -66,23 +68,23 @@ T_{\mathrm{C}}\sim \frac{\hb \overline{\omega}}{k_{\mathrm{B}}}N^{1/3}
 où $\overline{\omega}=(\omega_x \omega_y \omega_z)^{1/3}$ est la fréquence moyenne du piège. Cette température critique est de l'ordre de quelques centaines de nano-kelvin pour les expériences typiques d'atomes ultra-froids.
 
 
+
+
+
 \subsection{Propriétés d'un condensat de Bose-Einstein}
 En dessous de la température critique \ref{eq:temperature_critique}, les atomes s'accumulent dans l'état fondamental du piège. Il en résulte une forte augmentation de la densité, si bien qu'on ne peut plus négliger les interactions entre particules. Dans le cas d'un gaz suffisamment dilué, ce que l'on considèrera dans la suite, les interactions entre atomes peuvent être traitées comme des collisions à basse énergie, c'est à dire des collisions uniquement dans l'onde \emph{s}. Le potentiel d'interaction est alors celui de contact, donné par $U(\mathbf{r}_1-\mathbf{r}_2)=g\delta(\mathbf{r}_1-\mathbf{r}_2)$. Le paramètre $g$, qui caractérise la force des interactions, est donné par $g=\frac{4 \pi \hb^2}{m}a_{\mathrm{s}}$, avec $a_{\mathrm{s}}$ la longueur de diffusion, et ne dépend que de ce paramètre. Ce régime dilué est atteint lorsque $na_{\mathrm{s}}^3\ll 1$\footnote{Dans ce régime, la distance inter-atomique est plus grande que la portée des interactions. Ainsi, les atomes ne voient pas le détail du potentiel d'interaction avec leur voisin, et donc il est possible d'approximer ce potentiel par un potentiel de contact.}. Pour le ${}^{87}$Rb, cette longueur de diffusion vaut 100$a_{\mathrm{0}}>0$, avec $a_{\mathrm{0}}$ le rayon de Bohr. La longueur de diffusion étant positive, les interactions sont donc répulsives pour notre atome.
 
 On peut écrire l'équation de Schrödinger pour l'état fondamental en tenant compte de ce terme d'interaction entre particules. La description en champ moyen du condensat est alors donnée par l'équation de Gross-Pitaevskii (aussi connue sous le nom d'\emph{équation de Schrödinger non-linéaire}):
 \begin{equation}
-i\hb \frac{\partial}{\partial t} \psi(\mathbf{r},t)=\left[-\frac{\hb^2}{2m}\Delta +V(\mathrm{r})+g\left| \psi(\mathbf{r},t) \right|^2 \right] \psi(\mathbf{r},t)
+\left[ -\frac{\hb^2}{2m}\Delta + V(\mathbf{r}) + g\left|\phi_0(\mathbf{r})\right|^2 \right] \phi_0((\mathbf{r}) = \mu \phi_0(\mathbf{r})
 \label{eq:gross_pitaevskii}
 \end{equation}
-où $\psi(\mathbf{r},t)$ est la fonction d'onde macroscopique du condensat. La densité d'atomes est donnée par $n(\mathbf{r})= \left| \psi(\mathbf{r}) \right|^2$. Ainsi, la fonction d'onde du condensat $\psi(\mathbf{r},t)$ est normalisée pour donner le nombre de particules dans le condensat:
-\begin{equation}
-\int{\mathrm{d}\mathbf{r} \: \left| \psi(\mathbf{r},t) \right|^2}=N_{\mathbf{0}}
-\end{equation}
-Dans le régime stationnaire, on peut écrire $\psi(\mathbf{r},t)=\psi_0(\mathbf{r}) e^{i\mu t/\hb}$ avec $\mu$ le potentiel chimique du condensat, et l'injecter dans l'équation \ref{eq:gross_pitaevskii}. On obtient l'équation de Gross-Pitaevskii stationnaire:
-\begin{equation}
-\left[ -\frac{\hb^2}{2m}\Delta + V(\mathbf{r}) + g\left|\phi_0(\mathbf{r})\right|^2 \right] \phi_0((\mathbf{r}) = \mu \phi_0(\mathbf{r})
-\end{equation}
-Le premier terme de gauche décrit l'énergie cinétique, le second le terme d'énergie potentielle provenant du piège, et le dernier décrit l'énergie d'interaction entre particules, proportionnelle à la densité locale $n(\mathbf{r})=\left| \psi(\mathbf{r})\right|^2=\left| \phi_0(\mathbf{r}) \right|^2$. La somme de ces énergies donne le potentiel chimique $\mu$, qui correspond à l'énergie qu'il faut fournir pour rajouter une particule supplémentaire au système de $N$ particules.
+où $\phi_0(\mathbf{r})$ est la fonction d'onde macroscopique du condensat et $\mu$ est le potentiel chimique. La densité d'atomes est donnée par $n(\mathbf{r})=\left| \phi_0(\mathbf{r}) \right|^2$. Ainsi, la fonction d'onde du condensat $\phi_0(\mathbf{r})$ est normalisée pour donner le nombre de particules dans le condensat $N_{\mathbf{0}}=\int{\mathrm{d}\mathbf{r} \: \left| \phi_0(\mathbf{r}) \right|^2}$.
+
+Le premier terme de gauche décrit l'énergie cinétique, le second le terme d'énergie potentielle provenant du piège, et le dernier décrit l'énergie d'interaction entre particules, proportionnelle à la densité locale $n(\mathbf{r})$. La somme de ces énergies donne le potentiel chimique $\mu$, qui correspond à l'énergie qu'il faut fournir pour rajouter une particule supplémentaire au système de $N_{\mathbf{0}}$ particules.
+
+
+
 
 \paragraph*{Régime de Thomas-Fermi}
 Considérons le cas d'un condensat comportant un grand nombre de particules $N_0$. L'énergie cinétique totale du condensat varie avec $N_0$ de manière linéaire: $\mean{E_{\mathrm{k}}}\propto N_0$. L'énergie totale d'interaction varie quant à elle en $E_{\mathrm{int}}\propto N_0^2$. Pour un nombre suffisamment grand de particules, il devient possible de négliger le terme d'énergie cinétique dans l'équation de Gross-Pitaevskii stationnaire: il s'agit du régime de Thomas-Fermi.
@@ -95,19 +97,7 @@ n(\mathbf{r})=\left\{
 					\end{array} 
 				\right.
 \end{equation}
-et en considérant le piège harmonique de l'équation \ref{eq:piege_harmonique},
-\begin{equation}
-n(\mathbf{r})=\left\{
-					\begin{array}{ll}
-						\mu/g-\sum_{i=x,y,z}\frac{m\omega_i^2}{2g}r_i^2 &\quad \text{lorsque} \quad \mu>V(\mathbf{r})\\
-						0 &\quad \text{sinon}
-					\end{array} 
-				\right.
-\end{equation}
-Le profil de densité est donc une parabole inversée de rayons
-\begin{equation}
-R_{\mathrm{TF},i}=\sqrt{\frac{2\mu}{m\omega_i^2}}
-\end{equation}
+Le profil de densité est donc une parabole inversée de rayons $R_{\mathrm{TF},i}=\sqrt{\frac{2\mu}{m\omega_i^2}}$ en considérant le piège harmonique de l'équation \ref{eq:piege_harmonique}.
 Ces rayons de Thomas-Fermi ont été déterminés par la condition $n(\mathbf{r})=0$. Il est intéressant de noter que le potentiel effectif vu par une particule $V_{\mathrm{eff}}(\mathbf{r})=V(\mathbf{r})+gn(\mathbf{r})$ est constant sur l'ensemble du condensat:
 \begin{equation}
 V_{\mathrm{eff}}(\mathbf{r})= \left\{
@@ -117,23 +107,25 @@ V_{\mathrm{eff}}(\mathbf{r})= \left\{
 									\end{array}
 							\right.
 \end{equation}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{Fig/BEC_manip/thomas_fermi.pdf}
-\caption{\textbf{a: Profil de densité dans le régime de Thomas-Fermi.} La densité est une parabole inversée, liée à la forme parabolique du potentiel. Sur les bords du condensat, la densité s'écarte de la parabole sur une longueur typique appelée longueur de cicatrisation. \textbf{b: Potentiel effectif ressenti pour des particules individuelles.} Ce potentiel effectif suit la forme du potentiel externe, et l'effet des interactions à l'intérieur du condensat écrante le potentiel externe par le potentiel chimique.}
-\label{fig:thomas_fermi}
-\end{figure}
-Enfin, il est possible d'obtenir une expression pour le potentiel chimique \citep{pethick2008bose}: 
+L'énergie d'un atome est donc constante sur l'ensemble du condensat et est donnée par le potentiel chimique. $\mu$ correspond alors à l'échelle d'énergie au-dela de laquelle le condensat est perturbé par le potentiel. Il est possible d'obtenir une expression pour le potentiel chimique \citep{pethick2008bose}: 
 \begin{equation}
 \mu=\frac{1}{2} \left( 15a N_{\mathbf{0}} \hb^2 \overline{\omega}^3 \right) ^{2/5} m^{1/5}
 \end{equation}
-et vaut environ $\mu/h\approx40$Hz pour notre expérience.
+qui vaut environ $\mu/h\approx40$Hz pour notre expérience.
 
-En réalité, l'approximation de Thomas-Fermi décrit bien les zones à l'intérieur des condensats, cependant, il existe une petite région sur les bords du condensat où la densité est faible, et donc l'énergie cinétique ne peut plus être négligée devant l'énergie d'interaction. Cette échelle de longueur s'appelle la longueur de cicatrisation, et est donnée par 
-\begin{equation}
-\xi=\sqrt{\frac{\hb^2}{n_{\mathbf{0}} mg}}
-\end{equation}
-avec $n_{\mathbf{0}}$ la densité moyenne du condensat. $\xi$ représente donc la longueur sur laquelle le potentiel chimique n'écrante pas le potentiel externe.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/BEC_manip/thomas_fermi.pdf}
+\caption{\textbf{a: Profil de densité dans le régime de Thomas-Fermi.} La densité est une parabole inversée, liée à la forme parabolique du potentiel. Sur les bords du condensat, la densité s'écarte de la parabole sur une longueur typique appelée longueur de cicatrisation \protect\footnotemark. \textbf{b: Potentiel effectif ressenti pour des particules individuelles.} Ce potentiel effectif suit la forme du potentiel externe, et l'effet des interactions à l'intérieur du condensat écrante le potentiel externe par le potentiel chimique.}
+\label{fig:thomas_fermi}
+\end{figure}
+\footnotetext{En réalité, l'approximation de Thomas-Fermi décrit bien les zones à l'intérieur des condensats, cependant, il existe une petite région sur les bords du condensat où la densité est faible, et donc l'énergie cinétique ne peut plus être négligée devant l'énergie d'interaction. Cette échelle de longueur s'appelle la longueur de cicatrisation, et est donnée par $\xi=\sqrt{\frac{\hb^2}{n_{\mathbf{0}} mg}}$ avec $n_{\mathbf{0}}$ la densité moyenne du condensat. $\xi$ représente donc la longueur sur laquelle le potentiel chimique n'écrante pas le potentiel externe.}
+
+
+
+
+
+
 
 
 \section{Processus d'interaction lumière-matière}
@@ -241,19 +233,28 @@ où $\omega_0$ est la fréquence de résonance et $\Gamma$ est la largeur de la 
 Le premier terme de l'équation \ref{eq:forces_lumineuses} est proportionnel à la partie réelle de la polarisabilité atomique. Ce terme décrit donc comment un moment dipolaire électrique induit interagit avec le gradient d'intensité lumineuse. Cette force est conservative et dérive d'un potentiel qui est proportionnel à l'intensité lumineuse: on parle de \emph{potentiel dipolaire}. Dans le cas d'un faisceau très désaccordé, ce potentiel s'écrit:
 \begin{equation}
 U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 I(\mathbf{r})}{2 \omega_0^3} \left( \frac{\Gamma}{\omega - \omega_0} - \frac{\Gamma}{\omega + \omega_0} \right)
+\label{eq:potentiel_dipolaire}
 \end{equation}
-avec $I(\mathbf{r})$ l'intensité lumineuse à la position $\mathbf{r}$. Cette expression est valable très loin de résonance: cela signifie que le laser ne voit pas le détail de la raie $D$ du ${}^{87}$Rb, c'est à dire que le désaccord $\omega-\omega_0$ doit être très grand devant la structure fine séparant les transitions $D_1$ et $D_2$. De plus, on a $\omega-\omega_0 \gg \Gamma$, avec $\Gamma$ la largeur de la transition.
+avec $I(\mathbf{r})$ l'intensité lumineuse à la position $\mathbf{r}$. Appliquée au ${}^{87}$Rb, cette expression est valable très loin de résonance: cela signifie que le laser ne voit pas le détail de la raie $D$, c'est à dire que le désaccord $\omega-\omega_0$ doit être très grand devant la structure fine séparant les transitions $D_1$ et $D_2$, et l'onde laser ne voit qu'un système à deux niveaux $\lbrace 5 {}^2S, 5 {}^2P \rbrace$.
 
-Un tel potentiel présente de nombreux avantages pour les expériences d'atomes ultrafroids. Suivant le signe de la quantité $1/\overline{\Delta} = 1/(\omega-\omega_0)-1/(\omega+\omega_0)$, ce potentiel peut être soit attractif ($\overline{\Delta}<0$, on parlera alors de potentiel désaccordé vers le \emph{rouge}), soit répulsif ($\overline{\Delta}>0$, potentiel désaccordé vers le \emph{bleu}). Les atomes seront alors attirés par les maximas d'intensité lumineuse (pour un faisceau désaccordé vers le rouge) ou bien vers les zones d'ombre (pour les faisceaux désaccordés vers le bleu). Un faisceau gaussien focalisé désaccordé vers le rouge permet ainsi de piéger les atomes en son foyer: la forme gaussienne du faisceau attire les atomes vers le centre du faisceau. 
+Un tel potentiel présente de nombreux avantages pour les expériences d'atomes ultrafroids. Suivant le signe de la quantité $\delta = \omega-\omega_0$, ce potentiel peut être soit attractif ($\delta<0$, on parlera alors de potentiel désaccordé vers le \emph{rouge}), soit répulsif ($\delta>0$, potentiel désaccordé vers le \emph{bleu}). Les atomes seront alors attirés par les maximas d'intensité lumineuse (pour un faisceau désaccordé vers le rouge) ou bien vers les zones d'ombre (pour les faisceaux désaccordés vers le bleu). Un faisceau gaussien focalisé et désaccordé vers le rouge permet ainsi de piéger les atomes en son foyer: la forme gaussienne du faisceau attire les atomes vers le centre du faisceau. 
 
-De plus dans cette limite, le potentiel est indépendant de l'état interne. Contrairement à un piège magnétique, un piège dipolaire n'est pas sélectif en état de spin et donc offre de nombreuses possibilités grâce à la disponibilité de degrés de liberté internes.
+De plus dans cette limite des grands désaccords, ce potentiel est indépendant de l'état interne. Contrairement à un piège magnétique, un piège dipolaire n'est pas sélectif en état de spin et donc offre de nombreuses possibilités grâce à la disponibilité de degrés de liberté internes. Nous tirerons profit de cet avantage de différentes manières dans la suite. 
 
-Cependant, l'utilisation de tels désaccords (plusieurs centaines de nano-mètres) contraint l'utilisation de grosses puissances optiques afin d'obtenir des potentiels suffisamment importants. Ainsi, il est courant que les expériences d'atomes ultrafroids utilisent des lasers de puissances de plusieurs Watts \footnote{À titre de comparaison, il ne suffit que de quelques milli-Watts pour endommager l'œil humain.} focalisés sur de petites tailles, typiquement quelques 10-100µm. Il se pose alors la question de la dissipation, liée à l'émission spontanée. Le taux d'émission spontanée peut être estimé par:
+Cependant, l'utilisation de tels désaccords (plusieurs centaines de nano-mètres) contraint l'utilisation de forte intensités lumineuses afin d'obtenir des potentiels suffisamment importants. Ainsi, il est courant que les expériences d'atomes ultrafroids utilisent des lasers ayant des puissances de plusieurs Watts \footnote{À titre de comparaison, il ne suffit que de quelques milli-Watts pour endommager l'œil humain.} focalisés sur de petites tailles, typiquement quelques 10-100µm. 
+
+\begin{comment}
+Il se pose alors la question de la dissipation, liée à l'émission spontanée. Le taux d'émission spontanée peut être estimé par:
 \begin{equation}
 \Gamma_{\mathrm{sp}}(\mathbf{r})=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
 \end{equation}
 et dans le cas dans d'un faisceau très désaccordé on peut souvent négliger ce taux et la dissipation qui lui est associée.
+\end{comment}
+Insistons sur le fait que l'expression \ref{eq:potentiel_dipolaire} a été obtenue dans le contexte d'un système à deux niveaux, et donc dans la limite des grands désaccords. Cette approximation n'est plus valable pour des désaccords de quelques nano-mètres, le laser pouvant sonder la structure fine, voire la structure hyperfine de l'atome. Cela permet des approches originales telles que la réalisation d'un potentiel dépendant de l'état interne. En revanche, le rapprochement des transitions atomiques rend les atomes susceptibles de subir des processus de diffusions inélastiques de photons via l'émission spontanée, décrits plus bas.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
 L'utilisation de désaccords plus modérés, typiquement de quelques nano-mètres, permet de fortement diminuer la puissance optique utilisée. En revanche, un tel rapprochement de la transition atomique implique qu'on ne peut plus négliger l'effet de la structure fine de la raie $D$. On peut alors considérer l'atome comme un système à non plus deux mais trois niveaux en négligeant la structure hyperfine de l'atome pour des désaccords gardés suffisamment grands $\omega-\omega_0 \gg \Delta_{\mathrm{hf}}$ et $\omega-\omega_{D_1} \gg \Delta_{\mathrm{hf}}$ (les séparations hyperfines des états excités sont plus petites que la séparation hyperfine des états fondamentaux).
 
 Pour de tels désaccords et pour un faisceau polarisé linéairement, le potentiel dipolaire est alors donné par
@@ -278,7 +279,8 @@ et l'ordre de grandeur du temps de vie associé est de l'ordre de quelques secon
 
 Notons enfin qu'il est possible de se rapprocher encore plus de résonance et de devenir sensible à la structure hyperfine de la transition $D_2$ (dans ces conditions on peut négliger la contribution de la raie $D_1$). En revanche, le taux d'émission spontanée croît fortement et devient très contraignant.
 
-
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \paragraph*{Force de pression de radiation}
@@ -290,7 +292,7 @@ avec $\Gamma_{\mathrm{sp}}$ le taux d'émission spontanée en présence du champ
 \begin{equation}
 \Gamma_{\mathrm{sp}}=\frac{\Gamma}{2} \frac{s}{1+s} \quad \text{avec} \quad s=\frac{I/I_{\mathrm{sat}}}{1+4\delta^2/\Gamma^2}
 \end{equation}
-où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}=1.67$mW.cm${}^{-2}$ est une constante de l'atome de ${}^{87}$Rb. La grandeur $s$ s'appelle le paramètre de saturation. Celui-ci dépend de l'intensité lumineuse incidente (et donc du nombre de photons incidents) ainsi que du désaccord du laser par rapport à la résonance atomique $\delta = \omega-\omega_0$.  Le paramètre de saturation est maximal en $\delta=0$, c'est à dire lorsque le laser est à résonance. Dans le cas d'un laser très saturant $s \gg 1$, la force de pression de radiation s'écrit
+où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}=1.67$mW.cm${}^{-2}$ est une constante de l'atome de ${}^{87}$Rb. La grandeur $s$ s'appelle le paramètre de saturation. Celui-ci dépend de l'intensité lumineuse incidente (et donc du nombre de photons incidents) ainsi que du désaccord du laser par rapport à la résonance atomique\footnote{L'expression \ref{eq:potentiel_dipolaire} n'est valable que dans un régime de faible saturation. L'utilisation de grands désaccords autorise l'utilisation de grosses puissances optiques tout en gardant $s\ll 1$. Dans ce régime, on peut estimer le taux d'émission spontanée par $\Gamma_{\mathrm{sp}}(\mathbf{r})=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2$.} $\delta = \omega-\omega_0$.  Le paramètre de saturation est maximal en $\delta=0$, c'est à dire lorsque le laser est à résonance. Dans le cas d'un laser très saturant $s \gg 1$, la force de pression de radiation s'écrit
 \begin{equation}
 \mathbf{F}_{\mathrm{PR}}=\frac{\hb \mathbf{k} \Gamma}{2}
 \end{equation}
