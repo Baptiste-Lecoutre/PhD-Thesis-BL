@@ -223,7 +223,7 @@ et $g_{\mathrm{F}=2}= 1/2$ et $g_{\mathrm{F}=1} =-1/2$. L'utilisation d'un champ
 \label{sc:forces_lumineuses}
 On se concentre à présent sur l'interaction entre un atome et un champ laser incident. Ce champ laser comporte un grand nombre de photons émis par seconde (typiquement $10^{12}$ photons par seconde pour une puissance de 1µW), on peut donc décrire ce champ laser par une onde classique 
 \begin{equation}
-\mathbf{E}(\mathbf{r},t)= \mathrm{Re} \left( \underline{\mathbf{E}}(\mathbf{r}) e^{-i \omega t - i\phi (\mathbf{r})} \right)
+\mathbf{E}(\mathbf{r},t)= \mathrm{Re} \left( E(\mathbf{r}) e^{-i \omega t - i\phi (\mathbf{r})}  \boldsymbol\epsilon \right)
 \end{equation}
 dont l'effet sur un atome est donné par le hamiltonien $H_{\mathrm{AL}}=-\mathbf{D}.\mathbf{E}(\mathbf{r},t)$. 
 Dans la cadre de la théorie de la réponse linéaire, on introduit la polarisabilité atomique $\alpha(\omega)$ et on montre alors que la force moyenne exercée sur un atome est la somme de deux termes:
@@ -231,15 +231,22 @@ Dans la cadre de la théorie de la réponse linéaire, on introduit la polarisab
 \mathbf{F}=\frac{1}{2} \mathrm{Re}(\alpha(\omega)) E(\mathbf{r}) \nabla E(\mathbf{r})+\frac{1}{2}\mathrm{Im}(\alpha(\omega)) E^2(\mathbf{r}) \nabla \phi(\mathbf{r})
 \label{eq:forces_lumineuses}
 \end{equation}
+Un calcul pleinement quantique est nécessaire pour déterminer la polarisabilité, cependant on peut montrer que pour un système à deux niveaux, on a \citep{grimm1999optical}
+\begin{equation}
+\alpha(\omega)=6 \pi \epsilon_0 c^3 \frac{\Gamma / \omega_0^2}{\omega_0^2 -\omega^2 -i(\omega^3/\omega_0^3)\Gamma}
+\end{equation}
+où $\omega_0$ est la fréquence de résonance et $\Gamma$ est la largeur de la transition.
 
 \paragraph*{Potentiel dipolaire}
-Le premier terme est proportionnel à la partie réelle de la polarisabilité atomique. Ce terme décrit donc comment un moment dipolaire électrique induit interagit avec le gradient d'intensité lumineuse. On peut considérer cette force comme étant conservative et dérivant d'un potentiel qui est proportionnel à l'intensité lumineuse: on parle de \emph{potentiel dipolaire}. Dans le cas d'un faisceau très désaccordé, ce potentiel s'écrit:
+Le premier terme de l'équation \ref{eq:forces_lumineuses} est proportionnel à la partie réelle de la polarisabilité atomique. Ce terme décrit donc comment un moment dipolaire électrique induit interagit avec le gradient d'intensité lumineuse. Cette force est conservative et dérive d'un potentiel qui est proportionnel à l'intensité lumineuse: on parle de \emph{potentiel dipolaire}. Dans le cas d'un faisceau très désaccordé, ce potentiel s'écrit:
 \begin{equation}
 U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 I(\mathbf{r})}{2 \omega_0^3} \left( \frac{\Gamma}{\omega - \omega_0} - \frac{\Gamma}{\omega + \omega_0} \right)
 \end{equation}
 avec $I(\mathbf{r})$ l'intensité lumineuse à la position $\mathbf{r}$. Cette expression est valable très loin de résonance: cela signifie que le laser ne voit pas le détail de la raie $D$ du ${}^{87}$Rb, c'est à dire que le désaccord $\omega-\omega_0$ doit être très grand devant la structure fine séparant les transitions $D_1$ et $D_2$. De plus, on a $\omega-\omega_0 \gg \Gamma$, avec $\Gamma$ la largeur de la transition.
 
-Un tel potentiel présente de nombreux avantages pour les expériences d'atomes ultrafroids. Suivant le signe de la quantité $1/\overline{\Delta} = 1/(\omega-\omega_0)-1/(\omega+\omega_0)$, ce potentiel peut être soit attractif ($\overline{\Delta}<0$, on parlera alors de potentiel désaccordé vers le \emph{rouge}), soit répulsif ($\overline{\Delta}>0$, potentiel désaccordé vers le \emph{bleu}). Les atomes seront alors attirés par les maximas d'intensité lumineuse (pour un faisceau désaccordé vers le rouge) ou bien vers les zones d'ombre (pour les faisceaux désaccordés vers le bleu). Un faisceau gaussien focalisé désaccordé vers le rouge permet ainsi de piéger les atomes en son foyer: la forme gaussienne du faisceau attire les atomes vers le centre du faisceau. De plus dans cette limite, le potentiel est indépendant de l'état interne. Contrairement à un piège magnétique, un piège dipolaire n'est pas sélectif en état de spin et donc offre de nombreuses possibilités grâce à la disponibilité de degrés de liberté internes.
+Un tel potentiel présente de nombreux avantages pour les expériences d'atomes ultrafroids. Suivant le signe de la quantité $1/\overline{\Delta} = 1/(\omega-\omega_0)-1/(\omega+\omega_0)$, ce potentiel peut être soit attractif ($\overline{\Delta}<0$, on parlera alors de potentiel désaccordé vers le \emph{rouge}), soit répulsif ($\overline{\Delta}>0$, potentiel désaccordé vers le \emph{bleu}). Les atomes seront alors attirés par les maximas d'intensité lumineuse (pour un faisceau désaccordé vers le rouge) ou bien vers les zones d'ombre (pour les faisceaux désaccordés vers le bleu). Un faisceau gaussien focalisé désaccordé vers le rouge permet ainsi de piéger les atomes en son foyer: la forme gaussienne du faisceau attire les atomes vers le centre du faisceau. 
+
+De plus dans cette limite, le potentiel est indépendant de l'état interne. Contrairement à un piège magnétique, un piège dipolaire n'est pas sélectif en état de spin et donc offre de nombreuses possibilités grâce à la disponibilité de degrés de liberté internes.
 
 Cependant, l'utilisation de tels désaccords (plusieurs centaines de nano-mètres) contraint l'utilisation de grosses puissances optiques afin d'obtenir des potentiels suffisamment importants. Ainsi, il est courant que les expériences d'atomes ultrafroids utilisent des lasers de puissances de plusieurs Watts \footnote{À titre de comparaison, il ne suffit que de quelques milli-Watts pour endommager l'œil humain.} focalisés sur de petites tailles, typiquement quelques 10-100µm. Il se pose alors la question de la dissipation, liée à l'émission spontanée. Le taux d'émission spontanée peut être estimé par:
 \begin{equation}
@@ -271,6 +278,9 @@ et l'ordre de grandeur du temps de vie associé est de l'ordre de quelques secon
 
 Notons enfin qu'il est possible de se rapprocher encore plus de résonance et de devenir sensible à la structure hyperfine de la transition $D_2$ (dans ces conditions on peut négliger la contribution de la raie $D_1$). En revanche, le taux d'émission spontanée croît fortement et devient très contraignant.
 
+
+
+
 \paragraph*{Force de pression de radiation}
 Le second terme s'appelle \emph{force de pression de radiation}. Il provient de la partie imaginaire de la polarisabilité atomique, qui caractérise l'absorption de photons par l'atome. Il s'agit donc d'une force inélastique qui résulte d'un grand nombre de cycles d'absorption de photons du faisceau laser et d'émission spontanée dans des directions aléatoires de l'espace \footnote{Pour réaliser de tels cycles, il est nécessaire d'avoir une transition cyclante, c'est à dire de disposer d'un état excité dont la désexcitation renvoie forcément sur l'état d'origine.}. L'impulsion totale cédée par émission spontanée s'annule donc, et en moyenne le transfert d'impulsion ne provient que de l'absorption de photons du faisceau laser comme illustré par le terme de droite de l'équation \ref{eq:forces_lumineuses}. En effet, le gradient de la phase du laser vaut $\nabla \phi (\mathbf{r})=\mathbf{k}$. Cette force est donnée par
 \begin{equation}
@@ -285,6 +295,9 @@ où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_
 \mathbf{F}_{\mathrm{PR}}=\frac{\hb \mathbf{k} \Gamma}{2}
 \end{equation}
 où le facteur 2 indique que à forte saturation, un atome autant de chance d'être dans l'état excité que dans l'état fondamental. Enfin, mentionnons que pour un atome se déplaçant à une vitesse $\mathbf{v}$ dans le référentiel du laboratoire, le désaccord devient $\delta=\omega-\omega_0-\mathbf{k}.\mathbf{v}$ par effet Doppler. Nous reviendrons sur ce point lorsque nous décrirons les mécanismes du refroidissement laser.
+
+
+
 
 
 \subsection{Couplage radio-fréquence} 

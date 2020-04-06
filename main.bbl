@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{14}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -53,6 +53,14 @@
 \newblock \emph{R{\'e}alisation d'un dispositif de condensation de
   Bose-Einstein et de transport d'un {\'e}chantillon coh{\'e}rent d'atomes},
   Dissertation, 2004
+
+\bibitem[Grimm et~al.(1999)Grimm, Weidem{\"u}ller and
+  Ovchinnikov]{grimm1999optical}
+\dinatlabel{Grimm et~al. 1999} \textsc{Grimm}, Rudolf~;
+  \textsc{Weidem{\"u}ller}, Matthias~; \textsc{Ovchinnikov}, Yurii~B.:
+\newblock Optical dipole traps for neutral atoms.
+\newblock In: \emph{arXiv preprint physics/9902072}
+\newblock (1999)
 
 \bibitem[Jendrzejewski(2012)]{jendrzejewski2012quantum}
 \dinatlabel{Jendrzejewski 2012} \textsc{Jendrzejewski}, Fred:
