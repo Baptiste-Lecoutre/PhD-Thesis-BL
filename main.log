@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  7 APR 2020 12:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  7 APR 2020 19:12
 entering extended mode
 **./main.tex
 (main.tex
@@ -1351,25 +1351,37 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 
-
-Package natbib Warning: Citation `keshet2013distributed' on page 1 undefined on
- input line 21.
-
 [1
 
 
-{C:/Users/Nop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]) (main.bbl
-[2]
+{C:/Users/Nop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<Fig/Modif_exp/cicero.png, id=22, 510.40688pt x 514.92375pt>
+File: Fig/Modif_exp/cicero.png Graphic file (type png)
+<use Fig/Modif_exp/cicero.png>
+Package pdftex.def Info: Fig/Modif_exp/cicero.png  used on input line 32.
+(pdftex.def)             Requested size: 298.75264pt x 301.41382pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [3
+ [2 <./Fig/Modif_exp/cicero.png>]
 
-])
+LaTeX Warning: Reference `sc:imagerie' on page 3 undefined on input line 48.
 
-Package natbib Warning: There were undefined citations.
+[3]) (main.bbl [4]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+4.
 
-[4]
+("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+[5
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (main.aux)
@@ -1377,29 +1389,37 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 145.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 29190 strings out of 481511
- 551350 string characters out of 2913122
- 939850 words of memory out of 3000000
- 43711 multiletter control sequences out of 15000+200000
- 624832 words of font info for 153 fonts, out of 3000000 for 9000
+ 29187 strings out of 481511
+ 550765 string characters out of 2913122
+ 935850 words of memory out of 3000000
+ 43703 multiletter control sequences out of 15000+200000
+ 639754 words of font info for 158 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,11n,62p,910b,942s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,12n,62p,961b,907s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
+{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C
+:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}
 <C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pf
-b><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10
-.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr1
-0.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr
-i10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-mss10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmssbx10.pfb>
-Output written on main.pdf (4 pages, 166850 bytes).
+b><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10
+.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcs
+c10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
+mr10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmr8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmr9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmri10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
+m/lmri9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+lm/lmss10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmssbx10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmsy10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmtt10.pfb>
+Output written on main.pdf (5 pages, 419671 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 40045 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 45682 words of extra memory for PDF output out of 51595 (max. 10000000)
 

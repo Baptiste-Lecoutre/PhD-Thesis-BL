@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{2}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -7,99 +7,18 @@
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
 
-\bibitem[Anderson et~al.(1995)Anderson, Ensher, Matthews, Wieman and
-  Cornell]{anderson1995observation}
-\dinatlabel{Anderson et~al. 1995} \textsc{Anderson}, Mike~H.~; \textsc{Ensher},
-  Jason~R.~; \textsc{Matthews}, Michael~R.~; \textsc{Wieman}, Carl~E.~;
-  \textsc{Cornell}, Eric~A.:
-\newblock Observation of Bose-Einstein condensation in a dilute atomic vapor.
-\newblock In: \emph{science}
-\newblock (1995), S.~198--201
+\bibitem[Keshet(2008)]{keshet2008cicero}
+\dinatlabel{Keshet 2008} \textsc{Keshet}, Aviv:
+\newblock \emph{Cicero Word Generator Technical and User Manual}.
+\newblock 2008. --
+\newblock URL \url{http://akeshet.github.io/Cicero-Word-Generator/}
 
-\bibitem[Basdevant et~al.(2002)Basdevant, Dalibard and
-  Joffre]{basdevant2002mecanique}
-\dinatlabel{Basdevant et~al. 2002} \textsc{Basdevant}, Jean-Louis~;
-  \textsc{Dalibard}, Jean~; \textsc{Joffre}, Manuel:
-\newblock \emph{M{\'e}canique quantique}.
-\newblock Editions Ecole Polytechnique, 2002
-
-\bibitem[Bernard(2010)]{bernard2010transport}
-\dinatlabel{Bernard 2010} \textsc{Bernard}, Alain:
-\newblock \emph{Transport quantique d'ondes atomiques ultrafroides:
-  localisation d'Anderson et laser {\`a} atomes guid{\'e}.}, Dissertation, 2010
-
-\bibitem[Davis et~al.(1995)Davis, Mewes, Andrews, van Druten, Durfee, Kurn and
-  Ketterle]{davis1995bose}
-\dinatlabel{Davis et~al. 1995} \textsc{Davis}, Kendall~B.~; \textsc{Mewes},
-  M-O~; \textsc{Andrews}, Michael~R.~; \textsc{Druten}, Nicolaas~J. van~;
-  \textsc{Durfee}, Dallin~S.~; \textsc{Kurn}, DM~; \textsc{Ketterle}, Wolfgang:
-\newblock Bose-Einstein condensation in a gas of sodium atoms.
-\newblock In: \emph{Physical review letters}
-\newblock 75 (1995), Nr.~22, S.~3969
-
-\bibitem[Denechaud(2018)]{denechaud2018vers}
-\dinatlabel{Denechaud 2018} \textsc{Denechaud}, Vincent:
-\newblock \emph{Vers une {\'e}tude spectroscopique de la transition
-  d'Anderson}, Paris Saclay, Dissertation, 2018
-
-\bibitem[Diu et~al.(1989)Diu, Roulet, Guthmann and Lederer]{diu1989elements}
-\dinatlabel{Diu et~al. 1989} \textsc{Diu}, Bernard~; \textsc{Roulet}, Bernard~;
-  \textsc{Guthmann}, Claudine~; \textsc{Lederer}, Danielle:
-\newblock \emph{El{\'e}ments de physique statistique}.
-\newblock Hermann, 1989
-
-\bibitem[Fauquembergue(2004)]{fauquembergue2004realisation}
-\dinatlabel{Fauquembergue 2004} \textsc{Fauquembergue}, Marie:
-\newblock \emph{R{\'e}alisation d'un dispositif de condensation de
-  Bose-Einstein et de transport d'un {\'e}chantillon coh{\'e}rent d'atomes},
-  Dissertation, 2004
-
-\bibitem[Grimm et~al.(1999)Grimm, Weidem{\"u}ller and
-  Ovchinnikov]{grimm1999optical}
-\dinatlabel{Grimm et~al. 1999} \textsc{Grimm}, Rudolf~;
-  \textsc{Weidem{\"u}ller}, Matthias~; \textsc{Ovchinnikov}, Yurii~B.:
-\newblock Optical dipole traps for neutral atoms.
-\newblock In: \emph{arXiv preprint physics/9902072}
-\newblock (1999)
-
-\bibitem[Jendrzejewski(2012)]{jendrzejewski2012quantum}
-\dinatlabel{Jendrzejewski 2012} \textsc{Jendrzejewski}, Fred:
-\newblock \emph{Quantum transport of ultracold atoms in disordered potentials},
-  Paris 11, Dissertation, 2012
-
-\bibitem[Jendrzejewski et~al.(2012)Jendrzejewski, Bernard, Mueller, Cheinet,
-  Josse, Piraud, Pezz{\'e}, Sanchez-Palencia, Aspect and
-  Bouyer]{jendrzejewski2012three}
-\dinatlabel{Jendrzejewski et~al. 2012} \textsc{Jendrzejewski}, Fred~;
-  \textsc{Bernard}, Alain~; \textsc{Mueller}, Killian~; \textsc{Cheinet},
-  Patrick~; \textsc{Josse}, Vincent~; \textsc{Piraud}, Marie~;
-  \textsc{Pezz{\'e}}, Luca~; \textsc{Sanchez-Palencia}, Laurent~;
-  \textsc{Aspect}, Alain~; \textsc{Bouyer}, Philippe:
-\newblock Three-dimensional localization of ultracold atoms in an optical
-  disordered potential.
-\newblock In: \emph{Nature Physics}
-\newblock 8 (2012), Nr.~5, S.~398--403
-
-\bibitem[Muller(2015)]{muller2015coherent}
-\dinatlabel{Muller 2015} \textsc{Muller}, Kilian:
-\newblock \emph{Coherent transport of ultracold atoms in disordered potentials:
-  Manipulation of time-reversal symmetry in weak localization experiments},
-  Paris 11, Dissertation, 2015
-
-\bibitem[Pethick and Smith(2008)]{pethick2008bose}
-\dinatlabel{Pethick and Smith 2008} \textsc{Pethick}, Christopher~J.~;
-  \textsc{Smith}, Henrik:
-\newblock \emph{Bose--Einstein condensation in dilute gases}.
-\newblock Cambridge university press, 2008
-
-\bibitem[Riou(2006)]{riou2006etude}
-\dinatlabel{Riou 2006} \textsc{Riou}, Jean-F{\'e}lix:
-\newblock \emph{Etude des propri{\'e}t{\'e}s de propagation d'un laser {\`a}
-  atomes}, Dissertation, 2006
-
-\bibitem[Steck(2001)]{steck2001rubidium}
-\dinatlabel{Steck 2001} \textsc{Steck}, Daniel~A.:
-\newblock \emph{Rubidium 87 D line data}.
-\newblock 2001
+\bibitem[Keshet and Ketterle(2013)]{keshet2013distributed}
+\dinatlabel{Keshet and Ketterle 2013} \textsc{Keshet}, Aviv~;
+  \textsc{Ketterle}, Wolfgang:
+\newblock A distributed, graphical user interface based, computer control
+  system for atomic physics experiments.
+\newblock In: \emph{Review of Scientific Instruments}
+\newblock 84 (2013), Nr.~1, S.~015105
 
 \end{thebibliography}

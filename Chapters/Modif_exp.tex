@@ -9,7 +9,7 @@ Nous avons vu dans le chapitre précédent comment, expérimentalement, nous pou
 Dans ce nouveau chapitre, nous nous pencherons sur les modifications apportées à l'expérience au cours de ma thèse. Dans la première partie, nous parlerons d'informatique et plus particulièrement du contrôle de l'expérience. Dans un second temps, nous caractériserons la lévitation magnétique suite à une avarie sur le circuit de refroidissement à eau. Ensuite, nous calibrerons le piège dipolaire dont le laser source a été changé. Pour terminer, nous discuterons de l'amélioration de l'évaporation optique permise par les changements précédents.
 
 \section{Mise à jour de l'informatique de l'expérience}
-Souvent absente des descriptions d'expériences, l'informatique occupe pourtant une place primordiale dans les dispositifs d'atomes ultra-froids. Le contrôle simultané et de manière séquentielle des différents équipements de l'expérience, souvent précis à la micro-seconde, n'est possible qu'à l'aide d'un ordinateur disposant de sorties de tension controllables. Cet ordinateur, appelé \emph{séquenceur}, constitue le cerveau de l'ensemble du dispositif et contrôle tous les éléments nécessaires à la manipulation des atomes.
+Souvent absente des présentations des expériences, l'informatique occupe pourtant une place primordiale dans les dispositifs d'atomes ultra-froids. Le contrôle simultané et de manière séquentielle des différents équipements de l'expérience, souvent précis à la micro-seconde, n'est possible qu'à l'aide d'un ordinateur disposant de sorties de tension controllables. Cet ordinateur, appelé \emph{séquenceur}, constitue le cerveau de l'ensemble du dispositif et contrôle tous les éléments nécessaires à la manipulation des atomes.
 
 Le second aspect où l'informatique se rend indispensable réside dans l'acquisition et le traitement d'images. Le contrôle des caméras et l'extraction des quantités physiques à partir d'images expérimentales nécessite l'utilisation d'un ordinateur et d'au moins un logiciel adapté. 
 
@@ -17,13 +17,46 @@ De manière générale, les ordinateurs sont les éléments du dispositif avec l
 
 \subsection{Contrôle de l'expérience: passage à la suite Cicero}
 \label{sc:cicero}
-Principales fonctionnalités de cicero, présentation du hardware. Limitations ressenties par rapport à l'approche programmatique de Matlab. Développement du serveur d'enregistrement des données pour utilisation dans matlab. Départ à la retraite d'André Villing. 
-\citep{keshet2013distributed}
+Une modification majeure a été le changement du séquenceur de l'expérience. Le précédent système développé par André Villing, ingénieur électronicien du laboratoire maintenant retraité, était piloté de manière programmatique depuis le logiciel Matlab. À des fins de maintenance, le nouveau séquenceur est d'origine commerciale et est basé sur du matériel \emph{National Instruments}:
+\begin{itemize}
+\item[\textendash] Un ordinateur \emph{PXIe-8840} dans un chassis \emph{PXIe-1078} qui alimente aussi les cartes de génération de signaux.
+\item[\textendash] Deux cartes numériques \emph{PXIe-6535} de 32 voies chacune.
+\item[\textendash] Deux cartes analogiques \emph{PXIE-6738} de 32 voies $\pm10$V chacune et codées sur 16 bits.
+\end{itemize}
+En addition, un circuit logique programmable (\emph{FPGA}) \emph{XEM3001} provenant de \emph{Opal-Kelly} permet de générer une horloge de fréquence variable pour le matériel \emph{National Instruments}. La justification de cette horloge de fréquence variable réside dans la grande variabilité de la durée des différentes étapes d'une expérience d'atomes ultra-froids: l'expérience peut rester dans le même état plusieurs secondes (pendant le chargement d'un MOT par exemple) tout comme elle doit pouvoir changer d'état pendant quelques microsecondes seulement (pendant l'imagerie par exemple). Une séquence durant typiquement 30s discrétisée toutes les microsecondes saturerait alors la mémoire de l'ordinateur. 
+
+L'écriture de la séquence se fait à présent grâce à la suite \emph{Cicero Word Generator}, développée au \emph{MIT} dans le groupe de Wolfgang Ketterle \citep{keshet2013distributed}. Cette suite comporte deux logiciels qui fonctionnent selon une architecture client/serveur. Le client \emph{Cicero} est une interface graphique dans laquelle l'utilisateur écrit une séquence sous la forme d'une suite d'étapes comme illustré figure \ref{fig:cicero}. Au lancement d'un cycle expérimental, \emph{Cicero} envoie les données de séquence au serveur \emph{Atticus} qui calcule alors les consignes des cartes ainsi que l'horloge variable à appliquer \citep{keshet2008cicero}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/cicero.png}
+\caption{\textbf{Capture d'écran de \emph{Cicero}.} Une séquence est une suite d'étapes (des colonnes dans l'interface) pendant lesquelles on peut faire des motifs avec les voies analogiques. Les voies numériques changent d'état en général entre deux étapes. Il est possible de désactiver certaines étapes et d'utiliser des variables. Figure tirée de \citep{keshet2013distributed}.}
+\label{fig:cicero}
+\end{figure}
+
+Grâce à cette architecture client/serveur, il est possible de connecter une interface \emph{Cicero} à plusieurs serveurs. Nous avons ainsi développé un serveur supplémentaire\footnote{Une attention particulière a été accordée à n'apporter aucune modification au code source de la suite \emph{Cicero} excepté dans l'environnement de ce serveur. Les environnements de \emph{Cicero}, \emph{Atticus} et les environnements communs n'ont subit aucun changement pour s'assurer de la compatibilité avec la version compilée 1.64rev7 de la suite.} afin de faciliter notre traitement de données. Celui-ci enregistre les principales données de séquence\footnote{Il s'agit du nom de séquence, de l'heure de lancement, de l'ensemble des variables, des étapes, des groupes d'étapes et de la dernière consigne du piège dipolaire avant le temps de vol.} à chaque cycle.
+
+Ce changement de séquenceur ouvre de nouvelles perspectives en augmentant le nombre de voies utilisables (16 voies analogiques codées sur 12 bits et 48 voies numériques avec le précédent système) tout en permettant la génération de signaux arbitraires (auparavant limités à des morceaux de rampes).
+
+
+
+
+
+
+
 \subsection{Développement d'une nouvelle interface d'acquisition et de traitement d'images}
-Très rapide, peu de détails. Cahier des charges, principales fonctionnalités avec la programation des DDS. 
+Comme présenté dans la partie \ref{sc:imagerie}, les caméras que l'on utilise sur l'expérience sont configurées et contrôlées via le logiciel Matlab. En particulier, l'acquisition et le traitement des images se faisait à l'aide d'une interface commune avec l'ancien séquenceur. Son remplacement a donc eu un impact important sur le fonctionnement de la partie imagerie. 
 
-
-
+En conséquence, nous avons réalisé une nouvelle interface graphique permettant de configurer les caméras, d'acquérir et de traiter les images, d'enregistrer les données et de contrôler tout les éléments non adressables depuis \emph{Cicero}. Le cahier des charges de cette nouvelle interface est donc le suivant:
+\begin{itemize}
+\item[\textendash] Gestion des trois caméras, avec possibilité de faire l'acquisition simultanée sur les deux caméras de la chambre de science\footnote{Un ordinateur supplémentaire était nécessaire pour le contrôle de la caméra \textit{bottom}, pilotée via une autre interface. Il fallait donc synchroniser ces deux ordinateurs qui enregistraient chacun leurs fichiers de données.}.
+\item[\textendash] Imagerie par absorption et par fluorescence.
+\item[\textendash] Calcul des grandeurs physiques pour chaque image.
+\item[\textendash] Lecture des données de Cicero récupérées grâce au serveur que nous avons développé.
+\item[\textendash] Programmation en début de cycle des sources radio-fréquence utilisées pour l'évaporation radio-fréquence et la manipulation de l'état de spin dans la chambre de science\footnote{Cette programmation en début de cycle est rendue possible grâce à l'utilisation d'un \emph{FileSystemWatcher} provenant d'une bibliothèque .NET utilisable dans Matlab. Un fichier texte contenant les données du cycle en cours est généré en début de séquence par le serveur que nous avons développé, déclenchant alors automatiquement sa lecture par l'interface.}.
+\item[\textendash] Enregistrement de l'ensemble des données et des paramètres du cycle pour un futur traitement.
+\end{itemize}
+L'utilisation de cette nouvelle interface a donc permit de centraliser les données générées par l'acquisition d'images en n'ayant plus besoin d'un ordinateur supplémentaire (et de la synchronisation associée). 
 
 
 \section{Réparation et recalibration de la lévitation magnétique}
