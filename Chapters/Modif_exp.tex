@@ -4,15 +4,21 @@
 %\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Chapter1/g825.png}};
 %\end{tikzpicture}
 
+Nous avons vu dans le chapitre précédent comment, expérimentalement, nous pouvons créer une onde de matière obtenue par la condensation de Bose-Einstein. Nous avons ainsi présenté les principaux outils dont nous disposons pour manipuler les atomes et la manière dont nous en tirons profit sur notre dispositif. Une telle plateforme recquiert une quantité importante de matériels variés qu'il est nécessaire d'entretenir, de réparer, voire de remplacer. 
 
-parler des modifications apportées à la manip: cicero, ODT + evap, calibration levitation par oscillations + spin-flip, réparation lévitation...
+Dans ce nouveau chapitre, nous nous pencherons sur les modifications apportées à l'expérience au cours de ma thèse. Dans la première partie, nous parlerons d'informatique et plus particulièrement du contrôle de l'expérience. Dans un second temps, nous caractériserons la lévitation magnétique suite à une avarie sur le circuit de refroidissement à eau. Ensuite, nous calibrerons le piège dipolaire dont le laser source a été changé. Pour terminer, nous discuterons de l'amélioration de l'évaporation optique permise par les changements précédents.
 
 \section{Mise à jour de l'informatique de l'expérience}
-Intro sur la part importante de l'informatique sur l'expérience, autant pour le contrôle que pour l'acquisition des images et le traitement de données. 
+Souvent absente des descriptions d'expériences, l'informatique occupe pourtant une place primordiale dans les dispositifs d'atomes ultra-froids. Le contrôle simultané et de manière séquentielle des différents équipements de l'expérience, souvent précis à la micro-seconde, n'est possible qu'à l'aide d'un ordinateur disposant de sorties de tension controllables. Cet ordinateur, appelé \emph{séquenceur}, constitue le cerveau de l'ensemble du dispositif et contrôle tous les éléments nécessaires à la manipulation des atomes.
+
+Le second aspect où l'informatique se rend indispensable réside dans l'acquisition et le traitement d'images. Le contrôle des caméras et l'extraction des quantités physiques à partir d'images expérimentales nécessite l'utilisation d'un ordinateur et d'au moins un logiciel adapté. 
+
+De manière générale, les ordinateurs sont les éléments du dispositif avec lesquels l'expérimentateur intéragit le plus. Dans cette partie, on présentera donc les changements informatiques ayant eu lieu durant ma thèse.
+
 \subsection{Contrôle de l'expérience: passage à la suite Cicero}
 \label{sc:cicero}
 Principales fonctionnalités de cicero, présentation du hardware. Limitations ressenties par rapport à l'approche programmatique de Matlab. Développement du serveur d'enregistrement des données pour utilisation dans matlab. Départ à la retraite d'André Villing. 
-
+\citep{keshet2013distributed}
 \subsection{Développement d'une nouvelle interface d'acquisition et de traitement d'images}
 Très rapide, peu de détails. Cahier des charges, principales fonctionnalités avec la programation des DDS. 
 
