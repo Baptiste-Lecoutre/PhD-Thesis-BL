@@ -39,11 +39,6 @@ Grâce à cette architecture client/serveur, il est possible de connecter une in
 Ce changement de séquenceur ouvre de nouvelles perspectives en augmentant le nombre de voies utilisables (16 voies analogiques codées sur 12 bits et 48 voies numériques avec le précédent système) tout en permettant la génération de signaux arbitraires (auparavant limités à des morceaux de rampes).
 
 
-
-
-
-
-
 \subsection{Développement d'une nouvelle interface d'acquisition et de traitement d'images}
 Comme présenté dans la partie \ref{sc:imagerie}, les caméras que l'on utilise sur l'expérience sont configurées et contrôlées via le logiciel Matlab. En particulier, l'acquisition et le traitement des images se faisait à l'aide d'une interface commune avec l'ancien séquenceur. Son remplacement a donc eu un impact important sur le fonctionnement de la partie imagerie. 
 
@@ -59,16 +54,87 @@ En conséquence, nous avons réalisé une nouvelle interface graphique permettan
 L'utilisation de cette nouvelle interface a donc permit de centraliser les données générées par l'acquisition d'images en n'ayant plus besoin d'un ordinateur supplémentaire (et de la synchronisation associée). 
 
 
+
+
+
+
+
+
+
+
+
 \section{Réparation et recalibration de la lévitation magnétique}
-\subsection{Réparation de la lévitation magnétique}
 \label{sc:levitation}
+Comme présenté partie \ref{sc:chambre_science}, la lévitation magnétique est un élément essentiel de notre expérience. En plus d'être un pré-requis pour l'étude de la localisation d'Anderson à trois dimensions, celle-ci nous permet de manière générale d'obtenir des échantillons particulièrement froids. Son bon fonctionnement est donc une priorité pour notre expérience.
+
+MOUUUUUAAAAAAIIIIIIIS. Dans cette partie, nous présenterons dans un premier temps notre système de lévitation. Enfin, nous nous pencherons sur les méthodes utilisées pour calibrer le système après sa réinstallation sur l'expérience. MOOOOOUUUUAAAAAAAIIIIISS....
+
+\begin{equation}
+\mathbf{B}=\left( \frac{b'}{2}x \right) \vec{x} + \left[ B_0 - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}z \right) \vec{z}
+\end{equation}
+
+
+
+\subsection{Réparation de la lévitation magnétique}
+Avarie avec le système de refroidissement à eau. Test d'étanchéité "à sec", on a trouvé des fuites qui proviendraient de l'intérieur, non trouvées même à l'aide d'un endoscope. Tentative d'étanchéité à l'aide d'une résine, non concluante. Perçage pour faire déboucher deux parties du conduit, et installation de deux barreaux de cuivre. Solution retenue. Graphe élévation de température.
+Courbes résistance et temps de montée/descente montrant la non-dégradation des bobines.
+
+
 \subsection{Calibration par oscillations}
 \subsection{Calibration par radio-fréquences}
 
+Déplacement du centre de la lévitation à l'aide champs de compensation.
+
+Cette étude a permis non seulement de calibrer nos bobines dont la position, l'orientation et le comportement magnétique ont été légèrement modifiés. Mais en plus, ça nous a permit de découvrir de nouvelles limitations. 
+Future nécessité de pouvoir changer les courants de compensation de manière totalement arbitraire et contrôlée en cours de séquence non réalisable avec nos alimentations actuelles: étude en cours. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Changement du laser telecom et calibration du piège optique}
+Listés dans la partie \ref{sc:chambre_science}, uniquement deux éléments participent à la manipulation d'atomes dans la chambre de science avant condensation. Le premier élément, la lévitation magnétique, a fait l'objet d'un entretien essentiel présenté dans la partie précédente. 
+
+Cette partie se concentrera sur le second élément, le piège optique. Nous commencerons par présenter le système optique et décrire les changements opérés, puis nous décrirons la calibration de ce piège sur les atomes.
+
 \subsection{Changement du laser telecom}
+Dans le chapitre précédent, nous avons vu que le piège optique était composé de deux faisceaux se croisant dans la chambre de science. 
+
+Source commune provenant d'un laser Ytterbium 20W continu de Keopsys. Laser ancien qui a vécu, et dont la puissance n'était plus que 14W à l'allumage, pour 12.5W en fin de journée. Laser fibré, dont la taille du faisceau de sortie était de 1.4mm
+
+Remplacement pour un nouveau laser, de chez IPG, fibré, même longueur d'onde $\lambda=1070$nm. Taille de faisceau de 0.8mm, mesuré jusqu'à 55W.
+
+But: garder la même configuration sur les atomes: La pince ça va, c'est fibré, faut juste pas trop merder sur le mode matching à l'entrée de la fibre pour avoir la même puissance qui sort et pas cramer la fibre.
+Le dimple c'est plus chiant, le chemin est direct jusqu'aux atomes via des téléscopes tubés. Beaucoup de périscopes, possibilité que l'ellipse tourne. On veut garder 180µm*90µm.
+
+
 \subsection{Calibration du piège optique}
-%\subsection{Optimisation de l'évaporation dans le piège dipolaire}
+Nécessité de calibrer ce qu'il se passe au niveau des atomes. On contrôle bien ce qu'il se passe avant, mais avec le dimple on n'a pas de fibre pour fixer la taille. 
+
+Estimation de la taille du dimple à l'aide de la divergence du faisceau derrière la cellule. Mesure à la caméra. Tailles estimée à 160*80µm. 
+
+Mesure de la puissance. Estimation des fréquences de piégeage par ces mesures.
+
+Mesures réelles des fréquences de piégeage dans la direction verticale $\vec{y}$ donnée par la pince et la direction horizontale $\vec{z}$ donnée par le dimple.
+
+Mesure dans la direction verticale à l'aide de la lévitation: on dispose d'un bouton pour allumer et éteindre la gravité, et donc générer une force pendant un bref instant pour donner un mouvement aux atomes dans le piège.
+
+Mesure dans la direction horizontale selon deux méthodes suivant la puissance. À haute puissance, on applique un gradient magnétique pour pousser les atomes à l'aides des bobines de compensations. À plus basses puissance, où le piégeage de la lévitation peut arracher les atomes de l'ODT, on éteint les bobines de compensation pour générer la force plutôt. 
+
+Saturation pour les deux faisceaux à haute puissance, d'origines différentes. Pour la pince, il s'agit du maximum de diffraction du modulateur acousto-optique. Pour le dimple, il s'agit du maximum d'émission de la source RF. 
+
+Variation de la puissance en allant plus ou moins loin dans l'évaporation optique.
+
 
 \section{Optimisation de l'évaporation tout-optique}
 \label{sc:evap_optique}
