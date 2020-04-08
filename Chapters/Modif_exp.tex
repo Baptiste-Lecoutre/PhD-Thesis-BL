@@ -63,27 +63,70 @@ L'utilisation de cette nouvelle interface a donc permit de centraliser les donn�
 
 
 
-\section{Réparation et recalibration de la lévitation magnétique}
+\section{Calibration de la lévitation magnétique}
 \label{sc:levitation}
 Comme présenté partie \ref{sc:chambre_science}, la lévitation magnétique est un élément essentiel de notre expérience. En plus d'être un pré-requis pour l'étude de la localisation d'Anderson à trois dimensions, celle-ci nous permet de manière générale d'obtenir des échantillons particulièrement froids. Son bon fonctionnement est donc une priorité pour notre expérience.
 
-MOUUUUUAAAAAAIIIIIIIS. Dans cette partie, nous présenterons dans un premier temps notre système de lévitation. Enfin, nous nous pencherons sur les méthodes utilisées pour calibrer le système après sa réinstallation sur l'expérience. MOOOOOUUUUAAAAAAAIIIIISS....
+Malheureusement, une avarie dans le circuit de refroidissement de la lévitation a conduit à son démontage. Les modifications apportées avant remontage ayant pu conduire à une modification du comportement magnétique du système, une nouvelle calibration des champs générés a été menée.
+
+Dans cette partie, nous présenterons dans un premier temps notre système de lévitation ainsi que les modifications qui y ont été apportées. Ensuite, nous nous pencherons sur les méthodes utilisées pour calibrer le système après sa réinstallation sur l'expérience, en commençant par des expériences d'oscillations puis à l'aide transitions radio-fréquences.
+
+
+
+
+\subsection{Implémentation de la lévitation magnétique}
+
+L'ensemble du système de la lévitation magnétique a été développé alors que l'équipe se dirigeait vers les expériences de localisation d'Anderson à trois dimensions. De nombreux détails de conception pourront être retrouvés dans le manuscrit de thèse d'Alain Bernard \citep{bernard2010transport}, mais rappelons les éléments nécessaires à la suite.
+
+La lévitation magnétique est composée de plusieurs bobines collées dans un support en aluminium, qui sert aussi de réservoir thermique à l'aide d'un refroidissement à eau. Ce refroidissement est à présent effectué par le contact entre le support en aluminium et la circulation d'eau dans deux tubes en cuivre encastrés\footnote{Auparavant, l'eau circulait directement dans des trous percés dans le support en aluminium. Le débouchage de ces trous leur a fait perdre leur étanchéité, et après quelques essais infructueux, nous avons retenu la solution de deux tubes de cuivre encastrés et débouchants. De nombreux tests électriques ont été menés sur les bobines tout au long de leur maintenance pour s'assurer de l'absence de dégradation.}. L'efficacité de ce refroidissement est illustrée figure \ref{fig:refroidissement}
+
+
+
+Mesure de l'efficacité de refroidissement. Ces mesures ont été faites dans des conditions proches de la réalité. Même courant des toutes les bobines, pendant 10s à la fin de cycles expérimentaux normaux. Répétition sur au moins 30 cycles, après stabilisation de la température mesurée.
+
+
+
+
+
+
+
+
+
+
+Champ composé d'un gradient qui compense la gravité, et d'un champ de biais afin de réduire les fréquences de piégeage. 
 
 \begin{equation}
 \mathbf{B}=\left( \frac{b'}{2}x \right) \vec{x} + \left[ B_0 - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}z \right) \vec{z}
 \end{equation}
+Et le potentiel magnétique étant proportionnel à la norme du champ, 
+\begin{equation}
+B=B_0 -b' y + b'' y^2 +\frac{1}{2} \left( \frac{b'^2}{4 B_0} - b'' \right) \left( x^2 + z^2 \right) 
+\end{equation}
+où le terme linéaire compense la gravité.
 
+Cas du champ fort, facteur de Landé local obtenu via Breit-Rabi.
 
-
-\subsection{Réparation de la lévitation magnétique}
-Avarie avec le système de refroidissement à eau. Test d'étanchéité "à sec", on a trouvé des fuites qui proviendraient de l'intérieur, non trouvées même à l'aide d'un endoscope. Tentative d'étanchéité à l'aide d'une résine, non concluante. Perçage pour faire déboucher deux parties du conduit, et installation de deux barreaux de cuivre. Solution retenue. Graphe élévation de température.
-Courbes résistance et temps de montée/descente montrant la non-dégradation des bobines.
+Graphe 1.32 de Alain Bernard: Gradient nécessaire à la lévitation pour un biais donné. Figure pour $\left| F=1, m_F=1 \right\rangle$, $\left| F=2, m_F=-2 \right\rangle$ et $\left| F=2, m_F=+1 \right\rangle$. Limitation des 50A du gradient.
 
 
 \subsection{Calibration par oscillations}
-\subsection{Calibration par radio-fréquences}
 
+\begin{equation}
+\omega_x^2=\omega_z^2=\left| \frac{m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}}}{m} \left( \frac{b'^2}{4 B_0} - b'' \right) \right|
+\quad \text{et} \quad
+\omega_y^2= \left| \frac{2 m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} b''}{m} \right|
+\end{equation}
 Déplacement du centre de la lévitation à l'aide champs de compensation.
+
+
+
+
+\subsection{Calibration par radio-fréquences}
+Une calibration plus précise est réalisée à l'aide de radio-fréquences.
+caractérisation complète du champ rayonné par les 2 biais et les deux compensations horizontales. possibilité d'extraire le champ naturellement présent. Utilisation des 7 sept transitions. 
+
+
+
 
 Cette étude a permis non seulement de calibrer nos bobines dont la position, l'orientation et le comportement magnétique ont été légèrement modifiés. Mais en plus, ça nous a permit de découvrir de nouvelles limitations. 
 Future nécessité de pouvoir changer les courants de compensation de manière totalement arbitraire et contrôlée en cours de séquence non réalisable avec nos alimentations actuelles: étude en cours. 
