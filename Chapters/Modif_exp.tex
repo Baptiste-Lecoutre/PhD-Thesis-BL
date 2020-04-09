@@ -78,45 +78,79 @@ Dans cette partie, nous présenterons dans un premier temps notre système de l�
 
 L'ensemble du système de la lévitation magnétique a été développé alors que l'équipe se dirigeait vers les expériences de localisation d'Anderson à trois dimensions. De nombreux détails de conception pourront être retrouvés dans le manuscrit de thèse d'Alain Bernard \citep{bernard2010transport}, mais rappelons les éléments nécessaires à la suite.
 
-La lévitation magnétique est composée de plusieurs bobines collées dans un support en aluminium, qui sert aussi de réservoir thermique à l'aide d'un refroidissement à eau. Ce refroidissement est à présent effectué par le contact entre le support en aluminium et la circulation d'eau dans deux tubes en cuivre encastrés\footnote{Auparavant, l'eau circulait directement dans des trous percés dans le support en aluminium. Le débouchage de ces trous leur a fait perdre leur étanchéité, et après quelques essais infructueux, nous avons retenu la solution de deux tubes de cuivre encastrés et débouchants. De nombreux tests électriques ont été menés sur les bobines tout au long de leur maintenance pour s'assurer de l'absence de dégradation.}. L'efficacité de ce refroidissement est illustrée figure \ref{fig:refroidissement}
+La lévitation magnétique est composée de plusieurs bobines collées dans un support en aluminium, qui sert aussi de réservoir thermique à l'aide d'un refroidissement à eau. Ce refroidissement est à présent effectué par le contact entre le support en aluminium et la circulation d'eau dans deux tubes en cuivre encastrés\footnote{Auparavant, l'eau circulait directement dans des trous percés dans le support en aluminium. Le débouchage de ces trous leur a fait perdre leur étanchéité, et après quelques essais infructueux, nous avons retenu la solution de deux tubes de cuivre encastrés et débouchants. De nombreux tests électriques ont été menés sur les bobines tout au long de leur maintenance pour s'assurer de l'absence de dégradation.}. L'efficacité de ce refroidissement est illustrée figure \ref{fig:refroidissement_levitation}.
+
+\begin{figure}
+\centering
+
+\caption{\textbf{Mesure de l'efficacité de refroidissement.} Ces mesures ont été réalisées dans des conditions proches de véritables cycles expérimentaux. Le même courant a été appliqué pendant 10s sur toutes les bobines à la fin de séquences habituelles. La température a été mesurée après la répétition d'au moins 30 cycles et en s'assurant de sa stabilisation.}
+\label{fig:refroidissement_levitation}
+\end{figure}
 
 
+Ces supports, disposés de part et d'autre de la cellule, comportent chacun trois bobines. Les deux paires de bobines les plus proches de la cellule créent un champ de biais au niveau des atomes, dans des configurations légèrement plus rapprochée que celle de Helmholtz pour les bobines les plus proches de la cellule et légèrement plus éloignée pour les autres\footnote{L'intérêt de cette configuration est de contrôler la courbure du champ au niveau des atomes indépendamment de la valeur du champ. Il suffit de jouer sur l'équilibre des courants dans les différentes paires de bobines pour changer la courbure.}. Enfin, la paire de bobines la plus éloignée permet de créer un gradient magnétique qui permet de lutter contre la gravité.
 
-Mesure de l'efficacité de refroidissement. Ces mesures ont été faites dans des conditions proches de la réalité. Même courant des toutes les bobines, pendant 10s à la fin de cycles expérimentaux normaux. Répétition sur au moins 30 cycles, après stabilisation de la température mesurée.
-
-
-
-
-
-
-
-
-
-
-Champ composé d'un gradient qui compense la gravité, et d'un champ de biais afin de réduire les fréquences de piégeage. 
-
+Le champ magnétique au niveau des atomes peut alors être écrit:
 \begin{equation}
 \mathbf{B}=\left( \frac{b'}{2}x \right) \vec{x} + \left[ B_0 - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}z \right) \vec{z}
 \end{equation}
-Et le potentiel magnétique étant proportionnel à la norme du champ, 
+où $b'$ correspond au gradient magnétique généré par les bobines de \emph{Gradient}, les plus éloignées de la cellule. Le  paramètre $b''$ est la courbure du champ généré par l'écart des bobines de \emph{Biais} à la configuration de Helmholtz. 
+Le potentiel magnétique étant proportionnel à la norme du champ, celle-ci est donnée à l'ordre deux par
 \begin{equation}
 B=B_0 -b' y + b'' y^2 +\frac{1}{2} \left( \frac{b'^2}{4 B_0} - b'' \right) \left( x^2 + z^2 \right) 
+\label{eq:norme_levitation}
 \end{equation}
-où le terme linéaire compense la gravité.
+où le terme linéaire est celui qui permet de compenser la gravité.
 
-Cas du champ fort, facteur de Landé local obtenu via Breit-Rabi.
 
-Graphe 1.32 de Alain Bernard: Gradient nécessaire à la lévitation pour un biais donné. Figure pour $\left| F=1, m_F=1 \right\rangle$, $\left| F=2, m_F=-2 \right\rangle$ et $\left| F=2, m_F=+1 \right\rangle$. Limitation des 50A du gradient.
+
+Comme mentionné précédemment, il existe une limite pour les fréquences de piégeage (formule \ref{eq:theoreme_wing}) qui décroît avec la valeur du champ magnétique. Une stratégie usuelle est donc de créer un champ aussi fort que possible, qui est d'environ 2000G avec notre système. Pour de tels champs, le potentiel magnétique n'est plus décrit par l'effet Zeeman linéaire, mais par la formule de Breit-Rabi \ref{eq:Breit-Rabi}. En revanche, pour une petite zone autour du centre de la lévitation, on peut simplifier l'étude en supposant que le champ change peu $B\simeq B_0$. On peut ainsi définir un facteur de Landé local
+\begin{equation}
+\widetilde{g}_{\mathrm{F},m_{\mathrm{F}}}(B_0)=\frac{1}{m_{\mathrm{F}} \mu_{\mathrm{B}}} \frac{\mathrm{d}E}{\mathrm{d}B}(B_0)
+\end{equation}
+obtenu à l'aide d'un développement limité de la formule de Breit-Rabi. La physique derrière cette approche est de considérer l'effet Zeeman linéaire sur un état dont la réponse dépend du champ de Biais $B_0$. La valeur du gradient nécessaire pour compenser la gravité peut alors être donnée par:
+\begin{equation}
+b'=\frac{mg}{m_{\mathrm{F}} \widetilde{g}_{\mathrm{F},m_{\mathrm{F}}}(B_0) \mu_{\mathrm{B}}}
+\end{equation}
+Cette dépendance est illustrée figure \ref{fig:levitation_etats} pour les différents états internes d'intérêt dans cette thèse: $\left| F=1,m_{\mathrm{F}}=-1 \right\rangle$, $\left| F=2, m_{\mathrm{F}}=+1 \right\rangle$ et $\left| F=2, m_{\mathrm{F}}=-2 \right\rangle$. Notons trois résultats remarquables: 
+\begin{itemize}
+\item[\textendash] L'état $\left| F=2, m_{\mathrm{F}}=-2 \right\rangle$ nécessite un gradient indépendant du biais magnétique pour être lévité.
+\item[\textendash] Les états $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ et $\left| F=2,m_{\mathrm{F}}=+1 \right\rangle$ sont lévités pour le même gradient à bas champ.
+\item[\textendash] L'état $\left| F=1,m_{\mathrm{F}}=-1 \right\rangle$ ne peut être lévité qu'à bas champ, le gradient nécessaire pour contrer la gravité augmentant avec le champ magnétique.
+\end{itemize}
+
+\begin{figure}
+\centering
+
+\caption{\textbf{Gradient nécessaire pour compenser la gravité.} La valeur du gradient magnétique à appliquer pour léviter dépend de l'état électronique, mais aussi du biais magnétique $B_0$ par la formule de Breit-Rabi. L'état $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ ne peut être lévité qu'à bas champ, l'alimentation des bobines de gradient ne pouvant délivrer plus de 50A.}
+\label{fig:levitation_etats}
+\end{figure}
+
+
 
 
 \subsection{Calibration par oscillations}
-
+\label{sc:oscillations_levitation}
+Il est nécessaire que les atomes se trouvent au centre de la lévitation car il s'agit de l'endroit où ils ne subissent pas d'effet de piégeage. Si cette condition n'est pas vérifiée, alors la réalisation de temps de vol en présence de la lévitation conduira à un mouvement du nuage. Pour l'état $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ en particulier, le centre de masse du nuage décrit des oscillations au tour du centre de la lévitation dont les fréquences peuvent être estimées à l'aide de la norme du champ magnétique \ref{eq:norme_levitation}:
 \begin{equation}
-\omega_x^2=\omega_z^2=\left| \frac{m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}}}{m} \left( \frac{b'^2}{4 B_0} - b'' \right) \right|
+\omega_x^2=\omega_z^2=\left| \frac{m_{\mathrm{F}} \widetilde{g}_{\mathrm{F},m_{\mathrm{F}}} \mu_{\mathrm{B}}}{m} \left( \frac{b'^2}{4 B_0} - b'' \right) \right|
 \quad \text{et} \quad
-\omega_y^2= \left| \frac{2 m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} b''}{m} \right|
+\omega_y^2= \left| \frac{2 m_{\mathrm{F}} \widetilde{g}_{\mathrm{F},m_{\mathrm{F}}} \mu_{\mathrm{B}} b''}{m} \right|
 \end{equation}
+L'exploitation de ces oscillations fournit donc de précieux renseignements quant à la position du centre de la lévitation, mais aussi quant à la configuration magnétique dans laquelle les atomes se déplacent.
+
+
 Déplacement du centre de la lévitation à l'aide champs de compensation.
+\begin{equation}
+\mathbf{B}=\left( \frac{b'}{2}x \right) \vec{x} + \left[ B_0 - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}z +B_z \right) \vec{z}
+\end{equation}
+\begin{equation}
+z_c=-\frac{2B_z}{b'}
+\end{equation}
+effets de champs de biais de compensation.
+
+
+
 
 
 
@@ -134,7 +168,7 @@ Future nécessité de pouvoir changer les courants de compensation de manière t
 
 
 
-
+À toutes fins utiles, les calibrations sont les suivantes.
 
 
 
@@ -151,12 +185,23 @@ Listés dans la partie \ref{sc:chambre_science}, uniquement deux éléments part
 Cette partie se concentrera sur le second élément, le piège optique. Nous commencerons par présenter le système optique et décrire les changements opérés, puis nous décrirons la calibration de ce piège sur les atomes.
 
 \subsection{Changement du laser telecom}
-Dans le chapitre précédent, nous avons vu que le piège optique était composé de deux faisceaux se croisant dans la chambre de science. 
+Dans le chapitre précédent, nous avons vu que le piège dipolaire était composé de deux faisceaux se croisant dans la chambre de science. Ces deux faisceaux, la pince et le dimple, sont orientés suivant les directions $\vec{z}$ et $\vec{y}$ respectivement et permettent de passer le seuil de condensation. Il s'agit donc du piège donnant au condensat ses propriétés. De plus c'est avec ce même piège que l'on met en oeuvre les techniques de refroidissement extrême que sont l'ouverture adiabatique du piège ou encore via le refroidissement par delta-kick. Il est donc primordial d'avoir une connaissance complète des caractéristiques de ce piège.
 
-Source commune provenant d'un laser Ytterbium 20W continu de Keopsys. Laser ancien qui a vécu, et dont la puissance n'était plus que 14W à l'allumage, pour 12.5W en fin de journée. Laser fibré, dont la taille du faisceau de sortie était de 1.4mm
+Les deux faisceaux du piège dipolaire croisé proviennent d'une source laser commune avant d'être mis en forme séparément. Cette source, un laser fibré Ytterbium de \emph{Keopsys} émettant une puissance 20W en continu à une longueur d'onde $\lambda=1070$nm, a été changée au cours de ma thèse. Ce laser a été sujet à un grand nombre d'opérations de maintenance, et, dans les mois précédant son remplacement, il ne pouvait plus émettre que 14W lors de son allumage et seulement 12.5W en fin de journée.
+ 
+Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-Y12} de \emph{IPG}, opérant à la même longueur d'onde $\lambda=1070$nm, et avec une puissance maximale mesurée à 55W. La taille du faisceau est de 0.8mm (contre 1.4mm pour le laser Keopsys), il a donc fallu adapter un téléscope afin de garder les mêmes tailles de faisceaux. Le montage est présenté figure \ref{fig:optique_1070}.
 
-Remplacement pour un nouveau laser, de chez IPG, fibré, même longueur d'onde $\lambda=1070$nm. Taille de faisceau de 0.8mm, mesuré jusqu'à 55W.
+\begin{figure}
+\centering
 
+\caption{\textbf{Schéma du montage optique pour le piège dipolaire.} Le laser source passe dans un premier téléscope avant d'étre séparé en deux parties.}
+\label{fig:optique_1070}
+\end{figure}
+
+
+
+Taille de faisceau de 0.8mm
+Laser fibré, dont la taille du faisceau de sortie était de 1.4mm
 But: garder la même configuration sur les atomes: La pince ça va, c'est fibré, faut juste pas trop merder sur le mode matching à l'entrée de la fibre pour avoir la même puissance qui sort et pas cramer la fibre.
 Le dimple c'est plus chiant, le chemin est direct jusqu'aux atomes via des téléscopes tubés. Beaucoup de périscopes, possibilité que l'ellipse tourne. On veut garder 180µm*90µm.
 
@@ -177,6 +222,14 @@ Mesure dans la direction horizontale selon deux méthodes suivant la puissance. 
 Saturation pour les deux faisceaux à haute puissance, d'origines différentes. Pour la pince, il s'agit du maximum de diffraction du modulateur acousto-optique. Pour le dimple, il s'agit du maximum d'émission de la source RF. 
 
 Variation de la puissance en allant plus ou moins loin dans l'évaporation optique.
+
+
+
+
+
+
+
+
 
 
 \section{Optimisation de l'évaporation tout-optique}
