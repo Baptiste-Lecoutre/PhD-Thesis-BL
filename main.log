@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  10 APR 2020 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  10 APR 2020 18:30
 entering extended mode
 **./main.tex
 (main.tex
@@ -1327,7 +1327,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-(Chapters/BEC_manip.tex
+(Chapters/Modif_exp.tex
 Chapitre 1.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 .
@@ -1338,177 +1338,76 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-
-LaTeX Warning: Reference `ch:Speckle' on page 1 undefined on input line 9.
-
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 11.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 13.
+(Font)              <9> on input line 11.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 13.
+(Font)              <7> on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
+
 [1
 
 
 {C:/Users/Nop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<Fig/BEC_manip/stat_bose.pdf, id=24, 403.5041pt x 116.06998pt>
-File: Fig/BEC_manip/stat_bose.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/stat_bose.pdf>
-Package pdftex.def Info: Fig/BEC_manip/stat_bose.pdf  used on input line 28.
-(pdftex.def)             Requested size: 426.79135pt x 122.7679pt.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
- [2 <./Fig/BEC_manip/stat_bose.pdf>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 46.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
- [3] [4]
-<Fig/BEC_manip/thomas_fermi.pdf, id=435, 457.74942pt x 163.38528pt>
-File: Fig/BEC_manip/thomas_fermi.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/thomas_fermi.pdf>
-Package pdftex.def Info: Fig/BEC_manip/thomas_fermi.pdf  used on input line 118
-.
-(pdftex.def)             Requested size: 426.79135pt x 152.34312pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 133.
-
-[5 <./Fig/BEC_manip/thomas_fermi.pdf>]
-<Fig/BEC_manip/Rb87.pdf, id=462, 440.87213pt x 257.70801pt>
-File: Fig/BEC_manip/Rb87.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/Rb87.pdf>
-Package pdftex.def Info: Fig/BEC_manip/Rb87.pdf  used on input line 183.
-(pdftex.def)             Requested size: 341.43437pt x 199.59186pt.
- [6]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-17.
-
-("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-[7 <./Fig/BEC_manip/Rb87.pdf>] [8] [9]
-<fig/BEC_manip/rabi.pdf, id=624, 754.06688pt x 264.8047pt>
-File: fig/BEC_manip/rabi.pdf Graphic file (type pdf)
-<use fig/BEC_manip/rabi.pdf>
-Package pdftex.def Info: fig/BEC_manip/rabi.pdf  used on input line 338.
-(pdftex.def)             Requested size: 426.79135pt x 149.87352pt.
- [10]
-<Fig/BEC_manip/manip.pdf, id=653, 433.61185pt x 283.43782pt>
-File: Fig/BEC_manip/manip.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/manip.pdf>
-Package pdftex.def Info: Fig/BEC_manip/manip.pdf  used on input line 356.
-(pdftex.def)             Requested size: 426.79135pt x 278.98679pt.
-
-Underfull \vbox (badness 3482) has occurred while \output is active []
-
- [11 <./fig/BEC_manip/rabi.pdf>] [12 <./Fig/BEC_manip/manip.pdf>]
-<Fig/BEC_manip/table_optique2.pdf, id=811, 436.53725pt x 348.388pt>
-File: Fig/BEC_manip/table_optique2.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/table_optique2.pdf>
-Package pdftex.def Info: Fig/BEC_manip/table_optique2.pdf  used on input line 3
-75.
-(pdftex.def)             Requested size: 341.43437pt x 272.49107pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13 <./Fig/BEC_manip/table_optique2.pdf>]
-<Fig/BEC_manip/MOT_magtrap.pdf, id=822, 360.07681pt x 197.41502pt>
-File: Fig/BEC_manip/MOT_magtrap.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/MOT_magtrap.pdf>
-Package pdftex.def Info: Fig/BEC_manip/MOT_magtrap.pdf  used on input line 392.
-
-(pdftex.def)             Requested size: 426.79135pt x 233.999pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14 <./Fig/BEC_manip/MOT_magtrap.pdf>]
-<Fig/BEC_manip/evapRF.pdf, id=910, 388.57635pt x 204.5393pt>
-File: Fig/BEC_manip/evapRF.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/evapRF.pdf>
-Package pdftex.def Info: Fig/BEC_manip/evapRF.pdf  used on input line 418.
-(pdftex.def)             Requested size: 384.1096pt x 202.19177pt.
- [15]
-<Fig/BEC_manip/piege_optique.pdf, id=929, 423.59935pt x 236.41693pt>
-File: Fig/BEC_manip/piege_optique.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/piege_optique.pdf>
-Package pdftex.def Info: Fig/BEC_manip/piege_optique.pdf  used on input line 43
-6.
-(pdftex.def)             Requested size: 384.1096pt x 214.37856pt.
- [16 <./Fig/BEC_manip/evapRF.pdf>] [17 <./Fig/BEC_manip/piege_optique.pdf>]
-<Fig/BEC_manip/levitation_simple.pdf, id=2276, 252.72139pt x 181.7081pt>
-File: Fig/BEC_manip/levitation_simple.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/levitation_simple.pdf>
-Package pdftex.def Info: Fig/BEC_manip/levitation_simple.pdf  used on input lin
-e 461.
-(pdftex.def)             Requested size: 252.72076pt x 181.70764pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18 <./Fig/BEC_manip/levitation_simple.pdf>]
-<Fig/BEC_manip/BEC_double_struct.pdf, id=2393, 412.8108pt x 175.07729pt>
-File: Fig/BEC_manip/BEC_double_struct.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/BEC_double_struct.pdf>
-Package pdftex.def Info: Fig/BEC_manip/BEC_double_struct.pdf  used on input lin
-e 483.
-(pdftex.def)             Requested size: 384.1096pt x 162.9137pt.
- [19 <./Fig/BEC_manip/BEC_double_struct.pdf>]
-<Fig/BEC_manip/adia_opening_and_delta_kick2.pdf, id=2486, 765.07376pt x 306.008
-64pt>
-File: Fig/BEC_manip/adia_opening_and_delta_kick2.pdf Graphic file (type pdf)
-<use Fig/BEC_manip/adia_opening_and_delta_kick2.pdf>
-Package pdftex.def Info: Fig/BEC_manip/adia_opening_and_delta_kick2.pdf  used o
-n input line 508.
-(pdftex.def)             Requested size: 426.79135pt x 170.70528pt.
-[20 <./Fig/BEC_manip/adia_opening_and_delta_kick2.pdf>]
-<fig/BEC_manip/img_mot.pdf, id=3181, 431.52072pt x 114.65497pt>
-File: fig/BEC_manip/img_mot.pdf Graphic file (type pdf)
-<use fig/BEC_manip/img_mot.pdf>
-Package pdftex.def Info: fig/BEC_manip/img_mot.pdf  used on input line 544.
-(pdftex.def)             Requested size: 426.79135pt x 113.40204pt.
- [21 <./fig/BEC_manip/img_mot.pdf>]
-<fig/BEC_manip/img_science_3.pdf, id=3237, 318.99263pt x 189.45609pt>
-File: fig/BEC_manip/img_science_3.pdf Graphic file (type pdf)
-<use fig/BEC_manip/img_science_3.pdf>
-Package pdftex.def Info: fig/BEC_manip/img_science_3.pdf  used on input line 56
-2.
-(pdftex.def)             Requested size: 318.99184pt x 189.45561pt.
- [22 <./fig/BEC_manip/img_science_3.pdf>]) (Chapters/Modif_exp.tex
-[23] [24
-
-]
-Chapitre 2.
-[25]
-<Fig/Modif_exp/cicero.png, id=3333, 510.40688pt x 514.92375pt>
+<Fig/Modif_exp/cicero.png, id=22, 510.40688pt x 514.92375pt>
 File: Fig/Modif_exp/cicero.png Graphic file (type png)
 <use Fig/Modif_exp/cicero.png>
 Package pdftex.def Info: Fig/Modif_exp/cicero.png  used on input line 32.
 (pdftex.def)             Requested size: 298.75264pt x 301.41382pt.
- [26 <./Fig/Modif_exp/cicero.png>] [27] [28] [29]
-<Fig/Modif_exp/optique_1070.pdf, id=3392, 434.32275pt x 275.84627pt>
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+ [2 <./Fig/Modif_exp/cicero.png>]
+
+LaTeX Warning: Reference `sc:imagerie' on page 3 undefined on input line 43.
+
+
+LaTeX Warning: Reference `sc:chambre_science' on page 3 undefined on input line
+ 68.
+
+[3]
+
+LaTeX Warning: Reference `eq:theoreme_wing' on page 4 undefined on input line 1
+07.
+
+
+LaTeX Warning: Reference `eq:Breit-Rabi' on page 4 undefined on input line 107.
+
+
+[4]
+<Fig/Modif_exp/levitation_etats.pdf, id=79, 529.10655pt x 366.34715pt>
+File: Fig/Modif_exp/levitation_etats.pdf Graphic file (type pdf)
+<use Fig/Modif_exp/levitation_etats.pdf>
+Package pdftex.def Info: Fig/Modif_exp/levitation_etats.pdf  used on input line
+ 124.
+(pdftex.def)             Requested size: 341.43437pt x 236.40668pt.
+ [5]
+
+LaTeX Warning: Reference `sc:chambre_science' on page 6 undefined on input line
+ 183.
+
+[6 <./Fig/Modif_exp/levitation_etats.pdf>]
+<Fig/Modif_exp/optique_1070.pdf, id=105, 434.32275pt x 275.84627pt>
 File: Fig/Modif_exp/optique_1070.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/optique_1070.pdf>
 Package pdftex.def Info: Fig/Modif_exp/optique_1070.pdf  used on input line 196
 .
 (pdftex.def)             Requested size: 384.1096pt x 243.95766pt.
- [30] [31 <./Fig/Modif_exp/optique_1070.pdf>]) (main.bbl [32]
+ [7 <./Fig/Modif_exp/optique_1070.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+22.
+ ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+[8]) (main.bbl [9] [10
+
+]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
 7.
 
@@ -1520,9 +1419,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[33
-
-]) [34]
+[11]) [12]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (main.aux)
@@ -1532,57 +1429,46 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 145.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 29790 strings out of 481511
- 561684 string characters out of 2913122
- 946386 words of memory out of 3000000
- 43958 multiletter control sequences out of 15000+200000
- 689673 words of font info for 263 fonts, out of 3000000 for 9000
+ 29433 strings out of 481511
+ 555452 string characters out of 2913122
+ 938154 words of memory out of 3000000
+ 43816 multiletter control sequences out of 15000+200000
+ 673001 words of font info for 209 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,12n,62p,1604b,940s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,12n,62p,961b,940s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
-{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C
-:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:
-/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{
-C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc
+{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{
+C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:
+/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{
+C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc
 }{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.e
 nc}<C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10
 .pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx
-5.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmb
-x7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-bx8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-mbx9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
-lmbxi10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-lm/lmcsc10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmex10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmmi10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/lm/lmmi6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/lm/lmmi7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmmi8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmmi9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmmib10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/lm/lmr10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmr5.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmr6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmr7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmr8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmr9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmri10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmri9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmss10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Nop/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Nop/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Nop/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Nop/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nop/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (34 pages, 2737131 bytes).
+i10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
+mcsc10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
+m/lmex10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmmi10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmmi8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmr10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmri10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmri9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmss10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmssbx10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmsy10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmsy8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (12 pages, 639218 bytes).
 PDF statistics:
- 3831 PDF objects out of 4296 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
- 57645 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 458 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 54396 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -121,8 +121,8 @@ Cette dépendance est illustrée figure \ref{fig:levitation_etats} pour les diff
 
 \begin{figure}
 \centering
-
-\caption{\textbf{Gradient nécessaire pour compenser la gravité.} La valeur du gradient magnétique à appliquer pour léviter dépend de l'état électronique, mais aussi du biais magnétique $B_0$ par la formule de Breit-Rabi. L'état $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ ne peut être lévité qu'à bas champ, l'alimentation des bobines de gradient ne pouvant délivrer plus de 50A.}
+\includegraphics[width=0.8\textwidth]{Fig/Modif_exp/levitation_etats.pdf}
+\caption{\textbf{Gradient nécessaire pour compenser la gravité.} La valeur du gradient magnétique à appliquer pour léviter dépend de l'état électronique, mais aussi du biais magnétique $B_0$ par la formule de Breit-Rabi. L'état $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ ne peut être lévité qu'à bas champ, l'alimentation des bobines de gradient ne pouvant délivrer plus de 50A (limite tracée en pointillés).}
 \label{fig:levitation_etats}
 \end{figure}
 
@@ -202,21 +202,52 @@ Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-
 \subsection{Calibration du piège optique}
 La présence d'une fibre optique pour la mise en forme du faisceau de la pince permet de s'assurer que le mode envoyé sur les atomes n'a pas changé. Pour le faisceau dimple en revanche, le trajet jusqu'à la cellule se fait sans filtrage. La présence de deux périscopes, d'un nombre d'éléments optiques important et l'utilisation d'un faisceau elliptique imposent une étude attentive des caractéristiques de ce faisceau au niveau des atomes.
 
+
+
 \paragraph*{Estimation de la taille du faisceau au niveau des atomes}
 Le faisceau dimple est rendu elliptique à l'aide du second télescope, comme illustré figure \ref{fig:optique_1070}. Le rapport des tailles dans les deux directions est de 2, et ce rapport se retrouve au niveau des atomes. Cependant, l'utilisation de plusieurs périscopes risque de faire tourner cette ellipse, il est donc primordial de connaître les tailles du faisceau au niveau des atomes.
 
 Pour cela, l'estimation du profil de faisceau se fait à l'aide de sa divergence après la cellule. 
-Tailles estimée à 160*80µm. 
+
+
+
+
+La taille du faisceau $\mathrm{w}_{\mathrm{i}}(y)$ dans la direction $\vec{i}$ ($\vec{i}= \lbrace \vec{x},\vec{z} \rbrace$) est donnée par l'optique gaussienne:
 \begin{equation}
-\mathrm{w}(y)=\mathrm{w}_{\mathrm{z}} \sqrt{1+\left( \frac{y}{y_{\mathrm{Rz}}} \right)^2}
+\mathrm{w}_{\mathrm{i}}(y)=\mathrm{w}_{\mathrm{i}} \sqrt{1+\left( \frac{y}{y_{\mathrm{Ri}}} \right)^2}
+\label{eq:taille_faisceau}
 \end{equation}
-avec la distance de Rayleigh
-\begin{equation}
-y_{\mathrm{Rz}}=\frac{\pi \mathrm{w}_{\mathrm{z}}^2}{\lambda}
-\end{equation}
+où $\mathrm{w}_{\mathrm{i}}$ est le waist du faisceau dans la direction $\vec{i}$. La distance de Rayleigh associée s'exprime $y_{\mathrm{Ri}}=\pi \mathrm{w}_{\mathrm{i}}^2 / \lambda$ et correspond à la distance sur laquelle la taille du faisceau suivant la direction $\vec{i}$ change peu. Dans le régime de champ lointain $y \gg y_{\mathrm{Ri}}$, le faisceau diverge selon un angle $\tan \theta_{\mathrm{i}} \simeq \lambda / \pi \mathrm{w}_{\mathrm{i}}$.
+
+La mesure des tailles du faisceau ont été réalisées à l'aide d'une caméra \emph{IDS Ueye} disposant d'une matrice de $1024 \times 1280$ pixels de 5.2µm de côté. Les tailles ont été extraites par ajustement gaussien après integration suivant une direction. Enfin, l'évolution de la taille en fonction de la position a été ajustée par la formule \ref{eq:taille_faisceau}, illustrée figure \ref{fig:taille_dimple}.
+
+\begin{figure}
+\centering
+
+\caption{\textbf{Divergence du faisceau dimple après la cellule.} Les tailles du faisceau dimple sont représentées en fonction de la position de la caméra. La divergence du faisceau permet de remonter aux waists du faisceau et d'en estimer la position. Les waists extraits sont de $\mathrm{w_z}\simeq$82µm et de $\mathrm{w_x}\simeq160$µm et leur position est compatible avec celle des atomes.}
+\label{fig:taille_dimple}
+\end{figure}
+
+On estime alors les waists du faisceau à $\mathrm{w_z}=81.6 \pm 7.8$µm et $\mathrm{w_x}=160\pm 13$µm, assez proche des valeurs précédentes. La position de ces waists est compatible avec la position des atomes, et la longueur de Rayleigh du faisceau est de l'ordre de $y_{\mathrm{Rz}}\simeq$2cm. 
+
+
+
+
+
+
 
 
 \paragraph*{Calibration des fréquences de piégeage}
+Les grandeurs physiques du nuage dépendent du piège via les fréquences de piégeages. On peut décrire, au voisinage du centre du piège, le potentiel ressenti par les atomes par un oscillateur harmonique. Dans le cas du piège optique, les fréquences de piégeage associées sont données par:
+\begin{equation}
+\omega_y=\omega_x=\sqrt{-\frac{4 U_{\mathrm{pince}}}{m \mathrm{w}_0^2}} \quad \text{et} \quad \omega_z=\sqrt{-\frac{4U_{\mathrm{dimple}}}{m \mathrm{w}_{\mathrm{z}}^2}}
+\end{equation}
+et les profondeurs de pièges $U_{\mathrm{pince}}$ et $U_{\mathrm{dimple}}$ sont données par:
+\begin{equation}
+U_{\mathrm{pince}}= \frac{3c^2 \Gamma P_{\mathrm{pince}}}{2\omega_0^3\mathrm{w}_0^2} \left( \frac{1}{\omega-\omega_0}- \frac{1}{\omega+\omega_0}\right) \quad \text{et} \quad U_{\mathrm{dimple}}=\frac{3c^2 \Gamma P_{\mathrm{dimple}}}{2 \omega_0^3 \mathrm{w}_{\mathrm{x}} \mathrm{w}_{\mathrm{z}}}  \left( \frac{1}{\omega - \omega_0} - \frac{1}{\omega+ \omega_0} \right)
+\end{equation}
+
+Plusieurs méthodes existent pour mesurer ces fréquences, nous avons décider de les mesurer à l'aide d'oscillations du centre de masse du nuage, comme dans la section \ref{sc:oscillations_levitation}.
 
 Mesure de la puissance. Estimation des fréquences de piégeage par ces mesures.
 
@@ -232,10 +263,14 @@ Variation de la puissance en allant plus ou moins loin dans l'évaporation optiq
 
 
 
+\begin{figure}
+\centering
 
+\caption{\textbf{Fréquences de piégeage en fonction de la consigne.} Les fréquences de piégeage mesurées sont en accord avec celles estimées par la mesure de la puissance et de la taille des faisceaux.}
+\label{fig:frequences_piege_optique}
+\end{figure}
 
-
-
+Valeurs de la calibration des fréquences sur les deux faisceaux..
 
 
 
