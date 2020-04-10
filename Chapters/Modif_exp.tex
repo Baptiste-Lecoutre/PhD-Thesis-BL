@@ -189,27 +189,34 @@ Dans le chapitre précédent, nous avons vu que le piège dipolaire était compo
 
 Les deux faisceaux du piège dipolaire croisé proviennent d'une source laser commune avant d'être mis en forme séparément. Cette source, un laser fibré Ytterbium de \emph{Keopsys} émettant une puissance 20W en continu à une longueur d'onde $\lambda=1070$nm, a été changée au cours de ma thèse. Ce laser a été sujet à un grand nombre d'opérations de maintenance, et, dans les mois précédant son remplacement, il ne pouvait plus émettre que 14W lors de son allumage et seulement 12.5W en fin de journée.
  
-Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-Y12} de \emph{IPG}, opérant à la même longueur d'onde $\lambda=1070$nm, et avec une puissance maximale mesurée à 55W. La taille du faisceau est de 0.8mm (contre 1.4mm pour le laser Keopsys), il a donc fallu adapter un téléscope afin de garder les mêmes tailles de faisceaux. Le montage est présenté figure \ref{fig:optique_1070}.
+Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-Y12} de \emph{IPG}, opérant à la même longueur d'onde $\lambda=1070$nm, et avec une puissance maximale mesurée à 55W. La taille du faisceau en sortie de fibre est de 0.8mm (contre 1.4mm pour le laser Keopsys), il a donc fallu adapter un télescope afin de conserver les mêmes tailles de faisceaux au niveau des atomes. Le montage de mise en forme des faisceaux est présenté figure \ref{fig:optique_1070}. Celui-ci est majoritairement mis dans des tubes (représentés figure \ref{fig:optique_1070}) contenant un grand nombre de diaphragmes, facilitant ainsi la procédure d'alignement.
 
 \begin{figure}
 \centering
-
-\caption{\textbf{Schéma du montage optique pour le piège dipolaire.} Le laser source passe dans un premier téléscope avant d'étre séparé en deux parties.}
+\includegraphics[width=0.9\textwidth]{Fig/Modif_exp/optique_1070.pdf}
+\caption{\textbf{Schéma du montage optique pour le piège dipolaire.} Le faisceau issu du laser source passe dans un premier télescope avant d'étre séparé en deux parties. La partie déviée passe dans une fibre optique pour devenir le faisceau de la pince. La partie transmise passe ensuite dans un second téléscope pour devenir elliptique et arrive dans la \emph{Dimple box}, qui envoie le faisceau sur les atomes et contient les optiques d'imagerie \citep{muller2015coherent}. Afin de garder les mêmes tailles de faisceaux, la première lentille du premier télescope a été remplacée par une lentille de focale +100mm.}
 \label{fig:optique_1070}
 \end{figure}
 
 
-
-Taille de faisceau de 0.8mm
-Laser fibré, dont la taille du faisceau de sortie était de 1.4mm
-But: garder la même configuration sur les atomes: La pince ça va, c'est fibré, faut juste pas trop merder sur le mode matching à l'entrée de la fibre pour avoir la même puissance qui sort et pas cramer la fibre.
-Le dimple c'est plus chiant, le chemin est direct jusqu'aux atomes via des téléscopes tubés. Beaucoup de périscopes, possibilité que l'ellipse tourne. On veut garder 180µm*90µm.
-
-
 \subsection{Calibration du piège optique}
-Nécessité de calibrer ce qu'il se passe au niveau des atomes. On contrôle bien ce qu'il se passe avant, mais avec le dimple on n'a pas de fibre pour fixer la taille. 
+La présence d'une fibre optique pour la mise en forme du faisceau de la pince permet de s'assurer que le mode envoyé sur les atomes n'a pas changé. Pour le faisceau dimple en revanche, le trajet jusqu'à la cellule se fait sans filtrage. La présence de deux périscopes, d'un nombre d'éléments optiques important et l'utilisation d'un faisceau elliptique imposent une étude attentive des caractéristiques de ce faisceau au niveau des atomes.
 
-Estimation de la taille du dimple à l'aide de la divergence du faisceau derrière la cellule. Mesure à la caméra. Tailles estimée à 160*80µm. 
+\paragraph*{Estimation de la taille du faisceau au niveau des atomes}
+Le faisceau dimple est rendu elliptique à l'aide du second télescope, comme illustré figure \ref{fig:optique_1070}. Le rapport des tailles dans les deux directions est de 2, et ce rapport se retrouve au niveau des atomes. Cependant, l'utilisation de plusieurs périscopes risque de faire tourner cette ellipse, il est donc primordial de connaître les tailles du faisceau au niveau des atomes.
+
+Pour cela, l'estimation du profil de faisceau se fait à l'aide de sa divergence après la cellule. 
+Tailles estimée à 160*80µm. 
+\begin{equation}
+\mathrm{w}(y)=\mathrm{w}_{\mathrm{z}} \sqrt{1+\left( \frac{y}{y_{\mathrm{Rz}}} \right)^2}
+\end{equation}
+avec la distance de Rayleigh
+\begin{equation}
+y_{\mathrm{Rz}}=\frac{\pi \mathrm{w}_{\mathrm{z}}^2}{\lambda}
+\end{equation}
+
+
+\paragraph*{Calibration des fréquences de piégeage}
 
 Mesure de la puissance. Estimation des fréquences de piégeage par ces mesures.
 
