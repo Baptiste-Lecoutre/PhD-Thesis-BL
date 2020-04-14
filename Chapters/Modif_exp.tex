@@ -78,12 +78,12 @@ Dans cette partie, nous présenterons dans un premier temps notre système de l�
 
 L'ensemble du système de la lévitation magnétique a été développé alors que l'équipe se dirigeait vers les expériences de localisation d'Anderson à trois dimensions. De nombreux détails de conception pourront être retrouvés dans le manuscrit de thèse d'Alain Bernard \citep{bernard2010transport}, mais rappelons les éléments nécessaires à la suite.
 
-La lévitation magnétique est composée de plusieurs bobines collées dans un support en aluminium, qui sert aussi de réservoir thermique à l'aide d'un refroidissement à eau. Ce refroidissement est à présent effectué par le contact entre le support en aluminium et la circulation d'eau dans deux tubes en cuivre encastrés\footnote{Auparavant, l'eau circulait directement dans des trous percés dans le support en aluminium. Le débouchage de ces trous leur a fait perdre leur étanchéité, et après quelques essais infructueux, nous avons retenu la solution de deux tubes de cuivre encastrés et débouchants. De nombreux tests électriques ont été menés sur les bobines tout au long de leur maintenance pour s'assurer de l'absence de dégradation.}. L'efficacité de ce refroidissement est illustrée figure \ref{fig:refroidissement_levitation}.
+La lévitation magnétique est composée de plusieurs bobines collées dans un support en aluminium, qui sert aussi de réservoir thermique à l'aide d'un refroidissement à eau. Après de lourds travaux de débouchage et d'étanchéité, ce refroidissement est à présent effectué par le contact entre le support en aluminium et la circulation d'eau dans deux tubes en cuivre encastrés\footnote{Auparavant, l'eau circulait directement dans des trous percés dans le support en aluminium. Le débouchage de ces trous leur a fait perdre leur étanchéité, et après quelques essais infructueux, nous avons retenu la solution de deux tubes de cuivre encastrés et débouchants. De nombreux tests électriques ont été menés sur les bobines tout au long de leur maintenance pour s'assurer de l'absence de dégradation.}. L'efficacité de ce refroidissement est illustrée figure \ref{fig:refroidissement_levitation}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{Fig/Modif_exp/efficacité_refroidissement.pdf}
-\caption{\textbf{Mesure de l'efficacité de refroidissement.} Ces mesures ont été réalisées dans des conditions proches de véritables cycles expérimentaux. Le même courant a été appliqué pendant 10s sur toutes les bobines à la fin de séquences habituelles. La température a été mesurée après la répétition d'au moins 30 cycles et en s'assurant de sa stabilisation.}
+\includegraphics[width=\textwidth]{Fig/Modif_exp/levitation_refroidissement.pdf}
+\caption{\textbf{a: Refroidissement de la lévitation magnétique.} L'un des supports des bobines de la lévitation est maintenant refroidi à l'aide de deux tubes en cuivre le traversant. Auparavant, l'eau circulait directement dans le support dans un circuit percé illustré par les traits rouges. Les tubes en cuivre ont pu être installés en rendant une partie de ce circuit débouchant. \textbf{b: Efficacité de refroidissement.} Ces mesures ont été réalisées dans des conditions proches de véritables cycles expérimentaux. Le même courant a été appliqué pendant 10s sur toutes les bobines à la fin de séquences habituelles. La température a été mesurée après la répétition d'au moins 30 cycles et en s'assurant de sa stabilisation.}
 \label{fig:refroidissement_levitation}
 \end{figure}
 
@@ -220,7 +220,7 @@ La mesure des tailles du faisceau a été réalisée à l'aide d'une caméra \em
 
 \begin{figure}
 \centering
-
+\includegraphics[width=0.8\textwidth]{Fig/Modif_exp/expansion_dimple.pdf}
 \caption{\textbf{Divergence du faisceau dimple après la cellule.} Les tailles du faisceau dimple sont représentées en fonction de la position de la caméra. La divergence du faisceau permet de remonter aux waists du faisceau et d'en estimer la position. Les waists extraits sont de $\mathrm{w_z}\simeq82$µm et de $\mathrm{w_x}\simeq160$µm et leur position est compatible avec celle des atomes.}
 \label{fig:taille_dimple}
 \end{figure}
@@ -241,7 +241,8 @@ U(\mathbf{r})=\frac{3 \pi c^2 \Gamma}{2 \omega_0^3 \overline{\Delta}} I(\mathbf{
 \end{equation}
 En supposant que les atomes restent proches du centre du piège, on peut faire l'approximation que le profil d'intensité des faisceaux est de forme harmonique. On peut ainsi définir la profondeur de piégeage pour chaque faisceau:
 \begin{equation}
-U_{\mathrm{pince}}= \frac{3c^2 \Gamma }{2\omega_0^3 \overline{\Delta}} \frac{P_{\mathrm{pince}}}{\mathrm{w}_0^2} \quad \text{et} \quad U_{\mathrm{dimple}}=\frac{3c^2 \Gamma }{2 \omega_0^3 \overline{\Delta}}\frac{P_{\mathrm{dimple}}}{\mathrm{w}_{\mathrm{x}} \mathrm{w}_{\mathrm{z}}}
+U_{\mathrm{pince}}= \frac{3c^2 \Gamma }{\omega_0^3 \overline{\Delta}} \frac{P_{\mathrm{pince}}}{\mathrm{w}_0^2} \quad \text{et} \quad U_{\mathrm{dimple}}=\frac{3c^2 \Gamma }{\omega_0^3 \overline{\Delta}}\frac{P_{\mathrm{dimple}}}{\mathrm{w}_{\mathrm{x}} \mathrm{w}_{\mathrm{z}}}
+\label{eq:profondeur_piege_optique}
 \end{equation}
 ainsi que les fréquences de piégeage $\omega_{x,y,z}$. Rappelons que le confinement dans les directions $\vec{x}$ et $\vec{y}$ est fait par la pince, et que celui dans la direction $\vec{z}$ est fait par le dimple, les fréquences de piégeage du piège dipolaire croisé s'expriment alors:
 \begin{equation}
@@ -250,33 +251,26 @@ ainsi que les fréquences de piégeage $\omega_{x,y,z}$. Rappelons que le confin
 \end{equation}
 La caractérisation finale du piège dipolaire croisé se fait à l'aide des fréquences de piégeage, qui fixent les propriétés physiques du nuage. Afin de mesurer ces fréquences, nous avons fait le choix d'induire de petites oscillations du nuage à l'intérieur du piège à l'aide d'une force extérieure, et de suivre ces oscillations en fonction du temps d'évolution dans le piège de manière équivalente à celle présentée pour la lévitation magnétique section \ref{sc:oscillations_levitation}. 
 
-La fréquence de piégeage de la pince a été mesurée suivant la direction verticale à l'aide de la lévitation magnétique. En commutant rapidement le courant des bobines de gradient, on dispose d'un bouton pour allumer et éteindre la gravité, et donc générer une force pendant un bref instant pour donner un mouvement aux atomes dans le piège. En relevant la position des atomes en fonction de la durée d'évolution dans le piège après excitation, on extrait donc la fréquence associée.
+La fréquence de piégeage de la pince a été mesurée suivant la direction verticale à l'aide de la lévitation magnétique. En commutant rapidement le courant des bobines de gradient, on dispose d'un bouton pour allumer et éteindre la gravité, et donc générer une force pendant un bref instant pour donner un mouvement aux atomes dans le piège. En relevant la position des atomes en fonction de la durée d'évolution dans le piège après excitation, on extrait alors la fréquence associée.
 
-La mesure de la fréquence de piégeage dans la direction $\vec{z}$, provenant du dimple, a été effectuée selon deux méthodes suivant la puissance:
+La mesure de la fréquence de piégeage dans la direction $\vec{z}$, provenant du dimple, a été effectuée selon deux méthodes suivant la puissance du faisceau:
 \begin{itemize}
 \item[\textendash] À haute puissance, on pousse les atomes à l'aide d'un gradient magnétique provenant de bobines de compensation. Celles-ci peuvent pousser les atomes pendant de courts instants à l'aide d'un commutateur rapide.
 \item[\textendash] À plus basse puissance, le piège optique est décomprimé et peu profond grâce à la lévitation. Cependant, le piégeage de la lévitation peut arracher les atomes du piège optique, il est donc nécessaire de déplacer le centre de la lévitation magnétique à l'aide de champs de compensation. Pour pousser les atomes, on utilise alors les bobines de compensation dans leur configuration normale, et leur brève extinction conduit à accélérer les atomes en déplaçant le centre de la lévitation magnétique.
 \end{itemize}
 
-L'ensemble de ces mesures est représenté figure \ref{fig:frequences_piege_optique}. La variation des fréquences s'est fait en abaissant la puissance du laser au cours de l'évaporation optique, celle-ci conduisant à une décompression du piège comme illustré formule \ref{eq:frequences_piege_optique}. 
+L'ensemble de ces mesures est représenté figure \ref{fig:frequences_piege_optique}. La variation des fréquences s'est fait en abaissant la puissance du laser au cours de l'évaporation optique, celle-ci conduisant à une décompression du piège de comportement $\omega /2\pi =A \sqrt{P}$ comme illustré formules \ref{eq:profondeur_piege_optique} et \ref{eq:frequences_piege_optique}. Les fréquences mesurées expérimentalement (carrés pour la pince, losanges pour le dimple) sont comparées à celles estimées à l'aide de mesures de la puissance des faisceaux et de leurs tailles (lignes continues). Si la comparaison est tout à fait correcte pour la pince, ce n'est pas le cas pour le dimple qui présente une surestimation de la fréquence de piégeage. La calibration de la pince est alors $A_{\mathrm{pince}}=912\pm 30 \: \mathrm{Hz.W^{-1/2}}$, et celle du dimple est de $A_{\mathrm{dimple}}=62.5\pm 1.2 \: \mathrm{Hz.W^{-1/2}}$ . La prédiction pour cette dernière est de $103 \: \mathrm{Hz.W^{-1/2}}$ en utilisant les tailles mesurées $\mathrm{w}_{\mathrm{x}} \simeq 160 \mathrm{\mu m}$ et $\mathrm{w}_{\mathrm{z}} \simeq 82 \mathrm{\mu m}$, en accord qualitatif avec la valeur mesurée\footnote{La dernière calibration date de la mise en place de la \emph{dimple box} lors de la thèse de Kilian Muller \citep{muller2015coherent}, celle du dimple était alors de $A_{\mathrm{dimple}}=64.5\pm 1.2 \mathrm{Hz.W^{-1/2}}$, très proche de la valeur actuelle.}. 
 
 \begin{figure}
 \centering
-
-\caption{\textbf{Fréquences d'oscillations du piège optique.} Décrire les 4 courbes.}
+\includegraphics[width=\textwidth]{Fig/Modif_exp/frequences_piege_optique.pdf}
+\caption{\textbf{a: Exemple d'oscillation dans le piège optique.} Le nuage oscille dans la direction $\vec{z}$ pour une puissance du dimple de 0.70W après avoir été poussé par un gradient magnétique. La fréquence d'oscillation est alors de $\omega_z /2\pi \simeq 51 \: \mathrm{Hz}$. \textbf{b: Fréquences d'oscillations du piège optique.} Les fréquences mesurées par oscillations du nuage (points) sont comparées à des estimations issues de mesures de la taille des faisceaux et de mesures de puissance de ces faisceaux (lignes continues).}
 \label{fig:frequences_piege_optique}
 \end{figure}
 
 
 
-Les deux faisceaux présentent une saturation à haute puissance, c'est à dire qu'ils restent à leur puissance maximale au dela d'une certaine consigne seuil. Pour le dimple, cette saturation provient d'une limitation de la puissance de la radio-fréquence servant à la diffraction du faisceau dans le modulateur acousto-optique. Pour la pince, cette limitation provient du maximum de l'efficacité de diffraction du modulateur acousto-optique. Ces deux saturations peuvent être repoussées en augmentant la puissance émise par le laser source\footnote{Le réglage actuellement utilisé sur l'expérience est une émission à 50\% de la puissance maximale du laser \emph{IPG}, c'est à dire environ 23W. Il a été observé que le mode émis est suffisamment stable à ce point de fonctionnement.}, cependant elles ne sont pas problématiques pour notre configuration. De plus, cette augmentation de puissance se traduirait par un chauffage local des bloqueurs de faisceau plus important, entraînant des effets thermiques néfastes.
-
-
-
-Valeurs de la calibration des fréquences sur les deux faisceaux..
-
-
-
+Une seconde conséquence de la figure \ref{fig:frequences_piege_optique} est que les deux faisceaux présentent une saturation à haute puissance, c'est à dire qu'ils restent à leur puissance maximale au dela d'une certaine consigne seuil. Pour le dimple, cette saturation provient d'une limitation de la puissance de la source de la radio-fréquence servant à la diffraction du faisceau dans le modulateur acousto-optique. Pour la pince, cette limitation provient du maximum de l'efficacité de diffraction du modulateur acousto-optique. Ces deux saturations peuvent être repoussées en augmentant la puissance émise par le laser source\footnote{Le réglage actuellement utilisé sur l'expérience est une émission à 50\% de la puissance maximale du laser \emph{IPG}, c'est à dire environ 23W. Il a été observé que le mode émis est suffisamment stable à ce point de fonctionnement.}, cependant elles ne sont pas problématiques pour notre configuration. De plus, cette augmentation de puissance se traduirait par un chauffage local des bloqueurs de faisceau plus important, entraînant des effets thermiques néfastes.
 
 
 

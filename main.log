@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.12)  13 APR 2020 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.12)  14 APR 2020 18:55
 entering extended mode
 **./main.tex
 (main.tex
@@ -1554,29 +1554,49 @@ File: Fig/Modif_exp/cicero.png Graphic file (type png)
 Package pdftex.def Info: Fig/Modif_exp/cicero.png  used on input line 32.
 (pdftex.def)             Requested size: 298.75264pt x 301.41382pt.
  [26 <./Fig/Modif_exp/cicero.png>] [27]
-<Fig/Modif_exp/efficacité_refroidissement.pdf, id=3364, 629.53578pt x 482.6616
-5pt>
-File: Fig/Modif_exp/efficacité_refroidissement.pdf Graphic file (type pdf)
-<use Fig/Modif_exp/efficacité_refroidissement.pdf>
-Package pdftex.def Info: Fig/Modif_exp/efficacité_refroidissement.pdf  used on
- input line 85.
-(pdftex.def)             Requested size: 341.43437pt x 261.77495pt.
- [28 <./Fig/Modif_exp/efficacité_refroidissement.pdf>]
-<Fig/Modif_exp/levitation_etats.pdf, id=3381, 529.10655pt x 366.34715pt>
+<Fig/Modif_exp/levitation_refroidissement.pdf, id=3364, 470.89154pt x 229.2899p
+t>
+File: Fig/Modif_exp/levitation_refroidissement.pdf Graphic file (type pdf)
+<use Fig/Modif_exp/levitation_refroidissement.pdf>
+Package pdftex.def Info: Fig/Modif_exp/levitation_refroidissement.pdf  used on 
+input line 85.
+(pdftex.def)             Requested size: 426.79135pt x 207.82143pt.
+ [28] [29 <./Fig/Modif_exp/levitation_refroidissement.pdf>]
+<Fig/Modif_exp/levitation_etats.pdf, id=3433, 529.10655pt x 366.34715pt>
 File: Fig/Modif_exp/levitation_etats.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/levitation_etats.pdf>
 Package pdftex.def Info: Fig/Modif_exp/levitation_etats.pdf  used on input line
  124.
 (pdftex.def)             Requested size: 362.77525pt x 251.18665pt.
- [29] [30 <./Fig/Modif_exp/levitation_etats.pdf>]
-<Fig/Modif_exp/optique_1070.pdf, id=3406, 434.32275pt x 275.84627pt>
+ [30 <./Fig/Modif_exp/levitation_etats.pdf>] [31]
+<Fig/Modif_exp/optique_1070.pdf, id=3459, 434.32275pt x 275.84627pt>
 File: Fig/Modif_exp/optique_1070.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/optique_1070.pdf>
 Package pdftex.def Info: Fig/Modif_exp/optique_1070.pdf  used on input line 196
 .
 (pdftex.def)             Requested size: 384.1096pt x 243.95766pt.
- [31]
-[32 <./Fig/Modif_exp/optique_1070.pdf>] [33]) (main.bbl [34] [35] [36
+
+[32 <./Fig/Modif_exp/optique_1070.pdf>]
+<Fig/Modif_exp/expansion_dimple.pdf, id=3651, 461.32204pt x 320.72536pt>
+File: Fig/Modif_exp/expansion_dimple.pdf Graphic file (type pdf)
+<use Fig/Modif_exp/expansion_dimple.pdf>
+Package pdftex.def Info: Fig/Modif_exp/expansion_dimple.pdf  used on input line
+ 223.
+(pdftex.def)             Requested size: 341.43437pt x 237.37708pt.
+ [33 <./Fig/Modif_exp/expansion_dimple.pdf>]
+
+LaTeX Warning: Reference `eq:profondeur_piege_optique' on page 34 undefined on 
+input line 262.
+
+[34]
+<Fig/Modif_exp/frequences_piege_optique.pdf, id=3675, 562.97038pt x 209.03256pt
+>
+File: Fig/Modif_exp/frequences_piege_optique.pdf Graphic file (type pdf)
+<use Fig/Modif_exp/frequences_piege_optique.pdf>
+Package pdftex.def Info: Fig/Modif_exp/frequences_piege_optique.pdf  used on in
+put line 266.
+(pdftex.def)             Requested size: 426.79135pt x 158.4677pt.
+) (main.bbl [35 <./Fig/Modif_exp/frequences_piege_optique.pdf>] [36
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
@@ -1600,14 +1620,17 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 145.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 29830 strings out of 480930
- 565922 string characters out of 2900699
- 950514 words of memory out of 3000000
- 44579 multiletter control sequences out of 15000+200000
- 689928 words of font info for 266 fonts, out of 3000000 for 9000
+ 29848 strings out of 480930
+ 566513 string characters out of 2900699
+ 951319 words of memory out of 3000000
+ 44590 multiletter control sequences out of 15000+200000
+ 690094 words of font info for 268 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,12n,62p,1604b,940s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
@@ -1648,9 +1671,9 @@ KTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Nop/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Nop/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nop/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (38 pages, 2825621 bytes).
+Output written on main.pdf (38 pages, 7877804 bytes).
 PDF statistics:
- 3873 PDF objects out of 4296 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
- 57655 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 3929 PDF objects out of 4296 (max. 8388607)
+ 189 named destinations out of 1000 (max. 500000)
+ 57665 words of extra memory for PDF output out of 61914 (max. 10000000)
 
