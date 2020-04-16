@@ -14,7 +14,8 @@
 \usepackage{siunitx}
 
 \usepackage{gensymb}
-%\usepackage{colortbl}
+\usepackage{subfiles}
+
 \title{Transport quantique en milieu désordonné: une tarte à la crème pour Philippe Etchebest}
 
 \author{Baptiste LECOUTRE}
@@ -115,8 +116,8 @@
 %\stopcontents
 
 %\part{Transport d'atomes ultrafroids dans un speckle} 
-\input{Chapters/BEC_manip.tex}
-\input{Chapters/Modif_exp.tex}
+\subfile{Chapters/BEC_manip.tex}
+\subfile{Chapters/Modif_exp.tex}
 %\input{Chapters/Speckle.tex}
 %\stopcontents
 
