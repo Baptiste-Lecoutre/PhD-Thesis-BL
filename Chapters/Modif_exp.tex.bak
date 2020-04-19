@@ -60,7 +60,7 @@ En conséquence, nous avons réalisé une nouvelle interface graphique permettan
 \item[\textendash] Programmation en début de cycle des sources radio-fréquence utilisées pour l'évaporation radio-fréquence et la manipulation de l'état de spin dans la chambre de science\footnote{Cette programmation en début de cycle est rendue possible grâce à l'utilisation d'un \emph{FileSystemWatcher} provenant d'une bibliothèque .NET utilisable dans Matlab. Un fichier texte contenant les données du cycle en cours est généré en début de séquence par le serveur que nous avons développé, déclenchant alors automatiquement sa lecture par l'interface.}.
 \item[\textendash] Enregistrement de l'ensemble des données et des paramètres du cycle pour un futur traitement.
 \end{itemize}
-L'utilisation de cette nouvelle interface a donc permit de centraliser les données générées par l'acquisition d'images en n'ayant plus besoin d'un ordinateur supplémentaire (et de la synchronisation associée). 
+L'utilisation de cette nouvelle interface a donc permit de centraliser les données générées par l'acquisition d'images en n'ayant plus besoin d'un ordinateur supplémentaire (et de la synchronisation associée). De plus, ce changement a permit de s'affranchir de plusieurs canaux de communication, les libérant ainsi pour le contrôle d'instruments. Enfin, l'utilisation et le fonctionnement de cette nouvelle interface Matlab sont simplifiés, permettant d'opérer avec une plus grande facilité les changements à venir sur l'expérience.
 
 
 
@@ -74,7 +74,7 @@ L'utilisation de cette nouvelle interface a donc permit de centraliser les donn�
 
 \section{Calibration de la lévitation magnétique}
 \label{sc:levitation}
-Comme présenté partie \ref{sc:chambre_science}, la lévitation magnétique est un élément essentiel de notre expérience. En plus d'être un pré-requis pour l'étude de la localisation d'Anderson à trois dimensions, celle-ci nous permet de manière générale d'obtenir des échantillons particulièrement froids. Son bon fonctionnement est donc une priorité pour notre expérience.
+Comme présenté partie \ref{sc:chambre_science}, la lévitation magnétique est un élément essentiel de notre expérience. En plus d'être un pré-requis pour l'étude de la localisation d'Anderson à trois dimensions, celle-ci nous permet de manière plus générale d'obtenir des échantillons particulièrement froids. Son bon fonctionnement est donc une priorité pour notre expérience.
 
 Malheureusement, une avarie dans le circuit de refroidissement de la lévitation a conduit à son démontage. Les modifications apportées avant remontage ayant pu conduire à une modification du comportement magnétique du système, une nouvelle calibration des champs générés a été menée.
 
