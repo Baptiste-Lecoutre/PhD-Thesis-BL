@@ -5,6 +5,8 @@
 \newcommand{\gftilde}[0]{\widetilde{g}_{\mathrm{F},m_{\mathrm{F}}}}
 \newcommand{\mf}[0]{m_{\mathrm{F}}}
 \newcommand{\mub}[0]{\mu_{\text{B}}}
+\newcommand{\deltahf}[0]{\Delta_{\mathrm{hf}}}
+\newcommand{\magicB}[0]{B_0^*}
 
 \begin{document}
 
@@ -24,13 +26,13 @@ De manière générale, les ordinateurs sont les éléments du dispositif avec l
 
 \subsection{Contrôle de l'expérience: passage à la suite Cicero}
 \label{sc:cicero}
-Une modification majeure a été le changement du séquenceur de l'expérience. Le précédent système développé par André Villing, ingénieur électronicien du laboratoire maintenant retraité, était piloté de manière programmatique depuis le logiciel Matlab. À des fins de maintenance, le nouveau séquenceur est d'origine commerciale et est basé sur du matériel \emph{National Instruments}:
+Une modification majeure a été le changement du séquenceur de l'expérience. Le précédent système développé par André Villing, ingénieur électronicien du laboratoire maintenant retraité, était piloté de manière programmatique depuis le logiciel Matlab. À des fins de maintenance ansi que de meilleures performances, le nouveau séquenceur est d'origine commerciale et est basé sur du matériel \emph{National Instruments}:
 \begin{itemize}
 \item[\textendash] Un ordinateur \emph{PXIe-8840} dans un chassis \emph{PXIe-1078} qui alimente aussi les cartes de génération de signaux.
 \item[\textendash] Deux cartes numériques \emph{PXIe-6535} de 32 voies chacune.
 \item[\textendash] Deux cartes analogiques \emph{PXIE-6738} de 32 voies $\pm10$V chacune et codées sur 16 bits.
 \end{itemize}
-En addition, un circuit logique programmable (\emph{FPGA}) \emph{XEM3001} provenant de \emph{Opal-Kelly} permet de générer une horloge de fréquence variable pour le matériel \emph{National Instruments}. La justification de cette horloge de fréquence variable réside dans la grande variabilité de la durée des différentes étapes d'une expérience d'atomes ultra-froids: l'expérience peut rester dans le même état plusieurs secondes (pendant le chargement d'un MOT par exemple) tout comme elle doit pouvoir changer d'état pendant quelques microsecondes seulement (pendant l'imagerie par exemple). Une séquence durant typiquement 30s discrétisée toutes les microsecondes saturerait alors la mémoire de l'ordinateur. 
+En addition, un circuit logique programmable (\emph{FPGA}) \emph{XEM3001} provenant de \emph{Opal-Kelly} permet de générer une horloge de fréquence variable pour le matériel \emph{National Instruments}. La justification de cette horloge de fréquence variable réside dans la grande variabilité de la durée des différentes étapes d'une expérience d'atomes ultra-froids: l'expérience peut rester dans le même état plusieurs secondes (pendant le chargement d'un MOT par exemple) tout comme elle doit pouvoir changer d'état pendant quelques microsecondes seulement (pendant l'imagerie par exemple). Une séquence durant typiquement 30s discrétisée toutes les microsecondes pour un minimum d'une cinquantaine de voies saturerait alors la mémoire de l'ordinateur. 
 
 L'écriture de la séquence se fait à présent grâce à la suite \emph{Cicero Word Generator}, développée au \emph{MIT} dans le groupe de Wolfgang Ketterle \citep{keshet2013distributed}. Cette suite comporte deux logiciels qui fonctionnent selon une architecture client/serveur. Le client \emph{Cicero} est une interface graphique dans laquelle l'utilisateur écrit une séquence sous la forme d'une suite d'étapes comme illustré figure \ref{fig:cicero}. Au lancement d'un cycle expérimental, \emph{Cicero} envoie les données de séquence au serveur \emph{Atticus} qui calcule alors les consignes des cartes ainsi que l'horloge variable à appliquer \citep{keshet2008cicero}.
 
@@ -53,12 +55,12 @@ En conséquence, nous avons réalisé une nouvelle interface graphique permettan
 \begin{itemize}
 \item[\textendash] Gestion des trois caméras, avec possibilité de faire l'acquisition simultanée sur les deux caméras de la chambre de science\footnote{Un ordinateur supplémentaire était nécessaire pour le contrôle de la caméra \textit{bottom}, pilotée via une autre interface. Il fallait donc synchroniser ces deux ordinateurs qui enregistraient chacun leurs fichiers de données.}.
 \item[\textendash] Imagerie par absorption et par fluorescence.
-\item[\textendash] Calcul des grandeurs physiques pour chaque image.
+\item[\textendash] Calcul en direct des grandeurs physiques pour chaque image.
 \item[\textendash] Lecture des données de Cicero récupérées grâce au serveur que nous avons développé.
 \item[\textendash] Programmation en début de cycle des sources radio-fréquence utilisées pour l'évaporation radio-fréquence et la manipulation de l'état de spin dans la chambre de science\footnote{Cette programmation en début de cycle est rendue possible grâce à l'utilisation d'un \emph{FileSystemWatcher} provenant d'une bibliothèque .NET utilisable dans Matlab. Un fichier texte contenant les données du cycle en cours est généré en début de séquence par le serveur que nous avons développé, déclenchant alors automatiquement sa lecture par l'interface.}.
 \item[\textendash] Enregistrement de l'ensemble des données et des paramètres du cycle pour un futur traitement.
 \end{itemize}
-L'utilisation de cette nouvelle interface a donc permit de centraliser les données générées par l'acquisition d'images en n'ayant plus besoin d'un ordinateur supplémentaire (et de la synchronisation associée). 
+L'utilisation de cette nouvelle interface a donc permit de centraliser les données générées par l'acquisition d'images en n'ayant plus besoin d'un ordinateur supplémentaire (et de la synchronisation associée). De plus, ce changement a permit de s'affranchir de plusieurs canaux de communication, les libérant ainsi pour le contrôle d'instruments. Enfin, l'utilisation et le fonctionnement de cette nouvelle interface Matlab sont simplifiés, permettant d'opérer avec une plus grande facilité les changements à venir sur l'expérience.
 
 
 
@@ -125,7 +127,7 @@ Cette dépendance est illustrée figure \ref{fig:levitation_etats} pour les diff
 \item[\textendash] Les états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont lévités pour le même gradient à bas champ.
 \item[\textendash] L'état $\etatF{1}{-1}$ ne peut être lévité qu'à bas champ, le gradient nécessaire pour contrer la gravité augmentant avec le champ magnétique.
 \end{itemize}
-Plusieurs possibilités expérimentales s'offrent alors. La première provient de l'état $\etatF{2}{-2}$ qui peut être lévité tout en gardant la valeur du champ de biais comme un dégré de liberté, on peut alors réaliser des lévitations très décomprimées. Il s'agit de l'approche utilisée pour la mesure du temps de diffusion élastique, présentée chapitre \ref{ch:TauS_PRL}. Une autre possibilité est que les états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ peuvent coexister dans le champ de lévitation, on peut ainsi utiliser l'état interne de l'atome comme degré de liberté tout en étant lévité. Cette stratégie a par exemple été utilisée pour la mesure des fonctions spectrales \citep{volchkov2018measurement}.
+Plusieurs stratégies expérimentales de lévitation s'offrent alors. La première provient de l'état $\etatF{2}{-2}$ qui peut être lévité tout en gardant la valeur du champ de biais comme un dégré de liberté, on peut alors réaliser des lévitations très décomprimées. Il s'agit de l'approche utilisée pour la mesure du temps de diffusion élastique, présentée chapitre \ref{ch:TauS_PRL}. Une autre possibilité est que les états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ peuvent coexister dans le champ de lévitation, on peut ainsi utiliser l'état interne de l'atome comme degré de liberté tout en étant lévité. Cette stratégie a par exemple été utilisée pour la mesure des fonctions spectrales \citep{volchkov2018measurement}.
 
 \begin{figure}
 \centering
@@ -143,14 +145,9 @@ Plusieurs possibilités expérimentales s'offrent alors. La première provient d
 
 
 \subsection{Calibration par radio-fréquences}
-Cette dernière stratégie rend possible l'approche novatrice de désordre dépendant de l'état interne, qui impose de travailler à un \emph{biais magique} $B_0^*=3.229G$ pour lequel les susceptibilités magnétiques des états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont identiques \citep{denechaud2018vers}. La valeur précise de ce champ magique demande une connaissance fine des caractéristiques du dispositif de génération des champs magnétiques de l'expérience.
+Cette dernière stratégie rend possible l'approche novatrice de désordre dépendant de l'état interne, qui impose de travailler à un \emph{biais magique} $\magicB=3.229G$ pour lequel les susceptibilités magnétiques des états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont identiques \citep{denechaud2018vers}. La valeur précise de ce champ magique demande une connaissance fine des caractéristiques du dispositif de génération des champs magnétiques de l'expérience.
 
-La calibration des champ magnétiques de biais ont alors été effectuées par spectroscopie radio-fréquence. 
-Possible car les déplacements lumineux dans l'ODT sont identiques pour les états $\etatF{1}{}$ et $\etatF{2}{}$ étant donné le désaccord du faisceau de pigégage.
-
-caractérisation complète du champ rayonné par les 2 biais et les deux compensations horizontales. possibilité d'extraire le champ naturellement présent. Utilisation des 7 sept transitions. 
-
-imager uniquement les atomes dans $\etatF{2}{}$, ils se trouvent à l'origine dans $\etatF{1}{}$.
+À ces fins, la mesure précise de ces champs magnétiques a été effectuée par spectroscopie radio-fréquence. Son principe repose sur le transfert de population entre l'état d'origine $\etatF{1}{-1}$ et les états $\lbrace \etatF{2}{-2},\etatF{2}{-1},\etatF{2}{0} \rbrace$ accessibles, dont la séparation en énergie dépend du champ magnétique. Ainsi, lorsque la radio-fréquence satisfait la condition de résonance $\nu_{\mathrm{RF}}=\deltahf + \delta \nu (B)$ avec $\delta \nu (B)$ le décalage par effet Zeeman, une partie des atomes sera transférée dans l'un des sous-états de $\etatF{2}{}$. Le principe de cette spectroscopie est illustré figure \ref{fig:calibration_RF}.
 
 \begin{figure}
 \centering
@@ -166,8 +163,24 @@ imager uniquement les atomes dans $\etatF{2}{}$, ils se trouvent à l'origine da
 
 
 
+imager uniquement les atomes dans $\etatF{2}{}$, ils se trouvent à l'origine dans $\etatF{1}{}$.
+Possible car les déplacements lumineux dans l'ODT sont identiques pour les états $\etatF{1}{}$ et $\etatF{2}{}$ étant donné le désaccord du faisceau de pigégage.
 
-\subsection{Calibration par oscillations}
+
+caractérisation complète du champ rayonné par les 2 biais et les deux compensations horizontales. possibilité d'extraire le champ naturellement présent. Utilisation des 7 sept transitions. 
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Etude du piégeage}
 \label{sc:oscillations_levitation}
 Il est primordial que les atomes se trouvent au centre de la lévitation car il s'agit de l'endroit où le champ magnétique est le plus homogène, et cette condition est d'autant plus importante alors nous nous orientons vers des lévitations à bas champ. En effet, c'est à bas champ que le piégeage de la lévitation est le plus important, c'est à dire que le champ est le plus inhomogène. 
 

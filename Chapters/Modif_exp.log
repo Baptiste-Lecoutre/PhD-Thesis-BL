@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.12)  16 APR 2020 18:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.12)  19 APR 2020 13:03
 entering extended mode
 **./Modif_exp.tex
 (Modif_exp.tex
@@ -1172,24 +1172,24 @@ Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )) (Modif_exp.aux)
 \openout1 = `Modif_exp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 9.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1250,29 +1250,29 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 ) ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \degres on input line 9.
-LaTeX Info: Redefining \dots on input line 9.
+LaTeX Info: Redefining \degres on input line 11.
+LaTeX Info: Redefining \dots on input line 11.
 
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 9.
+(french.ldf)                BEFORE babel/french; reported on input line 11.
 
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 9.
+(french.ldf)             reported on input line 11.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 9.
-LaTeX Info: Redefining \up on input line 9.
+(french.ldf)             reported on input line 11.
+LaTeX Info: Redefining \up on input line 11.
 \c@lstlisting=\count366
-LaTeX Info: Redefining \microtypecontext on input line 9.
+LaTeX Info: Redefining \microtypecontext on input line 11.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 9.
+LaTeX Info: Redefining \showhyphens on input line 11.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1282,7 +1282,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box77
-Package hyperref Info: Link coloring ON on input line 9.
+Package hyperref Info: Link coloring ON on input line 11.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty
 "
@@ -1298,9 +1298,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count367
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1312,63 +1312,64 @@ Dictionary: translator-basic-dictionary, Language: English
 eviations.cfg"
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \celsius on input line 9.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 9.
+LaTeX Info: Redefining \celsius on input line 11.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 11.
+
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 9.
-Package gensymb Info: Using \upOmega for \ohm on input line 9.
+LaTeX Info: Redefining \ohm on input line 11.
+Package gensymb Info: Using \upOmega for \ohm on input line 11.
 
 Package gensymb Warning: Not defining \micro.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
-.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+1.
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
-.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+1.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-9.
+11.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-9.
+11.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 9.
+(Font)              <10.95> on input line 11.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 9.
+(Font)              <8> on input line 11.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 9.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 9
-.
+(Font)              <6> on input line 11.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+1.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-ptm.cfg
 "
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msa.cfg
 "
@@ -1379,7 +1380,7 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-9.
+11.
  ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1388,7 +1389,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-9.
+11.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1400,7 +1401,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 Chapitre 1.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-1.
+3.
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1409,17 +1410,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 18.
+(Font)              <12> on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 18.
+(Font)              <9> on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 18.
+(Font)              <7> on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 
 [1
 
@@ -1427,206 +1428,181 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 {C:/Users/Nop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
 Package natbib Warning: Citation `keshet2013distributed' on page 2 undefined on
- input line 35.
+ input line 37.
 
 
 Package natbib Warning: Citation `keshet2008cicero' on page 2 undefined on inpu
-t line 35.
+t line 37.
 
 <../Fig/Modif_exp/cicero.png, id=18, 510.40688pt x 514.92375pt>
 File: ../Fig/Modif_exp/cicero.png Graphic file (type png)
 <use ../Fig/Modif_exp/cicero.png>
-Package pdftex.def Info: ../Fig/Modif_exp/cicero.png  used on input line 39.
+Package pdftex.def Info: ../Fig/Modif_exp/cicero.png  used on input line 41.
 (pdftex.def)             Requested size: 298.75264pt x 301.41382pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
 Package natbib Warning: Citation `keshet2013distributed' on page 2 undefined on
- input line 40.
+ input line 42.
 
 
 Package natbib Warning: Citation `keshet2013distributed' on page 2 undefined on
- input line 40.
+ input line 42.
 
+[2 <../Fig/Modif_exp/cicero.png>]
 
-Underfull \vbox (badness 5260) has occurred while \output is active []
-
- [2 <../Fig/Modif_exp/cicero.png>]
-
-LaTeX Warning: Reference `sc:imagerie' on page 3 undefined on input line 50.
+LaTeX Warning: Reference `sc:imagerie' on page 3 undefined on input line 52.
 
 
 LaTeX Warning: Reference `sc:chambre_science' on page 3 undefined on input line
- 75.
+ 77.
 
 [3]
 
 Package natbib Warning: Citation `bernard2010transport' on page 4 undefined on 
-input line 86.
+input line 88.
 
 <../Fig/Modif_exp/levitation_refroidissement.pdf, id=49, 470.89154pt x 229.2899
 pt>
 File: ../Fig/Modif_exp/levitation_refroidissement.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/levitation_refroidissement.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/levitation_refroidissement.pdf  used 
-on input line 92.
+on input line 94.
 (pdftex.def)             Requested size: 426.79135pt x 207.82143pt.
 
 LaTeX Warning: Reference `eq:theoreme_wing' on page 4 undefined on input line 1
-14.
+16.
 
 
-LaTeX Warning: Reference `eq:Breit-Rabi' on page 4 undefined on input line 114.
+LaTeX Warning: Reference `eq:Breit-Rabi' on page 4 undefined on input line 116.
 
 
 [4] [5 <../Fig/Modif_exp/levitation_refroidissement.pdf>]
 
-LaTeX Warning: Reference `ch:TauS_PRL' on page 6 undefined on input line 128.
+LaTeX Warning: Reference `ch:TauS_PRL' on page 6 undefined on input line 130.
 
 
 Package natbib Warning: Citation `volchkov2018measurement' on page 6 undefined 
-on input line 128.
-
-
-Overfull \hbox (31.97375pt too wide) in paragraph at lines 128--129
-\T1/lmr/m/n/10.95 (-20) Plusieurs pos-si-bi-li-tés ex-pé-ri-men-tales s'offrent
- alors. La pre-mière pro-vient de l'état $[]$
- []
+on input line 130.
 
 <../Fig/Modif_exp/levitation_etats.pdf, id=121, 529.10655pt x 366.34715pt>
 File: ../Fig/Modif_exp/levitation_etats.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/levitation_etats.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/levitation_etats.pdf  used on input l
-ine 132.
+ine 134.
 (pdftex.def)             Requested size: 341.43437pt x 236.40668pt.
 
 Package natbib Warning: Citation `denechaud2018vers' on page 6 undefined on inp
-ut line 146.
+ut line 148.
 
 [6] [7 <../Fig/Modif_exp/levitation_etats.pdf>]
 
 LaTeX Warning: Reference `sc:chambre_science' on page 8 undefined on input line
- 223.
+ 236.
 
 [8]
-<../Fig/Modif_exp/optique_1070.pdf, id=155, 434.32275pt x 275.84627pt>
+<../Fig/Modif_exp/optique_1070.pdf, id=156, 434.32275pt x 275.84627pt>
 File: ../Fig/Modif_exp/optique_1070.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/optique_1070.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/optique_1070.pdf  used on input line 
-236.
+249.
 (pdftex.def)             Requested size: 384.1096pt x 243.95766pt.
 
 
 Package natbib Warning: Citation `muller2015coherent' on page 9 undefined on in
-put line 237.
+put line 250.
 
 
 Package natbib Warning: Citation `muller2015coherent' on page 9 undefined on in
-put line 237.
+put line 250.
 
-
-Underfull \vbox (badness 3701) has occurred while \output is active []
-
- [9 <../Fig/Modif_exp/optique_1070.pdf>]
+[9] [10 <../Fig/Modif_exp/optique_1070.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-59.
+72.
 
 ("C:\Users\Nop\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<../Fig/Modif_exp/expansion_dimple.pdf, id=343, 461.32204pt x 320.72536pt>
+<../Fig/Modif_exp/expansion_dimple.pdf, id=349, 461.32204pt x 320.72536pt>
 File: ../Fig/Modif_exp/expansion_dimple.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/expansion_dimple.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/expansion_dimple.pdf  used on input l
-ine 263.
+ine 276.
 (pdftex.def)             Requested size: 341.43437pt x 237.37708pt.
 
-[10]
+[11 <../Fig/Modif_exp/expansion_dimple.pdf>]
 
-Package natbib Warning: Citation `muller2015coherent' on page 11 undefined on i
-nput line 302.
+Package natbib Warning: Citation `muller2015coherent' on page 12 undefined on i
+nput line 315.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 302.
+(Font)              <5> on input line 315.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 302.
-[11 <../Fig/Modif_exp/expansion_dimple.pdf>]
-<../Fig/Modif_exp/frequences_piege_optique.pdf, id=369, 562.97038pt x 209.03256
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 315.
+<../Fig/Modif_exp/frequences_piege_optique.pdf, id=366, 562.97038pt x 209.03256
 pt>
 File: ../Fig/Modif_exp/frequences_piege_optique.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/frequences_piege_optique.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/frequences_piege_optique.pdf  used on
- input line 306.
+ input line 319.
 (pdftex.def)             Requested size: 426.79135pt x 158.4677pt.
-
+[12]
 
 Package natbib Warning: There were undefined citations.
 
-[12 <../Fig/Modif_exp/frequences_piege_optique.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
+[13 <../Fig/Modif_exp/frequences_piege_optique.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 336.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 336.
  (Modif_exp.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 323.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 336.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 336.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 323.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 336.
  ) 
 Here is how much of TeX's memory you used:
- 29542 strings out of 480930
- 560850 string characters out of 2900699
+ 29544 strings out of 480930
+ 560841 string characters out of 2900699
  945788 words of memory out of 3000000
- 44510 multiletter control sequences out of 15000+200000
- 683790 words of font info for 217 fonts, out of 3000000 for 9000
+ 44512 multiletter control sequences out of 15000+200000
+ 683873 words of font info for 218 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,75p,1537b,900s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.10} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.8} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.en
-c}{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.
-enc}{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.en
-c}{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
-{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{
-C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc
-}<C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.p
-fb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.
-pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbxi
-10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-csc10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmex10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-lm/lmmi10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmmi7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmmi8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmmi9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmr10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmr6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmr7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmr8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmr9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmri10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/lm/lmri9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmss10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmssbx10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmsy10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmsy7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmsy8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/lm/lmsy9.pfb>
-Output written on Modif_exp.pdf (12 pages, 5747966 bytes).
+{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.
+enc}{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
+y.enc}{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.
+enc}{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
+c}{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc
+}{C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.e
+nc}<C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10
+.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx
+9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmb
+xi10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmcsc10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+lm/lmex10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmmi10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmmi7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmmi8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmmi9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmr10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmr6.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmr7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmr8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmr9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmri10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmri9.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmss10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmssbx10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/lm/lmsy10.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/lm/lmsy7.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Nop/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/lm/lmsy9.pfb>
+Output written on Modif_exp.pdf (13 pages, 5750736 bytes).
 PDF statistics:
- 520 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
+ 523 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
  56971 words of extra memory for PDF output out of 61914 (max. 10000000)
 
