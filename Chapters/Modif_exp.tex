@@ -7,7 +7,8 @@
 \newcommand{\mub}[0]{\mu_{\text{B}}}
 \newcommand{\deltahf}[0]{\Delta_{\mathrm{hf}}}
 \newcommand{\magicB}[0]{B_0^*}
-
+\usepackage{siunitx}
+\DeclareSIUnit\gauss{G}
 \begin{document}
 
 \chapter{Mises à jour de l'expérience}
@@ -18,7 +19,7 @@ Nous avons vu dans le chapitre précédent comment, expérimentalement, nous pou
 Dans ce nouveau chapitre, nous nous pencherons sur les modifications apportées à l'expérience au cours de ma thèse. Dans la première partie, nous parlerons d'informatique et plus particulièrement du contrôle de l'expérience. Dans un second temps, nous caractériserons la lévitation magnétique suite à une avarie sur le circuit de refroidissement à eau. Ensuite, nous calibrerons le piège dipolaire dont le laser source a été changé. Pour terminer, nous discuterons de l'amélioration de l'évaporation optique permise par les changements précédents.
 
 \section{Contributions au système informatique de l'expérience}
-Souvent absente des présentations des expériences, l'informatique occupe pourtant une place primordiale dans les dispositifs d'atomes ultra-froids. Le contrôle simultané et de manière séquentielle des différents équipements de l'expérience, souvent précis à la micro-seconde, n'est possible qu'à l'aide d'un ordinateur disposant de sorties de tension controllables. Cet ordinateur, appelé \emph{séquenceur}, constitue le cerveau de l'ensemble du dispositif et contrôle tous les éléments nécessaires à la manipulation des atomes.
+Souvent absente des présentations des expériences, l'informatique occupe pourtant une place primordiale dans les dispositifs d'atomes ultra-froids. Le contrôle simultané et de manière séquentielle des différents équipements de l'expérience, souvent précis à la micro-seconde, n'est possible qu'à l'aide d'un ordinateur disposant de sorties de tension contrôlables. Cet ordinateur, appelé \emph{séquenceur}, constitue le cerveau de l'ensemble du dispositif et contrôle tous les éléments nécessaires à la manipulation des atomes.
 
 Le second aspect où l'informatique se rend indispensable réside dans l'acquisition et le traitement d'images. Le contrôle des caméras et l'extraction des quantités physiques à partir d'images expérimentales nécessite l'utilisation d'un ordinateur et d'au moins un logiciel adapté. 
 
@@ -156,19 +157,46 @@ Cette dernière stratégie rend possible l'approche novatrice de désordre dépe
 \label{fig:calibration_RF}
 \end{figure}
 
+Cette mesure a été effectuée dans le piège dipolaire croisé, et étant donné le très grand désaccord du faisceau de piégeage, on peut considérer que les déplacements lumineux induits sur les états $\etatF{1}{}$ et $\etatF{2}{}$ sont identique. La séparation entre les états considérés n'en sera donc pas affectée. Il est ensuite possible d'imager sélectivement les atomes dans l'état $\etatF{2}{}$ en coupant la partie du faisceau d'imagerie provenant du laser repompeur.
 
+En relevant le spectre des transitions radio-fréquences, on accède ainsi à la valeur du champ magnétique au niveau des atomes à l'aide du décalage Zeeman:
+\begin{equation}
+\delta \nu (B)\simeq -(m_{\mathrm{F_2}} - m_{\mathrm{F_1}} ) \times \SI{0.7}{\mega\hertz\per\gauss} \times B
+\label{eq:levitation_RF}
+\end{equation}
+En réalisant cette opération pour différents courants appliqués aux bobines générant les champs de biais, on peut ainsi calibrer les champs magnétiques de biais:
+\begin{equation}
+B=\sqrt{(B_{\mathrm{x}}+b_{\mathrm{0x}})^2+(B_{\mathrm{y}}+b_{\mathrm{0y}})^2+(B_{\mathrm{z}}+b_{\mathrm{0z}})^2}
+\end{equation}
+où $B_{\mathrm{i}}=c_{\mathrm{i}} I_{\mathrm{i}}$ est la composante du champ rayonné dans la direction $\vec{i}$ qui dépend du courant appliqué $I_{\mathrm{i}}$ via le facteur de calibration $c_{\mathrm{i}}$. $b_{\mathrm{0i}}$ est la composante du champ rémanent dans cette même direction, souvent négligeable devant le champ rayonné pour des courants usuels. Cependant à bas courant, on peut en déduire toutes les composantes du champ naturellement présent dans la cellule. 
 
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{ |c|c|}
+\hline
+\textbf{Grandeur} & \textbf{Valeur} \\
+\hline
+Calibration Biais A & valeur \\
+\hline
+Calibration Biais B & valeur \\
+\hline
+Calibration Compensation X & valeur \\
+\hline
+Calibration Compensation Z & valeur \\
+\hline
+Champ rémanent $b_{\mathrm{0x}}$ & valeur \\
+\hline
+Champ rémanent $b_{\mathrm{0y}}$ & valeur \\
+\hline
+Champ rémanent $b_{\mathrm{0z}}$ & valeur \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Calibration des champs de biais dans la chambre de science.}
+\label{tb:levitation_RF}
+\end{table}
 
-
-
-
-
-imager uniquement les atomes dans $\etatF{2}{}$, ils se trouvent à l'origine dans $\etatF{1}{}$.
-Possible car les déplacements lumineux dans l'ODT sont identiques pour les états $\etatF{1}{}$ et $\etatF{2}{}$ étant donné le désaccord du faisceau de pigégage.
-
-
-caractérisation complète du champ rayonné par les 2 biais et les deux compensations horizontales. possibilité d'extraire le champ naturellement présent. Utilisation des 7 sept transitions. 
-
+Toutes ces mesures sont en accord avec celles réalisées à l'aide d'un gaussmètre dans la limite d'une déviation de 10\% , que l'on attribue à un défaut de positionnement du gaussmètre, celui-ci ne pouvant être placé à l'intérieur de la cellule.
 
 
 
@@ -182,7 +210,7 @@ caractérisation complète du champ rayonné par les 2 biais et les deux compens
 
 \subsection{Etude du piégeage}
 \label{sc:oscillations_levitation}
-Il est primordial que les atomes se trouvent au centre de la lévitation car il s'agit de l'endroit où le champ magnétique est le plus homogène, et cette condition est d'autant plus importante alors nous nous orientons vers des lévitations à bas champ. En effet, c'est à bas champ que le piégeage de la lévitation est le plus important, c'est à dire que le champ est le plus inhomogène. 
+Il est primordial que les atomes se trouvent au centre de la lévitation car il s'agit de l'endroit où le champ magnétique est le plus homogène, et cette condition est d'autant plus importante alors nous nous orientons vers des lévitations à bas champ. En effet, c'est dans ce régime de bas champ que le piégeage de la lévitation est le plus important.
 
 \paragraph*{Fréquences de la lévitation}
 D'autre part, si les atomes ne sont pas au centre du piège, la réalisation de temps de vol en présence de la lévitation conduira à un mouvement du nuage. Pour l'état $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ en particulier, le centre de masse du nuage décrit des oscillations autour du centre de la lévitation dont les fréquences peuvent être trouvées à l'aide de la norme du champ magnétique \ref{eq:norme_levitation}:
