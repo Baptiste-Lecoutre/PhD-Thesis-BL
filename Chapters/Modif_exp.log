@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  19 APR 2020 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  20 APR 2020 16:46
 entering extended mode
 **./Modif_exp.tex
 (Modif_exp.tex
@@ -1518,7 +1518,7 @@ LaTeX Warning: Reference `ch:TauS_PRL' on page 6 undefined on input line 131.
 Package natbib Warning: Citation `volchkov2018measurement' on page 6 undefined 
 on input line 131.
 
-<../Fig/Modif_exp/levitation_etats.pdf, id=121, 529.10655pt x 366.34715pt>
+<../Fig/Modif_exp/levitation_etats.pdf, id=122, 529.10655pt x 366.34715pt>
 File: ../Fig/Modif_exp/levitation_etats.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/levitation_etats.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/levitation_etats.pdf  used on input l
@@ -1526,81 +1526,93 @@ ine 135.
 (pdftex.def)             Requested size: 341.43437pt x 236.40668pt.
 
 Package natbib Warning: Citation `denechaud2018vers' on page 6 undefined on inp
-ut line 149.
+ut line 147.
 
-[6] [7 <../Fig/Modif_exp/levitation_etats.pdf>] [8]
+<../Fig/Modif_exp/levitation_RF.pdf, id=124, 563.3009pt x 209.90251pt>
+File: ../Fig/Modif_exp/levitation_RF.pdf Graphic file (type pdf)
+<use ../Fig/Modif_exp/levitation_RF.pdf>
+Package pdftex.def Info: ../Fig/Modif_exp/levitation_RF.pdf  used on input line
+ 153.
+(pdftex.def)             Requested size: 426.79135pt x 159.0375pt.
+[6] [7 <../Fig/Modif_exp/levitation_etats.pdf> <../Fig/Modif_exp/levitation_RF.
+pdf
 
-LaTeX Warning: Reference `sc:chambre_science' on page 9 undefined on input line
- 264.
+pdfTeX warning: pdflatex (file ../Fig/Modif_exp/levitation_RF.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>] [8] [9]
 
-[9]
-<../Fig/Modif_exp/optique_1070.pdf, id=164, 434.32275pt x 275.84627pt>
+LaTeX Warning: Reference `sc:chambre_science' on page 10 undefined on input lin
+e 297.
+
+[10]
+<../Fig/Modif_exp/optique_1070.pdf, id=175, 434.32275pt x 275.84627pt>
 File: ../Fig/Modif_exp/optique_1070.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/optique_1070.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/optique_1070.pdf  used on input line 
-277.
+310.
 (pdftex.def)             Requested size: 384.1096pt x 243.95766pt.
 
 
-Package natbib Warning: Citation `muller2015coherent' on page 10 undefined on i
-nput line 278.
+Package natbib Warning: Citation `muller2015coherent' on page 11 undefined on i
+nput line 311.
 
 
-Package natbib Warning: Citation `muller2015coherent' on page 10 undefined on i
-nput line 278.
+Package natbib Warning: Citation `muller2015coherent' on page 11 undefined on i
+nput line 311.
 
-[10 <../Fig/Modif_exp/optique_1070.pdf>]
+[11 <../Fig/Modif_exp/optique_1070.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-00.
+33.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<../Fig/Modif_exp/expansion_dimple.pdf, id=352, 461.32204pt x 320.72536pt>
+<../Fig/Modif_exp/expansion_dimple.pdf, id=363, 461.32204pt x 320.72536pt>
 File: ../Fig/Modif_exp/expansion_dimple.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/expansion_dimple.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/expansion_dimple.pdf  used on input l
-ine 304.
+ine 337.
 (pdftex.def)             Requested size: 341.43437pt x 237.37708pt.
 
-Underfull \vbox (badness 5908) has occurred while \output is active []
+[12 <../Fig/Modif_exp/expansion_dimple.pdf>]
 
- [11 <../Fig/Modif_exp/expansion_dimple.pdf>]
+Package natbib Warning: Citation `muller2015coherent' on page 13 undefined on i
+nput line 376.
 
-Package natbib Warning: Citation `muller2015coherent' on page 12 undefined on i
-nput line 343.
-
-<../Fig/Modif_exp/frequences_piege_optique.pdf, id=367, 562.97038pt x 209.03256
+<../Fig/Modif_exp/frequences_piege_optique.pdf, id=380, 562.97038pt x 209.03256
 pt>
 File: ../Fig/Modif_exp/frequences_piege_optique.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/frequences_piege_optique.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/frequences_piege_optique.pdf  used on
- input line 347.
+ input line 380.
 (pdftex.def)             Requested size: 426.79135pt x 158.4677pt.
-[12]
+[13]
 
 Package natbib Warning: There were undefined citations.
 
-[13 <../Fig/Modif_exp/frequences_piege_optique.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
+[14 <../Fig/Modif_exp/frequences_piege_optique.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
  (Modif_exp.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 364.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 397.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 397.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 364.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
  ) 
 Here is how much of TeX's memory you used:
- 29546 strings out of 480934
- 561769 string characters out of 2899917
- 945689 words of memory out of 3000000
- 44507 multiletter control sequences out of 15000+200000
- 686854 words of font info for 219 fonts, out of 3000000 for 9000
+ 29554 strings out of 480934
+ 562066 string characters out of 2899917
+ 948264 words of memory out of 3000000
+ 44515 multiletter control sequences out of 15000+200000
+ 686594 words of font info for 217 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,75p,1537b,902s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 75i,19n,75p,1537b,1097s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathi
 t.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
 athsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
@@ -1631,9 +1643,9 @@ b><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy7
 .pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
 sy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
 /lmsy9.pfb>
-Output written on Modif_exp.pdf (13 pages, 5755793 bytes).
+Output written on Modif_exp.pdf (14 pages, 5833992 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 57483 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 57488 words of extra memory for PDF output out of 61914 (max. 10000000)
 
