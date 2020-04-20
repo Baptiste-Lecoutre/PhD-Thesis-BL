@@ -7,7 +7,8 @@
 \newcommand{\mub}[0]{\mu_{\text{B}}}
 \newcommand{\deltahf}[0]{\Delta_{\mathrm{hf}}}
 \newcommand{\magicB}[0]{B_0^*}
-
+\usepackage{siunitx}
+\DeclareSIUnit\gauss{G}
 \begin{document}
 
 \chapter{Mises à jour de l'expérience}
@@ -18,7 +19,7 @@ Nous avons vu dans le chapitre précédent comment, expérimentalement, nous pou
 Dans ce nouveau chapitre, nous nous pencherons sur les modifications apportées à l'expérience au cours de ma thèse. Dans la première partie, nous parlerons d'informatique et plus particulièrement du contrôle de l'expérience. Dans un second temps, nous caractériserons la lévitation magnétique suite à une avarie sur le circuit de refroidissement à eau. Ensuite, nous calibrerons le piège dipolaire dont le laser source a été changé. Pour terminer, nous discuterons de l'amélioration de l'évaporation optique permise par les changements précédents.
 
 \section{Contributions au système informatique de l'expérience}
-Souvent absente des présentations des expériences, l'informatique occupe pourtant une place primordiale dans les dispositifs d'atomes ultra-froids. Le contrôle simultané et de manière séquentielle des différents équipements de l'expérience, souvent précis à la micro-seconde, n'est possible qu'à l'aide d'un ordinateur disposant de sorties de tension controllables. Cet ordinateur, appelé \emph{séquenceur}, constitue le cerveau de l'ensemble du dispositif et contrôle tous les éléments nécessaires à la manipulation des atomes.
+Souvent absente des présentations des expériences, l'informatique occupe pourtant une place primordiale dans les dispositifs d'atomes ultra-froids. Le contrôle simultané et de manière séquentielle des différents équipements de l'expérience, souvent précis à la micro-seconde, n'est possible qu'à l'aide d'un ordinateur disposant de sorties de tension contrôlables. Cet ordinateur, appelé \emph{séquenceur}, constitue le cerveau de l'ensemble du dispositif et contrôle tous les éléments nécessaires à la manipulation des atomes.
 
 Le second aspect où l'informatique se rend indispensable réside dans l'acquisition et le traitement d'images. Le contrôle des caméras et l'extraction des quantités physiques à partir d'images expérimentales nécessite l'utilisation d'un ordinateur et d'au moins un logiciel adapté. 
 
@@ -30,7 +31,7 @@ Une modification majeure a été le changement du séquenceur de l'expérience. 
 \begin{itemize}
 \item[\textendash] Un ordinateur \emph{PXIe-8840} dans un chassis \emph{PXIe-1078} qui alimente aussi les cartes de génération de signaux.
 \item[\textendash] Deux cartes numériques \emph{PXIe-6535} de 32 voies chacune.
-\item[\textendash] Deux cartes analogiques \emph{PXIE-6738} de 32 voies $\pm10$V chacune et codées sur 16 bits.
+\item[\textendash] Deux cartes analogiques \emph{PXIE-6738} de 32 voies $\pm \SI{10}{\volt}$ chacune et codées sur 16 bits.
 \end{itemize}
 En addition, un circuit logique programmable (\emph{FPGA}) \emph{XEM3001} provenant de \emph{Opal-Kelly} permet de générer une horloge de fréquence variable pour le matériel \emph{National Instruments}. La justification de cette horloge de fréquence variable réside dans la grande variabilité de la durée des différentes étapes d'une expérience d'atomes ultra-froids: l'expérience peut rester dans le même état plusieurs secondes (pendant le chargement d'un MOT par exemple) tout comme elle doit pouvoir changer d'état pendant quelques microsecondes seulement (pendant l'imagerie par exemple). Une séquence durant typiquement 30s discrétisée toutes les microsecondes pour un minimum d'une cinquantaine de voies saturerait alors la mémoire de l'ordinateur. 
 
@@ -92,7 +93,7 @@ La lévitation magnétique est composée de plusieurs bobines collées dans un s
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{../Fig/Modif_exp/levitation_refroidissement.pdf}
-\caption{\textbf{a: Refroidissement de la lévitation magnétique.} L'un des supports des bobines de la lévitation est maintenant refroidi à l'aide de deux tubes en cuivre le traversant. Auparavant, l'eau circulait directement dans le support dans un circuit percé illustré par les traits rouges. Les tubes en cuivre ont pu être installés en rendant une partie de ce circuit débouchant. \textbf{b: Efficacité de refroidissement.} Ces mesures ont été réalisées dans des conditions proches de véritables cycles expérimentaux. Le même courant a été appliqué pendant 10s sur toutes les bobines à la fin de séquences habituelles. La température a été mesurée après la répétition d'au moins 30 cycles et en s'assurant de sa stabilisation.}
+\caption{\textbf{a: Refroidissement de la lévitation magnétique.} L'un des supports des bobines de la lévitation est maintenant refroidi à l'aide de deux tubes en cuivre le traversant. Auparavant, l'eau circulait directement dans le support dans un circuit percé illustré par les traits rouges. Les tubes en cuivre ont pu être installés en rendant une partie de ce circuit débouchant. \textbf{b: Efficacité de refroidissement.} Ces mesures ont été réalisées dans des conditions proches de véritables cycles expérimentaux. Le même courant a été appliqué pendant \SI{10}{\second} sur toutes les bobines à la fin de séquences habituelles. La température a été mesurée après la répétition d'au moins 30 cycles et en s'assurant de sa stabilisation.}
 \label{fig:refroidissement_levitation}
 \end{figure}
 
@@ -113,7 +114,7 @@ où le terme linéaire est celui qui permet de compenser la gravité.
 
 
 
-Comme mentionné précédemment, il existe une limite pour les fréquences de piégeage (formule \ref{eq:theoreme_wing}) qui décroît avec la norme du champ magnétique. Une stratégie usuelle est donc de créer un champ aussi fort que possible, qui est d'environ 2000G avec notre système. Pour de tels champs, le potentiel magnétique n'est plus décrit par l'effet Zeeman linéaire, mais par la formule de Breit-Rabi \ref{eq:Breit-Rabi}. En revanche, pour une petite zone autour du centre de la lévitation, on peut simplifier l'étude en supposant que le champ change peu $B\simeq B_0$. On peut ainsi définir un facteur de Landé local
+Comme mentionné précédemment, il existe une limite pour les fréquences de piégeage (formule \ref{eq:theoreme_wing}) qui décroît avec la norme du champ magnétique. Une stratégie usuelle est donc de créer un champ aussi fort que possible, qui est d'environ \SI{2000}{\gauss} avec notre système. Pour de tels champs, le potentiel magnétique n'est plus décrit par l'effet Zeeman linéaire, mais par la formule de Breit-Rabi \ref{eq:Breit-Rabi}. En revanche, pour une petite zone autour du centre de la lévitation, on peut simplifier l'étude en supposant que le champ change peu $B\simeq B_0$. On peut ainsi définir un facteur de Landé local
 \begin{equation}
 \gftilde(B_0)=\frac{1}{\mf \mub} \frac{\mathrm{d}E}{\mathrm{d}B}(B_0)
 \end{equation}
@@ -121,11 +122,11 @@ obtenu à l'aide d'un développement limité de la formule de Breit-Rabi. La phy
 \begin{equation}
 b'=\frac{mg}{\mf \gftilde(B_0) \mub}
 \end{equation}
-Cette dépendance est illustrée figure \ref{fig:levitation_etats} pour les différents états internes d'intérêt dans cette thèse: $\etatF{1}{-1}$, $\etatF{2}{+1}$ et $\etatF{2}{-2}$. Notons trois résultats remarquables: 
+Cette dépendance est illustrée figure \ref{fig:levitation_etats} pour les différents états internes d'intérêt dans cette thèse: $\etatF{1}{-1}$, $\etatF{2}{+1}$ et $\etatF{2}{-2}$. Il est possible de déduire de cette dépendance une calibration des bobines de gradient à partir de couples $\lbrace I_{\mathrm{Gradient}}, I_{\mathrm{Biais}} \rbrace$ permettant de compenser précisément la gravité. Le gradient généré s'écrit alors $b'=c_{\mathrm{G}} I_{\mathrm{G}}$ avec le facteur de calibration $c_{\mathrm{G}}=\SI{0.66}{\gauss\per\centi\metre\per\ampere}$. Notons également trois résultats remarquables de la figure \ref{fig:levitation_etats}: 
 \begin{itemize}
 \item[\textendash] L'état $\etatF{2}{-2}$ nécessite un gradient indépendant du biais magnétique pour être lévité.
 \item[\textendash] Les états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont lévités pour le même gradient à bas champ.
-\item[\textendash] L'état $\etatF{1}{-1}$ ne peut être lévité qu'à bas champ, le gradient nécessaire pour contrer la gravité augmentant avec le champ magnétique.
+\item[\textendash] L'état $\etatF{1}{-1}$ ne peut être lévité que pour des champs inférieurs à environ \SI{150}{\gauss}, le gradient nécessaire pour contrer la gravité augmentant avec le champ magnétique.
 \end{itemize}
 Plusieurs stratégies expérimentales de lévitation s'offrent alors. La première provient de l'état $\etatF{2}{-2}$ qui peut être lévité tout en gardant la valeur du champ de biais comme un dégré de liberté, on peut alors réaliser des lévitations très décomprimées. Il s'agit de l'approche utilisée pour la mesure du temps de diffusion élastique, présentée chapitre \ref{ch:TauS_PRL}. Une autre possibilité est que les états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ peuvent coexister dans le champ de lévitation, on peut ainsi utiliser l'état interne de l'atome comme degré de liberté tout en étant lévité. Cette stratégie a par exemple été utilisée pour la mesure des fonctions spectrales \citep{volchkov2018measurement}.
 
@@ -142,19 +143,63 @@ Plusieurs stratégies expérimentales de lévitation s'offrent alors. La premiè
 
 
 
-
-
 \subsection{Calibration par radio-fréquences}
-Cette dernière stratégie rend possible l'approche novatrice de désordre dépendant de l'état interne, qui impose de travailler à un \emph{biais magique} $\magicB=3.229G$ pour lequel les susceptibilités magnétiques des états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont identiques \citep{denechaud2018vers}. La valeur précise de ce champ magique demande une connaissance fine des caractéristiques du dispositif de génération des champs magnétiques de l'expérience.
+Cette dernière stratégie rend possible l'approche novatrice de désordre dépendant de l'état interne, qui impose de travailler à un \emph{biais magique} $\magicB=\SI{3.229}{\gauss}$ pour lequel les susceptibilités magnétiques des états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont identiques \citep{denechaud2018vers}. La valeur précise de ce champ magique demande alors une connaissance fine des caractéristiques du dispositif de génération des champs magnétiques de l'expérience.
 
 À ces fins, la mesure précise de ces champs magnétiques a été effectuée par spectroscopie radio-fréquence. Son principe repose sur le transfert de population entre l'état d'origine $\etatF{1}{-1}$ et les états $\lbrace \etatF{2}{-2},\etatF{2}{-1},\etatF{2}{0} \rbrace$ accessibles, dont la séparation en énergie dépend du champ magnétique. Ainsi, lorsque la radio-fréquence satisfait la condition de résonance $\nu_{\mathrm{RF}}=\deltahf + \delta \nu (B)$ avec $\delta \nu (B)$ le décalage par effet Zeeman, une partie des atomes sera transférée dans l'un des sous-états de $\etatF{2}{}$. Le principe de cette spectroscopie est illustré figure \ref{fig:calibration_RF}.
 
 \begin{figure}
 \centering
-
-\caption{\textbf{Calibration par radio-fréquences}. Principe de la calibration des champs de biais à l'aide de radio-fréquences.}
+\includegraphics[width=\textwidth]{../Fig/Modif_exp/levitation_RF.pdf}
+\caption{\textbf{a: Principe de la spectroscopie radio-fréquences}. En balayant la fréquence de l'onde radio-fréquence appliquée, on adresse les différentes transitions entre sous-états Zeeman de $\protect\etatF{1}{}$ et $\protect\etatF{2}{}$ dont la séparation dépend du champ magnétique. \textbf{b: Spectre radio-fréquence.} Lorsque l'onde radio-fréquence est à résonance, on transfère des atomes initialement dans l'état $\protect\etatF{1}{}$ vers l'état $\protect\etatF{2}{}$. La présence de sept résonances équidistantes indique une dépolarisation partielle du nuage\protect\footnotemark, les règles de sélection imposant $\Delta \mf = \lbrace \pm 1,0 \rbrace$. Le champ magnétique extrait de ce spectre est alors d'environ $\SI{4.4}{\gauss}$.}
 \label{fig:calibration_RF}
 \end{figure}
+\footnotetext{Cette dépolarisation a été confirmée par une analyse Stern-Gerlach.}
+Cette mesure a été effectuée dans le piège dipolaire croisé, et étant donné le très grand désaccord du faisceau de piégeage, on peut considérer que les déplacements lumineux induits sur les états $\etatF{1}{}$ et $\etatF{2}{}$ sont identique. La séparation entre les états considérés n'en sera donc pas affectée. Il est ensuite possible d'imager sélectivement les atomes dans l'état $\etatF{2}{}$ en coupant la partie du faisceau d'imagerie provenant du laser repompeur.
+
+En relevant le spectre des transitions radio-fréquences, on accède ainsi à la valeur du champ magnétique au niveau des atomes à l'aide du décalage Zeeman:
+\begin{equation}
+\delta \nu (B)\simeq -(m_{\mathrm{F_2}} - m_{\mathrm{F_1}} ) \times \SI{0.7}{\mega\hertz\per\gauss} \times B
+\label{eq:levitation_RF}
+\end{equation}
+En réalisant cette opération pour différents courants appliqués aux bobines générant les champs de biais, on peut ainsi calibrer les champs magnétiques de biais:
+\begin{equation}
+B=\sqrt{(B_{\mathrm{x}}+b_{\mathrm{0x}})^2+(B_{\mathrm{y}}+b_{\mathrm{0y}})^2+(B_{\mathrm{z}}+b_{\mathrm{0z}})^2}
+\end{equation}
+où $B_{\mathrm{i}}=c_{\mathrm{i}} I_{\mathrm{i}}$ est la composante du champ rayonné dans la direction $\vec{i}$ qui dépend du courant appliqué $I_{\mathrm{i}}$ via le facteur de calibration $c_{\mathrm{i}}$. $b_{\mathrm{0i}}$ est la composante du champ rémanent dans cette même direction, souvent négligeable devant le champ rayonné pour des courants usuels. Cependant à bas courant, on peut en déduire toutes les composantes du champ naturellement présent dans la cellule. Il est également possible de déterminer un courant seuil pour lequel les alimentations haute-puissance des bobines de lévitation commencent à faire circuler le courant. L'ensemble de ces grandeurs est donné table \ref{tb:levitation_RF}.
+
+\renewcommand{\arraystretch}{1.1}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{ |c|c| }
+\hline
+\textbf{Grandeur} & \textbf{Valeur} \\
+\hline
+Calibration Biais A $c_{\mathrm{A}}$ & \SI{4.704}{\gauss\per\ampere} \\
+\hline
+Calibration Biais B $c_{\mathrm{B}}$ & \SI{6.180}{\gauss\per\ampere} \\
+\hline
+Calibration Compensation X $c_{\mathrm{x}}$ & \SI{4.903}{\gauss\per\ampere} \\
+\hline
+Calibration Compensation Z $c_{\mathrm{z}}$ & \SI{4.969}{\gauss\per\ampere} \\
+\hline
+Courant seuil Biais A $I_{\mathrm{0,A}}$ & $< \SI{1}{\milli\ampere}$ \\
+\hline
+Courant seuil Biais B $I_{\mathrm{0,B}}$ & \SI{0.345}{\ampere} \\
+\hline
+Champ rémanent $b_{\mathrm{0x}}$ & \SI{0.089}{\gauss} \\
+\hline
+Champ rémanent $b_{\mathrm{0y}}$ & \SI{0.426}{\gauss} \\
+\hline
+Champ rémanent $b_{\mathrm{0z}}$ & \SI{-0.416}{\gauss} \\
+\hline
+\end{tabular}
+\end{center}
+\caption{\textbf{Calibration des champs de biais dans la chambre de science.} Les champs rémanents $b_{\mathrm{0i}}$ correspondent aux champs extérieurs dans la direction $\vec{i}$. Le champ magnétique généré dans la cellule est proportionnel au courant parcourant les bobines $B_{\mathrm{i}} = c_{\mathrm{i}} \times (I_{\mathrm{i}}-I_{\mathrm{0,i}})$ avec $I_{\mathrm{0,i}}$ le courant seuil, qui correspond à la consigne minimale à appliquer pour le courant circule dans les bobines.}
+\label{tb:levitation_RF}
+\end{table}
+
+Toutes ces mesures sont en accord avec celles réalisées à l'aide d'un gaussmètre dans la limite d'une déviation de 10\% , que l'on attribue à un défaut de positionnement du gaussmètre, celui-ci ne pouvant être placé à l'intérieur de la cellule.
 
 
 
@@ -163,52 +208,78 @@ Cette dernière stratégie rend possible l'approche novatrice de désordre dépe
 
 
 
-imager uniquement les atomes dans $\etatF{2}{}$, ils se trouvent à l'origine dans $\etatF{1}{}$.
-Possible car les déplacements lumineux dans l'ODT sont identiques pour les états $\etatF{1}{}$ et $\etatF{2}{}$ étant donné le désaccord du faisceau de pigégage.
-
-
-caractérisation complète du champ rayonné par les 2 biais et les deux compensations horizontales. possibilité d'extraire le champ naturellement présent. Utilisation des 7 sept transitions. 
 
 
 
-
-
-
-
-
-
-
-
-
-\subsection{Etude du piégeage}
+\subsection{\'Etude du piégeage}
 \label{sc:oscillations_levitation}
-Il est primordial que les atomes se trouvent au centre de la lévitation car il s'agit de l'endroit où le champ magnétique est le plus homogène, et cette condition est d'autant plus importante alors nous nous orientons vers des lévitations à bas champ. En effet, c'est à bas champ que le piégeage de la lévitation est le plus important, c'est à dire que le champ est le plus inhomogène. 
+Il est primordial que les atomes se trouvent au centre de la lévitation car il s'agit de l'endroit où le champ magnétique est le plus homogène, et cette condition est d'autant plus importante alors nous nous orientons vers des lévitations à bas champ. En effet, c'est dans ce régime de bas champ que l'effet de piégeage de la lévitation est le plus fort.
 
 \paragraph*{Fréquences de la lévitation}
-D'autre part, si les atomes ne sont pas au centre du piège, la réalisation de temps de vol en présence de la lévitation conduira à un mouvement du nuage. Pour l'état $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ en particulier, le centre de masse du nuage décrit des oscillations autour du centre de la lévitation dont les fréquences peuvent être trouvées à l'aide de la norme du champ magnétique \ref{eq:norme_levitation}:
+Ainsi, si les atomes ne sont pas au centre du piège, la réalisation de temps de vol en présence de la lévitation conduira à un mouvement du nuage. Pour l'état $\left| F=1, m_{\mathrm{F}}=-1 \right\rangle$ en particulier, le centre de masse du nuage décrit des oscillations autour du centre de la lévitation dont les fréquences peuvent être trouvées à l'aide de la norme du champ magnétique \ref{eq:norme_levitation}:
 \begin{equation}
 \omega_x^2=\omega_z^2=\left| \frac{\mf \gftilde \mub}{m} \left( \frac{b'^2}{4 B_0} - b'' \right) \right|
 \quad \text{et} \quad
 \omega_y^2= \left| \frac{2 \mf \gftilde \mub }{m} b'' \right|
+\label{eq:frequences_leviation}
 \end{equation}
 L'exploitation de ces oscillations fournit donc de précieux renseignements quant à la position du centre de la lévitation, mais aussi quant à la forme du potentiel magnétique dans lequel les atomes évoluent. 
 
-Il est possible d'obtenir une calibration du gradient à l'aide de la figure \ref{fig:levitation_etats}.  estimation correcte de la calibration des bobines de gradient à l'aide de paires gradient/biais qui permettent de compenser correctement la gravité.
+En particulier, la mesure des fréquences de la lévitation permet de déterminer la courbure des champs générés par les bobines de biais A et de biais B. L'influence de ces courbures est représentée figure \ref{fig:frequences_levitation} pour les champs de biais A et de biais B. Pour un courant suffisamment grand, le terme de courbure n'est plus négligeable devant celui de gradient, atténué par le biais. En effet, la comparaison des fréquences expérimentales à un modèle sans courbure montre un fort désaccord dans la zone des courants les plus hauts, tandis qu'un modèle tenant compte d'une courbure proportionnelle au courant décrit correctement cette zone (voir figure \ref{fig:frequences_levitation}). On peut alors extraire le facteur de conversion courant/courbure $c_{\mathrm{i}}''$.
 
-Pour les études à bas-champ menées, on peut estimer la calibration des bobines de biais à l'aide des fréquences d'oscillations. L'étude des oscillations en fonction du biais permet d'extraire aussi la courbure.
+
+
+
+\begin{figure}
+\centering
+
+\caption{\textbf{Oscillation du nuage dans la lévitation magnétique.} Le nuage, initialement dans le piège optique, est relâché sur le bord de la lévitation. Il acquiert alors un mouvement oscillatoire autour du centre de la lévitation. \textbf{\'Evolution des fréquences de piégeage de la lévitation.} Blabla description de l'évolution des fréquences.}
+\label{fig:frequences_levitation}
+\end{figure}
+
+
+%\renewcommand{\arraystretch}{1.1}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{ |c|c| }
+\hline
+Courbure & Valeur \\
+\hline
+Biais A $c_{\mathrm{A}}''$ & \SI{4e-2}{\gauss\per\centi\metre^2\per\ampere} \\
+\hline
+Biais B $c_{\mathrm{B}}''$ & \SI{-7e-2}{\gauss\per\centi\metre^2\per\ampere} \\
+\hline
+\end{tabular}
+\end{center}
+\caption{\textbf{Calibration des courbures de la lévitation magnétique.} Les bobines générant les champs de biais n'étant pas en configuration de Helmholtz, elles créent donc une courbure de champ magnétique au niveau des atomes. Cette courbure dépend de la géométrie des bobines ainsi que du courant les parcourant $b_{\mathrm{i}}''= c_{\mathrm{i}}'' \times (I_{\mathrm{i}}-I_{\mathrm{0,i}})$.}
+\label{tb:courbures_levitation}
+\end{table}
+
+On peut alors estimer les fréquences de piégeage (ou d'anti-piégeage pour l'état $\etatF{2}{-2}$) dans les configurations expérimentales d'intérêt. Pour le champ magique $\magicB$, les états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont soumis à un piégeage de fréquence d'environ \SI{5}{\hertz} tandis que dans le régime de champ fort, nécessaire pour obtenir les décompressions maximales qu'offre notre système, la fréquence de piégeage (anti-piégeage) pour $\etatF{2}{+1}$ ($\etatF{2}{-2}$) est diminuée jusqu'à \SI{0.20}{\hertz} (\SI{0.18}{\hertz}) sous un champ de \SI{2000}{G}.
 
 
 
 
 
 \paragraph*{Centre de la lévitation}
-Déplacement du centre de la lévitation à l'aide de champs de compensation.
+Si pour le système isolé de lévitation magnétique le centre du potentiel magnétique correspond au centre géométrique des bobines, ce n'est plus le cas en présence d'un champ extérieur.
+
+Déplacement du centre de la lévitation par les champs rémanents. On utilise alors des champs de compensation afin de replacer le centre de la lévitation au niveau des atomes pour éviter que le nuage oscille après relachment du piège optique.
+
+\begin{equation}
+B_{\mathrm{i}}=b_{\mathrm{0,i}}+c_{\mathrm{i}} \times I_{\mathrm{i}}
+\end{equation}
+où $i=\lbrace x,z \rbrace$
+
+Le champ magnétique s'écrit alors
 \begin{equation}
 \mathbf{B}=\left( \frac{b'}{2}x \right) \vec{x} + \left[ B_0 - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}z +B_z \right) \vec{z}
 \end{equation}
+et la présence d'un champ de biais dans le plan horizontal mène alors à un déplacement du centre de la lévitation
 \begin{equation}
 z_c =-\frac{2B_z}{b'}\left( \frac{1}{1-4B_0 b'' /b'^2} \right)
 \end{equation}
+pour un champ $B_z \ll B_0$ et où $z_c$ est la coordonnée du centre de la lévitation dans la direction $\vec{z}$
 À bas champ, le déplacement n'est dû qu'au gradient et au champ de compensation. Avec un gros biais par contre, on doit prendre en compte les effets de la courbure. en particulier, il est possible d'expulser le centre de la lévitation à l'infini, ça arrive quand la fréquence $\omega_z$ s'annule.
 effets de champs de biais de compensation.
 

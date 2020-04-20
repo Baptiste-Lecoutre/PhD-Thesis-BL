@@ -151,10 +151,10 @@ Cette dernière stratégie rend possible l'approche novatrice de désordre dépe
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{../Fig/Modif_exp/levitation_RF.pdf}
-\caption{\textbf{a: Principe de la spectroscopie radio-fréquences}. En balayant la fréquence de l'onde radio-fréquence appliquée, on adresse les différentes transitions entre sous-états Zeeman de $\protect\etatF{1}{}$ et $\protect\etatF{2}{}$ dont la séparation dépend du champ magnétique. \textbf{b: Spectre radio-fréquence.} Lorsque l'onde radio-fréquence est à résonance, on transfère des atomes initialement dans l'état $\protect\etatF{1}{}$ vers l'état $\protect\etatF{2}{}$. La présence de sept résonances équidistantes indique une dépolarisation partielle du nuage, les règles de sélection imposant $\Delta \mf = \lbrace \pm 1,0 \rbrace$. Le champ magnétique extrait de ce spectre est alors d'environ $\SI{4.4}{\gauss}$.}
+\caption{\textbf{a: Principe de la spectroscopie radio-fréquences}. En balayant la fréquence de l'onde radio-fréquence appliquée, on adresse les différentes transitions entre sous-états Zeeman de $\protect\etatF{1}{}$ et $\protect\etatF{2}{}$ dont la séparation dépend du champ magnétique. \textbf{b: Spectre radio-fréquence.} Lorsque l'onde radio-fréquence est à résonance, on transfère des atomes initialement dans l'état $\protect\etatF{1}{}$ vers l'état $\protect\etatF{2}{}$. La présence de sept résonances équidistantes indique une dépolarisation partielle du nuage\protect\footnotemark, les règles de sélection imposant $\Delta \mf = \lbrace \pm 1,0 \rbrace$. Le champ magnétique extrait de ce spectre est alors d'environ $\SI{4.4}{\gauss}$.}
 \label{fig:calibration_RF}
 \end{figure}
-
+\footnotetext{Cette dépolarisation a été confirmée par une analyse Stern-Gerlach.}
 Cette mesure a été effectuée dans le piège dipolaire croisé, et étant donné le très grand désaccord du faisceau de piégeage, on peut considérer que les déplacements lumineux induits sur les états $\etatF{1}{}$ et $\etatF{2}{}$ sont identique. La séparation entre les états considérés n'en sera donc pas affectée. Il est ensuite possible d'imager sélectivement les atomes dans l'état $\etatF{2}{}$ en coupant la partie du faisceau d'imagerie provenant du laser repompeur.
 
 En relevant le spectre des transitions radio-fréquences, on accède ainsi à la valeur du champ magnétique au niveau des atomes à l'aide du décalage Zeeman:
@@ -262,14 +262,24 @@ On peut alors estimer les fréquences de piégeage (ou d'anti-piégeage pour l'�
 
 
 \paragraph*{Centre de la lévitation}
-Afin d'éviter le déplacement du nuage lors de l'extinction du piège optique, il est nécessaire qu'il se trouve au centre de la lévitation. Utilisation des champs de compensation pour s'affranchir des champs externes. 
-Déplacement du centre de la lévitation à l'aide de champs de compensation.
+Si pour le système isolé de lévitation magnétique le centre du potentiel magnétique correspond au centre géométrique des bobines, ce n'est plus le cas en présence d'un champ extérieur.
+
+Déplacement du centre de la lévitation par les champs rémanents. On utilise alors des champs de compensation afin de replacer le centre de la lévitation au niveau des atomes pour éviter que le nuage oscille après relachment du piège optique.
+
+\begin{equation}
+B_{\mathrm{i}}=b_{\mathrm{0,i}}+c_{\mathrm{i}} \times I_{\mathrm{i}}
+\end{equation}
+où $i=\lbrace x,z \rbrace$
+
+Le champ magnétique s'écrit alors
 \begin{equation}
 \mathbf{B}=\left( \frac{b'}{2}x \right) \vec{x} + \left[ B_0 - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}z +B_z \right) \vec{z}
 \end{equation}
+et la présence d'un champ de biais dans le plan horizontal mène alors à un déplacement du centre de la lévitation
 \begin{equation}
 z_c =-\frac{2B_z}{b'}\left( \frac{1}{1-4B_0 b'' /b'^2} \right)
 \end{equation}
+pour un champ $B_z \ll B_0$ et où $z_c$ est la coordonnée du centre de la lévitation dans la direction $\vec{z}$
 À bas champ, le déplacement n'est dû qu'au gradient et au champ de compensation. Avec un gros biais par contre, on doit prendre en compte les effets de la courbure. en particulier, il est possible d'expulser le centre de la lévitation à l'infini, ça arrive quand la fréquence $\omega_z$ s'annule.
 effets de champs de biais de compensation.
 
