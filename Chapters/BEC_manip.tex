@@ -18,9 +18,9 @@ Depuis, des condensats de Bose-Einstein ont été produits pour un grand nombre 
 \subsection{Statistique de Bose-Einstein}
 Le phénomène de condensation de Bose-Einstein trouve son origine dans la statistique de Bose-Einstein. Celle-ci se différencie de la statistique classique de Boltzmann dans le formalisme grand-canonique donnée par:
 \begin{equation}
-N_{\mathbf{n}}=g_{\mathbf{n}} \exp{\left( -(E_{\mathbf{n}}-\mu)/k_{\mathrm{B}}T \right)}
+N_{\mathbf{n}}=g_{\mathbf{n}} \exp{\left( -(E_{\mathbf{n}}-\mu)/\kB T \right)}
 \end{equation}
-pour un gaz de $N$ particules à l'équilibre thermique, avec $N_{\mathbf{n}}$ le nombre moyen d'atomes présents dans l'état d'énergie $E_{\mathbf{n}}$ et de dégénérescence $g_{\mathbf{n}}$, $\mu$ le potentiel chimique, $T$ la température et $k_{\mathrm{B}}$ la constante de Boltzmann. L'origine de cette différence provient de l'indiscernabilité des particules: dans le cadre de la physique classique, les particules identiques sont discernables, c'est à dire qu'il est possible "d'étiqueter" les particules et de suivre leurs mouvements individuels.
+pour un gaz de $N$ particules à l'équilibre thermique, avec $N_{\mathbf{n}}$ le nombre moyen d'atomes présents dans l'état d'énergie $E_{\mathbf{n}}$ et de dégénérescence $g_{\mathbf{n}}$, $\mu$ le potentiel chimique, $T$ la température et $\kB$ la constante de Boltzmann. L'origine de cette différence provient de l'indiscernabilité des particules: dans le cadre de la physique classique, les particules identiques sont discernables, c'est à dire qu'il est possible "d'étiqueter" les particules et de suivre leurs mouvements individuels.
 Dans le cadre de la mécanique quantique, une telle approche n'est pas possible car les particules sont décrites par des fonctions d'onde, étalées dans l'espace. Lors de collisions de particules identiques, le recouvrement de leur fonction d'onde fait qu'il est impossible de déterminer les trajectoires suivies par les particules. L'indiscernabilité des particules dans le cadre de la mécanique quantique est donc essentielle.
 
 \begin{figure}
@@ -43,51 +43,51 @@ où $m$ correspond à la masse des particules, et les $\omega_i$ correspondent a
 E_{\mathbf{n}}=\left(n_x+\frac{1}{2}\right) \hb \omega_x + \left(n_y+\frac{1}{2}\right) \hb \omega_y + \left(n_z+\frac{1}{2}\right) \hb \omega_z \quad \text{avec}\quad \mathbf{n}=\lbrace n_x,n_y,n_z\rbrace
 \end{equation}
 
-On peut alors montrer que le nombre moyen de particules est donné par la distribution de Bose-Einstein \footnote{Pour un gaz de $N$ fermions identiques, le nombre moyen de particules est donné par la distribution de Fermi-Dirac $ N_{\mathbf{n}}=\frac{g_{\mathbf{n}}}{\exp{\left( (E_{\mathbf{n}}-\mu)/k_{\mathrm{B}}T\right)}+1}$.}:\citep{diu1989elements}
+On peut alors montrer que le nombre moyen de particules est donné par la distribution de Bose-Einstein \footnote{Pour un gaz de $N$ fermions identiques, le nombre moyen de particules est donné par la distribution de Fermi-Dirac $ N_{\mathbf{n}}=\frac{g_{\mathbf{n}}}{\exp{\left( (E_{\mathbf{n}}-\mu)/\kB T\right)}+1}$.}:\citep{diu1989elements}
 \begin{equation}
-N_{\mathbf{n}}=\frac{g_{\mathbf{n}}}{\exp{\left( (E_{\mathbf{n}}-\mu)/k_{\mathrm{B}}T \right)}-1}
+N_{\mathbf{n}}=\frac{g_{\mathbf{n}}}{\exp{\left( (E_{\mathbf{n}}-\mu)/\kB T \right)}-1}
 \end{equation}
 Une condition de validité de cette équation est que le potentiel chimique $\mu$ soit plus petit que l'énergie $E_{\mathbf{0}}$ du niveau de plus basse énergie, appelé niveau fondamental. Autrement, le nombre moyen de particules du niveau fondamental serait négatif (et cela impliquerait que la totalité du réservoir de particules vienne se déverser dans le niveau fondamental). Il est donc nécessaire que $\mu < E_{\mathbf{0}}$. Une conséquence remarquable cette condition est que la population totale des états excités est bornée par:
 \begin{equation}
-N_e(\mu,T)=\sum_{\mathbf{n}\neq\mathbf{0}} N_{\mathbf{n}} \leq \sum_{\mathbf{n} \neq \mathbf{0}} \frac{g_{\mathbf{n}}}{\exp{\left( (E_{\mathbf{n}}-E_{\mathbf{0}})/k_{\mathrm{B}}T \right)}-1}
+N_e(\mu,T)=\sum_{\mathbf{n}\neq\mathbf{0}} N_{\mathbf{n}} \leq \sum_{\mathbf{n} \neq \mathbf{0}} \frac{g_{\mathbf{n}}}{\exp{\left( (E_{\mathbf{n}}-E_{\mathbf{0}})/\kB T \right)}-1}
 \end{equation}
-Ainsi, chaque particule supplémentaire peuplera forcément l'état fondamental. On a donc ici le moyen d'accumuler un grand nombre de particules dans le même état quantique. La condensation de Bose-Einstein correspond, par définition, à cette accumulation d'un nombre macroscopique de particules dans l'état fondamental. C'est dans ce régime que les effets quantiques se manifestent, toutes ces particules partageant alors le même état quantique. Afin d'obtenir de tels effets, il est nécessaire que les fonctions d'onde des particules individuelles se recouvrent, c'est à dire que l'extension typique d'un paquet d'onde soit plus grande que la distance moyenne entre particules. Cette extension typique est donnée par la longueur d'onde thermique de de Broglie $\Delta x \sim \lambda_{\mathrm{dB}}$, qui correspond à la taille typique d'un paquet d'onde quantique dont la largeur de la distribution en impulsion est donnée par la température. Elle s'exprime \citep{diu1989elements}
+Ainsi, chaque particule supplémentaire peuplera forcément l'état fondamental. On a donc ici le moyen d'accumuler un grand nombre de particules dans le même état quantique. La condensation de Bose-Einstein correspond, par définition, à cette accumulation d'un nombre macroscopique de particules dans l'état fondamental. C'est dans ce régime que les effets quantiques se manifestent, toutes ces particules partageant alors le même état quantique. Afin d'obtenir de tels effets, il est nécessaire que les fonctions d'onde des particules individuelles se recouvrent, c'est à dire que l'extension typique d'un paquet d'onde soit plus grande que la distance moyenne entre particules. Cette extension typique est donnée par la longueur d'onde thermique de de Broglie $\Delta x \sim \ldb$, qui correspond à la taille typique d'un paquet d'onde quantique dont la largeur de la distribution en impulsion est donnée par la température. Elle s'exprime \citep{diu1989elements}
 \begin{equation}
-\lambda_{\mathrm{dB}}=\sqrt{\frac{2\pi \hb^2}{m k_{\mathrm{B}}T}}
+\ldb=\sqrt{\frac{2\pi \hb^2}{m \kB T}}
 \end{equation}
-avec m la masse de la particule, un atome de ${}^{87}$Rb dans le cas de notre expérience. La distance inter-particules dans un piège est estimée à partir de la densité de particules $d \sim n^{-1/3}$. On peut alors formuler le critère phénoménologique suivant:
+avec m la masse de la particule, un atome de \isotope[87]{Rb} dans le cas de notre expérience. La distance inter-particules dans un piège est estimée à partir de la densité de particules $d \sim n^{-1/3}$. On peut alors formuler le critère phénoménologique suivant:
 \begin{equation}
-n \lambda_{dB}^3 \gtrsim 1
+n \ldb^3 \gtrsim 1
 \label{eq:critere_condensation}
 \end{equation}
-La quantité $n \lambda_{\mathrm{dB}}^3$ est appelée \emph{densité dans l'espace des phases}. Tout l'enjeu des expériences d'atomes ultrafroids est d'arriver à augmenter la densité dans l'espace des phases afin de franchir le seuil donné par l'équation \ref{eq:critere_condensation}. Cette condition peut se réécrire en terme de \emph{température critique}:
+La quantité $n \ldb^3$ est appelée \emph{densité dans l'espace des phases}. Tout l'enjeu des expériences d'atomes ultrafroids est d'arriver à augmenter la densité dans l'espace des phases afin de franchir le seuil donné par l'équation \ref{eq:critere_condensation}. Cette condition peut se réécrire en terme de \emph{température critique}:
 \begin{equation}
-T_{\mathrm{C}}\sim \frac{\hb \overline{\omega}}{k_{\mathrm{B}}}N^{1/3}
+T_{\mathrm{C}}\sim \frac{\hb \overline{\omega}}{\kB}N^{1/3}
 \label{eq:temperature_critique}
 \end{equation}
-où $\overline{\omega}=(\omega_x \omega_y \omega_z)^{1/3}$ est la fréquence moyenne du piège. Cette température critique est de l'ordre de quelques centaines de nano-kelvin pour les expériences typiques d'atomes ultra-froids.
+où $\overline{\omega}=(\omega_x \omega_y \omega_z)^{1/3}$ est la fréquence moyenne du piège. Cette température critique est de l'ordre de quelques centaines de nanokelvin pour les expériences typiques d'atomes ultra-froids.
 
 
 
 
 
 \subsection{Propriétés d'un condensat de Bose-Einstein}
-En dessous de la température critique \ref{eq:temperature_critique}, les atomes s'accumulent dans l'état fondamental du piège. Il en résulte une forte augmentation de la densité, si bien qu'on ne peut plus négliger les interactions entre particules. Dans le cas d'un gaz suffisamment dilué, ce que l'on considèrera dans la suite, les interactions entre atomes peuvent être traitées comme des collisions à basse énergie, c'est à dire des collisions uniquement dans l'onde \emph{s}. Le potentiel d'interaction est alors celui de contact, donné par $U(\mathbf{r}_1-\mathbf{r}_2)=g\delta(\mathbf{r}_1-\mathbf{r}_2)$. Le paramètre $g$, qui caractérise la force des interactions, est donné par $g=\frac{4 \pi \hb^2}{m}a_{\mathrm{s}}$, avec $a_{\mathrm{s}}$ la longueur de diffusion, et ne dépend que de ce paramètre. Ce régime dilué est atteint lorsque $na_{\mathrm{s}}^3\ll 1$\footnote{Dans ce régime, la distance inter-atomique est plus grande que la portée des interactions. Ainsi, les atomes ne voient pas le détail du potentiel d'interaction avec leur voisin, et donc il est possible d'approximer ce potentiel par un potentiel de contact.}. Pour le \isotope[87]{Rb}, cette longueur de diffusion vaut 100$a_{\mathrm{0}}>0$, avec $a_{\mathrm{0}}$ le rayon de Bohr. La longueur de diffusion étant positive, les interactions sont donc répulsives pour notre atome.
+%En dessous de la température critique \ref{eq:temperature_critique}, les atomes s'accumulent dans l'état fondamental du piège. Il en résulte une forte augmentation de la densité, si bien qu'on ne peut plus négliger les interactions entre particules. Dans le cas d'un gaz suffisamment dilué, ce que l'on considèrera dans la suite, les interactions entre atomes peuvent être traitées comme des collisions à basse énergie, c'est à dire des collisions uniquement dans l'onde \emph{s}. Le potentiel d'interaction est alors celui de contact, donné par $U(\mathbf{r}_1-\mathbf{r}_2)=g\delta(\mathbf{r}_1-\mathbf{r}_2)$. Le paramètre $g$, qui caractérise la force des interactions, est donné par $g=\frac{4 \pi \hb^2}{m}a_{\mathrm{s}}$, avec $a_{\mathrm{s}}$ la longueur de diffusion, et ne dépend que de ce paramètre. Ce régime dilué est atteint lorsque $na_{\mathrm{s}}^3\ll 1$\footnote{Dans ce régime, la distance inter-atomique est plus grande que la portée des interactions. Ainsi, les atomes ne voient pas le détail du potentiel d'interaction avec leur voisin, et donc il est possible d'approximer ce potentiel par un potentiel de contact.}. Pour le \isotope[87]{Rb}, cette longueur de diffusion vaut \SI{100}{\bohr}, avec \SI{}{\bohr} le rayon de Bohr. La longueur de diffusion étant positive, les interactions sont donc répulsives pour notre atome.
 
 On peut écrire l'équation de Schrödinger pour l'état fondamental en tenant compte de ce terme d'interaction entre particules. La description en champ moyen du condensat est alors donnée par l'équation de Gross-Pitaevskii (aussi connue sous le nom d'\emph{équation de Schrödinger non-linéaire}):
 \begin{equation}
 \left[ -\frac{\hb^2}{2m}\Delta + V(\mathbf{r}) + g\left|\phi_0(\mathbf{r})\right|^2 \right] \phi_0((\mathbf{r}) = \mu \phi_0(\mathbf{r})
 \label{eq:gross_pitaevskii}
 \end{equation}
-où $\phi_0(\mathbf{r})$ est la fonction d'onde macroscopique du condensat et $\mu$ est le potentiel chimique. La densité d'atomes est donnée par $n(\mathbf{r})=\left| \phi_0(\mathbf{r}) \right|^2$. Ainsi, la fonction d'onde du condensat $\phi_0(\mathbf{r})$ est normalisée pour donner le nombre de particules dans le condensat $N_{\mathbf{0}}=\int{\mathrm{d}\mathbf{r} \: \left| \phi_0(\mathbf{r}) \right|^2}$.
+où $\phi_0(\mathbf{r})$ est la fonction d'onde macroscopique du condensat et $\mu$ est le potentiel chimique. La densité d'atomes est donnée par $n(\mathbf{r})=\left| \phi_0(\mathbf{r}) \right|^2$. Ainsi, la fonction d'onde du condensat $\phi_0(\mathbf{r})$ est normalisée pour donner le nombre de particules dans le condensat $\Nzero=\int{\mathrm{d}\mathbf{r} \: \left| \phi_0(\mathbf{r}) \right|^2}$.
 
-Le premier terme de gauche décrit l'énergie cinétique, le second le terme d'énergie potentielle provenant du piège, et le dernier décrit l'énergie d'interaction entre particules, proportionnelle à la densité locale $n(\mathbf{r})$. La somme de ces énergies donne le potentiel chimique $\mu$, qui correspond à l'énergie qu'il faut fournir pour rajouter une particule supplémentaire au système de $N_{\mathbf{0}}$ particules.
+Le premier terme de gauche décrit l'énergie cinétique, le second le terme d'énergie potentielle provenant du piège, et le dernier décrit l'énergie d'interaction entre particules, proportionnelle à la densité locale $n(\mathbf{r})$. La somme de ces énergies donne le potentiel chimique $\mu$, qui correspond à l'énergie qu'il faut fournir pour rajouter une particule supplémentaire au système de $\Nzero$ particules.
 
 
 
 
 \paragraph*{Régime de Thomas-Fermi}
-Considérons le cas d'un condensat comportant un grand nombre de particules $N_0$. L'énergie cinétique totale du condensat varie avec $N_0$ de manière linéaire: $\mean{E_{\mathrm{k}}}\propto N_0$. L'énergie totale d'interaction varie quant à elle en $E_{\mathrm{int}}\propto N_0^2$. Pour un nombre suffisamment grand de particules, il devient possible de négliger le terme d'énergie cinétique dans l'équation de Gross-Pitaevskii stationnaire: il s'agit du régime de Thomas-Fermi.
+Considérons le cas d'un condensat comportant un grand nombre de particules $\Nzero$. L'énergie cinétique totale du condensat varie avec $\Nzero$ de manière linéaire: $\mean{E_{\mathrm{k}}}\propto \Nzero$. L'énergie totale d'interaction varie quant à elle en $E_{\mathrm{int}}\propto \Nzero^2$. Pour un nombre suffisamment grand de particules, il devient possible de négliger le terme d'énergie cinétique dans l'équation de Gross-Pitaevskii stationnaire: il s'agit du régime de Thomas-Fermi.
 Dans ce cas, le profil de densité s'écrit
 \begin{equation}
 n(\mathbf{r})=\left\{
@@ -107,11 +107,11 @@ V_{\mathrm{eff}}(\mathbf{r})= \left\{
 									\end{array}
 							\right.
 \end{equation}
-L'énergie d'un atome est donc constante sur l'ensemble du condensat et est donnée par le potentiel chimique. $\mu$ correspond alors à l'échelle d'énergie au-dela de laquelle le condensat est perturbé par le potentiel. Il est possible d'obtenir une expression pour le potentiel chimique \citep{pethick2008bose}: 
+L'énergie d'un atome est donc constante sur l'ensemble du condensat et est donnée par le potentiel chimique. $\mu$ correspond alors à l'échelle d'énergie au-delà de laquelle le condensat est perturbé par le potentiel. Il est possible d'obtenir une expression pour le potentiel chimique \citep{pethick2008bose}: 
 \begin{equation}
-\mu=\frac{1}{2} \left( 15a N_{\mathbf{0}} \hb^2 \overline{\omega}^3 \right) ^{2/5} m^{1/5}
+\mu=\frac{1}{2} \left( 15a \Nzero \hb^2 \overline{\omega}^3 \right) ^{2/5} m^{1/5}
 \end{equation}
-qui vaut environ $\mu/h\approx40$Hz pour notre expérience.
+qui vaut environ $\mu/h\approx\SI{40}{\hertz}$ pour notre expérience.
 
 \begin{figure}
 \centering
@@ -129,12 +129,12 @@ qui vaut environ $\mu/h\approx40$Hz pour notre expérience.
 
 
 \section{Processus d'interaction lumière-matière}
-Précédemment, nous avons brièvement présenté le phénomène de condensation de Bose-Einstein ainsi que les principales propriétés d'un condensat. En particulier, nous avons identifié $n \lambda_{\mathrm{dB}}^3 \gtrsim 1$ comme un critère de condensation, impliquant l'obtention de nuages denses à très basse température. Il s'agit donc de la ligne à atteindre sur notre dispositif. Dans cette partie, nous allons présenter les différents outils de manipulation d'atomes dont nous disposons, tels que des champs magnétiques, des champs lasers ou encore des radio-fréquences, afin d'obtenir la condensation d'un nuage de rubidium \isotope[87]{Rb}.
+Précédemment, nous avons brièvement présenté le phénomène de condensation de Bose-Einstein ainsi que les principales propriétés d'un condensat. En particulier, nous avons identifié $n \ldb^3 \gtrsim 1$ comme un critère de condensation, impliquant l'obtention de nuages denses à très basse température. Il s'agit donc de la ligne à atteindre sur notre dispositif. Dans cette partie, nous allons présenter les différents outils de manipulation d'atomes dont nous disposons, tels que des champs magnétiques, des champs lasers ou encore des radio-fréquences, afin d'obtenir la condensation d'un nuage de rubidium \isotope[87]{Rb}.
 \subsection{Le rubidium \isotope[87]{Rb}}
 \label{sc:Rb87}
-Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre expérience est le rubidium \isotope[87]{Rb}, le second isotope le plus fréquent après le rubidium \isotope[85]{Rb} (l'abondance naturelle du \isotope[87]{Rb} est de 27.8\%). Il s'agit d'un alcalin bosonique (il possède donc un seul électron de valence) avec un spin nucléaire $\mathbf{I}=3/2$. Historiquement, le \isotope[87]{Rb} est l'atome ayant été condensé en premier \citep{anderson1995observation}, son choix reposant sur l'existence d'une transition optique cyclante à 780nm dans sa raie $D$ ainsi que le développement rapide des technologies laser à cette longueur d'onde. La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à 795nm, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à 780nm. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, la plupart de nos fréquences optiques se trouvant autour de 780nm. Le choix de l'atome de rubidium est aussi dû à ses bonnes propriétés. En particulier, sa longueur de diffusion $a_{\mathrm{s}}=5.3$ nm résulte en des taux de collisions relativement élevés, permettant une thermalisation rapide du nuage. 
+Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre expérience est le rubidium \isotope[87]{Rb}, le second isotope le plus fréquent après le rubidium \isotope[85]{Rb} (l'abondance naturelle du \isotope[87]{Rb} est de 27.8\%). Il s'agit d'un alcalin bosonique (il possède donc un seul électron de valence) avec un spin nucléaire $\mathbf{I}=3/2$. Historiquement, le \isotope[87]{Rb} est l'atome ayant été condensé en premier \citep{anderson1995observation}, son choix reposant sur l'existence d'une transition optique cyclante à \SI{780}{\nano\metre} dans sa raie $D$ ainsi que le développement rapide des technologies laser à cette longueur d'onde. La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $4^2S_{1/2}\rightarrow5^2P_{1/2}$ à \SI{795}{\nano\metre}, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à \SI{780}{\nano\metre}. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, la plupart de nos fréquences optiques se trouvant autour de \SI{780}{\nano\metre}. Le choix de l'atome de rubidium est aussi dû à ses bonnes propriétés. En particulier, sa longueur de diffusion $a_{\mathrm{s}}=\SI{5.3}{\nano\metre}$ résulte en des taux de collisions relativement élevés, permettant une thermalisation rapide du nuage. 
 
-La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\left| F=1 \right\rangle$ et $\left| F=2 \right\rangle$ séparés de $\Delta_{\mathrm{hf}}=6.835$GHz. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. Une vue simplifiée de cette structure est donnée figure \ref{fig:Rb87}, et un tableau récapitulatif des principales grandeurs du \isotope[87]{Rb} peut être trouvé table \ref{tbl:Rb87}.
+La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\etatF{1}{}$ et $\etatF{2}{}$ séparés de $\deltahf=\SI{6.835}{\giga\hertz}$. Chacun de ces états est composé de $2F+1$ sous-états Zeeman. Une vue simplifiée de cette structure est donnée figure \ref{fig:Rb87}, et un tableau récapitulatif des principales grandeurs du \isotope[87]{Rb} peut être trouvé table \ref{tbl:Rb87}.
 
 \renewcommand{\arraystretch}{1.1}
 \begin{table}[!ht]
@@ -144,33 +144,33 @@ La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux nive
 \hline
 \textbf{Quantité physique} & \textbf{Symbole} & \textbf{Valeur} \\
 \hline
-Masse & m & $1.44 \times 10^{-25}$kg \\
+Masse & m & \SI{1.44e-25}{\kilogram} \\
 \hline
-Fréquence de transition $D_2$ & $\omega_0$ & $2\pi \times 384.230$THz \\
+Fréquence de transition $D_2$ & $\omega_0$ & $2\pi \times \SI{384.230}{\tera\hertz}$ \\
 \hline
-Longueur d'onde dans le vide ($D_2$) & $\lambda_{\mathrm{0}}$ & 780.241nm \\
+Longueur d'onde dans le vide ($D_2$) & $\lambda_{\mathrm{0}}$ & \SI{780.241}{\nano\metre} \\
 \hline
-Largeur naturelle de la transition $D_2$ & $\Gamma$ & $2\pi \times 6.07$MHz \\
+Largeur naturelle de la transition $D_2$ & $\Gamma$ & $2\pi \times \SI{6.07}{\mega\hertz}$ \\
 \hline
-Fréquence de transition $D_1$ & $\omega_{D_1}$ & $2\pi \times 377.107$THz \\
+Fréquence de transition $D_1$ & $\omega_{D_1}$ & $2\pi \times \SI{377.107}{\tera\hertz}$ \\
 \hline
-Longueur d'onde dans le vide ($D_1$) & $\lambda_{D_1}$ & 794.979nm \\
+Longueur d'onde dans le vide ($D_1$) & $\lambda_{D_1}$ & \SI{794.979}{\nano\metre} \\
 \hline
-Largeur naturelle de la transition $D_1$ & $\Gamma_{D_1}$ & $2\pi \times 5.75$MHz \\
+Largeur naturelle de la transition $D_1$ & $\Gamma_{D_1}$ & $2\pi \times \SI{5.75}{\mega\hertz}$ \\
 \hline
-Séparation hyperfine & $\Delta_{\mathrm{hf}}$ & 6.834682611GHz \\
+Séparation hyperfine & $\deltahf$ & \SI{6.834682611}{\giga\hertz} \\
 \hline
-Moment cinétique nucléaire & $\mathbf{I}$ & $3/2$ \\
+Moment cinétique nucléaire & $\mathbf{I}$ & 3/2 \\
 \hline
 Facteur de Landé électronique & $g_{\mathrm{S}}$ & 2.002319 \\
 \hline
 Facteur de Landé orbital & $g_{\mathrm{L}}$ & 0.999993\\
 \hline
-Facteur de Landé nucléaire & $g_{\mathrm{I}}$ & $-0.9951414 \times 10^{-3}$ \\
+Facteur de Landé nucléaire & $g_{\mathrm{I}}$ & \num{-0.9951414e-3} \\
 \hline
-Intensité de saturation & $I_{\mathrm{sat}}$ & 1.67mW.cm${}^{-2}$ \\
+Intensité de saturation & $I_{\mathrm{sat}}$ & \SI{1.67}{\milli\watt\per\centi\metre^2} \\
 \hline
-Longueur de diffusion & $a_{\mathrm{s}}$ & 5.3nm \\
+Longueur de diffusion & $a_{\mathrm{s}}$ & \SI{5.3}{\nano\metre} \\
 \hline
 \end{tabular}%}
 \end{center}
@@ -181,7 +181,7 @@ Longueur de diffusion & $a_{\mathrm{s}}$ & 5.3nm \\
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{../Fig/BEC_manip/Rb87.pdf}
-\caption{\textbf{Structure de la raie $D$ du rubidium \isotope[87]{Rb}.} Celle-ci est composée de deux transitions, la $D_1$ à 795nm, et la transition $D_2$ à 780nm que nous utilisons sur l'expérience. L'état fondamental $5^2S_{1/2}$ est dégénéré en deux sous-niveaux hyperfins séparés d'une énergie $h \Delta_{\mathrm{hf}}$ avec $\Delta_{\mathrm{hf}}=6.835$GHz.}
+\caption{\textbf{Structure de la raie $D$ du rubidium \isotope[87]{Rb}.} Celle-ci est composée de deux transitions, la $D_1$ à \SI{795}{\nano\metre}, et la transition $D_2$ à \SI{780}{\nano\metre} que nous utilisons sur l'expérience. L'état fondamental $5^2S_{1/2}$ est dégénéré en deux sous-niveaux hyperfins séparés d'une énergie $h \deltahf$ avec $\deltahf=\SI{6.835}{\giga\hertz}$.}
 \label{fig:Rb87}
 \end{figure}
 
@@ -192,17 +192,17 @@ Le moment cinétique total $\hat{\mathbf{F}}$ est donné par la somme des moment
 \begin{equation}
 \hat{\mathbf{F}}=\hat{\mathbf{I}}+\hat{\mathbf{L}}+\hat{\mathbf{S}}
 \end{equation}
-avec $\hat{\mathbf{I}}$ le spin total nucléaire, $\hat{\mathbf{L}}$ le moment cinétique orbital et $\hat{\mathbf{S}}$ le moment cinétique de spin électronique. On a alors un moment magnétique total $\hat{\boldsymbol\mu}=\mu_{\mathrm{B}} (g_{\mathrm{I}} \hat{\mathbf{I}} + g_{\mathrm{L}} \hat{\mathbf{L}} + g_{\mathrm{S}} \hat{\mathbf{S}})$ où les $g_{\mathrm{I},\mathrm{L},\mathrm{S}}$ sont les facteurs de Landé et $\mu_{\mathrm{B}}$ est le magnéton de Bohr\footnote{L'interaction avec le spin du noyau donne une correction très faible car $g_{\mathrm{I}}\propto 1/m_{\mathrm{P}}$ avec $m_{\mathrm{p}}$ la masse du proton, et $g_{\mathrm{L,S}} \propto 1/m_{\mathrm{e}}$ avec $m_{\mathrm{e}}$ la masse de l'électron. Ainsi, $g_{\mathrm{I}} \ll g_{\mathrm{L,S}}$ et donc on peut négliger l'effet du spin nucléaire lors de l'application d'un champ magnétique extérieur, voir table \ref{tbl:Rb87}.}. L'énergie d'interaction de ce moment magnétique avec un champ magnétique $\mathbf{B}$ est donnée par $\hat{V}=-\hat{\boldsymbol\mu}.\mathbf{B}$. On obtient les énergies propres par la formule de Breit-Rabi, dont l'application aux états $\etatF{1}{}$ et $\etatF{2}{}$ fournit:
+avec $\hat{\mathbf{I}}$ le spin total nucléaire, $\hat{\mathbf{L}}$ le moment cinétique orbital et $\hat{\mathbf{S}}$ le moment cinétique de spin électronique. On a alors un moment magnétique total $\hat{\boldsymbol\mu}=\mub (g_{\mathrm{I}} \hat{\mathbf{I}} + g_{\mathrm{L}} \hat{\mathbf{L}} + g_{\mathrm{S}} \hat{\mathbf{S}})$ où les $g_{\mathrm{I},\mathrm{L},\mathrm{S}}$ sont les facteurs de Landé et $\mub$ est le magnéton de Bohr\footnote{L'interaction avec le spin du noyau donne une correction très faible car $g_{\mathrm{I}}\propto 1/m_{\mathrm{P}}$ avec $m_{\mathrm{p}}$ la masse du proton, et $g_{\mathrm{L,S}} \propto 1/m_{\mathrm{e}}$ avec $m_{\mathrm{e}}$ la masse de l'électron. Ainsi, $g_{\mathrm{I}} \ll g_{\mathrm{L,S}}$ et donc on peut négliger l'effet du spin nucléaire lors de l'application d'un champ magnétique extérieur, voir table \ref{tbl:Rb87}.}. L'énergie d'interaction de ce moment magnétique avec un champ magnétique $\mathbf{B}$ est donnée par $\hat{V}=-\hat{\boldsymbol\mu}.\mathbf{B}$. On obtient les énergies propres par la formule de Breit-Rabi, dont l'application aux états $\etatF{1}{}$ et $\etatF{2}{}$ fournit:
 \begin{equation}
 \begin{aligned}
-E_{F=2} &= + \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2} \\
-E_{F=1} &= - \frac{h \Delta_{\mathrm{hf}}}{2} \sqrt{1+ m_F \beta +\beta^2}
+E_{F=2} &= + \frac{h \deltahf}{2} \sqrt{1+ m_F \beta +\beta^2} \\
+E_{F=1} &= - \frac{h \deltahf}{2} \sqrt{1+ m_F \beta +\beta^2}
 \end{aligned}
 \label{eq:Breit-Rabi}
 \end{equation}
-avec $\beta \simeq 2 \mu_{\mathrm{B}} \left| B \right| /h \Delta_{\mathrm{hf}}$. À faible champ magnétique $\left| B \right| \ll h \Delta_{\mathrm{hf}} / \mu_{\mathrm{B}}$ (régime où $\beta \ll 1$), on retrouve l'effet Zeeman linéaire avec
+avec $\beta \simeq 2 \mub \left| B \right| /h \deltahf$. À faible champ magnétique $\left| B \right| \ll h \deltahf / \mub$ (régime où $\beta \ll 1$), on retrouve l'effet Zeeman linéaire avec
 \begin{equation}
-U_{\mathrm{mag}} (\mathbf{r}) = m_{\mathrm{F}} g_{\mathrm{F}} \mu_{\mathrm{B}} \left| B(\mathbf{r}) \right|
+U_{\mathrm{mag}} (\mathbf{r}) = \mf g_{\mathrm{F}} \mub \left| B(\mathbf{r}) \right|
 \end{equation}
 et $g_{\mathrm{F}=2}= 1/2$ et $g_{\mathrm{F}=1} =-1/2$. L'utilisation d'un champ magnétique non homogène génère donc un potentiel dépendant de la position, tel que dans l'expérience de Stern \& Gerlach. L'utilisation de tels champs inhomogènes est très répandue dans le domaine des atomes ultra-froids, en particulier pour la génération de pièges magnétiques, l'accélération de particules, mais aussi pour réaliser une lévitation magnétique comme c'est le cas sur notre expérience. 
 
@@ -214,7 +214,7 @@ et $g_{\mathrm{F}=2}= 1/2$ et $g_{\mathrm{F}=1} =-1/2$. L'utilisation d'un champ
 
 \subsection{Forces lumineuses}
 \label{sc:forces_lumineuses}
-On se concentre à présent sur l'interaction entre un atome et un champ laser incident. Ce champ laser comporte un grand nombre de photons émis par seconde (typiquement $10^{12}$ photons par seconde pour une puissance de 1µW), on peut donc décrire ce champ laser par une onde classique 
+On se concentre à présent sur l'interaction entre un atome et un champ laser incident. Ce champ laser comporte un grand nombre de photons émis par seconde (typiquement \num{e12} photons par seconde pour une puissance de \SI{1}{\micro\watt}), on peut donc décrire ce champ laser par une onde classique 
 \begin{equation}
 \mathbf{E}(\mathbf{r},t)= \mathrm{Re} \left( E(\mathbf{r}) e^{-i \omega t - i\phi (\mathbf{r})}  \boldsymbol\epsilon \right)
 \end{equation}
@@ -242,7 +242,7 @@ Un tel potentiel présente de nombreux avantages pour les expériences d'atomes 
 
 De plus dans cette limite des grands désaccords, ce potentiel est indépendant de l'état interne. Contrairement à un piège magnétique, un piège dipolaire n'est pas sélectif en état de spin et donc offre de nombreuses possibilités grâce à la disponibilité de degrés de liberté internes. Nous tirerons profit de cet avantage de différentes manières dans la suite. 
 
-Cependant, l'utilisation de tels désaccords (plusieurs centaines de nano-mètres) contraint l'utilisation de forte intensités lumineuses afin d'obtenir des potentiels suffisamment importants. Ainsi, il est courant que les expériences d'atomes ultrafroids utilisent des lasers ayant des puissances de plusieurs Watts \footnote{À titre de comparaison, il ne suffit que de quelques milli-Watts pour endommager l'œil humain.} focalisés sur de petites tailles, typiquement quelques 10-100µm. 
+Cependant, l'utilisation de tels désaccords (plusieurs centaines de nanomètres) contraint l'utilisation de forte intensités lumineuses afin d'obtenir des potentiels suffisamment importants. Ainsi, il est courant que les expériences d'atomes ultrafroids utilisent des lasers ayant des puissances de plusieurs Watts \footnote{À titre de comparaison, il ne suffit que de quelques milliWatts pour endommager l'œil humain.} focalisés sur de petites tailles, typiquement de l'ordre de \SI{100}{\micro\metre}. 
 
 \begin{comment}
 Il se pose alors la question de la dissipation, liée à l'émission spontanée. Le taux d'émission spontanée peut être estimé par:
@@ -251,7 +251,7 @@ Il se pose alors la question de la dissipation, liée à l'émission spontanée.
 \end{equation}
 et dans le cas dans d'un faisceau très désaccordé on peut souvent négliger ce taux et la dissipation qui lui est associée.
 \end{comment}
-Insistons sur le fait que l'expression \ref{eq:potentiel_dipolaire} a été obtenue dans le contexte d'un système à deux niveaux, et donc dans la limite des grands désaccords. Cette approximation n'est plus valable pour des désaccords de quelques nano-mètres, le laser pouvant sonder la structure fine, voire la structure hyperfine de l'atome. Cela permet des approches originales telles que la réalisation d'un potentiel dépendant de l'état interne. En revanche, le rapprochement des transitions atomiques rend les atomes susceptibles de subir des processus de diffusions inélastiques de photons via l'émission spontanée, décrits plus bas.
+Insistons sur le fait que l'expression \ref{eq:potentiel_dipolaire} a été obtenue dans le contexte d'un système à deux niveaux, et donc dans la limite des grands désaccords. Cette approximation n'est plus valable pour des désaccords de quelques nanomètres, le laser pouvant sonder la structure fine, voire la structure hyperfine de l'atome. Cela permet des approches originales telles que la réalisation d'un potentiel dépendant de l'état interne. En revanche, le rapprochement des transitions atomiques rend les atomes susceptibles de subir des processus de diffusions inélastiques de photons via l'émission spontanée, décrits plus bas.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -262,12 +262,12 @@ Pour de tels désaccords et pour un faisceau polarisé linéairement, le potenti
 \begin{equation}
 U_{\mathrm{dip}}(\mathbf{r})=\frac{\pi c^2 I(\mathbf{r})}{2\omega_0^3} \left( \frac{\Gamma_{D_1}}{\omega-\omega_{D_1}} - \frac{\Gamma_{D_1}}{\omega+\omega_{D_1}} + \frac{2\Gamma}{\omega-\omega_0}-\frac{2\Gamma}{\omega+\omega_0}\right)
 \end{equation}
-Une conséquence de la structure fine est l'existence d'une zone entre les deux transitions où le potentiel est tantôt répulsif, tantôt attractif suivant que la fréquence du laser se rapproche de la fréquence de transition $D_1$ (répulsif) ou de la transition $D_2$ (attractif). Il existe donc une région dans laquelle il est possible de passer d'un potentiel désaccordé vers le bleu à un potentiel décalé vers le rouge sans croiser une transition atomique, comme illustré figure \ref{fig:v_dip_magique}. De plus, entre ces domaines de potentiel attractif et répulsif, il existe une longueur d'onde dite \emph{magique} pour laquelle le potentiel s'annule (les contributions des transitions $D_1$ et $D_2$ se compensent). Cette longueur d'onde est d'environ 790nm et peut être un véritable outil des expériences d'atomes ultrafroids, pour la réalisation d'un potentiel dépendant de l'état interne par exemple.
+Une conséquence de la structure fine est l'existence d'une zone entre les deux transitions où le potentiel est tantôt répulsif, tantôt attractif suivant que la fréquence du laser se rapproche de la fréquence de transition $D_1$ (répulsif) ou de la transition $D_2$ (attractif). Il existe donc une région dans laquelle il est possible de passer d'un potentiel désaccordé vers le bleu à un potentiel décalé vers le rouge sans croiser une transition atomique, comme illustré figure \ref{fig:v_dip_magique}. De plus, entre ces domaines de potentiel attractif et répulsif, il existe une longueur d'onde dite \emph{magique} pour laquelle le potentiel s'annule (les contributions des transitions $D_1$ et $D_2$ se compensent). Cette longueur d'onde est d'environ \SI{790}{\nano\metre} et peut être un véritable outil des expériences d'atomes ultrafroids, pour la réalisation d'un potentiel dépendant de l'état interne par exemple.
 
 \begin{figure}
 \centering
 \includegraphics[scale=0.6]{../Fig/BEC_manip/V_dip.png}
-\caption{\textbf{Potentiel dipolaire en fonction de la longueur d'onde du laser.} La présence des deux transitions est remarquable par les deux divergences. Elles sont séparées par une zone de potentiel tantôt attractif, plus répulsif. Entre ces deux régimes se trouve une longueur d'onde \emph{magique} à environ 790nm pour laquelle le potentiel s'annule, quelque soit la puissance du laser.}
+\caption{\textbf{Potentiel dipolaire en fonction de la longueur d'onde du laser.} La présence des deux transitions est remarquable par les deux divergences. Elles sont séparées par une zone de potentiel tantôt attractif, plus répulsif. Entre ces deux régimes se trouve une longueur d'onde \emph{magique} à environ \SI{790}{\nano\metre} pour laquelle le potentiel s'annule, quelque soit la puissance du laser.}
 \label{fig:v_dip_magique}
 \end{figure}
 
@@ -293,7 +293,7 @@ avec $\Gamma_{\mathrm{sp}}$ le taux d'émission spontanée en présence du champ
 \begin{equation}
 \Gamma_{\mathrm{sp}}=\frac{\Gamma}{2} \frac{s}{1+s} \quad \text{avec} \quad s=\frac{I/I_{\mathrm{sat}}}{1+4\delta^2/\Gamma^2}
 \end{equation}
-où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}=1.67$mW.cm${}^{-2}$ est une constante de l'atome de \isotope[87]{Rb}. La grandeur $s$ s'appelle le paramètre de saturation. Celui-ci dépend de l'intensité lumineuse incidente (et donc du nombre de photons incidents) ainsi que du désaccord du laser par rapport à la résonance atomique\footnote{L'expression \ref{eq:potentiel_dipolaire} n'est valable que dans un régime de faible saturation. L'utilisation de grands désaccords autorise l'utilisation de grosses puissances optiques tout en gardant $s\ll 1$. Dans ce régime, on peut estimer le taux d'émission spontanée par $\Gamma_{\mathrm{sp}}(\mathbf{r})=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2$.} $\delta = \omega-\omega_0$.  Le paramètre de saturation est maximal en $\delta=0$, c'est à dire lorsque le laser est à résonance. Dans le cas d'un laser très saturant $s \gg 1$, la force de pression de radiation s'écrit
+où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}=\SI{1.67}{\milli\watt\per\centi\metre^2}$ est une constante de l'atome de \isotope[87]{Rb}. La grandeur $s$ s'appelle le paramètre de saturation. Celui-ci dépend de l'intensité lumineuse incidente (et donc du nombre de photons incidents) ainsi que du désaccord du laser par rapport à la résonance atomique\footnote{L'expression \ref{eq:potentiel_dipolaire} n'est valable que dans un régime de faible saturation. L'utilisation de grands désaccords autorise l'utilisation de grosses puissances optiques tout en gardant $s\ll 1$. Dans ce régime, on peut estimer le taux d'émission spontanée par $\Gamma_{\mathrm{sp}}(\mathbf{r})=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2$.} $\delta = \omega-\omega_0$.  Le paramètre de saturation est maximal en $\delta=0$, c'est à dire lorsque le laser est à résonance. Dans le cas d'un laser très saturant $s \gg 1$, la force de pression de radiation s'écrit
 \begin{equation}
 \mathbf{F}_{\mathrm{PR}}=\frac{\hb \mathbf{k} \Gamma}{2}
 \end{equation}
@@ -306,7 +306,7 @@ où le facteur 2 indique que à forte saturation, un atome autant de chance d'ê
 \subsection{Couplage radio-fréquence} 
 Les outils de manipulation des atomes présentés précédemment offrent la possibilité de créer des potentiels conservatifs (comme le potentiel dipolaire ou le potentiel magnétique) ou encore des forces dissipatives à l'aide la force de pression de radiation. De manière générale, certains de ces outils dépendent de l'état interne de l'atome\footnote{Le potentiel magnétique dépend bien évidemment de l'état interne, tandis que ce n'est pas de le cas du potentiel dipolaire dans la limite des grands désaccords.}, une dernière possibilité de manipulation des atomes consiste donc à contrôler leur état électronique. Un bon contrôle de ce degré de liberté permet donc d'augmenter l'efficacité des processus qui en dépendent (le chargement d'un piège magnétique par exemple), ainsi que de proposer des solutions technologiques originales. 
 
-Comme présenté section \ref{sc:Rb87}, la séparation entre les états fondamentaux $\etatF{1}{}$ et $\etatF{2}{}$ correspond à une fréquence $\Delta_{\mathrm{hf}}$ de l'ordre du GHz, donc à une fréquence qui se trouve accessible électroniquement. Un couplage radio-fréquence entre ces états apparaît alors comme un formidable outil de contrôle de l'état interne des atomes, décrit par un système à deux niveaux dont le hamiltonien\footnote{Le terme de couplage \ref{eq:hamiltonien_rabi} est obtenu en appliquant l'approximation de l'onde tournante, c'est à dire que l'on néglige les termes en $\omega +\Delta_{\mathrm{hf}}$ devant les termes en $\omega - \Delta_{\mathrm{hf}}$ car on estime qu'ils évoluent rapidement, et donc qu'ils s'apparentent à leur valeur moyenne qui est nulle.} est donné dans la base $\etatF{1}{}, \etatF{2}{}$ par 
+Comme présenté section \ref{sc:Rb87}, la séparation entre les états fondamentaux $\etatF{1}{}$ et $\etatF{2}{}$ correspond à une fréquence $\deltahf$ de l'ordre du \SI{}{\giga\hertz}, donc à une fréquence qui se trouve accessible électroniquement. Un couplage radio-fréquence entre ces états apparaît alors comme un formidable outil de contrôle de l'état interne des atomes, décrit par un système à deux niveaux dont le hamiltonien\footnote{Le terme de couplage \ref{eq:hamiltonien_rabi} est obtenu en appliquant l'approximation de l'onde tournante, c'est à dire que l'on néglige les termes en $\omega +\Delta_{\mathrm{hf}}$ devant les termes en $\omega - \Delta_{\mathrm{hf}}$ car on estime qu'ils évoluent rapidement, et donc qu'ils s'apparentent à leur valeur moyenne qui est nulle.} est donné dans la base $\etatF{1}{}, \etatF{2}{}$ par 
 \begin{equation}
 \hat{H}(t)=\frac{\hb}{2} \begin{pmatrix}
 -\Delta_{\mathrm{hf}} & \Omega e^{i \omega t} \\
