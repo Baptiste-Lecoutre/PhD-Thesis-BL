@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -115,5 +115,16 @@
 \dinatlabel{Steck 2001} \textsc{Steck}, Daniel~A.:
 \newblock \emph{Rubidium 87 D line data}.
 \newblock 2001
+
+\bibitem[Volchkov et~al.(2018)Volchkov, Pasek, Denechaud, Mukhtar, Aspect,
+  Delande and Josse]{volchkov2018measurement}
+\dinatlabel{Volchkov et~al. 2018} \textsc{Volchkov}, Valentin~V.~;
+  \textsc{Pasek}, Michael~; \textsc{Denechaud}, Vincent~; \textsc{Mukhtar},
+  Musawwadah~; \textsc{Aspect}, Alain~; \textsc{Delande}, Dominique~;
+  \textsc{Josse}, Vincent:
+\newblock Measurement of spectral functions of ultracold atoms in disordered
+  potentials.
+\newblock In: \emph{Physical review letters}
+\newblock 120 (2018), Nr.~6, S.~060404
 
 \end{thebibliography}

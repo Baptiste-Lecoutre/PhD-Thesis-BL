@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  21 APR 2020 10:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  22 APR 2020 11:05
 entering extended mode
 **./Modif_exp.tex
 (Modif_exp.tex
@@ -1539,19 +1539,33 @@ pdf
 
 pdfTeX warning: pdflatex (file ../Fig/Modif_exp/levitation_RF.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] [8] [9]
+>] [8]
+<../Fig/Modif_exp/oscillation_levitation.pdf, id=159, 546.86694pt x 189.55855pt
+>
+File: ../Fig/Modif_exp/oscillation_levitation.pdf Graphic file (type pdf)
+<use ../Fig/Modif_exp/oscillation_levitation.pdf>
+Package pdftex.def Info: ../Fig/Modif_exp/oscillation_levitation.pdf  used on i
+nput line 236.
+(pdftex.def)             Requested size: 426.79135pt x 147.94183pt.
 
-LaTeX Warning: Reference `sc:chambre_science' on page 10 undefined on input lin
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `bernard2010transport' on page 9 undefined on 
+input line 259.
+
+[9 <../Fig/Modif_exp/oscillation_levitation.pdf>] [10]
+
+LaTeX Warning: Reference `sc:chambre_science' on page 11 undefined on input lin
 e 302.
 
-[10]
-<../Fig/Modif_exp/optique_1070.pdf, id=184, 434.32275pt x 275.84627pt>
+<../Fig/Modif_exp/optique_1070.pdf, id=186, 434.32275pt x 275.84627pt>
 File: ../Fig/Modif_exp/optique_1070.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/optique_1070.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/optique_1070.pdf  used on input line 
 315.
 (pdftex.def)             Requested size: 384.1096pt x 243.95766pt.
-
 
 Package natbib Warning: Citation `muller2015coherent' on page 11 undefined on i
 nput line 316.
@@ -1567,7 +1581,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<../Fig/Modif_exp/expansion_dimple.pdf, id=378, 461.32204pt x 320.72536pt>
+<../Fig/Modif_exp/expansion_dimple.pdf, id=380, 461.32204pt x 320.72536pt>
 File: ../Fig/Modif_exp/expansion_dimple.pdf Graphic file (type pdf)
 <use ../Fig/Modif_exp/expansion_dimple.pdf>
 Package pdftex.def Info: ../Fig/Modif_exp/expansion_dimple.pdf  used on input l
@@ -1603,10 +1617,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 402.
  ) 
 Here is how much of TeX's memory you used:
- 29559 strings out of 480934
- 562129 string characters out of 2899917
- 949333 words of memory out of 3000000
- 44516 multiletter control sequences out of 15000+200000
+ 29565 strings out of 480934
+ 562413 string characters out of 2899917
+ 949711 words of memory out of 3000000
+ 44521 multiletter control sequences out of 15000+200000
  686594 words of font info for 217 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,19n,75p,1537b,1105s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1640,9 +1654,9 @@ b><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy7
 .pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
 sy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
 /lmsy9.pfb>
-Output written on Modif_exp.pdf (15 pages, 5840232 bytes).
+Output written on Modif_exp.pdf (15 pages, 5896789 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
+ 552 PDF objects out of 1000 (max. 8388607)
  66 named destinations out of 1000 (max. 500000)
- 57488 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 57493 words of extra memory for PDF output out of 61914 (max. 10000000)
 
