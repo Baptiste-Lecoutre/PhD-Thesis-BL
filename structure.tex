@@ -422,3 +422,31 @@ addtohook={%
   {\normalfont\sffamily\Huge\bfseries\color{niceblue}}
   {#1}{20pt}{\Huge}
   
+
+
+
+%\usepackage[utf8x]{inputenc}
+\usepackage{subcaption}
+%\usepackage{fontspec}
+\usepackage{lmodern}
+\usepackage{lipsum}
+\usepackage{psl-cover}
+
+\usepackage{siunitx}
+\usepackage{xifthen}
+\newcommand{\etat}[1]{\left| #1 \right\rangle}
+\newcommand{\etatF}[2]{\etat{ F=#1 \ifthenelse{\isempty{#2}}{}{,m_{\mathrm{F}}=#2} }}
+\newcommand{\gftilde}[0]{\widetilde{g}_{\mathrm{F},m_{\mathrm{F}}}}
+\newcommand{\mf}[0]{m_{\mathrm{F}}}
+\newcommand{\mub}[0]{\mu_{\text{B}}}
+\newcommand{\deltahf}[0]{\Delta_{\mathrm{hf}}}
+\newcommand{\magicB}[0]{B_0^*}
+\newcommand{\Bzero}[0]{B_0}
+\DeclareSIUnit\gauss{G}
+\usepackage{gensymb}
+%\usepackage{subfiles}
+\usepackage{isotope}
+\newcommand{\ON}[0]{\mathrm{ON}}
+\newcommand{\ldb}[0]{\lambda_{\mathrm{dB}}}
+\newcommand{\Nzero}[0]{N_{\mathbf{0}}}
+\newcommand{\kB}[0]{k_{\mathrm{B}}}
