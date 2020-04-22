@@ -144,6 +144,7 @@ Plusieurs stratégies expérimentales de lévitation s'offrent alors. La premiè
 
 
 \subsection{Calibration par radio-fréquences}
+\label{sc:levitation_RF}
 Cette dernière stratégie rend possible l'approche novatrice de désordre dépendant de l'état interne, qui impose de travailler à un \emph{biais magique} $\magicB=\SI{3.229}{\gauss}$ pour lequel les susceptibilités magnétiques des états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont identiques \citep{denechaud2018vers}. La valeur précise de ce champ magique demande alors une connaissance fine des caractéristiques du dispositif de génération des champs magnétiques de l'expérience.
 
 À ces fins, la mesure précise de ces champs magnétiques a été effectuée par spectroscopie radio-fréquence. Son principe repose sur le transfert de population entre l'état d'origine $\etatF{1}{-1}$ et les états $\lbrace \etatF{2}{-2},\etatF{2}{-1},\etatF{2}{0} \rbrace$ accessibles, dont la séparation en énergie dépend du champ magnétique. Ainsi, lorsque la radio-fréquence satisfait la condition de résonance $\nu_{\mathrm{RF}}=\deltahf + \delta \nu (B)$ avec $\delta \nu (B)$ le décalage par effet Zeeman, une partie des atomes sera transférée dans l'un des sous-états de $\etatF{2}{}$. Le principe de cette spectroscopie est illustré figure \ref{fig:calibration_RF}.
@@ -262,35 +263,29 @@ On peut alors estimer les fréquences de piégeage (ou d'anti-piégeage pour l'�
 
 
 \paragraph*{Centre de la lévitation}
-Si pour le système isolé de lévitation magnétique le centre du potentiel magnétique correspond au centre géométrique des bobines, ce n'est plus le cas en présence d'un champ extérieur.
+Si pour le système isolé de lévitation magnétique le centre du potentiel magnétique correspond au centre géométrique des bobines, ce n'est plus le cas en présence d'un champ extérieur. Afin d'éviter de mettre le nuage en mouvement après relâchement du piège optique, on utilise alors des champs de compensation générés à l'aide de bobines supplémentaires et dont le rôle est de s'affranchir de ces champs extérieurs, et donc de repositionner le centre du potentiel magnétique sur le nuage. 
 
-Déplacement du centre de la lévitation par les champs rémanents. On utilise alors des champs de compensation afin de replacer le centre de la lévitation au niveau des atomes pour éviter que le nuage oscille après relachment du piège optique.
-
+Le champ permettant de déplacer le potentiel est donc la somme du champ naturellement présent et du champ de compensation:
 \begin{equation}
-B_{\mathrm{i}}=b_{\mathrm{0,i}}+c_{\mathrm{i}} \times I_{\mathrm{i}}
+B_{\mathrm{i}}=b_{\mathrm{0,i}}+c_{\mathrm{i}} \times I_{\mathrm{i}} \quad \text{avec} \quad i=\lbrace x,z \rbrace
 \end{equation}
-où $i=\lbrace x,z \rbrace$
-
-Le champ magnétique s'écrit alors
+Les mesures des différents termes de ce champ ont été effectuées à l'aide de radio-fréquences, comme décrit section \ref{sc:levitation_RF}. Le champ magnétique total s'écrit alors
 \begin{equation}
 \mathbf{B}=\left( \frac{b'}{2}x \right) \vec{x} + \left[ B_0 - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}z +B_z \right) \vec{z}
 \end{equation}
-et la présence d'un champ de biais dans le plan horizontal mène alors à un déplacement du centre de la lévitation
+en ne considérant un effet que dans la direction $\vec{z}$. La présence d'un champ de biais dans le plan horizontal mène donc à un déplacement du centre de la lévitation
 \begin{equation}
 z_c =-\frac{2B_z}{b'}\left( \frac{1}{1-4B_0 b'' /b'^2} \right)
 \end{equation}
-pour un champ $B_z \ll B_0$ et où $z_c$ est la coordonnée du centre de la lévitation dans la direction $\vec{z}$
-À bas champ, le déplacement n'est dû qu'au gradient et au champ de compensation. Avec un gros biais par contre, on doit prendre en compte les effets de la courbure. en particulier, il est possible d'expulser le centre de la lévitation à l'infini, ça arrive quand la fréquence $\omega_z$ s'annule.
-effets de champs de biais de compensation.
+pour un champ $B_z \ll B_0$\footnote{Dans l'hypothèse où le champ de biais généré par les bobines de lévitation ne serait pas orienté parfaitement selon l'axe du gradient vertical, l'effet d'un angle $\theta$ se manifesterait via la présence d'un champ horizontal $B_0 \sin{\theta}$, qui participerait à déplacer le centre.}. On retrouve ici le résultat intuitif que dans le régime de bas champ $B_0$, l'effet d'un biais horizontal est de déplacer le centre de la lévitation à l'aide d'un gradient $b'/2$, résultant en un déplacement du potentiel magnétique de $z_c=-2B_z/b'$. 
 
-Augmentation du biais induit un déplacement horizontal si on n'est pas au centre de la lévitation et si on change le gradient de sorte à compenser le changement de biais. Pour une étude résolue en énergie, sans force toussa toussa, il faut aussi changer le champ de biais de compensation. 
+Une conséquence importante de ce résultat est que le déplacement du centre de la lévitation par un biais de positionnement dépend du biais de lévitation, ainsi que du gradient et de la courbure du champ. La décompression de la lévitation magnétique peut alors entraîner un déplacement du nuage, dont l'effet peut être critique pour l'étude à énergie résolue de la transition d'Anderson. Deux solutions sont envisageables pour contrer cet effet: 
+\begin{itemize}
+\item[\textendash] Placer le nuage au centre géométrique des bobines de lévitation, c'est à dire avoir $B_z=0$ et compenser exactement les champs naturellement présents. 
+\item[\textendash] Modifier le champ de compensation à chaque instant lors de la décompression pour éviter le déplacement du centre du potentiel magnétique.
+\end{itemize}
 
-
-
-
-
-Cette étude a permis non seulement de calibrer nos bobines dont la position, l'orientation et le comportement magnétique ont été légèrement modifiés. Mais en plus, ça nous a permit de découvrir de nouvelles limitations. 
-Future nécessité de pouvoir changer les courants de compensation de manière totalement arbitraire et contrôlée en cours de séquence non réalisable avec nos alimentations actuelles: étude en cours. 
+L'étude du système de lévitation magnétique nous a non seulement permis de calibrer nos bobines dont la position, l'orientation et le comportement magnétique ont été légèrement modifiés suite à un démontage et de lourds travaux de réparation, mais elle nous a de plus permis d'identifier de possibles limitations pour l'étude de la transition d'Anderson à énergie résolue. En particulier, il nous sera nécessaire de pouvoir contrôler de manière arbitraire les courants des bobines de compensation en cours de séquence, ce qui n'est pas possible sur le dispositif actuel. Il s'agit d'une étude à laquelle l'équipe porte une attention particulière à l'heure de l'écriture de ces lignes.
 
 
 
