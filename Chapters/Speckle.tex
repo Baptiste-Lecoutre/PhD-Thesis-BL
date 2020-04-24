@@ -6,7 +6,7 @@
 
 Le chapitre \ref{ch:BEC_manip} nous a renseigné quant aux propriétés de notre onde de matière ainsi que sa production. En particulier, on a vu qu'il était possible d'appliquer des potentiels externes conservatifs aux atomes par le biais du potentiel dipolaire. Ce potentiel étant proportionnel à l'intensité lumineuse $I$, on peut alors appliquer un désordre à nos atomes, pourvu que l'on soit capable de créer un désordre optique. En effet, une originalité de notre expérience est "d'inverser" les rôles habituels de la matière et de la lumière.
 
-Ainsi, dans ce chapitre, nous allons nous attacher à décrire le second élément clé à la localisation d'Anderson: le désordre. Nous montrerons que la génération d'un tel désordre est aisée: la diffraction d'un faisceau laser au travers d'une lame de verre rugueuse produit un motif d'intensité lumineuse aléatoire et à fort contraste, appelé champs de tavelures optiques, ou encore \emph{Speckle} (anglicisme communément admis). Citons deux énormes avantages d'un tel désordre: on en connaît toutes les propriétés, régies par la diffraction, et on contrôle ce désordre. 
+Ainsi, dans ce chapitre, nous allons nous attacher à décrire le second élément clé de la localisation d'Anderson: le désordre. Nous montrerons que la génération d'un tel désordre est aisée: la diffraction d'un faisceau laser au travers d'une lame de verre rugueuse produit un motif d'intensité lumineuse aléatoire et à fort contraste, appelé champs de tavelures optiques, ou encore \emph{Speckle} (anglicisme communément admis). Citons deux énormes avantages d'un tel désordre: on en connaît toutes les propriétés, régies par la diffraction, et on contrôle ce désordre. 
 
 La première partie se concentrera sur la statistique d'un champ de speckle, c'est à dire comment l'intensité lumineuse se répartit de manière statistique. Dans un second temps, nous décrirons les propriétés spatiales d'un speckle, en particulier la taille des grains de lumière dans les directions transverses et longitudinale. Dans une troisième partie nous parlerons du potentiel ressenti par les atomes ainsi que des possibilités offertes par la structure multi-niveaux du \isotope[87]{Rb} et l'excellent contrôle du désordre dont nous disposons, puis dans une ultime partie nous étudierons une approche à deux longueurs d'onde pour dépasser les limitations d'un speckle monochromatique pour l'étude de la transition d'Anderson à énergie résolue. 
 
@@ -25,13 +25,13 @@ Souvent considéré néfaste dans le domaine de l'imagerie, le speckle est pour 
 
 \subsection{Propriétés du diffuseur}
 \label{sec:propriete_diffuseur}
-Avant de nous intéresser aux propriétés du désordre à proprement parler, commençons par nous concentrer sur les propriétés de l'élement générant le speckle: le diffuseur. Il s'agit d'une lame de verre dépolie, d'épaisseur locale $e(\mathbf{x}_0)$ aléatoire. On supposera que cette lame a été dépolie de manière homogène. Ainsi, la statistique de l'épaisseur ne dépend pas de la position considérée sur la surface du diffuseur, et l'on considèrera que l'on a affaire à un processus stationnaire. 
+Avant de nous intéresser aux propriétés du désordre à proprement parler, commençons par nous concentrer sur celles de l'élément générant le speckle: le diffuseur. Il s'agit d'une lame de verre dépolie, d'épaisseur locale $e(\mathbf{x}_0)$ aléatoire. On supposera que cette lame a été dépolie de manière homogène, ainsi, la statistique de l'épaisseur ne dépend pas de la position considérée sur la surface du diffuseur. On considèrera donc que la distribution de l'épaisseur correspond à un processus stationnaire. 
 
-La phase accumulée par le faisceau laser incident lors de la traversée du diffuseur étant proportionnelle à l'épaisseur traversée, cette phase $\phi(\mathbf{x}_0)$ est elle aussi une variable aléatoire donnée localement par:
+La phase localement accumulée par le faisceau laser incident lors de la traversée du diffuseur étant proportionnelle à l'épaisseur traversée, cette phase $\phi(\mathbf{x}_0)$ est elle aussi une variable aléatoire donnée par:
 \begin{equation}
 \phi(\mathbf{x}_0)=2\pi (n-1) \frac{e(\mathbf{x}_0)}{\lambda}
 \end{equation}
-avec $n$ l'indice du verre et $\lambda\approx 780$nm la longueur d'onde de l'onde laser.
+avec $n$ l'indice du verre et $\lambda\approx \SI{780}{\nano\metre}$ la longueur d'onde de l'onde laser.
 L'effet de cette phase aléatoire locale se traduit en terme d'amplitude via la transmittance du diffuseur. De même que l'épaisseur et la phase, il s'agit d'une grandeur locale définie par:
 \begin{equation}
 t_{\mathrm{diff}}(\mathbf{x}_0)=e^{i\phi(\mathbf{x}_0)}
