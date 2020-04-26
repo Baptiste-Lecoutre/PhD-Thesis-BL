@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  23 APR 2020 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  26 APR 2020 17:11
 entering extended mode
 **./main.tex
 (main.tex
@@ -1424,10 +1424,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(Chapters/Speckle.tex
-Chapitre 1.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 9
+8.
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1436,8 +1434,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
+(main.toc)
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
-LaTeX Warning: Reference `ch:BEC_manip' on page 1 undefined on input line 7.
+ (Chapters/Speckle.tex [1
+
+
+{C:/Users/lecou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+
+]
+Chapitre 1.
+
+LaTeX Warning: Reference `ch:BEC_manip' on page 3 undefined on input line 7.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 13.
@@ -1451,7 +1460,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
-<Fig/Speckle/speckle_pattern.pdf, id=7, 404.94328pt x 187.88626pt>
+<Fig/Speckle/speckle_pattern.pdf, id=94, 404.94328pt x 187.88626pt>
 File: Fig/Speckle/speckle_pattern.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_pattern.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 21
@@ -1460,38 +1469,23 @@ Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 21
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[1
-
-
-{C:/Users/lecou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <./Fig/S
-peckle/speckle_pattern.pdf>]
-<Fig/Speckle/diffus_prop.pdf, id=105, 300.06396pt x 226.78568pt>
-File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
-<use Fig/Speckle/diffus_prop.pdf>
-Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 61.
-(pdftex.def)             Requested size: 300.06323pt x 226.78511pt.
- [3 <./Fig/Speckle/diffus_prop.pdf>]
-<Fig/Speckle/random_walk_speckle.pdf, id=212, 208.17155pt x 207.50287pt>
-File: Fig/Speckle/random_walk_speckle.pdf Graphic file (type pdf)
-<use Fig/Speckle/random_walk_speckle.pdf>
-Package pdftex.def Info: Fig/Speckle/random_walk_speckle.pdf  used on input lin
-e 100.
-(pdftex.def)             Requested size: 208.17102pt x 207.50235pt.
+[3]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-19.
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
+34.
+ ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-[4 <./Fig/Speckle/random_walk_speckle.pdf>]
-<Fig/Speckle/montage_diffuseur.pdf, id=243, 489.34206pt x 294.36562pt>
+<Fig/Speckle/montage_diffuseur.pdf, id=106, 489.34206pt x 294.36562pt>
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
-123.
+138.
 (pdftex.def)             Requested size: 342.53711pt x 206.05452pt.
+[4 <./Fig/Speckle/speckle_pattern.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [5 <./Fig/Speckle/montage_diffuseur.pdf>]
-Overfull \hbox (8.747pt too wide) detected at line 141
+Overfull \hbox (8.747pt too wide) detected at line 156
 []
  []
 
@@ -1530,20 +1524,20 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29618 strings out of 480934
- 562894 string characters out of 2899917
+ 29549 strings out of 480934
+ 561664 string characters out of 2899917
  949012 words of memory out of 3000000
- 44554 multiletter control sequences out of 15000+200000
- 668399 words of font info for 201 fonts, out of 3000000 for 9000
+ 44521 multiletter control sequences out of 15000+200000
+ 656437 words of font info for 182 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,62p,1405b,946s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
-c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
-nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.e
-nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
-sy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-mathit.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.en
+c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
+y.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
+athit.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+lm-mathex.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
+/lm/lm-ts1.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/lm/lmbx6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
@@ -1564,9 +1558,9 @@ rs/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/
 Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><
 C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.p
 fb>
-Output written on main.pdf (14 pages, 564766 bytes).
+Output written on main.pdf (14 pages, 508718 bytes).
 PDF statistics:
- 558 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 49385 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 475 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 47839 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -8,7 +8,7 @@ Le chapitre \ref{ch:BEC_manip} nous a renseigné quant aux propriétés de notre
 
 Ainsi, dans ce chapitre, nous allons nous attacher à décrire le second élément clé de la localisation d'Anderson: le désordre. Nous montrerons que la génération d'un tel désordre est aisée: la diffraction d'un faisceau laser au travers d'une lame de verre rugueuse produit un motif d'intensité lumineuse aléatoire et à fort contraste, appelé champs de tavelures optiques, ou encore \emph{Speckle} (anglicisme communément admis). Citons deux énormes avantages d'un tel désordre: on en connaît toutes les propriétés, régies par la diffraction, et on contrôle ce désordre. 
 
-La première partie se concentrera sur la statistique d'un champ de speckle, c'est à dire comment l'intensité lumineuse se répartit de manière statistique. Dans un second temps, nous décrirons les propriétés spatiales d'un speckle, en particulier la taille des grains de lumière dans les directions transverses et longitudinale. Dans une troisième partie nous parlerons du potentiel ressenti par les atomes ainsi que des possibilités offertes par la structure multi-niveaux du \isotope[87]{Rb} et l'excellent contrôle du désordre dont nous disposons, puis dans une ultime partie nous étudierons une approche à deux longueurs d'onde pour dépasser les limitations d'un speckle monochromatique pour l'étude de la transition d'Anderson à énergie résolue. 
+La première partie se concentrera sur la génération d'un champ de speckle, en particulier sur le diffuseur qui donne au speckle toutes ses propriétés. Dans un second temps, nous décrirons les propriétés spatiales d'un speckle, en particulier la taille des grains de lumière dans les directions transverses et longitudinale. Dans une troisième partie nous parlerons du potentiel ressenti par les atomes ainsi que des possibilités offertes par la structure multi-niveaux du \isotope[87]{Rb} et l'excellent contrôle du désordre dont nous disposons, puis dans une ultime partie nous étudierons une approche à deux longueurs d'onde pour dépasser les limitations d'un speckle monochromatique pour l'étude de la transition d'Anderson à énergie résolue. 
 
 \section{Génération d'un champ de speckle}
 %\section{Propriétés statistiques d'un champ de speckle}
@@ -23,9 +23,52 @@ Souvent considéré néfaste dans le domaine de l'imagerie, le speckle est pour 
 \label{fig:speckle_pattern}
 \end{figure}
 
+
+
+\subsection{Statistiques de l'intensité d'un speckle}
+Modèle simpliste d'un grand nombre de diffuseurs qui émettent chacun une phase aléatoire. Le champ rayonné au point d'observation correspond à la somme de tous ces champs émis, ça fait une marche aléatoire dans le plan complexe. Dans ce cas, le théorème central limite donne pour les parties réelle et imaginaire de l'amplitude. Pour l'intensité, ça se traduit par une exponentielle décroissante.
+
+Cette analyse repose sur 2 hypothèses: on a besoin d'un grand nombre d'émetteurs ($r_{\mathrm{diff}} \ll D$) et besoin d'une répartition homogène des phases ($\sigma_\phi \gg 2\pi$).
+
+
+\begin{comment}
+Marche aléatoire dans le plan complexe pour $\vec{E}$ car $\sigma_{\phi} \gg 2\pi$ ce qui valide l'approche de marche aléatoire (faire une figure de marche aléatoire avec beaucoup d'angles différents pour monter que $\left\langle t \right\rangle\approx 0$, et que sinon $\left\langle t \right\rangle\neq 0$.
+
+Dans la partie d'avant, c'était au niveau du diffuseur. Maintenant on va s'attacher à décrire ce qu'il se passe après propagation. 
+En première approximation, on peut supposer que le champ rayonné est la somme des $N$ champs émis par les diffuseurs avec des phases aléatoires:
+\begin{equation}
+E(\mathbf{x})=\sum_{j}^{N} E_0 e^{i \phi_j}
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{Fig/Speckle/random_walk_speckle.pdf}
+\label{fig:random_walk_speckle}
+\caption{Marche aléatoire dans le plan complexe $E_{\mathcal{R}},E_{\mathcal{I}}$ dans le cas où $\sigma_{\phi} \gg 2\pi$}
+\end{figure}
+Théorème central limite car $r_{diff} \ll D$, $D$ étant la taille typique de l'éclairement incident.
+\begin{equation}
+\mathcal{P}(E_{\mathcal{R,I}})=\frac{1}{\sigma_E\sqrt{2\pi}} e^{-\frac{E_{\mathcal{R,I}}^2}{2 \sigma_E^2}}
+\end{equation}
+avec $E_{\mathcal{R}}$ et $E_{\mathcal{I}}$ les parties réelle et imaginaire du champ complexe $E$ respectivement. En faisant l'intégration angulaire, on trouve 
+\begin{equation}
+\mathcal{P}(I)=\frac{1}{2\sigma_E^2}e^{-\frac{I}{2\sigma_E^2}}
+\end{equation}
+Cette loi de probabilité permet alors d'obtenir l'intensité moyenne $\overline{I}=2\sigma_E^2$ et l'écart-type en intensité $\sigma_I=\overline{I}$. Le contraste d'une telle figure de speckle est alors de 1, ce qui se traduit par des pics très brillants entourés de régions sombres d'intensité quasinulle.
+\end{comment}
+
+
+
+
+
+
 \subsection{Propriétés du diffuseur}
 \label{sec:propriete_diffuseur}
-Avant de nous intéresser aux propriétés du désordre à proprement parler, commençons par nous concentrer sur celles de l'élément générant le speckle: le diffuseur. Il s'agit d'une lame de verre dépolie, d'épaisseur locale $e(\mathbf{x}_0)$ aléatoire. On supposera que cette lame a été dépolie de manière homogène, ainsi, la statistique de l'épaisseur ne dépend pas de la position considérée sur la surface du diffuseur. On considèrera donc que la distribution de l'épaisseur correspond à un processus stationnaire. 
+Lien des hypothèses précédentes avec les propriétés du diffuseur.
+expression de la phase, de la transmittance moyenne, et de la correlation du diffuseur. lien avec $\sigma_\phi$ et $r_{\mathrm{diff}}$ pour connecter avec la partie précédente. Speckle pleinement développé.
+
+\begin{comment}
+Avant de nous intéresser aux propriétés du désordre à proprement parler, commençons par nous concentrer sur celles de l'élément générant le speckle: le diffuseur. Il s'agit d'une lame de verre dépolie, d'épaisseur locale $e(\mathbf{x}_0)$ aléatoire. On supposera que cette lame a été dépolie de manière homogène, ainsi, la statistique de l'épaisseur ne dépend pas de la position considérée sur la surface du diffuseur. On assimilera donc la distribution de l'épaisseur à un processus stationnaire. 
 
 La phase localement accumulée par le faisceau laser incident lors de la traversée du diffuseur étant proportionnelle à l'épaisseur traversée, cette phase $\phi(\mathbf{x}_0)$ est elle aussi une variable aléatoire donnée par:
 \begin{equation}
@@ -83,37 +126,9 @@ C_{\mathrm{diff}}(\mathbf{x}_0,\mathbf{x}'_0)\approx e^{-\frac{\left| \mathbf{x}
 \end{equation}
 avec $r_{\mathrm{diff}} = r_e / \sigma_{\phi}$ la taille effective des grains du diffuseur. Cette taille diminuée s'explique par le fait que si $\sigma_{\phi} \gg 2\pi$, la phase ne sera pas homogène sur la totalité de la largeur d'un grain (de taille typique $r_e$), mais seulement sur une zone réduite. 
 
+\end{comment}
 
 
-
-\subsection{Statistiques de l'intensité d'un speckle}
-Marche aléatoire dans le plan complexe pour $\vec{E}$ car $\sigma_{\phi} \gg 2\pi$ ce qui valide l'approche de marche aléatoire (faire une figure de marche aléatoire avec beaucoup d'angles différents pour monter que $\left\langle t \right\rangle\approx 0$, et que sinon $\left\langle t \right\rangle\neq 0$.
-
-Dans la partie d'avant, c'était au niveau du diffuseur. Maintenant on va s'attacher à décrire ce qu'il se passe après propagation. 
-En première approximation, on peut supposer que le champ rayonné est la somme des $N$ champs émis par les diffuseurs avec des phases aléatoires:
-\begin{equation}
-E(\mathbf{x})=\sum_{j}^{N} E_0 e^{i \phi_j}
-\end{equation}
-
-\begin{figure}
-\centering
-\includegraphics[scale=1]{Fig/Speckle/random_walk_speckle.pdf}
-\label{fig:random_walk_speckle}
-\caption{Marche aléatoire dans le plan complexe $E_{\mathcal{R}},E_{\mathcal{I}}$ dans le cas où $\sigma_{\phi} \gg 2\pi$}
-\end{figure}
-Théorème central limite car $r_{diff} \ll D$, $D$ étant la taille typique de l'éclairement incident.
-\begin{equation}
-\mathcal{P}(E_{\mathcal{R,I}})=\frac{1}{\sigma_E\sqrt{2\pi}} e^{-\frac{E_{\mathcal{R,I}}^2}{2 \sigma_E^2}}
-\end{equation}
-avec $E_{\mathcal{R}}$ et $E_{\mathcal{I}}$ les parties réelle et imaginaire du champ complexe $E$ respectivement. En faisant l'intégration angulaire, on trouve 
-\begin{equation}
-\mathcal{P}(I)=\frac{1}{2\sigma_E^2}e^{-\frac{I}{2\sigma_E^2}}
-\end{equation}
-Cette loi de probabilité permet alors d'obtenir l'intensité moyenne $\overline{I}=2\sigma_E^2$ et l'écart-type en intensité $\sigma_I=\overline{I}$. Le contraste d'une telle figure de speckle est alors de 1, ce qui se traduit par des pics très brillants entourés de régions sombres d'intensité quasinulle.
-
-
-%\section{Corrélations spatiales d'un champ de speckle}
-%Bien que les figures de speckle soient déterministes car régies par la diffraction, on peut considérer leurs réalisations comme étant aléatoires. Néanmoins, les propriétés spatiales d'un champ de speckle ne dépendent pas de la réalisation, mais seulement de la géométrie du problème. Dans cette section, nous allons nous attacher à décrire les grandeurs spatiales caractéristiques d'un speckle: son extension et la taille des grains, donnée par la fonction d'autocorrélation en intensité. Ces quantités on été mesurées expérimentalement sur un montage reproduisant exactement les conditions réelles de la cellule à vide, celle-ci empêchant de faire des mesures in-situ. La description de ces mesures et de leur traitement sont référencées dans la thèse de Jérémie Richard.
 
 \subsection{Implémentation expérimentale}
 À présent, étudions la géométrie de notre dispositif de génération du speckle. Le faisceau est émis par un laser Toptica TA-Pro 2W accordable autour de 780nm (Raie $\mathrm{D}_2$ du ${}^{87}\text{Rb}$). Cette accordabilité nous offre la possibilité de réaliser un potentiel désaccordé vers le rouge et donc attractif ($\delta < 0$) ou bien désaccordé vers le bleu, et donc avoir un potentiel répulsif ($\delta > 0$). Historiquement, le laser auparavant utilisé pour générer le speckle était un laser Verdi à 532nm très désaccordé vers le bleu afin de s'affranchir de l'émission spontanée, nécessaire sur des très longs temps pour l'étude de la localisation d'Anderson. Étant donnée la proximité de la résonance avec ce nouveau système autour de 780nm, nous travaillons à bien plus basse puissance (typiquement quelques µW). Le mode du laser est filtré à l'aide d'une fibre optique, sa polarisation est fixée linéaire à l'aide de cubes séparateurs de polarisations, et l'ensemble est asservi en puissance (l'essentiel de la puissance du laser sert d'ailleurs à cette boucle d'asservissement). Les détails de ce montage peuvent être retrouvés dans la thèse de Vincent Denechaud. 
