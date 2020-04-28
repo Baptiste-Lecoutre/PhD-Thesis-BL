@@ -26,37 +26,25 @@ Souvent considéré néfaste dans le domaine de l'imagerie, le speckle est pour 
 
 
 \subsection{Statistiques de l'intensité d'un speckle}
-Modèle simpliste d'un grand nombre de diffuseurs qui émettent chacun une phase aléatoire. Le champ rayonné au point d'observation correspond à la somme de tous ces champs émis, ça fait une marche aléatoire dans le plan complexe. Dans ce cas, le théorème central limite donne pour les parties réelle et imaginaire de l'amplitude. Pour l'intensité, ça se traduit par une exponentielle décroissante.
 
-Cette analyse repose sur 2 hypothèses: on a besoin d'un grand nombre d'émetteurs ($r_{\mathrm{diff}} \ll D$) et besoin d'une répartition homogène des phases ($\sigma_\phi \gg 2\pi$).
-
-
-\begin{comment}
-Marche aléatoire dans le plan complexe pour $\vec{E}$ car $\sigma_{\phi} \gg 2\pi$ ce qui valide l'approche de marche aléatoire (faire une figure de marche aléatoire avec beaucoup d'angles différents pour monter que $\left\langle t \right\rangle\approx 0$, et que sinon $\left\langle t \right\rangle\neq 0$.
-
-Dans la partie d'avant, c'était au niveau du diffuseur. Maintenant on va s'attacher à décrire ce qu'il se passe après propagation. 
-En première approximation, on peut supposer que le champ rayonné est la somme des $N$ champs émis par les diffuseurs avec des phases aléatoires:
+Le phénomène de speckle apparaît lorsque l'amplitude $E(\mathbf{x})$ au point d'observation $\mathbf{x}$ résulte de la somme d'un grand nombre N d'ondes d'amplitude $E_0$ et de phases aléatoires $\phi_j$ comme illustré figure \ref{fig:speckle_pattern}. Cette amplitude peut alors s'écrire
 \begin{equation}
 E(\mathbf{x})=\sum_{j}^{N} E_0 e^{i \phi_j}
 \end{equation}
-
-\begin{figure}
-\centering
-\includegraphics[scale=1]{Fig/Speckle/random_walk_speckle.pdf}
-\label{fig:random_walk_speckle}
-\caption{Marche aléatoire dans le plan complexe $E_{\mathcal{R}},E_{\mathcal{I}}$ dans le cas où $\sigma_{\phi} \gg 2\pi$}
-\end{figure}
-Théorème central limite car $r_{diff} \ll D$, $D$ étant la taille typique de l'éclairement incident.
+En supposant qu'un grand nombre de grains du diffuseur participent à l'interférence au point d'observation ($\rdiff \ll D$ avec $\rdiff$ la taille typique d'un grain du diffuseur et $D$ la taille de l'éclairement incident), on peut appliquer le théorème central limite à l'amplitude rayonnée. En supposant de plus que les phases aléatoires $\phi_j$ sont réparties de manière homogène sur l'intervalle $\left[ 0,2\pi \right]$, les distributions de probabilités des parties réelle et imaginaire de l'amplitude sont données par la loi normale
 \begin{equation}
-\mathcal{P}(E_{\mathcal{R,I}})=\frac{1}{\sigma_E\sqrt{2\pi}} e^{-\frac{E_{\mathcal{R,I}}^2}{2 \sigma_E^2}}
+\mathcal{P}(E_{\mathcal{R,I}})=\frac{1}{\sigma_E\sqrt{2\pi}} \exp{\left( -\frac{E_{\mathcal{R,I}}^2}{2 \sigma_E^2}\right) }
 \end{equation}
-avec $E_{\mathcal{R}}$ et $E_{\mathcal{I}}$ les parties réelle et imaginaire du champ complexe $E$ respectivement. En faisant l'intégration angulaire, on trouve 
+avec $E_{\mathcal{R}}$ et $E_{\mathcal{I}}$ les parties réelle et imaginaire du champ complexe $E=E_{\mathcal{R}} +i E_{\mathcal{I}}$ respectivement. Étant donné que les atomes ne sont sensibles qu'à l'intensité lumineuse $I=\left| E \right| ^2$, on montre alors que la distribution de probabilité de l'intensité lumineuse suit une loi exponentielle \citep{goodman2007speckle}:
 \begin{equation}
-\mathcal{P}(I)=\frac{1}{2\sigma_E^2}e^{-\frac{I}{2\sigma_E^2}}
+\mathcal{P}(I)=\frac{1}{\overline{I}}\exp{\left( -I/\overline{I} \right) }
+\label{eq:proba_speckle}
 \end{equation}
-Cette loi de probabilité permet alors d'obtenir l'intensité moyenne $\overline{I}=2\sigma_E^2$ et l'écart-type en intensité $\sigma_I=\overline{I}$. Le contraste d'une telle figure de speckle est alors de 1, ce qui se traduit par des pics très brillants entourés de régions sombres d'intensité quasinulle.
-\end{comment}
-
+De manière générale, on appellera \emph{speckle pleinement développé} tout speckle vérifiant cette loi de probabilité. Deux conséquences importantes de cette loi sont à noter:
+\begin{itemize}
+\item[\textendash] L'écart-type $\sigma_I$ de la loi \ref{eq:proba_speckle} est égal à sa valeur moyenne $\overline{I}$, et donc le contraste $\sigma_I /\overline{I}$ d'une figure de speckle pleinement développé est de 1. Une telle figure comportera alors des zones de forte intensité tout comme des zones d'intensité quasi-nulle. 
+\item[\textendash] La probabilité d'obtenir une forte intensité lumineuse est exponentiellement petite, tandis que les zones de faible intensité sont beaucoup plus probables. Ainsi, une figure typique de speckle (représentée figure \ref{fig:speckle_pattern}) est composée de maxima d'intensité lumineuse (\emph{grains de speckle}) entourés de larges zone d'ombre.
+\end{itemize}
 
 
 
@@ -64,8 +52,14 @@ Cette loi de probabilité permet alors d'obtenir l'intensité moyenne $\overline
 
 \subsection{Propriétés du diffuseur}
 \label{sec:propriete_diffuseur}
-Lien des hypothèses précédentes avec les propriétés du diffuseur.
-expression de la phase, de la transmittance moyenne, et de la correlation du diffuseur. lien avec $\sigma_\phi$ et $r_{\mathrm{diff}}$ pour connecter avec la partie précédente. Speckle pleinement développé.
+L'analyse précédente décrivant la statistique de l'intensité lumineuse d'un speckle pleinement développé repose sur deux hypothèses: 
+\begin{itemize}
+\item[\textendash] Il faut qu'un grand nombre d'émetteurs participe à l'interférence au point d'observation. Notamment, cela signifie que le diffuseur comporte un nombre suffisamment de \emph{grains} ($\rdiff \ll D$)  et que ceux-ci rayonnent au point d'observation. Ce dernier point sera illustré section \ref{sc:speckle_correlation}.
+\item[\textendash] Pour que la distribution de probabilité de l'amplitude soit centrée en 0, propriété essentielle pour un speckle pleinement développé, il faut que la distribution de phases soit suffisamment large, c'est à dire $\sigma_\phi \gg 2\pi$. 
+\end{itemize}
+Les deux grandeurs apparaissant dans ces hypothèses, $\rdiff$ et $\sigma_\phi$, sont fixées par les propriétés du diffuseur, que nous nous attacherons à décrire dans cette partie.
+
+
 
 \begin{comment}
 Avant de nous intéresser aux propriétés du désordre à proprement parler, commençons par nous concentrer sur celles de l'élément générant le speckle: le diffuseur. Il s'agit d'une lame de verre dépolie, d'épaisseur locale $e(\mathbf{x}_0)$ aléatoire. On supposera que cette lame a été dépolie de manière homogène, ainsi, la statistique de l'épaisseur ne dépend pas de la position considérée sur la surface du diffuseur. On assimilera donc la distribution de l'épaisseur à un processus stationnaire. 
@@ -146,6 +140,7 @@ La génération du speckle se fait donc selon le montage représenté figure \re
 
 
 \section{Propriétés spatiales d'un champ de speckle}
+\label{sc:speckle_correlation}
 Bien que les figures de speckle soient déterministes car régies par la diffraction, on peut considérer leurs réalisations comme étant aléatoires. Néanmoins, les propriétés spatiales d'un champ de speckle ne dépendent pas de la réalisation, mais seulement de la géométrie du problème. Dans cette section, nous allons nous attacher à décrire les grandeurs spatiales caractéristiques d'un speckle: son extension et la taille des grains, donnée par la fonction d'autocorrélation en intensité. Ces quantités on été mesurées expérimentalement sur un montage reproduisant exactement les conditions réelles de la cellule à vide, celle-ci empêchant de faire des mesures in-situ. La description de ces mesures et de leur traitement sont référencées dans la thèse de Jérémie Richard.
 
 \subsection{Extension transverse du champ de speckle le long le l'axe optique}

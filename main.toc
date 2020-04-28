@@ -14,14 +14,4 @@
 \contentsline {section}{\numberline {1.4}Potentiel composé d'un speckle bichromatique}{7}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}S'éloigner de résonance}{7}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Étude de la similitude de deux speckles}{7}{subsection.1.4.2}%
-\contentsline {chapter}{\numberline {A}Calculs de champs de tavelures}{9}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Amplitude rayonnée}{9}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Fonction de corrélation}{10}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Calcul général}{10}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Expression de l'extension transverse du champ de tavelures le long de l'axe optique}{10}{subsection.A.2.2}%
-\contentsline {section}{\numberline {A.3}Corrélations pour des speckles monochromatiques et bichromatiques}{10}{section.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Corrélation transverse d'un unique speckle le long de l'axe optique}{10}{subsection.A.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}Corrélation longitudinale d'un unique speckle autour du plan de Fourier}{11}{subsection.A.3.2}%
-\contentsline {subsection}{\numberline {A.3.3}Corrélation transverse d'un speckle bichromatique dans le plan de Fourier}{11}{subsection.A.3.3}%
-\contentsline {subsection}{\numberline {A.3.4}Corrélation longitudinale d'un speckle bichromatique autour du plan de Fourier}{12}{subsection.A.3.4}%
 \contentsfinish 
