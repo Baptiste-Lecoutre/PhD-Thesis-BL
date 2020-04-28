@@ -18,8 +18,8 @@ Souvent considéré néfaste dans le domaine de l'imagerie, le speckle est pour 
 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{Fig/Speckle/speckle_pattern.pdf}
-\caption{\textbf{a:} Motif de speckle. Un tel motif est composé de grains lumineux entourés de zones d'ombre, où l'intensité est quasiment nulle. \textbf{b:} Génération d'une figure de speckle. La diffraction d'une onde cohérente par une surface rugueuse appelée diffuseur résulte en l'interférence multiple d'une grand nombre d'ondes à déphasage aléatoire. La phase de chacune de ces ondes est déterminée par l'épaisseur de verre traversée en chaque point.}
+\includegraphics[width=0.9\textwidth]{Fig/Speckle/speckle_pattern.pdf}
+\caption{\textbf{a: Motif de speckle.} Un tel motif est composé de grains lumineux entourés de zones d'ombre, où l'intensité est quasiment nulle. \textbf{b: Génération d'une figure de speckle.} La diffraction d'une onde cohérente par une surface rugueuse appelée diffuseur résulte en l'interférence multiple d'une grand nombre d'ondes à déphasage aléatoire. La phase de chacune de ces ondes est déterminée par l'épaisseur de verre traversée en chaque point.}
 \label{fig:speckle_pattern}
 \end{figure}
 
@@ -27,17 +27,17 @@ Souvent considéré néfaste dans le domaine de l'imagerie, le speckle est pour 
 
 \subsection{Statistiques de l'intensité d'un speckle}
 
-Le phénomène de speckle apparaît lorsque l'amplitude $E(\mathbf{x})$ au point d'observation $\mathbf{x}$ résulte de la somme d'un grand nombre N d'ondes d'amplitude $E_0$ et de phases aléatoires $\phi_j$ comme illustré figure \ref{fig:speckle_pattern}. Cette amplitude peut alors s'écrire
+Le phénomène de speckle apparaît lorsque l'amplitude $E(\mathbf{x})$ au point d'observation $\mathbf{x}$ résulte de la somme d'un grand nombre N d'ondes indépendantes d'amplitude $E_0$ et de phases aléatoires $\phi_j$ comme illustré figure \ref{fig:speckle_pattern}. Cette amplitude peut alors s'écrire
 \begin{equation}
-E(\mathbf{x})=\sum_{j}^{N} E_0 e^{i \phi_j}
+E(\mathbf{x})=\sum_{j}^{N} E_0 e^{i \phi_j} \text{ .}
 \end{equation}
 En supposant qu'un grand nombre de grains du diffuseur participent à l'interférence au point d'observation ($\rdiff \ll D$ avec $\rdiff$ la taille typique d'un grain du diffuseur et $D$ la taille de l'éclairement incident), on peut appliquer le théorème central limite à l'amplitude rayonnée. En supposant de plus que les phases aléatoires $\phi_j$ sont réparties de manière homogène sur l'intervalle $\left[ 0,2\pi \right]$, les distributions de probabilités des parties réelle et imaginaire de l'amplitude sont données par la loi normale
 \begin{equation}
-\mathcal{P}(E_{\mathcal{R,I}})=\frac{1}{\sigma_E\sqrt{2\pi}} \exp{\left( -\frac{E_{\mathcal{R,I}}^2}{2 \sigma_E^2}\right) }
+\mathcal{P}(E_{\mathcal{R,I}})=\frac{1}{\sigma_E\sqrt{2\pi}} \exp{\left( -\frac{E_{\mathcal{R,I}}^2}{2 \sigma_E^2}\right) } \text{ ,}
 \end{equation}
-avec $E_{\mathcal{R}}$ et $E_{\mathcal{I}}$ les parties réelle et imaginaire du champ complexe $E=E_{\mathcal{R}} +i E_{\mathcal{I}}$ respectivement. Étant donné que les atomes ne sont sensibles qu'à l'intensité lumineuse $I=\left| E \right| ^2$, on montre alors que la distribution de probabilité de l'intensité lumineuse suit une loi exponentielle \citep{goodman2007speckle}:
+avec $E_{\mathcal{R}}$ et $E_{\mathcal{I}}$ les parties réelle et imaginaire du champ complexe $E=E_{\mathcal{R}} +i E_{\mathcal{I}}$ respectivement. Étant donné que les atomes ne sont sensibles qu'à l'intensité lumineuse $I=\left| E \right| ^2$, on montre alors que la distribution de probabilité de l'intensité lumineuse suit une loi exponentielle \citep{goodman2007speckle}
 \begin{equation}
-\mathcal{P}(I)=\frac{1}{\overline{I}}\exp{\left( -I/\overline{I} \right) }
+\mathcal{P}(I)=\frac{1}{\overline{I}}\exp{\left( -I/\overline{I} \right) } \text{ .}
 \label{eq:proba_speckle}
 \end{equation}
 De manière générale, on appellera \emph{speckle pleinement développé} tout speckle vérifiant cette loi de probabilité. Deux conséquences importantes de cette loi sont à noter:
@@ -59,80 +59,48 @@ L'analyse précédente décrivant la statistique de l'intensité lumineuse d'un 
 \end{itemize}
 Les deux grandeurs apparaissant dans ces hypothèses, $\rdiff$ et $\sigma_\phi$, sont fixées par les propriétés du diffuseur, que nous nous attacherons à décrire dans cette partie.
 
-\begin{equation}
-\phi(\mathbf{x}_0)=2\pi (n-1) \frac{e(\mathbf{x}_0)}{\lambda}
-\end{equation}
-\begin{equation}
-t_{\mathrm{diff}}(\mathbf{x}_0)=e^{i\phi(\mathbf{x}_0)}
-\end{equation}
-\begin{equation}
-C_{\mathrm{diff}}(\mathbf{x}_0,\mathbf{x}'_0)=\overline{t_{\mathrm{diff}}(\mathbf{x}_0)t^*_{\mathrm{diff}}(\mathbf{x}'_0)}=\overline{e^{i(\phi(\mathbf{x}_0)-\phi(\mathbf{x}'_0))}}
-\end{equation}
-\begin{equation}
-C_{\mathrm{diff}}(\mathbf{x}_0,\mathbf{x}'_0)\approx e^{-\frac{\left| \mathbf{x}_0 - \mathbf{x}'_0 \right| ^2}{2 r_{\mathrm{diff}}^2}}
-\end{equation}
+Dans le cadre de notre expérience, la génération du speckle se fait par transmission d'une onde laser au travers d'une lame de verre dépolie, d'épaisseur locale $e(\mathbf{x}_0)$ aléatoire et répartie selon une distribution gaussienne de largeur $\sigmae$ et de valeur moyenne $\overline{e}$, où $\overline{\:\cdots\:}$ représente la moyenne sur les différentes réalisations de l'épaisseur aléatoire. On supposera que cette lame a été dépolie de manière homogène, ainsi, la statistique de l'épaisseur ne dépend pas de la position considérée sur la surface du diffuseur. On assimilera donc la distribution de l'épaisseur à un processus stationnaire. 
 
-
-\begin{comment}
-Avant de nous intéresser aux propriétés du désordre à proprement parler, commençons par nous concentrer sur celles de l'élément générant le speckle: le diffuseur. Il s'agit d'une lame de verre dépolie, d'épaisseur locale $e(\mathbf{x}_0)$ aléatoire. On supposera que cette lame a été dépolie de manière homogène, ainsi, la statistique de l'épaisseur ne dépend pas de la position considérée sur la surface du diffuseur. On assimilera donc la distribution de l'épaisseur à un processus stationnaire. 
-
-La phase localement accumulée par le faisceau laser incident lors de la traversée du diffuseur étant proportionnelle à l'épaisseur traversée, cette phase $\phi(\mathbf{x}_0)$ est elle aussi une variable aléatoire donnée par:
+La phase localement accumulée par le faisceau laser incident lors de la traversée du diffuseur est proportionnelle à l'épaisseur traversée et donnée par
 \begin{equation}
-\phi(\mathbf{x}_0)=2\pi (n-1) \frac{e(\mathbf{x}_0)}{\lambda}
+\phi(\mathbf{x}_0)=2\pi (n-1) \frac{e(\mathbf{x}_0)}{\lambda} \text{ ,}
 \end{equation}
-avec $n$ l'indice du verre et $\lambda\approx \SI{780}{\nano\metre}$ la longueur d'onde de l'onde laser.
-L'effet de cette phase aléatoire locale se traduit en terme d'amplitude via la transmittance du diffuseur. De même que l'épaisseur et la phase, il s'agit d'une grandeur locale définie par:
+avec $n$ l'indice du verre et $\lambda\approx \SI{780}{\nano\metre}$ la longueur d'onde de l'onde laser. L'influence de cette phase sur l'amplitude du champ laser se traduit via la transmission locale du diffuseur
 \begin{equation}
-t_{\mathrm{diff}}(\mathbf{x}_0)=e^{i\phi(\mathbf{x}_0)}
+\tdiff(\mathbf{x}_0)=e^{i\phi(\mathbf{x}_0)}
 \end{equation}
-
+dont la valeur moyenne $\overline{\tdiff}$ caractérise le pouvoir diffusant. Pour une lame peu rugueuse, le faisceau est en moyenne peu affecté lors de sa traversée et l'on a $\overline{\tdiff}\approx 1$, tandis que dans le cas d'un diffuseur fort $\overline{\tdiff} \approx 0$. En fixant la phase moyenne $\overline{\phi}=0$, on montre annexe \ref{ch:anex_speckle} que \citep{denechaud2018vers}
 \begin{equation}
-\overline{t_{\mathrm{diff}}} = \overline{e^{i\phi}} = \int{\mathrm{d}\phi \: e^{i\phi} \mathcal{P}(\phi)} \quad\text{avec}\quad \mathcal{P}(\phi)=\frac{1}{\sigma_{\phi} \sqrt{2\pi}} e^{-\frac{(\phi-\overline{\phi})^2}{2\sigma_{\phi}^2}}
+\overline{\tdiff}=e^{-\frac{\sigma_{\phi}^2}{2}} \quad \text{avec} \quad \sigma_\phi=2\pi (n-1) \frac{\sigmae}{\lambda} \text{ .}
 \end{equation}
-En considérant que $\phi$ est une variable aléatoire gaussienne, ça donne
-\begin{equation}
-\overline{t_{\mathrm{diff}}}=e^{-\frac{\sigma_{\phi}^2}{2}}
-\end{equation}
-et en choisissant correctement l'origine temporelle telle que $\overline{\phi}=0$.
-
-On peut aussi écrire $t_{\mathrm{diff}}$ sous la forme
-\begin{equation}
-t_{\mathrm{diff}}=\overline{t_{\mathrm{diff}}}+\delta t_{\mathrm{diff}}
-\end{equation}
-ce qui se traduit en terme de champ
-\begin{equation}
-E=\overline{E}+E_{speckle}
-\end{equation}
-La conséquence est alors immédiate: si $\sigma_{\phi} \gg 2\pi$ ou de manière équivalente $\sigma_e \gg \lambda$, alors $\overline{t_{\mathrm{diff}}} =0$ et donc le champ rayonné ne sera composé que du champ de speckle: on parle alors de speckle entièrement développé. La valeur déterministe $\overline{E}$ liée à $\overline{t_{\mathrm{diff}}}$ est supprimée. C'est ce que l'on considèrera dans la suite.
+Dans le cas d'un diffuseur de grande rugosité, dont l'épaisseur typique des grains $\sigmae$ est de l'ordre de plusieurs $\lambda$, on a $\sigma_\phi \gg 2\pi$ et cela permet donc de considérer que la distribution de phases est constante sur l'intervalle $\left[0,2\pi \right]$, essentiel pour un speckle pleinement développé.
 
 \begin{figure}
 \centering
 \includegraphics[scale=1]{Fig/Speckle/diffus_prop.pdf}
 \label{fig:diffus_prop}
-\caption{Caractéristiques du diffuseur. L'épaisseur aléatoire est caractérisée par une hauteur typique $\sigma_e$ et une granularité de taille $r_e$. Pour $\sigma_e \gg \lambda$, on a plusieurs oscillations de l'onde incidente dans le même grain, et donc $t_{\mathrm{diff}}$ qui est une fonction $2\pi-$périodique, voit sa corrélation réduite.}
+\caption{\textbf{Caractéristiques du diffuseur.} L'épaisseur aléatoire est caractérisée par une hauteur typique $\sigmae$ et une granularité de taille $r_e$. Pour $\sigmae \gg \lambda$, on a plusieurs oscillations de l'onde incidente dans le même grain, et donc $\tdiff$ qui est une fonction $2\pi-$périodique, voit sa corrélation réduite.}
 \end{figure}
 
-Fonction de corrélation: on définit
+Les grains du diffuseur sont de plus caractérisés par une certaine extension typique $r_e$ correspondant à une largeur de corrélation de l'épaisseur. Celle-ci induit donc une corrélation spatiale de la transmission, décrite à l'aide la fonction de corrélation
 \begin{equation}
-C_{\mathrm{diff}}(\mathbf{x}_0,\mathbf{x}'_0)=\overline{t_{\mathrm{diff}}(\mathbf{x}_0)t^*_{\mathrm{diff}}(\mathbf{x}'_0)}=\overline{e^{i(\phi(\mathbf{x}_0)-\phi(\mathbf{x}'_0))}}
+\Cdiff(\mathbf{x}_0,\mathbf{x}'_0)=\overline{\tdiff(\mathbf{x}_0)\tdiff^*(\mathbf{x}'_0)}=\overline{e^{i(\phi(\mathbf{x}_0)-\phi(\mathbf{x}'_0))}} { .}
 \end{equation}
-Si l'on suppose que $\phi(\mathbf{x}_0)-\phi(\mathbf{x}'_0)$ est aussi une variable gaussienne, ça donne
-\begin{equation}
-C_{\mathrm{diff}}(\mathbf{x}_0,\mathbf{x}'_0)=e^{-\sigma_{\phi}^2 (1-\overline{\phi(\mathbf{x}_0)\phi(\mathbf{x}'_0)}/\sigma_{\phi}^2)}
-\end{equation}
-Corrélations de l'épaisseur du diffuseur:
-\begin{equation}
-\frac{\overline{\phi(\mathbf{x}_0)\phi(\mathbf{x}'_0)}}{\sigma_{\phi}^2}=\frac{\overline{e(\mathbf{x}_0)e(\mathbf{x}'_0)}}{\sigma_e^2} \approx 1-\frac{\left| \mathbf{x}_0-\mathbf{x}'_0 \right|^2}{2r_e^2}
-\end{equation}
-courbe en cloche assez générale valable pour $\left| \mathbf{x}_0 -\mathbf{x}'_0 \right| \ll r_e$.
 
-Au final, ça donne une corrélation de la transmittance 
+Puisque l'épaisseur et la phase sont proportionnelles, ces deux grandeurs sont corrélées sur la même taille $r_e$ correspondant à la granularité de la surface du verre. En revanche, dans le cas où $\sigmae \gg \lambda$ (ce qui est le cas sur notre expérience), l'onde oscille plusieurs fois dans le même grain du diffuseur. La transmission étant une fonction $2\pi-$périodique de la phase, celle-ci perd alors sa corrélation sur une taille $\rdiff \ll r_e$, voir figure \ref{fig:diffus_prop}. On montre alors annexe \ref{ch:anex_speckle} que la corrélation de la transmission à courte portée\footnote{La corrélation de la transmission tend suffisamment vite vers 0 pour que l'on puisse considérer que $\left|\mathbf{x}_0-\mathbf{x}'_0 \right| \ll r_e$ dans le cas où $\sigma_\phi \gg 2\pi$.} est de forme gaussienne:
 \begin{equation}
-C_{\mathrm{diff}}(\mathbf{x}_0,\mathbf{x}'_0)\approx e^{-\frac{\left| \mathbf{x}_0 - \mathbf{x}'_0 \right| ^2}{2 r_{\mathrm{diff}}^2}}
+\Cdiff(\mathbf{x}_0,\mathbf{x}'_0)\approx \exp{\left( -\frac{\left| \mathbf{x}_0 - \mathbf{x}'_0 \right| ^2}{2 \rdiff^2}\right) } \quad \text{avec} \quad \rdiff=r_e/\sigma_\phi \text{ .}
 \end{equation}
-avec $r_{\mathrm{diff}} = r_e / \sigma_{\phi}$ la taille effective des grains du diffuseur. Cette taille diminuée s'explique par le fait que si $\sigma_{\phi} \gg 2\pi$, la phase ne sera pas homogène sur la totalité de la largeur d'un grain (de taille typique $r_e$), mais seulement sur une zone réduite. 
+$\rdiff$ joue alors le rôle de la taille effective d'un émetteur indépendant tel que considéré dans la section \ref{sc:distribution_speckle}. La condition d'un grand nombre d'émetteurs s'écrit alors $\rdiff \ll D$.
 
-\end{comment}
+Enfin, il est possible de définir l'angle de diffusion $\theta_{\mathrm{diff}}=\lambda/\pi \rdiff=2(n-1) \sigmae/r_e$, qui est indépendant de la longueur d'onde de l'onde laser incidente. $\theta_{\mathrm{diff}}$ est donc une constante du diffuseur, fixée par les paramètres géométriques de celui-ci.
+
+
+
+
+
+
+
 
 
 
@@ -147,7 +115,7 @@ avec $r_{\mathrm{diff}} = r_e / \sigma_{\phi}$ la taille effective des grains du
 \end{figure}
 
 La génération du speckle se fait donc selon le montage représenté figure \ref{fig:montage_diffuseur}. Un faisceau gaussien collimaté de taille 14.6mm est tronqué par un diaphragme de diamètre 22.9mm. Ce faisceau passe ensuite au travers d'une lentille asphérique (\textit{Thorlabs ACL2520-B}) de focale 16mm (et de frontale 15.7mm). Le diffuseur \textit{Newport FSD10-3} possède une épaisseur de 0.3mm (initialement 3mm avant d'être aminci par l'atelier d'optique de l'IOGS) et diffuse selon un angle $\theta_{\mathrm{diff}}\approx$ 5° (données constructeur). Le faisceau traverse ensuite la paroi de la cellule en vycor (d'indice optique $n=1.46$) d'épaisseur $e=3$mm. La présence de la paroi entraîne un déplacement du plan de focalisation de $\Delta d=e(1-1/n)\approx1$mm. En positionnant l'origine sur la surface du diffuseur, le plan de focalisation se trouve à $f=16.4$mm. La position des atomes est estimée quant à elle a $d=16\pm0.5$mm. L'incertitude liée à cette dernière position est primordiale: nous devons connaître les proriétés du speckle autour du plan de focalisation. 
-{\Large TODO: Faire un calcul rapide d'ODG pour justifier la lentille: besoin de focaliser la lumière pour avoir un potentiel raisonable sur les atomes à puissance raisonnable.}
+{\Large TODO: Faire un calcul rapide d'ODG pour justifier la lentille: besoin de focaliser la lumière pour avoir un potentiel raisonable sur les atomes à puissance raisonnable. Ce raisonnement ne marche pas, mais par contre besoin de focaliser pour avoir une taille de grains qui soit la plus petite possible, ça permet de monter l'énergie de corrélation, et c'est plus facile d'atteindre le régime de désordre quantique.}
 
 
 
