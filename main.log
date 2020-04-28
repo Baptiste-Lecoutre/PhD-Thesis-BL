@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  28 APR 2020 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  28 APR 2020 11:35
 entering extended mode
 **./main.tex
 (main.tex
@@ -1470,7 +1470,7 @@ put line 38.
 
 [2 <./Fig/Speckle/speckle_pattern.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-28.
+40.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1479,11 +1479,11 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
-132.
+144.
 (pdftex.def)             Requested size: 342.53711pt x 206.05452pt.
 
 [3]
-Overfull \hbox (8.747pt too wide) detected at line 151
+Overfull \hbox (8.747pt too wide) detected at line 163
 []
  []
 
@@ -1518,38 +1518,43 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29484 strings out of 480934
- 560707 string characters out of 2899917
- 942012 words of memory out of 3000000
+ 29488 strings out of 480934
+ 560765 string characters out of 2899917
+ 943012 words of memory out of 3000000
  44508 multiletter control sequences out of 15000+200000
  653891 words of font info for 183 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,13n,62p,1405b,946s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
 c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
+nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.e
 nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
 sy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
 mathit.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-mathex.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvip
-s/lm/lm-rm.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+/lm-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/lecou/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/lecou/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/lecou/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/lecou/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/lecou
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/le
-cou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (8 pages, 431287 bytes).
+1/public/lm/lmbx6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmbx8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/lecou/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/lecou/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/lecou/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/l
+ecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Use
+rs/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/
+Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><
+C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.p
+fb>
+Output written on main.pdf (8 pages, 472811 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
  45711 words of extra memory for PDF output out of 51595 (max. 10000000)
 
