@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  28 APR 2020 17:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  29 APR 2020 10:42
 entering extended mode
 **./main.tex
 (main.tex
@@ -1463,17 +1463,13 @@ Package microtype Info: Character `029' is missing
 [1
 
 
-{C:/Users/lecou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-
-Package natbib Warning: Citation `goodman2007speckle' on page 2 undefined on in
-put line 38.
-
-[2 <./Fig/Speckle/speckle_pattern.pdf>]
+{C:/Users/lecou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <./Fig/S
+peckle/speckle_pattern.pdf>]
 
 LaTeX Warning: Reference `ch:anex_speckle' on page 3 undefined on input line 72
 .
 
-<Fig/Speckle/diffus_prop.pdf, id=107, 300.06396pt x 226.78568pt>
+<Fig/Speckle/diffus_prop.pdf, id=110, 300.06396pt x 226.78568pt>
 File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
 <use Fig/Speckle/diffus_prop.pdf>
 Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 80.
@@ -1495,42 +1491,28 @@ LaTeX Warning: Reference `ch:anex_speckle' on page 3 undefined on input line 90
 LaTeX Warning: Reference `sc:distribution_speckle' on page 4 undefined on input
  line 94.
 
+[4 <./Fig/Speckle/diffus_prop.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-08.
+15.
+
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-[4 <./Fig/Speckle/diffus_prop.pdf>]
-<Fig/Speckle/montage_diffuseur.pdf, id=235, 489.34206pt x 294.36562pt>
+<Fig/Speckle/montage_diffuseur.pdf, id=246, 489.34206pt x 294.36562pt>
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
-112.
-(pdftex.def)             Requested size: 342.53711pt x 206.05452pt.
- [5 <./Fig/Speckle/montage_diffuseur.pdf>]
-Overfull \hbox (8.747pt too wide) detected at line 131
+122.
+(pdftex.def)             Requested size: 384.1096pt x 231.07301pt.
+
+[5 <./Fig/Speckle/montage_diffuseur.pdf>]
+Overfull \hbox (8.747pt too wide) detected at line 148
 []
  []
 
-[6]) (main.bbl [7] [8
+[6] [7]) (main.bbl [8]) [9
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
-7.
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-[9])
-
-Package natbib Warning: There were undefined citations.
-
-[10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (main.aux)
@@ -1543,13 +1525,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29553 strings out of 480934
- 561758 string characters out of 2899917
+ 29457 strings out of 480934
+ 559715 string characters out of 2899917
  944012 words of memory out of 3000000
- 44545 multiletter control sequences out of 15000+200000
- 671573 words of font info for 203 fonts, out of 3000000 for 9000
+ 44481 multiletter control sequences out of 15000+200000
+ 679509 words of font info for 198 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,13n,62p,1405b,946s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,13n,62p,1174b,1100s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
 c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
 nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.e
@@ -1581,11 +1563,10 @@ fb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy
 6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
 msy7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmtt10.pfb>
-Output written on main.pdf (10 pages, 563726 bytes).
+c/lm/lmsy9.pfb>
+Output written on main.pdf (9 pages, 528926 bytes).
 PDF statistics:
- 464 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 51348 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 56468 words of extra memory for PDF output out of 61914 (max. 10000000)
 
