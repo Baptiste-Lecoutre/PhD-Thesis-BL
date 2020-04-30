@@ -1,20 +1,7 @@
 
 \documentclass[a4paper, 11pt,twoside,openright]{book}
 
-% style de l'intérieure du document
-% style de tous les environnements etc ...
 \input{structure}
-%\usepackage[utf8x]{inputenc}
-\usepackage{subcaption}
-%\usepackage{fontspec}
-\usepackage{lmodern}
-\usepackage{lipsum}
-\usepackage{psl-cover}
-
-\usepackage{siunitx}
-
-\usepackage{gensymb}
-\usepackage{subfiles}
 
 \title{Transport quantique en milieu désordonné: une tarte à la crème pour Philippe Etchebest}
 
@@ -116,9 +103,9 @@
 %\stopcontents
 
 %\part{Transport d'atomes ultrafroids dans un speckle} 
-\subfile{Chapters/BEC_manip.tex}
-\subfile{Chapters/Modif_exp.tex}
-%\input{Chapters/Speckle.tex}
+%\input{Chapters/BEC_manip.tex}
+%\input{Chapters/Modif_exp.tex}
+\input{Chapters/Speckle.tex}
 %\stopcontents
 
 %\part{Temps de diffusion élastique}
@@ -132,7 +119,7 @@
 %\addtocontents{toc}{\bigskip}
 %\part{Annexes}
 %\appendix
-%\input{Appendices/Anex_speckle.tex}
+\input{Appendices/Anex_speckle.tex}
 %\input{Appendices/Anex_Born.tex}
 %\stopcontents
 

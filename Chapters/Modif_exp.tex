@@ -87,14 +87,14 @@ La lévitation magnétique est composée de plusieurs bobines collées dans un s
 
 Ces supports, disposés de part et d'autre de la cellule, comportent chacun trois bobines. Les deux paires de bobines les plus proches de la cellule créent un champ de biais au niveau des atomes, dans des configurations légèrement plus rapprochée que celle de Helmholtz pour les bobines les plus proches de la cellule et légèrement plus éloignée pour les autres\footnote{L'intérêt de cette configuration est de contrôler la courbure du champ au niveau des atomes indépendamment de la valeur du champ. Il suffit de jouer sur l'équilibre des courants dans les différentes paires de bobines pour changer la courbure.}. Enfin, la paire de bobines la plus éloignée permet de créer un gradient magnétique qui permet de lutter contre la gravité.
 
-Le champ magnétique au niveau des atomes peut alors être écrit:
+Le champ magnétique au niveau des atomes peut alors être écrit
 \begin{equation}
-\mathbf{B}=\left( \frac{b'}{2}x \right) \vec{x} + \left[ \Bzero - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}z \right) \vec{z}
+\mathbf{B}=\left( \frac{b'}{2}x \right) \vec{x} + \left[ \Bzero - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}z \right) \vec{z} \text{ ,}
 \end{equation}
 où $b'$ correspond au gradient magnétique généré par les bobines de \emph{Gradient}, les plus éloignées de la cellule. Le  paramètre $b''$ est la courbure du champ généré par l'écart des bobines de \emph{Biais} à la configuration de Helmholtz. 
 Le potentiel magnétique étant proportionnel à la norme du champ, celle-ci est donnée à l'ordre deux par
 \begin{equation}
-B=\Bzero -b' y + b'' y^2 +\frac{1}{2} \left( \frac{b'^2}{4 \Bzero} - b'' \right) \left( x^2 + z^2 \right) 
+B=\Bzero -b' y + b'' y^2 +\frac{1}{2} \left( \frac{b'^2}{4 \Bzero} - b'' \right) \left( x^2 + z^2 \right) \text{ ,}
 \label{eq:norme_levitation}
 \end{equation}
 où le terme linéaire est celui qui permet de compenser la gravité.
@@ -103,11 +103,11 @@ où le terme linéaire est celui qui permet de compenser la gravité.
 
 Comme mentionné précédemment, il existe une limite pour les fréquences de piégeage (formule \ref{eq:theoreme_wing}) qui décroît avec la norme du champ magnétique. Une stratégie usuelle est donc de créer un champ aussi fort que possible, qui est d'environ \SI{2000}{\gauss} avec notre système (correspondant à un courant maximal de \SI{200}{\ampere}). Pour de tels champs, le potentiel magnétique n'est plus décrit par l'effet Zeeman linéaire, mais par la formule de Breit-Rabi \ref{eq:Breit-Rabi}. En revanche, pour une petite zone autour du centre de la lévitation, on peut simplifier l'étude en supposant que le champ change peu $B\simeq \Bzero$. On peut ainsi définir un facteur de Landé local
 \begin{equation}
-\gftilde(\Bzero)=\frac{1}{\mf \mub} \frac{\mathrm{d}E}{\mathrm{d}B}(\Bzero)
+\gftilde(\Bzero)=\frac{1}{\mf \mub} \frac{\mathrm{d}E}{\mathrm{d}B}(\Bzero) \text{ ,}
 \end{equation}
-obtenu à l'aide d'un développement limité de la formule de Breit-Rabi. La physique derrière cette approche est de considérer l'effet Zeeman linéaire sur un état dont la réponse dépend du champ de Biais $\Bzero$. La valeur du gradient nécessaire pour compenser la gravité peut alors être donnée par:
+obtenu à l'aide d'un développement limité de la formule de Breit-Rabi. La physique derrière cette approche est de considérer l'effet Zeeman linéaire sur un état dont la réponse dépend du champ de Biais $\Bzero$. La valeur du gradient nécessaire pour compenser la gravité peut alors être donnée par
 \begin{equation}
-b'=\frac{mg}{\mf \gftilde(\Bzero) \mub}
+b'=\frac{mg}{\mf \gftilde(\Bzero) \mub} \text{ .}
 \end{equation}
 Cette dépendance est illustrée figure \ref{fig:levitation_etats} pour les différents états internes d'intérêt dans cette thèse: $\etatF{1}{-1}$, $\etatF{2}{+1}$ et $\etatF{2}{-2}$. Il est possible de déduire de cette dépendance une calibration des bobines de gradient à partir de couples $\lbrace I_{\mathrm{Gradient}}, I_{\mathrm{Biais}} \rbrace$ permettant de compenser précisément la gravité. Le gradient généré s'écrit alors $b'=c_{\mathrm{G}} I_{\mathrm{G}}$ avec le facteur de calibration $c_{\mathrm{G}}=\SI{0.66}{\gauss\per\centi\metre\per\ampere}$. Notons également trois résultats remarquables de la figure \ref{fig:levitation_etats}: 
 \begin{itemize}
@@ -147,12 +147,12 @@ Cette mesure a été effectuée dans le piège dipolaire croisé, et étant donn
 
 En relevant le spectre des transitions radio-fréquences, on accède ainsi à la valeur du champ magnétique au niveau des atomes à l'aide du décalage Zeeman:
 \begin{equation}
-\delta \nu (B)\simeq -(m_{\mathrm{F_2}} - m_{\mathrm{F_1}} ) \times \SI{0.7}{\mega\hertz\per\gauss} \times B
+\delta \nu (B)\simeq -(m_{\mathrm{F_2}} - m_{\mathrm{F_1}} ) \times \SI{0.7}{\mega\hertz\per\gauss} \times B \text{ .}
 \label{eq:levitation_RF}
 \end{equation}
 En réalisant cette opération pour différents courants appliqués aux bobines générant les champs de biais, on peut ainsi calibrer les champs magnétiques de biais:
 \begin{equation}
-B=\sqrt{(B_{\mathrm{x}}+b_{\mathrm{0x}})^2+(B_{\mathrm{y}}+b_{\mathrm{0y}})^2+(B_{\mathrm{z}}+b_{\mathrm{0z}})^2}
+B=\sqrt{(B_{\mathrm{x}}+b_{\mathrm{0x}})^2+(B_{\mathrm{y}}+b_{\mathrm{0y}})^2+(B_{\mathrm{z}}+b_{\mathrm{0z}})^2} \text{ ,}
 \end{equation}
 où $B_{\mathrm{i}}=c_{\mathrm{i}} I_{\mathrm{i}}$ est la composante du champ rayonné dans la direction $\vec{i}$ qui dépend du courant appliqué $I_{\mathrm{i}}$ via le facteur de calibration $c_{\mathrm{i}}$. $b_{\mathrm{0i}}$ est la composante du champ rémanent dans cette même direction, souvent négligeable devant le champ rayonné pour des courants usuels. Cependant à bas courant, on peut en déduire toutes les composantes du champ naturellement présent dans la cellule. Il est également possible de déterminer un courant seuil pour lequel les alimentations haute-puissance des bobines de lévitation commencent à faire circuler le courant. L'ensemble de ces grandeurs est donné table \ref{tb:levitation_RF}.
 
@@ -208,7 +208,7 @@ Ainsi, si les atomes ne sont pas au centre du piège, la réalisation de temps d
 \begin{equation}
 \omega_x^2=\omega_z^2=\left| \frac{\mf \gftilde \mub}{m} \left( \frac{b'^2}{4 \Bzero} - b'' \right) \right|
 \quad \text{et} \quad
-\omega_y^2= \left| \frac{2 \mf \gftilde \mub }{m} b'' \right|
+\omega_y^2= \left| \frac{2 \mf \gftilde \mub }{m} b'' \right| \text{ .}
 \label{eq:frequences_leviation}
 \end{equation}
 L'exploitation de ces oscillations fournit donc de précieux renseignements quant à la position du centre de la lévitation, mais aussi quant à la forme du potentiel magnétique dans lequel les atomes évoluent. 
@@ -254,7 +254,7 @@ Si pour le système isolé de lévitation magnétique le centre du potentiel mag
 
 Le champ permettant de déplacer le potentiel est donc la somme du champ naturellement présent et du champ de compensation:
 \begin{equation}
-B_{\mathrm{i}}=b_{\mathrm{0,i}}+c_{\mathrm{i}} \times I_{\mathrm{i}} \quad \text{avec} \quad i=\lbrace x,z \rbrace
+B_{\mathrm{i}}=b_{\mathrm{0,i}}+c_{\mathrm{i}} \times I_{\mathrm{i}} \quad \text{avec} \quad i=\lbrace x,z \rbrace \text{ .}
 \end{equation}
 Les mesures des différents termes de ce champ ont été effectuées à l'aide de radio-fréquences, comme décrit section \ref{sc:levitation_RF}. Le champ magnétique total s'écrit alors
 \begin{equation}
@@ -317,7 +317,7 @@ L'approche suivie pour estimer le profil du faisceau au niveau des atomes consis
 
 Cette extrapolation est en réalité aisée: la taille du faisceau $\mathrm{w}_{\mathrm{i}}(y)$ dans la direction $\vec{i}$ ($\vec{i}= \lbrace \vec{x},\vec{z} \rbrace$) est donnée par l'optique gaussienne:
 \begin{equation}
-\mathrm{w}_{\mathrm{i}}(y)=\mathrm{w}_{\mathrm{i}} \sqrt{1+\left( \frac{y}{y_{\mathrm{Ri}}} \right)^2}
+\mathrm{w}_{\mathrm{i}}(y)=\mathrm{w}_{\mathrm{i}} \sqrt{1+\left( \frac{y}{y_{\mathrm{Ri}}} \right)^2} \text{ ,}
 \label{eq:taille_faisceau}
 \end{equation}
 où $\mathrm{w}_{\mathrm{i}}$ est le waist du faisceau dans la direction $\vec{i}$. La distance de Rayleigh associée s'exprime $y_{\mathrm{Ri}}=\pi \mathrm{w}_{\mathrm{i}}^2 / \lambda$ et correspond à la distance sur laquelle la taille du faisceau suivant la direction $\vec{i}$ change peu. Dans le régime de champ lointain $y \gg y_{\mathrm{Ri}}$, le faisceau diverge selon un angle $\tan \theta_{\mathrm{i}} \simeq \lambda / \pi \mathrm{w}_{\mathrm{i}}$.
@@ -343,16 +343,16 @@ On estime alors les waists du faisceau à $\mathrm{w_z}=81.6\pm\SI{7.8}{\micro\m
 \paragraph*{Calibration des fréquences de piégeage}
 Le fonctionnement du piège optique repose sur le potentiel dipolaire. Celui-ci s'écrit:
 \begin{equation}
-U(\mathbf{r})=\frac{3 \pi c^2 \Gamma}{2 \omega_0^3 \overline{\Delta}} I(\mathbf{r}) \quad \text{avec} \quad \frac{1}{\overline{\Delta}}=\frac{1}{\omega-\omega_0}-\frac{1}{\omega+\omega_0}
+U(\mathbf{r})=\frac{3 \pi c^2 \Gamma}{2 \omega_0^3 \overline{\Delta}} I(\mathbf{r}) \quad \text{avec} \quad \frac{1}{\overline{\Delta}}=\frac{1}{\omega-\omega_0}-\frac{1}{\omega+\omega_0} \text{ .}
 \end{equation}
 En supposant que les atomes restent proches du centre du piège, on peut faire l'approximation que le profil d'intensité des faisceaux est de forme harmonique. On peut ainsi définir la profondeur de piégeage pour chaque faisceau:
 \begin{equation}
-U_{\mathrm{pince}}= \frac{3c^2 \Gamma }{\omega_0^3 \overline{\Delta}} \frac{P_{\mathrm{pince}}}{\mathrm{w}_0^2} \quad \text{et} \quad U_{\mathrm{dimple}}=\frac{3c^2 \Gamma }{\omega_0^3 \overline{\Delta}}\frac{P_{\mathrm{dimple}}}{\mathrm{w}_{\mathrm{x}} \mathrm{w}_{\mathrm{z}}}
+U_{\mathrm{pince}}= \frac{3c^2 \Gamma }{\omega_0^3 \overline{\Delta}} \frac{P_{\mathrm{pince}}}{\mathrm{w}_0^2} \quad \text{et} \quad U_{\mathrm{dimple}}=\frac{3c^2 \Gamma }{\omega_0^3 \overline{\Delta}}\frac{P_{\mathrm{dimple}}}{\mathrm{w}_{\mathrm{x}} \mathrm{w}_{\mathrm{z}}} \text{ ,}
 \label{eq:profondeur_piege_optique}
 \end{equation}
 ainsi que les fréquences de piégeage $\omega_{x,y,z}$. Rappelons que le confinement dans les directions $\vec{x}$ et $\vec{y}$ est fait par la pince, et que celui dans la direction $\vec{z}$ est fait par le dimple, les fréquences de piégeage du piège dipolaire croisé s'expriment alors:
 \begin{equation}
-\omega_x=\omega_y=\sqrt{-\frac{4 U_{\mathrm{pince}}}{m \mathrm{w}_0^2}} \quad \text{et} \quad \omega_z=\sqrt{-\frac{4U_{\mathrm{dimple}}}{m \mathrm{w}_{\mathrm{z}}^2}}
+\omega_x=\omega_y=\sqrt{-\frac{4 U_{\mathrm{pince}}}{m \mathrm{w}_0^2}} \quad \text{et} \quad \omega_z=\sqrt{-\frac{4U_{\mathrm{dimple}}}{m \mathrm{w}_{\mathrm{z}}^2}} \text{ .}
 \label{eq:frequences_piege_optique}
 \end{equation}
 La caractérisation finale du piège dipolaire croisé se fait à l'aide des fréquences de piégeage, qui fixent les propriétés physiques du nuage. Afin de mesurer ces fréquences, nous avons fait le choix d'induire de petites oscillations du nuage à l'intérieur du piège à l'aide d'une force extérieure, et de suivre ces oscillations en fonction du temps d'évolution dans le piège de manière équivalente à celle présentée pour la lévitation magnétique section \ref{sc:oscillations_levitation}. 
