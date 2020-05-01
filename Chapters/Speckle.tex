@@ -155,19 +155,42 @@ De plus, lors de la conception de ce système, l'extension du champ de speckle a
 L'extension transverse du champ de speckle est donnée par le waist du faisceau speckle, il est donc nécessaire de calculer le profil d'intensité moyenne $\overline{I}(\xd)$, où l'ensemble des points $\lbrace\xd\rbrace$ correspond au plan $\lbrace x,y,z=d \rbrace$ situé à une distance $d$ de la surface du diffuseur. Pour cela, explicitons le champ rayonné $E(\xd)$ à l'aide du principe de Huygens-Fresnel dans l'approximation paraxiale:
 \begin{equation}
 E(\xd) \propto \int{\mathrm{d}\xzero \: \Ediff (\xzero) \exp{\left( ik\frac{\xzero^2}{2\deff} \right) } \: \exp{\left( -ik \frac{\xd \cdot \xzero}{d} \right) } } \text{ ,}
+\label{eq:amplitude_rayonnee}
 \end{equation}
-où $k=2\pi/\lambda$ est le nombre d'onde, $\deff$ correspond à une distance effective donnée par $1/\deff=1/d-1/f$ et l'ensemble des points $\lbrace\xzero\rbrace$ correspond au plan du diffuseur $\lbrace x,y,z=0 \rbrace$. Le champ $\Ediff (\xzero)$ correspond au champ dans le plan du diffuseur, qu'il est possible de décomposer sous la forme 
+où $k=2\pi/\lambda$ est le nombre d'onde et $\deff$ correspond à une distance effective donnée par $1/\deff=1/d-1/f$. L'ensemble des points $\lbrace\xzero\rbrace$ décrit le plan du diffuseur $\lbrace x,y,z=0 \rbrace$, et $\Ediff (\xzero)$ correspond au champ dans ce plan, qu'il est possible de décomposer sous la forme 
 \begin{equation}
 \Ediff(\xzero)=\Ezero(\xzero) \tdiff(\xzero) \quad \text{avec} \quad \Ezero(\xzero) = E_\mathrm{inc} (\xzero) m(\xzero) \text{ ,}
 \end{equation}
-où $\tdiff(\xzero)$ est la transmission du diffuseur, $E_{\mathrm{inc}}(\xzero)$ est le champ incident\footnote{Il s'agit du faisceau gaussien de waist \SI{14.6}{\milli\metre}.}, et $m(\xzero)$ est un masque représentant le diaphragme et les montures de optiques. On écrira $m(\xzero)$ comme étant une pupille de diamètre $D$. $\Ezero(\xzero)$ correspond alors au champ au niveau du diffuseur, et on supposera dans la suite que celui-ci varie lentement à l'échelle des variations de $\tdiff(\xzero)$, c'est à dire que $\Ezero(\xzero+\delta\xzero)=\Ezero(\xzero)$ avec $\delta\xzero$ de l'ordre de $\rdiff$.
+où $\tdiff(\xzero)$ est la transmission du diffuseur, $E_{\mathrm{inc}}(\xzero)$ est le champ incident\footnote{Il s'agit du faisceau gaussien de waist \SI{14.6}{\milli\metre}.}, et $m(\xzero)$ est un masque représentant le diaphragme et les montures de optiques. On écrira $m(\xzero)$ comme étant une pupille de diamètre $D$. $\Ezero(\xzero)$ correspond alors au champ au niveau du diffuseur, et on supposera dans la suite que celui-ci varie lentement à l'échelle des variations de $\tdiff(\xzero)$, c'est à dire que $\Ezero(\xzero+\delta\xzero)\approx\Ezero(\xzero)$ avec $\delta\xzero$ de l'ordre de $\rdiff$.
 
-On montre alors que le profil d'intensité moyenne à la distance $d$ s'exprime comme étant le produit de convolution de deux termes:
+On montre alors (voir annexe \ref{ch:anex_speckle}) que le profil d'intensité moyenne à la distance $d$ s'exprime comme étant le produit de convolution de deux termes
 \begin{align}
 \nonumber\overline{I}(\xd)&=\overline{E(\xd) E^*(\xd)} \\
-&\propto I_0 \left( \frac{\deff}{d} \xd \right) \ast \widetilde{\Cdiff}\left( \frac{\xd}{\lambda d} \right) \text{ .}
+&\propto I_0 \left( \frac{\deff}{d} \xd \right) \ast \widetilde{\Cdiff}\left( \frac{\xd}{\lambda d} \right) \text{ ,}
 \end{align}
+décrivant respectivement la propagation du faisceau incident sous l'effet de la lentille et la diffraction par les grains du diffuseur. 
 
+
+signification des deux termes
+
+\begin{figure}
+\centering
+
+\caption{\textbf{Extension du champ de speckle.} L'extension du faisceau de speckle provient des effets toussa toussa...}
+\label{fig:speckle_extension}
+\end{figure}
+
+Pour une zone très proche du plan focal de la lentille, le profil d'intensité lumineuse est alors décrit par 
+\begin{equation}
+\overline{I}\propto \mathrm{TF} \left[ \Cdiff \right] (\xf/\lambda f)
+\end{equation}
+où l'ensemble des points $\lbrace \xf \rbrace$ correspond au plan de Fourier\footnote{Dans le plan focal $\lbrace x,y,z=f\rbrace$, le champ rayonné est alors la transformée de Fourier du champ incident comme illustré par la formule \ref{eq:amplitude_rayonnee}. Il s'agit d'une propriété bien connue des lentilles de pouvoir ramener l'infini de la diffraction de Fraunhofer à distance finie.} $\lbrace x,y,z=f \rbrace$, et $\Cdiff$ est la fonction de corrélation du diffuseur, de forme de gaussienne avec une largeur $\rdiff$. Le profil d'intensité lumineuse dans le plan de Fourier est alors donnée par 
+\begin{equation}
+\overline{I}(\xf)\propto \exp{(-\frac{2 \left| \xf \right|^2}{\speckleext})} \quad \text{avec} \quad \speckleext = \frac{\lambda f}{\pi \rdiff} \text{ .}
+\end{equation}
+$\speckleext$ correspond donc au waist du profil d'intensité moyenne, dont l'expression peut se réécrire à l'aide de l'angle du diffusion $\speckleext=\theta_{\mathrm{diff}} f$. Donc dans le plan de Fourier, l'extension du champ de speckle ne provient que de l'effet de la diffraction des émetteurs individuels dont les faisceaux se recouvrent tous, comme illustré figure \ref{fig:speckle_extension}.
+
+Cette condition de recouvrement des faisceaux provenant de l'ensemble des émetteurs du diffuseur permet de considérer que dans cette région le speckle est entièrement développé. Afin d'en déterminer l'étendue longitudinale, on s'intéresse aux positions de l'espace où l'ensemble des faisceaux provenant du diffuseur participent. Dans la limite $\theta_{\mathrm{diff}} \ll \ON$, on détermine par trigonométrie que cette zone s'étend par part et d'autre du plan de Fourier sur une distance $\delta f/2\approx \speckleext /\ON$, comme illustré figure \ref{fig:speckle_extension}. Par analogie avec un faisceau gaussien, on appellera cette grandeur \emph{distance de Rayleigh} du champ de speckle.
 
 
 
