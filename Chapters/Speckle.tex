@@ -175,9 +175,6 @@ où le symbole $\ast$ dénote le produit de convolution. L'évolution du profil 
 \end{itemize}
 Ces dépendances sont illustrées figure \ref{fig:speckle_extension}, où le fond rose correspond au premier terme de focalisation, tandis le fond orange illustre le second terme de diffraction. On identifie alors deux régimes pour lesquels un terme est prépondérant. 
 
-
-
-
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/Speckle/speckle_extension.pdf}
@@ -200,30 +197,6 @@ Cette condition de recouvrement des faisceaux provenant de l'ensemble des émett
 
 
 
-\begin{comment}
-Afin de connaître l'extension spatiale du champ de speckle, il nous faut dans un premier temps calculer l'amplitude rayonnée. Appliquons l'approximation paraxiale au principe de Huygens-Fresnel:
-\begin{align}
-E(x,y,d)&\propto \int{\mathrm{d}x_0 \mathrm{d}y_0 \: E_0(x_0,y_0) \: t_{\mathrm{diff}}(x_0,y_0) \: \exp{\left( -ik\frac{x_0^2+y_0^2}{2f} \right) } \: \exp{ \left( ik\frac{(x-x_0)^2+(y-y_0)^2}{2d} \right) }} \\
-&\propto \int{\mathrm{d}x_0 \mathrm{d}y_0 \: E_0(x_0,y_0) \: t_{\mathrm{diff}}(x_0,y_0) \: \exp{\left( ik\frac{x_0^2+y_0^2}{2d_{\mathrm{eff}}} \right) } \: \exp{\left( -ik \frac{xx_0+yy_0}{d} \right) }}
-\end{align}
-avec $1/d_{\mathrm{eff}}=1/d-1/f$. Le profil d'intensité moyenne est donné par la fonction de corrélation en amplitude, évaluée aux deux mêmes points:
-\begin{equation}
-\overline{I}(x,y,d)=\overline{E(x,y,d)E^*(x,y,d)}
-\end{equation}
-On peut alors montrer que l'intensité moyenne est issue de la convolution de deux termes:
-\begin{equation}
-\overline{I}(x,y,d)\propto \left[ I_0(\frac{d_{\mathrm{eff}}}{d}x_0,\frac{d_{\mathrm{eff}}}{d}y_0) \ast \widetilde{C_{\mathrm{diff}}}(kx_0/d,ky_0/d) \right] (x,y)
-\end{equation}
-Explicitons la physique qui se trouve derrière cette formule. Pour cela, discutons des deux termes de la convolution. 
-
-Le premier terme n'est autre que l'intensité incidente sur le diffuseur, redimensionnée par l'effet de la lentille. En effet, le changement d'échelle par $d/d_{\mathrm{eff}}=\left| d-f \right| /f$ montre qu'au cours de la propagation, la taille du faisceau en l'absence du diffuseur diminue jusqu'au plan de focalisation ($d=f$), puis augmente indéfiniment. Le caractère linéaire de cette loi d'échelle se comprend aisément dans le cadre de l'optique géométrique: le faisceau se focalise dans le plan $z=f$, où tous les rayons lumineux se croisent puis s'écartent. Il s'agit du terme prépondérant dans les régions éloignées du plan focal.
-
-Le second terme traduit la diffraction des différents grains du diffuseur. Ces grains ont une taille typique $r_{\mathrm{diff}}$ et vont donc diffracter selon un angle $\theta_{\mathrm{diff}}=\lambda/r_{\mathrm{diff}}$. Cela va donc se traduire par une taille transverse $w_{\mathrm{diff}}=\theta_{\mathrm{diff}} d$, qui augmente linéraire avec la distance $d$. Il s'agit du terme prépondérant aux alentours du plan de Fourier. 
-
-On a vu en section \ref{sec:propriete_diffuseur} que la fonction de corrélation $C_{\mathrm{diff}}$ est en bonne approximation une gaussienne. En supposant un éclairement incident gaussien (on néglige l'effet du diaphragme), 
-\end{comment}
-
-
 
 
 
@@ -236,10 +209,42 @@ On a vu en section \ref{sec:propriete_diffuseur} que la fonction de corrélation
 
 
 \subsection{Longueur de corrélation transverse le long de l'axe optique}
-Calcul de la corrélation transverse aux alentours du plan de Fourier, forme gaussienne bien reproduite car la pupille ne coupe que quelques \% de la lumière du faisceau laser gaussien incident: la TF d'une gaussienne faiblement tronquée est une gaussienne correcte.
+à l'echelle des grains de speckle, on peut supposer que l'intensité lumineuse moyenne est constante. Dans ce cas, on montre à l'aide du théorème de Wick pour les variables gaussiennes que la fonction de corrélation des fluctuations d'intensité s'écrit
+\begin{equation}
+\overline{\delta I(\xd) \delta I(\xd')} \propto \left| \overline{E(\xd)E^*(\xd')} \right|^2
+\end{equation}
+avec $\delta I(\xd)=I(\xd)-\overline{I}(\xd)$.
+
+On montre annexe \ref{ch:anex_speckle} que la fonction transverse le long de l'axe optique peut s'écrire 
+\begin{align}
+\nonumber \CE(\xd,\xd') &= \overline{E(\xd) E^*(\xd')} \\
+& \propto \widetilde{I_0}\left( \frac{\delta\xd}{\lambda d}\right) \ast \Cdiff\left( \frac{\deff}{d} \delta \xd \right)
+\end{align}
+où $\delta\xd=\xd'-\xd$. Deux contributions.
+\begin{itemize}
+\item[•] le premier terme correspond à la TF de l'intensité lumineuse dans le plan du diffuseur, avec un scaling proportionnel à la distance. Ce scaling est dû à la diminution de l'ouverture numérique au fur et à mesure de la distance, $\ON=D/2d$. Donc au fur et à mesure de la propagation, l'ouverture numérique diminue et ça conduit à un élargissement de la tâche de diffraction en absence de diffuseur.
+\item[•] le second terme tient compte de la diffraction par les grains selon un angle $\theta_{\mathrm{diff}}$. Il joue le rôle d'ouverture numérique effective, et indique que loin du plan de Fourier, tous les grains ne participent pas à l'éclairement en un point donné. Mettre le schéma pour expliquer tout ça, sinon c'est imbitable.
+\end{itemize}
+
+Tout comme pour l'extension du champ de speckle, deux régions dont les frontières sont les mêmes.
+Une région loin du plan de Fourier où l'ouverture numérique effective faible, conduit à des gros grains de speckle. Autour du plan de Fourier, le terme de TF de l'intensité au niveau du diffuseur est prépondérant. Dans ce régime,
+On montre alors que la fonction de corrélation aux alentours du plan de Fourier peut s'écrire 
+\begin{equation}
+\overline{\delta I (\xf) \delta I (\xf + \delta \xf)} \propto \left| \mathrm{TF} \left[ I_0 \right] (\delta \xf / \lambda f \right| ^2
+\end{equation}
+La tailles des grains est alors donnée par la limite de diffraction du système, $\sigmap\sim \lambda/2\ON$
+
+
+
+
 
 \subsection{Corrélation longitudinale}
 Calculs de la corrélation longitudinale. Formule de la thèse de Fred redémontrée en annexe. Application à un éclairement gaussien, et un éclairement homogène tronqué. Réalité entre les deux, donc la fonction de corrélaiton réelle est quelque part entre une lorentzienne et un sinus cardinal. C'est pas parfait partout, alors modélisation en tenant compte des effets non-paraxiaux pour vraiment reproduire la corrélation longitudinale. Calculs lourds numériquement et théoriquement, donc on met en place un modèle paraxial à ON effective. Avecun facteur de scaling sur la taille du faisceau incident et sur la pupille, on arrive à reproduire de manière convenable la corrélation longitudinale. Avantage: ça reste paraxial donc on peut en tirer des grandeurs. 
+
+
+
+
+
 
 \section{Propriétés du potentiel de type speckle}
 \label{sc:potentiel_speckle}
