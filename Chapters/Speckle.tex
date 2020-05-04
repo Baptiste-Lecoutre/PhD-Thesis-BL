@@ -192,7 +192,7 @@ où l'ensemble des points $\lbrace \xf \rbrace$ correspond au plan de Fourier\fo
 \end{equation}
 $\speckleext$ correspond donc au waist du profil d'intensité moyenne, dont l'expression peut se réécrire à l'aide de l'angle du diffusion $\speckleext=\theta_{\mathrm{diff}} f = 1.5\pm\SI{0.1}{\milli\metre}$. Donc, dans le plan de Fourier, l'extension du champ de speckle ne provient que de l'effet de la diffraction des émetteurs individuels dont les faisceaux se recouvrent tous, comme illustré figure \ref{fig:speckle_extension} par la zone orange.
 
-Cette condition de recouvrement des faisceaux provenant de l'ensemble des émetteurs du diffuseur permet de considérer que dans cette région le speckle est entièrement développé. Afin d'en déterminer l'étendue longitudinale, on s'intéresse aux positions de l'espace où l'ensemble des faisceaux provenant du diffuseur participent. Dans la limite $\theta_{\mathrm{diff}} \ll \ON$, on détermine par trigonométrie que cette zone s'étend par part et d'autre du plan de Fourier sur une distance $\delta f/2\approx \speckleext /\ON =2.5\pm\SI{0.1}{\milli\metre}$, comme illustré figure \ref{fig:speckle_extension}. Par analogie avec un faisceau gaussien, on appellera cette grandeur \emph{distance de Rayleigh} du champ de speckle.
+Cette condition de recouvrement des faisceaux provenant de l'ensemble des émetteurs du diffuseur permet de considérer que dans cette région le speckle est entièrement développé. Afin d'en déterminer l'étendue longitudinale, on s'intéresse aux positions de l'espace où l'ensemble des faisceaux provenant du diffuseur participent. Dans la limite $\theta_{\mathrm{diff}} \ll \ON$, on détermine par trigonométrie que cette zone s'étend par part et d'autre du plan de Fourier sur une distance $\delta f/2\approx \speckleext /\ON =2.5\pm\SI{0.1}{\milli\metre}$ (voir figure \ref{fig:speckle_extension}), délimitant ainsi les régions décrites précédemment. Par analogie avec un faisceau gaussien, on appellera $\delta f$ \emph{distance de Rayleigh} du champ de speckle, et sa valeur nous assure que les atomes de trouveront dans la zone où le speckle est pleinement développé, celle-ci étant un ordre de grandeur plus grande que l'incertitude de positionnement des atomes.
 
 
 
@@ -209,29 +209,44 @@ Cette condition de recouvrement des faisceaux provenant de l'ensemble des émett
 
 
 \subsection{Longueur de corrélation transverse le long de l'axe optique}
-à l'echelle des grains de speckle, on peut supposer que l'intensité lumineuse moyenne est constante. Dans ce cas, on montre à l'aide du théorème de Wick pour les variables gaussiennes que la fonction de corrélation des fluctuations d'intensité s'écrit
-\begin{equation}
-\overline{\delta I(\xd) \delta I(\xd')} \propto \left| \overline{E(\xd)E^*(\xd')} \right|^2
-\end{equation}
-avec $\delta I(\xd)=I(\xd)-\overline{I}(\xd)$.
+La seconde taille caractéristique du speckle, la taille des grains de lumière, est une grandeur d'une importance capitale pour la physique du désordre. Si l'extension du faisceau de speckle est une grandeur d'intérêt pratique (celle-ci donne une borne supérieure sur les tailles de nuages), nous verrons chapitre \ref{ch:TauS_PRL} que la taille des grains de speckle fixe la dynamique de la propagation d'une onde en milieu désordonné.
 
-On montre annexe \ref{ch:anex_speckle} que la fonction transverse le long de l'axe optique peut s'écrire 
+La taille de ces grains est donnée par la largeur de la fonction de corrélation des fluctuations d'intensité, le potentiel ressenti par les atomes étant proportionnel à l'intensité lumineuse. À l'aide du théorème de Wick pour les variables gaussiennes, il est possible de relier cette fonction de corrélation des fluctuations d'intensité à la fonction de corrélation en amplitude du champ:
+\begin{equation}
+\overline{\delta I(\xd) \delta I(\xd')} = \left| \overline{E(\xd)E^*(\xd')} \right|^2 \text{ ,}
+\end{equation}
+où $\delta I(\xd)=I(\xd)-\overline{I}(\xd)$ correspond aux fluctuations statistiques d'intensité et les positions $\xd$ et $\xd'$ correspondent à deux points dans le plan $\lbrace x,y,z=d\rbrace$ transverse à l'axe optique. 
+
+
+Dans les conditions expérimentales usuelles, il est possible de négliger l'effet de l'extension spatiale finie du speckle, celle-ci étant très grande à l'échelle des grains de speckle. Ainsi, on peut considérer que la fonction de corrélation en amplitude ne dépend uniquement que de la différence des positions considérées. Dans ce régime, on montre annexe \ref{ch:anex_speckle} que la fonction de corrélation transverse en amplitude le long de l'axe optique peut s'écrire:
 \begin{align}
 \nonumber \CE(\xd,\xd') &= \overline{E(\xd) E^*(\xd')} \\
-& \propto \widetilde{I_0}\left( \frac{\delta\xd}{\lambda d}\right) \ast \Cdiff\left( \frac{\deff}{d} \delta \xd \right)
+& \propto \widetilde{I_0}\left( \frac{\delta\xd}{\lambda d}\right) \ast \Cdiff\left( \frac{\deff}{d} \delta \xd \right) \text{ ,}
+\label{eq:correlation_transverse_speckle}
 \end{align}
-où $\delta\xd=\xd'-\xd$. Deux contributions.
+où $\delta\xd=\xd'-\xd$. De même que pour l'extension spatiale du champ de speckle, la fonction de corrélation résulte de deux contributions, dont les interprétations physiques sont les suivantes:
 \begin{itemize}
-\item[•] le premier terme correspond à la TF de l'intensité lumineuse dans le plan du diffuseur, avec un scaling proportionnel à la distance. Ce scaling est dû à la diminution de l'ouverture numérique au fur et à mesure de la distance, $\ON=D/2d$. Donc au fur et à mesure de la propagation, l'ouverture numérique diminue et ça conduit à un élargissement de la tâche de diffraction en absence de diffuseur.
-\item[•] le second terme tient compte de la diffraction par les grains selon un angle $\theta_{\mathrm{diff}}$. Il joue le rôle d'ouverture numérique effective, et indique que loin du plan de Fourier, tous les grains ne participent pas à l'éclairement en un point donné. Mettre le schéma pour expliquer tout ça, sinon c'est imbitable.
+\item[\textendash] Le premier terme correspond à la transformée de Fourier de l'intensité lumineuse dans le plan du diffuseur. Il s'agit ici du motif de diffraction à l'infini en l'absence du diffuseur, dont la taille est proportionnelle à la distance. Ce facteur d'échelle s'interprète comme une diminution de l'ouverture numérique au fur et à mesure de l'éloignement avec le diffuseur, comme indiqué par la relation $\ON'(d)=D/2d$, avec $D$ la taille typique de l'éclairement au niveau du diffuseur. Ce terme conduit donc à largeur de l'ordre de $\lambda / \pi \ON'(d)$, qui croît linéairement avec la distance $d$. 
+\item[\textendash] Le second terme décrit quant à lui le fait que les grains du diffuseur ne diffractent que selon un angle $\theta_{\mathrm{diff}}$. De fait, ce terme décrit les régions de l'espace dans lesquelles l'ensemble du diffuseur ne participe pas à l'interférence au point $\xd$. Ce terme joue ainsi le rôle d'ouverture numérique effective, dont l'expression $\ON_{\mathrm{eff}}(d)=\theta_{\mathrm{diff}} f/\left| d-f \right|$ peut être obtenue par trigonométrie. L'écriture de ce terme donnée équation \ref{eq:correlation_transverse_speckle} permet néanmoins d'obtenir une expression simple de la largeur induite pour la fonction de corrélation: $\lambda /\pi \ON_{\mathrm{eff}} (d)$.
 \end{itemize}
+La largeur de la fonction de corrélation apparaît alors comme la plus petite taille permise par les lois de la diffraction: il s'agit de la limite de diffraction. L'étude des grains de speckle se résume alors à l'évolution de l'ouverture numérique le long de l'axe de propagation du faisceau.
 
-Tout comme pour l'extension du champ de speckle, deux régions dont les frontières sont les mêmes.
-Une région loin du plan de Fourier où l'ouverture numérique effective faible, conduit à des gros grains de speckle. Autour du plan de Fourier, le terme de TF de l'intensité au niveau du diffuseur est prépondérant. Dans ce régime,
+À l'instar de l'extension du champ de speckle, il est possible d'identifier deux régions dans lesquelles le comportement de la largeur de la fonction de corrélation en amplitude du speckle est majoritairement dû à l'un des effets mentionnés ci-dessus. La frontière entre ces deux régions est donnée, comme pour l'extension du speckle, par la distance de Rayleigh qui caractérise, rappelons-le, l'étendue sur laquelle l'ensemble de diffuseur participe à l'amplitude rayonnée.
+
+
+
+
+
+
+
+Autour du plan de Fourier, le terme de TF de l'intensité au niveau du diffuseur est prépondérant. Dans ce régime,
 On montre alors que la fonction de corrélation aux alentours du plan de Fourier peut s'écrire 
 \begin{equation}
 \overline{\delta I (\xf) \delta I (\xf + \delta \xf)} \propto \left| \mathrm{TF} \left[ I_0 \right] (\delta \xf / \lambda f \right| ^2
 \end{equation}
+
+
+discussion vénère ici sur le profil d'intensité.
 La tailles des grains est alors donnée par la limite de diffraction du système, $\sigmap\sim \lambda/2\ON$
 
 
