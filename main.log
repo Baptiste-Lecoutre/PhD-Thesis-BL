@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  7 MAY 2020 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  11 MAY 2020 16:09
 entering extended mode
 **./main.tex
 (main.tex
@@ -1541,18 +1541,42 @@ ine 326.
 LaTeX Warning: Reference `eq:potentiel_dipolaire' on page 12 undefined on input
  line 326.
 
+<Fig/Speckle/principe_potentiel_etat_interne.pdf, id=526, 355.09534pt x 220.272
+08pt>
+File: Fig/Speckle/principe_potentiel_etat_interne.pdf Graphic file (type pdf)
+<use Fig/Speckle/principe_potentiel_etat_interne.pdf>
+Package pdftex.def Info: Fig/Speckle/principe_potentiel_etat_interne.pdf  used 
+on input line 338.
+(pdftex.def)             Requested size: 362.77525pt x 225.03416pt.
 
-Underfull \vbox (badness 1584) has occurred while \output is active []
+Package natbib Warning: Citation `grimm1999optical' on page 12 undefined on inp
+ut line 343.
 
- [12 <./Fig/Speckle/distribution_potentiel.pdf>]) (Appendices/Anex_speckle.tex 
-[13]
-[14
+[12 <./Fig/Speckle/distribution_potentiel.pdf>]
 
-]
+Package natbib Warning: Citation `grimm1999optical' on page 13 undefined on inp
+ut line 346.
+
+<Fig/Speckle/potentiel_dipolaire_hyperfin.pdf, id=586, 388.47842pt x 254.25056p
+t>
+File: Fig/Speckle/potentiel_dipolaire_hyperfin.pdf Graphic file (type pdf)
+<use Fig/Speckle/potentiel_dipolaire_hyperfin.pdf>
+Package pdftex.def Info: Fig/Speckle/potentiel_dipolaire_hyperfin.pdf  used on 
+input line 365.
+(pdftex.def)             Requested size: 384.1096pt x 251.39459pt.
+[13 <./Fig/Speckle/principe_potentiel_etat_interne.pdf>])
+(Appendices/Anex_speckle.tex [14 <./Fig/Speckle/potentiel_dipolaire_hyperfin.pd
+f>]
 Chapitre 2.
-[15] [16] [17] [18]) (main.bbl [19] [20
+[15
 
-]) [21]
+] [16] [17] [18]) (main.bbl [19] [20
+
+])
+
+Package natbib Warning: There were undefined citations.
+
+[21]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (main.aux)
@@ -1562,14 +1586,17 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29640 strings out of 480934
- 562446 string characters out of 2899917
- 950507 words of memory out of 3000000
- 44527 multiletter control sequences out of 15000+200000
- 678708 words of font info for 219 fonts, out of 3000000 for 9000
+ 29669 strings out of 480934
+ 563308 string characters out of 2899917
+ 950000 words of memory out of 3000000
+ 44541 multiletter control sequences out of 15000+200000
+ 679040 words of font info for 223 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,62p,1408b,1100s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.en
@@ -1605,9 +1632,9 @@ msy7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (21 pages, 760903 bytes).
+Output written on main.pdf (21 pages, 833943 bytes).
 PDF statistics:
- 884 PDF objects out of 1000 (max. 8388607)
- 135 named destinations out of 1000 (max. 500000)
- 56574 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 959 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 56584 words of extra memory for PDF output out of 61914 (max. 10000000)
 
