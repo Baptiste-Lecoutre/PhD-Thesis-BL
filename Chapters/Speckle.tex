@@ -284,6 +284,7 @@ Jusqu'à ce point, nous nous sommes attachés à décrire le champ lumineux d'un
 À présent, nous allons décrire comment les propriétés du champ de speckle se traduisent en terme de potentiel pour les atomes. 
 
 \subsection{Propriétés du potentiel}
+\label{sc:propriete_potentiel_speckle}
 Comme annoncé en introduction de ce chapitre, le désordre nécessaire à l'étude de la propagation d'ondes de matière en milieux désordonnés est réalisé à l'aide du champ de speckle décrit précédemment, dont l'effet sur les atomes est décrit par le potentiel dipolaire présenté section \ref{sc:forces_lumineuses}. En effet, l'effet d'un champ laser de pulsation $\omega$ et d'intensité $I(\mathbf{x})$ sur un atome à deux niveaux séparés par $\hb \omega_0$ est donné par \ref{eq:potentiel_dipolaire}, que l'on peut écrire plus simplement 
 \begin{equation}
 V(\mathbf{x}) \propto I(\mathbf{x}) \left( \frac{1}{\omega-\omega_0} - \frac{1}{\omega+\omega_0} \right) \text{ .}
@@ -303,7 +304,7 @@ De plus, il a été montré dans la section précédente que le champ de speckle
 \end{equation}
 d'après les lois de l'optique gaussienne. Les tailles typiques des nuages utilisés étant au maximum de quelques dizaines de \SI{}{\micro\metre}, on peut supposer qu'à cette échelle, le potentiel moyen ressenti par les atomes est homogène et que sa valeur est fixée par l'intensité lumineuse au centre de la figure de speckle: $\VR=\overline{V} \propto \overline{I}(\xf=0)/\delta$.
 
-Une autre conséquence de l'expression \ref{eq:potentiel_dipolaire_approx} est qu'il est possible de créer un potentiel désordonné sur les atomes qui soit répulsif ($\delta>0$) ou bien attractif ($\delta<0$) selon le signe du désaccord $\delta$. Cette dernière possibilité nous permet d'avoir un degré de liberté expérimental supplémentaire, celui de la distribution de potentiel, dont l'importance sera illustrée dans les chapitres \ref{ch:TauS_PRL} et \ref{ch:TauS_NJP}. En effet, si la distribution de la valeur absolue du potentiel est fixée par celle de l'intensité lumineuse \ref{eq:proba_speckle}, ces deux quantités étant proportionnelles, le signe du désaccord nous permet de retourner la distribution de potentiel par rapport au potentiel nul $V=0$ (voir figure \ref{fig:distribution_potentiel})
+Une autre conséquence de l'expression \ref{eq:potentiel_dipolaire_approx} est qu'il est possible de créer un potentiel désordonné sur les atomes qui soit répulsif ($\delta>0$) ou bien attractif ($\delta<0$) selon le signe du désaccord $\delta$. Cette dernière possibilité nous permet d'avoir un degré de liberté expérimental supplémentaire, celui de la distribution de potentiel, dont l'importance sera illustrée dans les chapitres \ref{ch:TauS_PRL} et \ref{ch:TauS_NJP}. En effet, si la distribution de la norme du potentiel est fixée par celle de l'intensité lumineuse \ref{eq:proba_speckle}, ces deux quantités étant proportionnelles, le signe du désaccord nous permet de retourner la distribution de potentiel par rapport au potentiel nul $V=0$ (voir figure \ref{fig:distribution_potentiel})
 \begin{equation}
 \mathcal{P}(V)=\frac{1}{\left| \VR \right|} e^{-V/\VR} \cdot \Theta(V/\VR) \text{ ,}
 \end{equation}
@@ -323,6 +324,9 @@ où $\Theta$ est la fonction de Heaviside valant 1 pour $V/\VR>0$, et 0 sinon. $
 
 
 \subsection{Possibilité d'un potentiel dépendant de l'état interne}
+intro sur la nécessité d'une spectroscopie, besoin d'un état couplé au désordre et d'un état libre: désordre dépendant de l'état interne.
+
+\paragraph*{Principe du désordre dépendant de l'état interne}
 Comme explicité section \ref{sc:forces_lumineuses}, la formule \ref{eq:potentiel_dipolaire} décrivant le potentiel dipolaire a été obtenue dans la limite des grands désaccords pour un système à deux niveaux, ne tenant donc pas compte ni de la structure fine, ni de la structure hyperfine du \isotope[87]{Rb}. En particulier, la structure hyperfine de l'état fondamental $5^2S_{1/2}$ possède deux niveaux $\etatF{1}{}$ et $\etatF{2}{}$ séparés de $\deltahf=\SI{6.83}{\giga\hertz}$ très grande devant la largeur de la transition $\Gamma/2\pi=\SI{6.07}{\mega\hertz}$. 
 
 En fixant le désaccord $\delta_{\mathrm{2,F'}}$ par rapport à la transition $\etatF{2}{}\rightarrow \etat{F'}$ de telle sorte que celui-ci soit très petit devant la séparation hyperfine des états fondamentaux $\left| \delta_{\mathrm{2,F'}} \right| /2 \pi \ll \deltahf$, on peut réaliser un potentiel dont la valeur moyenne dépend de l'état interne:
@@ -332,7 +336,6 @@ En fixant le désaccord $\delta_{\mathrm{2,F'}}$ par rapport à la transition $\
 Avec la condition d'un petit désaccord, on obtient alors $\left| \overline{V_1} \right| \ll \left| \overline{V_2} \right|$, comme illustré figure \ref{fig:principe_potentiel_etat_interne}. On dispose donc d'un moyen de réaliser un potentiel conséquent sur l'état $\etatF{2}{}$ tout en perturbant peu l'état $\etatF{1}{}$ dans lequel on prépare notre condensat de Bose-Einstein.
 
 
-
 \begin{figure}
 \centering
 \includegraphics[width=0.85\textwidth]{Fig/Speckle/principe_potentiel_etat_interne.pdf}
@@ -340,49 +343,65 @@ Avec la condition d'un petit désaccord, on obtient alors $\left| \overline{V_1}
 \label{fig:principe_potentiel_etat_interne}
 \end{figure}
 
+
+\paragraph*{Détails du potentiel dipolaire}
 Cependant, à l'échelle des désaccords typiques recherchés dans une telle situation (de l'ordre de \SI{100}{\mega\hertz}), il est aussi nécessaire de tenir compte de la structure hyperfine de l'état excité $5^2 P_{3/2}$ du \isotope[87]{Rb}, qui se décompose en quatre états hyperfins $\etat{F'=\lbrace 0,1,2,3 \rbrace}$. On peut alors montrer que le potentiel dipolaire ressenti par les états fondamentaux $\etatF{1}{}$ et $\etatF{2}{}$ est la somme des contributions de chacune des transitions vers un état excité \citep{grimm1999optical}. 
 
-
-De plus, le faisceau speckle étant polarisé linéairement suivant l'axe du champ magnétique $\vec{y}$, les contributions au potentiel dipolaire se restreignent aux transitions $\pi$ ($\Delta\mf=0$) et on peut alors montrer à l'aide d'un calcul attentif de la polarisabilité atomique que le potentiel dipolaire ressenti par les états fondamentaux hyperfins est donné par \citep{grimm1999optical,denechaud2018vers}:
+De plus, le faisceau speckle étant polarisé linéairement suivant l'axe du champ magnétique $\vec{y}$, les contributions au potentiel dipolaire se restreignent aux transitions $\pi$ ($\Delta\mf=0$) et on peut alors montrer à l'aide d'un calcul attentif de la polarisabilité atomique que le potentiel dipolaire ressenti par les états fondamentaux hyperfins est donné par \citep{grimm1999optical}\citep{steck2001rubidium}\citep{denechaud2018vers}:
 \begin{equation}
 V_2(\mathbf{x}) = \frac{3 \pi c^2 \Gamma I(\mathbf{x})}{\omega_0^3} \left( \frac{1}{40 \: \delta_{2,1}} + \frac{1}{24 \: \delta_{2,2}} + \frac{4}{15 \: \delta_{2,3}} \right) 
+\label{eq:potentiel_dipolaire_hyperfin_V2}
 \end{equation}
 et
 \begin{equation}
 V_1(\mathbf{x}) = \frac{3 \pi c^2 \Gamma I(\mathbf{x})}{\omega_0^3} \left( \frac{5}{24 \: \delta_{1,1}} + \frac{1}{8 \: \delta_{1,2}} \right) \text{ ,}
+\label{eq:potentiel_dipolaire_hyperfin_V1}
 \end{equation}
-où les $\delta_{\mathrm{F,F'}}$ correspondent aux désaccords en \SI{}{\radian\per\second} associés à chacune des transitions $\etat{F,\mf} \rightarrow \etat{F',\mf'=\mf}$.
-
-
-
-
-
-
+où les $\delta_{\mathrm{F,F'}}$ correspondent aux désaccords en \SI{}{\radian\per\second} associés à chacune des transitions $\etat{F,\mf} \rightarrow \etat{F',\mf'=\mf}$. En prenant la transition $\etat{F=2} \rightarrow \etat{F'=3}$ comme référence, on peut tracer l'évolution du potentiel dipolaire pour l'état $\etat{F=2}$ en fonction du désaccord $\delta_{2,3}$, les autres désaccords étant déductibles de la structure hyperfine des états excités. Cette évolution est représentée figure \ref{fig:potentiel_dipolaire_hyperfin}, qui comporte trois divergences du potentiel correspondant aux trois transitions $\pi$ possibles $\etat{F=2} \rightarrow \etat{F'=\lbrace 1,2,3 \rbrace}$.
 
 
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{Fig/Speckle/potentiel_dipolaire_hyperfin.pdf}
-\caption{\textbf{Potentiel dipolaire dû à la structure hyperfine du \isotope[87]{Rb}.} notation $\VR$ potentiel moyen sur F=2}
+\caption{\textbf{Potentiel dipolaire dû à la structure hyperfine du \isotope[87]{Rb}.} En fixant la puissance du faisceau speckle d'extension $\speckleext$, le potentiel moyen $\VR$ ressenti par l'état $\protect\etatF{2}{}$ évolue avec le désaccord $\delta_{2,3}$ par rapport à la transition $\protect\etatF{2}{} \rightarrow \etat{F'=3}$. Les trois divergences de potentiel observées correspondent aux trois transitions $\pi$ possibles.}
 \label{fig:potentiel_dipolaire_hyperfin}
 \end{figure}
 
-
-notation $\delta_{\mathrm{b}}$ et $\delta_{\mathrm{r}}$ par rapport à la transition vers F'=3.
-
-
-discussion des désaccords choisis de telle sorte que la puissance optique soit la même: une seule calibration?
-
-on arrive à V2/V1$\sim$100.
+À l'instar du cas d'un potentiel réalisé à l'aide d'un désaccord suffisamment grand devant la structure hyperfine du \isotope[87]{Rb} présenté dans la section \ref{sc:propriete_potentiel_speckle} précédente, la figure \ref{fig:potentiel_dipolaire_hyperfin} illustre la possibilité de réaliser des potentiels qui soient attractifs ou répulsifs en sélectionnant soigneusement le désaccord du laser par rapport à la transition $\etat{F=2} \rightarrow \etat{F'=3}$\footnote{La sélection de cette transition comme référence s'explique par sa forte contribution au potentiel ressenti par l'état $\protect\etatF{2}{}$ comme explicité équation \ref{eq:potentiel_dipolaire_hyperfin_V2}. Ceci est aussi visible sur la figure \ref{fig:potentiel_dipolaire_hyperfin} où l'effet de cette transition apparaît sur une bande d'environ $\pm\SI{200}{\mega\hertz}$, bien plus large que pour les deux autres transitions.}. Dans cet exemple, les désaccords $\delta_{2,3}=\delta_{\mathrm{r}}=-2\pi \times \SI{73}{\mega\hertz}$  et $\delta_{2,3}=\delta_{\mathrm{b}}=2\pi \times \SI{81}{\mega\hertz}$ choisis permettent tous deux d'obtenir un potentiel moyen $\left|\VR\right| /P=\SI{0.53}{\kilo\hertz/\micro\watt}$. Le choix de tels désaccords pour des désordres attractifs ($\delta_{\mathrm{r}}<0$) ou bien répulsifs ($\delta_{\mathrm{b}}>0$) donne alors un rapport de potentiels sur les états $\etatF{1}{}$ et $\etatF{2}{}$ de l'ordre de 
+\begin{equation}
+\left|V_1 \right| / \left| V_2 \right| \approx 0.01 \text{ ,}
+\end{equation}
+montrant donc la très forte différence entre les potentiels ressentis par les deux états fondamentaux de notre atome. La mise en œuvre expérimentale d'un tel désordre dépendant de l'état interne des atomes a permit la mesure des fonctions spectrales \citep{volchkov2018measurement}, dont les grandes lignes de ce procédé seront décrites dans le chapitre \ref{ch:TauS_NJP}. L'ensemble des détails de ces mesures est documenté dans la thèse de Vincent Denechaud \citep{denechaud2018vers}.
 
 
-La mise en oeuvre expérimentale de ce procédé a permit la mesure des fonctions spectrales.
 
-Effet du potentiel résiduel sur $\etatF{1}{}$, comparaison avec le potentiel chimique et explication à l'aide de l'écrantage du potentiel.
+
+\paragraph*{Limitation du potentiel résiduel sur l'état $\etatF{1}{}$}
+Le potentiel $V_1$ ne s'annule pas exactement. Quelle limite peut-on donner à la force du désordre $\VR$? Pour ça on s'intéresse à la limite que l'on peut donner au potentiel résiduel $V_1$. 
+
+
+Nous avons vu section \ref{sc:propriete_BEC} que dans le régime de Thomas-Fermi, les interactions entre particules écrantent le potentiel externe soumis aux atomes. Il en résulte que sur l'ensemble du condensat, l'énergie des atomes est constante et égale au potentiel chimique $\mu$. Ainsi, pour un potentiel désordonné résiduel d'amplitude faible $\overline{V_1}\ll\mu$, 
+
+petit désordre: on écrante le potentiel résiduel à l'aide des interactions. Modulation de densité du nuage, mais pas de l'énergie potentielle totale de chaque atome qui reste égale au potentiel chimique. 
+grand désordre: le potentiel résiduel augmente jusqu'à ce que le potentiel dépasse par endroits le potentiel chimique: dans ce cas, les interactions ne peuvent plus écranter cette énergie et on crée un trou dans le condensat. Et en plus, localement l'énergie ne sera plus égale au potentiel chimique, donc on n'a plus une unique énergie bien définie dans le condensat. Donc ça tue la spectroscopie recherchée.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Potentiel composé d'un speckle bichromatique}
+\label{sc:speckle_bichromatique}
 
 Par contre, il faut garder un désaccord suffisamment grand pour continuer de pouvoir considérer ce champ comme un potentiel conservatif, sinon on va avoir des processus inélastiques. Exemple de mesure des fonctions spectrales, où le temps de vie à cause des processus inélastiques n'était que 100ms, très insuffisant pour l'étude de la localisation d'Anderson, qui nécessite des temps d'évolution dans le désordre de plusieurs secondes.
 
-\section{Potentiel composé d'un speckle bichromatique}
 \subsection{S'éloigner de résonance}
 Grosse limitation de l'approche précédente utilisée pour les fonctions spectrales: implique qu'on est proche de résonance pour l'état $\left| F=2 \right\rangle$, donc taux d'absorption et d'émission spontanée important: grosse décohérence dans le désordre et donc impossible d'observer la localisation.
 Donc on s'éloigne de résonance, donc le potentiel sur $\left| F=1 \right\rangle$ n'est plus négligeable, il faut le compenser: second speckle! 
