@@ -425,42 +425,56 @@ addtohook={%
 
 
 
-%\usepackage[utf8x]{inputenc}
+
 \usepackage{subcaption}
-%\usepackage{fontspec}
 \usepackage{lmodern}
 \usepackage{lipsum}
 \usepackage{psl-cover}
-
 \usepackage{siunitx}
 \usepackage{xifthen}
-\newcommand{\etat}[1]{\left| #1 \right\rangle}
-\newcommand{\etatF}[2]{\etat{ F=#1 \ifthenelse{\isempty{#2}}{}{,m_{\mathrm{F}}=#2} }}
-\newcommand{\gftilde}[0]{\widetilde{g}_{\mathrm{F},m_{\mathrm{F}}}}
-\newcommand{\mf}[0]{m_{\mathrm{F}}}
+\DeclareSIUnit\gauss{G}
+\usepackage{gensymb}
+\usepackage{isotope}
+
+
+
+
+%%%%%%%%%%%%%% Commandes Manip et atome %%%%%%%%%%
+\newcommand{\kB}[0]{k_{\mathrm{B}}}
+\newcommand{\ldb}[0]{\lambda_{\mathrm{dB}}}
+\newcommand{\Nzero}[0]{N_{\mathbf{0}}}
 \newcommand{\mub}[0]{\mu_{\text{B}}}
 \newcommand{\deltahf}[0]{\Delta_{\mathrm{hf}}}
 \newcommand{\magicB}[0]{B_0^*}
+
+\newcommand{\etat}[1]{\left| #1 \right\rangle}
+\newcommand{\etatF}[2]{\etat{ F=#1 \ifthenelse{\isempty{#2}}{}{,m_{\mathrm{F}}=#2} }}
+
+\newcommand{\gftilde}[0]{\widetilde{g}_{\mathrm{F},m_{\mathrm{F}}}}
+\newcommand{\mf}[0]{m_{\mathrm{F}}}
 \newcommand{\Bzero}[0]{B_0}
-\DeclareSIUnit\gauss{G}
-\usepackage{gensymb}
-%\usepackage{subfiles}
-\usepackage{isotope}
-\newcommand{\ON}[0]{\mathrm{ON}}
-\newcommand{\ldb}[0]{\lambda_{\mathrm{dB}}}
-\newcommand{\Nzero}[0]{N_{\mathbf{0}}}
-\newcommand{\kB}[0]{k_{\mathrm{B}}}
-\newcommand{\deff}[0]{d_{\mathrm{eff}}}
+
+%%%%%%%%%%%%%% Commandes speckle %%%%%%%%%%%%%%%%%
+\newcommand{\sigmae}[0]{\sigma_{\mathrm{e}}}
+\newcommand{\re}[0]{r_{\mathrm{e}}}
+\newcommand{\rdiff}[0]{r_{\mathrm{diff}}}
+
+\newcommand{\tdiff}[0]{t_{\mathrm{diff}}}
 \newcommand{\Cdiff}[0]{C_{\mathrm{diff}}}
 \newcommand{\CE}[0]{C_{\mathrm{E}}}
-\newcommand{\sigmat}[0]{\sigma_{\parallel}}
-\newcommand{\sigmap}[0]{\sigma_{\perp}}
-\newcommand{\rdiff}[0]{r_{\mathrm{diff}}}
-\newcommand{\tdiff}[0]{t_{\mathrm{diff}}}
-\newcommand{\sigmae}[0]{\sigma_{\mathrm{e}}}
+\newcommand{\Ediff}[0]{E_{\mathrm{diff}}}
+\newcommand{\Ezero}[0]{E_0}
+
 \newcommand{\xd}[0]{\mathbf{x}_{\mathrm{d}}}
 \newcommand{\xf}[0]{\mathbf{x}_{\mathrm{f}}}
 \newcommand{\xzero}[0]{\mathbf{x}_0}
-\newcommand{\Ediff}[0]{E_{\mathrm{diff}}}
-\newcommand{\Ezero}[0]{E_0}
+
+\newcommand{\deff}[0]{d_{\mathrm{eff}}}
 \newcommand{\speckleext}[0]{\sigma_{\mathrm{ex}}}
+\newcommand{\sigmal}[0]{\sigma_{\parallel}}
+\newcommand{\sigmap}[0]{\sigma_{\perp}}
+\newcommand{\ON}[0]{\mathrm{ON}}
+
+%%%%%%%%%%%%%% Commandes TauS %%%%%%%%%%%%%%%%%%%%
+\newcommand{\VR}[0]{V_{\mathrm{R}}}
+\newcommand{\taus}[0]{\tau_{\mathrm{S}}}
