@@ -324,7 +324,7 @@ où $\Theta$ est la fonction de Heaviside valant 1 pour $V/\VR>0$, et 0 sinon. $
 
 
 \subsection{Possibilité d'un potentiel dépendant de l'état interne}
-intro sur la nécessité d'une spectroscopie, besoin d'un état couplé au désordre et d'un état libre: désordre dépendant de l'état interne.
+L'étude de la transition d'Anderson, en particulier du régime critique, nécessite de pouvoir adresser sélectivement les différents niveaux d'énergie liés au désordre. Il s'agit donc de procéder à une spectroscopie du désordre. Pour cela, nous devons disposer d'un état libre dans lequel nous préparons notre condensat de Bose-Einstein, c'est à dire insensible au potentiel désordonné, et d'un second état couplé au désordre.Dans cette section, on s'attachera donc à décrire la notion de potentiel dépendant de l'état interne des atomes.
 
 \paragraph*{Principe du désordre dépendant de l'état interne}
 Comme explicité section \ref{sc:forces_lumineuses}, la formule \ref{eq:potentiel_dipolaire} décrivant le potentiel dipolaire a été obtenue dans la limite des grands désaccords pour un système à deux niveaux, ne tenant donc pas compte ni de la structure fine, ni de la structure hyperfine du \isotope[87]{Rb}. En particulier, la structure hyperfine de l'état fondamental $5^2S_{1/2}$ possède deux niveaux $\etatF{1}{}$ et $\etatF{2}{}$ séparés de $\deltahf=\SI{6.83}{\giga\hertz}$ très grande devant la largeur de la transition $\Gamma/2\pi=\SI{6.07}{\mega\hertz}$. 
@@ -367,9 +367,10 @@ où les $\delta_{\mathrm{F,F'}}$ correspondent aux désaccords en \SI{}{\radian\
 \label{fig:potentiel_dipolaire_hyperfin}
 \end{figure}
 
-À l'instar du cas d'un potentiel réalisé à l'aide d'un désaccord suffisamment grand devant la structure hyperfine du \isotope[87]{Rb} présenté dans la section \ref{sc:propriete_potentiel_speckle} précédente, la figure \ref{fig:potentiel_dipolaire_hyperfin} illustre la possibilité de réaliser des potentiels qui soient attractifs ou répulsifs en sélectionnant soigneusement le désaccord du laser par rapport à la transition $\etat{F=2} \rightarrow \etat{F'=3}$\footnote{La sélection de cette transition comme référence s'explique par sa forte contribution au potentiel ressenti par l'état $\protect\etatF{2}{}$ comme explicité équation \ref{eq:potentiel_dipolaire_hyperfin_V2}. Ceci est aussi visible sur la figure \ref{fig:potentiel_dipolaire_hyperfin} où l'effet de cette transition apparaît sur une bande d'environ $\pm\SI{200}{\mega\hertz}$, bien plus large que pour les deux autres transitions.}. Dans cet exemple, les désaccords $\delta_{2,3}=\delta_{\mathrm{r}}=-2\pi \times \SI{73}{\mega\hertz}$  et $\delta_{2,3}=\delta_{\mathrm{b}}=2\pi \times \SI{81}{\mega\hertz}$ choisis permettent tous deux d'obtenir un potentiel moyen $\left|\VR\right| /P=\SI{0.53}{\kilo\hertz/\micro\watt}$. Le choix de tels désaccords pour des désordres attractifs ($\delta_{\mathrm{r}}<0$) ou bien répulsifs ($\delta_{\mathrm{b}}>0$) donne alors un rapport de potentiels sur les états $\etatF{1}{}$ et $\etatF{2}{}$ de l'ordre de 
+À l'instar du cas d'un potentiel réalisé à l'aide d'un désaccord suffisamment grand devant la structure hyperfine du \isotope[87]{Rb} présenté dans la section \ref{sc:propriete_potentiel_speckle} précédente, la figure \ref{fig:potentiel_dipolaire_hyperfin} illustre la possibilité de réaliser des potentiels qui soient attractifs ou répulsifs en sélectionnant soigneusement le désaccord du laser par rapport à la transition $\etat{F=2} \rightarrow \etat{F'=3}$\footnote{La sélection de cette transition comme référence s'explique par sa forte contribution au potentiel ressenti par l'état $\protect\etatF{2}{}$ comme explicité équation \ref{eq:potentiel_dipolaire_hyperfin_V2}. Ceci est aussi visible sur la figure \ref{fig:potentiel_dipolaire_hyperfin} où l'effet de cette transition apparaît sur une bande d'environ $\pm\SI{200}{\mega\hertz}$, bien plus large que pour les deux autres transitions.}. Dans cet exemple, les désaccords $\delta_{2,3}=\delta_{\mathrm{r}}=-2\pi \times \SI{73}{\mega\hertz}$  et $\delta_{2,3}=\delta_{\mathrm{b}}=2\pi \times \SI{81}{\mega\hertz}$ choisis permettent tous deux d'obtenir un potentiel moyen $\left|\VR\right| /P=h\times\SI{0.53}{\kilo\hertz/\micro\watt}$ où $\VR=\overline{V_2}$ est le potentiel moyen ressenti par l'état $\etat{F=2}$. Le choix de tels désaccords pour des désordres attractifs ($\delta_{\mathrm{r}}<0$) ou bien répulsifs ($\delta_{\mathrm{b}}>0$) donne alors un rapport de potentiels sur les états $\etatF{1}{}$ et $\etatF{2}{}$ de l'ordre de 
 \begin{equation}
 \left|V_1 \right| / \left| V_2 \right| \approx 0.01 \text{ ,}
+\label{eq:ratio_desordre_etat}
 \end{equation}
 montrant donc la très forte différence entre les potentiels ressentis par les deux états fondamentaux de notre atome. La mise en œuvre expérimentale d'un tel désordre dépendant de l'état interne des atomes a permit la mesure des fonctions spectrales \citep{volchkov2018measurement}, dont les grandes lignes de ce procédé seront décrites dans le chapitre \ref{ch:TauS_NJP}. L'ensemble des détails de ces mesures est documenté dans la thèse de Vincent Denechaud \citep{denechaud2018vers}.
 
@@ -377,19 +378,16 @@ montrant donc la très forte différence entre les potentiels ressentis par les 
 
 
 \paragraph*{Limitation du potentiel résiduel sur l'état $\etatF{1}{}$}
-Le potentiel $V_1$ ne s'annule pas exactement. Quelle limite peut-on donner à la force du désordre $\VR$? Pour ça on s'intéresse à la limite que l'on peut donner au potentiel résiduel $V_1$. 
+Une conséquence de l'équation \ref{eq:ratio_desordre_etat} est la suivante. Bien que le potentiel moyen $\overline{V_1}$ ressenti par l'état $\etatF{1}{}$ soit faible, celui-ci ne s'annule pas exactement. Quelle limite peut-on alors donner à la force du désordre $\VR$? Pour ça on s'intéresse à la limite que l'on peut donner au potentiel résiduel $V_1$. 
 
 
-Nous avons vu section \ref{sc:propriete_BEC} que dans le régime de Thomas-Fermi, les interactions entre particules écrantent le potentiel externe soumis aux atomes. Il en résulte que sur l'ensemble du condensat, l'énergie des atomes est constante et égale au potentiel chimique $\mu$. Ainsi, pour un potentiel désordonné résiduel d'amplitude faible $\overline{V_1}\ll\mu$, 
-
-petit désordre: on écrante le potentiel résiduel à l'aide des interactions. Modulation de densité du nuage, mais pas de l'énergie potentielle totale de chaque atome qui reste égale au potentiel chimique. 
-grand désordre: le potentiel résiduel augmente jusqu'à ce que le potentiel dépasse par endroits le potentiel chimique: dans ce cas, les interactions ne peuvent plus écranter cette énergie et on crée un trou dans le condensat. Et en plus, localement l'énergie ne sera plus égale au potentiel chimique, donc on n'a plus une unique énergie bien définie dans le condensat. Donc ça tue la spectroscopie recherchée.
+Nous avons vu section \ref{sc:propriete_BEC} que pour un condensat de Bose-Einstein dans le régime de Thomas-Fermi, les interactions entre particules écrantent le potentiel externe soumis aux atomes. Il en résulte que sur l'ensemble du condensat, l'énergie des atomes est constante et égale au potentiel chimique $\mu$. Ainsi, pour un potentiel désordonné résiduel d'amplitude faible $\overline{V_1}\ll\mu$, une petite modulation de densité du condensat permet de compenser l'effet de ce potentiel. Ainsi, l'énergie potentielle de chaque reste constante et égale au potentiel chimique. Dans ces conditions, le potentiel résiduel $\overline{V_1}$ ne perturbe pas l'état libre $\etatF{1}{}$.
 
 
 
+Augmentons alors la force du désordre: le potentiel résiduel augmente jusqu'à ce que celui-ci dépasse par endroits le potentiel chimique. À ces endroits, l'énergie d'interaction n'est plus suffisante pour écranter l'énergie potentielle du désordre et on crée un trou dans le condensat. Notons de plus que localement l'énergie ne sera plus égale au potentiel chimique. La conséquence la plus néfaste est l'apparition de nouvelles énergies dans la distribution d'énergie de l'état libre, dégradant ainsi la spectroscopie recherchée.
 
-
-
+Le caractère limitant du désordre résiduel apparaît donc lorsque celui-ci est de l'ordre du potentiel chimique $\overline{V_1} \lesssim \mu \approx h\times\SI{40}{\hertz}$. En utilisant le rapport \ref{eq:ratio_desordre_etat}, on estime alors que le désordre maximal applicable à l'aide de cette technique est de l'ordre de $h\times\SI{4}{\kilo\hertz}$\footnote{Cet effet a été observé lors de la mesure des fonctions spectrales. \citep{volchkov2018measurement}\citep{denechaud2018vers}}. 
 
 
 
@@ -397,14 +395,58 @@ grand désordre: le potentiel résiduel augmente jusqu'à ce que le potentiel d�
 
 
 
-\section{Potentiel composé d'un speckle bichromatique}
+
+
+
+
+\section{Potentiel composé d'un \speckle\ bichromatique}
 \label{sc:speckle_bichromatique}
 
-Par contre, il faut garder un désaccord suffisamment grand pour continuer de pouvoir considérer ce champ comme un potentiel conservatif, sinon on va avoir des processus inélastiques. Exemple de mesure des fonctions spectrales, où le temps de vie à cause des processus inélastiques n'était que 100ms, très insuffisant pour l'étude de la localisation d'Anderson, qui nécessite des temps d'évolution dans le désordre de plusieurs secondes.
+Si l'approche décrite dans la section précédente permet de réaliser une spectroscopie du potentiel désordonné appliqué aux atomes, celle-ci ne permet pas d'étudier la transition d'Anderson dans la mesure où celle-ci nécessite de réaliser des expériences d'expansion du nuage suite à la spectroscopie. 
+
+La principale limitation de cette approche provient du faible désaccord du faisceau \speckle\. En effet, les désaccords utilisés étant de l'ordre de $\left|\delta \right| \approx 12 \Gamma$, le taux d'émission spontanée est relativement grand conduisant à un temps de vie maximal des atomes habillés par le désordre d'une centaine de millisecondes, très insuffisant pour les temps d'expansions visés de plus d'une seconde.
+
+Il est donc nécessaire de compléter la procédure expérimentale utilisée lors de la mesure des fonctions spectrales pour pouvoir procéder à des expériences d'expansion.
+
 
 \subsection{S'éloigner de résonance}
-Grosse limitation de l'approche précédente utilisée pour les fonctions spectrales: implique qu'on est proche de résonance pour l'état $\left| F=2 \right\rangle$, donc taux d'absorption et d'émission spontanée important: grosse décohérence dans le désordre et donc impossible d'observer la localisation.
-Donc on s'éloigne de résonance, donc le potentiel sur $\left| F=1 \right\rangle$ n'est plus négligeable, il faut le compenser: second speckle! 
+L'approche intuitive pour diminuer le taux d'émission spontanée consiste à s'éloigner de la transition atomique, et donc à augmenter le désaccord. En effet, il est possible d'obtenir une estimation du taux d'émission spontanée $\Gamma_2$ de l'état $\etatF{2}{}$ à l'aide de
+\begin{equation}
+\Gamma_2 \approx \frac{1}{\hb} \left[ \VR \right| \frac{\Gamma}{\left|\delta\right|} \text{ ,}
+\end{equation}
+où $\Gamma=2\pi \times \SI{6.07}{\mega\hertz}$ correspond à la largeur de la transition $D_2$ du \isotope[87]{Rb} et $\delta$ est le désaccord.
+
+Afin d'obtenir un temps de vie $\Gamma_2^{-1}$ de l'ordre de la seconde pour un désordre d'environ \SI{500}{\hertz} typiquement utilisé sur l'expérience, il est nécessaire d'utiliser un désaccord de plusieurs \SI{}{\giga\hertz}. Cette condition est donc incompatible avec celle de désordre dépendant de l'état interne $\delta/2\pi \ll \deltahf$.
+
+
+La question est alors la suivante: est-il possible de réaliser un désordre dépendant de l'état interne tout en ayant un taux d'émission spontanée suffisamment faible pour permettre l'étude de la localisation d'Anderson?
+
+
+\paragraph*{Speckle bichromatique}
+Solution retenue: on s'éloigne de résonance, et pour garder la sélectivité en état interne on compense le potentiel résiduel sur l'état F=1 à l'aide d'une seconde fréquence optique.
+
+Le potentiel total ressenti par chaque état est la somme des potentiels provenant de chaque faisceau. On peut alors annuler le potentiel sur F=1 à l'aide d'un laser de compensation C. Ça se traduit par 
+\begin{equation}
+\begin{aligned}
+\overline{V_1}&=\overline{V_{P,1}}+\overline{V_{C,1}}=0 \\
+\overline{V_2}&=\overline{V_{P,2}}+\overline{V_{C,2}}=\VR
+\end{aligned}
+\end{equation}
+
+
+Les taux d'émission spontanée s'additionnent
+\begin{equation}
+\Gamma_{\mathrm{sp},1}=\Gamma_{\mathrm{sp,P},1} + \Gamma_{\mathrm{sp,C},1} \quad \text{et} \quad \Gamma_{\mathrm{sp},2}=\Gamma_{\mathrm{sp,P},2} + \Gamma_{\mathrm{sp,C},2}
+\end{equation}
+
+Contrainte: temps de vie de $\etat{F=2}$ aussi grand que possible. temps de vie de $\etat{F=1}$ suffisant pour pouvoir faire le transfert RF.
+
+
+\paragraph*{Augmenter encore plus le temps de vie}
+après transfert, on éteint le laser de compensation et on change la puissance du faisceau principal de telle sorte à garder $\VR$ constant.
+
+
+
 \subsection{Étude de la similitude de deux speckles}
 Physique avec les mains de la similitude entre 2 speckles de longueurs d'onde faiblement différentes. introduction de la finesse $\lambda / \delta\lambda$ ou de la longueur de cohérence $l_{coh}=\lambda^2/\delta\lambda$.
 Décorrélation initiale et globale dûe à la propagation dans le diffuseur, puis décorrélation par la différence dans la taille des grains en s'éloignant de l'axe optique.
