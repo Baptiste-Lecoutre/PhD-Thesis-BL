@@ -427,8 +427,8 @@ La réponse apportée par l'équipe pour augmenter le temps de vie des atomes vi
 
 \begin{figure}
 \centering
-
-\caption{\textbf{Principe de \speckle\ bichromatique.} Un laser principal très désaccordé soumet les deux états fondamentaux à un potentiel. Afin d'obtenir un potentiel dépendant de l'état interne, on utilise une seconde fréquence optique dans le but de compenser le potentiel créé par le laser principal sur l'état $\protect\etatF{1}{}$. Un choix intelligent des fréquences utilisées permet de plus d'additionner les potentiels créés par ces lasers sur l'état $\protect\etatF{2}{}$.}
+\includegraphics[width=\textwidth]{Fig/Speckle/speckle_bichromatique.pdf}
+\caption{\textbf{a: Principe de \speckle\ bichromatique.} Un laser principal très désaccordé soumet les deux états fondamentaux à un potentiel. Afin d'obtenir un potentiel dépendant de l'état interne, on utilise une seconde fréquence optique dans le but de compenser le potentiel créé par le laser principal sur l'état $\protect\etatF{1}{}$. Dans le cas d'un désordre répulsif comme illustré ici, il est de plus possible d'additionner les effets répulsifs des potentiels créés par ces lasers sur l'état $\protect\etatF{2}{}$. \textbf{b: Séquence expérimentale d'étude de la transition d'Anderson.} Après refroidissement et obtention d'un condensat de Bose-Einstein, une étape de chargement du désordre à énergie résolue est réalisée à l'aide d'un transfert radio-fréquence. Celle-ci est suivie d'une expansion du nuage dans le désordre qui constitue l'expérience de localisation d'Anderson à proprement parler.}
 \label{fig:speckle_bichromatique_principe}
 \end{figure}
 
@@ -500,9 +500,9 @@ Temps de vie $\Gamma_2^{-1}$ & \SI{165}{\milli\second} & \SI{149}{\milli\second}
 
 
 \paragraph*{Augmenter encore plus le temps de vie}
-Si les potentiels générés par les deux faisceaux sont d'amplitudes semblables, on comprend aisément que le laser de compensation contribue fortement à la dissipation par émission spontanée compte-tenu de son petit désaccord.
+Si les potentiels générés par les deux faisceaux sont d'amplitudes semblables (l'annulation du potentiel sur $\etatF{1}{}$ ne serait pas possible autrement), on comprend aisément que le laser de compensation contribue fortement à la dissipation par émission spontanée compte-tenu de son petit désaccord en comparaison de celui du laser principal.
 
-Cependant, après l'étape de chargement, une fois les atomes transférés dans l'état $\etatF{2}{}$ habillé par le désordre, il n'est plus nécessaire de compenser le potentiel vu par l'état $\etatF{1}{}$. Il est alors possible de s'affranchir du laser de compensation. Un moyen simple d'augmenter le temps de vie $\Gamma_2^{-1}$ consiste alors à diminuer progressivement la puissance du laser de compensation tout en augmentant celle du laser principal de manière à garder $\VR$ constant. Il s'agit, après chargement dans le désordre, d'un moyen de s'éloigner encore plus de résonance.
+Cependant, après l'étape de chargement, une fois les atomes transférés dans l'état $\etatF{2}{}$ habillé par le désordre, il n'est plus nécessaire de compenser le potentiel vu par l'état $\etatF{1}{}$. Il est alors possible de s'affranchir du laser de compensation. Un moyen simple d'augmenter le temps de vie $\Gamma_2^{-1}$ consiste alors à diminuer progressivement la puissance du laser de compensation tout en augmentant celle du laser principal de manière à garder $\VR$ constant, comme illustré figure \ref{fig:speckle_bichromatique_principe}b. Il s'agit, après chargement dans le désordre, d'un moyen de s'éloigner encore plus de résonance.
 
 On montre alors que le nouveau temps de vie $\Gamma_2^{'-1}$ de l'état $\etatF{2}{}$ après extinction du laser de compensation est donné par:
 \begin{equation}
@@ -518,5 +518,12 @@ Notons de plus que cette étude a été menée pour le cas le plus défavorable 
 
 
 \subsection{Étude de la similitude de deux speckles}
+Nous avons ainsi montré que l'utilisation d'un \speckle\ bichromatique permettait d'étendre l'applicabilité du désordre dépendant de l'état interne à l'étude de la transition d'Anderson grâce à l'augmentation du temps de vie des atomes dans le désordre de plus de trois ordres de grandeurs.
+
+Cependant, cette approche repose sur une hypothèse cruciale jusqu'à présent passée sous silence. L'approche de l'utilisation d'une seconde fréquence optique afin de compenser le potentiel ressenti par l'état $\etatF{1}{}$ n'est valable que si nous pouvons compenser le potentiel du laser principal en chaque point de l'espace. Il est donc nécessaire que les variations spatiales du profil d'intensité lumineuse du \speckle\ de compensation soient exactement celles du \speckle\ principal. 
+
+
+
+
 Physique avec les mains de la similitude entre 2 speckles de longueurs d'onde faiblement différentes. introduction de la finesse $\lambda / \delta\lambda$ ou de la longueur de cohérence $l_{coh}=\lambda^2/\delta\lambda$.
 Décorrélation initiale et globale dûe à la propagation dans le diffuseur, puis décorrélation par la différence dans la taille des grains en s'éloignant de l'axe optique.

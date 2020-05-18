@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  18 MAY 2020 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  18 MAY 2020 17:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -1599,13 +1599,20 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Warning: Reference `sc:propriete_BEC' on page 15 undefined on input line 
 384.
 
-[15] [16]
+[15]
+<Fig/Speckle/speckle_bichromatique.pdf, id=701, 507.09283pt x 203.79584pt>
+File: Fig/Speckle/speckle_bichromatique.pdf Graphic file (type pdf)
+<use Fig/Speckle/speckle_bichromatique.pdf>
+Package pdftex.def Info: Fig/Speckle/speckle_bichromatique.pdf  used on input l
+ine 430.
+(pdftex.def)             Requested size: 426.79135pt x 171.5325pt.
+ [16 <./Fig/Speckle/speckle_bichromatique.pdf>]
 
 Package mathptmx Warning: There are no bold math fonts on input line 494.
 
-[17]) (main.bbl [18]) [19
+[17] [18]) (main.bbl [19] [20
 
-]
+]) [21]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (main.aux)
@@ -1615,17 +1622,14 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29712 strings out of 480934
- 564325 string characters out of 2899917
- 950783 words of memory out of 3000000
- 44600 multiletter control sequences out of 15000+200000
- 705266 words of font info for 256 fonts, out of 3000000 for 9000
+ 29718 strings out of 480934
+ 564568 string characters out of 2899917
+ 952342 words of memory out of 3000000
+ 44605 multiletter control sequences out of 15000+200000
+ 705165 words of font info for 255 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,16n,62p,1616b,1130s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
@@ -1661,9 +1665,9 @@ msy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/symbols/msam10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (19 pages, 831785 bytes).
+Output written on main.pdf (21 pages, 939877 bytes).
 PDF statistics:
- 912 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 66224 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 940 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 66229 words of extra memory for PDF output out of 74296 (max. 10000000)
 
