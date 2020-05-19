@@ -510,7 +510,7 @@ On montre alors que le nouveau temps de vie $\Gamma_2^{'-1}$ de l'état $\etatF{
 \end{equation}
 L'application à un désordre d'amplitude $\left|\VR\right|/h=\SI{4}{\kilo\hertz}$ fournit alors un temps de vie de \SI{0.68}{\second} pour un désordre attractif et de \SI{0.69}{\second} pour un désordre répulsif, soit un gain de plus de trois ordres de grandeur par rapport au cas d'un speckle simple.
 
-Notons de plus que cette étude a été menée pour le cas le plus défavorable d'un désordre d'amplitude $h\times\SI{4}{\kilo\hertz}$, l'utilisation de désordres plus modérés conduisant a des temps de vie plus bien grands. Un désordre d'amplitude $h\times\SI{400}{\hertz}$ possède ainsi un temps de vie supérieur à \SI{6}{\second}, correspondant à des temps de propagation extrêmement longs.
+Notons de plus que cette étude a été menée pour le cas le plus défavorable d'un désordre d'amplitude $h\times\SI{4}{\kilo\hertz}$, l'utilisation de désordres plus modérés conduisant a des temps de vie plus bien grands. Un désordre d'amplitude $h\times\SI{400}{\hertz}$ possède ainsi un temps de vie supérieur à \SI{6}{\second}, permettant donc des temps de propagation extrêmement longs.
 
 
 
@@ -521,6 +521,30 @@ Notons de plus que cette étude a été menée pour le cas le plus défavorable 
 Nous avons ainsi montré que l'utilisation d'un \speckle\ bichromatique permettait d'étendre l'applicabilité du désordre dépendant de l'état interne à l'étude de la transition d'Anderson grâce à l'augmentation du temps de vie des atomes dans le désordre de plus de trois ordres de grandeurs.
 
 Cependant, cette approche repose sur une hypothèse cruciale jusqu'à présent passée sous silence. L'approche de l'utilisation d'une seconde fréquence optique afin de compenser le potentiel ressenti par l'état $\etatF{1}{}$ n'est valable que si nous pouvons compenser le potentiel du laser principal en chaque point de l'espace. Il est donc nécessaire que les variations spatiales du profil d'intensité lumineuse du \speckle\ de compensation soient exactement celles du \speckle\ principal. 
+
+
+
+
+étude de la différence des potentiels de même amplitude pour voir à quel point ils s'annulent sur F=1. cette étude de la différence des potentiels revient à regarder la différence des intensités de mêmes valeurs moyennes. 
+\begin{equation}
+\overline{\delta I_{\mathrm{p}}(\mathbf{r}) \delta I_{\mathrm{c}} (\mathbf{r})} = \left| \overline{E_{\mathrm{p}}(\mathbf{r}) E^*_{\mathrm{c}}(\mathbf{r})} \right|^2
+\end{equation}
+
+
+\begin{equation}
+\Cdiff(\xzero,\xzero',\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=\overline{\tdiff(\xzero,\lambda_{\mathrm{p}})\tdiff^*(\xzero',\lambda_{\mathrm{c}})}
+\end{equation}
+
+\begin{equation}
+\Cdiff(\xzero,\xzero',\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=\exp{\left( -\frac{{\delta\phi}^2}{2}\right) } \exp{\left( -\frac{\pi^2 \theta_{\mathrm{diff}}^2}{2}\frac{(\xzero - \xzero')^2}{\lambda_{\mathrm{p}} \lambda_{\mathrm{c}}} \right)}
+\end{equation}
+avec $\delta\phi=\left| \sigma_{\phi,\mathrm{p}} - \sigma_{\phi,\mathrm{c}} \right|$  la différence des largeurs des distributions de phases induites par le diffuseur aux deux longueurs d'intérêt $\lambda_{\mathrm{p}}$ et $\lambda_{\mathrm{c}}$, et $r_{\mathrm{diff,p}}=\re/\sigma_{\phi,\mathrm{p}}$ est la taille typique d'un émetteur du diffuseur à la longueur d'onde $\lambda_{\mathrm{p}}$. 
+
+
+
+
+
+
 
 
 

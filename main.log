@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  18 MAY 2020 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  19 MAY 2020 16:55
 entering extended mode
 **./main.tex
 (main.tex
@@ -1625,11 +1625,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29718 strings out of 480934
- 564568 string characters out of 2899917
+ 29723 strings out of 480934
+ 564635 string characters out of 2899917
  952342 words of memory out of 3000000
  44605 multiletter control sequences out of 15000+200000
- 705165 words of font info for 255 fonts, out of 3000000 for 9000
+ 705248 words of font info for 256 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,16n,62p,1616b,1130s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
@@ -1665,9 +1665,9 @@ msy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/symbols/msam10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (21 pages, 939877 bytes).
+Output written on main.pdf (21 pages, 941888 bytes).
 PDF statistics:
- 940 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
+ 945 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
  66229 words of extra memory for PDF output out of 74296 (max. 10000000)
 
