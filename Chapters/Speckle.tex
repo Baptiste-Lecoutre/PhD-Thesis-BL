@@ -106,6 +106,7 @@ Enfin, il est possible de définir l'angle de diffusion $\theta_{\mathrm{diff}}=
 
 
 \subsection{Implémentation expérimentale}
+{\Large\color{red} Voir exactement quel dispositif présenter. TauS? Fonctions spectrales? Double speckle?}
 Les expériences menées sur notre dispositif jusqu'en 2014 utilisaient un speckle réalisé à la longueur d'onde de \SI{532}{\nano\metre}. Ce grand désaccord vers le bleu par rapport à la transition $\mathrm{D}_2$ du \isotope[87]{Rb} permet ainsi de s'affranchir de l'émission spontanée, même pour les très longs temps de propagation nécessaires à l'étude de la localisation d'Anderson. Depuis 2015 en revanche, l'équipe utilise un speckle accordable autour de \SI{780}{\nano\metre} offrant ainsi la possibilité de réaliser un désordre attractif ou répulsif. Nous verrons section \ref{sc:potentiel_speckle} que cette accordabilité autour de la transition $\mathrm{D}_2$ offre un grand nombre de possibilités expérimentales.
 
 \paragraph*{Mise en forme du faisceau speckle}
@@ -162,7 +163,7 @@ où $k=2\pi/\lambda$ est le nombre d'onde et $\deff$ correspond à une distance 
 \begin{equation}
 \Ediff(\xzero)=\Ezero(\xzero) \tdiff(\xzero) \quad \text{avec} \quad \Ezero(\xzero) = E_\mathrm{inc} (\xzero) m(\xzero) \text{ ,}
 \end{equation}
-où $\tdiff(\xzero)$ est la transmission du diffuseur, $E_{\mathrm{inc}}(\xzero)$ est le champ incident\footnote{Il s'agit du faisceau gaussien de waist \SI{14.6}{\milli\metre}.}, et $m(\xzero)$ est un masque représentant le diaphragme et les montures de optiques. On écrira $m(\xzero)$ comme étant une pupille de diamètre $D$. $\Ezero(\xzero)$ correspond alors au champ au niveau du diffuseur, et on supposera dans la suite que celui-ci varie lentement à l'échelle des variations de $\tdiff(\xzero)$, c'est à dire que $\Ezero(\xzero+\delta\xzero)\approx\Ezero(\xzero)$ avec $\delta\xzero$ de l'ordre de $\rdiff$.
+où $\tdiff(\xzero)$ est la transmission du diffuseur, $E_{\mathrm{inc}}(\xzero)$ est le champ incident\footnote{Il s'agit du faisceau gaussien de waist \SI{14.6}{\milli\metre}.}, et $m(\xzero)=\Theta(\left| \xzero \right| - D/2)$ avec $\Theta$ la fonction de Heaviside est un masque représentant le diaphragme de diamètre $D$ et les montures de optiques. $\Ezero(\xzero)$ correspond alors au champ au niveau du diffuseur, et on supposera dans la suite que celui-ci varie lentement à l'échelle des variations de $\tdiff(\xzero)$, c'est à dire que $\Ezero(\xzero+\delta\xzero)\approx\Ezero(\xzero)$ avec $\delta\xzero$ de l'ordre de $\rdiff$.
 
 On montre alors (voir annexe \ref{ch:anex_speckle}) que le profil d'intensité moyenne à la distance $d$ peut s'écrire
 \begin{align}
@@ -229,17 +230,24 @@ Dans les conditions expérimentales usuelles, il est possible de négliger l'eff
 où $\delta\xd=\xd'-\xd$. De même que pour l'extension spatiale du champ de speckle, la fonction de corrélation transverse résulte de deux contributions, dont les interprétations physiques sont les suivantes:
 \begin{itemize}
 \item[\textendash] Le premier terme correspond à la transformée de Fourier de l'intensité lumineuse dans le plan du diffuseur. Il s'agit ici du motif de diffraction à l'infini en l'absence du diffuseur, dont la taille est proportionnelle à la distance. Ce facteur d'échelle s'interprète comme une diminution de l'ouverture numérique au fur et à mesure de l'éloignement avec le diffuseur, comme indiqué par la relation $\ON'(d)=D/2d$, avec $D$ la taille typique de l'éclairement au niveau du diffuseur. Ce terme conduit donc à largeur de l'ordre de $\sim\lambda / \pi \ON'(d)$, qui croît linéairement avec la distance $d$. 
-\item[\textendash] Le second terme décrit quant à lui le fait que les grains du diffuseur ne diffractent que selon un angle $\theta_{\mathrm{diff}}$. De fait, ce terme décrit les régions de l'espace dans lesquelles l'ensemble du diffuseur ne participe pas à l'interférence au point $\xd$. Ce terme joue ainsi le rôle d'ouverture numérique effective, dont l'expression $\ON_{\mathrm{eff}}(d)=\theta_{\mathrm{diff}} f/\left| d-f \right|$ peut être obtenue par trigonométrie. L'écriture de ce terme donnée équation \ref{eq:correlation_transverse_speckle} permet néanmoins d'obtenir une expression simple de la largeur induite pour la fonction de corrélation transverse: $\sim\lambda /\pi \ON_{\mathrm{eff}} (d)$.
+\item[\textendash] Le second terme décrit quant à lui le fait que les grains du diffuseur ne diffractent que selon un angle $\theta_{\mathrm{diff}}$. De fait, ce terme décrit les régions de l'espace dans lesquelles l'ensemble du diffuseur ne participe pas à l'interférence au point $\xd$, comme illustré par la zone orange figure \ref{fig:correlation_speckle}. Ce terme joue ainsi le rôle d'ouverture numérique effective, dont l'expression $\ON_{\mathrm{eff}}(d)=\theta_{\mathrm{diff}} f/\left| d-f \right|$ peut être obtenue par trigonométrie. L'écriture de ce terme donnée équation \ref{eq:correlation_transverse_speckle} permet néanmoins d'obtenir une expression simple de la largeur induite pour la fonction de corrélation transverse: $\sim\lambda /\pi \ON_{\mathrm{eff}} (d)$.
 \end{itemize}
 La largeur de la fonction de corrélation apparaît alors comme la plus petite taille permise par les lois de la diffraction: il s'agit de la limite de diffraction. L'étude des grains de speckle se résume alors à l'évolution de l'ouverture numérique le long de l'axe de propagation du faisceau.
 
-À l'instar de l'extension du champ de speckle, il est possible d'identifier deux régions dans lesquelles le comportement de la largeur de la fonction de corrélation transverse en amplitude du speckle est majoritairement dû à l'un des effets mentionnés ci-dessus. La frontière entre ces deux régions est donnée, comme pour l'extension du speckle, par la distance de Rayleigh qui caractérise, rappelons-le, l'étendue sur laquelle l'ensemble de diffuseur participe à l'amplitude rayonnée.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Speckle/correlation_speckle.pdf}
+\caption{\textbf{Tailles des grains de speckle.} La taille transverse $\sigmap$ des grains de speckle est donnée par la limite de diffraction, et dépend donc de l'ouverture numérique à la position d'observation $d$. Loin du plan de Fourier, seule une zone réduite du diffuseur participe à l'interférence, réduisant donc l'ouverture numérique (zone orangée). \textbf{Encart:} Simulation tridimensionnelle d'un champ de speckle. Celle-ci fait apparaître une forme très allongée des grains selon la direction longitudinale. La taille longitudinale $\sigmal$ des grains est de l'ordre de la distance de Rayleigh associée à la taille transverse $\sigmap$ comme on le verra section \ref{sc:correlation_longitudinale}.}
+\label{fig:correlation_speckle}
+\end{figure}
+
+À l'instar de l'extension du champ de speckle, il est possible d'identifier deux régions dans lesquelles le comportement de la largeur de la fonction de corrélation transverse en amplitude du speckle est majoritairement dû à l'un des effets mentionnés ci-dessus. La frontière entre ces deux régions est donnée, comme pour l'extension du speckle, par la distance de Rayleigh du champ lumineux qui caractérise, rappelons-le, l'étendue sur laquelle l'ensemble de diffuseur participe à l'amplitude rayonnée.
 
 Les atomes se trouvant à proximité du plan de Fourier, la fonction de corrélation sera donc dominée par le régime de diffraction à l'infini, où l'ouverture numérique y est maximale. La fonction de corrélation des fluctuations d'intensité s'écrit alors simplement
 \begin{equation}
-\overline{\delta I (\xf) \delta I (\xf + \delta \xf)} \propto \left| \mathrm{TF} \left[ I_0 \right] (\delta \xf / \lambda f \right| ^2 \text{ .}
+\overline{\delta I (\xf) \delta I (\xf + \delta \xf)} \propto \left| \mathrm{TF} \left[ I_0 \right] (\delta \xf / \lambda f \right| ^2 \text{ ,}
 \end{equation}
-La forme de la fonction de corrélation aux alentours du plan de Fourier nécessite tout de même une connaissance fine du profil d'intensité dans le plan du diffuseur. 
+que l'on assimilera dans la suite à une forme gaussienne (voir section \ref{sc:speckle_non_paraxial}). La forme exacte de la fonction de corrélation aux alentours du plan de Fourier nécessite tout de même une connaissance fine du profil d'intensité dans le plan du diffuseur. 
 
 Nous retiendrons ici que la taille transverse des grains de lumière est donnée par la limite de diffraction du système, $\sigmap\sim \lambda/\pi\ON$ de l'ordre de \SI{0.5}{\micro\metre}, bien inférieure à l'extension du faisceau de speckle $\sigmap \ll \speckleext$. Une calibration précise de la taille transverse des grains de speckle est présentée section \ref{sc:speckle_non_paraxial}.
 
@@ -247,20 +255,32 @@ Nous retiendrons ici que la taille transverse des grains de lumière est donnée
 
 
 \subsection{Longueur de corrélation longitudinale autour du plan de Fourier}
+\label{sc:correlation_longitudinale}
+Comme représenté figure \ref{fig:correlation_speckle}, les grains de speckle possèdent une extension longitudinale finie. De même que dans le cas de l'extension transverse des grains, la taille longitudinale des grains de speckle est donnée par la largeur de la fonction de corrélation longitudinale des fluctuations des grains de speckle aux alentours du plan de Fourier:
+\begin{equation}
+\overline{\delta I(f) \delta I( f + \delta z)}=\left| \overline{E(f) E^*(f+\delta z)} \right|^2 \text{ ,}
+\end{equation}
+évaluée aux positions $\lbrace 0,0,z=f \rbrace$ et $\lbrace 0,0,z=f+\delta z \rbrace$ sur l'axe optique.
 
-On peut montrer que la corrélation longitudinale en amplitude aux alentours du plan de Fourier s'écrit
+En supposant que l'extension longitudinale $\delta f$ du champ de speckle est très grande devant la taille longitudinale des grains, on peut se limiter à des petits déplacements $\delta z \ll \delta f$. On montre alors que la corrélation longitudinale en amplitude aux alentours du plan de Fourier peut s'écrire
 \begin{equation}
 \overline{E(f)E^*(f+\delta z)} \propto \int{\mathrm{d} \xzero I_0 (\xzero) e^{i\pi \xzero^2 \delta z / \lambda f^2} } \text{ .}
 \end{equation}
+
+On retrouve ainsi un comportement similaire à celui de la corrélation transverse aux alentours du plan de Fourier: la fonction de corrélation ne dépend que de l'éclairement incident. 
+
+
+
 De même que pour la fonction de corrélation transverse proche du plan de Fourier, celle-ci ne dépend que de l'éclairement incident dont la forme est celle d'une gaussienne tronquée par un diaphragme dont le rayon légèrement plus grand que le waist du faisceau.
 
+\paragraph*{Cas d'un éclairement gaussien}
 Dans le cas d'un éclairement purement gaussien, la corrélation longitudinale des fluctuations d'intensité est de forme lorentzienne:
 \begin{equation}
 \overline{\delta I(f) \delta I(f+\delta z)} = \overline{\delta I^2} \frac{1}{1+\delta z^2 / \sigmal^2}
 \end{equation}
 avec $\sigmal=\sigmap/\ON$
 
-
+\paragraph*{Cas d'un éclairement uniforme tronqué}
 
 Calculs de la corrélation longitudinale. Formule de la thèse de Fred redémontrée en annexe. Application à un éclairement gaussien, et un éclairement homogène tronqué. Réalité entre les deux, donc la fonction de corrélaiton réelle est quelque part entre une lorentzienne et un sinus cardinal. 
 
@@ -270,6 +290,91 @@ Calculs de la corrélation longitudinale. Formule de la thèse de Fred redémont
 
 \subsection{Effets non-paraxiaux sur les corrélations du speckle}
 \label{sc:speckle_non_paraxial}
+
+La forme des fonctions de corrélations étant directement donnée par celle de l'intensité $I_0(\xzero)$, la détermination précise des longueurs de corrélation du speckle demande une connaissance fine de l'éclairement dans le plan du diffuseur. 
+
+En particulier, la lentille asphérique utilisée pour la focalisation du faisceau sur les atomes est épaisse\footnote{L'épaisseur au centre est de \SI{12}{\milli\metre} pour une frontale de \SI{15.7}{\milli\metre}.}, le faisceau est donc fortement affecté par sa traversée. L'éclairement dans le plan du diffuseur  correspond alors à l'éclairement incident gaussien de waist \SI{14.6}{\milli\metre} (rayon à $1/e^2$) tronqué par une pupille de diamètre \SI{22.9}{\milli\metre} ayant subit un effet de focalisation. Il a été déterminé par photographie que le profil de l'éclairement est aussi de forme gaussienne tronquée, avec un waist $w_0=9\pm\SI{1}{\milli\metre}$ et une pupille de diamètre $D=20.3\pm\SI{0.1}{\milli\metre}$.
+
+Cependant, ces considérations ne suffisent pas à reproduire la forme des fonctions de corrélations expérimentales, dont le procédé de mesure est décrit dans la thèse de Jérémie Richard \citep{richard2015propagation}. 
+
+Cette différence s'explique par le fait que les expressions des fonctions de corrélation des fluctuations d'intensité ont été obtenues dans le cadre de l'approximation paraxiale. Si l'utilisation d'un système de grande ouverture numérique permet certes d'obtenir les tailles de grains les plus petites possible, cela remet en cause l'approximation paraxiale utilisée pour décrire les caractéristiques spatiales de notre champ de tavelures. En particulier, notre système permet d'obtenir une ouverture numérique $\ON=\sin{\theta_{\mathrm{max}}}=0.55\pm 0.02$ implique que certains rayons lumineux sont inclinés d'un angle de plus de \SI{30}{\degree} par rapport à l'axe optique, pour lesquels l'approximation $\sin{\theta}=\theta$ n'est plus suffisante.
+
+
+
+\paragraph*{Modèle numérique non paraxial}
+Afin de reproduire le désordre utilisé sur notre expérience, M. Pasek et D. Delande ont proposé une approche numérique reposant sur le principe de Huygens-Fresnel. En se basant sur la géométrie de notre dispositif expérimental, ils ont développé un modèle discret dans le but est de reproduire la fonction de corrélation expérimentale
+\begin{equation}
+c_{\mathrm{exp}}(\Delta \mathbf{r})=\frac{\overline{\delta I(\mathbf{r}) \delta I(\mathbf{r} + \Delta \mathbf{r})}}{\overline{\delta I^2}} \text{ ,}
+\end{equation}
+essentielle à la simulation du comportement d'ondes de matière dans notre désordre optique.
+
+Pour cela, le modèle se base sur la génération numérique d'un masque de phase représentant la forme de l'éclairement:
+\begin{equation}
+\mathcal{P}(\mathbf{k})=\delta(\left| \mathbf{k} \right| - k_{\mathrm{L}}) \exp{\left( - \frac{\tan^2 \theta}{(w_0/d)^2} \right)} \Theta \left( \frac{D}{2d}-\tan{\left| \theta \right|} \right) \text{ ,}
+\label{eq:speckle_masque_phase}
+\end{equation}
+où $k_{\mathrm{L}}=2\pi/\lambda$ est le nombre d'onde du faisceau laser, et $\theta\in\left[ -\pi/2, \pi/2 \right]$ est l'angle entre le vecteur d'onde $\mathbf{k}$ et l'axe optique. $d$ correspond à la distance entre le plan du diffuseur et le plan de focalisation. Le second facteur traduit le profil gaussien du faisceau laser incident, tandis que le troisième facteur décrit quant à lui la présence du diaphragme.Notamment, ce modèle doit décrire l'effet du diaphragme sur les fonctions de corrélation dont le comportement dévie des formes gaussienne et lorentzienne pour les directions transverses et longitudinale respectivement. 
+
+Le champ rayonné s'écrit alors comme la somme des champs émis modulés par le masque \ref{eq:speckle_masque_phase}:
+\begin{equation}
+E(\mathbf{x})=\sum_{\mathbf{k}} E_u(\mathbf{k}) \: \mathcal{P}(\mathbf{k}) \: e^{i \mathbf{k} \cdot \mathbf{r}} \text{ ,}
+\label{eq:huygens_fresnel_num}
+\end{equation}
+où les $E_u$ sont des champs complexes décorrélés dont les parties réelle et imaginaire sont des variables gaussiennes centrées\footnote{Le fait que ces champs soient décorrélés induit une extension infinie du champ de speckle. Ceci n'est pas en contradiction avec l'expérience dans la limite où l'extension du champ de speckle reste très grande devant les tailles de nos nuages, nuages se trouvant aux alentours du plan de Fourier.}. En utilisant les paramètres de l'expérience, on reproduit ainsi les bonnes propriétés statistiques du champ de tavelures, et la fonction de corrélation normalisée $c_{\mathrm{num}}$ simulée
+permet de correctement décrire celles mesurées expérimentalement, comme illustré figure \ref{fig:speckle_correlations_exp}.
+
+
+
+
+
+\begin{figure}
+\centering
+
+\caption{\textbf{Corrélations spatiales du speckle.} blabla expérience, modèle numérique complet, modèle à ouverture numérique effective et modèle 2D gaussien. Extraction longueur de corrélation longitudinale par FWHM puisque la forme est compliquée.}
+\label{fig:speckle_correlations_exp}
+\end{figure}
+
+
+
+
+
+\paragraph*{Modèle à ouverture numérique effective}
+Cependant, la mise en œuvre du modèle décrit par les équations \ref{eq:speckle_masque_phase} et \ref{eq:huygens_fresnel_num} est une procédure complexe, autant numériquement qu'analytiquement. 
+
+approximation paraxiale: $\theta \approx \sin{\theta}$. Dans le cas des grands angles, $\sin{\theta}<\theta$ et donc on peut s'approcher du vrai résultat en utilisant une ouverture numérique effective plus petite que celle prédite dans le cas paraxial.
+
+
+
+
+
+
+\begin{equation}
+c_{\mathrm{3D}}(\Delta r_\perp, \Delta z) \propto \left| \mathrm{TF} \left[ I_0'(\xzero) \: e^{i \pi \xzero^2 \delta z /\lambda d} \right]_{\frac{\Delta \mathbf{r}_\perp}{\lambda d}} \right|^2 \text{ ,}
+\end{equation}
+où 
+\begin{equation}
+I_0'(\xzero)= \exp{\left( -\frac{2 \xzero^2}{w_{\mathrm{eff}}^2} \right)} \: \Theta \left( \left| \xzero \right|- \frac{D_{\mathrm{eff}}}{2} \right)
+\end{equation}
+correspond à l'intensité dans le plan du diffuseur vu sous l'ouverture numérique effective. $D_{\mathrm{eff}}=\xscale D$ et $w_{\mathrm{eff}}=\xscale w_0$.
+
+L'optimisation de la fonction de corrélation $c_{\mathrm{3D}}$ sur les données expérimentales permet de fixer $\xscale=0.875\pm0.005$. L'ouverture numérique correspondante est alors de $\ON_{\mathrm{eff}}=0.48\pm0.02$.
+
+
+
+
+
+Dans le cadre des expériences sur le temps de diffusion élastique présentées chapitres \ref{ch:TauS_PRL} et \ref{ch:TauS_NJP}, définition de la fonction de corrélation 2D $c_{\mathrm{2D}}$ très bien approximée par une gaussienne:
+\begin{equation}
+c_{\mathrm{2D}}(\Delta \mathbf{r}_\perp)=e^{-\Delta \mathbf{r}^2_\perp / \sigmap^2}
+\end{equation}
+dont l'ajustement sur les données expérimentales donne $\sigmap=0.50\pm\SI{0.01}{\micro\metre}$.
+
+
+
+
+
+
+
 C'est pas parfait partout, alors modélisation en tenant compte des effets non-paraxiaux pour vraiment reproduire la corrélation longitudinale. Calculs lourds numériquement et théoriquement, donc on met en place un modèle paraxial à ON effective. Avecun facteur de scaling sur la taille du faisceau incident et sur la pupille, on arrive à reproduire de manière convenable la corrélation longitudinale. Avantage: ça reste paraxial donc on peut en tirer des grandeurs. 
 
 
