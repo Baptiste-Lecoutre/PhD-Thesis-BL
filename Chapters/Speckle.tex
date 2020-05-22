@@ -259,30 +259,51 @@ Nous retiendrons ici que la taille transverse des grains de lumière est donnée
 Comme représenté figure \ref{fig:correlation_speckle}, les grains de speckle possèdent une extension longitudinale finie. De même que dans le cas de l'extension transverse des grains, la taille longitudinale des grains de speckle est donnée par la largeur de la fonction de corrélation longitudinale des fluctuations des grains de speckle aux alentours du plan de Fourier:
 \begin{equation}
 \overline{\delta I(f) \delta I( f + \delta z)}=\left| \overline{E(f) E^*(f+\delta z)} \right|^2 \text{ ,}
+\label{eq:correlation_intensite_longitudinale}
 \end{equation}
 évaluée aux positions $\lbrace 0,0,z=f \rbrace$ et $\lbrace 0,0,z=f+\delta z \rbrace$ sur l'axe optique.
 
 En supposant que l'extension longitudinale $\delta f$ du champ de speckle est très grande devant la taille longitudinale des grains, on peut se limiter à des petits déplacements $\delta z \ll \delta f$. On montre alors que la corrélation longitudinale en amplitude aux alentours du plan de Fourier peut s'écrire
 \begin{equation}
 \overline{E(f)E^*(f+\delta z)} \propto \int{\mathrm{d} \xzero I_0 (\xzero) e^{i\pi \xzero^2 \delta z / \lambda f^2} } \text{ .}
+\label{eq:correlation_longitudinale_1_speckle}
 \end{equation}
 
-On retrouve ainsi un comportement similaire à celui de la corrélation transverse aux alentours du plan de Fourier: la fonction de corrélation ne dépend que de l'éclairement incident. 
-
-
-
-De même que pour la fonction de corrélation transverse proche du plan de Fourier, celle-ci ne dépend que de l'éclairement incident dont la forme est celle d'une gaussienne tronquée par un diaphragme dont le rayon légèrement plus grand que le waist du faisceau.
-
-\paragraph*{Cas d'un éclairement gaussien}
-Dans le cas d'un éclairement purement gaussien, la corrélation longitudinale des fluctuations d'intensité est de forme lorentzienne:
+On retrouve ainsi un comportement similaire à celui de la corrélation transverse aux alentours du plan de Fourier: la fonction de corrélation ne dépend que de l'éclairement incident. Cependant, la détermination de la fonction de corrélation longitudinale est plus compliquée que celle de la corrélation transverse, celle-ci ne se résumant pas qu'à une simple transformation de Fourier. Néanmoins, il possible de donner une estimation de la longueur de corrélation à l'aide de la \emph{méthode du col}. En effet, les valeurs de $\xzero$ qui contribuent significativement à l'intégrale sont celles pour lesquelles la phase $\pi \xzero^2 \delta z /\lambda f^2$ est très petite devant 1. On peut alors obtenir une estimation de la longueur de corrélation longitudinale:
 \begin{equation}
-\overline{\delta I(f) \delta I(f+\delta z)} = \overline{\delta I^2} \frac{1}{1+\delta z^2 / \sigmal^2}
+\sigmal \sim \frac{\lambda }{ \pi \ON^2} \text{ .}
+\label{eq:longueur_correlation_longitudinale}
 \end{equation}
-avec $\sigmal=\sigmap/\ON$
+La taille longitudinale des grains apparaît alors comme étant la longueur de Rayleigh associée à la taille transverse des grains, ceux deux grandeurs étant reliées par $\sigmal \sim \sigmap /\ON$.
 
-\paragraph*{Cas d'un éclairement uniforme tronqué}
 
-Calculs de la corrélation longitudinale. Formule de la thèse de Fred redémontrée en annexe. Application à un éclairement gaussien, et un éclairement homogène tronqué. Réalité entre les deux, donc la fonction de corrélaiton réelle est quelque part entre une lorentzienne et un sinus cardinal. 
+
+
+
+
+
+\paragraph*{Forme de la fonction de corrélation longitudinale}
+
+Il est possible d'obtenir des expressions analytiques de la fonction de corrélation longitudinales pour certains profils d'intensité. Notamment, on peut montrer que dans le cas d'un éclairement purement gaussien, la fonction de corrélation \ref{eq:correlation_intensite_longitudinale} est de forme lorentzienne:
+\begin{equation}
+\overline{\delta I(f) \delta I(f+\delta z)} \propto \frac{1}{1+4\delta z^2/\sigmal^2}
+\end{equation}
+avec $\sigmal=4\lambda f^2/\pi w^2$ et $w$ le waist du faisceau incident. On retrouve ainsi la prédiction de la formule \ref{eq:longueur_correlation_longitudinale}. Un second cas d'intérêt correspond à celui d'un faisceau homogène tronqué par un diaphragme de diamètre $D$. Dans cette situation, la fonction de corrélation longitudinale \ref{eq:correlation_intensite_longitudinale} possède une forme en sinus cardinal au carré.
+
+Dans le cas de notre éclairement à la fois gaussien et tronqué par un diaphragme, la fonction de corrélation possède donc une forme complexe proche d'une fonction lorentzienne et d'un sinus cardinal au carré. Une calibration expérimentale de la longueur de corrélation longitudinale, donnée par la largeur de cette fonction de forme complexe, est présentée dans la section suivante.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -295,9 +316,15 @@ La forme des fonctions de corrélations étant directement donnée par celle de 
 
 En particulier, la lentille asphérique utilisée pour la focalisation du faisceau sur les atomes est épaisse\footnote{L'épaisseur au centre est de \SI{12}{\milli\metre} pour une frontale de \SI{15.7}{\milli\metre}.}, le faisceau est donc fortement affecté par sa traversée. L'éclairement dans le plan du diffuseur  correspond alors à l'éclairement incident gaussien de waist \SI{14.6}{\milli\metre} (rayon à $1/e^2$) tronqué par une pupille de diamètre \SI{22.9}{\milli\metre} ayant subit un effet de focalisation. Il a été déterminé par photographie que le profil de l'éclairement est aussi de forme gaussienne tronquée, avec un waist $w_0=9\pm\SI{1}{\milli\metre}$ et une pupille de diamètre $D=20.3\pm\SI{0.1}{\milli\metre}$.
 
-Cependant, ces considérations ne suffisent pas à reproduire la forme des fonctions de corrélations expérimentales, dont le procédé de mesure est décrit dans la thèse de Jérémie Richard \citep{richard2015propagation}. 
+Cependant, ces considérations ne suffisent pas à reproduire la forme des fonctions de corrélations expérimentales, mesurées à l'aide d'un objectif de microscope à haute résolution. Le procédé de mesure est décrit dans la thèse de Jérémie Richard \citep{richard2015propagation}. 
 
 Cette différence s'explique par le fait que les expressions des fonctions de corrélation des fluctuations d'intensité ont été obtenues dans le cadre de l'approximation paraxiale. Si l'utilisation d'un système de grande ouverture numérique permet certes d'obtenir les tailles de grains les plus petites possible, cela remet en cause l'approximation paraxiale utilisée pour décrire les caractéristiques spatiales de notre champ de tavelures. En particulier, notre système permet d'obtenir une ouverture numérique $\ON=\sin{\theta_{\mathrm{max}}}=0.55\pm 0.02$ implique que certains rayons lumineux sont inclinés d'un angle de plus de \SI{30}{\degree} par rapport à l'axe optique, pour lesquels l'approximation $\sin{\theta}=\theta$ n'est plus suffisante.
+
+Notons tout de même que la forme de la fonction de corrélation transverse est très bien décrite par une fonction gaussienne, comme représenté figure \ref{fig:speckle_correlations_exp}. En particulier, dans le cas d'un désordre 2D\footnote{Cette notion sera discutée dans le chapitre \ref{ch:TauS_PRL}.} tel qu'utilisé pour les mesures du temps de diffusion élastique, seule la corrélation transverse participe à la dynamique du transport de l'onde de matière. On définie alors la fonction de corrélation normalisée à deux dimensions par
+\begin{equation}
+c_{\mathrm{2D}}(\Delta \mathbf{r}_\perp)=e^{-\Delta \mathbf{r}^2_\perp / \sigmap^2}
+\end{equation}
+dont l'ajustement sur les données expérimentales donne $\sigmap=0.50\pm\SI{0.01}{\micro\metre}$. Il s'agit de la valeur de la longueur de corrélation transverse que l'on retiendra dans la suite.
 
 
 
@@ -305,6 +332,7 @@ Cette différence s'explique par le fait que les expressions des fonctions de co
 Afin de reproduire le désordre utilisé sur notre expérience, M. Pasek et D. Delande ont proposé une approche numérique reposant sur le principe de Huygens-Fresnel. En se basant sur la géométrie de notre dispositif expérimental, ils ont développé un modèle discret dans le but est de reproduire la fonction de corrélation expérimentale
 \begin{equation}
 c_{\mathrm{exp}}(\Delta \mathbf{r})=\frac{\overline{\delta I(\mathbf{r}) \delta I(\mathbf{r} + \Delta \mathbf{r})}}{\overline{\delta I^2}} \text{ ,}
+\label{eq:correlation_3D_normalisee}
 \end{equation}
 essentielle à la simulation du comportement d'ondes de matière dans notre désordre optique.
 
@@ -329,8 +357,8 @@ permet de correctement décrire celles mesurées expérimentalement, comme illus
 
 \begin{figure}
 \centering
-
-\caption{\textbf{Corrélations spatiales du speckle.} blabla expérience, modèle numérique complet, modèle à ouverture numérique effective et modèle 2D gaussien. Extraction longueur de corrélation longitudinale par FWHM puisque la forme est compliquée.}
+\includegraphics[width=\textwidth]{Fig/Speckle/speckle_correlations_exp.pdf}
+\caption{\textbf{Corrélations spatiales du speckle.} Les données expérimentales (carrés bleus) sont comparés aux différents modèles. Le modèle non-paraxial (courbes vertes) développé par l'équipe de Dominique Delande permet de correctement décrire les corrélations expérimentales. Le modèle paraxial à ouverture numérique effective (courbes rouges) permet lui aussi de décrire correctement les corrélations mesurées. La fonction de corrélation transverse est similaire à une gaussienne (courbe noire), dont l'ajustement permet d'extraire la longueur de corrélation transverse $\sigmap=0.50\pm\SI{0.01}{\micro\metre}$ définie par le rayon à $1/e$. On définit la longueur de corrélation longitudinale $\sigmal=4.1\pm\SI{0.1}{\micro\metre}$ par la largeur totale à mi-hauteur des données expérimentales.}
 \label{fig:speckle_correlations_exp}
 \end{figure}
 
@@ -339,43 +367,36 @@ permet de correctement décrire celles mesurées expérimentalement, comme illus
 
 
 \paragraph*{Modèle à ouverture numérique effective}
-Cependant, la mise en œuvre du modèle décrit par les équations \ref{eq:speckle_masque_phase} et \ref{eq:huygens_fresnel_num} est une procédure complexe, autant numériquement qu'analytiquement. 
+Cependant, la mise en œuvre du modèle décrit par les équations \ref{eq:speckle_masque_phase} et \ref{eq:huygens_fresnel_num} est une procédure complexe autant numériquement qu'analytiquement, en particulier pour la détermination du spectre des fréquences spatiales du désordre $\widetilde{C}(\mathbf{k})$, déterminant pour décrire la dynamique du système. Ainsi, l'équipe a développé un modèle plus simple, basé sur l'approximation paraxiale et faisant usage d'un facteur d'échelle géométrique $\xscale$ permettant de décrire une \emph{ouverture numérique effective}.
 
-approximation paraxiale: $\theta \approx \sin{\theta}$. Dans le cas des grands angles, $\sin{\theta}<\theta$ et donc on peut s'approcher du vrai résultat en utilisant une ouverture numérique effective plus petite que celle prédite dans le cas paraxial.
-
-
-
-
-
-
+Dans le cadre de l'approximation paraxiale, on montre alors que la fonction de corrélation \ref{eq:correlation_3D_normalisee} aux alentours du plan de Fourier s'écrit
 \begin{equation}
-c_{\mathrm{3D}}(\Delta r_\perp, \Delta z) \propto \left| \mathrm{TF} \left[ I_0'(\xzero) \: e^{i \pi \xzero^2 \delta z /\lambda d} \right]_{\frac{\Delta \mathbf{r}_\perp}{\lambda d}} \right|^2 \text{ ,}
+c_{\mathrm{3D}}(\Delta \mathbf{r}_\perp, \Delta z) \propto \left| \mathrm{TF} \left[ I_0'(\xzero) \: e^{i \pi \xzero^2 \Delta z /\lambda d} \right]_{\frac{\Delta \mathbf{r}_\perp}{\lambda d}} \right|^2 \text{ ,}
 \end{equation}
-où 
+où l'intensité $I_0'(\xzero)$ dans le plan du diffuseur vu sous l'ouverture numérique effective est donnée par
 \begin{equation}
 I_0'(\xzero)= \exp{\left( -\frac{2 \xzero^2}{w_{\mathrm{eff}}^2} \right)} \: \Theta \left( \left| \xzero \right|- \frac{D_{\mathrm{eff}}}{2} \right)
 \end{equation}
-correspond à l'intensité dans le plan du diffuseur vu sous l'ouverture numérique effective. $D_{\mathrm{eff}}=\xscale D$ et $w_{\mathrm{eff}}=\xscale w_0$.
+avec $D_{\mathrm{eff}}=\xscale D$ et $w_{\mathrm{eff}}=\xscale w_0$ les tailles effectives du faisceau.
 
-L'optimisation de la fonction de corrélation $c_{\mathrm{3D}}$ sur les données expérimentales permet de fixer $\xscale=0.875\pm0.005$. L'ouverture numérique correspondante est alors de $\ON_{\mathrm{eff}}=0.48\pm0.02$.
-
-
+L'optimisation de la fonction de corrélation $c_{\mathrm{3D}}$ sur les données expérimentales permet de reproduire de manière fidèle les détails de notre désordre. De cette manière, on détermine que $\xscale=0.875\pm0.005$, donnant une ouverture numérique effective de $\ON_{\mathrm{eff}}=0.48\pm0.02$\footnote{Cette réduction de l'ouverture numérique provient des termes d'ordres supérieurs du développement limité de $\sin{\theta}$. Puisque $\left| \sin{\theta} \right|<\left|\theta\right|$, il convient d'utiliser un nouvel angle $\theta'<\theta$ de telle sorte que l'on retrouve la véritable valeur de l'ouverture numérique lorsque l'on utilise à nouveau l'approximation paraxiale $\sin{\theta'} \approx \theta'$}.
 
 
 
-Dans le cadre des expériences sur le temps de diffusion élastique présentées chapitres \ref{ch:TauS_PRL} et \ref{ch:TauS_NJP}, définition de la fonction de corrélation 2D $c_{\mathrm{2D}}$ très bien approximée par une gaussienne:
-\begin{equation}
-c_{\mathrm{2D}}(\Delta \mathbf{r}_\perp)=e^{-\Delta \mathbf{r}^2_\perp / \sigmap^2}
-\end{equation}
-dont l'ajustement sur les données expérimentales donne $\sigmap=0.50\pm\SI{0.01}{\micro\metre}$.
+Le champ de speckle étant très étendu, la fonction de corrélation est très allongée selon la direction longitudinale comme décrit section \ref{sc:correlation_longitudinale}. La forme de la fonction de corrélation étant compliquée, la longueur de corrélation longitudinale est définie par la largeur totale à mi-hauteur\footnote{Le choix de cette définition a été fait par consistance avec le cas d'une illumination purement gaussienne, résultant en une fonction de corrélation longitudinale de forme lorentzienne.} $\sigmal=4.1\pm\SI{0.1}{\micro\metre}$. Cette définition entraîne alors un rapport d'aspect d'environ 8, témoignant de la forme très allongée des grains de speckle.
 
+
+
+
+Pour terminer, précisons que les définitions des longueurs de corrélation utilisées dans ce manuscrit ne sont pas uniques. Notre présent choix est motivé pour des raisons de simplicité lors de l'étude du temps de diffusion élastique (voir chapitre \ref{ch:TauS_PRL}), cependant cette convention n'est pas celle la plus adaptée à l'étude des fonctions spectrales, par exemple \citep{volchkov2018measurement}\citep{pasek2017anderson}. 
 
 
 
 
 
 
-C'est pas parfait partout, alors modélisation en tenant compte des effets non-paraxiaux pour vraiment reproduire la corrélation longitudinale. Calculs lourds numériquement et théoriquement, donc on met en place un modèle paraxial à ON effective. Avecun facteur de scaling sur la taille du faisceau incident et sur la pupille, on arrive à reproduire de manière convenable la corrélation longitudinale. Avantage: ça reste paraxial donc on peut en tirer des grandeurs. 
+
+
 
 
 
@@ -635,19 +656,24 @@ Cependant, cette approche repose sur une hypothèse cruciale jusqu'à présent p
 \overline{\delta I_{\mathrm{p}}(\mathbf{r}) \delta I_{\mathrm{c}} (\mathbf{r})} = \left| \overline{E_{\mathrm{p}}(\mathbf{r}) E^*_{\mathrm{c}}(\mathbf{r})} \right|^2
 \end{equation}
 
-
+Etude de la fonction de corrélation entre les deux amplitudes au même point à deux longueurs d'ondes différentes.
+De cette manière, on fait apparaître la fonction de corrélation du diffuseur
 \begin{equation}
 \Cdiff(\xzero,\xzero',\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=\overline{\tdiff(\xzero,\lambda_{\mathrm{p}})\tdiff^*(\xzero',\lambda_{\mathrm{c}})}
 \end{equation}
-
+On montre qu'elle vaut
 \begin{equation}
 \Cdiff(\xzero,\xzero',\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=\exp{\left( -\frac{{\delta\phi}^2}{2}\right) } \exp{\left( -\frac{\pi^2 \theta_{\mathrm{diff}}^2}{2}\frac{(\xzero - \xzero')^2}{\lambda_{\mathrm{p}} \lambda_{\mathrm{c}}} \right)}
 \end{equation}
 avec $\delta\phi=\left| \sigma_{\phi,\mathrm{p}} - \sigma_{\phi,\mathrm{c}} \right|$  la différence des largeurs des distributions de phases induites par le diffuseur aux deux longueurs d'intérêt $\lambda_{\mathrm{p}}$ et $\lambda_{\mathrm{c}}$, et $r_{\mathrm{diff,p}}=\re/\sigma_{\phi,\mathrm{p}}$ est la taille typique d'un émetteur du diffuseur à la longueur d'onde $\lambda_{\mathrm{p}}$. 
 
+Aux alentours du plan de Fourier, on montre que la fonction de corrélation à 3D est donnée par
+\begin{equation}
+c_{\mathrm{2}\lambda} (\mathbf{x},\delta z) =\exp{\left( -\delta\phi^2 \right)}\times c_{\mathrm{3D}}\left( \mathbf{x} \frac{\delta\lambda}{\lambda}, \delta z\frac{\delta\lambda}{\lambda} \right)
+\end{equation}
 
-
-
+Signification des deux termes: le scaling en $\delta\lambda/\lambda$ correspond à la cohérence temporelle. Analogie avec le doublet du sodium sur un michelson: tailles de grains différentes, il faut aller chercher $\lambda/\delta\lambda$ grains pour qu'ils ne soient plus superposés.
+Le premier terme correspond à une décorrélation par la traversée du diffuseur. $\tdiff(\xzero,\lambda)$. Le déphasage accumulé localement par l'onde n'est pas exactement le même.
 
 
 

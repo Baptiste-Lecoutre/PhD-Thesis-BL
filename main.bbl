@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -30,6 +30,13 @@
 \newblock \emph{State-dependent disordered potential for studies of Anderson
   transition with ultracold atoms}, Universit{\'e} Paris-Saclay, Dissertation,
   2019
+
+\bibitem[Pasek et~al.(2017)Pasek, Orso and Delande]{pasek2017anderson}
+\dinatlabel{Pasek et~al. 2017} \textsc{Pasek}, Michael~; \textsc{Orso},
+  Giuliano~; \textsc{Delande}, Dominique:
+\newblock Anderson localization of ultracold atoms: Where is the mobility edge?
+\newblock In: \emph{Physical review letters}
+\newblock 118 (2017), Nr.~17, S.~170403
 
 \bibitem[Richard(2015)]{richard2015propagation}
 \dinatlabel{Richard 2015} \textsc{Richard}, J{\'e}r{\'e}mie:
