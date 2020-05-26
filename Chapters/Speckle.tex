@@ -212,6 +212,7 @@ Cette condition de recouvrement des faisceaux provenant de l'ensemble des émett
 
 
 \subsection{Longueur de corrélation transverse le long de l'axe optique}
+\label{sc:correlation_transverse}
 La seconde taille caractéristique du speckle, la taille des grains de lumière, est une grandeur d'une importance capitale pour la physique du désordre. Si l'extension du faisceau de speckle est une grandeur d'intérêt pratique (celle-ci donne une borne supérieure sur les tailles de nuages), nous verrons chapitre \ref{ch:TauS_PRL} que la taille des grains de speckle fixe la dynamique de la propagation d'une onde en milieu désordonné.
 
 La taille de ces grains est donnée par la largeur de la fonction de corrélation des fluctuations d'intensité, le potentiel ressenti par les atomes étant proportionnel à l'intensité lumineuse. À l'aide du théorème de Wick pour les variables gaussiennes, il est possible de relier cette fonction de corrélation des fluctuations d'intensité à la fonction de corrélation en amplitude du champ:
@@ -372,12 +373,14 @@ Cependant, la mise en œuvre du modèle décrit par les équations \ref{eq:speck
 Dans le cadre de l'approximation paraxiale, on montre alors que la fonction de corrélation \ref{eq:correlation_3D_normalisee} aux alentours du plan de Fourier s'écrit
 \begin{equation}
 c_{\mathrm{3D}}(\Delta \mathbf{r}_\perp, \Delta z) \propto \left| \mathrm{TF} \left[ I_0'(\xzero) \: e^{i \pi \xzero^2 \Delta z /\lambda d} \right]_{\frac{\Delta \mathbf{r}_\perp}{\lambda d}} \right|^2 \text{ ,}
+\label{eq:correlation_3D_paraxial_effectif}
 \end{equation}
-où l'intensité $I_0'(\xzero)$ dans le plan du diffuseur vu sous l'ouverture numérique effective est donnée par
+où le profil $I_0'(\xzero)$ d'intensité dans le plan du diffuseur vu sous l'ouverture numérique effective $\ON_{\mathrm{eff}}$ est donné par
 \begin{equation}
 I_0'(\xzero)= \exp{\left( -\frac{2 \xzero^2}{w_{\mathrm{eff}}^2} \right)} \: \Theta \left( \left| \xzero \right|- \frac{D_{\mathrm{eff}}}{2} \right)
+\label{eq:profil_intensite_diffuseur}
 \end{equation}
-avec $D_{\mathrm{eff}}=\xscale D$ et $w_{\mathrm{eff}}=\xscale w_0$ les tailles effectives du faisceau.
+avec $\Theta(x)$ la fonction de Heaviside, et $D_{\mathrm{eff}}=\xscale D$ et $w_{\mathrm{eff}}=\xscale w_0$ les tailles caractéristiques effectives du faisceau. 
 
 L'optimisation de la fonction de corrélation $c_{\mathrm{3D}}$ sur les données expérimentales permet de reproduire de manière fidèle les détails de notre désordre. De cette manière, on détermine que $\xscale=0.875\pm0.005$, donnant une ouverture numérique effective de $\ON_{\mathrm{eff}}=0.48\pm0.02$\footnote{Cette réduction de l'ouverture numérique provient des termes d'ordres supérieurs du développement limité de $\sin{\theta}$. Puisque $\left| \sin{\theta} \right|<\left|\theta\right|$, il convient d'utiliser un nouvel angle $\theta'<\theta$ de telle sorte que l'on retrouve la véritable valeur de l'ouverture numérique lorsque l'on utilise à nouveau l'approximation paraxiale $\sin{\theta'} \approx \theta'$}.
 
@@ -643,37 +646,82 @@ Notons de plus que cette étude a été menée pour le cas le plus défavorable 
 
 
 
-\subsection{Étude de la similitude de deux speckles}
+\subsection{Étude de la similitude de deux \speckles}
 Nous avons ainsi montré que l'utilisation d'un \speckle\ bichromatique permettait d'étendre l'applicabilité du désordre dépendant de l'état interne à l'étude de la transition d'Anderson grâce à l'augmentation du temps de vie des atomes dans le désordre de plus de trois ordres de grandeurs.
 
-Cependant, cette approche repose sur une hypothèse cruciale jusqu'à présent passée sous silence. L'approche de l'utilisation d'une seconde fréquence optique afin de compenser le potentiel ressenti par l'état $\etatF{1}{}$ n'est valable que si nous pouvons compenser le potentiel du laser principal en chaque point de l'espace. Il est donc nécessaire que les variations spatiales du profil d'intensité lumineuse du \speckle\ de compensation soient exactement celles du \speckle\ principal. 
-
-
-
-
-étude de la différence des potentiels de même amplitude pour voir à quel point ils s'annulent sur F=1. cette étude de la différence des potentiels revient à regarder la différence des intensités de mêmes valeurs moyennes. 
+Cependant, cette approche repose sur une hypothèse cruciale jusqu'à présent passée sous silence. L'approche de l'utilisation d'une seconde fréquence optique afin de compenser le potentiel ressenti par l'état $\etatF{1}{}$ n'est valable que si nous pouvons compenser le potentiel du laser principal en chaque point de l'espace. Il est donc nécessaire que les variations spatiales du profil d'intensité lumineuse du \speckle\ de compensation soient exactement celles du \speckle\ principal:
 \begin{equation}
-\overline{\delta I_{\mathrm{p}}(\mathbf{r}) \delta I_{\mathrm{c}} (\mathbf{r})} = \left| \overline{E_{\mathrm{p}}(\mathbf{r}) E^*_{\mathrm{c}}(\mathbf{r})} \right|^2
+V_{\mathrm{c,1}}(\mathbf{x})=-V_{\mathrm{p,1}}(\mathbf{x})
 \end{equation}
 
-Etude de la fonction de corrélation entre les deux amplitudes au même point à deux longueurs d'ondes différentes.
-De cette manière, on fait apparaître la fonction de corrélation du diffuseur
-\begin{equation}
-\Cdiff(\xzero,\xzero',\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=\overline{\tdiff(\xzero,\lambda_{\mathrm{p}})\tdiff^*(\xzero',\lambda_{\mathrm{c}})}
-\end{equation}
-On montre qu'elle vaut
-\begin{equation}
-\Cdiff(\xzero,\xzero',\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=\exp{\left( -\frac{{\delta\phi}^2}{2}\right) } \exp{\left( -\frac{\pi^2 \theta_{\mathrm{diff}}^2}{2}\frac{(\xzero - \xzero')^2}{\lambda_{\mathrm{p}} \lambda_{\mathrm{c}}} \right)}
-\end{equation}
-avec $\delta\phi=\left| \sigma_{\phi,\mathrm{p}} - \sigma_{\phi,\mathrm{c}} \right|$  la différence des largeurs des distributions de phases induites par le diffuseur aux deux longueurs d'intérêt $\lambda_{\mathrm{p}}$ et $\lambda_{\mathrm{c}}$, et $r_{\mathrm{diff,p}}=\re/\sigma_{\phi,\mathrm{p}}$ est la taille typique d'un émetteur du diffuseur à la longueur d'onde $\lambda_{\mathrm{p}}$. 
+\paragraph*{Cohérence temporelle d'une figure de \speckle\ bichromatique}
+De manière générale, un champ de speckle résulte de phénomènes d'interférence, et dépend donc fortement de la longueur d'onde du champ incident. Plus particulièrement, nous avons vu dans les sections \ref{sc:correlation_transverse} et \ref{sc:correlation_longitudinale} que la taille des grains de \speckle\ est donnée par la limite de diffraction du système et dépend donc linéairement de la longueur d'onde. 
 
-Aux alentours du plan de Fourier, on montre que la fonction de corrélation à 3D est donnée par
+On comprend donc que si les deux profils d'intensité lumineuse sont semblables au point de focalisation des faisceaux, la superposition des grains de lumière se dégrade en s'éloignant de ce point, comme illustré figure \ref{fig:illustration_correlation_double_speckle}. Cette question de superposition des figures d'interférences de plusieurs fréquences optiques est un problème bien connu en optique: il s'agit ici d'étudier l'influence de la cohérence temporelle sur notre désordre bichromatique. Cette influence est quantifiée par le degré de cohérence temporelle
 \begin{equation}
-c_{\mathrm{2}\lambda} (\mathbf{x},\delta z) =\exp{\left( -\delta\phi^2 \right)}\times c_{\mathrm{3D}}\left( \mathbf{x} \frac{\delta\lambda}{\lambda}, \delta z\frac{\delta\lambda}{\lambda} \right)
+\overline{\delta I_{\mathrm{p}}(\mathbf{x}) \delta I_{\mathrm{c}} (\mathbf{x})} = \left| \overline{E_{\mathrm{p}}(\mathbf{x}) E^*_{\mathrm{c}}(\mathbf{x})} \right|^2 \text{ ,}
 \end{equation}
+qui fait apparaître la fonction de corrélation en amplitude entre les deux champs évalués au même point. En effet, l'objet de notre étude est de quantifier la mesure dans laquelle les deux motifs de \speckle\ sont similaires en un point donné.
 
-Signification des deux termes: le scaling en $\delta\lambda/\lambda$ correspond à la cohérence temporelle. Analogie avec le doublet du sodium sur un michelson: tailles de grains différentes, il faut aller chercher $\lambda/\delta\lambda$ grains pour qu'ils ne soient plus superposés.
-Le premier terme correspond à une décorrélation par la traversée du diffuseur. $\tdiff(\xzero,\lambda)$. Le déphasage accumulé localement par l'onde n'est pas exactement le même.
+
+De même que dans le cas d'un \speckle\ monochromatique, l'expression de la fonction de corrélation en amplitude $\overline{E_{\mathrm{p}}(\mathbf{x}) E^*_{\mathrm{c}}(\mathbf{x})}$ fait apparaître la fonction de corrélation du diffuseur, définie à l'aide de sa transmission:
+\begin{equation}
+\Cdiff(\xzero,\xzero',\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=\overline{\tdiff(\xzero,\lambda_{\mathrm{p}})\tdiff^*(\xzero',\lambda_{\mathrm{c}})} \text{ ,}
+\end{equation}
+dont l'expression a été généralisée au cas bichromatique qui nous intéresse à présent. On montre annexe \ref{ch:anex_speckle} que l'expression \ref{eq:correlation_diffuseur} se généralise alors à
+\begin{equation}
+\Cdiff(\xzero,\xzero',\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=\exp{\left( -\frac{{\delta\phi}^2}{2}\right) } \exp{\left( -\frac{\pi^2 \theta_{\mathrm{diff}}^2}{2}\frac{(\xzero - \xzero')^2}{\lambda_{\mathrm{p}} \lambda_{\mathrm{c}}} \right)} \text{ ,}
+\end{equation}
+avec $\delta\phi=\left| \sigma_{\phi,\mathrm{p}} - \sigma_{\phi,\mathrm{c}} \right|$  la différence des largeurs des distributions de phases induites par le diffuseur aux deux longueurs d'onde d'intérêt $\lambda_{\mathrm{p}}$ et $\lambda_{\mathrm{c}}$, et $\theta_{\mathrm{diff}}$ est l'angle de diffusion, indépendant de la longueur d'onde.
+
+
+Supposons à présent que les modes de chacun des lasers soient identiques et parfaitement superposés\footnote{On satisfait expérimentalement cette hypothèse en injectant les deux faisceaux dans la même fibre optique.}, de telle sorte que tous deux soient décrits par le même profil d'intensité $I'_0(\xzero)$ de l'équation \ref{eq:profil_intensite_diffuseur}. On montre annexe \ref{ch:anex_speckle} que, aux alentours du plan de Fourier, la fonction de corrélation normalisée des fluctuations d'intensité à trois dimensions entre les deux \speckles\ générés par le même diffuseur est donnée par
+\begin{align}
+\nonumber c_{\mathrm{2}\lambda} (\mathbf{x}_{\perp},\delta z) &=\frac{\overline{\delta I_{\mathrm{p}}(\mathbf{x}_{\perp},\delta z) \delta I_{\mathrm{c}}(\mathbf{x}_{\perp},\delta z)}}{\overline{\delta I_{\mathrm{p}}(\mathbf{x}_{\perp},\delta z)} \: \overline{\delta I_{\mathrm{c}}(\mathbf{x}_{\perp},\delta z)}}\\
+&=\exp{\left( -\delta\phi^2 \right)}\times c_{\mathrm{3D}}\left( \mathbf{x}_{\perp} \frac{\delta\lambda}{\lambda_{\mathrm{p}}}, \delta z\frac{\delta\lambda}{\lambda_{\mathrm{p}}} \right) \text{ ,}
+\label{eq:correlation_2_lambda}
+\end{align}
+où $c_{\mathrm{3D}}$ correspond à la fonction de corrélation \ref{eq:correlation_3D_paraxial_effectif} des fluctuations d'intensité d'un \speckle\ unique aux alentours du plan de Fourier. $\delta\lambda=\lambda_{\mathrm{p}}-\lambda_{\mathrm{c}}$ correspond à la différence entre les deux longueurs d'ondes des deux lasers.
+
+La décorrélation des deux champs vis-à-vis de la cohérence temporelle est donc due à deux contributions:
+\begin{itemize}
+\item[\textendash] Le premier terme en $\exp{(-\delta\phi^2)}$ décrit l'effet de la propagation dans le diffuseur. Le déphasage accumulé localement dépendant de la longueur d'onde, la distribution de phases diffère entre le laser principal et celui de compensation. Le diffuseur ne se comportant pas exactement de la même manière en fonction de la fréquence de l'onde laser (la transmission $\tdiff(\xzero,\lambda)$ dépend de la longueur d'onde), il en résulte une décorrélation générale entre les profils d'intensité de deux \speckles .
+\item[\textendash] Le second terme traduit le déphasage accumulé lors de la propagation du laser, et décrit l'effet de la longueur d'onde du laser sur la taille des grains. Celle-ci étant proportionnelle à la longueur d'onde, les grains des deux figures de \speckle\ seront donc de tailles différentes et ne pourront se superposer que dans une zone réduite de l'espace autour du point de focalisation.
+\end{itemize}
+Une conséquence remarquable de l'équation \ref{eq:correlation_2_lambda} est que la forme de cette fonction, donnée par le degré de cohérence temporelle, est identique à celle de la corrélation spatiale d'un unique \speckle , donnée par le degré de cohérence spatiale. 
+
+
+La présence du facteur d'échelle $\lambda_{\mathrm{p}}/\delta \lambda\equiv \mathcal{F}$, que l'on appellera \emph{finesse}, s'interprète néanmoins aisément. En effet, la taille $\sigma$\footnote{Il n'est pas nécessaire de tenir compte de l'anisotropie des grains de \speckle\ pour ce raisonnement, les longueurs de corrélation transverse et longitudinale étant toutes deux proportionnelles à la longueur d'onde.} d'un grain de \speckle\ est donnée par la largeur de la fonction de corrélation $c_{\mathrm{3D}}$, et est proportionnelle à la longueur d'onde du laser. La largeur de la fonction de corrélation $c_{\mathrm{2}\lambda}$ est donc donnée par $l_{\mathrm{c}}=\sigma \mathcal{F}$ et correspond à la distance pour laquelle les grains des deux \speckles\ ne se superposent plus\footnote{Déterminons la distance $L$ sur laquelle deux grains de \speckle\ ne se superposent plus. On définit cette distance comme correspondant à un nombre $N$ de grains du \speckle\ du laser principal $L=N\sigma_{\mathrm{p}}$, et un nombre $N+1$ de grains du laser de compensation $L=(N+1)\sigma_{\mathrm{c}}$. Alors $N=\sigma_{\mathrm{c}}/(\sigma_{\mathrm{p}}-\sigma_{\mathrm{c}})\approx \lambda_{\mathrm{p}}/\delta\lambda=\mathcal{F}$.}.
+
+
+En choisissant le désaccord précédent d'environ \SI{100}{\giga\hertz} et une longueur d'onde proche de la transition $D_2$ du \isotope[87]{Rb}, $\lambda_{\mathrm{p}}\approx\SI{780.2}{\nano\metre}$, l'ordre de grandeur de cette longueur de corrélation est donc de plusieurs millimètres. Cette taille étant très grande devant la taille de nos nuages, la décorrélation par décalage des grains des deux \speckles\ ne nous limitera donc pas.
+
+
+
+
+
+
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Speckle/illustration_correlation_double_speckle.pdf}
+\caption{\textbf{Illustration de la cohérence temporelle d'une figure de \speckle\.} Discussion taille des grains.}
+\label{fig:illustration_correlation_double_speckle}
+\end{figure}
+
+
+
+
+
+
+\paragraph*{Estimation du potentiel résiduel sur $\etatF{1}{}$}
+Si les profils d'intensité des \speckles\ sont semblables à l'échelle des atomes, ceux-ci ne sont pas totalement corrélés, comme le montre le premier terme de l'équation \ref{eq:correlation_2_lambda}. Comment cela se traduit-il en terme de potentiel ressenti par l'état $\etatF{1}{}$?
+
+
+
+
 
 
 
