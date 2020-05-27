@@ -694,11 +694,7 @@ Une conséquence remarquable de l'équation \ref{eq:correlation_2_lambda} est qu
 La présence du facteur d'échelle $\lambda_{\mathrm{p}}/\delta \lambda\equiv \mathcal{F}$, que l'on appellera \emph{finesse}, s'interprète néanmoins aisément. En effet, la taille $\sigma$\footnote{Il n'est pas nécessaire de tenir compte de l'anisotropie des grains de \speckle\ pour ce raisonnement, les longueurs de corrélation transverse et longitudinale étant toutes deux proportionnelles à la longueur d'onde.} d'un grain de \speckle\ est donnée par la largeur de la fonction de corrélation $c_{\mathrm{3D}}$, et est proportionnelle à la longueur d'onde du laser. La largeur de la fonction de corrélation $c_{\mathrm{2}\lambda}$ est donc donnée par $l_{\mathrm{c}}=\sigma \mathcal{F}$ et correspond à la distance pour laquelle les grains des deux \speckles\ ne se superposent plus\footnote{Déterminons la distance $L$ sur laquelle deux grains de \speckle\ ne se superposent plus. On définit cette distance comme correspondant à un nombre $N$ de grains du \speckle\ du laser principal $L=N\sigma_{\mathrm{p}}$, et un nombre $N+1$ de grains du laser de compensation $L=(N+1)\sigma_{\mathrm{c}}$. Alors $N=\sigma_{\mathrm{c}}/(\sigma_{\mathrm{p}}-\sigma_{\mathrm{c}})\approx \lambda_{\mathrm{p}}/\delta\lambda=\mathcal{F}$.}.
 
 
-En choisissant le désaccord précédent d'environ \SI{100}{\giga\hertz} et une longueur d'onde proche de la transition $D_2$ du \isotope[87]{Rb}, $\lambda_{\mathrm{p}}\approx\SI{780.2}{\nano\metre}$, l'ordre de grandeur de cette longueur de corrélation est donc de plusieurs millimètres. Cette taille étant très grande devant la taille de nos nuages, la décorrélation par décalage des grains des deux \speckles\ ne nous limitera donc pas.
-
-
-
-
+En choisissant le désaccord précédent d'environ \SI{100}{\giga\hertz} et une longueur d'onde proche de la transition $D_2$ du \isotope[87]{Rb}, $\lambda_{\mathrm{p}}\approx\SI{780.2}{\nano\metre}$, l'ordre de grandeur de cette longueur de corrélation est donc de plusieurs millimètres. Cette taille étant très grande devant la taille de nos nuages, la décorrélation par décalage des grains des deux \speckles\ ne nous limitera donc pas\footnote{À l'aide d'un banc de test similaire à celui présenté dans la thèse de Jérémie Richard \citep{richard2015propagation}, aucune décorrélation n'a pu être observée expérimentalement dans la limite de résolution du système optique dans une zone de \SI{100}{\micro\metre} autour du centre de la figure de \speckle .}.
 
 
 
@@ -707,7 +703,7 @@ En choisissant le désaccord précédent d'environ \SI{100}{\giga\hertz} et une 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/Speckle/illustration_correlation_double_speckle.pdf}
-\caption{\textbf{Illustration de la cohérence temporelle d'une figure de \speckle\.} Discussion taille des grains.}
+\caption{\textbf{Illustration de la cohérence temporelle d'une figure de \speckle .} La taille des grains de \speckle\ dépendant linéairement de la longueur d'onde, ceux-ci ne pourront se superposer que sur une zone restreinte de l'espace. La distance $l_{\mathrm{c}}$ sur laquelle les grains sont corrélés est obtenue à l'aide du degré de cohérence temporelle, et peut être estimée à quelques millimètres.}
 \label{fig:illustration_correlation_double_speckle}
 \end{figure}
 
@@ -716,8 +712,26 @@ En choisissant le désaccord précédent d'environ \SI{100}{\giga\hertz} et une 
 
 
 
-\paragraph*{Estimation du potentiel résiduel sur $\etatF{1}{}$}
-Si les profils d'intensité des \speckles\ sont semblables à l'échelle des atomes, ceux-ci ne sont pas totalement corrélés, comme le montre le premier terme de l'équation \ref{eq:correlation_2_lambda}. Comment cela se traduit-il en terme de potentiel ressenti par l'état $\etatF{1}{}$?
+
+
+
+\paragraph*{Estimation du potentiel résiduel sur $\mathbf{\etatF{1}{}}$}
+Si les profils d'intensité des \speckles\ sont varient de manières similaires à l'échelle des atomes, ceux-ci ne sont pas totalement corrélés, comme le montre le premier terme de l'équation \ref{eq:correlation_2_lambda}. Ainsi, cela signifie que le potentiel généré par le laser de compensation ne peut annuler le potentiel généré par le laser principal \emph{qu'en moyenne}. Le potentiel total $V_1(\mathbf{x})=V_{\mathrm{p,1}}(\mathbf{x})+V_{\mathrm{c,1}}(\mathbf{x})$ est donc de moyenne nulle $\overline{V_1(\mathbf{x})}=0$ et possède une variance $\sigma_{\mathrm{V}}^2$ non nulle.
+
+Simplifions l'étude en remplaçant les potentiels $V_{\mathrm{p,1}}(\mathbf{x})$ et $V_{\mathrm{c,1}}(\mathbf{x})$ par leurs intensités respectives $I_{\mathrm{p}}(\mathbf{x})$ et $I_{\mathrm{c}}(\mathbf{x})$ de telle sorte que
+\begin{equation}
+V_1(\mathbf{x})\propto I_{\mathrm{p}}(\mathbf{x}) - I_{\mathrm{c}}(\mathbf{x}) \text{ ,}
+\end{equation}
+et que $\overline{I_{\mathrm{p}}(\mathbf{x})}=\overline{I_{\mathrm{c}}(\mathbf{x})}=I_0(\mathbf{x})$\footnote{En réalité, les intensités des deux \speckles\ ne sont pas de mêmes valeurs moyennes, cependant il est possible de se ramener formellement à cette situation en tenant compte du fait que les différents désaccords des faisceaux équilibrent les potentiels associés.}. En définissant la différence de ces intensités par la variable $I=I_{\mathrm{p}}-I_{\mathrm{c}}$, l'étude de la variance du potentiel revient à étudier la quantité
+\begin{equation}
+\sigma_{\mathrm{I}}^2(\mathbf{x},\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=2 I_0^2(\mathbf{x}) \left(1- c_{\mathrm{2}\lambda}(\mathbf{x}) \right) \quad \text{avec} \quad c_{\mathrm{2}\lambda}(\mathbf{x})=\frac{\overline{\delta I_{\mathrm{p}}(\mathbf{x})\delta I_{\mathrm{c}}(\mathbf{x})}}{I_0^2(\mathbf{x})} \text{ ,}
+\end{equation}
+en faisant apparaître la fonction de corrélation \ref{eq:correlation_2_lambda}. L'interprétation de cette équation est directe: si les deux intensités sont parfaitement corrélées, celles-ci se compensent exactement et $\sigma_{\mathrm{I}}=0$. Dans le cas où celles-ci sont totalement décorrélées, la variance totale est alors la somme des variances de chaque intensité, comme attendu dans le cas de variables aléatoires indépendantes.
+
+
+
+
+Étant donné la taille de nos nuages, on peut considérer que les atomes sont insensibles aux variations spatiales de la fonction de corrélation \ref{eq:correlation_2_lambda}, que l'on approxime alors par sa valeur au centre $c_{\mathrm{2}\lambda}(0)=\exp{(-\delta\phi^2)}$.
 
 
 
@@ -725,8 +739,10 @@ Si les profils d'intensité des \speckles\ sont semblables à l'échelle des ato
 
 
 
+Du point de vue des atomes, la variance du potentiel est alors estimée à $\left|\sigma_{\mathrm{V}}/\overline{V_{\mathrm{p,1}}}\right|=\sqrt{\sigma_{\mathrm{I}}^2/I_0^2}$. Proche du centre, 
+\begin{equation}
+\sigma_{\mathrm{V}}\sim \sqrt{2} \overline{V_{\mathrm{p,1}}} \delta\phi
+\end{equation}
 
+ORdre de grandeur: si on prend un $\sigmae$ de quelques microns, on trouve que $\sigma_{\mathrm{V}}\sim 0.01 \VR$. En prenant comme borne supérieure la potentiel chimique de 40Hz, on retrouve un désordre maximal applicbale de 4kHz, comme précédemment. Néanmoins cette approche a permit d'augmenter le temps de vie des atomes dans le désordre de plus de 3 ordres de grandeur.
 
-
-Physique avec les mains de la similitude entre 2 speckles de longueurs d'onde faiblement différentes. introduction de la finesse $\lambda / \delta\lambda$ ou de la longueur de cohérence $l_{coh}=\lambda^2/\delta\lambda$.
-Décorrélation initiale et globale dûe à la propagation dans le diffuseur, puis décorrélation par la différence dans la taille des grains en s'éloignant de l'axe optique.
