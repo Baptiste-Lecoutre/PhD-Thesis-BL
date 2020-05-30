@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  27 MAY 2020 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  28 MAY 2020 14:03
 entering extended mode
 **./main.tex
 (main.tex
@@ -1553,18 +1553,18 @@ line 445.
 (pdftex.def)             Requested size: 405.45047pt x 269.66179pt.
 
 LaTeX Warning: Reference `sc:forces_lumineuses' on page 15 undefined on input l
-ine 459.
+ine 460.
 
 
 LaTeX Warning: Reference `eq:potentiel_dipolaire' on page 15 undefined on input
- line 459.
+ line 460.
 
 <Fig/Speckle/principe_potentiel_etat_interne.pdf, id=819, 355.09534pt x 220.272
 08pt>
 File: Fig/Speckle/principe_potentiel_etat_interne.pdf Graphic file (type pdf)
 <use Fig/Speckle/principe_potentiel_etat_interne.pdf>
 Package pdftex.def Info: Fig/Speckle/principe_potentiel_etat_interne.pdf  used 
-on input line 470.
+on input line 471.
 (pdftex.def)             Requested size: 362.77525pt x 225.03416pt.
 [15] [16 <./Fig/Speckle/distribution_potentiel.pdf> <./Fig/Speckle/principe_pot
 entiel_etat_interne.pdf
@@ -1577,35 +1577,35 @@ t>
 File: Fig/Speckle/potentiel_dipolaire_hyperfin.pdf Graphic file (type pdf)
 <use Fig/Speckle/potentiel_dipolaire_hyperfin.pdf>
 Package pdftex.def Info: Fig/Speckle/potentiel_dipolaire_hyperfin.pdf  used on 
-input line 494.
+input line 495.
 (pdftex.def)             Requested size: 384.1096pt x 251.39459pt.
 
 
-LaTeX Warning: Reference `ch:TauS_NJP' on page 17 undefined on input line 504.
+LaTeX Warning: Reference `ch:TauS_NJP' on page 17 undefined on input line 505.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 509.
+(Font)              <10> on input line 510.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.4> on input line 509.
+(Font)              <7.4> on input line 510.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 509.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 510.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 509.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 510.
 [17]
 
 LaTeX Warning: Reference `sc:propriete_BEC' on page 18 undefined on input line 
-513.
+514.
 
 [18 <./Fig/Speckle/potentiel_dipolaire_hyperfin.pdf>]
 <Fig/Speckle/speckle_bichromatique.pdf, id=998, 507.09283pt x 203.79584pt>
 File: Fig/Speckle/speckle_bichromatique.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_bichromatique.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_bichromatique.pdf  used on input l
-ine 559.
+ine 561.
 (pdftex.def)             Requested size: 426.79135pt x 171.5325pt.
  [19] [20 <./Fig/Speckle/speckle_bichromatique.pdf>]
 
-Package mathptmx Warning: There are no bold math fonts on input line 623.
+Package mathptmx Warning: There are no bold math fonts on input line 625.
 
 [21] [22] [23]
 <Fig/Speckle/illustration_correlation_double_speckle.pdf, id=1098, 474.40244pt 
@@ -1614,16 +1614,12 @@ File: Fig/Speckle/illustration_correlation_double_speckle.pdf Graphic file (typ
 e pdf)
 <use Fig/Speckle/illustration_correlation_double_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/illustration_correlation_double_speckle.pd
-f  used on input line 705.
+f  used on input line 707.
 (pdftex.def)             Requested size: 426.79135pt x 183.83252pt.
- [24 <./Fig/Speckle/illustration_correlation_double_speckle.pdf>]) (Appendices/
-Anex_speckle.tex [25] [26
+ [24 <./Fig/Speckle/illustration_correlation_double_speckle.pdf>]) (main.bbl [2
+5] [26
 
-]
-Chapitre 2.
-[27] [28] [29] [30]) (main.bbl [31] [32
-
-]) [33]
+]) [27]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (main.aux)
@@ -1636,51 +1632,54 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29921 strings out of 480934
- 568189 string characters out of 2899917
- 955468 words of memory out of 3000000
- 44664 multiletter control sequences out of 15000+200000
- 713279 words of font info for 274 fonts, out of 3000000 for 9000
+ 29850 strings out of 480934
+ 567186 string characters out of 2899917
+ 952620 words of memory out of 3000000
+ 44654 multiletter control sequences out of 15000+200000
+ 713365 words of font info for 275 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,16n,62p,1616b,1130s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
-nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.e
-nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
-nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
-it.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-mathsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmbx6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmbx8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmbx9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/lecou/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/lecou/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/lecou/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/leco
-u/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/le
-cou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/User
-s/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/
-Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pf
-b><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy1
-0.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-msy6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
-m/lmsy7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (33 pages, 1449075 bytes).
+pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist
+, replaced by a fixed one
+
+{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc
+}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc
+}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
+}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
+.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
+thsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
+m-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmbx6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmbx8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmbx9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/lecou/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/lecou/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/lecou/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/leco
+u/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/
+lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Us
+ers/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
+<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.
+pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lms
+y6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmsy7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+lm/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/symbols/msam10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (27 pages, 1411590 bytes).
 PDF statistics:
- 1595 PDF objects out of 1728 (max. 8388607)
- 210 named destinations out of 1000 (max. 500000)
- 68380 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1473 PDF objects out of 1728 (max. 8388607)
+ 152 named destinations out of 1000 (max. 500000)
+ 68292 words of extra memory for PDF output out of 74296 (max. 10000000)
 

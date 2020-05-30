@@ -453,6 +453,7 @@ où $\Theta$ est la fonction de Heaviside valant 1 pour $V/\VR>0$, et 0 sinon. $
 
 
 \subsection{Possibilité d'un potentiel dépendant de l'état interne}
+\label{sc:state_dependent_disorder}
 L'étude de la transition d'Anderson, en particulier du régime critique, nécessite de pouvoir adresser sélectivement les différents niveaux d'énergie liés au désordre. Il s'agit donc de procéder à une spectroscopie du désordre. Pour cela, nous devons disposer d'un état libre dans lequel nous préparons notre condensat de Bose-Einstein, c'est à dire insensible au potentiel désordonné, et d'un second état couplé au désordre.Dans cette section, on s'attachera donc à décrire la notion de potentiel dépendant de l'état interne des atomes.
 
 \paragraph*{Principe du désordre dépendant de l'état interne}
@@ -539,6 +540,7 @@ Il est donc nécessaire de compléter la procédure expérimentale utilisée lor
 
 
 \subsection{S'éloigner de résonance}
+\label{sc:speckle_bichromatique_mukhtar}
 L'approche intuitive pour diminuer le taux d'émission spontanée consiste à s'éloigner de la transition atomique, et donc à augmenter le désaccord. En effet, il est possible d'obtenir une estimation du taux d'émission spontanée $\Gamma_2$ de l'état $\etatF{2}{}$ à l'aide de
 \begin{equation}
 \Gamma_2 \approx \frac{1}{\hb} \left[ \VR \right| \frac{\Gamma}{\left|\delta\right|} \text{ ,}
@@ -677,7 +679,7 @@ avec $\delta\phi=\left| \sigma_{\phi,\mathrm{p}} - \sigma_{\phi,\mathrm{c}} \rig
 
 Supposons à présent que les modes de chacun des lasers soient identiques et parfaitement superposés\footnote{On satisfait expérimentalement cette hypothèse en injectant les deux faisceaux dans la même fibre optique.}, de telle sorte que tous deux soient décrits par le même profil d'intensité $I'_0(\xzero)$ de l'équation \ref{eq:profil_intensite_diffuseur}. On montre annexe \ref{ch:anex_speckle} que, aux alentours du plan de Fourier, la fonction de corrélation normalisée des fluctuations d'intensité à trois dimensions entre les deux \speckles\ générés par le même diffuseur est donnée par
 \begin{align}
-\nonumber c_{\mathrm{2}\lambda} (\mathbf{x}_{\perp},\delta z) &=\frac{\overline{\delta I_{\mathrm{p}}(\mathbf{x}_{\perp},\delta z) \delta I_{\mathrm{c}}(\mathbf{x}_{\perp},\delta z)}}{\overline{\delta I_{\mathrm{p}}(\mathbf{x}_{\perp},\delta z)} \: \overline{\delta I_{\mathrm{c}}(\mathbf{x}_{\perp},\delta z)}}\\
+\nonumber c_{\mathrm{2}\lambda} (\mathbf{x}_{\perp},\delta z) &=\frac{\overline{\delta I_{\mathrm{p}}(\mathbf{x}_{\perp},\delta z) \delta I_{\mathrm{c}}(\mathbf{x}_{\perp},\delta z)}}{\sqrt{\overline{\delta I_{\mathrm{p}}^2(\mathbf{x}_{\perp},\delta z)} \: \overline{\delta I_{\mathrm{c}}^2(\mathbf{x}_{\perp},\delta z)}}}\\
 &=\exp{\left( -\delta\phi^2 \right)}\times c_{\mathrm{3D}}\left( \mathbf{x}_{\perp} \frac{\delta\lambda}{\lambda_{\mathrm{p}}}, \delta z\frac{\delta\lambda}{\lambda_{\mathrm{p}}} \right) \text{ ,}
 \label{eq:correlation_2_lambda}
 \end{align}
@@ -731,18 +733,21 @@ en faisant apparaître la fonction de corrélation \ref{eq:correlation_2_lambda}
 
 
 
-Étant donné la taille de nos nuages, on peut considérer que les atomes sont insensibles aux variations spatiales de la fonction de corrélation \ref{eq:correlation_2_lambda}, que l'on approxime alors par sa valeur au centre $c_{\mathrm{2}\lambda}(0)=\exp{(-\delta\phi^2)}$.
-
-
-
-
-
-
-
-Du point de vue des atomes, la variance du potentiel est alors estimée à $\left|\sigma_{\mathrm{V}}/\overline{V_{\mathrm{p,1}}}\right|=\sqrt{\sigma_{\mathrm{I}}^2/I_0^2}$. Proche du centre, 
+Étant donné la taille de nos nuages, on peut considérer que les atomes sont insensibles aux variations spatiales de la fonction de corrélation \ref{eq:correlation_2_lambda}, que l'on approxime alors par sa valeur au centre $c_{\mathrm{2}\lambda}(0)=\exp{(-\delta\phi^2)}$. On peut alors estimer les variations statistiques du potentiel ressenti par les atomes à $\left|\sigma_{\mathrm{V}}/\overline{V_{\mathrm{p,1}}}\right|=\sqrt{\sigma_{\mathrm{I}}^2/I_0^2}$, soit
 \begin{equation}
-\sigma_{\mathrm{V}}\sim \sqrt{2} \overline{V_{\mathrm{p,1}}} \delta\phi
+\sigma_{\mathrm{V}}\sim \sqrt{2} \overline{V_{\mathrm{p,1}}} \delta\phi \text{ ,}
+\end{equation}
+avec $\delta\phi\approx 2\pi (n-1) \sigmae/\lambda_{\mathrm{p}} \mathcal{F} \ll 1$. Il apparaît donc que l'ordre de grandeur des fluctuations du potentiel bichromatique ne sont qu'une fraction du potentiel généré par chaque laser.
+
+
+Estimons l'ordre de grandeur de ces fluctuations de potentiel dans la configuration présentée section \ref{sc:speckle_bichromatique_mukhtar}, dans laquelle la différence de fréquence entre les deux lasers est de l'ordre de \SI{100}{\giga\hertz} pour une longueur d'onde proche de \SI{780}{\nano\metre}. La finesse associée est donc d'environ $\mathcal{F}\approx 4000$. En supposant que l'épaisseur typique de la granularité du diffuseur $\sigmae$ est de l'ordre de quelques longueurs d'onde $\lambda_{\mathrm{p}}$\footnote{L'utilisation d'un diffuseur avec $\sigmae\approx 5\lambda_{\mathrm{p}}$ suffit à générer un \speckle\ pleinement développé, la partie déterministe étant très fortement atténuée ($\overline{\tdiff}\sim e^{-100}$).}, on estime ainsi que les fluctuations du potentiel résiduel sont de l'ordre de 
+\begin{equation}
+\sigma_{\mathrm{V}}\sim 0.01 \overline{V_{\mathrm{p,1}}}
 \end{equation}
 
-ORdre de grandeur: si on prend un $\sigmae$ de quelques microns, on trouve que $\sigma_{\mathrm{V}}\sim 0.01 \VR$. En prenant comme borne supérieure la potentiel chimique de 40Hz, on retrouve un désordre maximal applicbale de 4kHz, comme précédemment. Néanmoins cette approche a permit d'augmenter le temps de vie des atomes dans le désordre de plus de 3 ordres de grandeur.
+De même que dans la section \ref{sc:state_dependent_disorder}, le désordre résiduel que ressent l'état $\etatF{1}{}$ possède une borne supérieure pour laquelle le condensat devient perturbé. Ainsi, si les fluctuations du potentiel résiduel sont de l'ordre du potentiel chimique $\mu=\SI{40}{\hertz}$, les modulations de densité ne pourront plus écranter le potentiel désordonné. La condition $\sigma_{\mathrm{V}}\lesssim\mu$ se traduit donc en terme de potentiel maximal applicable aux atomes\footnote{$\VR$ et $\overline{V_{\mathrm{p,1}}}$ ne sont pas identiques, mais sont du même ordre de grandeur. La limite que nous présentons ne se veut pas quantitative étant donné que nous ne donnons qu'une estimation de $\sigmae$.}
+\begin{equation}
+\VR\lesssim\SI{4}{\kilo\hertz} \text{ ,}
+\end{equation}
+semblable à la limite observée dans le cas d'un potentiel dépendant de l'état interne réalisé à l'aide d'une unique fréquence optique. Insistons sur le fait que si la limite du désordre applicable est comparable à celle dans le cas d'un potentiel monochromatique, ce nouveau désordre bichromatique permet l'amélioration du temps de vie dans le désordre de trois ordres de grandeurs, et ouvre donc la voie aux expériences d'expansion et à l'étude de la transition d'Anderson.
 
