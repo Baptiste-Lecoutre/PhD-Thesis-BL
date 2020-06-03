@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{12}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -11,6 +11,13 @@
 \dinatlabel{Denechaud 2018} \textsc{Denechaud}, Vincent:
 \newblock \emph{Vers une {\'e}tude spectroscopique de la transition
   d'Anderson}, Paris Saclay, Dissertation, 2018
+
+\bibitem[Gatti et~al.(2008)Gatti, Magatti and Ferri]{gatti2008three}
+\dinatlabel{Gatti et~al. 2008} \textsc{Gatti}, A~; \textsc{Magatti}, D~;
+  \textsc{Ferri}, F:
+\newblock Three-dimensional coherence of light speckles: theory.
+\newblock In: \emph{Physical Review A}
+\newblock 78 (2008), Nr.~6, S.~063806
 
 \bibitem[Goodman(2007)]{goodman2007speckle}
 \dinatlabel{Goodman 2007} \textsc{Goodman}, Joseph~W.:
@@ -25,6 +32,18 @@
 \newblock In: \emph{arXiv preprint physics/9902072}
 \newblock (1999)
 
+\bibitem[Jendrzejewski(2012)]{jendrzejewski2012quantum}
+\dinatlabel{Jendrzejewski 2012} \textsc{Jendrzejewski}, Fred:
+\newblock \emph{Quantum transport of ultracold atoms in disordered potentials},
+  Paris 11, Dissertation, 2012
+
+\bibitem[Magatti et~al.(2009)Magatti, Gatti and Ferri]{magatti2009three}
+\dinatlabel{Magatti et~al. 2009} \textsc{Magatti}, D~; \textsc{Gatti}, A~;
+  \textsc{Ferri}, F:
+\newblock Three-dimensional coherence of light speckles: experiment.
+\newblock In: \emph{Physical Review A}
+\newblock 79 (2009), Nr.~5, S.~053831
+
 \bibitem[Mukhtar(2019)]{mukhtar2019state}
 \dinatlabel{Mukhtar 2019} \textsc{Mukhtar}, Musawwadah:
 \newblock \emph{State-dependent disordered potential for studies of Anderson
@@ -37,6 +56,11 @@
 \newblock Anderson localization of ultracold atoms: Where is the mobility edge?
 \newblock In: \emph{Physical review letters}
 \newblock 118 (2017), Nr.~17, S.~170403
+
+\bibitem[Piraud(2012)]{piraud2012localisation}
+\dinatlabel{Piraud 2012} \textsc{Piraud}, Marie:
+\newblock \emph{Localisation d’Anderson d’ondes de mati{\`e}re dans un
+  d{\'e}sordre corr{\'e}l{\'e}: de 1D {\`a} 3D}, Paris 11, Dissertation, 2012
 
 \bibitem[Richard(2015)]{richard2015propagation}
 \dinatlabel{Richard 2015} \textsc{Richard}, J{\'e}r{\'e}mie:

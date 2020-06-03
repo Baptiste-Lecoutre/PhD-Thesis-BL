@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  2 JUN 2020 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  3 JUN 2020 16:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -1536,6 +1536,10 @@ LaTeX Warning: Reference `ch:anex_speckle' on page 7 undefined on input line 18
 LaTeX Warning: Reference `ch:anex_speckle' on page 8 undefined on input line 20
 3.
 
+
+Package natbib Warning: Citation `gatti2008three' on page 8 undefined on input 
+line 203.
+
 [8 <./Fig/Speckle/geometrie_effective_speckle.pdf>]
 <Fig/Speckle/speckle_extension.pdf, id=962, 481.08609pt x 201.40439pt>
 File: Fig/Speckle/speckle_extension.pdf Graphic file (type pdf)
@@ -1551,6 +1555,10 @@ LaTeX Warning: Reference `ch:TauS_PRL' on page 10 undefined on input line 251.
 LaTeX Warning: Reference `ch:anex_speckle' on page 10 undefined on input line 2
 60.
 
+
+Package natbib Warning: Citation `gatti2008three' on page 10 undefined on input
+ line 260.
+
 [10]
 <Fig/Speckle/correlation_speckle.pdf, id=1155, 474.40244pt x 204.32954pt>
 File: Fig/Speckle/correlation_speckle.pdf Graphic file (type pdf)
@@ -1558,7 +1566,12 @@ File: Fig/Speckle/correlation_speckle.pdf Graphic file (type pdf)
 Package pdftex.def Info: Fig/Speckle/correlation_speckle.pdf  used on input lin
 e 275.
 (pdftex.def)             Requested size: 426.79135pt x 183.83252pt.
- [11] [12 <./Fig/Speckle/correlation_speckle.pdf>]
+ [11]
+
+Package natbib Warning: Citation `magatti2009three' on page 12 undefined on inp
+ut line 303.
+
+[12 <./Fig/Speckle/correlation_speckle.pdf>]
 
 LaTeX Warning: Reference `ch:TauS_PRL' on page 13 undefined on input line 356.
 
@@ -1664,14 +1677,10 @@ LaTeX Warning: Reference `ch:anex_speckle' on page 25 undefined on input line 7
 15.
 
 
-LaTeX Warning: Reference `fig:montage_speckle_bichromatique' on page 25 undefin
-ed on input line 722.
-
-
 LaTeX Warning: Reference `ch:anex_speckle' on page 25 undefined on input line 7
 22.
 
-<Fig/Speckle/illustration_correlation_double_speckle.pdf, id=2342, 474.40244pt 
+<Fig/Speckle/illustration_correlation_double_speckle.pdf, id=2343, 474.40244pt 
 x 204.32954pt>
 File: Fig/Speckle/illustration_correlation_double_speckle.pdf Graphic file (typ
 e pdf)
@@ -1679,41 +1688,44 @@ e pdf)
 Package pdftex.def Info: Fig/Speckle/illustration_correlation_double_speckle.pd
 f  used on input line 732.
 (pdftex.def)             Requested size: 426.79135pt x 183.83252pt.
-[25] [26 <./Fig/Speckle/illustration_correlation_double_speckle.pdf>]
-<Fig/Speckle/montage_speckle_bichromatique.pdf, id=2526, 598.84573pt x 274.4493
+[25] [26 <./Fig/Speckle/illustration_correlation_double_speckle.pdf>] [27]
+<Fig/Speckle/montage_speckle_bichromatique.pdf, id=2550, 598.84573pt x 274.4493
 9pt>
 File: Fig/Speckle/montage_speckle_bichromatique.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_speckle_bichromatique.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_speckle_bichromatique.pdf  used on
- input line 756.
+ input line 795.
 (pdftex.def)             Requested size: 426.79135pt x 195.59746pt.
- [27 <./Fig/Speckle/montage_speckle_bichromatique.pdf>]) (main.bbl [28])
+
+[28 <./Fig/Speckle/montage_speckle_bichromatique.pdf>]) (main.bbl [29] [30
+
+])
 
 Package natbib Warning: There were undefined citations.
 
-[29
-
-]
+[31]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
- (main.aux)
+ (main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29895 strings out of 480934
- 568604 string characters out of 2899917
- 957013 words of memory out of 3000000
- 44675 multiletter control sequences out of 15000+200000
- 710784 words of font info for 278 fonts, out of 3000000 for 9000
+ 29926 strings out of 480934
+ 569197 string characters out of 2899917
+ 957420 words of memory out of 3000000
+ 44686 multiletter control sequences out of 15000+200000
+ 711436 words of font info for 284 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,16n,62p,1613b,1130s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
@@ -1750,9 +1762,9 @@ m/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (29 pages, 2372727 bytes).
+Output written on main.pdf (31 pages, 2381353 bytes).
 PDF statistics:
- 3596 PDF objects out of 4296 (max. 8388607)
- 164 named destinations out of 1000 (max. 500000)
+ 3620 PDF objects out of 4296 (max. 8388607)
+ 172 named destinations out of 1000 (max. 500000)
  67800 words of extra memory for PDF output out of 74296 (max. 10000000)
 

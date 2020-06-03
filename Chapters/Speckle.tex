@@ -200,7 +200,7 @@ où $k=2\pi/\lambda$ est le nombre d'onde et $\deff$ correspond à une distance 
 \end{equation}
 où $\tdiff(\xzero)$ est la transmission du diffuseur, $E_{\mathrm{inc}}(\xzero)$ est le champ incident\footnote{Il s'agit du faisceau gaussien de waist \SI{14.6}{\milli\metre}.}, et $m(\xzero)=\Theta(\left| \xzero \right| - D/2)$ avec $\Theta$ la fonction de Heaviside est un masque représentant le diaphragme de diamètre $D$ et les montures de optiques. $\Ezero(\xzero)$ correspond alors au champ au niveau du diffuseur, et on supposera dans la suite que celui-ci varie lentement à l'échelle des variations de $\tdiff(\xzero)$, c'est à dire que $\Ezero(\xzero+\delta\xzero)\approx\Ezero(\xzero)$ avec $\delta\xzero$ de l'ordre de $\rdiff$.
 
-On montre alors (voir annexe \ref{ch:anex_speckle}) que le profil d'intensité moyenne à la distance $d$ peut s'écrire
+On montre alors (voir annexe \ref{ch:anex_speckle}) que le profil d'intensité moyenne à la distance $d$ peut s'écrire \citep{gatti2008three}
 \begin{align}
 \nonumber\overline{I}(\xd)&=\overline{E(\xd) E^*(\xd)} \\
 &\propto I_0 \left( \frac{\deff}{d} \xd \right) \ast \widetilde{\Cdiff}\left( \frac{\xd}{\lambda d} \right) \text{ ,}
@@ -257,7 +257,7 @@ La taille de ces grains est donnée par la largeur de la fonction de corrélatio
 où $\delta I(\xd)=I(\xd)-\overline{I}(\xd)$ correspond aux fluctuations statistiques d'intensité et les positions $\xd$ et $\xd'$ correspondent à deux points dans le plan $\lbrace x,y,z=d\rbrace$ transverse à l'axe optique. 
 
 
-Dans les conditions expérimentales usuelles, il est possible de négliger l'effet de l'extension spatiale finie du speckle, celle-ci étant très grande à l'échelle des grains de speckle. Ainsi, on peut considérer que la fonction de corrélation en amplitude ne dépend uniquement que de la différence des positions considérées. Dans ce régime, on montre annexe \ref{ch:anex_speckle} que la fonction de corrélation transverse en amplitude le long de l'axe optique peut s'écrire:
+Dans les conditions expérimentales usuelles, il est possible de négliger l'effet de l'extension spatiale finie du speckle, celle-ci étant très grande à l'échelle des grains de speckle. Ainsi, on peut considérer que la fonction de corrélation en amplitude ne dépend uniquement que de la différence des positions considérées. Dans ce régime, on montre annexe \ref{ch:anex_speckle} que la fonction de corrélation transverse en amplitude le long de l'axe optique peut s'écrire \citep{gatti2008three}:
 \begin{align}
 \nonumber \CE(\xd,\xd') &= \overline{E(\xd) E^*(\xd')} \\
 & \propto \widetilde{I_0}\left( \frac{\delta\xd}{\lambda d}\right) \ast \Cdiff\left( \frac{\deff}{d} \delta \xd \right) \text{ ,}
@@ -300,7 +300,7 @@ Comme représenté figure \ref{fig:correlation_speckle}, les grains de speckle p
 \end{equation}
 évaluée aux positions $\lbrace 0,0,z=f \rbrace$ et $\lbrace 0,0,z=f+\delta z \rbrace$ sur l'axe optique.
 
-En supposant que l'extension longitudinale $\delta f$ du champ de speckle est très grande devant la taille longitudinale des grains, on peut se limiter à des petits déplacements $\delta z \ll \delta f$. On montre alors que la corrélation longitudinale en amplitude aux alentours du plan de Fourier peut s'écrire
+En supposant que l'extension longitudinale $\delta f$ du champ de speckle est très grande devant la taille longitudinale des grains, on peut se limiter à des petits déplacements $\delta z \ll \delta f$. On montre alors que la corrélation longitudinale en amplitude aux alentours du plan de Fourier peut s'écrire \citep{magatti2009three}:
 \begin{equation}
 \overline{E(f)E^*(f+\delta z)} \propto \int{\mathrm{d} \xzero I_0 (\xzero) e^{i\pi \xzero^2 \delta z / \lambda f^2} } \text{ .}
 \label{eq:correlation_longitudinale_1_speckle}
@@ -576,9 +576,9 @@ Le caractère limitant du désordre résiduel apparaît donc lorsque celui-ci es
 
 Si l'approche décrite dans la section précédente permet de réaliser une spectroscopie du potentiel désordonné appliqué aux atomes, celle-ci ne permet pas d'étudier la transition d'Anderson dans la mesure où celle-ci nécessite de réaliser des expériences d'expansion du nuage suite à la spectroscopie. 
 
-La principale limitation de cette approche provient du faible désaccord du faisceau \speckle\. En effet, les désaccords utilisés étant de l'ordre de $\left|\delta \right| \approx 12 \Gamma$, le taux d'émission spontanée est relativement grand conduisant à un temps de vie maximal des atomes habillés par le désordre d'une centaine de millisecondes, très insuffisant pour les temps d'expansions visés de plus d'une seconde.
+La principale limitation de cette approche provient du faible désaccord du faisceau \speckle . En effet, les désaccords utilisés étant de l'ordre de $\left|\delta \right| \approx 12 \Gamma$, le taux d'émission spontanée est relativement grand conduisant à un temps de vie maximal des atomes habillés par le désordre d'une centaine de millisecondes, très insuffisant pour les temps d'expansions visés de plus d'une seconde.
 
-Il est donc nécessaire de compléter la procédure expérimentale utilisée lors de la mesure des fonctions spectrales pour pouvoir procéder à des expériences d'expansion.
+Il est donc nécessaire de compléter la procédure expérimentale utilisée lors de la mesure des fonctions spectrales pour pouvoir procéder à des expériences d'expansion. 
 
 
 \subsection{S'éloigner de résonance}
@@ -596,7 +596,7 @@ La question est alors la suivante: est-il possible de réaliser un désordre dé
 
 
 \paragraph*{Speckle bichromatique}
-La réponse apportée par l'équipe pour augmenter le temps de vie des atomes vis-à-vis de l'émission spontanée consiste à utiliser des désaccords plus importants, de l'ordre de \SI{100}{\giga\hertz}. Cependant, l'utilisation de désaccords aussi grands ($\delta/2\pi \gg \deltahf$) ne permet plus la sélectivité en état interne recherchée pour réaliser une spectroscopie du désordre. L'idée est alors de compenser le potentiel ressenti par l'état $\etatF{1}{}$ à l'aide d'une seconde fréquence optique, comme illustré figure \ref{fig:speckle_bichromatique_principe}. Une étude quantitative et détaillée de cette approche peut être retrouvée dans le manuscrit de thèse de Musawwadah Mukhtar \citep{mukhtar2019state}, aussi nous nous contenterons de décrire les grandes lignes de cette approche.
+La réponse apportée par l'équipe pour augmenter le temps de vie des atomes vis-à-vis de l'émission spontanée consiste à utiliser des désaccords plus importants, de l'ordre de \SI{100}{\giga\hertz}. Cependant, l'utilisation de désaccords aussi grands ($\delta/2\pi \gg \deltahf$) ne permet plus la sélectivité en état interne recherchée pour réaliser une spectroscopie du désordre. L'idée est alors de compenser le potentiel ressenti par l'état $\etatF{1}{}$ à l'aide d'une seconde fréquence optique, comme illustré figure \ref{fig:speckle_bichromatique_principe}. Une étude quantitative et détaillée de cette approche peut être retrouvée dans le manuscrit de thèse de Musawwadah Mukhtar \citep{mukhtar2019state}, aussi nous nous contenterons de décrire les grandes lignes de cette approche. 
 
 \begin{figure}
 \centering
@@ -749,17 +749,6 @@ En choisissant le désaccord précédent d'environ \SI{100}{\giga\hertz} et une 
 
 
 
-\paragraph*{Implémentation expérimentale préliminaire}
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{Fig/Speckle/montage_speckle_bichromatique.pdf}
-\caption{\textbf{Montage optique du \speckle\ bichromatique.} De même que pour les montages précédents, le montage optique consiste en une partie de manipulation des faisceaux avant de générer le \speckle . À présent, un étage supplémentaire de mélange des faisceaux est nécessaire, et la présence d'une fibre optique commune assure la parfaite superposition des faisceaux sur le diffuseur.}
-\label{fig:montage_speckle_bichromatique}
-\end{figure}
-
-
-
 
 
 \paragraph*{Estimation du potentiel résiduel sur $\mathbf{\etatF{1}{}}$}
@@ -790,9 +779,30 @@ Estimons l'ordre de grandeur de ces fluctuations de potentiel dans la configurat
 \sigma_{\mathrm{V}}\sim 0.01 \overline{V_{\mathrm{p,1}}}
 \end{equation}
 
-De même que dans la section \ref{sc:state_dependent_disorder}, le désordre résiduel que ressent l'état $\etatF{1}{}$ possède une borne supérieure pour laquelle le condensat devient perturbé. Ainsi, si les fluctuations du potentiel résiduel sont de l'ordre du potentiel chimique $\mu=\SI{40}{\hertz}$, les modulations de densité ne pourront plus écranter le potentiel désordonné. La condition $\sigma_{\mathrm{V}}\lesssim\mu$ se traduit donc en terme de potentiel maximal applicable aux atomes\footnote{$\VR$ et $\overline{V_{\mathrm{p,1}}}$ ne sont pas identiques, mais sont du même ordre de grandeur. La limite que nous présentons ne se veut pas quantitative étant donné que nous ne donnons qu'une estimation de $\sigmae$.}
+De même que dans la section \ref{sc:state_dependent_disorder}, le désordre résiduel que ressent l'état $\etatF{1}{}$ possède une borne supérieure pour laquelle le condensat devient perturbé. Ainsi, si les fluctuations du potentiel résiduel sont de l'ordre du potentiel chimique $\mu=\SI{40}{\hertz}$, les modulations de densité ne pourront plus écranter le potentiel désordonné. La condition $\sigma_{\mathrm{V}}\lesssim\mu$ se traduit donc en terme de potentiel maximal applicable aux atomes\footnote{$\VR$ et $\overline{V_{\mathrm{p,1}}}$ ne sont pas identiques, mais sont du même ordre de grandeur. La limite que nous présentons ne se veut pas quantitative étant donné que nous ne donnons qu'une estimation de $\sigmae$ et que la condition $\sigma_{\mathrm{V}}\lesssim\mu$ reste phénoménologique.}
 \begin{equation}
 \VR\lesssim\SI{4}{\kilo\hertz} \text{ ,}
 \end{equation}
 semblable à la limite observée dans le cas d'un potentiel dépendant de l'état interne réalisé à l'aide d'une unique fréquence optique. Insistons sur le fait que si la limite du désordre applicable est comparable à celle dans le cas d'un potentiel monochromatique, ce nouveau désordre bichromatique permet l'amélioration du temps de vie dans le désordre de trois ordres de grandeurs, et ouvre donc la voie aux expériences d'expansion et à l'étude de la transition d'Anderson.
 
+
+\paragraph*{Implémentation expérimentale préliminaire}
+
+Comme annoncé section \ref{sc:montage_diffuseur}, la structure du montage optique du \speckle\ bichromatique suit la même philosophie que les montages présentés précédemment. Dans sa version préliminaire\footnote{À l'heure de l'écriture de ces lignes, seuls des tests préliminaires de stabilité ont pu être effectués. Si ceux-ci sont encourageants, il n'est pas exclu que ce montage soit modifié après essai en présence des atomes.}, celui-ci est composé d'un premier étage de mise en forme du faisceau, suivi de la partie générant le \speckle\ rayonné sur les atomes.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Speckle/montage_speckle_bichromatique.pdf}
+\caption{\textbf{Montage optique du \speckle\ bichromatique.} De même que pour les montages précédents, le montage optique consiste en une partie de manipulation des faisceaux avant de générer le \speckle . À présent, un étage supplémentaire de mélange des faisceaux est nécessaire, et la présence d'une fibre optique commune assure la parfaite superposition des faisceaux sur le diffuseur.}
+\label{fig:montage_speckle_bichromatique}
+\end{figure}
+
+Dans le cas de notre nouveau potentiel bichromatique, une étape supplémentaire de superposition des faisceaux est nécessaire afin d'obtenir les mêmes modes laser au niveau du diffuseur. L'ensemble de la partie \emph{mise en forme} est représentée figure \ref{fig:montage_speckle_bichromatique}, et comporte trois zones relatives aux différentes étapes de la mise en forme du faisceau:
+\begin{itemize}
+\item[\textendash] Une première zone est dédiée à la mise en forme du laser principal et est similaire aux montages précédents. Le faisceau du laser principal est généré par le laser Toptica TA-PRO, et son mode et sa polarisation sont filtrés à l'aide d'une fibre optique à maintien de polarisation et d'un cube séparateur de polarisation. Sa puissance est stabilisée à l'aide d'une boucle de rétroaction réalisée à l'aide d'un modulateur acousto-optique et d'une photodiode, et permet de plus de s'affranchir des fluctuations de puissance liées aux fluctuations de polarisation du laser, comme précédemment. Ce laser étant désaccordé d'environ \SI{100}{\giga\hertz}, il n'est pas nécessaire d'en asservir la fréquence.
+\item[\textendash] Une seconde zone, similaire à la première, permet de mettre en forme le faisceau du laser de compensation. Celui-ci est émis par un laser \emph{Sacher Lasertechnik Cheetah} d'une puissance maximale de \SI{380}{\milli\watt}, et subit le même traitement que le faisceau principal. Cependant, la fréquence de ce laser est stabilisée par battement sur le laser repompeur \emph{L2} étant donné son désaccord modéré.
+\item[\textendash] Enfin, une troisième zone permet de mélanger les lasers. Pour cela, les faisceaux sont superposés à l'aide d'une lame séparatrice $50/50$, et un polariseur permet de superposer les polarisations des deux lasers. Ceux-ci sont ensuite injectés dans la même fibre optique à maintien de polarisation, garantissant une superposition parfaite des modes pour la génération du \speckle .
+\end{itemize}
+
+
+La partie de génération du \speckle\ est très similaire à celle présentée figure \ref{fig:montage_speckle_specfunc}. La puissance nécessaire sur les atomes étant environ trois ordres de grandeur plus grande que celle utilisée pour la mesure des fonctions spectrales (voir section \ref{sc:state_dependent_disorder} et table \ref{tb:speckle_bichromatique}), la densité optique de transmission $1/1000$ n'est plus nécessaire. Le reste du montage optique est inchangé\footnote{La photodiode précédemment utilisée pour l'asservissement de puissance d'un unique faisceau ne sert plus qu'à titre d'information. En effet, les deux faisceaux étant superposés, il est difficile de les contrôler indépendamment.}.
