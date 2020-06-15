@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  3 JUN 2020 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  15 JUN 2020 21:41
 entering extended mode
 **./main.tex
 (main.tex
@@ -1424,7 +1424,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(Chapters/Speckle.tex
+(Chapters/Modif_exp.tex
 Chapitre 1.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 .
@@ -1435,336 +1435,205 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-
-LaTeX Warning: Reference `ch:BEC_manip' on page 1 undefined on input line 7.
-
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 13.
+(Font)              <9> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 13.
+(Font)              <7> on input line 8.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
-<Fig/Speckle/speckle_pattern.pdf, id=7, 404.94328pt x 187.88626pt>
-File: Fig/Speckle/speckle_pattern.pdf Graphic file (type pdf)
-<use Fig/Speckle/speckle_pattern.pdf>
-Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 21
-.
-(pdftex.def)             Requested size: 384.1096pt x 178.22144pt.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+
 [1
 
 
-{C:/Users/lecou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <./Fig/S
-peckle/speckle_pattern.pdf>]
+{C:/Users/lecou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<./Fig/../Fig/Modif_exp/cicero.png, id=22, 510.40688pt x 514.92375pt>
+File: ./Fig/../Fig/Modif_exp/cicero.png Graphic file (type png)
+<use ./Fig/../Fig/Modif_exp/cicero.png>
+Package pdftex.def Info: ./Fig/../Fig/Modif_exp/cicero.png  used on input line 
+29.
+(pdftex.def)             Requested size: 298.75264pt x 301.41382pt.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+ [2 <./Fig/../Fig/Modif_exp/cicero.png>]
 
-LaTeX Warning: Reference `ch:anex_speckle' on page 3 undefined on input line 72
-.
-
-<Fig/Speckle/diffus_prop.pdf, id=110, 300.06396pt x 226.78568pt>
-File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
-<use Fig/Speckle/diffus_prop.pdf>
-Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 80.
-(pdftex.def)             Requested size: 300.06323pt x 226.78511pt.
-
-Package caption Warning: \label without proper reference on input line 81.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:diffus_prop' on page 3 undefined on input line 91
-.
+LaTeX Warning: Reference `sc:imagerie' on page 3 undefined on input line 40.
 
 
-LaTeX Warning: Reference `ch:anex_speckle' on page 3 undefined on input line 91
-.
-
-[3]
-
-LaTeX Warning: Reference `sc:distribution_speckle' on page 4 undefined on input
- line 95.
-
-<Fig/Speckle/montage_speckle_taus.pdf, id=128, 492.05545pt x 235.88567pt>
-File: Fig/Speckle/montage_speckle_taus.pdf Graphic file (type pdf)
-<use Fig/Speckle/montage_speckle_taus.pdf>
-Package pdftex.def Info: Fig/Speckle/montage_speckle_taus.pdf  used on input li
-ne 116.
-(pdftex.def)             Requested size: 426.79135pt x 204.60698pt.
-[4 <./Fig/Speckle/diffus_prop.pdf>] [5 <./Fig/Speckle/montage_speckle_taus.pdf>
-]
-
-Package natbib Warning: Citation `piraud2012localisation' on page 6 undefined o
-n input line 131.
+LaTeX Warning: Reference `sc:chambre_science' on page 3 undefined on input line
+ 65.
 
 
-Package natbib Warning: Citation `jendrzejewski2012quantum' on page 6 undefined
- on input line 131.
+Underfull \vbox (badness 2495) has occurred while \output is active []
 
-<Fig/Speckle/montage_diffuseur.pdf, id=843, 489.34206pt x 294.36562pt>
-File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
-<use Fig/Speckle/montage_diffuseur.pdf>
-Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
-146.
-(pdftex.def)             Requested size: 384.1096pt x 231.07301pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-51.
+ [3]
+<./Fig/../Fig/Modif_exp/levitation_refroidissement.pdf, id=61, 470.89154pt x 22
+9.2899pt>
+File: ./Fig/../Fig/Modif_exp/levitation_refroidissement.pdf Graphic file (type 
+pdf)
+<use ./Fig/../Fig/Modif_exp/levitation_refroidissement.pdf>
+Package pdftex.def Info: ./Fig/../Fig/Modif_exp/levitation_refroidissement.pdf 
+ used on input line 82.
+(pdftex.def)             Requested size: 426.79135pt x 207.82143pt.
+
+
+LaTeX Warning: Reference `eq:theoreme_wing' on page 4 undefined on input line 1
+04.
+
+
+LaTeX Warning: Reference `eq:Breit-Rabi' on page 4 undefined on input line 104.
+
+
+[4] [5 <./Fig/../Fig/Modif_exp/levitation_refroidissement.pdf>]
+
+LaTeX Warning: Reference `ch:TauS_PRL' on page 6 undefined on input line 118.
+
+<./Fig/../Fig/Modif_exp/levitation_etats.pdf, id=137, 529.10655pt x 366.34715pt
+>
+File: ./Fig/../Fig/Modif_exp/levitation_etats.pdf Graphic file (type pdf)
+<use ./Fig/../Fig/Modif_exp/levitation_etats.pdf>
+Package pdftex.def Info: ./Fig/../Fig/Modif_exp/levitation_etats.pdf  used on i
+nput line 122.
+(pdftex.def)             Requested size: 341.43437pt x 236.40668pt.
+[6]
+<./Fig/../Fig/Modif_exp/levitation_RF.pdf, id=153, 563.3009pt x 209.90251pt>
+File: ./Fig/../Fig/Modif_exp/levitation_RF.pdf Graphic file (type pdf)
+<use ./Fig/../Fig/Modif_exp/levitation_RF.pdf>
+Package pdftex.def Info: ./Fig/../Fig/Modif_exp/levitation_RF.pdf  used on inpu
+t line 141.
+(pdftex.def)             Requested size: 426.79135pt x 159.0375pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./Fig/../Fig/Modif_exp/levitation_etats.pdf>] [8 <./Fig/../Fig/Modif_exp/le
+vitation_RF.pdf>]
+<./Fig/../Fig/Modif_exp/oscillation_levitation.pdf, id=179, 546.86694pt x 189.5
+5855pt>
+File: ./Fig/../Fig/Modif_exp/oscillation_levitation.pdf Graphic file (type pdf)
+
+<use ./Fig/../Fig/Modif_exp/oscillation_levitation.pdf>
+Package pdftex.def Info: ./Fig/../Fig/Modif_exp/oscillation_levitation.pdf  use
+d on input line 223.
+(pdftex.def)             Requested size: 426.79135pt x 147.94183pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <./Fig/../Fig/Modif_exp/oscillation_levitation.pdf>] [10]
+
+LaTeX Warning: Reference `sc:chambre_science' on page 11 undefined on input lin
+e 289.
+
+<./Fig/../Fig/Modif_exp/optique_1070_new_style.pdf, id=208, 454.72154pt x 306.1
+9962pt>
+File: ./Fig/../Fig/Modif_exp/optique_1070_new_style.pdf Graphic file (type pdf)
+
+<use ./Fig/../Fig/Modif_exp/optique_1070_new_style.pdf>
+Package pdftex.def Info: ./Fig/../Fig/Modif_exp/optique_1070_new_style.pdf  use
+d on input line 302.
+(pdftex.def)             Requested size: 426.79135pt x 287.38849pt.
+[11] [12 <./Fig/../Fig/Modif_exp/optique_1070_new_style.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
+25.
+
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-[6 <./Fig/Speckle/montage_diffuseur.pdf>]
-<Fig/Speckle/geometrie_effective_speckle.pdf, id=882, 327.5211pt x 219.06755pt>
+<./Fig/../Fig/Modif_exp/expansion_dimple.pdf, id=775, 461.32204pt x 320.72536pt
+>
+File: ./Fig/../Fig/Modif_exp/expansion_dimple.pdf Graphic file (type pdf)
+<use ./Fig/../Fig/Modif_exp/expansion_dimple.pdf>
+Package pdftex.def Info: ./Fig/../Fig/Modif_exp/expansion_dimple.pdf  used on i
+nput line 329.
+(pdftex.def)             Requested size: 341.43437pt x 237.37708pt.
 
-File: Fig/Speckle/geometrie_effective_speckle.pdf Graphic file (type pdf)
-<use Fig/Speckle/geometrie_effective_speckle.pdf>
-Package pdftex.def Info: Fig/Speckle/geometrie_effective_speckle.pdf  used on i
-nput line 167.
-(pdftex.def)             Requested size: 294.76625pt x 197.15895pt.
-
-
-LaTeX Warning: Reference `ch:anex_speckle' on page 7 undefined on input line 18
-4.
-
-[7]
-
-LaTeX Warning: Reference `ch:anex_speckle' on page 8 undefined on input line 20
+[13 <./Fig/../Fig/Modif_exp/expansion_dimple.pdf>]
+<./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf, id=793, 562.97038pt x 209
+.03256pt>
+File: ./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf Graphic file (type pd
+f)
+<use ./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf>
+Package pdftex.def Info: ./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf  u
+sed on input line 372.
+(pdftex.def)             Requested size: 426.79135pt x 158.4677pt.
+ [14] [15 <./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf>]) (main.bbl [16
+]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
 3.
 
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+[17
 
-Package natbib Warning: Citation `gatti2008three' on page 8 undefined on input 
-line 203.
-
-[8 <./Fig/Speckle/geometrie_effective_speckle.pdf>]
-<Fig/Speckle/speckle_extension.pdf, id=962, 481.08609pt x 201.40439pt>
-File: Fig/Speckle/speckle_extension.pdf Graphic file (type pdf)
-<use Fig/Speckle/speckle_extension.pdf>
-Package pdftex.def Info: Fig/Speckle/speckle_extension.pdf  used on input line 
-217.
-(pdftex.def)             Requested size: 426.79135pt x 178.68079pt.
- [9 <./Fig/Speckle/speckle_extension.pdf>]
-
-LaTeX Warning: Reference `ch:TauS_PRL' on page 10 undefined on input line 251.
-
-
-LaTeX Warning: Reference `ch:anex_speckle' on page 10 undefined on input line 2
-60.
-
-
-Package natbib Warning: Citation `gatti2008three' on page 10 undefined on input
- line 260.
-
-[10]
-<Fig/Speckle/correlation_speckle.pdf, id=1155, 474.40244pt x 204.32954pt>
-File: Fig/Speckle/correlation_speckle.pdf Graphic file (type pdf)
-<use Fig/Speckle/correlation_speckle.pdf>
-Package pdftex.def Info: Fig/Speckle/correlation_speckle.pdf  used on input lin
-e 275.
-(pdftex.def)             Requested size: 426.79135pt x 183.83252pt.
- [11]
-
-Package natbib Warning: Citation `magatti2009three' on page 12 undefined on inp
-ut line 303.
-
-[12 <./Fig/Speckle/correlation_speckle.pdf>]
-
-LaTeX Warning: Reference `ch:TauS_PRL' on page 13 undefined on input line 356.
-
-[13]
-<Fig/Speckle/speckle_correlations_exp.pdf, id=1427, 533.51053pt x 174.36984pt>
-File: Fig/Speckle/speckle_correlations_exp.pdf Graphic file (type pdf)
-<use Fig/Speckle/speckle_correlations_exp.pdf>
-Package pdftex.def Info: Fig/Speckle/speckle_correlations_exp.pdf  used on inpu
-t line 393.
-(pdftex.def)             Requested size: 426.79135pt x 139.49072pt.
- [14]
-
-LaTeX Warning: Reference `ch:TauS_PRL' on page 15 undefined on input line 426.
-
-
-LaTeX Warning: Reference `sc:forces_lumineuses' on page 15 undefined on input l
-ine 449.
-
-
-LaTeX Warning: Reference `eq:potentiel_dipolaire' on page 15 undefined on input
- line 449.
-
-[15 <./Fig/Speckle/speckle_correlations_exp.pdf>]
-
-LaTeX Warning: Reference `ch:TauS_PRL' on page 16 undefined on input line 468.
-
-
-LaTeX Warning: Reference `ch:TauS_NJP' on page 16 undefined on input line 468.
-
-[16]
-<Fig/Speckle/distribution_potentiel.pdf, id=1476, 374.98036pt x 249.39107pt>
-File: Fig/Speckle/distribution_potentiel.pdf Graphic file (type pdf)
-<use Fig/Speckle/distribution_potentiel.pdf>
-Package pdftex.def Info: Fig/Speckle/distribution_potentiel.pdf  used on input 
-line 477.
-(pdftex.def)             Requested size: 405.45047pt x 269.66179pt.
-
-
-LaTeX Warning: Reference `sc:forces_lumineuses' on page 17 undefined on input l
-ine 492.
-
-
-LaTeX Warning: Reference `eq:potentiel_dipolaire' on page 17 undefined on input
- line 492.
-
-
-Underfull \vbox (badness 2042) has occurred while \output is active []
-
- [17 <./Fig/Speckle/distribution_potentiel.pdf>]
-<Fig/Speckle/principe_potentiel_etat_interne.pdf, id=1534, 355.09534pt x 220.27
-208pt>
-File: Fig/Speckle/principe_potentiel_etat_interne.pdf Graphic file (type pdf)
-<use Fig/Speckle/principe_potentiel_etat_interne.pdf>
-Package pdftex.def Info: Fig/Speckle/principe_potentiel_etat_interne.pdf  used 
-on input line 503.
-(pdftex.def)             Requested size: 362.77525pt x 225.03416pt.
- [18 <./Fig/Speckle/principe_potentiel_etat_interne.pdf>]
-<Fig/Speckle/potentiel_dipolaire_hyperfin.pdf, id=1558, 388.47842pt x 254.25056
-pt>
-File: Fig/Speckle/potentiel_dipolaire_hyperfin.pdf Graphic file (type pdf)
-<use Fig/Speckle/potentiel_dipolaire_hyperfin.pdf>
-Package pdftex.def Info: Fig/Speckle/potentiel_dipolaire_hyperfin.pdf  used on 
-input line 527.
-(pdftex.def)             Requested size: 384.1096pt x 251.39459pt.
-
-
-LaTeX Warning: Reference `ch:TauS_NJP' on page 19 undefined on input line 537.
-
-[19 <./Fig/Speckle/potentiel_dipolaire_hyperfin.pdf>]
-<Fig/Speckle/montage_speckle_specfunc.pdf, id=1641, 492.05545pt x 235.88567pt>
-File: Fig/Speckle/montage_speckle_specfunc.pdf Graphic file (type pdf)
-<use Fig/Speckle/montage_speckle_specfunc.pdf>
-Package pdftex.def Info: Fig/Speckle/montage_speckle_specfunc.pdf  used on inpu
-t line 546.
-(pdftex.def)             Requested size: 426.79135pt x 204.60698pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 552.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.4> on input line 552.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 552.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 552.
-
-
-LaTeX Warning: Reference `sc:propriete_BEC' on page 20 undefined on input line 
-556.
-
-[20 <./Fig/Speckle/montage_speckle_specfunc.pdf>] [21]
-<Fig/Speckle/speckle_bichromatique.pdf, id=2270, 507.09283pt x 203.79584pt>
-File: Fig/Speckle/speckle_bichromatique.pdf Graphic file (type pdf)
-<use Fig/Speckle/speckle_bichromatique.pdf>
-Package pdftex.def Info: Fig/Speckle/speckle_bichromatique.pdf  used on input l
-ine 603.
-(pdftex.def)             Requested size: 426.79135pt x 171.5325pt.
- [22 <./Fig/Speckle/speckle_bichromatique.pdf>]
-
-Package mathptmx Warning: There are no bold math fonts on input line 667.
-
-[23] [24]
-
-LaTeX Warning: Reference `ch:anex_speckle' on page 25 undefined on input line 7
-15.
-
-
-LaTeX Warning: Reference `ch:anex_speckle' on page 25 undefined on input line 7
-22.
-
-<Fig/Speckle/illustration_correlation_double_speckle.pdf, id=2343, 474.40244pt 
-x 204.32954pt>
-File: Fig/Speckle/illustration_correlation_double_speckle.pdf Graphic file (typ
-e pdf)
-<use Fig/Speckle/illustration_correlation_double_speckle.pdf>
-Package pdftex.def Info: Fig/Speckle/illustration_correlation_double_speckle.pd
-f  used on input line 732.
-(pdftex.def)             Requested size: 426.79135pt x 183.83252pt.
-[25] [26 <./Fig/Speckle/illustration_correlation_double_speckle.pdf>] [27]
-<Fig/Speckle/montage_speckle_bichromatique.pdf, id=2550, 598.84573pt x 274.4493
-9pt>
-File: Fig/Speckle/montage_speckle_bichromatique.pdf Graphic file (type pdf)
-<use Fig/Speckle/montage_speckle_bichromatique.pdf>
-Package pdftex.def Info: Fig/Speckle/montage_speckle_bichromatique.pdf  used on
- input line 795.
-(pdftex.def)             Requested size: 426.79135pt x 195.59746pt.
-
-[28 <./Fig/Speckle/montage_speckle_bichromatique.pdf>]) (main.bbl [29] [30
-
-])
-
-Package natbib Warning: There were undefined citations.
-
-[31]
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
- (main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29926 strings out of 480934
- 569197 string characters out of 2899917
- 957420 words of memory out of 3000000
- 44686 multiletter control sequences out of 15000+200000
- 711436 words of font info for 284 fonts, out of 3000000 for 9000
+ 29665 strings out of 480934
+ 563889 string characters out of 2899917
+ 948767 words of memory out of 3000000
+ 44588 multiletter control sequences out of 15000+200000
+ 691209 words of font info for 226 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,16n,62p,1613b,1130s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
-nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.e
-nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
-nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
-it.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-mathsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
+ 63i,19n,62p,1590b,1125s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
+c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathi
+t.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
+athsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+lm-ts1.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
+/lm-rm.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
 /lm-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmbx6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmbx8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmbx9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/lecou/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/lecou/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/lecou
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/l
-ecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Use
-rs/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><
-C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.p
-fb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy
-6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-msy7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
-m/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/symbols/msam10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (31 pages, 2381353 bytes).
+1/public/lm/lmbxi10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/lecou/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/lecou/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/lecou/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/lecou/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Users/lecou
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/l
+ecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/U
+sers/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><
+C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pf
+b><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy9
+.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
+tt10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb>
+Output written on main.pdf (17 pages, 6102606 bytes).
 PDF statistics:
- 3620 PDF objects out of 4296 (max. 8388607)
- 172 named destinations out of 1000 (max. 500000)
- 67800 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 985 PDF objects out of 1000 (max. 8388607)
+ 86 named destinations out of 1000 (max. 500000)
+ 60069 words of extra memory for PDF output out of 61914 (max. 10000000)
 

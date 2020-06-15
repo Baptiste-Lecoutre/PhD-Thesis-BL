@@ -299,7 +299,7 @@ Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{../Fig/Modif_exp/optique_1070.pdf}
+\includegraphics[width=\textwidth]{../Fig/Modif_exp/optique_1070_new_style.pdf}
 \caption{\textbf{Schéma du montage optique pour le piège dipolaire.} Le faisceau issu du laser source passe dans un premier télescope avant d'être séparé en deux parties. La partie déviée passe dans une fibre optique pour devenir le faisceau de la pince. La partie transmise passe ensuite dans un second télescope pour devenir elliptique et arrive dans la \emph{Dimple box}, qui envoie le faisceau sur les atomes et contient les optiques d'imagerie \citep{muller2015coherent}. Afin de garder les mêmes tailles de faisceaux, la première lentille du premier télescope a été remplacée par une lentille de focale +\SI{100}{\milli\metre}.}
 \label{fig:optique_1070}
 \end{figure}
@@ -382,15 +382,62 @@ Une seconde conséquence de la figure \ref{fig:frequences_piege_optique} est que
 
 
 
+
+
+
+
+
+
+
 \section{Optimisation de l'évaporation tout-optique}
 \label{sc:evap_optique}
+Vingt-cinq ans après l'obtention du premier condensat de Bose-Einstein, l'étape de refroidissement par évaporation forcée reste un passage obligatoire pour l'obtention d'un gaz dégénéré, à l'exception de quelques développements récents se basant des techniques novatrices de refroidissement laser \citep{stellmer2013laser} \citep{hu2017creation}. 
 
-Plan préliminaire, à voir plus en détails ce qui va à l'intérieur quand tout sera prêt.
-\subsection{Lois d'échelle de l'évaporation optique}
+Comme brièvement présenté dans le chapitre précédent, le principe du refroidissement évaporatif repose sur l'extraction de particules très énergétiques, suivie par la thermalisation des particules restantes moins énergétiques en moyenne, donc de température abaissée.
+
+Néanmoins, l'efficacité de ce processus dépend fortement de la configuration expérimentale. Les modifications apportées à notre piège optique, piège dans lequel le seuil de condensation est franchi, nécessitent donc d'adapter les consignes d'évaporation à notre nouvelle géométrie. De plus, l'utilisation de nouvelles cartes analogiques \emph{National Instruments} avec la suite \emph{Cicero Word Generator} permet de générer de nouvelles consignes arbitraires, non limitées à des morceaux de rampes telles qu'auparavant. 
+
+Dans cette partie, nous allons dans un premier temps présenter le fonctionnement du refroidissement par évaporation forcée, puis nous détaillerons les résultats de l'optimisation de notre évaporation optique.
+
+
+\subsection{Lois d'échelle du refroidissement évaporatif}
 Expliquer comment fonctionne l'évaporation, donner les lois de variation à la o'hara si l'approche est correcte à la fin.
-\subsection{Étude des pertes}
+
+\paragraph*{Bilan d'énergie}
+
+Paramètre de troncature $\eta$ défini par
+\begin{equation}
+\eta=\frac{U}{\kB T}
+\end{equation}
+qui est constant et de l'ordre de 10 pour un piège optique.
+
+Le piège change au cours de l'évaporation, et les variations d'énergie potentielle sont caractérisées par le paramètre $\nu$ défini par
+\begin{equation}
+\nu=\frac{\dot{\overline{\omega}}/\overline{\omega}}{\dot{U}/U}
+\end{equation}
+où $\overline{\omega}$ est la fréquence moyenne du piège.
+
+L'énergie totale du gaz est donnée par
+\begin{equation}
+E=3N\kB T
+\end{equation}
+
+La variation d'énergie du gaz en cours d'évaporation est donnée par 
+\begin{equation}
+\dot{E}=\dot{N}(U+\alpha \kB T) +\nu\frac{\dot{U}}{U}E
+\end{equation}
+où le premier terme décrit la perte d'énergie liée à la perte d'atomes et le second terme décrit le changement d'énergie potentielle des particules dans le piège.
+
+\begin{equation}
+D=N\left(\frac{\hb \overline{\omega}}{\kB T}\right)^3
+\end{equation}
+
+\paragraph*{Effet des pertes}
 Effet des pertes sur l'évap. Etude du temps de vie, processus de chauffage via pointé et intensité.
 
-\subsection{Résultats}
+
+
+
+\subsection{Implémentation expérimentale}
 mesure de température, $\eta=10$
 optimisation de l'efficacité de l'evap, D en fonction de N, pente de 4 toussa toussa avec les graphe temporels
