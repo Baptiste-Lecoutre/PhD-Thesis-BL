@@ -401,38 +401,79 @@ Dans cette partie, nous allons dans un premier temps présenter le fonctionnemen
 
 
 \subsection{Lois d'échelle du refroidissement évaporatif}
-Expliquer comment fonctionne l'évaporation, donner les lois de variation à la o'hara si l'approche est correcte à la fin.
+Le but de l'étape de refroidissement évaporatif étant d'augmenter la densité dans l'espace des phases $\mathcal{D}=n \ldb^3$ afin de franchir le seuil de condensation, il est donc nécessaire que notre système présente de la dissipation. L'origine de celle-ci repose sur la profondeur finie des pièges utilisés.  
 
-\paragraph*{Bilan d'énergie}
-
-Paramètre de troncature $\eta$ défini par
+\paragraph*{Évaporation naturelle dans un piège de profondeur finie}
+Une conséquence de cette profondeur finie est que la fonction de partition $f(E)$ est tronquée à l'énergie $U$ correspondant à la profondeur du piège. Plus précisément, il a été montré que la fonction de partition est très proche d'une distribution de Boltzmann tronquée
 \begin{equation}
-\eta=\frac{U}{\kB T}
+f(E)\propto e^{-\frac{E}{\kB T}} \Theta(U-E) \text{ ,}
+\label{eq:fonction_partition}
 \end{equation}
-qui est constant et de l'ordre de 10 pour un piège optique.
+dont le temps de thermalisation $\tau_{\mathrm{th}}$ est de l'ordre de quelques collisions élastiques \citep{luiten1996kinetic}. 
 
-Le piège change au cours de l'évaporation, et les variations d'énergie potentielle sont caractérisées par le paramètre $\nu$ défini par
+En effet, la collision élastique de deux particules permet de transférer de l'énergie d'une particule à la seconde. En particulier, une particule est susceptible d'acquérir par collision une énergie mécanique totale supérieure à la profondeur de piège, celle-ci est donc extraite du piège et emporte une énergie $U+\kappa\kB T$ ($\kappa>0$) supérieure à l'énergie moyenne par particule. La particule restante a quant à elle perdu de l'énergie. 
+
+Ce processus étant le plus probable pour des particules de grandes énergies, celui-ci favorise l'accumulation des particules dans les états de basse énergie tandis qu'il dépeuple les états de grande énergie. Ce raisonnement permet d'expliquer de manière qualitative la forme de la fonction de partition \ref{eq:fonction_partition}, qui favorise les états de basse énergie.
+
+Ce phénomène d'\emph{évaporation naturelle} conduit donc à une diminution de la température, dont l'efficacité décroît avec le temps. En effet, l'énergie moyenne par particule diminuant, la probabilité que des particules acquièrent suffisamment d'énergie pour s'échapper du piège décroît exponentiellement \citep{walraven2010elements}. Ainsi, le processus d'évaporation naturelle est fortement ralenti et le taux d'évaporation, c'est à dire le nombre de particules expulsées du piège par évaporation naturelle par unité de temps, peut être estimé par $\Gamma_{\mathrm{ev}}\sim e^{-U/\kB T} \Gamma_{\mathrm{c}}$, avec $\Gamma_{\mathrm{c}}$ le taux de collisions élastiques.
+
+Très rapidement, le temps d'évaporation $1/\Gamma_{\mathrm{ev}}$ excède le temps de vie des atomes dans le piège et ceux-ci sont perdus par des collisions inélastiques. Afin de dépasser cette limitation et de garder une évaporation efficace, la technique expérimentale développée afin d'obtenir les premiers condensats de Bose-Einstein consiste à abaisser progressivement la profondeur du piège $U$. On parle alors d'\emph{évaporation forcée}.
+
+
+
+
+
+\paragraph*{Lois d'échelle de l'évaporation forcée}
+Comme mentionné précédemment, la mise en œuvre pratique du refroidissement évaporatif se fait par le biais de la diminution de la profondeur du piège, forçant ainsi le processus d'évaporation. Cette opération est réalisée en continu, et à une vitesse suffisamment lente devant le temps de thermalisation $\tau_{\mathrm{th}}$ afin que le système soit constamment à l'équilibre thermodynamique\footnote{Dans ce cas, les seules pertes d'atomes considérées sont celles liées à l'évaporation par collisions élastiques. Cela revient à négliger la dynamique de l'évaporation, qui fait apparaître les pertes par déversement\citep{cohen1996atomes}. Celles-ci correspondent aux atomes ayant une énergie de $U-\delta E$ qui ne sont plus piégés lors de l'abaissement de la profondeur du piège de $U$ à $U-\mathrm{d}U$, avec $\mathrm{d}U > \delta E$.}. 
+
+
+En particulier, définissons le paramètre de troncature $\eta$ comme le rapport entre la profondeur du piège et la température du gaz piégé:
+\begin{equation}
+\eta=\frac{U}{\kB T} \text{ .}
+\end{equation}
+Dans le cas d'un abaissement lent et continu de la profondeur du piège, le paramètre de troncature est constant\footnote{Étant donné la dépendance exponentielle du taux d'évaporation en $\eta$, le processus d'évaporation sera très fortement ralenti dans le cas d'un nuage très froid ($\eta$ grand), et rapide dans le cas d'un nuage chaud ($\eta$ petit). Lors de l'abaissement de la profondeur du piège, un nuage chaud sera rapidement évaporé tandis qu'un nuage froid sera figé, la température variant donc avec la profondeur du piège.} et sa valeur est de l'ordre de 10 dans le cas d'un piège optique.
+
+
+
+Le potentiel de piégeage $U(\mathbf{x},t)$ étant modifié au cours de l'évaporation, les atomes sont soumis à un potentiel variant dans le temps. Dans le cas d'un piège harmonique, les fréquences de piégeage associées peuvent changer au cours de l'évaporation en fonction de l'implémentation expérimentale du refroidissement évaporatif\footnote{La méthode de couteau radio-fréquence utilisée dans le piège magnétique dans la première chambre ne modifie pas les fréquences de piégeages et ne change que la profondeur du piège, tandis que l'évaporation tout optique, réalisée à l'aide de faisceaux lasers de tailles fixées, est accompagnée d'une décompression du piège lors de l'abaissement de la puissance des lasers.}. Les variations d'énergie potentielle sont alors caractérisées par le paramètre $\nu$ défini par
 \begin{equation}
 \nu=\frac{\dot{\overline{\omega}}/\overline{\omega}}{\dot{U}/U}
 \end{equation}
-où $\overline{\omega}$ est la fréquence moyenne du piège.
+où $\overline{\omega}$ est la moyenne géométrique des fréquences du piège. Comme explicité formule \ref{eq:frequences_piege_optique}, les fréquences de piégeage du piège optique évoluent en $\overline{\omega}\propto\sqrt{U}$, impliquant donc $\nu=1/2$ \citep{o2001scaling}. L'abaissement de la profondeur du piège sera donc forcément accompagnée d'une décompression de celui-ci. 
 
-L'énergie totale du gaz est donnée par
+
+
+
+Dressons alors un bilan d'énergie afin de déterminer la manière dont varient les principales quantités thermodynamiques au cours de l'évaporation. L'énergie totale du gaz dans un piège harmonique est donnée par
 \begin{equation}
 E=3N\kB T
 \end{equation}
-
-La variation d'énergie du gaz en cours d'évaporation est donnée par 
+avec $N$ le nombre total d'atomes. La variation temporelle de l'énergie totale du gaz est alors donnée par
 \begin{equation}
-\dot{E}=\dot{N}(U+\alpha \kB T) +\nu\frac{\dot{U}}{U}E
+\dot{E}=3\dot{N} \kB T + 3 N \kB \dot{T} \text{ ,}
+\label{eq:variation_energie_derivee}
 \end{equation}
-où le premier terme décrit la perte d'énergie liée à la perte d'atomes et le second terme décrit le changement d'énergie potentielle des particules dans le piège.
+exprimée en fonction des variations temporelles du nombre d'atomes et de la température.
+
+En identifiant les différentes sources de variations de l'énergie totale, on montre que la variation de l'énergie totale du système est donnée par \citep{cohen1996atomes}
+\begin{equation}
+\dot{E}=\dot{N}(U+\kappa \kB T) +\nu\frac{\dot{U}}{U}E \text{ ,}
+\label{eq:variation_energie_bilan}
+\end{equation}
+où le premier terme décrit la perte d'énergie liée à l'évaporation des atomes énergétiques et le second terme décrit le changement d'énergie potentielle des particules restées dans le piège.
+
+En combinant les équations \ref{eq:variation_energie_derivee} et \ref{eq:variation_energie_bilan}, on montre alors que la variation du nombre d'atomes en fonction de la profondeur de piégeage est donnée par \citep{o2001scaling}:
+\begin{equation}
+\frac{N(t)}{N(t=0)}=\left( \frac{U(t)}{U(t=0)}\right)^{\frac{3(1-\nu)}{\eta'-3}} \text{ ,}
+\end{equation}
+avec $\eta'=\eta+\kappa$.
+
 
 \begin{equation}
-D=N\left(\frac{\hb \overline{\omega}}{\kB T}\right)^3
+\mathcal{D}=N\left(\frac{\hb \overline{\omega}}{\kB T}\right)^3
 \end{equation}
 
-\paragraph*{Effet des pertes}
+\paragraph*{Effet des collisions inélastiques}
 Effet des pertes sur l'évap. Etude du temps de vie, processus de chauffage via pointé et intensité.
 
 
