@@ -401,7 +401,7 @@ Dans cette partie, nous allons dans un premier temps présenter le fonctionnemen
 
 
 \subsection{Lois d'échelle du refroidissement évaporatif}
-Le but de l'étape de refroidissement évaporatif étant d'augmenter la densité dans l'espace des phases $\mathcal{D}=n \ldb^3$ afin de franchir le seuil de condensation, il est donc nécessaire que notre système présente de la dissipation. L'origine de celle-ci repose sur la profondeur finie des pièges utilisés.  
+Le but de l'étape de refroidissement évaporatif étant d'augmenter la densité dans l'espace des phases $\mathcal{D}=n \ldb^3$, aussi appelée \emph{paramètre de dégénérescence}, afin de franchir le seuil de condensation, il est donc nécessaire que notre système présente de la dissipation. L'origine de celle-ci repose sur la profondeur finie des pièges utilisés.  
 
 \paragraph*{Évaporation naturelle dans un piège de profondeur finie}
 Une conséquence de cette profondeur finie est que la fonction de partition $f(E)$ est tronquée à l'énergie $U$ correspondant à la profondeur du piège. Plus précisément, il a été montré que la fonction de partition est très proche d'une distribution de Boltzmann tronquée
@@ -424,7 +424,7 @@ Très rapidement, le temps d'évaporation $1/\Gamma_{\mathrm{ev}}$ excède le te
 
 
 \paragraph*{Lois d'échelle de l'évaporation forcée}
-Comme mentionné précédemment, la mise en œuvre pratique du refroidissement évaporatif se fait par le biais de la diminution de la profondeur du piège, forçant ainsi le processus d'évaporation. Cette opération est réalisée en continu, et à une vitesse suffisamment lente devant le temps de thermalisation $\tau_{\mathrm{th}}$ afin que le système soit constamment à l'équilibre thermodynamique\footnote{Dans ce cas, les seules pertes d'atomes considérées sont celles liées à l'évaporation par collisions élastiques. Cela revient à négliger la dynamique de l'évaporation, qui fait apparaître les pertes par déversement\citep{cohen1996atomes}. Celles-ci correspondent aux atomes ayant une énergie de $U-\delta E$ qui ne sont plus piégés lors de l'abaissement de la profondeur du piège de $U$ à $U-\mathrm{d}U$, avec $\mathrm{d}U > \delta E$.}. 
+Comme mentionné précédemment, la mise en œuvre pratique du refroidissement évaporatif se fait par le biais de la diminution de la profondeur du piège, forçant ainsi le processus d'évaporation. Cette opération est réalisée en continu, et à une vitesse suffisamment lente devant le temps de thermalisation $\tau_{\mathrm{th}}$ afin que le système soit constamment à l'équilibre thermodynamique\footnote{Dans ce cas, les seules pertes d'atomes considérées sont celles liées à l'évaporation par collisions élastiques. Cela revient à négliger la dynamique de l'évaporation, qui fait apparaître les pertes par déversement\citep{cohen1996atomes}. Celles-ci correspondent aux atomes ayant une énergie de $U-\delta E$ qui ne sont plus piégés lors de l'abaissement de la profondeur du piège de $U$ à $U-\mathrm{d}U$, avec $\mathrm{d}U > \delta E$. Dans le cas d'un gaz à l'équilibre thermodynamique, seule une infime partie des atomes se trouve dans cet intervalle d'énergie que l'on peut négliger devant les autres sources de pertes.}. 
 
 
 En particulier, définissons le paramètre de troncature $\eta$ comme le rapport entre la profondeur du piège et la température du gaz piégé:
@@ -439,7 +439,7 @@ Le potentiel de piégeage $U(\mathbf{x},t)$ étant modifié au cours de l'évapo
 \begin{equation}
 \nu=\frac{\dot{\overline{\omega}}/\overline{\omega}}{\dot{U}/U}
 \end{equation}
-où $\overline{\omega}$ est la moyenne géométrique des fréquences du piège. Comme explicité formule \ref{eq:frequences_piege_optique}, les fréquences de piégeage du piège optique évoluent en $\overline{\omega}\propto\sqrt{U}$, impliquant donc $\nu=1/2$ \citep{o2001scaling}. L'abaissement de la profondeur du piège sera donc forcément accompagnée d'une décompression de celui-ci. 
+où $\overline{\omega}$ est la moyenne géométrique des fréquences du piège. Comme explicité formule \ref{eq:frequences_piege_optique}, les fréquences de piégeage du piège optique évoluent en $\overline{\omega}\propto\sqrt{U}$, impliquant donc $\nu=0.5$ \citep{o2001scaling}. L'abaissement de la profondeur du piège sera donc forcément accompagnée d'une décompression de celui-ci. 
 
 
 
@@ -464,17 +464,65 @@ où le premier terme décrit la perte d'énergie liée à l'évaporation des ato
 
 En combinant les équations \ref{eq:variation_energie_derivee} et \ref{eq:variation_energie_bilan}, on montre alors que la variation du nombre d'atomes en fonction de la profondeur de piégeage est donnée par \citep{o2001scaling}:
 \begin{equation}
-\frac{N(t)}{N(t=0)}=\left( \frac{U(t)}{U(t=0)}\right)^{\frac{3(1-\nu)}{\eta'-3}} \text{ ,}
+\frac{\dot{N}}{N}={\frac{3(1-\nu)}{\eta'-3}} \frac{\dot{U}}{U} \text{ ,}
 \end{equation}
-avec $\eta'=\eta+\kappa$.
+avec $\eta'=\eta+\kappa$. Il est alors possible de déterminer les lois d'échelle des différentes grandeurs thermodynamiques d'un gaz classique. 
 
-
+En particulier, dans le cas d'un piège harmonique, la densité dans l'espace des phases s'exprime:
 \begin{equation}
-\mathcal{D}=N\left(\frac{\hb \overline{\omega}}{\kB T}\right)^3
+\mathcal{D}=N\left(\frac{\hb \overline{\omega}}{\kB T}\right)^3 \text{ .}
 \end{equation}
+On peut alors déterminer les variations du paramètre de dégénérescence en fonction des variations du nombre d'atomes: 
+\begin{equation}
+\frac{\dot{\mathcal{D}}}{\mathcal{D}} = -(\eta'-4) \frac{\dot{N}}{N} \text{ .}
+\label{eq:efficacite_evaporation}
+\end{equation}
+Le paramètre $\eta'-4 \equiv \gamma$ correspond à l'efficacité du processus d'évaporation: la perte d'atomes engendre un gain de densité dans l'espace des phases d'autant plus élevé que ce paramètre est grand. L'enjeu de l'optimisation du refroidissement évaporatif consiste donc à augmenter ce paramètre autant que possible.
+
+Une conséquence remarquable de l'équation \ref{eq:efficacite_evaporation} est que l'efficacité du processus d'évaporation ne dépend pas du paramètre $\nu$ témoignant du changement de forme du piège. Ceci s'explique par le fait que pour une évaporation à $\eta$ constant, le paramètre $\nu$ traduit une ouverture adiabatique du piège, la décompression du nuage étant accompagnée d'une diminution de la température, voir section \ref{sc:chambre_science}. 
+
+
+\paragraph*{Taux de collisions et régime d'emballement}
+Si l'équation \ref{eq:efficacite_evaporation} ne fait pas apparaître l'influence du paramètre $\nu$, celui-ci joue cependant un rôle primordial quant à la cinétique de l'évaporation. En effet, la vitesse maximale d'évaporation est limitée par la vitesse à laquelle le gaz atteint un état d'équilibre thermique, c'est à dire le taux de thermalisation $1/\tau_{\mathrm{th}}$. Celui-ci est de l'ordre du taux de collisions élastiques $\Gamma_{\mathrm{c}}=n \sigma \overline{v}$, avec $n$ la densité du gaz, $\sigma$ la section efficace de diffusion et $\overline{v}$ la vitesse moyenne relative entre deux atomes \citep{walraven2010elements}. 
+
+Dans le cas d'un piège harmonique, on montre que la loi de variation du taux de collisions élastiques peut s'écrire \citep{o2001scaling}
+\begin{equation}
+\frac{\dot{\Gamma}_{\mathrm{c}}}{\Gamma_{\mathrm{c}}}=\left[ 1- (\eta'-3) \left( \frac{1-3\nu}{3(1-\nu)}\right)\right] \frac{\dot{N}}{N} \text{ ,}
+\end{equation}
+où le facteur entre crochets peut changer de signe suivant la valeur de $\nu$. Ainsi, il est possible que le taux de collisions élastiques augmente au cours de l'évaporation malgré la perte d'atomes, rendant ainsi l'évaporation de plus en plus rapide. Dans ce régime d'\emph{emballement}, la diminution du nombre d'atomes et de leur vitesse relative est plus que compensée par une forte augmentation de la densité au centre du piège, augmentant ainsi le taux de collisions. Ce régime est atteint pour de faibles valeurs de $\nu$, en particulier pour notre piège magnétique où $\nu=0$. 
+
+En revanche, l'évaporation optique opère en abaissant la puissance des faisceaux laser, imposant donc $\nu=0.5$. Dans ce régime, le taux de collisions élastiques diminue au cours de l'évaporation, la rendant de plus en plus lente contrairement au régime d'emballement. Il est donc primordial qu'une évaporation optique commence avec un grand taux de collisions élastiques pour permettre une thermalisation rapide. De manière générale, une évaporation optique possède une première phase pendant laquelle la puissance des faisceaux laser est abaissée rapidement, la thermalisation du nuage étant immédiate grâce au grand taux de collisions, puis une seconde phase plus lente où la thermalisation du nuage nécessite plus de temps. 
+
+
+
+
 
 \paragraph*{Effet des collisions inélastiques}
-Effet des pertes sur l'évap. Etude du temps de vie, processus de chauffage via pointé et intensité.
+En pratique, l'évaporation des particules par collisions élastiques n'est pas la seule source de perte des particules. L'expérience se déroulant à l'intérieur d'une enceinte sous ultra-vide pompée en continu, les collisions avec les particules du gaz résiduel à température ambiante sont responsables de pertes indépendantes de l'énergie des atomes piégés. Cela se traduit par un temps de vie $1/\Gamma_{\mathrm{bg}}$ fini des atomes dans le piège.
+
+On peut alors écrire les pertes d'atomes liées au gaz résiduel sous la forme d'une équation de taux
+\begin{equation}
+\dot{N}_{\mathrm{bg}}=-\Gamma_{\mathrm{bg}} N \text{ ,}
+\end{equation}
+où le temps de vie $1/\Gamma_{\mathrm{bg}}$ est de l'ordre de \SI{10}{\second}. 
+
+Cas d'une évaporation rapide: l'évaporation est normal comme si le gaz résiduel n'avait aucun effet. à l'échelle de temps de l'évaporation, le gaz résiduel n'a pas eu le temps d'agir.
+
+Cas d'un évaporation lente: l'essentiel des pertes est due à l'extérieur et indépendante de l'énergie: on ne refroidit pas le gaz et on perd des atomes.
+
+
+
+
+Il existe un second type de pertes à haute densité, lié à la nature métastable des expériences d'atomes froids. Aux températures atteintes par les nuages piégés, tous les éléments devraient se trouver à l'état solide, mais la nature binaire des collisions élastiques permet au système de rester sous forme gazeuse. Cependant, il est possible que lors d'une collision tertiaire, deux atomes établissent une liaison moléculaire, dont la grande énergie est évacuée par le biais du troisième atome. Ce processus de pertes à trois corps conduit alors à la perte des trois atomes. 
+
+Ce mécanisme de pertes nécessite la collision entre trois atomes, il devient donc important dans des régions de fortes densités. On peut alors écrire la variation locale de densité due aux pertes à trois corps:
+\begin{equation}
+\dot{n}_{\mathrm{3b}}(\mathbf{x})=-K_{\mathrm{3b}} n^3(\mathbf{x}) \text{ ,}
+\end{equation}
+où le coefficient $K_{\mathrm{3b}}$ est une constante du \isotope[87]{Rb} et vaut \SI{1.8e-29}{\centi\metre^6\second^{-1}} \citep{burt1997coherence}\citep{soding1999three}.
+
+Les pièges optiques étant fortement comprimés afin d'avoir un taux de collisions suffisant pour pouvoir évaporer, ceux-ci sont particulièrement susceptibles de générer des pertes à trois corps. Sauf que nous visiblement en cours d'évap on en a pas.
+
 
 
 
