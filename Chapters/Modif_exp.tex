@@ -498,32 +498,34 @@ En revanche, l'évaporation optique opère en abaissant la puissance des faiscea
 
 
 \paragraph*{Effet des collisions inélastiques}
-En pratique, l'évaporation des particules par collisions élastiques n'est pas la seule source de perte des particules. L'expérience se déroulant à l'intérieur d'une enceinte sous ultra-vide pompée en continu, les collisions avec les particules du gaz résiduel à température ambiante sont responsables de pertes indépendantes de l'énergie des atomes piégés. Cela se traduit par un temps de vie $1/\Gamma_{\mathrm{bg}}$ fini des atomes dans le piège.
+En pratique, l'évaporation par collisions élastiques n'est pas la seule source de perte des particules. L'expérience se déroulant à l'intérieur d'une enceinte sous ultra-vide pompée en continu, les collisions avec les particules du gaz résiduel à température ambiante sont responsables de pertes indépendantes de l'énergie des atomes piégés. Cela se traduit par un temps de vie $1/\Gamma_{\mathrm{bg}}$ fini des atomes dans le piège.
 
-On peut alors écrire les pertes d'atomes liées au gaz résiduel sous la forme d'une équation de taux
-\begin{equation}
-\dot{N}_{\mathrm{bg}}=-\Gamma_{\mathrm{bg}} N \text{ ,}
-\end{equation}
+On peut alors écrire les pertes d'atomes liées au gaz résiduel sous la forme d'équations de taux
+\begin{align}
+\dot{N}_{\mathrm{bg}}&=-\Gamma_{\mathrm{bg}} N  \\
+\dot{E}_{\mathrm{bg}}&=-\Gamma_{\mathrm{bg}} E \text{ ,}
+\end{align}
 où le temps de vie $1/\Gamma_{\mathrm{bg}}$ est de l'ordre de \SI{10}{\second}. 
 
-Cas d'une évaporation rapide: l'évaporation est normal comme si le gaz résiduel n'avait aucun effet. à l'échelle de temps de l'évaporation, le gaz résiduel n'a pas eu le temps d'agir.
+Deux régimes limites se présentent alors. Dans le cas d'une évaporation rapide telle que $\Gamma_{\mathrm{ev}} \gg \Gamma_{\mathrm{bg}}$, l'essentiel des pertes d'atomes est dû au processus d'évaporation. La présence du gaz résiduel n'a donc que peu d'effet sur le nuage, l'évaporation pouvant se dérouler sur une durée petite devant le temps de vie des atomes dans le piège. 
 
-Cas d'un évaporation lente: l'essentiel des pertes est due à l'extérieur et indépendante de l'énergie: on ne refroidit pas le gaz et on perd des atomes.
-
-
+Au contraire, les pertes dues au gaz résiduel peuvent fortement entraver le processus d'évaporation dans le cas d'un petit temps de vie, dans le régime où $\Gamma_{\mathrm{ev}} \ll \Gamma_{\mathrm{bg}}$. Dans ces conditions, les atomes ne peuvent rester assez longtemps dans le piège pour que certains aient le temps d'acquérir une énergie suffisante pour être évaporés.
 
 
-Il existe un second type de pertes à haute densité, lié à la nature métastable des expériences d'atomes froids. Aux températures atteintes par les nuages piégés, tous les éléments devraient se trouver à l'état solide, mais la nature binaire des collisions élastiques permet au système de rester sous forme gazeuse. Cependant, il est possible que lors d'une collision tertiaire, deux atomes établissent une liaison moléculaire, dont la grande énergie est évacuée par le biais du troisième atome. Ce processus de pertes à trois corps conduit alors à la perte des trois atomes. 
 
-Ce mécanisme de pertes nécessite la collision entre trois atomes, il devient donc important dans des régions de fortes densités. On peut alors écrire la variation locale de densité due aux pertes à trois corps:
-\begin{equation}
-\dot{n}_{\mathrm{3b}}(\mathbf{x})=-K_{\mathrm{3b}} n^3(\mathbf{x}) \text{ ,}
-\end{equation}
+Le gaz résiduel n'est pas la seule source néfaste de perte d'atomes. Des processus complexes liés à la nature métastable des expériences d'atomes froids peuvent conduire à la perte de plusieurs atomes. Aux températures atteintes par les nuages piégés, la majorité des éléments devraient se trouver à l'état solide, mais le caractère binaire des collisions élastiques permet au système de rester sous forme gazeuse. Cependant, il est possible que lors d'une collision tertiaire, deux atomes établissent une liaison moléculaire, dont la grande énergie est évacuée par le biais d'un troisième atome. Ce processus de pertes à trois corps conduit alors à la perte des trois atomes. 
+
+Puisque ce mécanisme nécessite la collision de trois atomes, on peut décrire la variation de densité due aux pertes à trois corps ainsi que la variation de l'énergie totale à l'aide d'une loi de puissance:
+\begin{align}
+\dot{n}_{\mathrm{3b}}(\mathbf{x})&=-K_{\mathrm{3b}} n^3(\mathbf{x}) \label{eq:pertes_atomes_3corps} \\
+\dot{E}_{\mathrm{3b}}&= \frac{3}{2}\dot{N}_{\mathrm{3b}} \kB T + \int{\mathrm{d}\mathbf{x} \: U(\mathbf{x}) \dot{n}_{\mathrm{3b}}(\mathbf{x})}\text{ ,}
+\end{align}
 où le coefficient $K_{\mathrm{3b}}$ est une constante du \isotope[87]{Rb} et vaut \SI{1.8e-29}{\centi\metre^6\second^{-1}} \citep{burt1997coherence}\citep{soding1999three}.
 
-Les pièges optiques étant fortement comprimés afin d'avoir un taux de collisions suffisant pour pouvoir évaporer, ceux-ci sont particulièrement susceptibles de générer des pertes à trois corps. Sauf que nous visiblement en cours d'évap on en a pas.
 
+Comme illustré par l'équation \ref{eq:pertes_atomes_3corps}, le mécanisme de pertes à trois corps devient important dans des régions de fortes densités. Les pièges optiques étant fortement comprimés afin d'avoir un taux de collisions suffisant pour pouvoir évaporer, ceux-ci sont particulièrement susceptibles de générer des pertes à trois corps. 
 
+En présence de ces pertes, il est possible de modifier les lois d'échelles présentées précédemment \citep{luiten1996kinetic}\citep{brantut2009manipulation}. Cependant, nous verrons dans la section suivante que le modèle simple présenté permet de décrire correctement nos observations expérimentales.
 
 
 
