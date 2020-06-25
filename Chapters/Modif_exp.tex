@@ -361,7 +361,7 @@ La fréquence de piégeage de la pince a été mesurée suivant la direction ver
 
 La mesure de la fréquence de piégeage dans la direction $\vec{z}$, provenant du dimple, a été effectuée selon deux méthodes suivant la puissance du faisceau:
 \begin{itemize}
-\item[\textendash] À haute puissance, on pousse les atomes à l'aide d'un gradient magnétique provenant de bobines de compensation. Celles-ci peuvent pousser les atomes pendant de courts instants à l'aide d'un commutateur rapide.
+\item[\textendash] À haute puissance, les atomes sont poussés à l'aide d'un gradient magnétique provenant de bobines de compensation. Celles-ci peuvent exercer une force sur les atomes pendant de courts instants à l'aide d'un commutateur rapide.
 \item[\textendash] À plus basse puissance, le piège optique est décomprimé et peu profond grâce à la lévitation. Cependant, le piégeage de la lévitation peut arracher les atomes du piège optique, il est donc nécessaire de déplacer le centre de la lévitation magnétique à l'aide de champs de compensation. Pour pousser les atomes, on utilise alors les bobines de compensation dans leur configuration normale, et leur brève extinction conduit à accélérer les atomes en déplaçant le centre de la lévitation magnétique.
 \end{itemize}
 
@@ -530,5 +530,46 @@ En présence de ces pertes, il est possible de modifier les lois d'échelles pr�
 
 
 \subsection{Implémentation expérimentale}
-mesure de température, $\eta=10$
-optimisation de l'efficacité de l'evap, D en fonction de N, pente de 4 toussa toussa avec les graphe temporels
+Nous allons à présent détailler la manière dont cette étape d'évaporation est implémentée sur notre dispositif. La consigne présentée ici est le résultat d'une optimisation de l'efficacité de l'évaporation, encodée dans le paramètre $\gamma$. De plus, nous discuterons l'influence qu'a la lévitation magnétique lors de cette étape de refroidissement.
+
+
+\paragraph*{Mesure de la température d'un nuage lévité}
+La quantité thermodynamique permettant de témoigner du refroidissement du gaz au cours de l'évaporation correspond naturellement à sa température. De manière générale, celle-ci est estimée à l'aide d'une imagerie par \emph{temps de vol}. Son principe repose sur l'expansion libre du nuage après extinction du piège, expansion dont l'origine provient de la distribution des vitesses des atomes. Dans le cas d'un nuage thermique, la température est donnée par la largeur de la distribution des vitesses du gaz, qui est directement donnée par la taille du nuage après un temps d'expansion suffisamment long\footnote{La taille du nuage thermique évolue selon $\sigma_{\mathrm{i}}^2= \sigma_{\mathrm{i,0}}^2+ t^2 \kB T/m$, avec $T$ la température, $m$ la masse des atomes, $t$ le temps d'expansion libre et $\sigma_{\mathrm{i,0}}$ a taille du nuage à $t=0$. Pour $t$ suffisamment grand, on peut ainsi négliger la taille initiale du nuage.}.
+
+Cependant, pour des nuages particulièrement froids, les temps d'expansion requis pour estimer correctement la température du nuage peuvent dépasser le temps d'observation possible des atomes alors en mouvement de chute libre. L'utilisation de la lévitation magnétique pendant cette phase d'expansion permet de dépasser cette limite en compensant la gravité. Néanmoins, comme nous l'avons détaillé dans la section \ref{sc:oscillations_levitation}, l'utilisation de la lévitation magnétique conduit à un piégeage de l'état $\etatF{1}{-1}$ dans lequel nous souhaitons franchir le seuil de condensation.
+
+L'estimation de la température du nuage impose alors deux contraintes sur le temps d'expansion du nuage: 
+\begin{itemize}
+\item[\textendash] Celui-ci doit être suffisamment grand pour pouvoir négliger la taille initiale du nuage devant celle mesurée.
+\item[\textendash] Le temps d'expansion doit être suffisamment petit devant la période d'oscillation de la taille du nuage, liée au piégeage de la lévitation magnétique. De cette manière, l'expansion peut être considérée balistique.
+\end{itemize}
+Dans la configuration à bas champ de la lévitation magnétique, proche du biais magique $\magicB=\SI{3.2}{\gauss}$, les fréquences de piégeage sont particulièrement grandes et il n'est pas possible de satisfaire ces deux contraintes simultanément. 
+
+La méthode retenue par l'équipe pour obtenir une mesure correcte de la température du nuage repose sur la technique de \emph{focalisation atomique}. Celle-ci permet d'imager dans l'espace réel la distribution de vitesses à l'aide d'un potentiel harmonique, à l'instar d'une lentille en optique \citep{murthy2014matter}. Pour illustrer ces propos, considérons un ensemble d'atomes dont la distribution initiale des positions est de largeur $\Delta\mathrm{x}_{\mathrm{i,0}}$ dans la direction $\vec{i}$ et la distribution de vitesses est de largeur $\Delta\mathrm{v}_{\mathrm{i,0}}=\hb \Delta\mathrm{k}_{\mathrm{i,0}} /m$. Sous l'effet du potentiel harmonique, l'évolution temporelle de la largeur de la distribution de positions est donnée par
+\begin{equation}
+\Delta\mathrm{x}_{\mathrm{i}}(t)=\Delta\mathrm{x}_{\mathrm{i,0}} \cos(\omega_{\mathrm{i}} t) + \frac{\hb \Delta\mathrm{k}_{\mathrm{i,0}}}{m \omega_{\mathrm{i}}} \sin(\omega_{\mathrm{i}} t) \text{ .}
+\end{equation}
+En coupant le potentiel harmonique après un quart d'oscillation à $t=T_{\mathrm{osc}}/4$ avec $T_{\mathrm{osc}}= 2\pi/\omega_{\mathrm{i}}$ la période d'oscillation, la distribution de positions des atomes a une largeur donnée par
+\begin{equation}
+\Delta\mathrm{x}_{\mathrm{i}}(T_{\mathrm{osc}}/4)=\frac{\hb \Delta\mathrm{k}_{\mathrm{i,0}}}{m \omega} \text{ ,}
+\end{equation}
+indépendante de la distribution initiale des positions des atomes. À l'aide de la distribution thermique des vitesses, on déduit
+\begin{equation}
+T=\frac{m \omega_{\mathrm{i}}^2 \Delta \mathrm{x}_{\mathrm{i}}^2(T_{\mathrm{osc}}/4)}{\kB}
+\end{equation}
+
+Cette mesure de la température est donc indépendante de la taille initiale du nuage, contrairement à la mesure par temps de vol qui nécessite une longue expansion pour s'affranchir de l'influence de la taille initiale. Une seconde différence entre ces méthodes réside dans le fait que le temps d'expansion par focalisation atomique n'est plus ajustable. 
+
+Notons que dans la configuration magnétique choisie, le piégeage vertical est négligeable devant celui des directions horizontales. En considérant que l'expansion du nuage est balistique suivant la direction verticale, la valeur de la température obtenue est en accord avec les valeurs extraites par focalisation atomique suivant les deux directions horizontales.
+
+\paragraph*{Consigne d'évaporation}
+\paragraph*{Efficacité de l'évaporation}
+\paragraph*{Effet des pertes}
+\paragraph*{Nuage final}
+Résultats du condensat sans ouverture adiabatique: beaucoup d'atomes à 10nK. Avec ouverture adiabatique au bon moment, déplacement de la platine de $\SI{4.5}{\milli\metre}\approx 2 z_{\mathrm{r}}$, on divise la température par 2 (fréquences divisées par 2).
+
+
+
+
+
+influence de la lévitation: température limite en présence de la gravité \SI{250}{\nano\kelvin}

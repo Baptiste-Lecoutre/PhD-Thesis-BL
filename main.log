@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  24 JUN 2020 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  25 JUN 2020 18:22
 entering extended mode
 **./main.tex
 (main.tex
@@ -1581,7 +1581,14 @@ t line 523.
 Package natbib Warning: Citation `brantut2009manipulation' on page 19 undefined
  on input line 528.
 
-) (main.bbl [19] [20]
+[19]
+
+Package natbib Warning: Citation `murthy2014matter' on page 20 undefined on inp
+ut line 548.
+
+[20]) (main.bbl [21] [22
+
+]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
 1.
 
@@ -1593,13 +1600,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[21
-
-])
+[23])
 
 Package natbib Warning: There were undefined citations.
 
-[22]
+[24]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (main.aux)
@@ -1612,11 +1617,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29731 strings out of 480934
- 564890 string characters out of 2899917
+ 29752 strings out of 480934
+ 565116 string characters out of 2899917
  949339 words of memory out of 3000000
  44605 multiletter control sequences out of 15000+200000
- 692439 words of font info for 239 fonts, out of 3000000 for 9000
+ 692910 words of font info for 244 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,1590b,1125s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
@@ -1650,9 +1655,9 @@ b><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8
 sy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
 /lmtt10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (22 pages, 6148046 bytes).
+Output written on main.pdf (24 pages, 6159396 bytes).
 PDF statistics:
- 1062 PDF objects out of 1200 (max. 8388607)
- 109 named destinations out of 1000 (max. 500000)
+ 1082 PDF objects out of 1200 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
  60069 words of extra memory for PDF output out of 61914 (max. 10000000)
 
