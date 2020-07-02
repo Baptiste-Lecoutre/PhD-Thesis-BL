@@ -401,6 +401,7 @@ Dans cette partie, nous allons dans un premier temps présenter le fonctionnemen
 
 
 \subsection{Lois d'échelle du refroidissement évaporatif}
+\label{sc:scaling_laws_ohara}
 Le but de l'étape de refroidissement évaporatif étant d'augmenter la densité dans l'espace des phases $\mathcal{D}=n \ldb^3$, aussi appelée \emph{paramètre de dégénérescence}, afin de franchir le seuil de condensation, il est donc nécessaire que notre système présente de la dissipation. L'origine de celle-ci repose sur la profondeur finie des pièges utilisés.  
 
 \paragraph*{Évaporation naturelle dans un piège de profondeur finie}
@@ -533,10 +534,47 @@ En présence de ces pertes, il est possible de modifier les lois d'échelles pr�
 Nous allons à présent détailler la manière dont cette étape d'évaporation est implémentée sur notre dispositif. La consigne présentée ici est le résultat d'une optimisation de l'efficacité de l'évaporation, encodée dans le paramètre $\gamma$. De plus, nous discuterons l'influence qu'a la lévitation magnétique lors de cette étape de refroidissement.
 
 
+
+\paragraph*{Consigne d'évaporation}
+Les lois d'échelle présentées dans la section précédente montrent comment évoluent les différentes grandeurs thermodynamiques du nuage en fonction de la profondeur du piège, sans pour autant spécifier la dépendance temporelle de celle-ci. Afin de déterminer le profil optimal de la consigne d'évaporation, il est possible d'établir un bilan du nombre d'atomes présents dans le piège\footnote{Les lois d'échelle présentées dans la section précédente ont été obtenues à l'aide d'un bilan d'énergie.}.
+En considérant que les atomes sont uniquement perdus par évaporation, on peut écrire les variations du nombre d'atomes à l'aide d'une équation de taux \citep{luiten1996kinetic}\citep{o2001scaling}
+\begin{equation}
+\dot{N} = - \Gamma_{\mathrm{ev}} N \quad \text{avec} \quad \Gamma_{\mathrm{ev}}=2(\eta-4) e^{-\eta} \Gamma_{\mathrm{c}} \text{ .}
+\end{equation}
+
+On peut alors déterminer que le profil optimal de la consigne d'évaporation est aussi donné par une loi de puissance
+\begin{equation}
+U(t)=U_{\mathrm{0}} {\left( 1+\frac{t}{\tau}\right) }^{-\beta} \text{ ,}
+\label{eq:nouvelle_consigne_evap}
+\end{equation}
+avec $U_{\mathrm{0}}=U(t=0)$ la profondeur initiale de chaque faisceau au début de l'étape d'évaporation. L'optimisation de cette étape sur notre nuage nous a permit de déterminer les paramètres $\beta_{\mathrm{pince}}=\beta_{\mathrm{dimple}}=6$, $\tau_{\mathrm{pince}}=\SI{1.2}{\second}$ et $\tau_{\mathrm{dimple}}=\SI{1.3}{\second}$, dont le profil est comparé à l'ancienne consigne composée de morceaux de rampes linéaires figure \ref{fig:comparaison_consigne_evap}.
+
+
+
+\begin{figure}
+\centering
+
+\caption{\textbf{Comparaison de la nouvelle consigne d'évaporation du piège optique.} L'ancienne consigne, composée de cinq morceaux de rampe linéaire, est représentée . La nouvelle consigne, donnée par l'équation \ref{eq:nouvelle_consigne_evap} et représentée, possède une décroissance plus rapide que dans le cas de l'ancienne consigne, et permet d'obtenir un condensat de Bose-Einstein plus rapidement.}
+\label{fig:comparaison_consigne_evap}
+\end{figure}
+
+On remarque que la nouvelle consigne appliquée est de forme similaire à l'ancienne et possède deux dynamiques distinctes. Comme annoncé dans la section \ref{sc:scaling_laws_ohara}, l'évaporation est dans un premier temps rapide afin de profiter du grand taux de collisions élastiques, puis dans un second temps, la consigne est lentement abaissée en raison de l'augmentation du temps de thermalisation. 
+
+Notons tout de même la principale différence entre ces courbes. Par construction, la formule \ref{eq:nouvelle_consigne_evap} permet de mieux tirer parti du processus d'évaporation naturelle. Il est alors possible d'effectuer une évaporation plus rapide, réduisant l'impact de la durée de vie finie des atomes par collisions avec le gaz résiduel\footnote{Dans le cadre d'une évaporation à $\eta$ constant, le taux de pertes à trois corps ne dépend pas de la vitesse à laquelle l'évaporation est effectuée.}.
+ 
+
+
+
+
+
+
+
+
+
 \paragraph*{Mesure de la température d'un nuage lévité}
 La quantité thermodynamique permettant de témoigner du refroidissement du gaz au cours de l'évaporation correspond naturellement à sa température. De manière générale, celle-ci est estimée à l'aide d'une imagerie par \emph{temps de vol}. Son principe repose sur l'expansion libre du nuage après extinction du piège, expansion dont l'origine provient de la distribution des vitesses des atomes. Dans le cas d'un nuage thermique, la température est donnée par la largeur de la distribution des vitesses du gaz, qui est directement donnée par la taille du nuage après un temps d'expansion suffisamment long\footnote{La taille du nuage thermique évolue selon $\sigma_{\mathrm{i}}^2= \sigma_{\mathrm{i,0}}^2+ t^2 \kB T/m$, avec $T$ la température, $m$ la masse des atomes, $t$ le temps d'expansion libre et $\sigma_{\mathrm{i,0}}$ a taille du nuage à $t=0$. Pour $t$ suffisamment grand, on peut ainsi négliger la taille initiale du nuage.}.
 
-Cependant, pour des nuages particulièrement froids, les temps d'expansion requis pour estimer correctement la température du nuage peuvent dépasser le temps d'observation possible des atomes alors en mouvement de chute libre. L'utilisation de la lévitation magnétique pendant cette phase d'expansion permet de dépasser cette limite en compensant la gravité. Néanmoins, comme nous l'avons détaillé dans la section \ref{sc:oscillations_levitation}, l'utilisation de la lévitation magnétique conduit à un piégeage de l'état $\etatF{1}{-1}$ dans lequel nous souhaitons franchir le seuil de condensation.
+Cependant, pour des nuages particulièrement froids, les temps d'expansion requis pour estimer correctement la température du nuage peuvent dépasser le temps d'observation possible des atomes alors en mouvement de chute libre. L'utilisation de la lévitation magnétique pendant cette phase d'expansion permet de dépasser cette limite en compensant la gravité\footnote{Un second intérêt de la lévitation magnétique est de supprimer l'influence de la gravité lors de l'évaporation. La pesanteur a pour effet de \textit{pencher} le potentiel, pouvant changer la dimensionnalité de l'évaporation \citep{boyer2000condensation}, mais aussi limiter la profondeur du piège optique à environ $U/\kB \sim \SI{2.5}{\micro\kelvin}$ pour laquelle la gradient maximal d'intensité lumineuse ne permet plus de compenser le poids des atomes.}. Néanmoins, comme nous l'avons détaillé dans la section \ref{sc:oscillations_levitation}, l'utilisation de la lévitation magnétique conduit à un piégeage de l'état $\etatF{1}{-1}$ dans lequel nous souhaitons franchir le seuil de condensation.
 
 L'estimation de la température du nuage impose alors deux contraintes sur le temps d'expansion du nuage: 
 \begin{itemize}
@@ -547,11 +585,11 @@ Dans la configuration à bas champ de la lévitation magnétique, proche du biai
 
 La méthode retenue par l'équipe pour obtenir une mesure correcte de la température du nuage repose sur la technique de \emph{focalisation atomique}. Celle-ci permet d'imager dans l'espace réel la distribution de vitesses à l'aide d'un potentiel harmonique, à l'instar d'une lentille en optique \citep{murthy2014matter}. Pour illustrer ces propos, considérons un ensemble d'atomes dont la distribution initiale des positions est de largeur $\Delta\mathrm{x}_{\mathrm{i,0}}$ dans la direction $\vec{i}$ et la distribution de vitesses est de largeur $\Delta\mathrm{v}_{\mathrm{i,0}}=\hb \Delta\mathrm{k}_{\mathrm{i,0}} /m$. Sous l'effet du potentiel harmonique, l'évolution temporelle de la largeur de la distribution de positions est donnée par
 \begin{equation}
-\Delta\mathrm{x}_{\mathrm{i}}(t)=\Delta\mathrm{x}_{\mathrm{i,0}} \cos(\omega_{\mathrm{i}} t) + \frac{\hb \Delta\mathrm{k}_{\mathrm{i,0}}}{m \omega_{\mathrm{i}}} \sin(\omega_{\mathrm{i}} t) \text{ .}
+\Delta\mathrm{x}_{\mathrm{i}}^2(t)=\Delta\mathrm{x}_{\mathrm{i,0}}^2 \cos^2(\omega_{\mathrm{i}} t) + \frac{\hb^2 \Delta\mathrm{k}_{\mathrm{i,0}}^2}{m^2 \omega_{\mathrm{i}}^2} \sin^2(\omega_{\mathrm{i}} t) \text{ .}
 \end{equation}
 En coupant le potentiel harmonique après un quart d'oscillation à $t=T_{\mathrm{osc}}/4$ avec $T_{\mathrm{osc}}= 2\pi/\omega_{\mathrm{i}}$ la période d'oscillation, la distribution de positions des atomes a une largeur donnée par
 \begin{equation}
-\Delta\mathrm{x}_{\mathrm{i}}(T_{\mathrm{osc}}/4)=\frac{\hb \Delta\mathrm{k}_{\mathrm{i,0}}}{m \omega} \text{ ,}
+\Delta\mathrm{x}_{\mathrm{i}}(T_{\mathrm{osc}}/4)=\left|\frac{\hb \Delta\mathrm{k}_{\mathrm{i,0}}}{m \omega}\right| \text{ ,}
 \end{equation}
 indépendante de la distribution initiale des positions des atomes. À l'aide de la distribution thermique des vitesses, on déduit
 \begin{equation}
@@ -562,11 +600,26 @@ Cette mesure de la température est donc indépendante de la taille initiale du 
 
 Notons que dans la configuration magnétique choisie, le piégeage vertical est négligeable devant celui des directions horizontales. En considérant que l'expansion du nuage est balistique suivant la direction verticale, la valeur de la température obtenue est en accord avec les valeurs extraites par focalisation atomique suivant les deux directions horizontales.
 
-\paragraph*{Consigne d'évaporation}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Modif_exp/focalisation_atomique.pdf}
+\caption{\textbf{a: Principe de la focalisation atomique.} L'évolution temporelle d'un nuage dans l'espace des phases est une rotation autour de l'origine. À $t=T_{\mathrm{osc}}/4$, la fonction de partition a subi une rotation de $-\pi/2$. On peut ainsi mesurer la distribution initiale d'impulsion par une mesure de densité atomique dans l'espace réel. \textbf{b: Évolution temporelle de la taille du nuage dans la champ de lévitation.} Le piégeage étant quasi-nul dans la direction verticale, le nuage s'étend de manière balistique (points rouges). Dans la direction horizontale, le nuage subit l'effet de piégeage harmonique de la lévitation magnétique et sa taille oscille à une fréquence correspondant au double de la fréquence de piégeage (points bleus). Pour un temps de vol d'environ \SI{45}{\milli\second}, le nuage atteint sa taille maximale représentative de la distribution initiale d'impulsion. Cette valeur est en accord avec la fréquence de piégeage estimée à environ \SI{5}{\hertz}. On remarque de plus que l'expansion du nuage est isotrope à temps court.}
+\label{fig:focalisation_atomique}
+\end{figure}
+
+
+
+
 \paragraph*{Efficacité de l'évaporation}
-\paragraph*{Effet des pertes}
-\paragraph*{Nuage final}
 Résultats du condensat sans ouverture adiabatique: beaucoup d'atomes à 10nK. Avec ouverture adiabatique au bon moment, déplacement de la platine de $\SI{4.5}{\milli\metre}\approx 2 z_{\mathrm{r}}$, on divise la température par 2 (fréquences divisées par 2).
+
+
+
+\paragraph*{Étude des pertes}
+Temps de vie des atomes lié au gaz: $1/\Gamma_{\mathrm{bg}}\approx\SI{10}{\second}$.
+
+
+
 
 
 

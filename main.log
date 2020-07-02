@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  25 JUN 2020 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  2 JUL 2020 20:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -1566,29 +1566,38 @@ sed on input line 372.
  [14] [15 <./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf>] [16] [17]
 
 LaTeX Warning: Reference `sc:chambre_science' on page 18 undefined on input lin
-e 482.
+e 483.
 
 [18]
 
 Package natbib Warning: Citation `burt1997coherence' on page 19 undefined on in
-put line 523.
+put line 524.
 
 
 Package natbib Warning: Citation `soding1999three' on page 19 undefined on inpu
-t line 523.
+t line 524.
 
 
 Package natbib Warning: Citation `brantut2009manipulation' on page 19 undefined
- on input line 528.
+ on input line 529.
 
-[19]
+[19] [20]
 
-Package natbib Warning: Citation `murthy2014matter' on page 20 undefined on inp
-ut line 548.
+Package natbib Warning: Citation `boyer2000condensation' on page 21 undefined o
+n input line 577.
 
-[20]) (main.bbl [21] [22
 
-]
+Package natbib Warning: Citation `murthy2014matter' on page 21 undefined on inp
+ut line 586.
+
+[21]
+<Fig/Modif_exp/focalisation_atomique.pdf, id=933, 512.08612pt x 209.60849pt>
+File: Fig/Modif_exp/focalisation_atomique.pdf Graphic file (type pdf)
+<use Fig/Modif_exp/focalisation_atomique.pdf>
+Package pdftex.def Info: Fig/Modif_exp/focalisation_atomique.pdf  used on input
+ line 605.
+(pdftex.def)             Requested size: 426.79135pt x 174.701pt.
+) (main.bbl [22 <./Fig/Modif_exp/focalisation_atomique.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
 1.
 
@@ -1600,7 +1609,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[23])
+[23
+
+])
 
 Package natbib Warning: There were undefined citations.
 
@@ -1614,50 +1625,54 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29752 strings out of 480934
- 565116 string characters out of 2899917
- 949339 words of memory out of 3000000
- 44605 multiletter control sequences out of 15000+200000
- 692910 words of font info for 244 fonts, out of 3000000 for 9000
+ 29784 strings out of 480934
+ 565787 string characters out of 2899917
+ 950983 words of memory out of 3000000
+ 44620 multiletter control sequences out of 15000+200000
+ 696913 words of font info for 250 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,1590b,1125s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
-c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathi
-t.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
-athsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
-lm-ts1.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
+c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
+nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
+it.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
+mathsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
 /lm-rm.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
 /lm-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmbxi10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/lecou/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/lecou/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/lecou/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/lecou
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Users/le
-cou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/User
-s/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C
-:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pf
-b><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8
+1/public/lm/lmbx9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmbxi10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/lecou/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/lecou/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/lecou/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/le
+cou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Users
+/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/U
+sers/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb
+><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10
 .pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-sy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmtt10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (24 pages, 6159396 bytes).
+sy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
+/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmtt10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (24 pages, 6237346 bytes).
 PDF statistics:
- 1082 PDF objects out of 1200 (max. 8388607)
- 120 named destinations out of 1000 (max. 500000)
- 60069 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1155 PDF objects out of 1200 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
+ 61610 words of extra memory for PDF output out of 61914 (max. 10000000)
 
