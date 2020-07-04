@@ -417,7 +417,7 @@ En effet, la collision élastique de deux particules permet de transférer de l'
 
 Ce processus étant le plus probable pour des particules de grandes énergies, celui-ci favorise l'accumulation des particules dans les états de basse énergie tandis qu'il dépeuple les états de grande énergie. Ce raisonnement permet d'expliquer de manière qualitative la forme de la fonction de partition \ref{eq:fonction_partition}, qui favorise les états de basse énergie.
 
-Ce phénomène d'\emph{évaporation naturelle} conduit donc à une diminution de la température, dont l'efficacité décroît avec le temps. En effet, l'énergie moyenne par particule diminuant, la probabilité que des particules acquièrent suffisamment d'énergie pour s'échapper du piège décroît exponentiellement \citep{walraven2010elements}. Ainsi, le processus d'évaporation naturelle est fortement ralenti et le taux d'évaporation, c'est à dire le nombre de particules expulsées du piège par évaporation naturelle par unité de temps, peut être estimé par $\Gamma_{\mathrm{ev}}\sim e^{-U/\kB T} \Gamma_{\mathrm{c}}$, avec $\Gamma_{\mathrm{c}}$ le taux de collisions élastiques.
+Ce phénomène d'\emph{évaporation naturelle} conduit donc à une diminution de la température, dont l'efficacité décroît avec le temps. En effet, l'énergie moyenne par particule diminuant, la probabilité que des particules acquièrent suffisamment d'énergie pour s'échapper du piège décroît exponentiellement \citep{walraven2010elements}. Ainsi, le processus d'évaporation naturelle est fortement ralenti et le taux d'évaporation, c'est à dire le nombre de particules expulsées du piège par évaporation naturelle par unité de temps, peut être estimé par $\Gamma_{\mathrm{ev}}\sim e^{-U/\kB T} \Gamma_{\mathrm{c}}$, avec $\Gamma_{\mathrm{c}}$ le taux de collisions élastiques (voir équation \ref{eq:pertes_evap_naturelle}).
 
 Très rapidement, le temps d'évaporation $1/\Gamma_{\mathrm{ev}}$ excède le temps de vie des atomes dans le piège et ceux-ci sont perdus par des collisions inélastiques. Afin de dépasser cette limitation et de garder une évaporation efficace, la technique expérimentale développée afin d'obtenir les premiers condensats de Bose-Einstein consiste à abaisser progressivement la profondeur du piège $U$. On parle alors d'\emph{évaporation forcée}.
 
@@ -467,6 +467,7 @@ où le premier terme décrit la perte d'énergie liée à l'évaporation des ato
 En combinant les équations \ref{eq:variation_energie_derivee} et \ref{eq:variation_energie_bilan}, on montre alors que la variation du nombre d'atomes en fonction de la profondeur de piégeage est donnée par \citep{o2001scaling}:
 \begin{equation}
 \frac{\dot{N}}{N}={\frac{3(1-\nu)}{\eta'-3}} \frac{\dot{U}}{U} \text{ ,}
+\label{eq:nombre_atome_evap}
 \end{equation}
 avec $\eta'=\eta+\kappa$. Il est alors possible de déterminer les lois d'échelle des différentes grandeurs thermodynamiques d'un gaz classique. 
 
@@ -527,8 +528,12 @@ où le coefficient $K_{\mathrm{3b}}$ est une constante du \isotope[87]{Rb} et va
 
 Comme illustré par l'équation \ref{eq:pertes_atomes_3corps}, le mécanisme de pertes à trois corps devient important dans des régions de fortes densités. Les pièges optiques étant fortement comprimés afin d'avoir un taux de collisions suffisant pour pouvoir évaporer, ceux-ci sont particulièrement susceptibles de générer des pertes à trois corps. 
 
-En présence de ces pertes, il est possible de modifier les lois d'échelles présentées précédemment \citep{luiten1996kinetic}\citep{brantut2009manipulation}. Cependant, nous verrons dans la section suivante que le modèle simple présenté permet de décrire correctement nos observations expérimentales.
-
+En présence de ces pertes, il est possible de modifier les lois d'échelles présentées précédemment \citep{luiten1996kinetic}\citep{brantut2009manipulation}. En particulier, on peut montrer que dans le cas d'un piège harmonique profond, l'équation \ref{eq:nombre_atome_evap} régissant l'évolution du nombre d'atomes se généralise en
+\begin{equation}
+\frac{\dot{N}}{N}= \left( \frac{\eta'-3}{3(1-\nu)} + R \frac{2-\eta'}{3(1-\nu)} \right)^{-1} \frac{\dot{U}}{U} \text{ ,}
+\label{eq:scaling_atomes_3corps}
+\end{equation}
+où $R=\dot{N}_{\mathrm{3b}}/\dot{N}_{\mathrm{tot}}$ est la fraction d'atomes perdus par collisions à trois corps. 
 
 
 \subsection{Implémentation expérimentale}
@@ -541,6 +546,7 @@ Les lois d'échelle présentées dans la section précédente montrent comment �
 En considérant que les atomes sont uniquement perdus par évaporation, on peut écrire les variations du nombre d'atomes à l'aide d'une équation de taux \citep{luiten1996kinetic}\citep{o2001scaling}
 \begin{equation}
 \dot{N} = - \Gamma_{\mathrm{ev}} N \quad \text{avec} \quad \Gamma_{\mathrm{ev}}=2(\eta-4) e^{-\eta} \Gamma_{\mathrm{c}} \text{ .}
+\label{eq:pertes_evap_naturelle}
 \end{equation}
 
 On peut alors déterminer que le profil optimal de la consigne d'évaporation est aussi donné par une loi de puissance
@@ -626,9 +632,25 @@ Nous pouvons alors comparer la température du nuage à la profondeur du piège,
 
 
 
-\paragraph*{Efficacité de l'évaporation}
+\paragraph*{Résultats de l'optimisation de l'évaporation}
 
 Cette étude est limitée aux premières \SI{700}{\milli\second} de l'évaporation, correspondant au temps nécessaire pour franchir le seuil $\mathcal{D}\approx 1$ de l'obtention d'un gaz dégénéré.
+
+
+
+Evolution de du nombre d'atomes au cours de l'évaporation. On peut évaluer la fraction de pertes à trois corps en calculant la perte totales d'atomes et le taux de pertes à trois corps, obtenu par une mesure de la densité au centre du nuage. On obtient R de l'ordre de 0.1. On compare la prédiction de l'équation \ref{eq:scaling_atomes_3corps} avec $\eta=10$, qui fournit un bon accord avec les données. 
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{Fig/modif_exp/Nombre_atomes_evap.pdf}
+\caption{\textbf{Évolution du nombre d'atomes au cours de l'évaporation.} Points bleus = mesures, ligne noire = prédiction de la loi d'échelle \ref{eq:scaling_atomes_3corps} où le seul paramètre ajustable est le nombre d'atomes initial.}
+\label{fig:nombre_atomes_evap}
+\end{figure}
+
+
+
 
 
 
@@ -639,6 +661,9 @@ Cette étude est limitée aux premières \SI{700}{\milli\second} de l'évaporati
 \caption{\textbf{Efficacité de l'évaporation optique.} En traçant la densité dans l'espace des phases du nuage en fonction du nombre d'atomes, on peut évaluer l'efficacité du refroidissement évaporatif. La nouvelle consigne d'évaporation permet d'obtenir les points bleus pour différents temps d'évaporation, tandis que l'ancienne consigne est représentée en rouge. Les lignes continues sont des ajustements des données expérimentales par des lois de puissance \ref{eq:efficacite_evaporation}, qui permettent ainsi d'extraire le paramètre $\gamma$ quantifiant l'efficacité de l'évaporation.}
 \label{fig:efficacité_évaporation_optique}
 \end{figure}
+
+
+
 
 Résultats du condensat sans ouverture adiabatique: beaucoup d'atomes à 10nK. Avec ouverture adiabatique au bon moment, déplacement de la platine de $\SI{4.5}{\milli\metre}\approx 2 z_{\mathrm{r}}$, on divise la température par 2 (fréquences divisées par 2).
 
