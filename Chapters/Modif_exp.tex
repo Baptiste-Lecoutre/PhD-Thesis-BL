@@ -462,7 +462,7 @@ En identifiant les différentes sources de variations de l'énergie totale, on m
 \dot{E}=\dot{N}(U+\kappa \kB T) +\nu\frac{\dot{U}}{U}E \text{ ,}
 \label{eq:variation_energie_bilan}
 \end{equation}
-où le premier terme décrit la perte d'énergie liée à l'évaporation des atomes énergétiques et le second terme décrit le changement d'énergie potentielle des particules restées dans le piège.
+où le premier terme décrit la perte d'énergie liée à l'évaporation des atomes énergétiques et le second terme décrit le changement d'énergie potentielle des particules restées dans le piège. Dans le cas d'une évaporation 3D, $\kappa=3/2$ \citep{ketterle1996evaporative}.
 
 En combinant les équations \ref{eq:variation_energie_derivee} et \ref{eq:variation_energie_bilan}, on montre alors que la variation du nombre d'atomes en fonction de la profondeur de piégeage est donnée par \citep{o2001scaling}:
 \begin{equation}
@@ -533,7 +533,12 @@ En présence de ces pertes, il est possible de modifier les lois d'échelles pr�
 \frac{\dot{N}}{N}= \left( \frac{\eta'-3}{3(1-\nu)} + R \frac{2-\eta'}{3(1-\nu)} \right)^{-1} \frac{\dot{U}}{U} \text{ ,}
 \label{eq:scaling_atomes_3corps}
 \end{equation}
-où $R=\dot{N}_{\mathrm{3b}}/\dot{N}_{\mathrm{tot}}$ est la fraction d'atomes perdus par collisions à trois corps. 
+où $R=\dot{N}_{\mathrm{3b}}/\dot{N}_{\mathrm{tot}}$ est la fraction d'atomes perdus par collisions à trois corps. De même, l'équation \ref{eq:efficacite_evaporation} devient
+\begin{equation}
+\frac{\dot{\mathcal{D}}}{\mathcal{D}}=-\gamma \frac{\dot{N}}{N} \quad \text{avec} \quad \gamma=\eta'-4 + R(2-\eta') \text{ ,}
+\label{eq:efficacite_evap_3corps}
+\end{equation}
+témoignant ainsi de la réduction de l'efficacité de l'évaporation par les pertes à trois corps.
 
 
 \subsection{Implémentation expérimentale}
@@ -633,45 +638,38 @@ Nous pouvons alors comparer la température du nuage à la profondeur du piège,
 
 
 \paragraph*{Résultats de l'optimisation de l'évaporation}
+L'évolution du nombre d'atomes au cours de l'évaporation présente un intérêt particulier car celle-ci contient les informations liées aux processus inélastiques.
 
-Cette étude est limitée aux premières \SI{700}{\milli\second} de l'évaporation, correspondant au temps nécessaire pour franchir le seuil $\mathcal{D}\approx 1$ de l'obtention d'un gaz dégénéré.
+En particulier, il est possible de mesurer la densité atomique du nuage au cours de l'évaporation, et ainsi d'évaluer les pertes à trois corps à l'aide de la formule \ref{eq:pertes_atomes_3corps}. En comparant ces pertes aux variations mesurées du nombre d'atomes, on obtient un rapport $R$ de l'ordre de 0.1. Il apparaît donc que les pertes à trois corps ont un effet marqué sur la cinétique de l'évaporation, mais que celles-ci ne constituent pas une limite pour notre système. 
 
+De plus, il est possible de négliger l'effet des pertes due aux collisions avec le gaz résiduel, limitant le temps de vie des atomes dans le piège à $1/\Gamma_{\mathrm{bg}}\approx\SI{10}{\second}$. En effet, l'optimisation de notre évaporation se concentre sur les premières \SI{700}{\milli\second} d'abaissement de la profondeur du piège\footnote{Cette durée correspond au temps nécessaire pour franchir le seuil de condensation $\mathcal{D}\approx 1$ et l'obtention d'un gaz dégénéré. Celle-ci était d'environ \SI{1.2}{\second} avec l'ancienne consigne.} comme illustré sur les figures \ref{fig:eta_constant} et \ref{fig:nombre_atomes_evap}, et la durée totale de notre évaporation est de \SI{3.5}{\second}, courte comparée au temps de vie permis par le gaz résiduel.
 
-
-Evolution de du nombre d'atomes au cours de l'évaporation. On peut évaluer la fraction de pertes à trois corps en calculant la perte totales d'atomes et le taux de pertes à trois corps, obtenu par une mesure de la densité au centre du nuage. On obtient R de l'ordre de 0.1. On compare la prédiction de l'équation \ref{eq:scaling_atomes_3corps} avec $\eta=10$, qui fournit un bon accord avec les données. 
-
+L'évolution du nombre d'atomes au cours de l'évaporation est représentée figure \ref{fig:nombre_atomes_evap} et est comparée à la prédiction de la loi d'échelle \ref{eq:scaling_atomes_3corps}, tracée avec les paramètres $\eta=10$ et $R=0.1$, extraits de la mesure de température et du nombre d'atomes. En ajustant uniquement le nombre d'atomes initial du modèle, il apparaît que la théorie d'échelle permet de décrire correctement l'évolution du nombre d'atomes. 
 
 
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{Fig/modif_exp/Nombre_atomes_evap.pdf}
-\caption{\textbf{Évolution du nombre d'atomes au cours de l'évaporation.} Points bleus = mesures, ligne noire = prédiction de la loi d'échelle \ref{eq:scaling_atomes_3corps} où le seul paramètre ajustable est le nombre d'atomes initial.}
+\caption{\textbf{Évolution du nombre d'atomes au cours de l'évaporation.} Les points bleus correspondent aux mesures expérimentales du nombre d'atomes, chaque point étant issu d'un unique cycle expérimental. La ligne continue noire correspond à la prédiction de la loi d'échelle \ref{eq:scaling_atomes_3corps} avec les paramètres $\eta=10$ et $R=0.1$, et où le seul paramètre ajustable est le nombre d'atomes initial. Il apparaît alors un très bon accord entre les données et le modèle.}
 \label{fig:nombre_atomes_evap}
 \end{figure}
 
+Enfin, rappelons que l'optimisation de l'évaporation est réalisée en maximisant le gain de densité dans l'espace des phases par atome perdu, donné par le paramètre $\gamma$ en présence de pertes à trois corps (voir la formule \ref{eq:efficacite_evap_3corps}. 
 
+L'évolution de la densité dans l'espace des phases en fonction du nombre d'atomes est représentée figure \ref{fig:efficacite_evaporation_optique} en échelle \emph{log-log} pour dans le cas de notre nouvelle consigne (en bleu) ainsi que pour notre ancienne consigne (en bordeaux). La comparaison est immédiate: la nouvelle consigne permet d'atteindre le seuil de condensation $\mathcal{D}\approx 1$ pour une perte d'atomes bien moindre que l'ancienne.
 
-
+Plus quantitativement, l'efficacité mesurée pour la nouvelle consigne est de $\gamma\approx 4.5$ tandis que l'ancienne présente une efficacité d'environ 2.3\footnote{Cette mesure a été réalisée après le changement du laser source du piège optique. Avant changement, l'efficacité était plutôt estimée à 2.8 \citep{jendrzejewski2012quantum}.}, témoignant de la nette amélioration de notre évaporation. Notons que la loi d'échelle \ref{eq:efficacite_evap_3corps} en présence de pertes à trois corps prédit une valeur $\gamma\approx 6.5$, bien supérieure à notre valeur mesurée. Une étude approfondie de l'origine de cette différence n'a pas été menée compte-tenu de l'excellente efficacité obtenue. En effet, la valeur de $\gamma\approx 3$ représente déjà une très bonne efficacité pour la plupart des expériences d'atomes ultra-froids \citep{barrett2001all}\citep{hung2008accelerating}.
 
 
 
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{Fig/Modif_exp/efficacité_évaporation_optique.pdf}
-\caption{\textbf{Efficacité de l'évaporation optique.} En traçant la densité dans l'espace des phases du nuage en fonction du nombre d'atomes, on peut évaluer l'efficacité du refroidissement évaporatif. La nouvelle consigne d'évaporation permet d'obtenir les points bleus pour différents temps d'évaporation, tandis que l'ancienne consigne est représentée en rouge. Les lignes continues sont des ajustements des données expérimentales par des lois de puissance \ref{eq:efficacite_evaporation}, qui permettent ainsi d'extraire le paramètre $\gamma$ quantifiant l'efficacité de l'évaporation.}
-\label{fig:efficacité_évaporation_optique}
+\caption{\textbf{Efficacité de l'évaporation optique.} En traçant la densité dans l'espace des phases du nuage en fonction du nombre d'atomes, on peut évaluer l'efficacité du refroidissement évaporatif. La nouvelle consigne d'évaporation permet d'obtenir les points bleus pour différents temps d'évaporation, tandis que l'ancienne consigne est représentée en bordeaux. Les lignes continues sont des ajustements des données expérimentales par des lois de puissance \ref{eq:efficacite_evaporation}, qui permettent ainsi d'extraire le paramètre $\gamma$ quantifiant l'efficacité de l'évaporation.}
+\label{fig:efficacite_evaporation_optique}
 \end{figure}
 
-
-
-
-Résultats du condensat sans ouverture adiabatique: beaucoup d'atomes à 10nK. Avec ouverture adiabatique au bon moment, déplacement de la platine de $\SI{4.5}{\milli\metre}\approx 2 z_{\mathrm{r}}$, on divise la température par 2 (fréquences divisées par 2).
-
-
-
-\paragraph*{Étude des pertes}
-Temps de vie des atomes lié au gaz: $1/\Gamma_{\mathrm{bg}}\approx\SI{10}{\second}$.
-
+Finalement, la consigne retenue à l'issue de l'optimisation de l'évaporation permet d'obtenir un condensat de Bose-Einstein d'environ \SI{1.2e6}{} atomes avec une température d'environ \SI{500}{\nano\kelvin} en \SI{700}{\milli\second}. Après \SI{3.5}{\second} d'évaporation, notre nuage contient environ \SI{2e5}{} atomes à une température de \SI{10}{\nano\kelvin} sans utiliser la technique d'ouverture adiabatique pour refroidir davantage. À l'heure de l'écriture de ces lignes, l'implémentation de cette technique n'a pas encore été réalisée.
 
 
 
