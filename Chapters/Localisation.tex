@@ -1,28 +1,96 @@
 \chapter{Phénomène de localisation d'Anderson} %% Titre ?
-\begin{tikzpicture}[remember picture, overlay]
-\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Localisation/g825.png}};
-\end{tikzpicture}
+%\begin{tikzpicture}[remember picture, overlay]
+%\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Localisation/g825.png}};
+%\end{tikzpicture}
 
 présentation des effets d'interférences dans le désordre. scaling theory à la delande uniquement sur la conductance pour présenter la localisation 1D et 2D puis la 3D avec la transition. Terminer sur la quête du régime critique avec le graphe de delande2017, et introduction aux manips récentes et futures.
 
+
+Paragraphe d'introduction? 
+
+Dans ce chapitre, nous commencerons par décrire comment, lors de la propagation cohérente d'une onde dans un milieu désordonné, les interférences peuvent altérer la diffusion classique et engendrer le phénomène spectaculaire de \emph{Localisation d'Anderson} dont nous donnerons les principales propriétés. Dans un second temps, nous présenterons succinctement les principaux systèmes utilisés pour l'investigation de la localisation d'Anderson, pour s'attarder plus particulièrement sur les expériences d'atomes froids. Enfin, nous terminerons ce chapitre par une discussion de nos enjeux actuels, l'étude du régime critique de la transition d'Anderson, dont nous présenterons l'état de l'art.
+
 \section{Diffusion et interférences}
 \subsection{Phénomène de diffusion}
-\lipsum[1]
+\label{sc:diffusion_classique}
+Le phénomène de diffusion macroscopique est un phénomène de transport le plus connu de la physique classique. Celui-ci permet par exemple de décrire de manière simple la propagation de la chaleur dans un matériau homogène, l'homogénéisation de la concentration de particules dans un liquide ou encore le phénomène de résistance électrique dans un cadre unifié. 
+
+En effet, le phénomène macroscopique de diffusion provient, de manière générale, d'une marche aléatoire des particules vectrices au sein de leur environnement. Drude a ainsi été le premier à calculer la résistivité électrique des matériaux en introduisant un temps de relaxation basé sur les collisions entre les électrons, vecteurs du courant électrique, et les impuretés du matériau dans lequel ceux-ci se déplacent \citep{ashcroft2010solid}. 
+
+Il apparaît ainsi que certaines propriétés macroscopiques des matériaux sont reliées aux grandeurs caractéristiques de la marche aléatoire associée. Ces grandeurs sont des briques élémentaires de la propagation en milieu désordonné, telles que le temps de diffusion élastique, le temps de transport, ou encore le coefficient de diffusion, que nous présenterons dans la suite.
+
+\paragraph*{Temps de diffusion élastique}
+La quantité la plus naturelle permettant de caractériser de manière microscopique le phénomène de diffusion est le \emph{temps de diffusion élastique} $\taus$, qui correspond à la durée typique entre deux évènements successifs de \emph{collision élastique} avec les impuretés du milieu. Ce temps est l'équivalent temporel du \emph{libre parcours moyen}  $\ls$ correspondant à la distance moyenne entre deux évènements de diffusion microscopique successifs. Dans le cas d'une particule de masse $m$ se déplaçant à une vitesse $v_{\mathrm{i}}$, ces deux grandeurs sont reliées par
+\begin{equation}
+\taus=\frac{\ls}{v_{\mathrm{i}}}=\frac{m}{\hb} \frac{\ls}{k_{\mathrm{i}}} \text{ ,}
+\end{equation}
+où $k_{\mathrm{i}}$ est le nombre d'onde de l'onde quantique associée à la particule (celui-ci est inchangé après chaque évènement de collision en raison de leur caractère élastique). 
+
+Comme nous le verrons plus en détails dans les chapitres \ref{ch:TauS_PRL} et \ref{ch:TauS_NJP}, le temps de diffusion élastique est une quantité qui dépend des détails microscopiques du système, établissant ainsi le lien entre processus microscopiques et phénomène macroscopique.
+
+
+\paragraph*{Temps de transport}
+Si la norme du vecteur vitesse (ou de manière équivalente du vecteur d'onde) reste inchangée au cours de la propagation, sa direction est modifiée à chaque évènement de collision élastique. Comme nous le verrons plus en détails dans le chapitre \ref{ch:TauS_PRL}, lors de la collision avec un diffuseur de taille caractéristique $\sigma$, l'onde peut être diffusée selon un angle $\left\langle\theta\right\rangle\sim 1/k_{\mathrm{i}} \sigma$. La diffusion peut donc être \emph{anisotrope}, analogie avec la diffraction en optique.
+
+En considérant que la trajectoire d'une particule est composée de multiples collisions, il apparaît alors une seconde échelle de temps caractéristique, le \emph{temps de transport} ou temps de Boltzmann $\taub$, décrivant la durée nécessaire pour la particule perde l'information de la direction initiale de sa vitesse. 
+
+
+On peut ainsi montrer que le temps de transport (et son analogue spatial, la \emph{longueur de transport}) s'expriment en fonction du temps de diffusion élastique \citep{akkermans2007mesoscopic}
+\begin{equation}
+\taub=\frac{\taus}{1-\left\langle\cos{\theta}\right\rangle} \quad \text{et} \quad \lb=\frac{\ls}{1-\left\langle\cos{\theta}\right\rangle} \text{ ,}
+\end{equation}
+où $\langle\dots\rangle$ représente la valeur moyenne sur les différents évènements de diffusion.
+
+
+\begin{figure}
+\centering
+
+\caption{\textbf{Stuff.} Stuff.}
+\label{fig:diffusion_classique}
+\end{figure}
+
+\paragraph*{Coefficient de diffusion}
+coefficient de diffusion
+
+
+
+
+
 \subsection{Localisation faible}
-\lipsum[2]
+\label{sc:weak_localisation}
+effets d'interférences qui résistent à la réalisation du désordre augmentent la probabilité de revenir à l'origine.
+calcul sur les amplitudes de diffusion: CBS et localisation faible.
+$D\rightarrow D-\delta D$
+\begin{equation}
+\delta D/ D_{\mathrm{B}} = \left\lbrace \begin{aligned}
+& \mathcal{O}\left(L/l_{\mathrm{B}}\right)  \quad &&\text{en 1D}\\
+& \mathcal{O}\left(\frac{1}{k l_{\mathrm{B}}} \ln{\frac{L}{l_{\mathrm{B}}}} \right) \quad &&\text{en 2D}\\
+& \mathcal{O}\left(\frac{1}{(k l_{\mathrm{B}})^2}\right) \quad &&\text{en 3D}
+\end{aligned}\right.
+\end{equation}
+
 \subsection{Suppression du transport: Localisation d'Anderson}
-\lipsum[3]
+\label{sc:localisation_anderson}
+suppression du transport $D=0$. profil exponentiel de la fonction d'onde. longueur de localisation.
+1D et 2D toujours localisé sur différentes tailles. existence d'une transition de phase en 3D, régime critique.
 %\subsection{Théorie d'échelle}
 
 \section{Localisation des atomes froids}
 \subsection{Etudes expérimentales de la localisation d'Anderson}
-\lipsum[4]
+phénomène universel, commun à tous types d'ondes.
+ultrasons, lumières dans des guides d'onde désordonnés, lumière dans la peinture blanche, ondes électroniques dans des matériaux dopés
+
+
 \subsection{L'approche des atomes froids}
-\lipsum[5]
-%\section{Etudes de la localisation d'Anderson}
-%\subsection{Théorie d'échelle de la localisation d'Anderson}
-%\subsection{Etude à basse dimensionnalité}
-%\subsection{Etude à trois dimensions}
+parler ondes de matières dans des potentiels lumineux. du coup on contrôle tout, même la dimensionalité. 
+expérience de diffusion de à 2D (équipe de thomas), qui montre la décroissance du  pic central en 1/t ou 1/t2 suivant désordre ou non.
+
+parler des manips 1D qui démontrent la localisation. Introduire $\sigma$ la taille des grains pour expliquer le effective mobility edge?
+
+Parler des manips préliminaires à 3D. 
+
+Introduire brièvement le many-body, kick-rotors?
+expérience récente en 2D.
 
 \section{Vers l'étude du régime critique}
 \subsection{Etat de l'art de l'étude de la transition d'Anderson}
@@ -32,22 +100,7 @@ présentation des effets d'interférences dans le désordre. scaling theory à l
 
 
 
-\begin{comment}
-\section{Diffusion et interférences}
-\subsection{Phénomène de diffusion}
-\subsection{Localisation faible}
-\subsection{Suppression du transport: Localisation d'Anderson}
 
-\section{Théorie d'échelle de la localisation d'Anderson}
-\subsection{Critère de Thouless}
-\subsection{Importance de la dimensionnalité}
-\subsection{Théorie auto-consistante de la localisation d'Anderson}
-
-\section{Expériences de localisation}
-\subsection{Observation d'effets de localisation faible}
-\subsection{Expériences sur la localisation d'Anderson}
-%\subsection{Vers l'étude du régime critique}
-\end{comment}
 
 
 

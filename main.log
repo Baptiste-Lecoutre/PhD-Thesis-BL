@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  5 JUL 2020 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  8 JUL 2020 11:55
 entering extended mode
 **./main.tex
 (main.tex
@@ -1424,7 +1424,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(Chapters/Modif_exp.tex
+(Chapters/Localisation.tex
 Chapitre 1.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
 .
@@ -1436,187 +1436,50 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 8.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 8.
+(Font)              <9> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 8.
+(Font)              <7> on input line 13.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
 
-[1
+
+Package natbib Warning: Citation `ashcroft2010solid' on page 1 undefined on inp
+ut line 18.
+
+
+Underfull \vbox (badness 1215) has occurred while \output is active []
+
+ [1
 
 
 {C:/Users/lecou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<./Fig/../Fig/Modif_exp/cicero.png, id=22, 510.40688pt x 514.92375pt>
-File: ./Fig/../Fig/Modif_exp/cicero.png Graphic file (type png)
-<use ./Fig/../Fig/Modif_exp/cicero.png>
-Package pdftex.def Info: ./Fig/../Fig/Modif_exp/cicero.png  used on input line 
-29.
-(pdftex.def)             Requested size: 298.75264pt x 301.41382pt.
+
+LaTeX Warning: Reference `ch:TauS_PRL' on page 2 undefined on input line 29.
+
+
+LaTeX Warning: Reference `ch:TauS_NJP' on page 2 undefined on input line 29.
+
+
+LaTeX Warning: Reference `ch:TauS_PRL' on page 2 undefined on input line 33.
+
+
+Package natbib Warning: Citation `akkermans2007mesoscopic' on page 2 undefined 
+on input line 38.
+
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [2 <./Fig/../Fig/Modif_exp/cicero.png>]
+[2]) (main.bbl [3] [4
 
-LaTeX Warning: Reference `sc:imagerie' on page 3 undefined on input line 40.
-
-
-LaTeX Warning: Reference `sc:chambre_science' on page 3 undefined on input line
- 65.
-
-
-Underfull \vbox (badness 2495) has occurred while \output is active []
-
- [3]
-<./Fig/../Fig/Modif_exp/levitation_refroidissement.pdf, id=61, 470.89154pt x 22
-9.2899pt>
-File: ./Fig/../Fig/Modif_exp/levitation_refroidissement.pdf Graphic file (type 
-pdf)
-<use ./Fig/../Fig/Modif_exp/levitation_refroidissement.pdf>
-Package pdftex.def Info: ./Fig/../Fig/Modif_exp/levitation_refroidissement.pdf 
- used on input line 82.
-(pdftex.def)             Requested size: 426.79135pt x 207.82143pt.
-
-
-LaTeX Warning: Reference `eq:theoreme_wing' on page 4 undefined on input line 1
-04.
-
-
-LaTeX Warning: Reference `eq:Breit-Rabi' on page 4 undefined on input line 104.
-
-
-[4] [5 <./Fig/../Fig/Modif_exp/levitation_refroidissement.pdf>]
-
-LaTeX Warning: Reference `ch:TauS_PRL' on page 6 undefined on input line 118.
-
-<./Fig/../Fig/Modif_exp/levitation_etats.pdf, id=137, 529.10655pt x 366.34715pt
->
-File: ./Fig/../Fig/Modif_exp/levitation_etats.pdf Graphic file (type pdf)
-<use ./Fig/../Fig/Modif_exp/levitation_etats.pdf>
-Package pdftex.def Info: ./Fig/../Fig/Modif_exp/levitation_etats.pdf  used on i
-nput line 122.
-(pdftex.def)             Requested size: 341.43437pt x 236.40668pt.
-[6]
-<./Fig/../Fig/Modif_exp/levitation_RF.pdf, id=153, 563.3009pt x 209.90251pt>
-File: ./Fig/../Fig/Modif_exp/levitation_RF.pdf Graphic file (type pdf)
-<use ./Fig/../Fig/Modif_exp/levitation_RF.pdf>
-Package pdftex.def Info: ./Fig/../Fig/Modif_exp/levitation_RF.pdf  used on inpu
-t line 141.
-(pdftex.def)             Requested size: 426.79135pt x 159.0375pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7 <./Fig/../Fig/Modif_exp/levitation_etats.pdf>] [8 <./Fig/../Fig/Modif_exp/le
-vitation_RF.pdf>]
-<./Fig/../Fig/Modif_exp/oscillation_levitation.pdf, id=179, 546.86694pt x 189.5
-5855pt>
-File: ./Fig/../Fig/Modif_exp/oscillation_levitation.pdf Graphic file (type pdf)
-
-<use ./Fig/../Fig/Modif_exp/oscillation_levitation.pdf>
-Package pdftex.def Info: ./Fig/../Fig/Modif_exp/oscillation_levitation.pdf  use
-d on input line 223.
-(pdftex.def)             Requested size: 426.79135pt x 147.94183pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9 <./Fig/../Fig/Modif_exp/oscillation_levitation.pdf>] [10]
-
-LaTeX Warning: Reference `sc:chambre_science' on page 11 undefined on input lin
-e 289.
-
-<./Fig/../Fig/Modif_exp/optique_1070_new_style.pdf, id=208, 454.72154pt x 306.1
-9962pt>
-File: ./Fig/../Fig/Modif_exp/optique_1070_new_style.pdf Graphic file (type pdf)
-
-<use ./Fig/../Fig/Modif_exp/optique_1070_new_style.pdf>
-Package pdftex.def Info: ./Fig/../Fig/Modif_exp/optique_1070_new_style.pdf  use
-d on input line 302.
-(pdftex.def)             Requested size: 426.79135pt x 287.38849pt.
-[11] [12 <./Fig/../Fig/Modif_exp/optique_1070_new_style.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-26.
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-<./Fig/../Fig/Modif_exp/expansion_dimple.pdf, id=775, 461.32204pt x 320.72536pt
->
-File: ./Fig/../Fig/Modif_exp/expansion_dimple.pdf Graphic file (type pdf)
-<use ./Fig/../Fig/Modif_exp/expansion_dimple.pdf>
-Package pdftex.def Info: ./Fig/../Fig/Modif_exp/expansion_dimple.pdf  used on i
-nput line 330.
-(pdftex.def)             Requested size: 341.43437pt x 237.37708pt.
-
-[13 <./Fig/../Fig/Modif_exp/expansion_dimple.pdf>]
-<./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf, id=793, 562.97038pt x 209
-.03256pt>
-File: ./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf Graphic file (type pd
-f)
-<use ./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf>
-Package pdftex.def Info: ./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf  u
-sed on input line 373.
-(pdftex.def)             Requested size: 426.79135pt x 158.4677pt.
- [14] [15 <./Fig/../Fig/Modif_exp/frequences_piege_optique.pdf>] [16] [17]
-
-LaTeX Warning: Reference `sc:chambre_science' on page 18 undefined on input lin
-e 485.
-
-[18] [19]
-<Fig/Modif_exp/comparaison_consignes_evap.pdf, id=918, 348.21625pt x 238.4017pt
->
-File: Fig/Modif_exp/comparaison_consignes_evap.pdf Graphic file (type pdf)
-<use Fig/Modif_exp/comparaison_consignes_evap.pdf>
-Package pdftex.def Info: Fig/Modif_exp/comparaison_consignes_evap.pdf  used on 
-input line 568.
-(pdftex.def)             Requested size: 298.75264pt x 204.55219pt.
- [20] [21 <./Fig/Modif_exp/comparaison_consignes_evap.pdf>]
-<Fig/Modif_exp/focalisation_atomique.pdf, id=955, 512.08612pt x 209.60849pt>
-File: Fig/Modif_exp/focalisation_atomique.pdf Graphic file (type pdf)
-<use Fig/Modif_exp/focalisation_atomique.pdf>
-Package pdftex.def Info: Fig/Modif_exp/focalisation_atomique.pdf  used on input
- line 617.
-(pdftex.def)             Requested size: 426.79135pt x 174.701pt.
-<Fig/Modif_exp/Evolution_température_eta.pdf, id=960, 367.07071pt x 254.41342p
-t>
-File: Fig/Modif_exp/Evolution_température_eta.pdf Graphic file (type pdf)
-<use Fig/Modif_exp/Evolution_température_eta.pdf>
-Package pdftex.def Info: Fig/Modif_exp/Evolution_température_eta.pdf  used on 
-input line 630.
-(pdftex.def)             Requested size: 298.75264pt x 207.06364pt.
- [22]
-[23 <./Fig/Modif_exp/focalisation_atomique.pdf> <./Fig/Modif_exp/Evolution_temp
-érature_eta.pdf
-
-pdfTeX warning: pdflatex (file ./Fig/Modif_exp/Evolution_température_eta.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
->]
-<Fig/modif_exp/Nombre_atomes_evap.pdf, id=1031, 385.9038pt x 293.77733pt>
-File: Fig/modif_exp/Nombre_atomes_evap.pdf Graphic file (type pdf)
-<use Fig/modif_exp/Nombre_atomes_evap.pdf>
-Package pdftex.def Info: Fig/modif_exp/Nombre_atomes_evap.pdf  used on input li
-ne 652.
-(pdftex.def)             Requested size: 298.75264pt x 227.44644pt.
- [24 <./Fig/modif_exp/Nombre_atomes_evap.pdf>]
-<Fig/Modif_exp/efficacité_évaporation_optique.pdf, id=1053, 397.40723pt x 284
-.76048pt>
-File: Fig/Modif_exp/efficacité_évaporation_optique.pdf Graphic file (type pdf
-)
-<use Fig/Modif_exp/efficacité_évaporation_optique.pdf>
-Package pdftex.def Info: Fig/Modif_exp/efficacité_évaporation_optique.pdf  us
-ed on input line 667.
-(pdftex.def)             Requested size: 341.43437pt x 244.65025pt.
-) (main.bbl [25 <./Fig/Modif_exp/efficacité_évaporation_optique.pdf>] [26
-
-]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
-2.
+] [5]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+52.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1626,7 +1489,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[27]) [28]
+[6])
+
+Package natbib Warning: There were undefined citations.
+
+[7]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (main.aux)
@@ -1636,53 +1503,37 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29877 strings out of 480934
- 568406 string characters out of 2899917
- 953545 words of memory out of 3000000
- 44673 multiletter control sequences out of 15000+200000
- 694800 words of font info for 257 fonts, out of 3000000 for 9000
+ 29523 strings out of 480934
+ 561360 string characters out of 2899917
+ 1100128 words of memory out of 3000000
+ 44539 multiletter control sequences out of 15000+200000
+ 641947 words of font info for 181 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,19n,62p,1590b,1125s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,12n,62p,1384b,978s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
-c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
-nc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
-it.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-mathsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-rm.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmbxi10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/lecou/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/lecou/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Users/lecou/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/lecou
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Users/le
-cou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/User
-s/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C
-:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pf
-b><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8
-.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-sy9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmtt10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (28 pages, 6365087 bytes).
+c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathe
+x.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
+athsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+lm-rm.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+lm-mathit.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/lecou/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/lecou/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/lecou/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/lecou/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (7 pages, 266425 bytes).
 PDF statistics:
- 1240 PDF objects out of 1440 (max. 8388607)
- 146 named destinations out of 1000 (max. 500000)
- 61118 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 46181 words of extra memory for PDF output out of 51595 (max. 10000000)
 
