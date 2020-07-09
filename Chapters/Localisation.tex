@@ -23,34 +23,64 @@ Il apparaît ainsi que certaines propriétés macroscopiques des matériaux sont
 La quantité la plus naturelle permettant de caractériser de manière microscopique le phénomène de diffusion est le \emph{temps de diffusion élastique} $\taus$, qui correspond à la durée typique entre deux évènements successifs de \emph{collision élastique} avec les impuretés du milieu. Ce temps est l'équivalent temporel du \emph{libre parcours moyen}  $\ls$ correspondant à la distance moyenne entre deux évènements de diffusion microscopique successifs. Dans le cas d'une particule de masse $m$ se déplaçant à une vitesse $v_{\mathrm{i}}$, ces deux grandeurs sont reliées par
 \begin{equation}
 \taus=\frac{\ls}{v_{\mathrm{i}}}=\frac{m}{\hb} \frac{\ls}{k_{\mathrm{i}}} \text{ ,}
+\label{eq:definition_taus}
 \end{equation}
-où $k_{\mathrm{i}}$ est le nombre d'onde de l'onde quantique associée à la particule (celui-ci est inchangé après chaque évènement de collision en raison de leur caractère élastique). 
+où $k_{\mathrm{i}}$ est le nombre d'onde de l'onde quantique associée à la particule (celui-ci est inchangé après chaque évènement de collision en raison de leur caractère élastique). On voit ainsi que $\taus$ est une quantité faisant intervenir la perte de cohérence de l'onde subissant une collision élastique.
 
 Comme nous le verrons plus en détails dans les chapitres \ref{ch:TauS_PRL} et \ref{ch:TauS_NJP}, le temps de diffusion élastique est une quantité qui dépend des détails microscopiques du système, établissant ainsi le lien entre processus microscopiques et phénomène macroscopique.
 
 
 \paragraph*{Temps de transport}
-Si la norme du vecteur vitesse (ou de manière équivalente du vecteur d'onde) reste inchangée au cours de la propagation, sa direction est modifiée à chaque évènement de collision élastique. Comme nous le verrons plus en détails dans le chapitre \ref{ch:TauS_PRL}, lors de la collision avec un diffuseur de taille caractéristique $\sigma$, l'onde peut être diffusée selon un angle $\left\langle\theta\right\rangle\sim 1/k_{\mathrm{i}} \sigma$. La diffusion peut donc être \emph{anisotrope}, analogie avec la diffraction en optique.
+Si la norme du vecteur vitesse (ou de manière équivalente du vecteur d'onde) reste inchangée au cours de la propagation, sa direction est modifiée à chaque évènement de collision élastique. Comme nous le verrons plus en détails dans le chapitre \ref{ch:TauS_PRL}, lors de la collision avec un diffuseur de taille caractéristique $\sigma$, l'onde peut être diffusée selon un angle $\left\langle\theta\right\rangle\sim 1/k_{\mathrm{i}} \sigma$. La diffusion peut donc être \emph{anisotrope}, en analogie avec la diffraction en optique.
 
-En considérant que la trajectoire d'une particule est composée de multiples collisions, il apparaît alors une seconde échelle de temps caractéristique, le \emph{temps de transport} ou temps de Boltzmann $\taub$, décrivant la durée nécessaire pour la particule perde l'information de la direction initiale de sa vitesse. 
+En considérant que la trajectoire d'une particule est composée de multiples collisions successives, il apparaît alors une seconde échelle de temps caractéristique, le \emph{temps de transport} ou temps de Boltzmann $\taub$, décrivant la durée nécessaire pour que la particule perde l'information de la direction initiale de sa vitesse. 
 
 
 On peut ainsi montrer que le temps de transport (et son analogue spatial, la \emph{longueur de transport}) s'expriment en fonction du temps de diffusion élastique \citep{akkermans2007mesoscopic}
 \begin{equation}
 \taub=\frac{\taus}{1-\left\langle\cos{\theta}\right\rangle} \quad \text{et} \quad \lb=\frac{\ls}{1-\left\langle\cos{\theta}\right\rangle} \text{ ,}
+\label{eq:definition_taub}
 \end{equation}
-où $\langle\dots\rangle$ représente la valeur moyenne sur les différents évènements de diffusion.
+où $\langle\:\cdots\:\rangle$ représente la valeur moyenne sur les différents évènements de diffusion.
+
+On voit donc que dans le cas de collisions élastiques isotropes, $\taub=\taus$, montrant qu'une seule collision suffit à perdre l'information sur la direction initiale de la vitesse de la particule. En revanche, un grand nombre de collisions sont nécessaires pour obtenir une isotropisation de la direction des vitesses dans le cas d'évènements de diffusion anisotrope, comme illustré figure \ref{fig:diffusion_classique}.a.
 
 
 \begin{figure}
 \centering
 
-\caption{\textbf{Stuff.} Stuff.}
+\caption{\textbf{a: Longueur de transport pour des collisions anisotropes.} Une unique collision élastique ne modifie que peu la direction de la vitesse d'une particule. Il faut donc un grand nombre de collisions successives pour que la direction de la vitesse d'une particule soit décorrélée de la direction initiale. En conséquence, le temps de transport est beaucoup plus grand que le temps de diffusion élastique. \textbf{b: Mécanisme microscopique de la diffusion.} Le mouvement d'une particule peut être considérée comme une marche aléatoire composée d'évènements de diffusion isotropes tous les $\taub$ entre lesquels la particule se déplace d'une distance $\lb=v \taub$ dans une direction aléatoire. L'étalement typique obtenu croit avec le temps selon $\Delta \mathbf{x} \propto \sqrt{t}$.}
 \label{fig:diffusion_classique}
 \end{figure}
 
+
+
+
+
 \paragraph*{Coefficient de diffusion}
-coefficient de diffusion
+Une fois que la particule a parcouru une distance $\lb$, on peut considérer qu'elle subit une diffusion isotrope. On assimile alors le mouvement des particules à une marche aléatoire pour laquelle les particules de vitesse $v$ subissent des évènements de collision isotrope à chaque intervalle de temps $\taub$ pendant lesquels la particule parcourt une distance $\lb=v \taub$, comme illustré figure \ref{fig:diffusion_classique}.b.
+
+Ainsi, on peut déterminer l'étalement typique de la région explorée par la particule après $N$ collisions à l'aide du théorème central limite \citep{diu1989elements},
+\begin{equation}
+\left\langle \Delta \mathbf{x}^2 \right\rangle=2 N \lb^2 \text{ .}
+\end{equation}
+En définissant le coefficient de diffusion par $ \left\langle \Delta \mathbf{x}^2 \right\rangle = 2 d D t$ et en faisant apparaître le temps $t=N \taub$, mon montre ainsi que 
+\begin{equation}
+D=\frac{v \lb}{d}=\frac{\hb}{m d} k \lb \text{ ,}
+\label{eq:definition_coefficient_diffusion}
+\end{equation}
+où on a fait apparaître la quantité $k \lb$, qui sera essentielle dans la suite.
+
+Une conséquence de l'équation \ref{eq:definition_coefficient_diffusion} est qu'une diminution de la longueur de transport entraîne une diminution du coefficient de diffusion. Ainsi, plus un système sera désordonné, plus le coefficient de diffusion sera petit.
+
+
+
+
+
+
+
+
+
 
 
 
@@ -58,16 +88,55 @@ coefficient de diffusion
 
 \subsection{Localisation faible}
 \label{sc:weak_localisation}
-effets d'interférences qui résistent à la réalisation du désordre augmentent la probabilité de revenir à l'origine.
-calcul sur les amplitudes de diffusion: CBS et localisation faible.
-$D\rightarrow D-\delta D$
+Si le mécanisme de marche aléatoire présenté permet de décrire un grand nombre de situations de diffusion classique, nous avons omis un ingrédient essentiel à la propagation d'ondes en milieu désordonné: la \emph{cohérence}, ou encore la capacité qu'une onde a à interférer. En particulier, nous verrons que celle-ci peut avoir des conséquences dramatiques sur les propriétés de transport d'une onde en présence de désordre.
+
+\paragraph*{Mécanisme de localisation faible}
+Pour cela, intéressons-nous à la probabilité $P(\mathbf{x},\mathbf{x}')$ qu'une onde initialement à la position $\mathbf{x}$ se retrouve à la position $\mathbf{x}'$ après propagation dans le milieu désordonné. Dans la limite $k\lb\gg 1$, la trajectoire de l'onde peut être vu comme une marche aléatoire, où chaque trajectoire de diffusion est associée à une amplitude complexe de probabilité $\left| A_j \right| e^{i \phi_j}$, avec $\phi_j$ la phase de la trajectoire. Ainsi, la probabilité $P(\mathbf{x},\mathbf{x}')$ est donnée par la somme de l'amplitude sur toutes les trajectoires possibles:
+\begin{align}
+P(\mathbf{x},\mathbf{x}') \nonumber&= {\left| \sum_j{ \left|A_j\right| e^{i \phi_j} }\right| }^2 = \sum_{i,l} {\left| A_j \right| \left| A_l \right| e^{i (\phi_j - \phi_l)}} \\
+&= \sum_j{{\left| A_j \right|}^2} + \sum_{j\neq l}{\left| A_j \right| \left|A_l \right| e^{i(\phi_j - \phi_l)}} \text{ ,}
+\label{eq:amplitude_localisation_faible}
+\end{align}
+où le premier terme décrit le phénomène de diffusion classique, où la probabilité $P(\mathbf{x},\mathbf{x}'$ est la somme des probabilités de chaque trajectoire. 
+
+Le second terme de l'équation \ref{eq:amplitude_localisation_faible} représente quant à lui les interférences dues aux différentes phases accumulées par les différents chemins de diffusion. Intuitivement, on peut considérer que la contribution de ce terme s'annule en moyennant sur les différentes réalisations du désordre, $\overline{e^{i(\phi_j - \phi_l)}}=0$, où $\overline{\:\cdots\:}$ désigne la moyenne d'ensemble. Cependant, une étude attentive montre que certaines trajectoires résistent au moyennage sur les réalisations du désordre.
+
+En particulier, les trajectoires pour lesquelles l'onde se retrouve à son point de départ forment des boucles qu'il est possible de parcourir dans les deux sens, comme illustré figure \ref{fig:localisation_faible}. Par \emph{symétrie par renversement du temps}, il est donc possible de trouver des paires de trajectoires dont la phase accumulée sera identique. De plus, ces paires de trajectoires existent quelque soit la réalisation du désordre, rendant ce processus d'interférences constructives robuste vis-à-vis du moyennage d'ensemble et $\overline{e^{i(\phi_j - \phi_l)}}=1$. Ainsi, la probabilité qu'une onde retourne à son point de départ est le double de la prédiction classique:
 \begin{equation}
-\delta D/ D_{\mathrm{B}} = \left\lbrace \begin{aligned}
+P(\mathbf{x},\mathbf{x})=2 \sum_j{{\left| A_j \right|}^2} \text{ .}
+\end{equation}
+
+Les interférences entre chemins de diffusion tendent alors à favoriser le retour de l'onde à son point d'origine, ralentissant ainsi la diffusion. Cet effet de \emph{localisation faible}, commun à tout type d'onde, a été intensivement étudié dans de nombreux domaines, aussi théoriquement qu'expérimentalement.
+
+
+\begin{figure}
+\centering
+
+\caption{\textbf{Localisation faible.} Stuff.}
+\label{fig:localisation_faible}
+\end{figure}
+
+\paragraph*{Corrections de localisation faible}
+Comme le retour de l'onde à son point d'origine est favorisé, ça se traduit par la diminution du coefficient de diffusion. On peut l'écrire sous la forme
+\begin{equation}
+D= D_{\mathrm{0}}-\delta D \text{ ,}
+\end{equation}
+où $\delta D$ est la correction de localisation faible.
+\begin{equation}
+\delta D/ D_{\mathrm{0}} = \left\lbrace \begin{aligned}
 & \mathcal{O}\left(L/l_{\mathrm{B}}\right)  \quad &&\text{en 1D}\\
 & \mathcal{O}\left(\frac{1}{k l_{\mathrm{B}}} \ln{\frac{L}{l_{\mathrm{B}}}} \right) \quad &&\text{en 2D}\\
 & \mathcal{O}\left(\frac{1}{(k l_{\mathrm{B}})^2}\right) \quad &&\text{en 3D}
 \end{aligned}\right.
 \end{equation}
+
+
+
+
+
+
+
+
 
 \subsection{Suppression du transport: Localisation d'Anderson}
 \label{sc:localisation_anderson}
