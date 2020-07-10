@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  9 JUL 2020 18:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  10 JUL 2020 12:25
 entering extended mode
 **./main.tex
 (main.tex
@@ -1472,10 +1472,23 @@ LaTeX Warning: Reference `ch:TauS_PRL' on page 2 undefined on input line 34.
 Package natbib Warning: Citation `akkermans2007mesoscopic' on page 2 undefined 
 on input line 39.
 
+<Fig/Localisation/diffusion_classique.pdf, id=19, 423.44238pt x 193.59613pt>
+File: Fig/Localisation/diffusion_classique.pdf Graphic file (type pdf)
+<use Fig/Localisation/diffusion_classique.pdf>
+Package pdftex.def Info: Fig/Localisation/diffusion_classique.pdf  used on inpu
+t line 51.
+(pdftex.def)             Requested size: 426.79135pt x 195.12878pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[2] [3] [4]) (main.bbl [5] [6
+[2] [3 <./Fig/Localisation/diffusion_classique.pdf>]
+<Fig/Localisation/localisation_faible.pdf, id=658, 450.30333pt x 181.71753pt>
+File: Fig/Localisation/localisation_faible.pdf Graphic file (type pdf)
+<use Fig/Localisation/localisation_faible.pdf>
+Package pdftex.def Info: Fig/Localisation/localisation_faible.pdf  used on inpu
+t line 114.
+(pdftex.def)             Requested size: 384.1096pt x 155.01239pt.
+ [4 <./Fig/Localisation/localisation_faible.pdf>]) (main.bbl [5] [6
 
 ] [7]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
@@ -1503,13 +1516,16 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29574 strings out of 480934
- 562088 string characters out of 2899917
- 1099744 words of memory out of 3000000
- 44556 multiletter control sequences out of 15000+200000
+ 29587 strings out of 480934
+ 562637 string characters out of 2899917
+ 1101899 words of memory out of 3000000
+ 44566 multiletter control sequences out of 15000+200000
  660448 words of font info for 196 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,12n,62p,1384b,978s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1535,9 +1551,9 @@ Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/lecou/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/le
 cou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on main.pdf (9 pages, 301279 bytes).
+Output written on main.pdf (9 pages, 1208687 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
+ 3870 PDF objects out of 4296 (max. 8388607)
  76 named destinations out of 1000 (max. 500000)
- 49253 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 49263 words of extra memory for PDF output out of 51595 (max. 10000000)
 
