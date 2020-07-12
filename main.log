@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  10 JUL 2020 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  12 JUL 2020 08:59
 entering extended mode
 **./main.tex
 (main.tex
@@ -1448,11 +1448,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
 
-
-Package natbib Warning: Citation `ashcroft2010solid' on page 1 undefined on inp
-ut line 18.
-
-
 Underfull \vbox (badness 1215) has occurred while \output is active []
 
  [1
@@ -1468,11 +1463,7 @@ LaTeX Warning: Reference `ch:TauS_NJP' on page 2 undefined on input line 30.
 
 LaTeX Warning: Reference `ch:TauS_PRL' on page 2 undefined on input line 34.
 
-
-Package natbib Warning: Citation `akkermans2007mesoscopic' on page 2 undefined 
-on input line 39.
-
-<Fig/Localisation/diffusion_classique.pdf, id=19, 423.44238pt x 193.59613pt>
+<Fig/Localisation/diffusion_classique.pdf, id=23, 423.44238pt x 193.59613pt>
 File: Fig/Localisation/diffusion_classique.pdf Graphic file (type pdf)
 <use Fig/Localisation/diffusion_classique.pdf>
 Package pdftex.def Info: Fig/Localisation/diffusion_classique.pdf  used on inpu
@@ -1482,31 +1473,15 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 [2] [3 <./Fig/Localisation/diffusion_classique.pdf>]
-<Fig/Localisation/localisation_faible.pdf, id=658, 450.30333pt x 181.71753pt>
+<Fig/Localisation/localisation_faible.pdf, id=665, 450.30333pt x 181.71753pt>
 File: Fig/Localisation/localisation_faible.pdf Graphic file (type pdf)
 <use Fig/Localisation/localisation_faible.pdf>
 Package pdftex.def Info: Fig/Localisation/localisation_faible.pdf  used on inpu
 t line 114.
 (pdftex.def)             Requested size: 384.1096pt x 155.01239pt.
- [4 <./Fig/Localisation/localisation_faible.pdf>]) (main.bbl [5] [6
+ [4 <./Fig/Localisation/localisation_faible.pdf>]) (main.bbl [5] [6]) [7
 
-] [7]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-52.
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-[8])
-
-Package natbib Warning: There were undefined citations.
-
-[9]
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (main.aux)
@@ -1516,24 +1491,21 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 133.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 29587 strings out of 480934
- 562637 string characters out of 2899917
- 1101899 words of memory out of 3000000
- 44566 multiletter control sequences out of 15000+200000
- 660448 words of font info for 196 fonts, out of 3000000 for 9000
+ 29353 strings out of 480934
+ 557713 string characters out of 2899917
+ 1098999 words of memory out of 3000000
+ 44424 multiletter control sequences out of 15000+200000
+ 657408 words of font info for 169 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,12n,62p,1384b,978s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
+ 63i,12n,62p,1384b,806s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.en
 c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathi
 t.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
 athsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
-lm-rm.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+lm-ec.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
 lm-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/
@@ -1542,18 +1514,18 @@ nts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/lecou/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/lecou/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/lecou/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/lecou/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/lecou/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/lecou/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/le
-cou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb>
-Output written on main.pdf (9 pages, 1208687 bytes).
+MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/lecou/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/lecou/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/lecou/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/lecou/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/lecou/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/lecou/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/leco
+u/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.
+pfb>
+Output written on main.pdf (7 pages, 1176618 bytes).
 PDF statistics:
- 3870 PDF objects out of 4296 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 49263 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 3825 PDF objects out of 4296 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 48751 words of extra memory for PDF output out of 51595 (max. 10000000)
 
