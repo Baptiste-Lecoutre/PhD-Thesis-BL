@@ -299,13 +299,14 @@ Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{../Fig/Modif_exp/optique_1070.pdf}
+\includegraphics[width=\textwidth]{../Fig/Modif_exp/optique_1070_new_style.pdf}
 \caption{\textbf{Schéma du montage optique pour le piège dipolaire.} Le faisceau issu du laser source passe dans un premier télescope avant d'être séparé en deux parties. La partie déviée passe dans une fibre optique pour devenir le faisceau de la pince. La partie transmise passe ensuite dans un second télescope pour devenir elliptique et arrive dans la \emph{Dimple box}, qui envoie le faisceau sur les atomes et contient les optiques d'imagerie \citep{muller2015coherent}. Afin de garder les mêmes tailles de faisceaux, la première lentille du premier télescope a été remplacée par une lentille de focale +\SI{100}{\milli\metre}.}
 \label{fig:optique_1070}
 \end{figure}
 
 
 \subsection{Calibration du piège optique}
+\label{sc:calibration_piege_optique}
 La présence d'une fibre optique pour la mise en forme du faisceau de la pince permet de s'assurer que le mode envoyé sur les atomes n'a pas changé. Pour le faisceau dimple en revanche, le trajet jusqu'à la cellule se fait sans filtrage. La présence de deux périscopes, d'un nombre d'éléments optiques important et l'utilisation d'un profil elliptique imposent une étude attentive des caractéristiques de ce faisceau au niveau des atomes.
 
 
@@ -361,7 +362,7 @@ La fréquence de piégeage de la pince a été mesurée suivant la direction ver
 
 La mesure de la fréquence de piégeage dans la direction $\vec{z}$, provenant du dimple, a été effectuée selon deux méthodes suivant la puissance du faisceau:
 \begin{itemize}
-\item[\textendash] À haute puissance, on pousse les atomes à l'aide d'un gradient magnétique provenant de bobines de compensation. Celles-ci peuvent pousser les atomes pendant de courts instants à l'aide d'un commutateur rapide.
+\item[\textendash] À haute puissance, les atomes sont poussés à l'aide d'un gradient magnétique provenant de bobines de compensation. Celles-ci peuvent exercer une force sur les atomes pendant de courts instants à l'aide d'un commutateur rapide.
 \item[\textendash] À plus basse puissance, le piège optique est décomprimé et peu profond grâce à la lévitation. Cependant, le piégeage de la lévitation peut arracher les atomes du piège optique, il est donc nécessaire de déplacer le centre de la lévitation magnétique à l'aide de champs de compensation. Pour pousser les atomes, on utilise alors les bobines de compensation dans leur configuration normale, et leur brève extinction conduit à accélérer les atomes en déplaçant le centre de la lévitation magnétique.
 \end{itemize}
 
@@ -382,15 +383,294 @@ Une seconde conséquence de la figure \ref{fig:frequences_piege_optique} est que
 
 
 
+
+
+
+
+
+
+
 \section{Optimisation de l'évaporation tout-optique}
 \label{sc:evap_optique}
+Vingt-cinq ans après l'obtention du premier condensat de Bose-Einstein, l'étape de refroidissement par évaporation forcée reste un passage obligatoire pour l'obtention d'un gaz dégénéré, à l'exception de quelques développements récents se basant des techniques novatrices de refroidissement laser \citep{stellmer2013laser} \citep{hu2017creation}. 
 
-Plan préliminaire, à voir plus en détails ce qui va à l'intérieur quand tout sera prêt.
-\subsection{Lois d'échelle de l'évaporation optique}
-Expliquer comment fonctionne l'évaporation, donner les lois de variation à la o'hara si l'approche est correcte à la fin.
-\subsection{Étude des pertes}
-Effet des pertes sur l'évap. Etude du temps de vie, processus de chauffage via pointé et intensité.
+Comme brièvement présenté dans le chapitre précédent, le principe du refroidissement évaporatif repose sur l'extraction de particules très énergétiques, suivie par la thermalisation des particules restantes moins énergétiques en moyenne, donc de température abaissée.
 
-\subsection{Résultats}
-mesure de température, $\eta=10$
-optimisation de l'efficacité de l'evap, D en fonction de N, pente de 4 toussa toussa avec les graphe temporels
+Néanmoins, l'efficacité de ce processus dépend fortement de la configuration expérimentale. Les modifications apportées à notre piège optique, piège dans lequel le seuil de condensation est franchi, nécessitent donc d'adapter les consignes d'évaporation à notre nouvelle géométrie. De plus, l'utilisation de nouvelles cartes analogiques \emph{National Instruments} avec la suite \emph{Cicero Word Generator} permet de générer de nouvelles consignes arbitraires, non limitées à des morceaux de rampes telles qu'auparavant. 
+
+Dans cette partie, nous allons dans un premier temps présenter le fonctionnement du refroidissement par évaporation forcée, puis nous détaillerons les résultats de l'optimisation de notre évaporation optique.
+
+
+\subsection{Lois d'échelle du refroidissement évaporatif}
+\label{sc:scaling_laws_ohara}
+Le but de l'étape de refroidissement évaporatif étant d'augmenter la densité dans l'espace des phases $\mathcal{D}=n \ldb^3$, aussi appelée \emph{paramètre de dégénérescence}, afin de franchir le seuil de condensation, il est donc nécessaire que notre système présente de la dissipation. L'origine de celle-ci repose sur la profondeur finie des pièges utilisés.  
+
+\paragraph*{Évaporation naturelle dans un piège de profondeur finie}
+Une conséquence de cette profondeur finie est que la fonction de partition $f(E)$ est tronquée à l'énergie $U$ correspondant à la profondeur du piège. Plus précisément, il a été montré que la fonction de partition est très proche d'une distribution de Boltzmann tronquée
+\begin{equation}
+f(E)\propto e^{-\frac{E}{\kB T}} \Theta(U-E) \text{ ,}
+\label{eq:fonction_partition}
+\end{equation}
+dont le temps de thermalisation $\tau_{\mathrm{th}}$ est de l'ordre de quelques collisions élastiques \citep{luiten1996kinetic}. 
+
+En effet, la collision élastique de deux particules permet de transférer de l'énergie d'une particule à la seconde. En particulier, une particule est susceptible d'acquérir par collision une énergie mécanique totale supérieure à la profondeur de piège, celle-ci est donc extraite du piège et emporte une énergie $U+\kappa\kB T$ ($\kappa>0$) supérieure à l'énergie moyenne par particule. La particule restante a quant à elle perdu de l'énergie. 
+
+Ce processus étant le plus probable pour des particules de grandes énergies, celui-ci favorise l'accumulation des particules dans les états de basse énergie tandis qu'il dépeuple les états de grande énergie. Ce raisonnement permet d'expliquer de manière qualitative la forme de la fonction de partition \ref{eq:fonction_partition}, qui favorise les états de basse énergie.
+
+Ce phénomène d'\emph{évaporation naturelle} conduit donc à une diminution de la température, dont l'efficacité décroît avec le temps. En effet, l'énergie moyenne par particule diminuant, la probabilité que des particules acquièrent suffisamment d'énergie pour s'échapper du piège décroît exponentiellement \citep{walraven2010elements}. Ainsi, le processus d'évaporation naturelle est fortement ralenti et le taux d'évaporation, c'est à dire le nombre de particules expulsées du piège par évaporation naturelle par unité de temps, peut être estimé par $\Gamma_{\mathrm{ev}}\sim e^{-U/\kB T} \Gamma_{\mathrm{c}}$, avec $\Gamma_{\mathrm{c}}$ le taux de collisions élastiques (voir équation \ref{eq:pertes_evap_naturelle}).
+
+Très rapidement, le temps d'évaporation $1/\Gamma_{\mathrm{ev}}$ excède le temps de vie des atomes dans le piège et ceux-ci sont perdus par des collisions inélastiques. Afin de dépasser cette limitation et de garder une évaporation efficace, la technique expérimentale développée afin d'obtenir les premiers condensats de Bose-Einstein consiste à abaisser progressivement la profondeur du piège $U$. On parle alors d'\emph{évaporation forcée}.
+
+
+
+
+
+\paragraph*{Lois d'échelle de l'évaporation forcée}
+Comme mentionné précédemment, la mise en œuvre pratique du refroidissement évaporatif se fait par le biais de la diminution de la profondeur du piège, forçant ainsi le processus d'évaporation. Cette opération est réalisée en continu, et à une vitesse suffisamment lente devant le temps de thermalisation $\tau_{\mathrm{th}}$ afin que le système soit constamment à l'équilibre thermodynamique\footnote{Dans ce cas, les seules pertes d'atomes considérées sont celles liées à l'évaporation par collisions élastiques. Cela revient à négliger la dynamique de l'évaporation, qui fait apparaître les pertes par déversement\citep{cohen1996atomes}. Celles-ci correspondent aux atomes ayant une énergie de $U-\delta E$ qui ne sont plus piégés lors de l'abaissement de la profondeur du piège de $U$ à $U-\mathrm{d}U$, avec $\mathrm{d}U > \delta E$. Dans le cas d'un gaz à l'équilibre thermodynamique, seule une infime partie des atomes se trouve dans cet intervalle d'énergie que l'on peut négliger devant les autres sources de pertes.}. 
+
+
+En particulier, définissons le paramètre de troncature $\eta$ comme le rapport entre la profondeur du piège et la température du gaz piégé:
+\begin{equation}
+\eta=\frac{U}{\kB T} \text{ .}
+\end{equation}
+Dans le cas d'un abaissement lent et continu de la profondeur du piège, le paramètre de troncature est constant\footnote{Étant donné la dépendance exponentielle du taux d'évaporation en $\eta$, le processus d'évaporation sera très fortement ralenti dans le cas d'un nuage très froid ($\eta$ grand), et rapide dans le cas d'un nuage chaud ($\eta$ petit). Lors de l'abaissement de la profondeur du piège, un nuage chaud sera rapidement évaporé tandis qu'un nuage froid sera figé, la température variant donc avec la profondeur du piège.} et sa valeur est de l'ordre de 10 dans le cas d'un piège optique.
+
+
+
+Le potentiel de piégeage $U(\mathbf{x},t)$ étant modifié au cours de l'évaporation, les atomes sont soumis à un potentiel variant dans le temps. Dans le cas d'un piège harmonique, les fréquences de piégeage associées peuvent changer au cours de l'évaporation en fonction de l'implémentation expérimentale du refroidissement évaporatif\footnote{La méthode de couteau radio-fréquence utilisée dans le piège magnétique dans la première chambre ne modifie pas les fréquences de piégeages et ne change que la profondeur du piège, tandis que l'évaporation tout optique, réalisée à l'aide de faisceaux lasers de tailles fixées, est accompagnée d'une décompression du piège lors de l'abaissement de la puissance des lasers.}. Les variations d'énergie potentielle sont alors caractérisées par le paramètre $\nu$ défini par
+\begin{equation}
+\nu=\frac{\dot{\overline{\omega}}/\overline{\omega}}{\dot{U}/U}
+\end{equation}
+où $\overline{\omega}$ est la moyenne géométrique des fréquences du piège. Comme explicité formule \ref{eq:frequences_piege_optique}, les fréquences de piégeage du piège optique évoluent en $\overline{\omega}\propto\sqrt{U}$, impliquant donc $\nu=0.5$ \citep{o2001scaling}. L'abaissement de la profondeur du piège sera donc forcément accompagnée d'une décompression de celui-ci. 
+
+
+
+
+Dressons alors un bilan d'énergie afin de déterminer la manière dont varient les principales quantités thermodynamiques au cours de l'évaporation. L'énergie totale du gaz dans un piège harmonique est donnée par
+\begin{equation}
+E=3N\kB T
+\end{equation}
+avec $N$ le nombre total d'atomes. La variation temporelle de l'énergie totale du gaz est alors donnée par
+\begin{equation}
+\dot{E}=3\dot{N} \kB T + 3 N \kB \dot{T} \text{ ,}
+\label{eq:variation_energie_derivee}
+\end{equation}
+exprimée en fonction des variations temporelles du nombre d'atomes et de la température.
+
+En identifiant les différentes sources de variations de l'énergie totale, on montre que la variation de l'énergie totale du système est donnée par \citep{cohen1996atomes}
+\begin{equation}
+\dot{E}=\dot{N}(U+\kappa \kB T) +\nu\frac{\dot{U}}{U}E \text{ ,}
+\label{eq:variation_energie_bilan}
+\end{equation}
+où le premier terme décrit la perte d'énergie liée à l'évaporation des atomes énergétiques et le second terme décrit le changement d'énergie potentielle des particules restées dans le piège. Dans le cas d'une évaporation 3D, $\kappa=3/2$ \citep{ketterle1996evaporative}.
+
+En combinant les équations \ref{eq:variation_energie_derivee} et \ref{eq:variation_energie_bilan}, on montre alors que la variation du nombre d'atomes en fonction de la profondeur de piégeage est donnée par \citep{o2001scaling}:
+\begin{equation}
+\frac{\dot{N}}{N}={\frac{3(1-\nu)}{\eta'-3}} \frac{\dot{U}}{U} \text{ ,}
+\label{eq:nombre_atome_evap}
+\end{equation}
+avec $\eta'=\eta+\kappa$. Il est alors possible de déterminer les lois d'échelle des différentes grandeurs thermodynamiques d'un gaz classique. 
+
+En particulier, dans le cas d'un piège harmonique, la densité dans l'espace des phases s'exprime:
+\begin{equation}
+\mathcal{D}=N\left(\frac{\hb \overline{\omega}}{\kB T}\right)^3 \text{ .}
+\end{equation}
+On peut alors déterminer les variations du paramètre de dégénérescence en fonction des variations du nombre d'atomes: 
+\begin{equation}
+\frac{\dot{\mathcal{D}}}{\mathcal{D}} = -(\eta'-4) \frac{\dot{N}}{N} \text{ .}
+\label{eq:efficacite_evaporation}
+\end{equation}
+Le paramètre $\eta'-4 \equiv \gamma$ correspond à l'efficacité du processus d'évaporation: la perte d'atomes engendre un gain de densité dans l'espace des phases d'autant plus élevé que ce paramètre est grand. L'enjeu de l'optimisation du refroidissement évaporatif consiste donc à augmenter ce paramètre autant que possible.
+
+Une conséquence remarquable de l'équation \ref{eq:efficacite_evaporation} est que l'efficacité du processus d'évaporation ne dépend pas du paramètre $\nu$ témoignant du changement de forme du piège. Ceci s'explique par le fait que pour une évaporation à $\eta$ constant, le paramètre $\nu$ traduit une ouverture adiabatique du piège, la décompression du nuage étant accompagnée d'une diminution de la température, voir section \ref{sc:chambre_science}. 
+
+
+\paragraph*{Taux de collisions et régime d'emballement}
+Si l'équation \ref{eq:efficacite_evaporation} ne fait pas apparaître l'influence du paramètre $\nu$, celui-ci joue cependant un rôle primordial quant à la cinétique de l'évaporation. En effet, la vitesse maximale d'évaporation est limitée par la vitesse à laquelle le gaz atteint un état d'équilibre thermique, c'est à dire le taux de thermalisation $1/\tau_{\mathrm{th}}$. Celui-ci est de l'ordre du taux de collisions élastiques $\Gamma_{\mathrm{c}}=n \sigma \overline{v}$, avec $n$ la densité du gaz, $\sigma$ la section efficace de diffusion et $\overline{v}$ la vitesse moyenne relative entre deux atomes \citep{walraven2010elements}. 
+
+Dans le cas d'un piège harmonique, on montre que la loi de variation du taux de collisions élastiques peut s'écrire \citep{o2001scaling}
+\begin{equation}
+\frac{\dot{\Gamma}_{\mathrm{c}}}{\Gamma_{\mathrm{c}}}=\left[ 1- (\eta'-3) \left( \frac{1-3\nu}{3(1-\nu)}\right)\right] \frac{\dot{N}}{N} \text{ ,}
+\end{equation}
+où le facteur entre crochets peut changer de signe suivant la valeur de $\nu$. Ainsi, il est possible que le taux de collisions élastiques augmente au cours de l'évaporation malgré la perte d'atomes, rendant ainsi l'évaporation de plus en plus rapide. Dans ce régime d'\emph{emballement}, la diminution du nombre d'atomes et de leur vitesse relative est plus que compensée par une forte augmentation de la densité au centre du piège, augmentant ainsi le taux de collisions. Ce régime est atteint pour de faibles valeurs de $\nu$, en particulier pour notre piège magnétique où $\nu=0$. 
+
+En revanche, l'évaporation optique opère en abaissant la puissance des faisceaux laser, imposant donc $\nu=0.5$. Dans ce régime, le taux de collisions élastiques diminue au cours de l'évaporation, la rendant de plus en plus lente contrairement au régime d'emballement. Il est donc primordial qu'une évaporation optique commence avec un grand taux de collisions élastiques pour permettre une thermalisation rapide. De manière générale, une évaporation optique possède une première phase pendant laquelle la puissance des faisceaux laser est abaissée rapidement, la thermalisation du nuage étant immédiate grâce au grand taux de collisions, puis une seconde phase plus lente où la thermalisation du nuage nécessite plus de temps. 
+
+
+
+
+
+\paragraph*{Effet des collisions inélastiques}
+En pratique, l'évaporation par collisions élastiques n'est pas la seule source de perte des particules. L'expérience se déroulant à l'intérieur d'une enceinte sous ultra-vide pompée en continu, les collisions avec les particules du gaz résiduel à température ambiante sont responsables de pertes indépendantes de l'énergie des atomes piégés. Cela se traduit par un temps de vie $1/\Gamma_{\mathrm{bg}}$ fini des atomes dans le piège.
+
+On peut alors écrire les pertes d'atomes liées au gaz résiduel sous la forme d'équations de taux
+\begin{align}
+\dot{N}_{\mathrm{bg}}&=-\Gamma_{\mathrm{bg}} N  \\
+\dot{E}_{\mathrm{bg}}&=-\Gamma_{\mathrm{bg}} E \text{ ,}
+\end{align}
+où le temps de vie $1/\Gamma_{\mathrm{bg}}$ est de l'ordre de \SI{10}{\second}. 
+
+Deux régimes limites se présentent alors. Dans le cas d'une évaporation rapide telle que $\Gamma_{\mathrm{ev}} \gg \Gamma_{\mathrm{bg}}$, l'essentiel des pertes d'atomes est dû au processus d'évaporation. La présence du gaz résiduel n'a donc que peu d'effet sur le nuage, l'évaporation pouvant se dérouler sur une durée petite devant le temps de vie des atomes dans le piège. 
+
+Au contraire, les pertes dues au gaz résiduel peuvent fortement entraver le processus d'évaporation dans le cas d'un petit temps de vie, dans le régime où $\Gamma_{\mathrm{ev}} \ll \Gamma_{\mathrm{bg}}$. Dans ces conditions, les atomes ne peuvent rester assez longtemps dans le piège pour que certains aient le temps d'acquérir une énergie suffisante pour être évaporés.
+
+
+
+Le gaz résiduel n'est pas la seule source néfaste de perte d'atomes. Des processus complexes liés à la nature métastable des expériences d'atomes froids peuvent conduire à la perte de plusieurs atomes. Aux températures atteintes par les nuages piégés, la majorité des éléments devraient se trouver à l'état solide, mais le caractère binaire des collisions élastiques permet au système de rester sous forme gazeuse. Cependant, il est possible que lors d'une collision tertiaire, deux atomes établissent une liaison moléculaire, dont la grande énergie est évacuée par le biais d'un troisième atome. Ce processus de pertes à trois corps conduit alors à la perte des trois atomes. 
+
+Puisque ce mécanisme nécessite la collision de trois atomes, on peut décrire la variation de densité due aux pertes à trois corps ainsi que la variation de l'énergie totale à l'aide d'une loi de puissance:
+\begin{align}
+\dot{n}_{\mathrm{3b}}(\mathbf{x})&=-K_{\mathrm{3b}} n^3(\mathbf{x}) \label{eq:pertes_atomes_3corps} \\
+\dot{E}_{\mathrm{3b}}&= \frac{3}{2}\dot{N}_{\mathrm{3b}} \kB T + \int{\mathrm{d}\mathbf{x} \: U(\mathbf{x}) \dot{n}_{\mathrm{3b}}(\mathbf{x})}\text{ ,}
+\end{align}
+où le coefficient $K_{\mathrm{3b}}$ est une constante du \isotope[87]{Rb} et vaut \SI{1.8e-29}{\centi\metre^6\second^{-1}} \citep{burt1997coherence}\citep{soding1999three}.
+
+
+Comme illustré par l'équation \ref{eq:pertes_atomes_3corps}, le mécanisme de pertes à trois corps devient important dans des régions de fortes densités. Les pièges optiques étant fortement comprimés afin d'avoir un taux de collisions suffisant pour pouvoir évaporer, ceux-ci sont particulièrement susceptibles de générer des pertes à trois corps. 
+
+En présence de ces pertes, il est possible de modifier les lois d'échelles présentées précédemment \citep{luiten1996kinetic}\citep{brantut2009manipulation}. En particulier, on peut montrer que dans le cas d'un piège harmonique profond, l'équation \ref{eq:nombre_atome_evap} régissant l'évolution du nombre d'atomes se généralise en
+\begin{equation}
+\frac{\dot{N}}{N}= \left( \frac{\eta'-3}{3(1-\nu)} + R \frac{2-\eta'}{3(1-\nu)} \right)^{-1} \frac{\dot{U}}{U} \text{ ,}
+\label{eq:scaling_atomes_3corps}
+\end{equation}
+où $R=\dot{N}_{\mathrm{3b}}/\dot{N}_{\mathrm{tot}}$ est la fraction d'atomes perdus par collisions à trois corps. De même, l'équation \ref{eq:efficacite_evaporation} devient
+\begin{equation}
+\frac{\dot{\mathcal{D}}}{\mathcal{D}}=-\gamma \frac{\dot{N}}{N} \quad \text{avec} \quad \gamma=\eta'-4 + R(2-\eta') \text{ ,}
+\label{eq:efficacite_evap_3corps}
+\end{equation}
+témoignant ainsi de la réduction de l'efficacité de l'évaporation par les pertes à trois corps.
+
+
+\subsection{Implémentation expérimentale}
+Nous allons à présent détailler la manière dont cette étape d'évaporation est implémentée sur notre dispositif. La consigne présentée ici est le résultat d'une optimisation de l'efficacité de l'évaporation, encodée dans le paramètre $\gamma$. De plus, nous discuterons l'influence qu'a la lévitation magnétique lors de cette étape de refroidissement.
+
+
+
+\paragraph*{Consigne d'évaporation}
+Les lois d'échelle présentées dans la section précédente montrent comment évoluent les différentes grandeurs thermodynamiques du nuage en fonction de la profondeur du piège, sans pour autant spécifier la dépendance temporelle de celle-ci. Afin de déterminer le profil optimal de la consigne d'évaporation, il est possible d'établir un bilan du nombre d'atomes présents dans le piège\footnote{Les lois d'échelle présentées dans la section précédente ont été obtenues à l'aide d'un bilan d'énergie.}.
+En considérant que les atomes sont uniquement perdus par évaporation, on peut écrire les variations du nombre d'atomes à l'aide d'une équation de taux \citep{luiten1996kinetic}\citep{o2001scaling}
+\begin{equation}
+\dot{N} = - \Gamma_{\mathrm{ev}} N \quad \text{avec} \quad \Gamma_{\mathrm{ev}}=2(\eta-4) e^{-\eta} \Gamma_{\mathrm{c}} \text{ .}
+\label{eq:pertes_evap_naturelle}
+\end{equation}
+
+On peut alors déterminer que le profil optimal de la consigne d'évaporation est aussi donné par une loi de puissance
+\begin{equation}
+U(t)=U_{\mathrm{0}} {\left( 1+\frac{t}{\tau}\right) }^{-\beta} \text{ ,}
+\label{eq:nouvelle_consigne_evap}
+\end{equation}
+avec $U_{\mathrm{0}}=U(t=0)$ la profondeur initiale de chaque faisceau au début de l'étape d'évaporation. L'optimisation de cette étape sur notre nuage nous a permit de déterminer les paramètres $\beta_{\mathrm{pince}}=\beta_{\mathrm{dimple}}=6$, $\tau_{\mathrm{pince}}=\SI{1.2}{\second}$ et $\tau_{\mathrm{dimple}}=\SI{1.3}{\second}$, dont le profil est comparé à l'ancienne consigne composée de morceaux de rampes linéaires figure \ref{fig:comparaison_consigne_evap}.
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/comparaison_consignes_evap.pdf}
+\caption{\textbf{Comparaison de la nouvelle consigne d'évaporation du piège optique.} L'ancienne consigne, composée de cinq morceaux de rampe linéaire, est représentée . La nouvelle consigne, donnée par l'équation \ref{eq:nouvelle_consigne_evap} et représentée, possède une décroissance plus rapide que dans le cas de l'ancienne consigne, et permet d'obtenir un condensat de Bose-Einstein plus rapidement.}
+\label{fig:comparaison_consigne_evap}
+\end{figure}
+
+On remarque que la nouvelle consigne appliquée est de forme similaire à l'ancienne et possède deux dynamiques distinctes. Comme annoncé dans la section \ref{sc:scaling_laws_ohara}, l'évaporation est dans un premier temps rapide afin de profiter du grand taux de collisions élastiques, puis dans un second temps, la consigne est lentement abaissée en raison de l'augmentation du temps de thermalisation. 
+
+Notons tout de même la principale différence entre ces courbes. Par construction, la formule \ref{eq:nouvelle_consigne_evap} permet de mieux tirer parti du processus d'évaporation naturelle. Il est alors possible d'effectuer une évaporation plus rapide, réduisant l'impact de la durée de vie finie des atomes par collisions avec le gaz résiduel\footnote{Dans le cadre d'une évaporation à $\eta$ constant, le taux de pertes à trois corps ne dépend pas de la vitesse à laquelle l'évaporation est effectuée.}.
+ 
+
+
+
+
+
+
+
+
+
+\paragraph*{Mesure de la température d'un nuage lévité}
+La quantité thermodynamique permettant de témoigner du refroidissement du gaz au cours de l'évaporation correspond naturellement à sa température. De manière générale, celle-ci est estimée à l'aide d'une imagerie par \emph{temps de vol}. Son principe repose sur l'expansion libre du nuage après extinction du piège, expansion dont l'origine provient de la distribution des vitesses des atomes. Dans le cas d'un nuage thermique, la température est donnée par la largeur de la distribution des vitesses du gaz, qui est directement donnée par la taille du nuage après un temps d'expansion suffisamment long\footnote{La taille du nuage thermique évolue selon $\sigma_{\mathrm{i}}^2= \sigma_{\mathrm{i,0}}^2+ t^2 \kB T/m$, avec $T$ la température, $m$ la masse des atomes, $t$ le temps d'expansion libre et $\sigma_{\mathrm{i,0}}$ a taille du nuage à $t=0$. Pour $t$ suffisamment grand, on peut ainsi négliger la taille initiale du nuage.}.
+
+Cependant, pour des nuages particulièrement froids, les temps d'expansion requis pour estimer correctement la température du nuage peuvent dépasser le temps d'observation possible des atomes alors en mouvement de chute libre. L'utilisation de la lévitation magnétique pendant cette phase d'expansion permet de dépasser cette limite en compensant la gravité\footnote{Un second intérêt de la lévitation magnétique est de supprimer l'influence de la gravité lors de l'évaporation. La pesanteur a pour effet de \textit{pencher} le potentiel, pouvant changer la dimensionnalité de l'évaporation \citep{boyer2000condensation}, mais aussi limiter la profondeur du piège optique à environ $U/\kB \sim \SI{2.5}{\micro\kelvin}$ pour laquelle la gradient maximal d'intensité lumineuse ne permet plus de compenser le poids des atomes.}. Néanmoins, comme nous l'avons détaillé dans la section \ref{sc:oscillations_levitation}, l'utilisation de la lévitation magnétique conduit à un piégeage de l'état $\etatF{1}{-1}$ dans lequel nous souhaitons franchir le seuil de condensation.
+
+L'estimation de la température du nuage impose alors deux contraintes sur le temps d'expansion du nuage: 
+\begin{itemize}
+\item[\textendash] Celui-ci doit être suffisamment grand pour pouvoir négliger la taille initiale du nuage devant celle mesurée.
+\item[\textendash] Le temps d'expansion doit être suffisamment petit devant la période d'oscillation de la taille du nuage, liée au piégeage de la lévitation magnétique. De cette manière, l'expansion peut être considérée balistique.
+\end{itemize}
+Dans la configuration à bas champ de la lévitation magnétique, proche du biais magique $\magicB=\SI{3.2}{\gauss}$, les fréquences de piégeage sont particulièrement grandes et il n'est pas possible de satisfaire ces deux contraintes simultanément. 
+
+La méthode retenue par l'équipe pour obtenir une mesure correcte de la température du nuage repose sur la technique de \emph{focalisation atomique}. Celle-ci permet d'imager dans l'espace réel la distribution de vitesses à l'aide d'un potentiel harmonique, à l'instar d'une lentille en optique \citep{murthy2014matter}. Pour illustrer ces propos, considérons un ensemble d'atomes dont la distribution initiale des positions est de largeur $\Delta\mathrm{x}_{\mathrm{i,0}}$ dans la direction $\vec{i}$ et la distribution de vitesses est de largeur $\Delta\mathrm{v}_{\mathrm{i,0}}=\hb \Delta\mathrm{k}_{\mathrm{i,0}} /m$. Sous l'effet du potentiel harmonique, l'évolution temporelle de la largeur de la distribution de positions est donnée par
+\begin{equation}
+\Delta\mathrm{x}_{\mathrm{i}}^2(t)=\Delta\mathrm{x}_{\mathrm{i,0}}^2 \cos^2(\omega_{\mathrm{i}} t) + \frac{\hb^2 \Delta\mathrm{k}_{\mathrm{i,0}}^2}{m^2 \omega_{\mathrm{i}}^2} \sin^2(\omega_{\mathrm{i}} t) \text{ .}
+\end{equation}
+En coupant le potentiel harmonique après un quart d'oscillation à $t=T_{\mathrm{osc}}/4$ avec $T_{\mathrm{osc}}= 2\pi/\omega_{\mathrm{i}}$ la période d'oscillation, la distribution de positions des atomes a une largeur donnée par
+\begin{equation}
+\Delta\mathrm{x}_{\mathrm{i}}(T_{\mathrm{osc}}/4)=\left|\frac{\hb \Delta\mathrm{k}_{\mathrm{i,0}}}{m \omega}\right| \text{ ,}
+\end{equation}
+indépendante de la distribution initiale des positions des atomes. À l'aide de la distribution thermique des vitesses, on déduit
+\begin{equation}
+T=\frac{m \omega_{\mathrm{i}}^2 \Delta \mathrm{x}_{\mathrm{i}}^2(T_{\mathrm{osc}}/4)}{\kB}
+\end{equation}
+
+Cette mesure de la température est donc indépendante de la taille initiale du nuage, contrairement à la mesure par temps de vol qui nécessite une longue expansion pour s'affranchir de l'influence de la taille initiale. Une seconde différence entre ces méthodes réside dans le fait que le temps d'expansion par focalisation atomique n'est plus ajustable, celui-ci étant fixé par la fréquence du piégeage harmonique de la lévitation magnétique. 
+
+Notons que dans la configuration magnétique choisie, le piégeage vertical est négligeable devant celui des directions horizontales. En considérant que l'expansion du nuage est balistique suivant la direction verticale, la valeur de la température obtenue est en accord avec les valeurs extraites par focalisation atomique suivant les deux directions horizontales, comme illustré figure \ref{fig:focalisation_atomique}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Modif_exp/focalisation_atomique.pdf}
+\caption{\textbf{a: Principe de la focalisation atomique.} L'évolution temporelle d'un nuage dans l'espace des phases est une rotation autour de l'origine. À $t=T_{\mathrm{osc}}/4$, la distribution du nuage dans l'espace des phases a subi une rotation de $-\pi/2$. On peut ainsi mesurer la distribution initiale d'impulsion par une mesure de densité atomique dans l'espace réel. \textbf{b: Évolution temporelle de la taille du nuage dans la champ de lévitation.} Le piégeage étant quasi-nul dans la direction verticale, le nuage s'étend de manière balistique (points rouges). Dans la direction horizontale, le nuage subit l'effet de piégeage harmonique de la lévitation magnétique et sa taille oscille à une fréquence correspondant au double de la fréquence de piégeage (points bleus). Pour un temps de vol d'environ \SI{45}{\milli\second}, le nuage atteint sa taille maximale représentative de la distribution initiale d'impulsion. Cette valeur est en accord avec la fréquence de piégeage estimée à environ \SI{5}{\hertz}. On remarque de plus que l'expansion du nuage est isotrope à temps court. La température du nuage, mesurée suivant les deux directions, est d'environ \SI{620}{\nano\kelvin}.}
+\label{fig:focalisation_atomique}
+\end{figure}
+
+
+
+
+
+Nous pouvons alors comparer la température du nuage à la profondeur du piège, que l'on estime au cours de l'évaporation à l'aide de la calibration du piège optique présentée dans la section \ref{sc:calibration_piege_optique}. L'évolution temporelle de la température du nuage est représentée figure \ref{fig:eta_constant}, à laquelle nous superposons sans paramètre ajustable\footnote{L'estimation de la profondeur du piège optique est réalisée selon la calibration présentée dans la section \ref{sc:calibration_piege_optique}, donc uniquement à l'aide de mesures photométriques des puissances et tailles des faisceaux, complétées par les mesures des fréquences de piégeage obtenues par oscillations du centre de masse du nuage.} la profondeur estimée du piège divisée par 10. L'accord entre ces courbes est remarquable, validant ainsi l'approche d'une évaporation à $\eta$ constant.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/Evolution_température_eta.pdf}
+\caption{\textbf{Évolution de la température au cours de l'évaporation.} La température (points bleus) est mesurée après différentes durées d'évaporation et comparée à la profondeur du piège divisée par 10 (courbe noire). Sans paramètre ajustable, les deux courbes se superposent remarquablement. Chaque point correspond à une mesure unique, répétée plusieurs fois pour chaque durée d'évaporation sans moyenner.}
+\label{fig:eta_constant}
+\end{figure}
+
+
+
+
+
+
+\paragraph*{Résultats de l'optimisation de l'évaporation}
+L'évolution du nombre d'atomes au cours de l'évaporation présente un intérêt particulier car celle-ci contient les informations liées aux processus inélastiques.
+
+En particulier, il est possible de mesurer la densité atomique du nuage au cours de l'évaporation, et ainsi d'évaluer les pertes à trois corps à l'aide de la formule \ref{eq:pertes_atomes_3corps}. En comparant ces pertes aux variations mesurées du nombre d'atomes, on obtient un rapport $R$ de l'ordre de 0.1. Il apparaît donc que les pertes à trois corps ont un effet marqué sur la cinétique de l'évaporation, mais que celles-ci ne constituent pas une limite pour notre système. 
+
+De plus, il est possible de négliger l'effet des pertes due aux collisions avec le gaz résiduel, limitant le temps de vie des atomes dans le piège à $1/\Gamma_{\mathrm{bg}}\approx\SI{10}{\second}$. En effet, l'optimisation de notre évaporation se concentre sur les premières \SI{700}{\milli\second} d'abaissement de la profondeur du piège\footnote{Cette durée correspond au temps nécessaire pour franchir le seuil de condensation $\mathcal{D}\approx 1$ et l'obtention d'un gaz dégénéré. Celle-ci était d'environ \SI{1.2}{\second} avec l'ancienne consigne.} comme illustré sur les figures \ref{fig:eta_constant} et \ref{fig:nombre_atomes_evap}, et la durée totale de notre évaporation est de \SI{3.5}{\second}, courte comparée au temps de vie permis par le gaz résiduel.
+
+L'évolution du nombre d'atomes au cours de l'évaporation est représentée figure \ref{fig:nombre_atomes_evap} et est comparée à la prédiction de la loi d'échelle \ref{eq:scaling_atomes_3corps}, tracée avec les paramètres $\eta=10$ et $R=0.1$, extraits de la mesure de température et du nombre d'atomes. En ajustant uniquement le nombre d'atomes initial du modèle, il apparaît que la théorie d'échelle permet de décrire correctement l'évolution du nombre d'atomes. 
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{Fig/modif_exp/Nombre_atomes_evap.pdf}
+\caption{\textbf{Évolution du nombre d'atomes au cours de l'évaporation.} Les points bleus correspondent aux mesures expérimentales du nombre d'atomes, chaque point étant issu d'un unique cycle expérimental. La ligne continue noire correspond à la prédiction de la loi d'échelle \ref{eq:scaling_atomes_3corps} avec les paramètres $\eta=10$ et $R=0.1$, et où le seul paramètre ajustable est le nombre d'atomes initial. Il apparaît alors un très bon accord entre les données et le modèle.}
+\label{fig:nombre_atomes_evap}
+\end{figure}
+
+Enfin, rappelons que l'optimisation de l'évaporation est réalisée en maximisant le gain de densité dans l'espace des phases par atome perdu, donné par le paramètre $\gamma$ en présence de pertes à trois corps (voir la formule \ref{eq:efficacite_evap_3corps}. 
+
+L'évolution de la densité dans l'espace des phases en fonction du nombre d'atomes est représentée figure \ref{fig:efficacite_evaporation_optique} en échelle \emph{log-log} pour dans le cas de notre nouvelle consigne (en bleu) ainsi que pour notre ancienne consigne (en bordeaux). La comparaison est immédiate: la nouvelle consigne permet d'atteindre le seuil de condensation $\mathcal{D}\approx 1$ pour une perte d'atomes bien moindre que l'ancienne.
+
+Plus quantitativement, l'efficacité mesurée pour la nouvelle consigne est de $\gamma\approx 4.5$ tandis que l'ancienne présente une efficacité d'environ 2.3\footnote{Cette mesure a été réalisée après le changement du laser source du piège optique. Avant changement, l'efficacité était plutôt estimée à 2.8 \citep{jendrzejewski2012quantum}.}, témoignant de la nette amélioration de notre évaporation. Notons que la loi d'échelle \ref{eq:efficacite_evap_3corps} en présence de pertes à trois corps prédit une valeur $\gamma\approx 6.5$, bien supérieure à notre valeur mesurée. Une étude approfondie de l'origine de cette différence n'a pas été menée compte-tenu de l'excellente efficacité obtenue. En effet, la valeur de $\gamma\approx 3$ représente déjà une très bonne efficacité pour la plupart des expériences d'atomes ultra-froids \citep{barrett2001all}\citep{hung2008accelerating}.
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Fig/Modif_exp/efficacité_évaporation_optique.pdf}
+\caption{\textbf{Efficacité de l'évaporation optique.} En traçant la densité dans l'espace des phases du nuage en fonction du nombre d'atomes, on peut évaluer l'efficacité du refroidissement évaporatif. La nouvelle consigne d'évaporation permet d'obtenir les points bleus pour différents temps d'évaporation, tandis que l'ancienne consigne est représentée en bordeaux. Les lignes continues sont des ajustements des données expérimentales par des lois de puissance \ref{eq:efficacite_evaporation}, qui permettent ainsi d'extraire le paramètre $\gamma$ quantifiant l'efficacité de l'évaporation.}
+\label{fig:efficacite_evaporation_optique}
+\end{figure}
+
+Finalement, la consigne retenue à l'issue de l'optimisation de l'évaporation permet d'obtenir un condensat de Bose-Einstein d'environ \SI{1.2e6}{} atomes avec une température d'environ \SI{500}{\nano\kelvin} en \SI{700}{\milli\second}. Après \SI{3.5}{\second} d'évaporation, notre nuage contient environ \SI{2e5}{} atomes à une température de \SI{10}{\nano\kelvin} sans utiliser la technique d'ouverture adiabatique pour refroidir davantage. À l'heure de l'écriture de ces lignes, l'implémentation de cette technique n'a pas encore été réalisée.
+
+
+
+
