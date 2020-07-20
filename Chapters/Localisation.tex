@@ -11,6 +11,8 @@ Paragraphe d'introduction?
 Dans ce chapitre, nous commencerons par décrire comment, lors de la propagation cohérente d'une onde dans un milieu désordonné, les interférences peuvent altérer la diffusion classique et engendrer le phénomène spectaculaire de \emph{Localisation d'Anderson} dont nous donnerons les principales propriétés. Dans un second temps, nous présenterons succinctement les principaux systèmes utilisés pour l'investigation de la localisation d'Anderson, pour s'attarder plus particulièrement sur les expériences d'atomes froids. Enfin, nous terminerons ce chapitre par une discussion de nos enjeux actuels, l'étude du régime critique de la transition d'Anderson, dont nous présenterons l'état de l'art.
 
 \section{Diffusion et interférences}
+Intro historique sur Anderson et le mécanisme de localisation faible pour donner une approche un peu plus intuitive au rôle des interférences.
+
 \subsection{Phénomène de diffusion}
 \label{sc:diffusion_classique}
 Le phénomène de diffusion macroscopique est un phénomène de transport le plus connu de la physique classique. Celui-ci permet par exemple de décrire de manière simple la propagation de la chaleur dans un matériau homogène, l'homogénéisation de la concentration de particules dans un liquide ou encore le phénomène de résistance électrique dans un cadre unifié. 
@@ -104,29 +106,36 @@ Le second terme de l'équation \ref{eq:amplitude_localisation_faible} représent
 En particulier, les trajectoires pour lesquelles l'onde se retrouve à son point de départ forment des boucles qu'il est possible de parcourir dans les deux sens, comme illustré figure \ref{fig:localisation_faible}. Par \emph{symétrie par renversement du temps}, il est donc possible de trouver des paires de trajectoires dont la phase accumulée sera identique. De plus, ces paires de trajectoires existent quelque soit la réalisation du désordre, rendant ce processus d'interférences constructives robuste vis-à-vis du moyennage d'ensemble et $\overline{e^{i(\phi_j - \phi_l)}}=1$. Ainsi, la probabilité qu'une onde retourne à son point de départ est le double de la prédiction classique:
 \begin{equation}
 P(\mathbf{x},\mathbf{x})=2 \sum_j{{\left| A_j \right|}^2} \text{ .}
+\label{eq:proba_retour_origine}
 \end{equation}
 
-Les interférences entre chemins de diffusion tendent alors à favoriser le retour de l'onde à son point d'origine, ralentissant ainsi la diffusion. Cet effet de \emph{localisation faible}, commun à tout type d'onde, a été intensivement étudié dans de nombreux domaines, aussi théoriquement qu'expérimentalement.
+Les interférences entre chemins de diffusion tendent alors à favoriser le retour de l'onde à son point d'origine, ralentissant ainsi la diffusion. Cet effet de \emph{localisation faible}, commun à tout type d'onde, a été intensivement étudié dans de nombreux domaines, aussi théoriquement que expérimentalement.
 
 
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{Fig/Localisation/localisation_faible.pdf}
-\caption{\textbf{Mécanisme de localisation faible.} Stuff.}
+\caption{\textbf{a: Participation des différents chemins de diffusion à la propagation de l'onde.} La probabilité d'arriver au point $\mathrm{x'}$ en partant du point $\mathrm{x}$ est donnée par l'ensemble des trajectoires les reliant. Dans le cas des chemins 1 et 2, la phase accumulée le long de ces trajectoires diffère, détruisant en moyenne le phénomène d'interférence entre ces chemins. \textbf{b: Mécanisme de localisation faible.} Les chemins de diffusion pour lesquels l'onde retourne à son point de départ se présentent sous forme de boucles qu'il est possible de parcourir dans les deux sens, comme illustré par les trajectoires 1 et 2, ou encore les trajectoires 3 et 4. Ces paires de trajectoires existent quelle que soit la réalisation du désordre.}
 \label{fig:localisation_faible}
 \end{figure}
 
+
+
 \paragraph*{Corrections de localisation faible}
-Comme le retour de l'onde à son point d'origine est favorisé, ça se traduit par la diminution du coefficient de diffusion. On peut l'écrire sous la forme
+Comme le montre l'équation \ref{eq:proba_retour_origine}, le retour de l'onde à son point d'origine est favorisé à l'aide des interférences constructives qu'il existe entre des trajectoires symétriques par renversement du temps. Notamment, cet effet de localisation faible se traduit par la diminution du coefficient de diffusion par rapport à la prédiction classique \ref{eq:definition_coefficient_diffusion}, que l'on peut alors écrire sous la forme
 \begin{equation}
 D= D_{\mathrm{0}}-\delta D \text{ ,}
 \end{equation}
-où $\delta D$ est la correction de localisation faible.
+où $D_{\mathrm{0}}$ est le coefficient de diffusion classique \ref{eq:definition_coefficient_diffusion}, et $\delta D$ est la correction de localisation faible.
+
+
+
+Ces corrections de localisation faible dépendent des détails microscopiques du système, mais aussi de sa dimension $d$ et de sa taille $L$. Ceux-ci sont donnés par \citep{}:
 \begin{equation}
 \delta D/ D_{\mathrm{0}} = \left\lbrace \begin{aligned}
-& \mathcal{O}\left(L/l_{\mathrm{B}}\right)  \quad &&\text{en 1D}\\
-& \mathcal{O}\left(\frac{1}{k l_{\mathrm{B}}} \ln{\frac{L}{l_{\mathrm{B}}}} \right) \quad &&\text{en 2D}\\
-& \mathcal{O}\left(\frac{1}{(k l_{\mathrm{B}})^2}\right) \quad &&\text{en 3D}
+& \mathcal{O}\left(L/l_{\mathrm{B}}\right)  \quad &&\text{en 1D ,}\\
+& \mathcal{O}\left(\frac{1}{k l_{\mathrm{B}}} \ln{\frac{L}{l_{\mathrm{B}}}} \right) \quad &&\text{en 2D ,}\\
+& \mathcal{O}\left(\frac{1}{(k l_{\mathrm{B}})^2}\right) \quad &&\text{en 3D .}
 \end{aligned}\right.
 \end{equation}
 
