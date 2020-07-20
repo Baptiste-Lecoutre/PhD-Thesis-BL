@@ -71,7 +71,7 @@ En définissant le coefficient de diffusion par $ \left\langle \Delta \mathbf{x}
 D=\frac{v \lb}{d}=\frac{\hb}{m d} k \lb \text{ ,}
 \label{eq:definition_coefficient_diffusion}
 \end{equation}
-où on a fait apparaître la quantité $k \lb$, qui sera essentielle dans la suite.
+où on a fait apparaître la quantité $k \lb$, que l'on peut interpréter comme une mesure de la force du désordre, et qui sera essentielle dans la suite.
 
 Une conséquence de l'équation \ref{eq:definition_coefficient_diffusion} est qu'une diminution de la longueur de transport entraîne une diminution du coefficient de diffusion. Ainsi, plus un système sera désordonné, plus le coefficient de diffusion sera petit.
 
@@ -130,17 +130,16 @@ où $D_{\mathrm{0}}$ est le coefficient de diffusion classique \ref{eq:definitio
 
 
 
-Ces corrections de localisation faible dépendent des détails microscopiques du système, mais aussi de sa dimension $d$ et de sa taille $L$. Ceux-ci sont donnés par \citep{}:
+Ces corrections de localisation faible dépendent des détails microscopiques du système, mais aussi de sa dimension $d$ et de sa taille $L$. Celles-ci sont données par \citep{akkermans2007mesoscopic}:
 \begin{equation}
 \delta D/ D_{\mathrm{0}} = \left\lbrace \begin{aligned}
 & \mathcal{O}\left(L/l_{\mathrm{B}}\right)  \quad &&\text{en 1D ,}\\
 & \mathcal{O}\left(\frac{1}{k l_{\mathrm{B}}} \ln{\frac{L}{l_{\mathrm{B}}}} \right) \quad &&\text{en 2D ,}\\
-& \mathcal{O}\left(\frac{1}{(k l_{\mathrm{B}})^2}\right) \quad &&\text{en 3D .}
+& \mathcal{O}\left(\frac{1}{(k l_{\mathrm{B}})^2}\right) \quad &&\text{en 3D ,}
 \end{aligned}\right.
+\label{eq:correction_localisation_faible}
 \end{equation}
-
-
-
+et témoignent ainsi de la forte influence de la dimension du système comme nous le verrons plus en détails dans la section suivante.
 
 
 
@@ -149,15 +148,77 @@ Ces corrections de localisation faible dépendent des détails microscopiques du
 
 \subsection{Suppression du transport: Localisation d'Anderson}
 \label{sc:localisation_anderson}
-suppression du transport $D=0$. profil exponentiel de la fonction d'onde. longueur de localisation.
+
+Les corrections de localisation faible données par l'équation \ref{eq:correction_localisation_faible} font apparaître un comportement remarquable: sous certaines conditions, il est possible que la correction $\delta D$ soit égale au coefficient de diffusion classique $D_{\mathrm{0}}$, entraînant ainsi la suppression du transport avec $D=0$. Cet effet dit de \emph{Localisation forte}, ou encore de \emph{Localisation d'Anderson}, a été découvert en 1958 par \emph{Philip W. Anderson} s'intéressant alors à la diffusion d'une particule quantique dans un réseau désordonné dans le cadre de la physique de la matière condensée \citep{anderson1958absence}. Ces travaux furent récompensés par le prix Nobel de physique en 1977, conjointement avec \emph{Sir Nevill Francis Mott} et \emph{John Hasbrouck van Vleck}. 
+
+
+
+\paragraph*{Localisation d'Anderson}
+La signature la plus spectaculaire de l'influence de la cohérence d'une onde lors de sa propagation dans un milieu désordonné est l'inhibition du transport. 
+
+Dans ce régime \emph{isolant}\footnote{Par opposition au régime \emph{métallique} où le transport existe.} de localisation d'Anderson, la fonction d'onde reste localisée aux alentours du point d'origine et présente un profil exponentiel
 \begin{equation}
-\left| \psi (\mathbf{x}) \right|^2 \propto e^{-\mathrm{x}/\xi_{\mathrm{loc}}}
+\left| \psi (\mathbf{x}) \right|^2 \propto e^{-\mathrm{x}/\xiloc} \text{ ,}
 \end{equation}
-1D et 2D toujours localisé sur différentes tailles. existence d'une transition de phase en 3D, régime critique.
+où $\xiloc$ correspond à la longueur typique sur laquelle l'onde s'étend, et est appelée \emph{longueur de localisation}.
+
+Il est possible de donner une estimation de cette longueur à l'aide des corrections de localisation faible \ref{eq:correction_localisation_faible}. On montre ainsi que pour un système unidimensionnel, tous les états sont très efficacement localisés et $\xiloc=2 \lb$. De ce fait, la localisation d'Anderson se manifeste même pour des désordres faibles pour lesquels $k\lb \gg 1$. 
+
+De même, à deux dimensions, il a été montré que tous les états restent localisés mais sur des échelles de longueurs bien plus grandes, de l'ordre de $\xiloc \sim \lb \exp{(k \lb)}$. Pour des désordres faibles ($k \lb \gg 1$), la longueur de localisation excède généralement la taille du système. 
+
+Remarquablement, les corrections de localisation faible à trois dimensions ne dépendent pas de la taille du système, mais seulement de la force du désordre $k \lb$. Dans le cas d'un désordre faible, les boucles de localisation faible ne sont pas assez nombreuses pour changer de manière significative la dynamique diffusive de l'onde. En revanche, la localisation d'Anderson persiste dans le cas d'un désordre fort où $k \lb \leq 1$, pour lequel la phase l'onde varie peu entre deux évènements successifs de diffusion. 
+
+
+
+\paragraph*{Transition d'Anderson}
+Il apparaît donc que le cas à trois dimensions présente un intérêt particulier. En effet, un même système peut, selon la force du désordre, présenter un comportement qui soit métallique ou isolant. Selon l'équation \ref{eq:correction_localisation_faible}, ce dernier serait obtenu pour 
+\begin{equation}
+k \lb \leq 1 \text{ ,}
+\label{eq:ioffe_regel}
+\end{equation}
+condition connue sous le nom de \emph{critère de Ioffe-Regel}. 
+
+Plus particulièrement, il a été montré à l'aide la \emph{théorie d'échelle de la localisation d'Anderson} qu'il existe une transition de phase du deuxième ordre entre états localisés (de basse énergie) et états diffusifs (de plus haute énergie) \citep{abrahams1979scaling}.
+
+
+
+ 
+
+
+
+
+
+
+
+
+Energie critique de la transition, appelée \emph{seuil de mobilité} $E_{\mathrm{c}}$. Exposants crtiques de la transition $s$ et $\nu$ pour le coefficient de diffusion et la longueur de localisation 
 \begin{equation}
 D \sim \left| E-E_{\mathrm{c}} \right|^s \quad \text{et} \quad \xi_{\mathrm{loc}} \sim \left| E-E_{\mathrm{c}} \right|^{-\nu}
 \end{equation}
+$s=\nu=1.58$ communément admis.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Localisation/transition_anderson.pdf}
+\caption{\textbf{a: Transition d'Anderson.} À trois dimensions, il existe une transition de phase entre états diffusifs et états localisés. Pour une énergie supérieure à l'énergie critique de la transition, appelée seuil de mobilité, l'onde peut diffuser, tandis que pour une énergie inférieure au seuil de mobilité, l'onde est localisée. \textbf{b: Régime critique.} La transition d'Anderson est caractérisée par les exposants critiques $s$ et $\nu$, qui décrivent comment évoluent la longueur de localisation et la coefficient de diffusion aux alentours du seuil de mobilité. Dans le régime critique localisé, la longueur de localisation diverge en s'approchant du seuil de mobilité avec un exposant $\nu$. Dans le régime critique diffusif, le coefficient de diffusion s'annule selon une loi de puissance d'exposant $s$. }
+\label{fig:transition_anderson}
+\end{figure}
 %\subsection{Théorie d'échelle}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Localisation des atomes froids}
 \subsection{Etudes expérimentales de la localisation d'Anderson}
