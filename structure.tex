@@ -97,8 +97,8 @@
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY AND INDEX
 %----------------------------------------------------------------------------------------
-\usepackage[square,authoryear]{natbib} 
-
+%\usepackage[square,authoryear]{natbib} 
+\usepackage[square,numbers]{natbib}
 
 %\usepackage[style=alphabetic,citestyle=authoryear,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber,natbib=true]{biblatex}
 %\addbibresource{biblio.bib} % BibTeX bibliography file
@@ -224,7 +224,7 @@
 
 \usepackage{amsmath,amsfonts,amssymb,amsthm} % For math equations, theorems, symbols, etc
 %\newcommand{\hb}{\mathchar'26\mkern-9mu h}
-\newcommand{\hb}{\hslash}
+%\newcommand{\hb}{\hslash}
  
 %----------------------------------------------------------------------------------------
 %	SECTION NUMBERING IN THE MARGIN
@@ -510,7 +510,8 @@ addtohook={%
 
 \renewcommand{\arraystretch}{1.1}
 
-
+%\newcommand{\hb}{\mathchar'26\mkern-9mu h}
+\newcommand{\hb}{\hslash}
 %%%%%%%%%%%%%% Commandes Manip et atome %%%%%%%%%%
 \newcommand{\kB}[0]{k_{\mathrm{B}}}
 \newcommand{\ldb}[0]{\lambda_{\mathrm{dB}}}

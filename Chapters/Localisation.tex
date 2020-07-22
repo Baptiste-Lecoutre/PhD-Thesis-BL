@@ -95,7 +95,7 @@ Si le mécanisme de marche aléatoire présenté permet de décrire un grand nom
 \paragraph*{Mécanisme de localisation faible}
 Pour cela, intéressons-nous à la probabilité $P(\mathbf{x},\mathbf{x}')$ qu'une onde initialement à la position $\mathbf{x}$ se retrouve à la position $\mathbf{x}'$ après propagation dans le milieu désordonné. Dans la limite $k\lb\gg 1$, la trajectoire de l'onde peut être vu comme une marche aléatoire, où chaque trajectoire de diffusion est associée à une amplitude complexe de probabilité $\left| A_j \right| e^{i \phi_j}$, avec $\phi_j$ la phase de la trajectoire. Ainsi, la probabilité $P(\mathbf{x},\mathbf{x}')$ est donnée par la somme de l'amplitude sur toutes les trajectoires possibles:
 \begin{align}
-P(\mathbf{x},\mathbf{x}') \nonumber&= {\left| \sum_j{ \left|A_j\right| e^{i \phi_j} }\right| }^2 = \sum_{i,l} {\left| A_j \right| \left| A_l \right| e^{i (\phi_j - \phi_l)}} \\
+P(\mathbf{x},\mathbf{x}') \nonumber&= {\left| \sum_j{ \left|A_j\right| e^{i \phi_j} }\right| }^2 = \sum_{j,l} {\left| A_j \right| \left| A_l \right| e^{i (\phi_j - \phi_l)}} \\
 &= \sum_j{{\left| A_j \right|}^2} + \sum_{j\neq l}{\left| A_j \right| \left|A_l \right| e^{i(\phi_j - \phi_l)}} \text{ ,}
 \label{eq:amplitude_localisation_faible}
 \end{align}
@@ -156,7 +156,7 @@ Les corrections de localisation faible données par l'équation \ref{eq:correcti
 \paragraph*{Localisation d'Anderson}
 La signature la plus spectaculaire de l'influence de la cohérence d'une onde lors de sa propagation dans un milieu désordonné est l'inhibition du transport. 
 
-Dans ce régime \emph{isolant}\footnote{Par opposition au régime \emph{métallique} où le transport existe.} de localisation d'Anderson, la fonction d'onde reste localisée aux alentours du point d'origine et présente un profil exponentiel
+Dans le régime \emph{isolant}\footnote{Par opposition au régime \emph{métallique} où le transport existe.} de localisation d'Anderson, la fonction d'onde reste localisée aux alentours du point d'origine et présente un profil exponentiel
 \begin{equation}
 \left| \psi (\mathbf{x}) \right|^2 \propto e^{-\mathrm{x}/\xiloc} \text{ ,}
 \end{equation}
@@ -171,31 +171,22 @@ Remarquablement, les corrections de localisation faible à trois dimensions ne d
 
 
 \paragraph*{Transition d'Anderson}
-Il apparaît donc que le cas à trois dimensions présente un intérêt particulier. En effet, un même système peut, selon la force du désordre, présenter un comportement qui soit métallique ou isolant. Selon l'équation \ref{eq:correction_localisation_faible}, ce dernier serait obtenu pour 
+Il apparaît donc que le cas à trois dimensions présente un intérêt particulier. En effet, un même système peut, selon la force du désordre, présenter un comportement qui soit métallique , soit isolant. Selon l'équation \ref{eq:correction_localisation_faible}, on peut estimer que ce changement de comportement se manifeste lorsque
 \begin{equation}
-k \lb \leq 1 \text{ ,}
+k \lb \sim 1 \text{ ,}
 \label{eq:ioffe_regel}
 \end{equation}
 condition connue sous le nom de \emph{critère de Ioffe-Regel}. 
 
-Plus particulièrement, il a été montré à l'aide la \emph{théorie d'échelle de la localisation d'Anderson} qu'il existe une transition de phase du deuxième ordre entre états localisés (de basse énergie) et états diffusifs (de plus haute énergie) \citep{abrahams1979scaling}.
+Il est possible de donner une interprétation intuitive au critère de Ioffe-Regel en se focalisant sur la phase accumulée par l'onde entre deux évènements successifs de diffusion. En effet, cette phase est de l'ordre de $\phi\sim k\lb$. Dans le régime de désordre fort, la phase de l'onde est donc similaire pour plusieurs évènements de diffusion successifs, générant ainsi des interférences constructives entre les différentes ondes diffusées. 
 
+Plus particulièrement, il a été montré à l'aide la \emph{théorie d'échelle de la localisation d'Anderson} qu'il existe une transition de phase du deuxième ordre entre états localisés et états diffusifs pour des systèmes à trois dimensions \citep{abrahams1979scaling}. Le paramètre de contrôle de la transition étant l'énergie $E$ de l'onde, la transition d'Anderson possède donc une énergie critique $E_{\mathrm{c}}$ appelée \emph{seuil de mobilité}, comme illustré figure \ref{fig:transition_anderson}.a. 
 
-
- 
-
-
-
-
-
-
-
-
-Energie critique de la transition, appelée \emph{seuil de mobilité} $E_{\mathrm{c}}$. Exposants crtiques de la transition $s$ et $\nu$ pour le coefficient de diffusion et la longueur de localisation 
+La transition d'Anderson est de plus caractérisée par deux exposants critiques $\nu$ et $s$, décrivant respectivement comment la longueur de localisation $\xiloc$ diverge pour des états localisés proches du seuil de mobilité et comment le coefficient de diffusion $D$ s'approche de $0$ pour des états diffusifs (voir figure \ref{fig:transition_anderson}.b):
 \begin{equation}
-D \sim \left| E-E_{\mathrm{c}} \right|^s \quad \text{et} \quad \xi_{\mathrm{loc}} \sim \left| E-E_{\mathrm{c}} \right|^{-\nu}
+D \sim \left| E-E_{\mathrm{c}} \right|^s \quad \text{et} \quad \xi_{\mathrm{loc}} \sim \left| E-E_{\mathrm{c}} \right|^{-\nu} \text{ .}
 \end{equation}
-$s=\nu=1.58$ communément admis.
+Bien qu'aucune théorie ne puisse décrire correctement le régime critique de la transition d'Anderson à l'heure actuelle, plusieurs études numériques s'accordent sur les valeurs $s=\nu=1.58$ des exposants critiques \citep{slevin1999corrections} \citep{evers2008anderson} \citep{slevin2014critical}.
 
 
 \begin{figure}
@@ -221,12 +212,44 @@ $s=\nu=1.58$ communément admis.
 
 
 \section{Localisation des atomes froids}
+La localisation d'Anderson étant due au caractère ondulatoire du système étudié, celle-ci est donc commune à tout type d'onde, qu'elle soit classique (ondes lumineuses ou acoustiques) ou quantique (ondes électroniques, ondes de matière). Ce phénomène a donc été étudié expérimentalement à l'aide d'un grand nombre de systèmes dont nous allons brièvement présenter les principaux résultats ici, en mettant l'accent sur la transition métal-isolant.
+
 \subsection{Etudes expérimentales de la localisation d'Anderson}
-phénomène universel, commun à tous types d'ondes.
-ultrasons, lumières dans des guides d'onde désordonnés, lumière dans la peinture blanche, ondes électroniques dans des matériaux dopés
+L'étude expérimentale de la localisation d'Anderson constitue un domaine de recherche qui s'est énormément développé, débutant dans les années 70-80 avec des systèmes électroniques et faisant aujourd'hui encore l'objet de recherches intenses.
+
+\paragraph*{Localisation dans les systèmes électroniques}
+Les premières expériences furent menées à l'aide de systèmes électroniques, et purent démontrer des effets de localisation faible ainsi que des effets de localisation forte \citep{mott1979electronic}\citep{paalanen1983critical}. Rapidement, les efforts se sont concentrés sur l'observation de la transition métal-isolant\footnote{Cette dénomination prend tout son sens dans les systèmes électroniques: les expériences menées correspondent à des mesures de conductivité.} prédite par la théorie d'échelle de la localisation. 
+
+Cependant, une étude quantitative de la transition s'est révélée ardue en raison de la complexité de ces systèmes. En particulier, la présence d'interactions coulombiennes entre les électrons modifie profondément les propriétés de localisation, et rend délicate la distinction expérimentale entre la transition métal-isolant liée au désordre (transition d'Anderson) et la transition métal-isolant liée aux interactions (transition de Mott). Ces effets sont particulièrement marqués par la comparaison entre les exposants critiques mesurés ($\nu\sim 1$ pour \citep{shlimak1996determination}) et ceux estimés à l'aide de simulations numériques ($\nu\sim1.58$).
+
+
+\paragraph*{Localisation dans les systèmes classiques} 
+L'utilisation des ondes classiques s'est alors imposée comme étant un moyen de réaliser des systèmes mieux contrôlés que dans le cadre de la matière condensée. Les premières signatures de la localisation d'Anderson ont été obtenues dans les années 90 avec des ondes ultrasonores \citep{weaver1990anderson}, des ondes mécaniques de flexion \citep{ye1992observation}, des micro-ondes \citep{genack1991observation} ainsi que des ondes lumineuses \citep{wiersma1997localization}. 
+
+Cependant, ces expériences s'appuyaient sur la décroissance exponentielle de l'intensité de l'onde pour analyser leurs résultats. Leur interprétation fut controversée en raison de l'existence d'autres phénomènes présentant la même signature, en particulier l'absorption qui présente aussi une décroissance exponentielle de l'intensité de l'onde comme décrit par la loi de Beer-Lambert \citep{scheffold1999localization}. Depuis, d'autres signatures ont été exploitées telle que la dynamique de l'onde en régime pulsé \citep{weaver1993anomalous} ou encore les fluctuations géantes de transmission \citep{nieuwenhuizen1995intensity} afin d'observer sans ambiguïté la localisation d'Anderson.
+
+Encore aujourd'hui, la difficulté expérimentale s'accroît fortement en augmentant la dimension du système. En particulier, augmenter le pouvoir diffusant du milieu à trois dimensions afin d'atteindre le critère de Ioffe-Regel $k \lb \sim 1$ tout en s'affranchissant de l'absorption reste un tour de force expérimental. Ainsi, la seule observation de la localisation d'Anderson à trois dimensions faisant consensus à été réalisée au Canada dans le groupe de J. Page à l'aide d'ondes acoustiques se propageant dans des billes d'aluminium \citep{hu2008localization}.
+
+Notons finalement que la localisation à trois dimensions d'ondes lumineuses fait l'objet de recherches intenses très débattues. Enfin, une récente étude numérique prédit l'absence de la localisation d'Anderson à trois dimensions dans le cas d'ondes lumineuses en raison de leur caractère vectoriel \citep{skipetrov2014absence}.
+
+
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Localisation/experiences_localisation_anderson.pdf}
+\caption{\textbf{Etudes expérimentales de la localisation d'Anderson.} A basse température, un métal peut devenir isolant à cause du désordre, sa conductivité s'annulant alors. Cette transition peut être atteinte en diminuant la densité d'électrons. Figure tirée de \citep{katsumoto1987fine}. La localisation d'Anderson d'ondes acoustiques dans un réseau désordonné de billes d'aluminium peut être étudiée à l'aide d'un hydrophone après sa propagation. Il est possible de relever la distribution d'intensité de l'onde ainsi que son profil temporel qui présentent des signatures de la localisation d'Anderson. Figure tirée de \citep{hu2008localization}. La localisation de la lumière peut être étudiée à l'aide de plusieurs systèmes, tels que des matériaux photoréfractifs composés d'un réseau désordonné de guides d'ondes (figure tirée de \citep{schwartz2007transport}) ou encore dans des cristaux photoniques (figure tirée de \citep{sapienza2010cavity}).}
+\label{fig:experiences_localisation_anderson}
+\end{figure}
+
+
+
+
 
 
 \subsection{L'approche des atomes froids}
+développement récent.
 parler ondes de matières dans des potentiels lumineux. du coup on contrôle tout, même la dimensionalité. 
 expérience de diffusion de à 2D (équipe de thomas), qui montre la décroissance du  pic central en 1/t ou 1/t2 suivant désordre ou non.
 
@@ -236,6 +259,14 @@ Parler des manips préliminaires à 3D.
 
 Introduire brièvement le many-body, kick-rotors?
 expérience récente en 2D.
+
+
+
+
+
+
+
+
 
 \section{Vers l'étude du régime critique}
 \subsection{Etat de l'art de l'étude de la transition d'Anderson}
