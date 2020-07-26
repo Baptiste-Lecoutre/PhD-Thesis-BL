@@ -1,4 +1,4 @@
-\begin{thebibliography}{61}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,12 +17,6 @@ E.~Akkermans and G.~Montambaux.
 \newblock \emph{Mesoscopic physics of electrons and photons}.
 \newblock Cambridge university press, 2007.
 
-\bibitem[Anderson et~al.(1995)Anderson, Ensher, Matthews, Wieman, and
-  Cornell]{anderson1995observation}
-M.~H. Anderson, J.~R. Ensher, M.~R. Matthews, C.~E. Wieman, and E.~A. Cornell.
-\newblock Observation of bose-einstein condensation in a dilute atomic vapor.
-\newblock \emph{science}, pages 198--201, 1995.
-
 \bibitem[Anderson(1958)]{anderson1958absence}
 P.~W. Anderson.
 \newblock Absence of diffusion in certain random lattices.
@@ -32,63 +26,6 @@ P.~W. Anderson.
 N.~W. Ashcroft and N.~D. Mermin.
 \newblock Solid state physics (saunders college, philadelphia, 1976).
 \newblock \emph{Appendix N}, 166, 2010.
-
-\bibitem[Barrett et~al.(2001)Barrett, Sauer, and Chapman]{barrett2001all}
-M.~Barrett, J.~Sauer, and M.~Chapman.
-\newblock All-optical formation of an atomic bose-einstein condensate.
-\newblock \emph{Physical Review Letters}, 87\penalty0 (1):\penalty0 010404,
-  2001.
-
-\bibitem[Basdevant et~al.(2002)Basdevant, Dalibard, and
-  Joffre]{basdevant2002mecanique}
-J.-L. Basdevant, J.~Dalibard, and M.~Joffre.
-\newblock \emph{M{\'e}canique quantique}.
-\newblock Editions Ecole Polytechnique, 2002.
-
-\bibitem[Bernard(2010)]{bernard2010transport}
-A.~Bernard.
-\newblock \emph{Transport quantique d'ondes atomiques ultrafroides:
-  localisation d'Anderson et laser {\`a} atomes guid{\'e}.}
-\newblock PhD thesis, Universit{\'e} Pierre et Marie Curie, 2010.
-
-\bibitem[Boyer(2000)]{boyer2000condensation}
-V.~Boyer.
-\newblock \emph{Condensation de Bose-Einstein avec un {\'e}lectroaimant {\`a}
-  noyau ferromagn{\'e}tique: strat{\'e}gies de refroidissement dans des champs
-  magn{\'e}tiques intenses}.
-\newblock PhD thesis, Paris 11, 2000.
-
-\bibitem[Brantut(2009)]{brantut2009manipulation}
-J.-P. Brantut.
-\newblock \emph{Manipulation d'atomes froids dans des potentiels lumineux}.
-\newblock PhD thesis, Paris 11, 2009.
-
-\bibitem[Burt et~al.(1997)Burt, Ghrist, Myatt, Holland, Cornell, and
-  Wieman]{burt1997coherence}
-E.~Burt, R.~Ghrist, C.~Myatt, M.~Holland, E.~A. Cornell, and C.~Wieman.
-\newblock Coherence, correlations, and collisions: What one learns about
-  bose-einstein condensates from their decay.
-\newblock \emph{Physical Review Letters}, 79\penalty0 (3):\penalty0 337, 1997.
-
-\bibitem[Cohen-Tannoudji(1996)]{cohen1996atomes}
-C.~Cohen-Tannoudji.
-\newblock Atomes ultrafroids: Piegeage non dissipatif et refroidissement
-  {\'e}vaporatif.
-\newblock \emph{Cours au College de France}, 1997, 1996.
-
-\bibitem[Davis et~al.(1995)Davis, Mewes, Andrews, van Druten, Durfee, Kurn, and
-  Ketterle]{davis1995bose}
-K.~B. Davis, M.-O. Mewes, M.~R. Andrews, N.~J. van Druten, D.~S. Durfee,
-  D.~Kurn, and W.~Ketterle.
-\newblock Bose-einstein condensation in a gas of sodium atoms.
-\newblock \emph{Physical review letters}, 75\penalty0 (22):\penalty0 3969,
-  1995.
-
-\bibitem[Denechaud(2018)]{denechaud2018vers}
-V.~Denechaud.
-\newblock \emph{Vers une {\'e}tude spectroscopique de la transition
-  d'Anderson}.
-\newblock PhD thesis, Universit{\'e} Paris Saclay, 2018.
 
 \bibitem[Diu et~al.(1989)Diu, Roulet, Guthmann, and Lederer]{diu1989elements}
 B.~Diu, B.~Roulet, C.~Guthmann, and D.~Lederer.
@@ -101,17 +38,6 @@ F.~Evers and A.~D. Mirlin.
 \newblock \emph{Reviews of Modern Physics}, 80\penalty0 (4):\penalty0 1355,
   2008.
 
-\bibitem[Fauquembergue(2004)]{fauquembergue2004realisation}
-M.~Fauquembergue.
-\newblock \emph{R{\'e}alisation d'un dispositif de condensation de
-  Bose-Einstein et de transport d'un {\'e}chantillon coh{\'e}rent d'atomes}.
-\newblock PhD thesis, Paris 11, 2004.
-
-\bibitem[Gatti et~al.(2008)Gatti, Magatti, and Ferri]{gatti2008three}
-A.~Gatti, D.~Magatti, and F.~Ferri.
-\newblock Three-dimensional coherence of light speckles: theory.
-\newblock \emph{Physical Review A}, 78\penalty0 (6):\penalty0 063806, 2008.
-
 \bibitem[Genack and Garcia(1991)]{genack1991observation}
 A.~Genack and N.~Garcia.
 \newblock Observation of photon localization in a three-dimensional disordered
@@ -119,48 +45,11 @@ A.~Genack and N.~Garcia.
 \newblock \emph{Physical review letters}, 66\penalty0 (16):\penalty0 2064,
   1991.
 
-\bibitem[Goodman(2007)]{goodman2007speckle}
-J.~W. Goodman.
-\newblock \emph{Speckle phenomena in optics: theory and applications}.
-\newblock Roberts and Company Publishers, 2007.
-
-\bibitem[Grimm et~al.(1999)Grimm, Weidem{\"u}ller, and
-  Ovchinnikov]{grimm1999optical}
-R.~Grimm, M.~Weidem{\"u}ller, and Y.~B. Ovchinnikov.
-\newblock Optical dipole traps for neutral atoms.
-\newblock \emph{arXiv preprint physics/9902072}, 1999.
-
 \bibitem[Hu et~al.(2008)Hu, Strybulevych, Page, Skipetrov, and van
   Tiggelen]{hu2008localization}
 H.~Hu, A.~Strybulevych, J.~Page, S.~E. Skipetrov, and B.~A. van Tiggelen.
 \newblock Localization of ultrasound in a three-dimensional elastic network.
 \newblock \emph{Nature Physics}, 4\penalty0 (12):\penalty0 945--948, 2008.
-
-\bibitem[Hu et~al.(2017)Hu, Urvoy, Vendeiro, Cr{\'e}pel, Chen, and
-  Vuleti{\'c}]{hu2017creation}
-J.~Hu, A.~Urvoy, Z.~Vendeiro, V.~Cr{\'e}pel, W.~Chen, and V.~Vuleti{\'c}.
-\newblock Creation of a bose-condensed gas of 87rb by laser cooling.
-\newblock \emph{Science}, 358\penalty0 (6366):\penalty0 1078--1080, 2017.
-
-\bibitem[Hung et~al.(2008)Hung, Zhang, Gemelke, and Chin]{hung2008accelerating}
-C.-L. Hung, X.~Zhang, N.~Gemelke, and C.~Chin.
-\newblock Accelerating evaporative cooling of atoms into bose-einstein
-  condensation in optical traps.
-\newblock \emph{Physical Review A}, 78\penalty0 (1):\penalty0 011604, 2008.
-
-\bibitem[Jendrzejewski(2012)]{jendrzejewski2012quantum}
-F.~Jendrzejewski.
-\newblock \emph{Quantum transport of ultracold atoms in disordered potentials}.
-\newblock PhD thesis, Paris 11, 2012.
-
-\bibitem[Jendrzejewski et~al.(2012)Jendrzejewski, Bernard, Mueller, Cheinet,
-  Josse, Piraud, Pezz{\'e}, Sanchez-Palencia, Aspect, and
-  Bouyer]{jendrzejewski2012three}
-F.~Jendrzejewski, A.~Bernard, K.~Mueller, P.~Cheinet, V.~Josse, M.~Piraud,
-  L.~Pezz{\'e}, L.~Sanchez-Palencia, A.~Aspect, and P.~Bouyer.
-\newblock Three-dimensional localization of ultracold atoms in an optical
-  disordered potential.
-\newblock \emph{Nature Physics}, 8\penalty0 (5):\penalty0 398--403, 2012.
 
 \bibitem[Katsumoto et~al.(1987)Katsumoto, Komori, Sano, and
   Kobayashi]{katsumoto1987fine}
@@ -170,57 +59,9 @@ S.~Katsumoto, F.~Komori, N.~Sano, and S.-i. Kobayashi.
 \newblock \emph{Journal of the Physical Society of Japan}, 56\penalty0
   (7):\penalty0 2259--2262, 1987.
 
-\bibitem[Keshet(2008)]{keshet2008cicero}
-A.~Keshet.
-\newblock Cicero word generator technical and user manual, 2008.
-\newblock URL \url{http://akeshet.github.io/Cicero-Word-Generator/}.
-
-\bibitem[Keshet and Ketterle(2013)]{keshet2013distributed}
-A.~Keshet and W.~Ketterle.
-\newblock A distributed, graphical user interface based, computer control
-  system for atomic physics experiments.
-\newblock \emph{Review of Scientific Instruments}, 84\penalty0 (1):\penalty0
-  015105, 2013.
-
-\bibitem[Ketterle and Van~Druten(1996)]{ketterle1996evaporative}
-W.~Ketterle and N.~Van~Druten.
-\newblock Evaporative cooling of trapped atoms.
-\newblock In \emph{Advances in atomic, molecular, and optical physics},
-  volume~37, pages 181--236. Elsevier, 1996.
-
-\bibitem[Luiten et~al.(1996)Luiten, Reynolds, and Walraven]{luiten1996kinetic}
-O.~Luiten, M.~Reynolds, and J.~Walraven.
-\newblock Kinetic theory of the evaporative cooling of a trapped gas.
-\newblock \emph{Physical Review A}, 53\penalty0 (1):\penalty0 381, 1996.
-
-\bibitem[Magatti et~al.(2009)Magatti, Gatti, and Ferri]{magatti2009three}
-D.~Magatti, A.~Gatti, and F.~Ferri.
-\newblock Three-dimensional coherence of light speckles: experiment.
-\newblock \emph{Physical Review A}, 79\penalty0 (5):\penalty0 053831, 2009.
-
 \bibitem[Mott and Davis(1979)]{mott1979electronic}
 N.~Mott and E.~Davis.
 \newblock Electronic processes in non-crystalline solids, clarendon, 1979.
-
-\bibitem[Mukhtar(2019)]{mukhtar2019state}
-M.~Mukhtar.
-\newblock \emph{State-dependent disordered potential for studies of Anderson
-  transition with ultracold atoms}.
-\newblock PhD thesis, Universit{\'e} Paris-Saclay, 2019.
-
-\bibitem[Muller(2015)]{muller2015coherent}
-K.~Muller.
-\newblock \emph{Coherent transport of ultracold atoms in disordered potentials:
-  Manipulation of time-reversal symmetry in weak localization experiments}.
-\newblock PhD thesis, Paris 11, 2015.
-
-\bibitem[Murthy et~al.(2014)Murthy, Kedar, Lompe, Neidig, Ries, Wenz, Z{\"u}rn,
-  and Jochim]{murthy2014matter}
-P.~Murthy, D.~Kedar, T.~Lompe, M.~Neidig, M.~Ries, A.~Wenz, G.~Z{\"u}rn, and
-  S.~Jochim.
-\newblock Matter-wave fourier optics with a strongly interacting
-  two-dimensional fermi gas.
-\newblock \emph{Physical Review A}, 90\penalty0 (4):\penalty0 043611, 2014.
 
 \bibitem[Nieuwenhuizen and Van~Rossum(1995)]{nieuwenhuizen1995intensity}
 T.~M. Nieuwenhuizen and M.~Van~Rossum.
@@ -229,12 +70,6 @@ T.~M. Nieuwenhuizen and M.~Van~Rossum.
 \newblock \emph{Physical review letters}, 74\penalty0 (14):\penalty0 2674,
   1995.
 
-\bibitem[O’hara et~al.(2001)O’hara, Gehm, Granade, and
-  Thomas]{o2001scaling}
-K.~O’hara, M.~E. Gehm, S.~Granade, and J.~Thomas.
-\newblock Scaling laws for evaporative cooling in time-dependent optical traps.
-\newblock \emph{Physical Review A}, 64\penalty0 (5):\penalty0 051403, 2001.
-
 \bibitem[Paalanen et~al.(1983)Paalanen, Rosenbaum, Thomas, and
   Bhatt]{paalanen1983critical}
 M.~Paalanen, T.~Rosenbaum, G.~Thomas, and R.~Bhatt.
@@ -242,44 +77,22 @@ M.~Paalanen, T.~Rosenbaum, G.~Thomas, and R.~Bhatt.
 \newblock \emph{Physical review letters}, 51\penalty0 (20):\penalty0 1896,
   1983.
 
-\bibitem[Pasek et~al.(2017)Pasek, Orso, and Delande]{pasek2017anderson}
-M.~Pasek, G.~Orso, and D.~Delande.
-\newblock Anderson localization of ultracold atoms: Where is the mobility edge?
-\newblock \emph{Physical review letters}, 118\penalty0 (17):\penalty0 170403,
-  2017.
+\bibitem[Roati et~al.(2008)Roati, D’Errico, Fallani, Fattori, Fort, Zaccanti,
+  Modugno, Modugno, and Inguscio]{roati2008anderson}
+G.~Roati, C.~D’Errico, L.~Fallani, M.~Fattori, C.~Fort, M.~Zaccanti,
+  G.~Modugno, M.~Modugno, and M.~Inguscio.
+\newblock Anderson localization of a non-interacting bose--einstein condensate.
+\newblock \emph{Nature}, 453\penalty0 (7197):\penalty0 895--898, 2008.
 
-\bibitem[Pethick and Smith(2008)]{pethick2008bose}
-C.~J. Pethick and H.~Smith.
-\newblock \emph{Bose--Einstein condensation in dilute gases}.
-\newblock Cambridge university press, 2008.
-
-\bibitem[Piraud(2012)]{piraud2012localisation}
-M.~Piraud.
-\newblock \emph{Localisation d’Anderson d’ondes de mati{\`e}re dans un
-  d{\'e}sordre corr{\'e}l{\'e}: de 1D {\`a} 3D}.
-\newblock PhD thesis, Paris 11, 2012.
-
-\bibitem[Richard(2015)]{richard2015propagation}
-J.~Richard.
-\newblock \emph{Propagation d'atomes ultra-froids en milieu
-  d{\'e}sordonn{\'e}-{\'E}tude dans l'espace des impulsions de
-  ph{\'e}nom{\`e}nes de diffusion et de localisation}.
-\newblock PhD thesis, Universit{\'e} Paris-Saclay, 2015.
-
-\bibitem[Richard et~al.(2019)Richard, Lim, Denechaud, Volchkov, Lecoutre,
-  Mukhtar, Jendrzejewski, Aspect, Signoles, Sanchez-Palencia,
-  et~al.]{richard2019elastic}
-J.~Richard, L.-K. Lim, V.~Denechaud, V.~V. Volchkov, B.~Lecoutre, M.~Mukhtar,
-  F.~Jendrzejewski, A.~Aspect, A.~Signoles, L.~Sanchez-Palencia, et~al.
-\newblock Elastic scattering time of matter waves in disordered potentials.
-\newblock \emph{Physical review letters}, 122\penalty0 (10):\penalty0 100403,
-  2019.
-
-\bibitem[Riou(2006)]{riou2006etude}
-J.-F. Riou.
-\newblock \emph{Etude des propri{\'e}t{\'e}s de propagation d'un laser {\`a}
-  atomes}.
-\newblock PhD thesis, Paris 11, 2006.
+\bibitem[Robert-De-Saint-Vincent et~al.(2010)Robert-De-Saint-Vincent, Brantut,
+  Allard, Plisson, Pezz{\'e}, Sanchez-Palencia, Aspect, Bourdel, and
+  Bouyer]{robert2010anisotropic}
+M.~Robert-De-Saint-Vincent, J.-P. Brantut, B.~Allard, T.~Plisson, L.~Pezz{\'e},
+  L.~Sanchez-Palencia, A.~Aspect, T.~Bourdel, and P.~Bouyer.
+\newblock Anisotropic 2d diffusive expansion of ultracold atoms in a disordered
+  potential.
+\newblock \emph{Physical Review Letters}, 104\penalty0 (22):\penalty0 220602,
+  2010.
 
 \bibitem[Sapienza et~al.(2010)Sapienza, Thyrrestrup, Stobbe, Garcia, Smolka,
   and Lodahl]{sapienza2010cavity}
@@ -327,39 +140,6 @@ K.~Slevin and T.~Ohtsuki.
 \newblock \emph{New Journal of Physics}, 16\penalty0 (1):\penalty0 015012,
   2014.
 
-\bibitem[S{\"o}ding et~al.(1999)S{\"o}ding, Gu{\'e}ry-Odelin, Desbiolles,
-  Chevy, Inamori, and Dalibard]{soding1999three}
-J.~S{\"o}ding, D.~Gu{\'e}ry-Odelin, P.~Desbiolles, F.~Chevy, H.~Inamori, and
-  J.~Dalibard.
-\newblock Three-body decay of a rubidium bose--einstein condensate.
-\newblock \emph{Applied physics B}, 69\penalty0 (4):\penalty0 257--261, 1999.
-
-\bibitem[Steck(2001)]{steck2001rubidium}
-D.~A. Steck.
-\newblock Rubidium 87 d line data, 2001.
-
-\bibitem[Stellmer et~al.(2013)Stellmer, Pasquiou, Grimm, and
-  Schreck]{stellmer2013laser}
-S.~Stellmer, B.~Pasquiou, R.~Grimm, and F.~Schreck.
-\newblock Laser cooling to quantum degeneracy.
-\newblock \emph{Physical review letters}, 110\penalty0 (26):\penalty0 263003,
-  2013.
-
-\bibitem[Volchkov et~al.(2018)Volchkov, Pasek, Denechaud, Mukhtar, Aspect,
-  Delande, and Josse]{volchkov2018measurement}
-V.~V. Volchkov, M.~Pasek, V.~Denechaud, M.~Mukhtar, A.~Aspect, D.~Delande, and
-  V.~Josse.
-\newblock Measurement of spectral functions of ultracold atoms in disordered
-  potentials.
-\newblock \emph{Physical review letters}, 120\penalty0 (6):\penalty0 060404,
-  2018.
-
-\bibitem[Walraven(2010)]{walraven2010elements}
-J.~Walraven.
-\newblock Elements of quantum gases: Thermodynamic and collisional properties
-  of trapped atomic gases.
-\newblock \emph{Les Houches-predoc lectures}, 2010:\penalty0 207, 2010.
-
 \bibitem[Weaver(1990)]{weaver1990anderson}
 R.~L. Weaver.
 \newblock Anderson localization of ultrasound.
@@ -370,6 +150,14 @@ R.~L. Weaver.
 \newblock Anomalous diffusivity and localization of classical waves in
   disordered media: the effect of dissipation.
 \newblock \emph{Physical Review B}, 47\penalty0 (2):\penalty0 1077, 1993.
+
+\bibitem[White et~al.(2019)White, Haase, Brown, Hoogerland, Najafabadi, Helm,
+  Gies, Schumayer, and Hutchinson]{white2019observation}
+D.~H. White, T.~A. Haase, D.~J. Brown, M.~D. Hoogerland, M.~S. Najafabadi,
+  J.~L. Helm, C.~Gies, D.~Schumayer, and D.~A. Hutchinson.
+\newblock Observation of two-dimensional anderson localisation of ultracold
+  atoms.
+\newblock \emph{arXiv preprint arXiv:1911.04858}, 2019.
 
 \bibitem[Wiersma et~al.(1997)Wiersma, Bartolini, Lagendijk, and
   Righini]{wiersma1997localization}
