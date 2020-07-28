@@ -258,7 +258,7 @@ En effet, les expériences d'atomes ultra-froids présentent un grand nombre d'a
 \paragraph*{Atomes ultra-froids et désordre}
 Il existe différentes méthodes pour générer un désordre sur les atomes. Parmi les plus utilisées on retrouve les champs de tavelures optiques, ou \emph{speckle}, et les réseaux bichromatiques pour lesquels un réseau de faible amplitude vient moduler de manière quasi-aléatoire le réseau principal (voir figure \ref{fig:localisation_1D_atomes_froids}. Notons aussi le développement récent de désordres générés à l'aide de modulateurs spatiaux de lumière ou de matrices de micro-miroirs, permettant de réaliser des profils d'illumination arbitraires.
 
-Toutes ces façons de réaliser un désordre pour les atomes possèdent un point commun: ils sont générés à l'aide de champs lumineux et possèdent donc une longueur typique de variation, ou \emph{longueur de variation} $\sigma$, généralement de l'ordre du micromètre. En particulier, les effets quantiques associés au comportement ondulatoire de la matière sont attendus lorsque la longueur de \emph{de Broglie} est plus grande que la longueur de corrélation:
+Toutes ces façons de réaliser un désordre pour les atomes possèdent un point commun: ils sont générés à l'aide de champs lumineux et possèdent donc une longueur typique de variation, ou \emph{longueur de corrélation} $\sigma$, généralement de l'ordre du micromètre. En particulier, les effets quantiques associés au comportement ondulatoire de la matière sont attendus lorsque la longueur de \emph{de Broglie} est plus grande que la longueur de corrélation:
 \begin{equation}
 \ldb\geq\sigma \quad \text{soit} \quad T_{\mathrm{typ}} \leq \frac{\hb^2}{ \kB m \sigma^2}\sim \text{ quelques nanokelvins.}
 \end{equation}
@@ -354,9 +354,10 @@ Afin de déterminer la distribution d'énergie $\mathcal{D}_{\mathrm{E}}(E)$, le
 l'hypothèse des auteurs selon laquelle le désordre n'affecte pas la distribution d'énergie des atomes revient à assimiler la fonction spectrale à une distribution infiniment fine:
 \begin{equation}
 A(\mathbf{k},E) = \delta\left(E- \frac{\hb^2 \mathbf{k}^2}{2m}\right) \text{ .}
+\label{eq:hypothese_urbana_champaign}
 \end{equation}
 
-De nombreuses critiques ont été formulées quant à l'interprétation des données expérimentales \citep{muller2014comment}. Notamment, les très courts temps de propagation dans le désordre ne permettent pas de conclure quant à l'observation à proprement parler d'états localisés, indissociables d'états très lentement diffusifs. La fraction localisée extraite et le seuil de mobilité sont donc largement surestimés. De plus, l'observation de la localisation d'Anderson à trois dimensions requiert l'utilisation d'un désordre fort (comme spécifié par le critère de Ioffe-Regel $k\lb\sim 1$) pour lequel la distribution d'énergie $\mathcal{D}_{\mathrm{E}}(E)$ est profondément modifiée. Les résultats de cette étude ne permettent donc pas de conclure quant à la mesure du seuil de mobilité\citep{pasek2017anderson}.
+De nombreuses critiques ont été formulées quant à l'interprétation des données expérimentales \citep{muller2014comment}. Notamment, les très courts temps de propagation dans le désordre ne permettent pas de conclure quant à l'observation à proprement parler d'états localisés, indissociables d'états très lentement diffusifs. La fraction localisée extraite et le seuil de mobilité sont donc largement surestimés. De plus, l'observation de la localisation d'Anderson à trois dimensions requiert l'utilisation d'un désordre fort (comme spécifié par le critère de Ioffe-Regel $k\lb\sim 1$) pour lequel la distribution d'énergie $\mathcal{D}_{\mathrm{E}}(E)$ est profondément modifiée. Les résultats de cette étude ne permettent donc pas de conclure quant à la mesure du seuil de mobilité \citep{pasek2017anderson}.
 
 
 
@@ -406,23 +407,27 @@ L'expérience de Florence se caractérise donc par une nouvelle approche à la m
 
 
 \paragraph*{Comparaison aux résultats numériques}
-graphe de Delande, renormalisation par l'énergie de corrélation anisotrope
+Les trois expériences présentées précédemment \citep{kondov2011three}\citep{jendrzejewski2012three}\citep{semeghini2015measurement} ont toutes cherché à montrer l'existence d'un seuil mobilité séparant les états localisés des états diffusifs. Pour cela, celles-ci se sont basées sur la mesure de fractions localisées et sur des estimations de la distribution d'énergie des atomes dans le désordre.
 
+Un second point commun entre ces expériences réside dans la nature du désordre utilisé: toutes ont utilisé un speckle répulsif, généré à l'aide d'un unique faisceau pour l'expérience d'Urbana Champaign tandis que les expériences de Palaiseau et de Florence ont profité de l'interférence de deux speckles croisés pour générer un désordre quasi-isotrope. 
 
+Dans le cadre de l'étude de l'effet de l'anisotropie du potentiel sur la position du seuil de mobilité pour un potentiel de type speckle, Pasek et al. \citep{pasek2017anderson} ont montré qu'il existe une échelle d'énergie universelle, appelée \emph{énergie de corrélation}, qui rend la position du seuil de mobilité indépendante des longueurs de corrélation du désordre. Cette énergie est définie par
 \begin{equation}
-\ER=\frac{\hb^2}{m\overline{\sigma}^2} \quad \text{avec} \quad \overline{\sigma}={(\sigma_x \sigma_y \sigma_z)}^{1/3}
+\ER=\frac{\hb^2}{m\overline{\sigma}^2} \quad \text{avec} \quad \overline{\sigma}={(\sigma_x \sigma_y \sigma_z)}^{1/3} \text{ ,}
 \end{equation}
+où les $\sigma_i$ correspondent aux longueurs de corrélation selon chaque direction.
 
+À l'aide de cette définition, Pasek et al. ont pu comparer les résultats des différentes expériences à une unique courbe universelle $E_{\mathrm{c}}/\VR=\mathcal{F}(\VR/\ER)$ obtenue à l'aide de simulations numériques. La compilation de ces résultats est illustrée figure \ref{fig:seuil_mobilite_delande}.
 
 
 \begin{figure}
 \centering
-
-\caption{\textbf{Comparaison des résultats expérimentaux à des simulations numériques.} Stuff.}
+\includegraphics[width=0.6\textwidth]{Fig/Localisation/delande_expvsth.pdf}
+\caption{\textbf{Comparaison des résultats expérimentaux à des simulations numériques.} Evolution du seuil de mobilité $E_{\mathrm{c}}$ en fonction de l'amplitude du désordre $\VR$. La ligne pointillée noire correspond à la prédiction universelle $E_{\mathrm{c}}/\VR=\mathcal{F}(\VR/\ER)$. Les résultats de l'expérience de Palaiseau sont représentés par la ligne rouge, tandis que les résultats de l'expérience de Florence sont reportés par des points bleus. Les résultats de l'expérience d'Urbana Champaign sont représentés par des points verts dans l'encart. Figure tirée de \citep{pasek2017anderson}.}
 \label{fig:seuil_mobilite_delande}
 \end{figure}
 
-
+Les résultats de l'expérience d'Urbana Champaign, en points verts dans l'encart, montrent un désaccord significatif avec les résultats numériques. En particulier, les résultats expérimentaux surestiment fortement le seuil de mobilité en raison du très court temps de propagation dans le désordre et de l'hypothèse \ref{eq:hypothese_urbana_champaign}. L'expérience de Palaiseau, dont les résultats sont représentés en rouge, semblent en accord quantitatif avec les prédictions numériques. Les résultats de l'expérience de Florence sont représentés en bleu et semblent en accord qualitatif avec les résultats numériques. Néanmoins, les données expérimentales semblent légèrement surestimer le seuil de mobilité, probablement en raison d'un temps de propagation trop court dans le désordre ou du calcul de la distribution d'énergie. L'ensemble de ces résultats montre donc qu'il est fondamental d'avoir des temps de propagation dans le désordre de plusieurs secondes afin de ne pas surestimer le seuil de mobilité.
 
 
 

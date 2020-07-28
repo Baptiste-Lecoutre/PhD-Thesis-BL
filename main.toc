@@ -1,17 +1,68 @@
 \babel@toc {french}{}
-\contentsline {chapter}{\numberline {1}Propriétés d'un désordre de type speckle}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Génération d'un champ de speckle}{3}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Statistiques de l'intensité d'un speckle}{4}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Propriétés du diffuseur}{4}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Implémentation expérimentale}{4}{subsection.1.1.3}%
-\contentsline {section}{\numberline {1.2}Propriétés spatiales d'un champ de speckle}{5}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Extension transverse du champ de speckle le long le l'axe optique}{6}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Longueur de corrélation transverse le long de l'axe optique}{6}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Corrélation longitudinale}{6}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Propriétés du potentiel de type speckle}{7}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Propriétés du potentiel}{7}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Possibilité d'un potentiel dépendant de l'état interne}{7}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Potentiel composé d'un speckle bichromatique}{7}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}S'éloigner de résonance}{7}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Étude de la similitude de deux speckles}{7}{subsection.1.4.2}%
+\contentsline {chapter}{\numberline {1}Phénomène de localisation d'Anderson}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Diffusion et interférences}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Phénomène de diffusion}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Localisation faible}{6}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Suppression du transport: Localisation d'Anderson}{8}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Localisation des atomes froids}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Etudes expérimentales de la localisation d'Anderson}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}L'approche des atomes froids}{11}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Vers l'étude du régime critique}{15}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Etat de l'art de l'étude de la transition d'Anderson avec des atomes ultra-froids}{15}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Nécessité d'une spectroscopie pour sonder le régime critique}{21}{subsection.1.3.2}%
+\contentsline {chapter}{\numberline {2}Production d'ondes de matière}{23}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Condensation de Bose-Einstein}{23}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Statistique de Bose-Einstein}{24}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Propriétés d'un condensat de Bose-Einstein}{26}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Processus d'interaction lumière-matière}{27}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Le rubidium \isotope [87]{Rb}}{28}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Potentiel magnétique}{28}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Forces lumineuses}{30}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Couplage radio-fréquence}{32}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Description d'un cycle expérimental}{33}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Présentation générale du dispositif}{33}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Première chambre}{34}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Chambre de science}{38}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Imagerie}{43}{subsection.2.3.4}%
+\contentsline {chapter}{\numberline {3}Mises à jour de l'expérience}{47}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Contributions au système informatique de l'expérience}{47}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Contrôle de l'expérience: passage à la suite Cicero}{48}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Développement d'une nouvelle interface d'acquisition et de traitement d'images}{50}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Calibration de la lévitation magnétique}{50}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Implémentation de la lévitation magnétique}{51}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Calibration par radio-fréquences}{53}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}\'Etude du piégeage}{55}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Changement du laser telecom et calibration du piège optique}{58}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Changement du laser telecom}{58}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Calibration du piège optique}{58}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Optimisation de l'évaporation tout-optique}{63}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Lois d'échelle du refroidissement évaporatif}{63}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Implémentation expérimentale}{67}{subsection.3.4.2}%
+\contentsline {chapter}{\numberline {4}Propriétés d'un désordre de type speckle}{75}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Génération d'un champ de speckle}{75}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Statistiques de l'intensité d'un speckle}{76}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Propriétés du diffuseur}{77}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Implémentation expérimentale}{79}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Propriétés spatiales d'un champ de speckle}{82}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Extension transverse du champ de speckle le long le l'axe optique}{83}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Longueur de corrélation transverse le long de l'axe optique}{85}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Longueur de corrélation longitudinale autour du plan de Fourier}{87}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Effets non-paraxiaux sur les corrélations du speckle\ }{88}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Propriétés du potentiel de type speckle}{91}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Propriétés du potentiel}{91}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Possibilité d'un potentiel dépendant de l'état interne}{92}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Potentiel composé d'un speckle\ bichromatique}{97}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}S'éloigner de résonance}{97}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Étude de la similitude de deux speckles}{101}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {A}Calculs de champs de tavelures}{107}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Fonction de corrélation du diffuseur}{107}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Amplitude rayonnée}{108}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Fonction de corrélation}{109}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Calcul général}{109}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Expression de l'extension transverse du champ de tavelures le long de l'axe optique}{110}{subsection.A.3.2}%
+\contentsline {section}{\numberline {A.4}Corrélations pour des speckles monochromatiques et bichromatiques}{110}{section.A.4}%
+\contentsline {subsection}{\numberline {A.4.1}Corrélation transverse d'un unique speckle le long de l'axe optique}{110}{subsection.A.4.1}%
+\contentsline {subsection}{\numberline {A.4.2}Corrélation longitudinale d'un unique speckle autour du plan de Fourier}{110}{subsection.A.4.2}%
+\contentsline {subsection}{\numberline {A.4.3}Corrélation transverse d'un speckle bichromatique dans le plan de Fourier}{111}{subsection.A.4.3}%
+\contentsline {subsection}{\numberline {A.4.4}Corrélation longitudinale d'un speckle bichromatique autour du plan de Fourier}{111}{subsection.A.4.4}%
 \contentsfinish 
