@@ -1,110 +1,448 @@
 \chapter{Phénomène de localisation d'Anderson} %% Titre ?
-\begin{tikzpicture}[remember picture, overlay]
-\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Localisation/g825.png}};
-\end{tikzpicture}
+%\begin{tikzpicture}[remember picture, overlay]
+%\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Localisation/g825.png}};
+%\end{tikzpicture}
 
 présentation des effets d'interférences dans le désordre. scaling theory à la delande uniquement sur la conductance pour présenter la localisation 1D et 2D puis la 3D avec la transition. Terminer sur la quête du régime critique avec le graphe de delande2017, et introduction aux manips récentes et futures.
 
+
+Paragraphe d'introduction? 
+
+Dans ce chapitre, nous commencerons par décrire comment, lors de la propagation cohérente d'une onde dans un milieu désordonné, les interférences peuvent altérer la diffusion classique et engendrer le phénomène spectaculaire de \emph{Localisation d'Anderson} dont nous donnerons les principales propriétés. Dans un second temps, nous présenterons succinctement les principaux systèmes utilisés pour l'investigation de la localisation d'Anderson, pour s'attarder plus particulièrement sur les expériences d'atomes froids. Enfin, nous terminerons ce chapitre par une discussion de nos enjeux actuels, l'étude du régime critique de la transition d'Anderson, dont nous présenterons l'état de l'art.
+
 \section{Diffusion et interférences}
+Intro historique sur Anderson et le mécanisme de localisation faible pour donner une approche un peu plus intuitive au rôle des interférences.
+
 \subsection{Phénomène de diffusion}
-\lipsum[1]
+\label{sc:diffusion_classique}
+Le phénomène de diffusion macroscopique est un phénomène de transport le plus connu de la physique classique. Celui-ci permet par exemple de décrire de manière simple la propagation de la chaleur dans un matériau homogène, l'homogénéisation de la concentration de particules dans un liquide ou encore le phénomène de résistance électrique dans un cadre unifié. 
+
+En effet, le phénomène macroscopique de diffusion provient, de manière générale, d'une marche aléatoire des particules vectrices au sein de leur environnement. Drude a ainsi été le premier à calculer la résistivité électrique des matériaux en introduisant un temps de relaxation basé sur les collisions entre les électrons, vecteurs du courant électrique, et les impuretés du matériau dans lequel ceux-ci se déplacent \citep{ashcroft2010solid}. 
+
+Il apparaît ainsi que certaines propriétés macroscopiques des matériaux sont reliées aux grandeurs caractéristiques de la marche aléatoire associée. Ces grandeurs sont des briques élémentaires de la propagation en milieu désordonné, telles que le temps de diffusion élastique, le temps de transport, ou encore le coefficient de diffusion, que nous présenterons dans la suite.
+
+\paragraph*{Temps de diffusion élastique}
+La quantité la plus naturelle permettant de caractériser de manière microscopique le phénomène de diffusion est le \emph{temps de diffusion élastique} $\taus$, qui correspond à la durée typique entre deux évènements successifs de \emph{collision élastique} avec les impuretés du milieu. Ce temps est l'équivalent temporel du \emph{libre parcours moyen}  $\ls$ correspondant à la distance moyenne entre deux évènements de diffusion microscopique successifs. Dans le cas d'une particule de masse $m$ se déplaçant à une vitesse $v_{\mathrm{i}}$, ces deux grandeurs sont reliées par
+\begin{equation}
+\taus=\frac{\ls}{v_{\mathrm{i}}}=\frac{m}{\hb} \frac{\ls}{k_{\mathrm{i}}} \text{ ,}
+\label{eq:definition_taus}
+\end{equation}
+où $k_{\mathrm{i}}$ est le nombre d'onde de l'onde quantique associée à la particule (celui-ci est inchangé après chaque évènement de collision en raison de leur caractère élastique). On voit ainsi que $\taus$ est une quantité faisant intervenir la perte de cohérence de l'onde subissant une collision élastique.
+
+Comme nous le verrons plus en détails dans les chapitres \ref{ch:TauS_PRL} et \ref{ch:TauS_NJP}, le temps de diffusion élastique est une quantité qui dépend des détails microscopiques du système, établissant ainsi le lien entre processus microscopiques et phénomène macroscopique.
+
+
+\paragraph*{Temps de transport}
+Si la norme du vecteur vitesse (ou de manière équivalente du vecteur d'onde) reste inchangée au cours de la propagation, sa direction est modifiée à chaque évènement de collision élastique. Comme nous le verrons plus en détails dans le chapitre \ref{ch:TauS_PRL}, lors de la collision avec un diffuseur de taille caractéristique $\sigma$, l'onde peut être diffusée selon un angle $\left\langle\theta\right\rangle\sim 1/k_{\mathrm{i}} \sigma$. La diffusion peut donc être \emph{anisotrope}, en analogie avec la diffraction en optique.
+
+En considérant que la trajectoire d'une particule est composée de multiples collisions successives, il apparaît alors une seconde échelle de temps caractéristique, le \emph{temps de transport} ou temps de Boltzmann $\taub$, décrivant la durée nécessaire pour que la particule perde l'information de la direction initiale de sa vitesse. 
+
+
+On peut ainsi montrer que le temps de transport (et son analogue spatial, la \emph{longueur de transport}) s'expriment en fonction du temps de diffusion élastique \citep{akkermans2007mesoscopic}
+\begin{equation}
+\taub=\frac{\taus}{1-\left\langle\cos{\theta}\right\rangle} \quad \text{et} \quad \lb=\frac{\ls}{1-\left\langle\cos{\theta}\right\rangle} \text{ ,}
+\label{eq:definition_taub}
+\end{equation}
+où $\langle\:\cdots\:\rangle$ représente la valeur moyenne sur les différents évènements de diffusion.
+
+On voit donc que dans le cas de collisions élastiques isotropes, $\taub=\taus$, montrant qu'une seule collision suffit à perdre l'information sur la direction initiale de la vitesse de la particule. En revanche, un grand nombre de collisions sont nécessaires pour obtenir une isotropisation de la direction des vitesses dans le cas d'évènements de diffusion anisotrope, comme illustré figure \ref{fig:diffusion_classique}.a.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Localisation/diffusion_classique.pdf}
+\caption{\textbf{a: Longueur de transport pour des collisions anisotropes.} Une unique collision élastique ne modifie que peu la direction de la vitesse d'une particule. Il faut donc un grand nombre de collisions successives pour que la direction de la vitesse d'une particule soit décorrélée de la direction initiale. En conséquence, le temps de transport est beaucoup plus grand que le temps de diffusion élastique. \textbf{b: Mécanisme microscopique de la diffusion.} Le mouvement d'une particule peut être considérée comme une marche aléatoire composée d'évènements de diffusion isotropes tous les $\taub$ entre lesquels la particule se déplace d'une distance $\lb=v \taub$ dans une direction aléatoire. L'étalement typique obtenu croit avec le temps selon $\Delta \mathbf{x} \propto \sqrt{t}$.}
+\label{fig:diffusion_classique}
+\end{figure}
+
+
+
+
+
+\paragraph*{Coefficient de diffusion}
+Une fois que la particule a parcouru une distance $\lb$, on peut considérer qu'elle subit une diffusion isotrope. On assimile alors le mouvement des particules à une marche aléatoire pour laquelle les particules de vitesse $v$ subissent des évènements de collision isotrope à chaque intervalle de temps $\taub$ pendant lesquels la particule parcourt une distance $\lb=v \taub$, comme illustré figure \ref{fig:diffusion_classique}.b.
+
+Ainsi, on peut déterminer l'étalement typique de la région explorée par la particule après $N$ collisions à l'aide du théorème central limite \citep{diu1989elements},
+\begin{equation}
+\left\langle \Delta \mathbf{x}^2 \right\rangle=2 N \lb^2 \text{ .}
+\end{equation}
+En définissant le coefficient de diffusion par $ \left\langle \Delta \mathbf{x}^2 \right\rangle = 2 d D t$ et en faisant apparaître le temps $t=N \taub$, mon montre ainsi que 
+\begin{equation}
+D=\frac{v \lb}{d}=\frac{\hb}{m d} k \lb \text{ ,}
+\label{eq:definition_coefficient_diffusion}
+\end{equation}
+où on a fait apparaître la quantité $k \lb$, que l'on peut interpréter comme une mesure de la force du désordre, et qui sera essentielle dans la suite.
+
+Une conséquence de l'équation \ref{eq:definition_coefficient_diffusion} est qu'une diminution de la longueur de transport entraîne une diminution du coefficient de diffusion. Ainsi, plus un système sera désordonné, plus le coefficient de diffusion sera petit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{Localisation faible}
-\lipsum[2]
+\label{sc:weak_localisation}
+Si le mécanisme de marche aléatoire présenté permet de décrire un grand nombre de situations de diffusion classique, nous avons omis un ingrédient essentiel à la propagation d'ondes en milieu désordonné: la \emph{cohérence}, ou encore la capacité qu'une onde a à interférer. En particulier, nous verrons que celle-ci peut avoir des conséquences dramatiques sur les propriétés de transport d'une onde en présence de désordre.
+
+\paragraph*{Mécanisme de localisation faible}
+Pour cela, intéressons-nous à la probabilité $P(\mathbf{x},\mathbf{x}')$ qu'une onde initialement à la position $\mathbf{x}$ se retrouve à la position $\mathbf{x}'$ après propagation dans le milieu désordonné. Dans la limite $k\lb\gg 1$, la trajectoire de l'onde peut être vu comme une marche aléatoire, où chaque trajectoire de diffusion est associée à une amplitude complexe de probabilité $\left| A_j \right| e^{i \phi_j}$, avec $\phi_j$ la phase de la trajectoire. Ainsi, la probabilité $P(\mathbf{x},\mathbf{x}')$ est donnée par la somme de l'amplitude sur toutes les trajectoires possibles:
+\begin{align}
+P(\mathbf{x},\mathbf{x}') \nonumber&= {\left| \sum_j{ \left|A_j\right| e^{i \phi_j} }\right| }^2 = \sum_{j,l} {\left| A_j \right| \left| A_l \right| e^{i (\phi_j - \phi_l)}} \\
+&= \sum_j{{\left| A_j \right|}^2} + \sum_{j\neq l}{\left| A_j \right| \left|A_l \right| e^{i(\phi_j - \phi_l)}} \text{ ,}
+\label{eq:amplitude_localisation_faible}
+\end{align}
+où le premier terme décrit le phénomène de diffusion classique, où la probabilité $P(\mathbf{x},\mathbf{x}')$ est la somme des probabilités de chaque trajectoire. 
+
+Le second terme de l'équation \ref{eq:amplitude_localisation_faible} représente quant à lui les interférences dues aux différentes phases accumulées par les différents chemins de diffusion. Intuitivement, on peut considérer que la contribution de ce terme s'annule en moyennant sur les différentes réalisations du désordre, $\overline{e^{i(\phi_j - \phi_l)}}=0$, où $\overline{\:\cdots\:}$ désigne la moyenne d'ensemble. Cependant, une étude attentive montre que certaines trajectoires résistent au moyennage sur les réalisations du désordre.
+
+En particulier, les trajectoires pour lesquelles l'onde se retrouve à son point de départ forment des boucles qu'il est possible de parcourir dans les deux sens, comme illustré figure \ref{fig:localisation_faible}. Par \emph{symétrie par renversement du temps}, il est donc possible de trouver des paires de trajectoires dont la phase accumulée sera identique. De plus, ces paires de trajectoires existent quelque soit la réalisation du désordre, rendant ce processus d'interférences constructives robuste vis-à-vis du moyennage d'ensemble et $\overline{e^{i(\phi_j - \phi_l)}}=1$. Ainsi, la probabilité qu'une onde retourne à son point de départ est le double de la prédiction classique:
+\begin{equation}
+P(\mathbf{x},\mathbf{x})=2 \sum_j{{\left| A_j \right|}^2} \text{ .}
+\label{eq:proba_retour_origine}
+\end{equation}
+
+Les interférences entre chemins de diffusion tendent alors à favoriser le retour de l'onde à son point d'origine, ralentissant ainsi la diffusion. Cet effet de \emph{localisation faible}, commun à tout type d'onde, a été intensivement étudié dans de nombreux domaines, aussi théoriquement que expérimentalement.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{Fig/Localisation/localisation_faible.pdf}
+\caption{\textbf{a: Participation des différents chemins de diffusion à la propagation de l'onde.} La probabilité d'arriver au point $\mathrm{x'}$ en partant du point $\mathrm{x}$ est donnée par l'ensemble des trajectoires les reliant. Dans le cas des chemins 1 et 2, la phase accumulée le long de ces trajectoires diffère, détruisant en moyenne le phénomène d'interférence entre ces chemins. \textbf{b: Mécanisme de localisation faible.} Les chemins de diffusion pour lesquels l'onde retourne à son point de départ se présentent sous forme de boucles qu'il est possible de parcourir dans les deux sens, comme illustré par les trajectoires 1 et 2, ou encore les trajectoires 3 et 4. Ces paires de trajectoires existent quelle que soit la réalisation du désordre.}
+\label{fig:localisation_faible}
+\end{figure}
+
+
+
+\paragraph*{Corrections de localisation faible}
+Comme le montre l'équation \ref{eq:proba_retour_origine}, le retour de l'onde à son point d'origine est favorisé à l'aide des interférences constructives qu'il existe entre des trajectoires symétriques par renversement du temps. Notamment, cet effet de localisation faible se traduit par la diminution du coefficient de diffusion par rapport à la prédiction classique \ref{eq:definition_coefficient_diffusion}, que l'on peut alors écrire sous la forme
+\begin{equation}
+D= D_{\mathrm{0}}-\delta D \text{ ,}
+\end{equation}
+où $D_{\mathrm{0}}$ est le coefficient de diffusion classique \ref{eq:definition_coefficient_diffusion}, et $\delta D$ est la correction de localisation faible.
+
+
+
+Ces corrections de localisation faible dépendent des détails microscopiques du système, mais aussi de sa dimension $d$ et de sa taille $L$. Celles-ci sont données par \citep{akkermans2007mesoscopic}:
+\begin{equation}
+\delta D/ D_{\mathrm{0}} = \left\lbrace \begin{aligned}
+& \mathcal{O}\left(L/l_{\mathrm{B}}\right)  \quad &&\text{en 1D ,}\\
+& \mathcal{O}\left(\frac{1}{k l_{\mathrm{B}}} \ln{\frac{L}{l_{\mathrm{B}}}} \right) \quad &&\text{en 2D ,}\\
+& \mathcal{O}\left(\frac{1}{(k l_{\mathrm{B}})^2}\right) \quad &&\text{en 3D ,}
+\end{aligned}\right.
+\label{eq:correction_localisation_faible}
+\end{equation}
+et témoignent ainsi de la forte influence de la dimension du système comme nous le verrons plus en détails dans la section suivante.
+
+
+
+
+
+
 \subsection{Suppression du transport: Localisation d'Anderson}
-\lipsum[3]
+\label{sc:localisation_anderson}
+
+Les corrections de localisation faible données par l'équation \ref{eq:correction_localisation_faible} font apparaître un comportement remarquable: sous certaines conditions, il est possible que la correction $\delta D$ soit égale au coefficient de diffusion classique $D_{\mathrm{0}}$, entraînant ainsi la suppression du transport avec $D=0$. Cet effet dit de \emph{Localisation forte}, ou encore de \emph{Localisation d'Anderson}, a été découvert en 1958 par \emph{Philip W. Anderson} s'intéressant alors à la diffusion d'une particule quantique dans un réseau désordonné dans le cadre de la physique de la matière condensée \citep{anderson1958absence}. Ces travaux furent récompensés par le prix Nobel de physique en 1977, conjointement avec \emph{Sir Nevill Francis Mott} et \emph{John Hasbrouck van Vleck}. 
+
+
+
+\paragraph*{Localisation d'Anderson}
+La signature la plus spectaculaire de l'influence de la cohérence d'une onde lors de sa propagation dans un milieu désordonné est l'inhibition du transport. 
+
+Dans le régime \emph{isolant}\footnote{Par opposition au régime \emph{métallique} où le transport existe.} de localisation d'Anderson, la fonction d'onde reste localisée aux alentours du point d'origine et présente un profil exponentiel
+\begin{equation}
+\left| \psi (\mathbf{x}) \right|^2 \propto e^{-\mathrm{x}/\xiloc} \text{ ,}
+\label{eq:exponentielle_anderson}
+\end{equation}
+où $\xiloc$ correspond à la longueur typique sur laquelle l'onde s'étend, et est appelée \emph{longueur de localisation}.
+
+Il est possible de donner une estimation de cette longueur à l'aide des corrections de localisation faible \ref{eq:correction_localisation_faible}. On montre ainsi que pour un système unidimensionnel, tous les états sont très efficacement localisés et $\xiloc=2 \lb$. De ce fait, la localisation d'Anderson se manifeste même pour des désordres faibles pour lesquels $k\lb \gg 1$. 
+
+De même, à deux dimensions, il a été montré que tous les états restent localisés mais sur des échelles de longueurs bien plus grandes, de l'ordre de $\xiloc \sim \lb \exp{(k \lb)}$. Pour des désordres faibles ($k \lb \gg 1$), la longueur de localisation excède généralement la taille du système. 
+
+Remarquablement, les corrections de localisation faible à trois dimensions ne dépendent pas de la taille du système, mais seulement de la force du désordre $k \lb$. Dans le cas d'un désordre faible, les boucles de localisation faible ne sont pas assez nombreuses pour changer de manière significative la dynamique diffusive de l'onde. En revanche, la localisation d'Anderson persiste dans le cas d'un désordre fort où $k \lb \leq 1$, pour lequel la phase l'onde varie peu entre deux évènements successifs de diffusion. 
+
+
+
+\paragraph*{Transition d'Anderson}
+Il apparaît donc que le cas à trois dimensions présente un intérêt particulier. En effet, un même système peut, selon la force du désordre, présenter un comportement qui soit métallique , soit isolant. Selon l'équation \ref{eq:correction_localisation_faible}, on peut estimer que ce changement de comportement se manifeste lorsque
+\begin{equation}
+k \lb \sim 1 \text{ ,}
+\label{eq:ioffe_regel}
+\end{equation}
+condition connue sous le nom de \emph{critère de Ioffe-Regel}. 
+
+Il est possible de donner une interprétation intuitive au critère de Ioffe-Regel en se focalisant sur la phase accumulée par l'onde entre deux évènements successifs de diffusion. En effet, cette phase est de l'ordre de $\phi\sim k\lb$. Dans le régime de désordre fort, la phase de l'onde est donc similaire pour plusieurs évènements de diffusion successifs, générant ainsi des interférences constructives entre les différentes ondes diffusées. 
+
+Plus particulièrement, il a été montré à l'aide la \emph{théorie d'échelle de la localisation d'Anderson} qu'il existe une transition de phase du deuxième ordre entre états localisés et états diffusifs pour des systèmes à trois dimensions \citep{abrahams1979scaling}. Le paramètre de contrôle de la transition étant l'énergie $E$ de l'onde, la transition d'Anderson possède donc une énergie critique $E_{\mathrm{c}}$ appelée \emph{seuil de mobilité}, comme illustré figure \ref{fig:transition_anderson}.a. 
+
+La transition d'Anderson est de plus caractérisée par deux exposants critiques $\nu$ et $s$, décrivant respectivement comment la longueur de localisation $\xiloc$ diverge pour des états localisés proches du seuil de mobilité et comment le coefficient de diffusion $D$ s'approche de $0$ pour des états diffusifs (voir figure \ref{fig:transition_anderson}.b):
+\begin{equation}
+D \sim \left| E-E_{\mathrm{c}} \right|^s \quad \text{et} \quad \xi_{\mathrm{loc}} \sim \left| E-E_{\mathrm{c}} \right|^{-\nu} \text{ .}
+\end{equation}
+Bien qu'aucune théorie ne puisse décrire correctement le régime critique de la transition d'Anderson à l'heure actuelle, plusieurs études numériques s'accordent sur les valeurs $s=\nu=1.58$ des exposants critiques \citep{slevin1999corrections} \citep{evers2008anderson} \citep{slevin2014critical}.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Localisation/transition_anderson.pdf}
+\caption{\textbf{a: Transition d'Anderson.} À trois dimensions, il existe une transition de phase entre états diffusifs et états localisés. Pour une énergie supérieure à l'énergie critique de la transition, appelée seuil de mobilité, l'onde peut diffuser, tandis que pour une énergie inférieure au seuil de mobilité, l'onde est localisée. \textbf{b: Régime critique.} La transition d'Anderson est caractérisée par les exposants critiques $s$ et $\nu$, qui décrivent comment évoluent la longueur de localisation et la coefficient de diffusion aux alentours du seuil de mobilité. Dans le régime critique localisé, la longueur de localisation diverge en s'approchant du seuil de mobilité avec un exposant $\nu$. Dans le régime critique diffusif, le coefficient de diffusion s'annule selon une loi de puissance d'exposant $s$. }
+\label{fig:transition_anderson}
+\end{figure}
 %\subsection{Théorie d'échelle}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Localisation des atomes froids}
+La localisation d'Anderson étant due au caractère ondulatoire du système étudié, celle-ci est donc commune à tout type d'onde, qu'elle soit classique (ondes lumineuses ou acoustiques) ou quantique (ondes électroniques, ondes de matière). Ce phénomène a donc été étudié expérimentalement à l'aide d'un grand nombre de systèmes dont nous allons brièvement présenter les principaux résultats ici, en mettant l'accent sur la transition métal-isolant.
+
 \subsection{Etudes expérimentales de la localisation d'Anderson}
-\lipsum[4]
+L'étude expérimentale de la localisation d'Anderson constitue un domaine de recherche qui s'est énormément développé, débutant dans les années 70-80 avec des systèmes électroniques et faisant aujourd'hui encore l'objet de recherches intenses.
+
+\paragraph*{Localisation dans les systèmes électroniques}
+Les premières expériences furent menées à l'aide de systèmes électroniques, et purent démontrer des effets de localisation faible ainsi que des effets de localisation forte \citep{mott1979electronic}\citep{paalanen1983critical}. Rapidement, les efforts se sont concentrés sur l'observation de la transition métal-isolant\footnote{Cette dénomination prend tout son sens dans les systèmes électroniques: les expériences menées correspondent à des mesures de conductivité.} prédite par la théorie d'échelle de la localisation. 
+
+Cependant, une étude quantitative de la transition s'est révélée ardue en raison de la complexité de ces systèmes. En particulier, la présence d'interactions coulombiennes entre les électrons modifie profondément les propriétés de localisation, et rend délicate la distinction expérimentale entre la transition métal-isolant liée au désordre (transition d'Anderson) et la transition métal-isolant liée aux interactions (transition de Mott). Ces effets sont particulièrement marqués par la comparaison entre les exposants critiques mesurés ($\nu\sim 1$ pour \citep{shlimak1996determination}) et ceux estimés à l'aide de simulations numériques ($\nu\sim1.58$).
+
+
+\paragraph*{Localisation dans les systèmes classiques} 
+L'utilisation des ondes classiques s'est alors imposée comme étant un moyen de réaliser des systèmes mieux contrôlés que dans le cadre de la matière condensée. Les premières signatures de la localisation d'Anderson ont été obtenues dans les années 90 avec des ondes ultrasonores \citep{weaver1990anderson}, des ondes mécaniques de flexion \citep{ye1992observation}, des micro-ondes \citep{genack1991observation} ainsi que des ondes lumineuses \citep{wiersma1997localization}. 
+
+Cependant, ces expériences s'appuyaient sur la décroissance exponentielle de l'intensité de l'onde pour analyser leurs résultats. Leur interprétation fut controversée en raison de l'existence d'autres phénomènes présentant la même signature, en particulier l'absorption qui présente aussi une décroissance exponentielle de l'intensité de l'onde comme décrit par la loi de Beer-Lambert \citep{scheffold1999localization}. Depuis, d'autres signatures ont été exploitées telle que la dynamique de l'onde en régime pulsé \citep{weaver1993anomalous} ou encore les fluctuations géantes de transmission \citep{nieuwenhuizen1995intensity} afin d'observer sans ambiguïté la localisation d'Anderson.
+
+Encore aujourd'hui, la difficulté expérimentale s'accroît fortement en augmentant la dimension du système. En particulier, augmenter le pouvoir diffusant du milieu à trois dimensions afin d'atteindre le critère de Ioffe-Regel $k \lb \sim 1$ tout en s'affranchissant de l'absorption reste un tour de force expérimental. Ainsi, la seule observation de la localisation d'Anderson à trois dimensions faisant consensus à été réalisée au Canada dans le groupe de J. Page à l'aide d'ondes acoustiques se propageant dans des billes d'aluminium \citep{hu2008localization}.
+
+Notons finalement que la localisation à trois dimensions d'ondes lumineuses fait l'objet de recherches intenses très débattues. Enfin, une récente étude numérique prédit l'absence de la localisation d'Anderson à trois dimensions dans le cas d'ondes lumineuses en raison de leur caractère vectoriel \citep{skipetrov2014absence}.
+
+
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Localisation/experiences_localisation_anderson.pdf}
+\caption{\textbf{Etudes expérimentales de la localisation d'Anderson.} A basse température, un métal peut devenir isolant à cause du désordre, sa conductivité s'annulant alors. Cette transition peut être atteinte en diminuant la densité d'électrons. Figure tirée de \citep{katsumoto1987fine}. La localisation d'Anderson d'ondes acoustiques dans un réseau désordonné de billes d'aluminium peut être étudiée à l'aide d'un hydrophone après sa propagation. Il est possible de relever la distribution d'intensité de l'onde ainsi que son profil temporel qui présentent des signatures de la localisation d'Anderson. Figure tirée de \citep{hu2008localization}. La localisation de la lumière peut être étudiée à l'aide de plusieurs systèmes, tels que des matériaux photoréfractifs composés d'un réseau désordonné de guides d'ondes (figure tirée de \citep{schwartz2007transport}) ou encore dans des cristaux photoniques (figure tirée de \citep{sapienza2010cavity}).}
+\label{fig:experiences_localisation_anderson}
+\end{figure}
+
+
+
+
+
+
 \subsection{L'approche des atomes froids}
-\lipsum[5]
-%\section{Etudes de la localisation d'Anderson}
-%\subsection{Théorie d'échelle de la localisation d'Anderson}
-%\subsection{Etude à basse dimensionnalité}
-%\subsection{Etude à trois dimensions}
+Depuis le milieu des années 2000, une nouvelle plateforme présentant un degré de contrôle du système inédit participe à l'étude de la physique du désordre: les atomes ultra-froids. Ces systèmes, utilisés en interférométrie atomique et pour de la simulation quantique, sont bien connus pour leurs propriétés de cohérence sous forme de \emph{condensats de Bose-Einstein} et offrent des possibilités expérimentales complexes qu'il n'est pas possible de réaliser à l'aide d'autres systèmes.
+
+En effet, les expériences d'atomes ultra-froids présentent un grand nombre d'avantages: il est possible d'imager la fonction d'onde des atomes aussi bien dans l'espace réel grâce à une imagerie \emph{in-situ} que dans l'espace des vitesses à l'aide d'une imagerie par \emph{temps de vol}. De plus, les atomes ultra-froids ne présentent pas d'absorption, et dépassent ainsi les difficultés des expériences pionnières d'observation de la localisation d'Anderson. Enfin, de tels systèmes offrent un contrôle absolu des paramètres microscopiques, en particulier des paramètres du désordre, mais aussi ceux de l'onde et des interactions entre particules, et la dimension du système. Les atomes ultra-froids apparaissent alors comme une plateforme idéale pour étudier la physique du désordre.
+
+
+\paragraph*{Atomes ultra-froids et désordre}
+Il existe différentes méthodes pour générer un désordre sur les atomes. Parmi les plus utilisées on retrouve les champs de tavelures optiques, ou \emph{speckle}, et les réseaux bichromatiques pour lesquels un réseau de faible amplitude vient moduler de manière quasi-aléatoire le réseau principal (voir figure \ref{fig:localisation_1D_atomes_froids}. Notons aussi le développement récent de désordres générés à l'aide de modulateurs spatiaux de lumière ou de matrices de micro-miroirs, permettant de réaliser des profils d'illumination arbitraires.
+
+Toutes ces façons de réaliser un désordre pour les atomes possèdent un point commun: ils sont générés à l'aide de champs lumineux et possèdent donc une longueur typique de variation, ou \emph{longueur de corrélation} $\sigma$, généralement de l'ordre du micromètre. En particulier, les effets quantiques associés au comportement ondulatoire de la matière sont attendus lorsque la longueur de \emph{de Broglie} est plus grande que la longueur de corrélation:
+\begin{equation}
+\ldb\geq\sigma \quad \text{soit} \quad T_{\mathrm{typ}} \leq \frac{\hb^2}{ \kB m \sigma^2}\sim \text{ quelques nanokelvins.}
+\end{equation}
+L'observation d'effets quantiques en présence de désordre nécessite donc des températures extraordinairement basses obtenues avec des \emph{condensats de Bose-Einstein}. 
+
+Cependant, l'obtention de telles températures n'est pas nécessaire pour observer la dynamique diffusive d'atomes dans un désordre optique. Notamment, celle-ci a été étudiée en deux dimensions en se concentrant sur la décroissance temporelle de la densité atomique \citep{robert2010anisotropic}. Plus particulièrement, une décroissance de la densité atomique en $1/t$ au centre du nuage servant de point source, signature de la dynamique diffusive, a été observée en présence de désordre, tandis que celle-ci est caractérisée par une décroissance en $1/t^2$ pour une expansion balistique en absence de désordre.
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Localisation/localisation_1D_atomes.pdf}
+\caption{\textbf{Localisation d'ondes atomiques dans un réseau bichromatique.} Un condensat de Bose-Einstein s'étend dans l'espace libre (image du haut), tandis que son expansion est arrêtée lorsque celui-ci est placé dans un potentiel quasi-périodique (image du bas). Figure tirée de \citep{roati2008anderson} \textbf{Localisation d'Anderson d'ondes de matière dans un speckle.} Mesure de densité atomique après une seconde d'expansion dans un potentiel de type speckle. Les ailes du profil sont caractérisées par un décroissance exponentielle (traits bleus). Le profil rose correspond à la densité atomique initiale. Figure tirée de \citep{billy2008direct}.}
+\label{fig:localisation_1D_atomes_froids}
+\end{figure}
+
+
+
+
+\paragraph*{Localisation d'Anderson d'ondes atomiques}
+C'est en 2008 qu'a été observée la localisation d'Anderson d'ondes de matière simultanément dans deux expériences illustrées sur la figure \ref{fig:localisation_1D_atomes_froids}. L'expérience de Roati et al. \citep{roati2008anderson} réalisée au LENS à Florence, rapporte l'arrêt de l'expansion d'un condensat de Bose-Einstein de \isotope[39]{K} placé dans un potentiel unidimensionnel composé d'un réseau bichromatique. La seconde expérience, menée au Laboratoire Charles Fabry à Palaiseau, rapporte aussi l'arrêt de l'expansion d'un condensat de Bose-Einstein de \isotope[87]{Rb} plongé dans un guide d'onde optique unidimensionnel et dans un désordre de type speckle \citep{billy2008direct}. De plus, la mesure du profil de densité atomique montre la décroissance exponentielle \ref{eq:exponentielle_anderson} de la fonction d'onde localisée, comme représenté figure \ref{fig:localisation_1D_atomes_froids}.b. 
+
+Ce expériences ont ainsi démontré la pertinence des atomes ultra-froids pour l'étude des systèmes désordonnés, et déclenché ainsi de nombreux efforts expérimentaux pour l'étude de la localisation d'Anderson dans des systèmes de dimensions 2 et 3. 
+
+Ce n'est que récemment (2019) que la localisation d'Anderson a pu être observée à l'aide d'atomes froids en raison de l'augmentation exponentielle de la longueur de localisation avec la faiblesse du désordre. White et al. rapportent ainsi l'observation de la localisation d'Anderson en deux dimensions à l'aide d'une expérience de transmission entre deux réservoirs, et témoignent du profil exponentiel de la fonction d'onde dans le canal désordonné \citep{white2019observation}. 
+
+
+
+\paragraph*{Localisation d'Anderson en trois dimensions}
+
+C'est principalement vers l'étude de la localisation d'Anderson à trois dimensions et plus particulièrement vers l'étude du régime critique que ce se sont concentrés les efforts expérimentaux après l'observation de la localisation unidimensionnelle. Un des facteurs expliquant ce développement en faveur du cas tridimensionnel par rapport au cas bidimensionnel provient de la distinction entre la localisation d'Anderson, d'origine quantique, et le piégeage classique. Notamment, il a été montré que pour un potentiel de type speckle à trois dimensions, la percolation classique est négligeable \citep{pilati2010dilute}, contrairement au cas bidimensionnel où cette question est critique.
+
+Trois expériences rapportent ainsi l'observation de la localisation d'Anderson à trois dimensions. Le groupe de B. de Marco à Urbana Champaign a ainsi utilisé un gaz fermionique de \isotope[40]{K} dans un potentiel speckle anisotrope \citep{kondov2011three}. Simultanément, l'équipe de Palaiseau a observé un arrêt de l'expansion d'une partie du nuage de \isotope[87]{Rb} plongé dans un désordre isotrope généré par la superposition cohérente de deux speckles, pour des durées d'observation allant jusqu'à \SI{8}{\second} \citep{jendrzejewski2012three}. Enfin, une expérience récente menée au LENS dans l'équipe de G. Modugno rapporte l'observation de la localisation complète du nuage atomique de \isotope[39]{K}, dont les interactions ont été annulées à l'aide de résonances de Feshbach \citep{semeghini2015measurement}.
+
+Ces trois expériences constituent une étape importante de l'étude de la localisation d'Anderson, mais ne permettent pas d'adresser l'étude du régime critique, comme nous le verrons dans la partie suivante. 
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Localisation/localisation_3D_atomes_v1.pdf}
+\caption{\textbf{Observation de la localisation d'Anderson à trois dimensions avec des atomes ultra-froids.} \textbf{a.} Localisation d'une partie du nuage de \isotope[40]{K} à temps très court. Une partie localisée émerge du centre d'un fond balistique. Figure tirée de \citep{kondov2011three}. \textbf{b.} Observation à temps très long d'une partie localisée du nuage de \isotope[87]{Rb} qui se démarque d'un fond très peu diffusif dans un désordre quasi-isotrope. Figure tirée de \citep{jendrzejewski2012three}. \textbf{c.} Localisation d'un nuage de \isotope[39]{K} complet dont les interactions sont annulées à l'aide d'une résonance de Feshbach. Figure tirée de \citep{semeghini2015measurement}.}
+\label{fig:localisation_3D_atomes_froids}
+\end{figure}
+
+
+
+
+
+\paragraph*{Localisation dynamique}
+Notons enfin l'existence d'un autre système permettant d'étudier la localisation d'Anderson à l'aide d'atomes froids, basé sur le phénomène de \emph{localisation dynamique}. Développé expérimentalement dans les années 1990 \citep{moore1995atom}, le système de \emph{rotateurs forcés} (ou \emph{kicked rotors} en anglais) repose sur un mapping entre un rotateur pulsé périodiquement et un modèle d'Anderson, et se focalise sur l'apparition du phénomène de localisation dans l'espace des vitesses \citep{lemarietel-00424399}. 
+
+En effet, à l'aide d'une onde stationnaire pulsée périodiquement, équivalente à une transmission périodique d'impulsion aléatoire, on peut décrire le mouvement des atomes soumis à ces \emph{kicks} comme une marche aléatoire dans l'espace des vitesses. Cependant, la richesse de ce système réside dans sa dynamique quantique, grâce à laquelle le phénomène de localisation apparaît de manière équivalente à celle dans l'espace réel et présente une localisation exponentielle de la distribution de vitesses des atomes illustrée figure \ref{fig:kicked_rotors}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{Fig/Localisation/kicked_rotor.pdf}
+\caption{\textbf{Localisation dynamique d'atomes froids.} Un nuage d'atomes de sodium est soumis à des kicks périodiques, induisant une marche aléatoire dans l'espace des impulsions. Après un certain nombre de kicks, la distribution d'impulsion se fige et présente une décroissance exponentielle. Figure tirée de \citep{moore1995atom}. \textbf{Régler le problème de transparence/fond de l'image.}}
+\label{fig:kicked_rotors}
+\end{figure}
+
+L'extension du kicked rotor unidimensionnel à des dimensions supérieures $d=2$ et $d=3$ a pu se faire à l'aide d'une modulation temporelle des kicks \citep{casati1989anderson}. Le \emph{kicked rotor quasi-périodique} possède une transition de phase métal-isolant d'Anderson, confortée par l'existence d'un mapping \citep{lemarie2009observation} ainsi que par des études numériques \citep{lemarie2009universality}. L'expérience de Chabé et al. réalisée à Lille rapporte ainsi une valeur de $\nu=1.63\pm0.05$ de l'exposant critique de la transition de phase associée. Cette mesure constitue aujourd'hui encore la seule mesure expérimentale des exposants critiques de la transition d'Anderson compatible avec les estimations numériques \citep{chabe2008experimental}\citep{lopez2012experimental}.
+
+
+
+
+
+
+
 
 \section{Vers l'étude du régime critique}
-\subsection{Etat de l'art de l'étude de la transition d'Anderson}
-\lipsum[6]
+Nous avons vu dans la section précédente que la plateforme des atomes ultra-froids constitue un outil idéal pour étudier la problématique de la propagation cohérente d'ondes dans des milieux désordonnés. En revanche, malgré l'observation de la localisation d'Anderson dans des systèmes unidimensionnels ainsi que la transition d'Anderson dans des systèmes tridimensionnels, l'étude à énergie résolue de la transition d'Anderson reste un défi de taille auquel les trois expériences menées n'ont pas pu apporter de réponse.
+
+Dans cette partie, nous allons donc décrire les manquements des différentes expériences afin de dresser un état de l'art de l'étude de la transition d'Anderson avec des atomes ultra-froids. Enfin, nous nous pencherons brièvement sur l'approche suivie par notre équipe pour tenter de dépasser ces limitations.
+
+\subsection{Etat de l'art de l'étude de la transition d'Anderson avec des atomes ultra-froids}
+Comme nous allons le voir plus en détails, les trois expériences menées jusqu'à présent ont pour similarité d'estimer le seuil de mobilité à l'aide de la fraction localisée. La détermination précise du seuil de mobilité constitue une étape cruciale vers l'étude du régime critique de la transition d'Anderson. 
+
+Contrairement aux exposants critiques de la transition d'Anderson, l'énergie critique de la transition, le seuil de mobilité, dépend des détails microscopiques du désordre. L'utilisation de désordres de type speckle par les expériences, de distribution asymétrique (voir chapitre \ref{ch:Speckle}), résultent en un comportement complexe du seuil de mobilité, qui diffère entre potentiels répulsifs ou attractifs. 
+
+
+\paragraph*{Expérience d'Urbana Champaign}
+La première expérience à donner une estimation du seuil de mobilité à l'aide d'atomes ultra-froids a été menée en 2011 à Urbana Champaign aux États-Unis \citep{kondov2011three}. Celle-ci se base sur l'expansion d'un nuage thermique de \isotope[40]{K} polarisé\footnote{Le \isotope[40]{K} est une espèce fermionique dont les collisions dans l'onde \textit{s} sont supprimées si les atomes se trouvent dans le même état de spin. On peut ainsi négliger les interactions entre atomes.} dans un speckle répulsif anisotrope. L'analyse des auteurs repose sur l'observation d'une double structure du profil de densité atomique pour des temps de propagation $t\geq \SI{20}{\milli\second}$, interprétée comme la coexistence d'états localisés et d'états diffusifs. En définissant la fraction localisée comme la rapport entre le nombre d'atomes localisés et le nombre d'atomes total $f_{\mathrm{loc}}=N_{\mathrm{loc}}/(N_{\mathrm{loc}}+N_{\mathrm{D}})$, il est possible d'estimer le seuil de mobilité en remarquant que seuls les atomes d'énergie inférieure à $E_{\mathrm{c}}$ restent localisés:
+\begin{equation}
+f_{\mathrm{loc}}=\int_{-\infty}^{E_{\mathrm{c}}}{\mathrm{d}E \: \mathcal{D}_{\mathrm{E}} (E)} \text{ ,}
+\label{eq:fraction_localisee}
+\end{equation}
+où $\mathcal{D}_{\mathrm{E}}(E)$ est la distribution d'énergie des atomes dans le potentiel désordonné.
+
+Afin de déterminer la distribution d'énergie $\mathcal{D}_{\mathrm{E}}(E)$, les auteurs font l'hypothèse que l'allumage lent du désordre sur les atomes ne modifie par leur distribution d'énergie, alors déduite de la distribution des vitesses de Maxwell-Boltzmann. En introduisant la \emph{fonction spectrale}\footnote{Cette quantité est d'une importance capitale pour l'étude de la localisation d'Anderson avec des atomes froids. Elle sera étudiée plus en détails dans le chapitre \ref{ch:TauS_NJP}.} $A(\mathbf{k},E)$ représentant la probabilité qu'une particule d'impulsion $\mathbf{k}$ ait une énergie $E$ en présence de désordre
+\begin{equation}
+\mathcal{D}_{\mathrm{E}}(E)= \int{\frac{\mathrm{d}^d \mathbf{k}}{{(2 \pi)}^d} \: A(\mathbf{k},E) \: \mathcal{D}_{\mathbf{k}}(\mathbf{k})} \text{ ,}
+\label{eq:fonction_spectrale}
+\end{equation}
+l'hypothèse des auteurs selon laquelle le désordre n'affecte pas la distribution d'énergie des atomes revient à assimiler la fonction spectrale à une distribution infiniment fine:
+\begin{equation}
+A(\mathbf{k},E) = \delta\left(E- \frac{\hb^2 \mathbf{k}^2}{2m}\right) \text{ .}
+\label{eq:hypothese_urbana_champaign}
+\end{equation}
+
+De nombreuses critiques ont été formulées quant à l'interprétation des données expérimentales \citep{muller2014comment}. Notamment, les très courts temps de propagation dans le désordre ne permettent pas de conclure quant à l'observation à proprement parler d'états localisés, indissociables d'états très lentement diffusifs. La fraction localisée extraite et le seuil de mobilité sont donc largement surestimés. De plus, l'observation de la localisation d'Anderson à trois dimensions requiert l'utilisation d'un désordre fort (comme spécifié par le critère de Ioffe-Regel $k\lb\sim 1$) pour lequel la distribution d'énergie $\mathcal{D}_{\mathrm{E}}(E)$ est profondément modifiée. Les résultats de cette étude ne permettent donc pas de conclure quant à la mesure du seuil de mobilité \citep{pasek2017anderson}.
+
+
+
+\paragraph*{Expérience de Palaiseau}
+La seconde expérience, réalisée à Palaiseau en 2012, se focalise sur l'évolution temporelle de l'expansion d'un condensat de Bose-Einstein de \isotope[87]{Rb} dans la superposition cohérente de deux speckles croisés afin d'obtenir un désordre quasi-isotrope \citep{jendrzejewski2012three}. Le suivi de la densité atomique $n(\mathbf{x},t)$ au cours de l'expansion jusqu'à \SI{6}{\second} témoigne d'une double structure pour les désordres les plus forts, identifiée à l'existence d'une partie localisée et d'un fond diffusif, comme illustré figure \ref{fig:experience_palaiseau}:
+\begin{equation}
+n(\mathbf{x},t)= f_{\mathrm{loc}} n_i(\mathbf{x}) + n_{\mathrm{D}}(\mathbf{x},t) \text{ .}
+\end{equation}
+
+L'estimation de la fraction localisée $f_{\mathrm{loc}}$ est réalisée en suivant la densité atomique au centre du nuage\footnote{Il s'agit en réalité de la densité atomique intégrée suivant la direction d'imagerie, voir section \ref{sc:imagerie}.}, ajustée par l'asymptote $f_{\mathrm{loc}}+\chi/t$, qui tient compte de la contribution de la partie diffusive aux temps longs, voir figure \ref{fig:experience_palaiseau}. L'utilisation d'une telle limite asymptotique permet ainsi de s'affranchir des temps de propagation finis.
+
+
+Étant donné la très faible énergie des atomes, l'onde de matière initiale peut être considérée comme une onde plane $\etat{\mathbf{k}=0}$. Contrairement à l'expérience d'Urbana Champaign, le désordre est allumé brusquement, projetant ainsi l'état initial sur les différents états propres du désordre. À l'aide de l'équation \ref{eq:fonction_spectrale}, on trouve que la distribution d'énergie des atomes dans le désordre est donnée par 
+\begin{equation}
+\mathcal{D}_{\mathrm{E}}(E) = A(\mathbf{k}=0,E) \text{ ,}
+\end{equation}
+calculée numériquement. Une fois la distribution d'énergie des atomes dans le désordre connue, il est possible d'estimer le seuil de mobilité à l'aide de l'équation \ref{eq:fraction_localisee} \citep{piraud2012localisation}.
+
+Si l'observation de l'arrêt de l'expansion d'une partie du nuage est directe dans cette expérience, la détermination du seuil de mobilité est quant à elle très indirecte. En effet, celle-ci repose sur deux calculs intermédiaires: le calcul numérique de la fonction spectrale $A(\mathbf{k}=0,E)$ et le calcul de $E_{\mathrm{c}}$. 
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Localisation/experience_palaiseau.pdf}
+\caption{\textbf{Expérience de Palaiseau.} \textbf{a.} Images expérimentales du nuage de \isotope[87]{Rb} après propagation dans le désordre. Pour un désordre de \SI{135}{\hertz}, le nuage a une dynamique de diffusion. Pour un désordre de \SI{680}{\hertz}, une partie localisée apparaît parmi un fond diffusif lent. \textbf{b.} Évolution temporelle de la taille du nuage selon deux axes. L'augmentation de l'amplitude du désordre ralentit la diffusion du nuage. \textbf{c.} Évolution de la densité atomique au centre du nuage. Le régime asymptotique (aux temps longs) permet de déterminer la fraction localisée. Figure tirée de \citep{jendrzejewski2012three}.}
+\label{fig:experience_palaiseau}
+\end{figure}
+
+
+\paragraph*{Expérience de Florence}
+La troisième expérience, réalisée en 2015 à Florence, est la dernière expérience en date cherchant à déterminer le seuil de mobilité avec des atomes ultra-froids \citep{semeghini2015measurement}. Si celle-ci partage de nombreuses similarités avec les expériences précédentes, telles que l'utilisation d'un désordre de type speckle répulsif et l'estimation du seuil de mobilité à l'aide de la mesure de la fraction localisée, elle se distingue par l'approche utilisée pour peupler les différents états. 
+
+En effet, l'originalité de cette expérience est de moduler l'amplitude du potentiel pendant \SI{500}{\milli\second} afin de transférer une partie contrôlée des atomes initialement dans un état d'énergie $E$ à un état d'énergie $E+\hb \omega$ avec $\omega$ la fréquence de modulation. La fraction localisée est ensuite obtenue en détectant les atomes localisés après \SI{500}{\milli\second} supplémentaires de propagation dans le désordre, voir figure \ref{fig:experience_florence}. De manière identique aux expériences précédentes, le seuil de mobilité est déterminé à l'aide de l'équation \ref{eq:fraction_localisee}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Localisation/experience_florence.pdf}
+\caption{\textbf{Expérience de Florence.} \textbf{a.} Procédure de mesure du seuil de mobilité. Un état de basse énergie est chargé dans le désordre. Une modulation de l'amplitude du désordre permet de transférer une énergie $\hb \omega$ à certains atomes. La propagation dans le désordre permet d'éliminer la partie diffusive, révélant ainsi la fraction localisée. \textbf{b.} Fonction spectrale $A(\mathbf{k},E)$ calculée numériquement. Celle-ci permet de calculer la distribution d'énergie des atomes dans le désordre à partir de la distribution d'impulsion des atomes mesurée après le chargement du désordre. \textbf{c.} Exemple de distribution d'énergie des atomes après chargement, modulation et propagation dans le désordre. La courbe grise correspond à la distribution d'énergie après chargement du désordre, la courbe verte correspond à la distribution d'énergie après modulation de l'amplitude du désordre et la surface verte correspond à la fraction des atomes qui sont localisés. Figure tirée de \citep{denechaud2018vers}.}
+\label{fig:experience_florence}
+\end{figure}
+
+Une seconde distinction avec l'expérience de Palaiseau réside dans la procédure de chargement du désordre. En effet, le désordre est ici allumé progressivement et la distribution d'impulsion du nuage $\mathcal{D}_{\mathbf{k}}(\mathbf{k})$ n'est plus associée à l'onde plane $\etat{\mathbf{k}=0}$. Ainsi, la distribution d'énergie des atomes dans le désordre est donnée par l'équation \ref{eq:fonction_spectrale}, où la distribution d'impulsion est mesurée expérimentalement par la méthode de temps de vol et la fonction spectrale est calculée numériquement. La détermination de la distribution d'énergie nécessite donc de calculer la fonction spectrale pour toutes les impulsions du nuage.
+
+L'expérience de Florence se caractérise donc par une nouvelle approche à la mesure du seuil de mobilité. En particulier, l'attention portée à la sélection de l'énergie des atomes marque le début de l'étude de la transition d'Anderson à \emph{énergie résolue}. Néanmoins, cette expérience comporte des limitations. Notamment, la détermination du seuil de mobilité reste indirecte: il est nécessaire de calculer numériquement la fonction spectrale $A(\mathbf{k},E)$ ainsi que la population transférée. 
+
+
+
+\paragraph*{Comparaison aux résultats numériques}
+Les trois expériences présentées précédemment \citep{kondov2011three}\citep{jendrzejewski2012three}\citep{semeghini2015measurement} ont toutes cherché à montrer l'existence d'un seuil mobilité séparant les états localisés des états diffusifs. Pour cela, celles-ci se sont basées sur la mesure de fractions localisées et sur des estimations de la distribution d'énergie des atomes dans le désordre.
+
+Un second point commun entre ces expériences réside dans la nature du désordre utilisé: toutes ont utilisé un speckle répulsif, généré à l'aide d'un unique faisceau pour l'expérience d'Urbana Champaign tandis que les expériences de Palaiseau et de Florence ont profité de l'interférence de deux speckles croisés pour générer un désordre quasi-isotrope. 
+
+Dans le cadre de l'étude de l'effet de l'anisotropie du potentiel sur la position du seuil de mobilité pour un potentiel de type speckle, Pasek et al. \citep{pasek2017anderson} ont montré qu'il existe une échelle d'énergie universelle, appelée \emph{énergie de corrélation}, qui rend la position du seuil de mobilité indépendante des longueurs de corrélation du désordre. Cette énergie est définie par
+\begin{equation}
+\ER=\frac{\hb^2}{m\overline{\sigma}^2} \quad \text{avec} \quad \overline{\sigma}={(\sigma_x \sigma_y \sigma_z)}^{1/3} \text{ ,}
+\end{equation}
+où les $\sigma_i$ correspondent aux longueurs de corrélation selon chaque direction.
+
+À l'aide de cette définition, Pasek et al. ont pu comparer les résultats des différentes expériences à une unique courbe universelle $E_{\mathrm{c}}/\VR=\mathcal{F}(\VR/\ER)$ obtenue à l'aide de simulations numériques. La compilation de ces résultats est illustrée figure \ref{fig:seuil_mobilite_delande}.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{Fig/Localisation/delande_expvsth.pdf}
+\caption{\textbf{Comparaison des résultats expérimentaux à des simulations numériques.} Evolution du seuil de mobilité $E_{\mathrm{c}}$ en fonction de l'amplitude du désordre $\VR$. La ligne pointillée noire correspond à la prédiction universelle $E_{\mathrm{c}}/\VR=\mathcal{F}(\VR/\ER)$. Les résultats de l'expérience de Palaiseau sont représentés par la ligne rouge, tandis que les résultats de l'expérience de Florence sont reportés par des points bleus. Les résultats de l'expérience d'Urbana Champaign sont représentés par des points verts dans l'encart. Figure tirée de \citep{pasek2017anderson}.}
+\label{fig:seuil_mobilite_delande}
+\end{figure}
+
+Les résultats de l'expérience d'Urbana Champaign, en points verts dans l'encart, montrent un désaccord significatif avec les résultats numériques. En particulier, les résultats expérimentaux surestiment fortement le seuil de mobilité en raison du très court temps de propagation dans le désordre et de l'hypothèse \ref{eq:hypothese_urbana_champaign}. L'expérience de Palaiseau, dont les résultats sont représentés en rouge, semblent en accord quantitatif avec les prédictions numériques. Les résultats de l'expérience de Florence sont représentés en bleu et semblent en accord qualitatif avec les résultats numériques. Néanmoins, les données expérimentales semblent légèrement surestimer le seuil de mobilité, probablement en raison d'un temps de propagation trop court dans le désordre ou du calcul de la distribution d'énergie. L'ensemble de ces résultats montre donc qu'il est fondamental d'avoir des temps de propagation dans le désordre de plusieurs secondes afin de ne pas surestimer le seuil de mobilité.
+
+
+
+
 \subsection{Nécessité d'une spectroscopie pour sonder le régime critique}
-\lipsum[7]
+besoin de connaître la distribution d'énergie des états dans le désordre: fonction spectrale. Besoin de la mesurer. Donc besoin d'adresser spécifiquement les niveaux d'énergie du désordre.
+Dans un second temps, pour sonder le régime critique, besoin de maitriser le paramètre de contrôle de la transition. 
+Protocole de mesure du régime critique: étape de chargement du désordre par spectroscopie puis expansion.
+Approche retenue RF-2photons?
 
 
-
-\begin{comment}
-\section{Diffusion et interférences}
-\subsection{Phénomène de diffusion}
-\subsection{Localisation faible}
-\subsection{Suppression du transport: Localisation d'Anderson}
-
-\section{Théorie d'échelle de la localisation d'Anderson}
-\subsection{Critère de Thouless}
-\subsection{Importance de la dimensionnalité}
-\subsection{Théorie auto-consistante de la localisation d'Anderson}
-
-\section{Expériences de localisation}
-\subsection{Observation d'effets de localisation faible}
-\subsection{Expériences sur la localisation d'Anderson}
-%\subsection{Vers l'étude du régime critique}
-\end{comment}
 
 
 
 \begin{comment}
-%% TODO: finir introduction (lep lus importantp our bien savoir quoi écrire par la suite
-%% TODO: vérifier que ce qui a déjà été écrit est cohérent avec le reste
-
-%Chapter 1: Introduction - Etat de l'art
-%-----------------------
-
-%1.1: Prise de décision: pt de vue cognitif et neuroscience
-%-
-%-
-%-
-
-%1.2 : differents modèles de prise de décisions
-%- SDT %% rapidement seulement
-%- Seq. Analysis
-%- Attractor models %% equation du modèle qu'on va utiliser
-
-
-%1.3 : variété d'effets testés dans ce type de tache
-%- Biais de répétitions
-%- Fréquence des stimulis
-%- Reinf learning
-
-%% Intro générale ici
-Decision-making is vital for human and animal behaviors. It involves choosing an action or an option among multiples alternatives using different information such as sensory inputs, past associations and future goals. Decision-making has been studied in various fields, such as psychology, statistics, economics, finance, political science, philosophy, ethics and jurisprudence. %% REFS TODO important
-The last two decades have seen a  surge of interest in the neurobiological studies of decision-making thanks to animal behavioral physiology, human brain imaging and neural circuit modelling. In this chapter I will review the neuronal underpinning of decision-making and different models that have been proposed. %% est-ce que je fais raiment ça au final ? si je ne parle pas de toute la biblio
-Finally, I will trouver la bonne formulation. %% TODO
-
-
-
-%% Que faire des article Katz et al ? en conclusion ou bien en intro ?
-%% Les descriptions sont-elles assez claires ? plus de descriptions ????
-%% penser à l'article XJ sur la saccade
-
-
-\section{Decision-making in cognitive science and neuroscience}
-%% a faire après
-%% trouver bonne review ou mail jérôme ?
-%% ou inclure cog et neuro en même temps
-
-A central idea to decision-making is time integration. The idea of temporal accumulation of evidence has a long history in cognitive psychology. Decision-maker typically take longer times to perform more difficult decisions~\citep{hick1952rate,vickers1970evidence}, and there is a tradeoff between speed and accuracy, i.e performances improve with slower response times~\citep{wickelgren1977speed}.
-%% on parle des RTS ???
-%% puis de la différence humain animaux
-%% puis neuronal ??? faire attention au plan et citations
-However, it is not obvious to determine the timescale on which this accumulation of evidence occurs~\citep{uchida2006seeing}.  
-
-One of the most-studied perceptual decision task is the random dot motion task. Participants (humans or monkeys) look at a screen where some dots are moving randomly and the others coherently into one of the two possible directions. The participants must report the net direction of motion by making a saccade in this direction. %% à modifier ?
-When the fraction of dots moving coherently is reduced, the decision becomes more difficult. In this task, when the difficulty is varied, reaction times can go from $300$~ms to the order of the second. %ù TODO REFS
-The two-alternative-forced-choice (2AFC) task %% faut-il préciser ce que sait ou bien on comprend de précedemment ?
-has been studied in rodents too, in the case of an olfactory discrimination. %% REFS
-In such tasks, the rats needed to respond to the dominant component in binary odour mixtures. The first observation is that these decisions are fast, around $300$~ms. The performances varied from chance level to almost $100 \%$ correct with the stimulus difficulty. However, the difference in reaction times between the easiest and the hardest stimuli is smaller than for humans and monkeys, around $35$~ms in~\cite{uchida2003speed}  and $80$~ms in~\cite{abraham2004maintaining}. These different results highlight the diversity of time integration across tasks and species.
-
-Electrophysiological studies in behaving monkeys have been performed in order to understand the neural mechanisms underlying perceptual decision-making. %% REFS et exemple figure tache
-Research has focused on cortical neurons  that encode task-relevant sensory signals in different perceptual decision-making tasks, such as the random dot motion task or sensorimotor tasks (Figure~\ref{fig:RDM}.A). %% REFS et fig.
 
 %%% mettre les performances ??? ceci peut être intéressant ? chercher données ? Freedman peut être ?
 \begin{figure}[h!]
@@ -115,155 +453,5 @@ Research has focused on cortical neurons  that encode task-relevant sensory sign
 	\label{fig:RDM}
 \end{figure}
 %% REF AutoDraw ??,
-
-
-
-%In the following part I will focus on the random dot motion discrimination task. %% ou pas ? ce sera pas au final
-%https://www.sciencedirect.com/science/article/pii/S0896627308008362#bib77
-Sensory neurons in the visual area MT encode the motion direction of the stimulus~\citep{newsome1989neuronal,britten1992analysis,britten1993responses}, but the decision process does not occur in this area. %% exemple des perfomances des singes dans ces taches ?
-\cite{shadlen1996motion} found that the activity of neurons in the lateral intraparietal cortex (LIP) %% check les différentes donénes en ligne
-was correlated with the monkey's perceptual choice. Moreover, in reaction time version of the task (when response times are controlled by the monkeys), a number of findings suggest that LIP neurons mediate decisions between rival saccadic decisions~\citep{roitman2002response,huk2005neural,gold2007neural,huk2012neural}. The activity of the LIP neurons selective for the saccadic target increased from the stimulus onset until the saccadic eye movement (Figure~\ref{fig:RDM}.B). This buildup rate depends on the quality of the sensory of information, with stronger evidence associated to steeper slopes. Finally, %% effect of micro stim. https://hankslab.faculty.ucdavis.edu/wp-content/uploads/sites/305/2017/02/Hanks_Summerfield-Neuron2017.pdf
-the decision choice is made when the firing rate of the LIP neurons (corresponding to this choice) reaches a threshold that is independent of the signal quality and of the response time.
-In addition, microstimulations on MT and LIP neurons have an effect on accuracies and reaction times consistent with the idea that LIP neurons integrate sensory information~\citep{ditterich2003microstimulation,hanks2006microstimulation}. 
-These different studies support the notion that LIP neurons act as a neuronal intergator by displaying stochastic ramping of activity. %ù ccl à revoir ?
-
-%e RDM task
-%showed that microstimulation of directionselective MT neurons causes monkeys to bias
-%their decisions in favor of the preferred direction of the stimulated neurons (Salzman et al.
-
-
-%% conclusion sur LIp neurons etc comme intergateurs.
-%%% surement trouver d'autres choses à dire
-%% peut être les arguments contre ?
-%% sensorimotor tasks
-%% recent experiments
-
-%There is debate about where exactly the accumulation takes place, but it is clear that (at least) LIP, FEF, and SC form part of a circuit that is involved in implementing oculomotor decisions in monkeys performing simple decision-making tasks. The above studies generally support the notion that decision-related information flows from LIP to FEF and then to SC just prior to a decision.
-
-
-
-\section{How can decision-making be modelled ?} %titre
-
-Many models have been proposed to explain decision-making in humans and animals. There are two categories of models: dynamical models and non-dynamical models. Here, I will focus on dynamical models as they are more adequate to model the neuronal dynamics during decision-making.
-
-
-\subsection{Drif-diffusion model}
-Abstract mathematical tests have been developped to decide between two hypotheses, such as the sequential probability test. %% REFS
-This test is optimal in the sense that it achieves a desired error rate with the minimum mean decision time. According to this test, decisions are initiated when cumulative estimates of noisy evidence variables reache a specific threshold. %ù REFS  race etc
-The most-used model within the race framework is the drift-diffusion model (DDM). It consists in an unique integrator that accumulates the difference between the evidences for the two alternatives. The choice is made when the level of activity of the integrator exceed a specific threshold, positive or negative depending on the alternative (Figure~\ref{fig:DDM}). %ù figure
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.8\linewidth]{Fig/Chapter1/Example-DDM.eps}
-	\caption{{\bf Drift diffusion model.} Example of the dynamics of the diffusion model. The two black lines denote the threshold $z$ and $-z$ corresponding to the two alternatives. The race is ended when it reaches one of the two boundaries. In this example, the decision made correspond to a correct trials as the drift rate $\nu$ was chosen positiv.   
-	}
-	\label{fig:DDM}
-\end{figure}
-
-
-The success of the DDM framework is that it can decompose observed choice behavior into a cognitive process. As a dynamical model, it takes into account decision accuracies and response times and can address the speed-accuracy tradeoff. DDM will integrate for a shorter time if the evidence for the winning alternative is strong with respect to the losing alternative. Respectively, it will take longer time to reach a decision if the difference of evidence is small. The model is based on the following parameters. The starting point $a$ of the evidence accumulation represents a possible bias for one of the two alternative. This accumulation is performed at a certain drift rate $\nu$ and is related to the quality of information present within the stimulus. Typically, in the RDM experiment, this parameter would differ depending on the strength of the dots motion. The boundary represents the level of caution, the more this parameter is high, the less the model is making the wrong choice. Finally, the last parameter consist in the non-decision times that are an additive lag representing the motor lag of the participants for example. %% REFS
-
-DDM have been succesfully used to account for behavioral data in a wide-range of decision-making paradigms. %% REFS
-One should note that DDM does not only reproduce the error rates and response times, but the shape of the response times (RTs) too. %ù REFS
-However, it is necessary to add across-trial variability for the different parameters in order to correctly model the RTs distributions of correct and error trials. Otherwise, due to the linearity of the model, the shapes of these distributions are strictly identical which is not what experimental studies have found. % REFS
-
-
-
-\subsection{Recurrent cortical circuit}
-There are two major critics that can be made about the DDM framework, when the goal is to model neural activity during decision-making. First, neural activity is non-linear (Figure~\ref{fig:RDM}.B) but the DDM is strictly linear. Secondly, DDM have no biophysical foundations and do not explain how this integration mechanism is implemented in the brain. Different models have been proposed to account for the cortical processes of decision-making: \cite{shadlen2001neural,usher2001time,wang2002probabilistic}.
-I will focus on the approach of \cite{wang2002probabilistic}, as the two other models consist more in extension of the DDM framework.
-
-\paragraph*{Attractor network}
-Neurons in LIP and prefrontal cortex have shown to display directionally tuned activity~\citep{gnadt1988memory,funahashi1989mnemonic}. This suggests that a commun mechanism could underlie working memory and decision-making. One mechanism to generate persistent activity similar to working memory is the one of strong recurrent excitation in a local cortical circuit that will give rise to stimulus-selective attractor states~\citep{freeman1995hebbian,goldman1995cellular,brunel2001effects}. \cite{wang2002probabilistic} applied a biophysically based model to simulate the random dot motion discrimination task. In this model, the intergration is achieved through a mix between feedback excitation (N-methyl-D-aspartate (NMDA) channels with relatively long time constants) and inhibitory mechanism. Later, this model has been reduced to a mean-field version that is much faster to simulate~\citep{wong2006recurrent}. The model consists of two neuronal pools with subpopulations of spiking neurons selective for the two choices, denoted by $C_1$ and $C_2$ (Figure~\ref{fig:att-net}.A). The two neural populations compete with each other through feedback inhibition from interneurons. Both selective neural populations receive conflicting sensory inputs, with the motion strength characterized by the quantity $c$ (called coherence level).
-%% fig à  insérer doit-elle celle du modèle original de Wang 2002 ?
-%% plus de détails sur les courants et sur la description ???
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.8\linewidth]{Fig/Chapter1/attractor-network.eps}
-	\caption{{\bf Attractor neural network of~\cite{wong2006recurrent}.} (A)  Schematic version of the local circuit of decision-making. Two neural pools ($C_1$ and $C_2$) compete with each other through lateral inhbition and are subject to recurrent excitation. This model corresponds to the mean-field version of~\cite{wang2002probabilistic}. (B) Dynamics of the network during decision-making process. Each neural population shows a ramping up of activity until one of the two wins the competition and reaches the decision threshold. In this case, the winnning population is $C_2$ and corresponds to the choice made by the network.
-	}
-	\label{fig:att-net}
-\end{figure}
-
-Figure~\ref{fig:att-net}.B represents an example of the dynamics of this model. At the stimulus onset, the firing rates of the two populations lie together and ramp up until they diverge from each other. The divergence is due to the winner-take-all dynamics that occurs in this network through recurrent excitation and feedback inhibition. The choice is based on which population wins the competition. In the reaction time version of the task, this is indicated by the fact that one of the two populations crosses a fixed threhsold (Figure~\ref{fig:att-net}.B).
-
-%% un mot sur diagramme de bifurcation et pourquoi ceci donne WM et autre.
-
-
-
-\paragraph*{Modelling behavioral data}
-Attractor neural networks have been shown to account for many of the behavioral results. Figure~\ref{fig:rt-perf} shows the variation of accuracies and reaction times with respect to motion strength. As expected, the strongest is the stimulus, the slower is the decision time of the model. This is due to the fact that stronger stimuli lead to a stronger ramp up of activity. As mentionned previously, to obtain the different shapes of RTs distributions for correct and error trials within the DDM framework, one needs to implement a variabality of the parameters across trials. One key feature of attractor network is that this difference in distribution is naturally present. Figure ??? represents the decision process in the phase-plane space (firing rates of population $A$ against population $B$). When the decision is in favor of $A$, the basin of attraction corresponding to this attractor is larger, denoted by the ? line. The system starts naturally in the basin of attraction of $A$. To make the wrong decision, it would need to cross the boundary between the basins. Crossing a boundary between basins of attraction is a slow processus, and that explains why the reaction times are slower in error trials than for correct trials. % REFS
-In contrast, a neural implementation of the diffusion model would yield the opposite effect~\citep{mazurek2003role}. %% ccl à changer ?
-Another major difference between diffusion model and attractor neural network consists in the behavior at long duration of stimulus. \cite{kiani2008bounded} performed a motion discrimination task in monkeys but with variable stimulus duration. They found that performances reach a plateau when duration of stimulus increase. This phaenomen is not consistent with the DDM framework as performance can improve indefinitevely with stimulus time. In contrast, performances are bounded for long stimulus durations in the atrtactor neural network~\citep{wang2002probabilistic} as the ramping activity finally reach an attractor state.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.8\linewidth]{Fig/Chapter1/perf-acc.eps}
-	\caption{{\bf Behavioral performances of the attractor neural network.} (A) Reaction times of the circuit with respect to coherence levels. The coherence level is the variable $c$ and represent the difference in motion strength that arrives at both units.   (B) Performance of the model with respect to the coherence level.
-	}
-	\label{fig:rt-perf}
-\end{figure}
-
-
-%% ccl ????
-
-
-\paragraph*{Successes of cortical circuits models}
-
-%% voir article Wang
-
-%% intro de la phrase à revoir
-%% igure wong 2007 à refaire ????
-One advantage of using attractor neural network to model decision-making is that it can be used to look more closely at the neuronal process of decision-making.  First, in Figure~\ref{fig:RDM}.B one can observe a drop in the firing rate of the LIP neurons before the ramping up of activity. The same behavior can be observed in attractor networks~\citep{wong2007neural}. In this study, the authors studied the influence of new arriving evidence during a decision process. They found that the influence diminishes over time, an effect that has been observed in monkeys experiment too~\citep{huk2005neural,wong2007neural}. This time-shift invariance can not be accounted for by diffusion models, as such models predict in fact the opposite effect~\citep{wong2007neural}.
-
-
-In the attractor neural network, recurrent excitation must be balanced by feedback inhibition. This is mediated by lateral synaptic inhibition between the neural pools. In a monkey experiment, \cite{hanks2006microstimulation} performed microstimulation of LIP neurons selective to direction. They found that not only the decision towards the preferred direction was faster, but it slowed down the decision in the opposite direction too. This observation is consistant with a recurrent neural network with feedback inhibition. Attractor neural networks have not just been developped for the random dot motion discrimination task but for the somatosensory discrimination too. %ù REFs
-It has been shown that reciprocal inhibition between two neural pools could exhibit persistent activity as observed in prefrontal neurons. %% REFS
-Moreover, this circuit can perform the discrimination computation, e.g $f_1 > f_2$, during the comparison period. %% REFS
-
-One limit to both diffusion models and the attractor neural network I presented is the biological substrate of decision threshold. Before a saccade is made (in the case of an occolumotor task), neurons in the frontal eye field (FEF) and superior colliculus (SC) fire a burst of spikes~\citep{hanes1996neural,munoz2002vying}.
-These neurons are selective of saccade amplitude and direction. Using the initial framework of the attractor neural network, \cite{lo2006cortico} have studied an extended version of this circuit that involves the termination of the decision process. %% FIG ???
-
-%% TODO: simulation du réseau Lo Wang saccade
-\begin{figure}[h!]
-	\centering
-	% formu à changer
-	\includegraphics[width=0.8\linewidth]{Fig/Chapter1/Lo-Wang2006.eps}
-	\caption{{\bf Model architecture of~\cite{lo2006cortico}.}  Neural pools in variation of blue represent excitatory pools and in variation of red it represents inhibitory populations. Neural pools in the cortical area receive a sensory input and compete through lateral inhibition due to interneurons. They project to caudate nucleus (CD) in the basal ganglia and superior colliculus (SC). The saccade and termination of the decision-making is performed by the superior colliculus that project back to cortical networks.   
-	}
-	\label{fig:rt-perf}
-\end{figure}
-
-
-
-
-
-
-
-
-
-
-
-
-%% une aprtie sur le DDM en neuroscience pure
-
-
-%%% préciser que pas d'accord avec ce qu'il se dt dans la littérature sur l'équivalence DDM RNN % dans la conclusio nde la sous section peut être
-
-%% préciser que un des problèmes de Wang c'est le fit, mais que maintenant on peut
-
-%% Wang 2008 pour la partie sur l'attracteur
-
-
-\section{What are the effects ... ?} %titre
-
-
-
-
-
-%% conclusion de l'intro ?
-%% RTs distribution modèles à atrtacteurs ?
-%%
 
 \end{comment}
