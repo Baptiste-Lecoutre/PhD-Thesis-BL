@@ -1,4 +1,4 @@
-\begin{thebibliography}{67}
+\begin{thebibliography}{76}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -51,6 +51,14 @@ A.~Bernard.
   localisation d'Anderson et laser {\`a} atomes guid{\'e}.}
 \newblock PhD thesis, Universit{\'e} Pierre et Marie Curie, 2010.
 
+\bibitem[Billy et~al.(2008)Billy, Josse, Zuo, Bernard, Hambrecht, Lugan,
+  Cl'ement, Sanchez-Palencia, Bouyer, and Aspect]{billy2008direct}
+J.~Billy, V.~Josse, Z.~Zuo, A.~Bernard, B.~Hambrecht, P.~Lugan, D.~Cl'ement,
+  L.~Sanchez-Palencia, P.~Bouyer, and A.~Aspect.
+\newblock Direct observation of anderson localization of matter waves in a
+  controlled disorder.
+\newblock \emph{Nature}, 453:\penalty0 891--894, 2008.
+
 \bibitem[Boyer(2000)]{boyer2000condensation}
 V.~Boyer.
 \newblock \emph{Condensation de Bose-Einstein avec un {\'e}lectroaimant {\`a}
@@ -69,6 +77,22 @@ E.~Burt, R.~Ghrist, C.~Myatt, M.~Holland, E.~A. Cornell, and C.~Wieman.
 \newblock Coherence, correlations, and collisions: What one learns about
   bose-einstein condensates from their decay.
 \newblock \emph{Physical Review Letters}, 79\penalty0 (3):\penalty0 337, 1997.
+
+\bibitem[Casati et~al.(1989)Casati, Guarneri, and
+  Shepelyansky]{casati1989anderson}
+G.~Casati, I.~Guarneri, and D.~Shepelyansky.
+\newblock Anderson transition in a one-dimensional system with three
+  incommensurate frequencies.
+\newblock \emph{Physical review letters}, 62\penalty0 (4):\penalty0 345, 1989.
+
+\bibitem[Chab{\'e} et~al.(2008)Chab{\'e}, Lemari{\'e}, Gr{\'e}maud, Delande,
+  Szriftgiser, and Garreau]{chabe2008experimental}
+J.~Chab{\'e}, G.~Lemari{\'e}, B.~Gr{\'e}maud, D.~Delande, P.~Szriftgiser, and
+  J.~C. Garreau.
+\newblock Experimental observation of the anderson metal-insulator transition
+  with atomic matter waves.
+\newblock \emph{Physical review letters}, 101\penalty0 (25):\penalty0 255702,
+  2008.
 
 \bibitem[Cohen-Tannoudji(1996)]{cohen1996atomes}
 C.~Cohen-Tannoudji.
@@ -194,6 +218,36 @@ S.~Kondov, W.~McGehee, J.~Zirbel, and B.~DeMarco.
 \newblock Three-dimensional anderson localization of ultracold matter.
 \newblock \emph{Science}, 334\penalty0 (6052):\penalty0 66--68, 2011.
 
+\bibitem[Lemari{\'e}(2009)]{lemarietel-00424399}
+G.~Lemari{\'e}.
+\newblock \emph{The Anderson transition with atomic matter waves}.
+\newblock Theses, Universit{\'e} Pierre et Marie Curie - Paris VI, Sept. 2009.
+\newblock URL \url{https://tel.archives-ouvertes.fr/tel-00424399}.
+
+\bibitem[Lemari{\'e} et~al.(2009{\natexlab{a}})Lemari{\'e}, Chab{\'e},
+  Szriftgiser, Garreau, Gr{\'e}maud, and Delande]{lemarie2009observation}
+G.~Lemari{\'e}, J.~Chab{\'e}, P.~Szriftgiser, J.~C. Garreau, B.~Gr{\'e}maud,
+  and D.~Delande.
+\newblock Observation of the anderson metal-insulator transition with atomic
+  matter waves: Theory and experiment.
+\newblock \emph{Physical Review A}, 80\penalty0 (4):\penalty0 043626,
+  2009{\natexlab{a}}.
+
+\bibitem[Lemari{\'e} et~al.(2009{\natexlab{b}})Lemari{\'e}, Gr{\'e}maud, and
+  Delande]{lemarie2009universality}
+G.~Lemari{\'e}, B.~Gr{\'e}maud, and D.~Delande.
+\newblock Universality of the anderson transition with the quasiperiodic kicked
+  rotor.
+\newblock \emph{EPL (Europhysics Letters)}, 87\penalty0 (3):\penalty0 37007,
+  2009{\natexlab{b}}.
+
+\bibitem[Lopez et~al.(2012)Lopez, Cl{\'e}ment, Szriftgiser, Garreau, and
+  Delande]{lopez2012experimental}
+M.~Lopez, J.-F. Cl{\'e}ment, P.~Szriftgiser, J.~C. Garreau, and D.~Delande.
+\newblock Experimental test of universality of the anderson transition.
+\newblock \emph{Physical Review Letters}, 108\penalty0 (9):\penalty0 095701,
+  2012.
+
 \bibitem[Luiten et~al.(1996)Luiten, Reynolds, and Walraven]{luiten1996kinetic}
 O.~Luiten, M.~Reynolds, and J.~Walraven.
 \newblock Kinetic theory of the evaporative cooling of a trapped gas.
@@ -204,6 +258,13 @@ D.~Magatti, A.~Gatti, and F.~Ferri.
 \newblock Three-dimensional coherence of light speckles: experiment.
 \newblock \emph{Physical Review A}, 79\penalty0 (5):\penalty0 053831, 2009.
 
+\bibitem[Moore et~al.(1995)Moore, Robinson, Bharucha, Sundaram, and
+  Raizen]{moore1995atom}
+F.~Moore, J.~Robinson, C.~Bharucha, B.~Sundaram, and M.~Raizen.
+\newblock Atom optics realization of the quantum $\delta$-kicked rotor.
+\newblock \emph{Physical Review Letters}, 75\penalty0 (25):\penalty0 4598,
+  1995.
+
 \bibitem[Mott and Davis(1979)]{mott1979electronic}
 N.~Mott and E.~Davis.
 \newblock Electronic processes in non-crystalline solids, clarendon, 1979.
@@ -213,6 +274,13 @@ M.~Mukhtar.
 \newblock \emph{State-dependent disordered potential for studies of Anderson
   transition with ultracold atoms}.
 \newblock PhD thesis, Universit{\'e} Paris-Saclay, 2019.
+
+\bibitem[M{\"u}ller and Shapiro(2014)]{muller2014comment}
+C.~A. M{\"u}ller and B.~Shapiro.
+\newblock Comment on “three-dimensional anderson localization in variable
+  scale disorder”.
+\newblock \emph{Physical review letters}, 113\penalty0 (9):\penalty0 099601,
+  2014.
 
 \bibitem[Muller(2015)]{muller2015coherent}
 K.~Muller.
