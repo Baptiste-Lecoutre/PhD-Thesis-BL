@@ -204,6 +204,7 @@ On montre alors (voir annexe \ref{ch:anex_speckle}) que le profil d'intensité m
 \begin{align}
 \nonumber\overline{I}(\xd)&=\overline{E(\xd) E^*(\xd)} \\
 &\propto I_0 \left( \frac{\deff}{d} \xd \right) \ast \widetilde{\Cdiff}\left( \frac{\xd}{\lambda d} \right) \text{ ,}
+\label{eq:evolution_extension_transverse_speckle}
 \end{align}
 où le symbole $\ast$ dénote le produit de convolution. L'évolution du profil d'intensité moyenne en fonction de la distance $d$ est alors dû à deux contributions dont l'interprétation physique est la suivante:
 \begin{itemize}
@@ -404,7 +405,7 @@ Cependant, la mise en œuvre du modèle décrit par les équations \ref{eq:speck
 
 Dans le cadre de l'approximation paraxiale, on montre alors que la fonction de corrélation \ref{eq:correlation_3D_normalisee} aux alentours du plan de Fourier s'écrit
 \begin{equation}
-c_{\mathrm{3D}}(\Delta \mathbf{x}_\perp, \Delta z) \propto \left| \mathrm{TF} \left[ I_0'(\xzero) \: e^{i \pi \xzero^2 \Delta z /\lambda d} \right]_{\frac{\Delta \mathbf{x}_\perp}{\lambda d}} \right|^2 \text{ ,}
+c_{\mathrm{3D}}(\Delta \mathbf{x}_\perp, \Delta z) \propto \left| \mathrm{TF} \left[ I_0'(\xzero) \: e^{i \pi \xzero^2 \Delta z /\lambda d^2} \right]_{\frac{\Delta \mathbf{x}_\perp}{\lambda d}} \right|^2 \text{ ,}
 \label{eq:correlation_3D_paraxial_effectif}
 \end{equation}
 où le profil $I_0'(\xzero)$ d'intensité dans le plan du diffuseur vu sous l'ouverture numérique effective $\ON_{\mathrm{eff}}$ est donné par

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  29 JUL 2020 10:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  29 JUL 2020 15:37
 entering extended mode
 **./main.tex
 (main.tex
@@ -1901,25 +1901,25 @@ nput line 167.
 File: Fig/Speckle/speckle_extension.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_extension.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_extension.pdf  used on input line 
-217.
+218.
 (pdftex.def)             Requested size: 426.79135pt x 178.68079pt.
  [84 <./Fig/Speckle/speckle_extension.pdf>]
 
-LaTeX Warning: Reference `ch:TauS_PRL' on page 85 undefined on input line 251.
+LaTeX Warning: Reference `ch:TauS_PRL' on page 85 undefined on input line 252.
 
 [85]
 <Fig/Speckle/correlation_speckle.pdf, id=12311, 474.40244pt x 204.32954pt>
 File: Fig/Speckle/correlation_speckle.pdf Graphic file (type pdf)
 <use Fig/Speckle/correlation_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/correlation_speckle.pdf  used on input lin
-e 275.
+e 276.
 (pdftex.def)             Requested size: 426.79135pt x 183.83252pt.
 
 Underfull \vbox (badness 2326) has occurred while \output is active []
 
  [86 <./Fig/Speckle/correlation_speckle.pdf>] [87]
 
-LaTeX Warning: Reference `ch:TauS_PRL' on page 88 undefined on input line 356.
+LaTeX Warning: Reference `ch:TauS_PRL' on page 88 undefined on input line 357.
 
 [88]
 <Fig/Speckle/speckle_correlations_exp.pdf, id=12583, 533.51053pt x 174.36984pt>
@@ -1927,24 +1927,24 @@ LaTeX Warning: Reference `ch:TauS_PRL' on page 88 undefined on input line 356.
 File: Fig/Speckle/speckle_correlations_exp.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_correlations_exp.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_correlations_exp.pdf  used on inpu
-t line 393.
+t line 394.
 (pdftex.def)             Requested size: 426.79135pt x 139.49072pt.
  [89] [90 <./Fig/Speckle/speckle_correlations_exp.pdf>]
 
-LaTeX Warning: Reference `ch:TauS_PRL' on page 91 undefined on input line 426.
+LaTeX Warning: Reference `ch:TauS_PRL' on page 91 undefined on input line 427.
 
 [91]
 
-LaTeX Warning: Reference `ch:TauS_PRL' on page 92 undefined on input line 468.
+LaTeX Warning: Reference `ch:TauS_PRL' on page 92 undefined on input line 469.
 
 
-LaTeX Warning: Reference `ch:TauS_NJP' on page 92 undefined on input line 468.
+LaTeX Warning: Reference `ch:TauS_NJP' on page 92 undefined on input line 469.
 
 <Fig/Speckle/distribution_potentiel.pdf, id=12630, 374.98036pt x 249.39107pt>
 File: Fig/Speckle/distribution_potentiel.pdf Graphic file (type pdf)
 <use Fig/Speckle/distribution_potentiel.pdf>
 Package pdftex.def Info: Fig/Speckle/distribution_potentiel.pdf  used on input 
-line 477.
+line 478.
 (pdftex.def)             Requested size: 405.45047pt x 269.66179pt.
 [92] [93 <./Fig/Speckle/distribution_potentiel.pdf>]
 <Fig/Speckle/principe_potentiel_etat_interne.pdf, id=12696, 355.09534pt x 220.2
@@ -1952,7 +1952,7 @@ line 477.
 File: Fig/Speckle/principe_potentiel_etat_interne.pdf Graphic file (type pdf)
 <use Fig/Speckle/principe_potentiel_etat_interne.pdf>
 Package pdftex.def Info: Fig/Speckle/principe_potentiel_etat_interne.pdf  used 
-on input line 503.
+on input line 504.
 (pdftex.def)             Requested size: 362.77525pt x 225.03416pt.
  [94 <./Fig/Speckle/principe_potentiel_etat_interne.pdf>]
 <Fig/Speckle/potentiel_dipolaire_hyperfin.pdf, id=12712, 388.47842pt x 254.2505
@@ -1960,11 +1960,11 @@ on input line 503.
 File: Fig/Speckle/potentiel_dipolaire_hyperfin.pdf Graphic file (type pdf)
 <use Fig/Speckle/potentiel_dipolaire_hyperfin.pdf>
 Package pdftex.def Info: Fig/Speckle/potentiel_dipolaire_hyperfin.pdf  used on 
-input line 527.
+input line 528.
 (pdftex.def)             Requested size: 384.1096pt x 251.39459pt.
 
 
-LaTeX Warning: Reference `ch:TauS_NJP' on page 95 undefined on input line 537.
+LaTeX Warning: Reference `ch:TauS_NJP' on page 95 undefined on input line 538.
 
 [95 <./Fig/Speckle/potentiel_dipolaire_hyperfin.pdf>]
 <Fig/Speckle/montage_speckle_specfunc.pdf, id=12793, 492.05545pt x 235.88567pt>
@@ -1972,7 +1972,7 @@ LaTeX Warning: Reference `ch:TauS_NJP' on page 95 undefined on input line 537.
 File: Fig/Speckle/montage_speckle_specfunc.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_speckle_specfunc.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_speckle_specfunc.pdf  used on inpu
-t line 546.
+t line 547.
 (pdftex.def)             Requested size: 426.79135pt x 204.60698pt.
 
 Underfull \vbox (badness 1033) has occurred while \output is active []
@@ -1982,11 +1982,11 @@ Underfull \vbox (badness 1033) has occurred while \output is active []
 File: Fig/Speckle/speckle_bichromatique.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_bichromatique.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_bichromatique.pdf  used on input l
-ine 603.
+ine 604.
 (pdftex.def)             Requested size: 426.79135pt x 171.5325pt.
  [98] [99 <./Fig/Speckle/speckle_bichromatique.pdf>]
 
-Package mathptmx Warning: There are no bold math fonts on input line 667.
+Package mathptmx Warning: There are no bold math fonts on input line 668.
 
 [100] [101]
 <Fig/Speckle/illustration_correlation_double_speckle.pdf, id=13495, 474.40244pt
@@ -1995,7 +1995,7 @@ File: Fig/Speckle/illustration_correlation_double_speckle.pdf Graphic file (typ
 e pdf)
 <use Fig/Speckle/illustration_correlation_double_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/illustration_correlation_double_speckle.pd
-f  used on input line 732.
+f  used on input line 733.
 (pdftex.def)             Requested size: 426.79135pt x 183.83252pt.
  [102]
 Underfull \vbox (badness 5147) has occurred while \output is active []
@@ -2006,7 +2006,7 @@ Underfull \vbox (badness 5147) has occurred while \output is active []
 File: Fig/Speckle/montage_speckle_bichromatique.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_speckle_bichromatique.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_speckle_bichromatique.pdf  used on
- input line 795.
+ input line 796.
 (pdftex.def)             Requested size: 426.79135pt x 195.59746pt.
  [105 <./Fig/Speckle/montage_speckle_bichromatique.pdf>]) (Appendices/Anex_spec
 kle.tex [106]
@@ -2037,16 +2037,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 135.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 31018 strings out of 480934
- 595808 string characters out of 2899917
- 985639 words of memory out of 3000000
- 45144 multiletter control sequences out of 15000+200000
+ 31014 strings out of 480934
+ 595786 string characters out of 2899917
+ 986825 words of memory out of 3000000
+ 45147 multiletter control sequences out of 15000+200000
  730502 words of font info for 345 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,1613b,1130s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2093,9 +2090,9 @@ iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 
-Output written on main.pdf (118 pages, 16417409 bytes).
+Output written on main.pdf (118 pages, 16422173 bytes).
 PDF statistics:
- 15129 PDF objects out of 15390 (max. 8388607)
- 633 named destinations out of 1000 (max. 500000)
+ 15130 PDF objects out of 15390 (max. 8388607)
+ 626 named destinations out of 1000 (max. 500000)
  70438 words of extra memory for PDF output out of 74296 (max. 10000000)
 
