@@ -449,6 +449,7 @@ addtohook={%
 %----------------------------------------------------------------------------------------
 %	CHAPTER HEADINGS
 %----------------------------------------------------------------------------------------
+\usepackage{titlesec} %%%%%%%% Si il y a des merdes ça vient probablement de là!!
 \makeatletter
 % A switch to conditionally include a picture, implemented by Christian Hupfer
 \newif\ifusechapterimage
@@ -468,7 +469,7 @@ addtohook={%
 \node[anchor=east] (test) at (\Gm@lmargin+\textwidth,-7cm) {\fontsize{180}{100}\sffamily\bfseries\color{MainColor!70}\thechapter\strut};
 \draw[anchor=west] (\Gm@lmargin,-7cm) node [line width=2pt,rounded corners=0pt,draw=MainColor,fill=white,fill opacity=0.8,inner sep=15pt]{\strut\makebox[22cm]{}}; %cadre autour du texte, -9cm, 22cm
 \draw[anchor=west] (\Gm@lmargin+0.3cm,-7cm) node {\raggedright\huge\sffamily\bfseries\color{black}\thechapter\autodot~#1\strut}; %texte \sffamily, -9cm
-\draw[anchor=north east] (test.north west) node {\Large\sffamily\bfseries\color{MainColor!50} Chapitre }; %modifier ça un peu plus pour que ça marche aussi sur les annexes. essayer de trouver un équivalent de chaptertitlename sans titlesec.
+\draw[anchor=north east] (test.north west) node {\Large\sffamily\bfseries\color{MainColor!50} \chaptertitlename }; %modifier ça un peu plus pour que ça marche aussi sur les annexes. essayer de trouver un équivalent de chaptertitlename sans titlesec.
 \end{tikzpicture}};
 \end{tikzpicture}
 \else
