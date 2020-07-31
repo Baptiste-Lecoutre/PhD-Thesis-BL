@@ -61,21 +61,21 @@
 \contentsline {subsection}{\numberline {5.1.3}Calcul du temps de diffusion élastique dans le régime de Born}{112}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}Mesure du temps de diffusion élastique}{112}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Procédure expérimentale}{112}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Extraction du temps de diffusion élastique}{112}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Calibration de l'amplitude du désordre}{112}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Comportement du temps de diffusion élastique}{112}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Régime de Born}{112}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Déviations au régime de Born}{112}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Départ quadratique}{112}{subsection.5.3.3}%
-\contentsline {chapter}{\numberline {A}Calculs de champs de tavelures}{113}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Fonction de corrélation du diffuseur}{113}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Amplitude rayonnée}{114}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Fonction de corrélation}{115}{section.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Calcul général}{115}{subsection.A.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}Expression de l'extension transverse du champ de tavelures le long de l'axe optique}{116}{subsection.A.3.2}%
-\contentsline {section}{\numberline {A.4}Corrélations transverse et longitudinales d'un speckle monochromatique}{116}{section.A.4}%
-\contentsline {subsection}{\numberline {A.4.1}Corrélation transverse le long de l'axe optique}{116}{subsection.A.4.1}%
-\contentsline {subsection}{\numberline {A.4.2}Corrélation longitudinale autour du plan de Fourier}{117}{subsection.A.4.2}%
-\contentsline {subsection}{\numberline {A.4.3}Corrélation tridimensionnelle aux alentours du plan de Fourier}{117}{subsection.A.4.3}%
-\contentsline {section}{\numberline {A.5}Corrélation d'un speckle bichromatique}{117}{section.A.5}%
+\contentsline {subsection}{\numberline {5.2.2}Extraction du temps de diffusion élastique}{113}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Calibration de l'amplitude du désordre}{113}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Comportement du temps de diffusion élastique}{113}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Régime de Born}{113}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Déviations au régime de Born}{113}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Départ quadratique}{113}{subsection.5.3.3}%
+\contentsline {chapter}{\numberline {A}Calculs de champs de tavelures}{115}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Fonction de corrélation du diffuseur}{115}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Amplitude rayonnée}{116}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Fonction de corrélation}{117}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Calcul général}{117}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Expression de l'extension transverse du champ de tavelures le long de l'axe optique}{118}{subsection.A.3.2}%
+\contentsline {section}{\numberline {A.4}Corrélations transverse et longitudinales d'un speckle monochromatique}{118}{section.A.4}%
+\contentsline {subsection}{\numberline {A.4.1}Corrélation transverse le long de l'axe optique}{118}{subsection.A.4.1}%
+\contentsline {subsection}{\numberline {A.4.2}Corrélation longitudinale autour du plan de Fourier}{119}{subsection.A.4.2}%
+\contentsline {subsection}{\numberline {A.4.3}Corrélation tridimensionnelle aux alentours du plan de Fourier}{119}{subsection.A.4.3}%
+\contentsline {section}{\numberline {A.5}Corrélation d'un speckle bichromatique}{119}{section.A.5}%
 \contentsfinish 

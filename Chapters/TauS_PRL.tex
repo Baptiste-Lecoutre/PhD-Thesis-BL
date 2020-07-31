@@ -62,6 +62,31 @@ Plus précisément, nous avons vu au cours du chapitre \ref{ch:Speckle} que les 
 
 calculer $\taus$ en 2D et faire apparaître la fonction de Bessel modifiée. Juste montrer la comparaison au cas 3D pour montrer que le 2D est suffisant.
 
+\begin{equation}
+C(\Delta \mathbf{r})=\VR^2 e^{-\Delta\mathbf{r}^2/\sigmap^2}
+\label{eq:correlation_2D_taus}
+\end{equation}
+
+
+\begin{equation}
+\frac{1}{\taus^{\mathrm{Born}} }=\frac{\pi}{\hb} \frac{\VR^2}{\ER} e^{- k_{\mathrm{i}}^2 \sigmap^2 /2} \mathrm{I_0}(k_{\mathrm{i}}^2 \sigmap^2 /2)
+\label{eq:taus_born_2D}
+\end{equation}
+
+\begin{equation}
+\taus^{\mathrm{Born}} (k_{\mathrm{i}},\VR)=\frac{\hb\ER}{\pi \VR^2} \widetilde{\tau}_{\mathrm{s}}^{\mathrm{Born}} (k_{\mathrm{i}})
+\end{equation}
+
+
+Comportement asymptotique.
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{Fig/TauS_PRL/prediction_taus_born.pdf}
+\caption{\textbf{Prédiction de l'approximation de Born.} La prédiction du temps de diffusion élastique renormalisé par l'approximation de Born \ref{eq:taus_born_2D} est tracée en fonction de l'impulsion initiale de l'onde en pointillés rouges pour une configuration bidimensionnelle représentée par la fonction de corrélation \ref{eq:correlation_2D_taus}. Celle-ci est très proche de la configuration 3D représentée en noir calculée à l'aide la fonction de corrélation \ref{eq:correlation_3D_paraxial_effectif}. La limite asymptotique $\widetilde{\tau}_{\mathrm{s}}^{\mathrm{Born}} \sim \sqrt{\pi} k_{\mathrm{i}} \sigmap$ est représentée en vert. Les illustrations des distributions de vitesses pour la diffusion isotrope ($k_{\mathrm{i}} \sigmap<1$) et la diffusion vers l'avant ($k_{\mathrm{i}} \sigmap>1$) correspondent à des images expérimentales.}
+\label{fig:prediction_taus_born}
+\end{figure}
+
 
 \section{Mesure du temps de diffusion élastique}
 \subsection{Procédure expérimentale}
