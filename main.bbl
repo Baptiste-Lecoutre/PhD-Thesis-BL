@@ -1,4 +1,4 @@
-\begin{thebibliography}{76}
+\begin{thebibliography}{78}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -218,6 +218,12 @@ S.~Kondov, W.~McGehee, J.~Zirbel, and B.~DeMarco.
 \newblock Three-dimensional anderson localization of ultracold matter.
 \newblock \emph{Science}, 334\penalty0 (6052):\penalty0 66--68, 2011.
 
+\bibitem[Kuhn et~al.(2007)Kuhn, Sigwarth, Miniatura, Delande, and
+  M{\"u}ller]{kuhn2007coherent}
+R.~Kuhn, O.~Sigwarth, C.~Miniatura, D.~Delande, and C.~M{\"u}ller.
+\newblock Coherent matter wave transport in speckle potentials.
+\newblock \emph{New Journal of Physics}, 9\penalty0 (6):\penalty0 161, 2007.
+
 \bibitem[Lemari{\'e}(2009)]{lemarietel-00424399}
 G.~Lemari{\'e}.
 \newblock \emph{The Anderson transition with atomic matter waves}.
@@ -405,6 +411,12 @@ G.~Semeghini, M.~Landini, P.~Castilho, S.~Roy, G.~Spagnolli, A.~Trenkwalder,
   M.~Fattori, M.~Inguscio, and G.~Modugno.
 \newblock Measurement of the mobility edge for 3d anderson localization.
 \newblock \emph{Nature Physics}, 11\penalty0 (7):\penalty0 554--559, 2015.
+
+\bibitem[Shapiro(2012)]{shapiro2012cold}
+B.~Shapiro.
+\newblock Cold atoms in the presence of disorder.
+\newblock \emph{Journal of Physics A: Mathematical and Theoretical},
+  45\penalty0 (14):\penalty0 143001, 2012.
 
 \bibitem[Shlimak et~al.(1996)Shlimak, Kaveh, Ussyshkin, Ginodman, and
   Resnick]{shlimak1996determination}

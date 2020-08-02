@@ -27,6 +27,7 @@ Dans le régime désordre faible, on peut considérer l'effet du désordre comme
 Dans cette image, l'évolution temporelle de l'état initial est donnée par une décroissance exponentielle 
 \begin{equation}
 n(\mathbf{k}_{\mathrm{i}},t)=n(\mathbf{k}_{\mathrm{i}},0) e^{-t/\taus} \text{ ,}
+\label{eq:decroissance_exponentielle_taus}
 \end{equation}
 où $t$ est le temps de propagation dans le désordre et le taux de décroissance $1/\taus$ est donné par la règle d'or de Fermi
 \begin{equation}
@@ -41,12 +42,12 @@ Dans le cas d'un potentiel auto-moyennant, on peut montrer que le terme de coupl
 \end{equation}
 où le spectre des fréquences spatiales du désordre $\widetilde{C}(\mathbf{k}_{\mathrm{dis}})$ est la transformée de Fourier de la fonction de corrélation du désordre $C(\Delta\mathbf{x})=\overline{V(\mathbf{x}) V(\mathbf{x}+\Delta\mathbf{x})}$ d'après le théorème de Wiener-Khintchine.
 
-Le domaine de validité de l'approximation de Born peut être estimée d'une manière intuitive. En effet, le fait que l'état initial $\etat{\mathbf{k}_{\mathrm{i}}}$ possède un temps de vie $\taus^{\mathrm{Born}}$ fini se traduit par un élargissement de la distribution d'énergie de cet état dans le désordre de l'ordre de $\Delta E= \hb/\taus^{\mathrm{Born}}$. Pour valider l'approche perturbative, cette largeur doit être petite devant l'énergie initiale de l'onde $E_{\mathrm{k}_i}=\hb^2 k_{\mathrm{i}}^2 /2m$. On retrouve ainsi la condition de désordre faible $k_{\mathrm{i}}\ls^{\mathrm{Born}}\gg 1$ identifiable au critère de Ioffe-Regel. 
+Le domaine de validité de l'approximation de Born peut être estimée d'une manière intuitive. En effet, le fait que l'état initial $\etat{\mathbf{k}_{\mathrm{i}}}$ possède un temps de vie $\taus^{\mathrm{Born}}$ fini se traduit par un élargissement de la distribution d'énergie de cet état dans le désordre de l'ordre de $\Delta E= \hb/\taus^{\mathrm{Born}}$. Pour valider l'approche perturbative, cette largeur doit être petite devant l'énergie initiale de l'onde $E_{\mathrm{k}_i}=\hb^2 k_{\mathrm{i}}^2 /2m$. On retrouve ainsi la condition de désordre faible $k_{\mathrm{i}}\ls^{\mathrm{Born}}\gg 1$ identifiable au critère de Ioffe-Regel\footnote{Notons que ce critère coïncide avec celui $E_{\mathrm{k}}\gg \VR^2/\ER$ utilisé par \citep{kuhn2007coherent} dans le régime de diffusion isotrope. Dans le régime de diffusion vers l'avant, ces deux critères dévient de manière significative.}. 
 
 \subsection{Régimes de diffusion}
 Comme nous l'avons montré dans le chapitre \ref{ch:Speckle}, le désordre illuminé sur les atomes est corrélé. En particulier, celui-ci possède une longueur de corrélation $\sigma$, définissant ainsi une fréquence spatiale caractéristique $\sigma^{-1}$ à la frontière entre des deux régimes de diffusion brièvement présentés dans la section \ref{sc:diffusion_classique}. 
 
-En effet, la diffusion de l'état $\etat{\mathbf{k}_{\mathrm{i}}}$ vers un état $\etat{\mathbf{k}'}$ n'est possible que si la fréquence spatiale $\mathbf{k}_{\mathrm{dis}}=\mathbf{k}'-\mathbf{k}_{\mathrm{i}}$ est contenue dans le spectre du désordre. Pour des impulsions initiales faibles telles que $k_{\mathrm{i}}\ll\sigma^{-1}$, le désordre contient toutes les fréquences spatiales nécessaires pour diffuser l'onde dans toutes les directions (voir figure \ref{fig:desordre_2D}.a). Dans le cas contraire, où $k_{\mathrm{i}}\gg\sigma^{-1}$, les fréquences spatiales du désordre sont trop faibles pour satisfaire la condition de rétro-diffusion $\mathbf{k}_{\mathrm{dis}}=-2 \mathbf{k}_{\mathrm{i}}$. Dans ce cas de figure, l'essentiel de la diffusion se déroule aux alentours de la direction initiale de l'onde\footnote{Ce phénomène est analogue à la diffraction en optique. En effet, l'angle typique de diffraction d'un onde de nombre d'onde $k$ par un obstacle de taille $\sigma$ est donné par $\theta\sim 1/k\sigma$. Pour de grands nombres d'onde, la diffraction se fait dans un petit angle autour de la direction initiale de l'onde, tandis que pour de petits nombres d'onde la tâche de diffraction est étendue.}, on parle alors de régime de diffusion vers l'avant (voir figure \ref{fig:desordre_2D}.b). 
+En effet, la diffusion de l'état $\etat{\mathbf{k}_{\mathrm{i}}}$ vers un état $\etat{\mathbf{k}'}$ n'est possible que si la fréquence spatiale $\mathbf{k}_{\mathrm{dis}}=\mathbf{k}'-\mathbf{k}_{\mathrm{i}}$ est contenue dans le spectre du désordre. La présence de la distribution des fréquences spatiales du désordre dans la règle d'or de Fermi traduit donc la conservation de l'impulsion. Pour des impulsions initiales faibles telles que $k_{\mathrm{i}}\ll\sigma^{-1}$, le désordre contient toutes les fréquences spatiales nécessaires pour diffuser l'onde dans toutes les directions (voir figure \ref{fig:desordre_2D}.a). Dans le cas contraire, où $k_{\mathrm{i}}\gg\sigma^{-1}$, les fréquences spatiales du désordre sont trop faibles pour satisfaire la condition de rétro-diffusion $\mathbf{k}_{\mathrm{dis}}=-2 \mathbf{k}_{\mathrm{i}}$. Dans ce cas de figure, l'essentiel de la diffusion se déroule aux alentours de la direction initiale de l'onde\footnote{Ce phénomène est analogue à la diffraction en optique. En effet, l'angle typique de diffraction d'un onde de nombre d'onde $k$ par un obstacle de taille $\sigma$ est donné par $\theta\sim 1/k\sigma$. Pour de grands nombres d'onde, la diffraction se fait dans un petit angle autour de la direction initiale de l'onde, tandis que pour de petits nombres d'onde la tâche de diffraction est étendue.}, on parle alors de régime de diffusion vers l'avant (voir figure \ref{fig:desordre_2D}.b). 
 
 \begin{figure}
 \centering
@@ -55,47 +56,76 @@ En effet, la diffusion de l'état $\etat{\mathbf{k}_{\mathrm{i}}}$ vers un état
 \label{fig:desordre_2D}
 \end{figure}
 
-Plus précisément, nous avons vu au cours du chapitre \ref{ch:Speckle} que les grains de speckle ne sont pas isotropes et possèdent deux tailles caractéristiques $\sigmap$ suivant les directions transverses et $\sigmal$ selon la direction longitudinale. Il est donc possible de se placer dans une situation où la diffusion est isotrope dans le plan transverse ($k_{\mathrm{i}}\sigmap<1$) tandis que celle-ci se déroule majoritairement vers l'avant selon l'axe optique ($k_{\mathrm{i}}\sigmal>1$). Pour des temps de propagation dans le désordre de l'ordre de quelques collisions élastiques, la dynamique de la diffusion sera essentiellement bidimensionnelle\footnote{Avec nos paramètres expérimentaux usuels $k_{\mathrm{i}}\sim\SI{1}{\micro\metre^{-1}}$ et $\sigmal/2\sim\SI{2}{\micro\metre}$, il faut environ $N=(\pi k_{\mathrm{i}} \sigmal)^2 \sim 150$ collisions pour diffusion devienne isotrope \citep{denechaud2018vers}.}, sans devoir confiner le mouvement des atomes.
+Plus précisément, nous avons vu au cours du chapitre \ref{ch:Speckle} que les grains de speckle ne sont pas isotropes et possèdent deux tailles caractéristiques $\sigmap$ suivant les directions transverses et $\sigmal$ selon la direction longitudinale. Il est donc possible de se placer dans une situation où la diffusion est isotrope dans le plan transverse ($k_{\mathrm{i}}\sigmap<1$) tandis que celle-ci se déroule majoritairement vers l'avant selon l'axe optique ($k_{\mathrm{i}}\sigmal>1$). Pour des temps de propagation dans le désordre de l'ordre de quelques collisions élastiques, la dynamique de la diffusion sera essentiellement bidimensionnelle\footnote{Avec nos paramètres expérimentaux usuels $k_{\mathrm{i}}\sim\SI{1}{\micro\metre^{-1}}$ et $\sigmal/2\sim\SI{2}{\micro\metre}$, il faut environ $N=(\pi k_{\mathrm{i}} \sigmal)^2 \sim 150$ collisions pour que la diffusion devienne isotrope \citep{denechaud2018vers}.}, sans devoir confiner le mouvement des atomes.
 
 
 \subsection{Calcul du temps de diffusion élastique dans le régime de Born}
 
-calculer $\taus$ en 2D et faire apparaître la fonction de Bessel modifiée. Juste montrer la comparaison au cas 3D pour montrer que le 2D est suffisant.
-
+Dans le régime de diffusion quasi-2D, on peut calculer $\taus^{\mathrm{Born}}$ à l'aide de la fonction de corrélation bidimensionnelle \ref{eq:correlation_2D_normalisee} que l'on peut réécrire sous la forme
 \begin{equation}
-C(\Delta \mathbf{r})=\VR^2 e^{-\Delta\mathbf{r}^2/\sigmap^2}
+C(\Delta \mathbf{r}_\perp)=\VR^2 \: e^{-\Delta\mathbf{r}_\perp^2/\sigmap^2}
 \label{eq:correlation_2D_taus}
 \end{equation}
-
-
+afin de tenir compte de l'amplitude du désordre. Le passage à la limite continue de la règle d'or de Fermi \ref{eq:fermi_taus} permet de transformer la somme discrète sur les états finaux $\etat{\mathbf{k}'}$ en une intégrale:
 \begin{equation}
-\frac{1}{\taus^{\mathrm{Born}} }=\frac{\pi}{\hb} \frac{\VR^2}{\ER} e^{- k_{\mathrm{i}}^2 \sigmap^2 /2} \mathrm{I_0}(k_{\mathrm{i}}^2 \sigmap^2 /2)
+\frac{1}{\taus^{\mathrm{Born}}}=\frac{2\pi}{\hb} \int{\frac{\diff^2 \mathbf{k}'}{(2\pi)^2} \: \widetilde{C}(\mathbf{k}'-\mathbf{k}_{\mathrm{i}}) \: \delta\left(\frac{\hb^2 k'^2}{2m}-\frac{\hb^2k_{\mathrm{i}}^2}{2m}\right)} \text{ .}
+\label{eq:fermi_taus_continue}
+\end{equation}
+
+En injectant l'équation \ref{eq:correlation_2D_taus} dans la règle d'or de Fermi \ref{eq:fermi_taus_continue}, on peut ainsi obtenir une expression analytique dans le régime de diffusion quasi-2D \citep{shapiro2012cold}:
+\begin{equation}
+\frac{1}{\taus^{\mathrm{Born}} }=\frac{\pi}{\hb} \frac{\VR^2}{\ER} \: e^{- k_{\mathrm{i}}^2 \sigmap^2 /2} \: \mathrm{I_0}(k_{\mathrm{i}}^2 \sigmap^2 /2) \text{ ,}
 \label{eq:taus_born_2D}
 \end{equation}
+où $\mathrm{I_0}$ est la fonction de Bessel modifiée d'ordre 0. Nous avons de plus fait apparaître l'énergie de corrélation $\ER$ dont l'expression se réduit à $\ER=\hb^2/m\sigmap^2\sim\SI{500}{\hertz}$ dans le cas d'un désordre bidimensionnel.
 
+Il apparaît donc que le temps de diffusion élastique dépend d'une manière simple de l'amplitude du désordre $\VR$: $\taus^{\mathrm{Born}} \propto 1/\VR^2$. De manière plus générale, on peut définir un temps de diffusion élastique renormalisé $\tilde{\tau}_{\mathrm{s}}^{\mathrm{Born}}$ tel que
 \begin{equation}
-\taus^{\mathrm{Born}} (k_{\mathrm{i}},\VR)=\frac{\hb\ER}{\pi \VR^2} \widetilde{\tau}_{\mathrm{s}}^{\mathrm{Born}} (k_{\mathrm{i}})
+\taus^{\mathrm{Born}} (k_{\mathrm{i}},\VR)=\frac{\hb\ER}{\pi \VR^2} \tilde{\tau}_{\mathrm{s}}^{\mathrm{Born}} (k_{\mathrm{i}}) \text{ ,}
 \end{equation}
+qui est indépendant de $\VR$, dont le comportement est illustré en rouge sur la figure \ref{fig:prediction_taus_born}.
 
-
-Comportement asymptotique.
+La formule \ref{eq:taus_born_2D} permet d'obtenir une expression approchée dans la limite de diffusion isotrope $k_{\mathrm{i}}\sigmap\ll 1$. On montre ainsi que le temps de diffusion devient indépendant de l'énergie initiale de l'onde et tend vers une constante \citep{richard2015propagation}:
+\begin{equation}
+\taus^{\mathrm{Born}} = \frac{\hb \ER}{\pi \VR^2}\quad \text{soit} \quad \tilde{\tau}_{\mathrm{s}}^{\mathrm{Born}}=1 \text{ .}
+\end{equation}
+De même, il est possible d'obtenir une expression simple du temps de diffusion élastique dans le régime de diffusion vers l'avant, pour lequel une dépendance en $k_{\mathrm{i}}$ est attendue étant donné que la diffusion se passe essentiellement dans la direction initiale de l'onde. On montre ainsi que dans le régime $k_{\mathrm{i}} \sigmap \gg 1$, le temps de diffusion élastique  dépend linéairement de l'impulsion initiale $\taus\propto k_{\mathrm{i}}\sigmap$ \citep{richard2015propagation}:
+\begin{equation}
+\taus^{\mathrm{Born}}=\frac{\hb\ER}{\VR^2\sqrt{\pi}} k_{\mathrm{i}} \sigmap \quad \text{soit} \quad \tilde{\tau}_{\mathrm{s}}^{\mathrm{Born}} = \sqrt{\pi} k_{\mathrm{i}} \sigmap \text{ ,}
+\end{equation}
+représenté en vert sur la figure \ref{fig:prediction_taus_born}.
 
 \begin{figure}
 \centering
 \includegraphics[scale=1]{Fig/TauS_PRL/prediction_taus_born.pdf}
-\caption{\textbf{Prédiction de l'approximation de Born.} La prédiction du temps de diffusion élastique renormalisé par l'approximation de Born \ref{eq:taus_born_2D} est tracée en fonction de l'impulsion initiale de l'onde en pointillés rouges pour une configuration bidimensionnelle représentée par la fonction de corrélation \ref{eq:correlation_2D_taus}. Celle-ci est très proche de la configuration 3D représentée en noir calculée à l'aide la fonction de corrélation \ref{eq:correlation_3D_paraxial_effectif}. La limite asymptotique $\widetilde{\tau}_{\mathrm{s}}^{\mathrm{Born}} \sim \sqrt{\pi} k_{\mathrm{i}} \sigmap$ est représentée en vert. Les illustrations des distributions de vitesses pour la diffusion isotrope ($k_{\mathrm{i}} \sigmap<1$) et la diffusion vers l'avant ($k_{\mathrm{i}} \sigmap>1$) correspondent à des images expérimentales.}
+\caption{\textbf{Prédiction de l'approximation de Born.} La prédiction du temps de diffusion élastique renormalisé par l'approximation de Born \ref{eq:taus_born_2D} est tracée en fonction de l'impulsion initiale de l'onde en pointillés rouges pour une configuration bidimensionnelle représentée par la fonction de corrélation \ref{eq:correlation_2D_taus}. Celle-ci est très proche de la configuration 3D représentée en noir calculée à l'aide la fonction de corrélation \ref{eq:correlation_3D_paraxial_effectif}. La limite asymptotique $\tilde{\tau}_{\mathrm{s}}^{\mathrm{Born}} \sim \sqrt{\pi} k_{\mathrm{i}} \sigmap$ est représentée en vert. Les illustrations des distributions de vitesses pour la diffusion isotrope ($k_{\mathrm{i}} \sigmap<1$) et la diffusion vers l'avant ($k_{\mathrm{i}} \sigmap>1$) correspondent à des images expérimentales.}
 \label{fig:prediction_taus_born}
 \end{figure}
 
+Notons que d'éventuels effets tridimensionnels sont susceptibles de se manifester dans la limite de diffusion isotrope $k_{\mathrm{i}}\sigmap \ll 1$. Il est possible d'estimer le temps de diffusion élastique dans une configuration 3D à l'aide de la fonction de corrélation \ref{eq:correlation_3D_paraxial_effectif} du modèle paraxial effectif. La prédiction de Born de notre configuration tridimensionnelle est représentée en noir sur la figure \ref{fig:prediction_taus_born} et ne montre qu'une légère déviation par rapport au cas bidimensionnel \ref{eq:taus_born_2D} pour les faibles impulsions initiales\footnote{Dans le cas à trois dimensions, $\taus^{\mathrm{Born}}$ tend aussi vers une constante pour de faibles impulsions initiales en raison de l'absence de limite de bruit blanc pour un speckle. En effet, un speckle possède une corrélation de portée infinie selon la direction longitudinale en raison de la propagation de la lumière \citep{goodman2007speckle}. Dans le cas d'une limite de bruit blanc et donc de corrélation de portée finie, le temps de diffusion élastique diverge en $1/k_{\mathrm{i}}$ dans la limite des faibles impulsions, que l'on peut reformuler comme $\ls\rightarrow\mathrm{cste}$. }. Dans la suite, nous nous contenterons donc de décrire nos résultats à l'aide de la prédiction de l'équation \ref{eq:taus_born_2D}.
+
+
+
+
+
+
 
 \section{Mesure du temps de diffusion élastique}
+Les différentes étapes expérimentales menant à l'obtention d'une onde de matière plane ainsi que les différentes configurations magnétiques utilisables ont pu être présentées dans les chapitres \ref{ch:BEC_manip} et \ref{ch:new_exp}. 
+
+Dans cette partie, nous allons présenter le protocole expérimental utilisé pour mesurer le temps de diffusion élastique ainsi que la manière dont celui ci a été extrait des données expérimentales.
+
 \subsection{Procédure expérimentale}
-détailler comment ça se fait la manip.
-Création d'un BEC, delta-kick pour obtenir $T\sim\SI{150}{\pico\kelvin}$.
-Création du kick initial à l'aide d'un gradient magnétique, on obtient ainsi une onde plane $\etat{\mathbf{k}_{\mathrm{i}}}$.
-On quench le désordre, avec un désaccord d'au moins 1 TeraHertz, qui donne un potentiel conservatif qui conserve les mêmes propriétés selon qu'il soit désaccordé vers le rouge ou vers le bleu.
-Ensuite on fait un grand temps de vol pour obtenir la distribution d'impulsion. jusqu'à 300ms.
-Imagerie par fluo.
+La séquence de génération d'un condensat de Bose-Einstein correspond à celle décrite au cours du chapitre \ref{ch:BEC_manip}. On obtient ainsi un nuage dégénéré d'environ $10^5$ atomes de \isotope[87]{Rb} interagissant faiblement dans un piège optique fortement décomprimé après évaporation. Ce nuage est polarisé dans le sous-état Zeeman $\etatF{2}{-2}$ et suspendu contre la gravité à l'aide de la lévitation magnétique qui est anti-piégeante. 
+
+Dans un second temps, le nuage est refroidi davantage à l'aide du refroidissement par delta-kick présenté en section \ref{sc:chambre_science}, permettant d'obtenir en dispersion en impulsion de $\Delta k=\SI{0.15}{\micro\metre^{-1}}$, soit une température équivalente de $T\sim\SI{150}{\pico\kelvin}$. Enfin, une impulsion initiale $\mathbf{k}_{\mathrm{i}}$ selon la direction $\vec{y}$ est conférée au nuage à l'aide d'un gradient magnétique. Cette impulsion initiale varie ainsi de \SI{1}{\micro\metre^{-1}} à \SI{20}{\micro\metre^{-1}} en modifiant la durée d'application du gradient magnétique. Le nuage peut ainsi être assimilé à une onde plane $\etat{\mathbf{k}_{\mathrm{i}}}$ d'impulsion et d'énergie bien définies.
+
+
+Le désordre est ensuite brusquement\footnote{Le temps d'allumage du faisceau speckle est d'environ \SI{50}{\micro\second}, limité par la bande-passante de l'électronique d'asservissement de puissance.} allumé sur les atomes à $t=\SI{0}{\second}$. Ce désordre est réalisé à l'aide du champ de speckle décrit au cours du chapitre \ref{ch:Speckle}, dont la différence entre les longueurs de corrélation $\sigmap$ et $\sigmal$ permet de considérer le speckle comme un désordre quasi-2D dans le plan $(y-z)$. Le faisceau speckle est accordable autour de la transition $D_2$ du \isotope[87]{Rb} à \SI{780}{\nano\metre}, permettant de réaliser un désordre qui soit attractif ou répulsif, comme expliqué dans la section \ref{sc:propriete_potentiel_speckle}. Le désaccord utilisé $|\delta|/2\pi\sim\SI{1}{\tera\hertz}$ est suffisamment faible pour que les propriétés du potentiel soient identiques entre les configurations attractive et répulsive, mais il est de plus suffisamment grand pour que le potentiel soit conservatif\footnote{Le taux d'émission spontanée est au plus de \SI{0.1}{\second^{-1}}.}. L'amplitude du désordre $|\VR|$ est fixée en contrôlant la puissance du faisceau speckle, $\VR|/\hb$ pouvant ainsi aller de \SI{39}{\hertz} à \SI{3.88}{\kilo\hertz}. 
+
+Le temps de diffusion élastique pouvant être extrait de la déplétion de l'état initial $\etat{\mathbf{k}_{\mathrm{i}}}$ d'après l'équation \ref{eq:decroissance_exponentielle_taus}, l'approche naturelle à son étude consiste donc à suivre l'évolution de la distribution d'impulsion du nuage en fonction du temps de propagation $t$ dans le désordre. Celle-ci est obtenue à l'aide d'un très grand temps de vol après extinction du désordre: après une longue expansion balistique, la position des atomes ne dépend plus de la taille initiale du nuage et n'est due qu'à leur vitesse. Ainsi, des temps de vol allant jusqu'à \SI{300}{\milli\second} peuvent être utilisés grâce à la lévitation magnétique, permettant d'obtenir une résolution d'impulsion de $\Delta k_{\mathrm{res}}=\SI{0.2}{\micro\metre^{-1}}$\footnote{Cette résolution est supérieure à la dispersion initiale d'impulsion en raison de la taille du nuage, d'environ \SI{30}{\micro\metre}, et du temps fini d'expansion.}.
+
+Enfin, la densité atomique est mesurée à l'aide d'une imagerie par fluorescence, que l'on peut considérer comme instantanée en comparaison aux autres échelles de temps.
 
 \subsection{Extraction du temps de diffusion élastique}
 Observation de la déplétion du pic initial (pas de propagation dans le désordre) au cours de la propagation dans le désordre. Formation d'un cercle témoignant du caractère élastique des collisions (conservation de l'énergie). Taus= temps de déplétion de l'état initial vers les autres états de l'anneau avec une décroissance exponentielle. On a tout extrait par un ajustement exponentiel, même si on sait que c'est pas valide partout. On a fait ça parce que on a pas observé de déviation expérimentale à ce comportement.

@@ -1,1 +1,53 @@
-\chapter{Calcul du temps de diffusion élastique par le développement de Born}
+\chapter{Calculs du temps de diffusion élastique}
+
+
+\begin{equation}
+\widetilde{G}(E,\mathbf{k})=\frac{1}{E-E_{\mathrm{k}}-\overline{V}-\Sigma(E,\mathbf{k})}
+\end{equation}
+
+\begin{equation}
+\Sigma=\Sigma^{(2)} + \Sigma^{(3)} + \dots
+\end{equation}
+
+
+
+\section{Calcul de la Self-Energy au premier ordre}
+\begin{align}
+\left\langle \mathbf{k} | \Sigma^{(2)} | \mathbf{k}' \right\rangle &= \left\langle \mathbf{k} | \overline{V G_0 V} | \mathbf{k}' \right\rangle \\
+&= \int{ \diff \mathbf{x}_{\mathrm{1}} \diff \mathbf{x}_{\mathrm{2}} \: \left\langle \mathbf{k} | \mathbf{x}_{\mathrm{1}} \right\rangle \overline{V(\mathbf{x}_{\mathrm{1}}) \left\langle \mathbf{x}_{\mathrm{1}} | G_0 | \mathbf{x}_{\mathrm{2}}\right\rangle V(\mathbf{x}_{\mathrm{2}}) } \left\langle \mathbf{x}_{\mathrm{2}} |\mathbf{k}' \right\rangle} \\
+&= \sum_{\mathbf{k}_{\mathrm{1}}}{\int{\diff\mathbf{x}_{\mathrm{1}} \diff\mathbf{x}_{\mathrm{2}} \: \left\langle \mathbf{k} |\mathbf{x}_{\mathrm{1}} \right\rangle \left\langle \mathbf{x}_{\mathrm{2}} | \mathbf{k}' \right\rangle \left\langle \mathbf{x}_{\mathrm{1}} | \mathbf{k}_{\mathrm{1}} \right\rangle \left\langle \mathbf{k}_{\mathrm{1}} | \mathbf{x}_{\mathrm{2}} \right\rangle G_0(\mathbf{k}_{\mathrm{1}})\overline{V(\mathbf{x}_{\mathrm{1}})V(\mathbf{x}_{\mathrm{2}})}}} \\
+&= \lim\limits_{L\rightarrow\infty} \left( \sum_{\mathbf{k}_{\mathrm{1}}}{\int{\diff\mathbf{x}_{\mathrm{1}}\diff\mathbf{x}_{\mathrm{2}}\: C(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}}) G_0(\mathbf{k}_{\mathrm{1}}) \frac{1}{L^{2d}} e^{i \mathbf{k}_{\mathrm{1}}(\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{2}})} e^{i \mathbf{x}_{\mathrm{2}} \mathbf{k}'} e^{-i \mathbf{x}_{\mathrm{1}} \mathbf{k}} }} \right) \\
+&= \lim\limits_{L\rightarrow\infty} \left( \int{\diff\mathbf{k}_{\mathrm{1}} \: \left(\frac{L}{2\pi}\right)^d G_0(\mathbf{k}_{\mathrm{1}}) \int{\diff\Delta\mathbf{x} \: C(\Delta\mathbf{x}) \frac{e^{i \Delta\mathbf{x}(\mathbf{k}'-\mathbf{k}_{\mathrm{1}})}}{L^d}} \int{\diff\mathbf{x}_{\mathrm{1}} \: \frac{e^{i \mathbf{x}_{\mathrm{1}}(\mathbf{k}'-\mathbf{k})}}{L^d}} } \right) \\
+&=\int{\frac{\diff\mathbf{k}_{\mathrm{1}}}{(2\pi)^d} \: G_0(\mathbf{k}_{\mathrm{1}}) \lim\limits_{L\rightarrow\infty}\left( \int{\diff\Delta\mathbf{x} \: C(\Delta\mathbf{x}) e^{i\Delta\mathbf{x}(\mathbf{k}'-\mathbf{k}_{\mathrm{1}})}} \int{\diff\mathbf{x}_{\mathrm{1}} \: \left\langle \mathbf{k} | \mathbf{x}_{\mathrm{1}}\right\rangle \left\langle \mathbf{x}_{\mathrm{1}} | \mathbf{k}' \right\rangle } \right)} \\
+&= \left\langle \mathbf{k} | \mathbf{k}' \right\rangle \int{\frac{\diff\mathbf{k}_{\mathrm{1}}}{(2\pi)^d} \: G_0(\mathbf{k}_{\mathrm{1}}) \widetilde{C}(\mathbf{k}'-\mathbf{k}_{\mathrm{1}})}
+\end{align}
+
+
+
+
+
+
+
+
+\section{Calcul de la Self-Energy au second ordre}
+\begin{align}
+\Sigma^{(3)}(\mathbf{x}_{\mathrm{1}},\mathbf{x}_{\mathrm{2}}) &= \int{\diff \mathbf{x} \: G_0(\mathbf{x}_{\mathrm{1}} - \mathbf{x}) G_0(\mathbf{x}-\mathbf{x}_{\mathrm{2}}) \overline{V(\mathbf{x}_{\mathrm{1}})V(\mathbf{x})V(\mathbf{x}_{\mathrm{2}})}} \\
+&=2 \VR^3 \int{\diff\mathbf{x} \: G_0(\mathbf{x}_{\mathrm{1}} - \mathbf{x}) G_0(\mathbf{x}-\mathbf{x}_{\mathrm{2}}) \gamma(\mathbf{x}_{\mathrm{1}}-\mathbf{x})\gamma(\mathbf{x}-\mathbf{x}_{\mathrm{2}})\gamma(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}})} \\
+&=2 \VR^3 \int{\diff\mathbf{x} \int{\frac{\diff\mathbf{k}_{\mathrm{1}}\diff\mathbf{k}_{\mathrm{2}}\diff\mathbf{k}_{\mathrm{3}}\diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}}}{(2\pi)^{5d}}\: \widetilde{G_0}(\mathbf{k}_{\mathrm{1}}) \widetilde{G_0}(\mathbf{k}_{\mathrm{2}}) \tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}}) }} \\
+&\nonumber \qquad\times e^{-i\mathbf{k}_{\mathrm{1}}(\mathbf{x}_{\mathrm{1}}-\mathbf{x})} e^{-i\mathbf{k}_{\mathrm{2}}(\mathbf{x}-\mathbf{x}_{\mathrm{2}})} e^{-i\mathbf{k}_{\mathrm{3}}(\mathbf{x}_{\mathrm{1}}-\mathbf{x})} e^{-i\mathbf{k}_{\mathrm{4}}(\mathbf{x}-\mathbf{x}_{\mathrm{2}})} e^{-i\mathbf{k}_{\mathrm{5}}(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}})} \\
+&= \frac{2\VR^2}{(2\pi)^{5d}} \int{\diff\mathbf{k}_{\mathrm{1}}\diff\mathbf{k}_{\mathrm{2}}\diff\mathbf{k}_{\mathrm{3}}\diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}}\: \widetilde{G_0}(\mathbf{k}_{\mathrm{1}}) \widetilde{G_0}(\mathbf{k}_{\mathrm{2}}) \tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}})}\\
+&\nonumber \qquad \times e^{-i\mathbf{x}_{\mathrm{1}} (\mathbf{k}_{\mathrm{1}}+\mathbf{k}_{\mathrm{3}}-\mathbf{k}_{\mathrm{5}})} e^{-i\mathbf{x}_{\mathrm{2}}(\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{4}}-\mathbf{k}_{\mathrm{2}})} \int{\diff\mathbf{x}\: e^{-i\mathbf{x}(\mathbf{k}_{\mathrm{2}}-\mathbf{k}_{\mathrm{1}}-\mathbf{k}_{\mathrm{3}}+\mathbf{k}_{\mathrm{4}})}}\\
+&=\frac{2\VR^3}{(2\pi)^{4d}} \int{\diff\mathbf{k}_{\mathrm{1}}\diff\mathbf{k}_{\mathrm{2}}\diff\mathbf{k}_{\mathrm{3}}\diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}}\: \widetilde{G_0}(\mathbf{k}_{\mathrm{1}}) \widetilde{G_0}(\mathbf{k}_{\mathrm{2}}) \tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}})}\\
+&\nonumber \qquad \times e^{-i\mathbf{x}_{\mathrm{1}} (\mathbf{k}_{\mathrm{1}}+\mathbf{k}_{\mathrm{3}}-\mathbf{k}_{\mathrm{5}})} e^{-i\mathbf{x}_{\mathrm{2}}(\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{4}}-\mathbf{k}_{\mathrm{2}})} \delta(\mathbf{k}_{\mathrm{2}} +\mathbf{k}_{\mathrm{4}} -\mathbf{k}_{\mathrm{1}} -\mathbf{k}_{\mathrm{3}}) \\
+&= \frac{2\VR^3}{(2\pi)^{4d}} \int{\diff\mathbf{k}_{\mathrm{2}}\diff\mathbf{k}_{\mathrm{3}}\diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}}\: \widetilde{G_0}(\mathbf{k}_{\mathrm{2}}+\mathbf{k}_{\mathrm{4}}-\mathbf{k}_{\mathrm{3}}) \widetilde{G_0}(\mathbf{k}_{\mathrm{2}})\tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}})} \\
+&\nonumber \qquad \times e^{-i(\mathbf{k}_{\mathrm{2}}+\mathbf{k}_{\mathrm{4}}-\mathbf{k}_{\mathrm{5}})(\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{2}})}\\
+&=\Sigma^{(3)}(\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{2}})
+\end{align}
+
+
+%
+
+
+
+
+
