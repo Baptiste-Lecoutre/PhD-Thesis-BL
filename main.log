@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  2 AUG 2020 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  3 AUG 2020 20:42
 entering extended mode
 **./main.tex
 (main.tex
@@ -2027,14 +2027,26 @@ ine 100.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [114]
+<Fig/TauS_PRL/extraction_taus.pdf, id=15067, 552.55775pt x 180.51674pt>
+File: Fig/TauS_PRL/extraction_taus.pdf Graphic file (type pdf)
+<use Fig/TauS_PRL/extraction_taus.pdf>
+Package pdftex.def Info: Fig/TauS_PRL/extraction_taus.pdf  used on input line 1
+34.
+(pdftex.def)             Requested size: 426.79135pt x 139.4335pt.
 
-LaTeX Warning: Command \' invalid in math mode on input line 135.
 
-) (Appendices/Anex_speckle.tex [115] [116
+Package natbib Warning: Citation `trappe2015semiclassical' on page 115 undefine
+d on input line 143.
 
-]
+[115 <./Fig/TauS_PRL/extraction_taus.pdf>]
+
+LaTeX Warning: Command \' invalid in math mode on input line 158.
+
+) (Appendices/Anex_speckle.tex [116]
 Annexe A.
-[117] [118] [119] [120] [121]) (Appendices/Anex_Born.tex [122]
+[117
+
+] [118] [119] [120] [121]) (Appendices/Anex_Born.tex [122]
 Annexe B.
 [123
 
@@ -2052,7 +2064,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[127] [128] [129]) [130]
+[127] [128] [129])
+
+Package natbib Warning: There were undefined citations.
+
+[130]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
  (main.aux)
@@ -2065,10 +2081,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 31335 strings out of 480934
- 600800 string characters out of 2899917
- 995791 words of memory out of 3000000
- 45446 multiletter control sequences out of 15000+200000
+ 31344 strings out of 480934
+ 601072 string characters out of 2899917
+ 996790 words of memory out of 3000000
+ 45452 multiletter control sequences out of 15000+200000
  730502 words of font info for 345 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,1613b,1134s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2115,9 +2131,9 @@ iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 
-Output written on main.pdf (130 pages, 16819683 bytes).
+Output written on main.pdf (130 pages, 16909072 bytes).
 PDF statistics:
- 15703 PDF objects out of 18468 (max. 8388607)
- 635 named destinations out of 1000 (max. 500000)
- 70581 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 15813 PDF objects out of 18468 (max. 8388607)
+ 637 named destinations out of 1000 (max. 500000)
+ 70586 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -62,11 +62,11 @@
 \contentsline {section}{\numberline {5.2}Mesure du temps de diffusion élastique}{113}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Procédure expérimentale}{114}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Extraction du temps de diffusion élastique}{115}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Calibration de l'amplitude du désordre}{115}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Comportement du temps de diffusion élastique}{115}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Régime de Born}{115}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Déviations au régime de Born}{115}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Départ quadratique}{115}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.2.3}Calibration de l'amplitude du désordre}{116}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Comportement du temps de diffusion élastique}{116}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Régime de Born}{116}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Déviations au régime de Born}{116}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Départ quadratique}{116}{subsection.5.3.3}%
 \contentsline {chapter}{\numberline {A}Propriétés spatiales du speckle}{117}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Fonction de corrélation du diffuseur}{117}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Amplitude rayonnée}{118}{section.A.2}%
