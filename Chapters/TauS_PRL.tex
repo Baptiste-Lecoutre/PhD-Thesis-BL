@@ -77,7 +77,7 @@ En injectant l'équation \ref{eq:correlation_2D_taus} dans la règle d'or de Fer
 \frac{1}{\taus^{\mathrm{Born}} }=\frac{\pi}{\hb} \frac{\VR^2}{\ER} \: e^{- k_{\mathrm{i}}^2 \sigmap^2 /2} \: \mathrm{I_0}(k_{\mathrm{i}}^2 \sigmap^2 /2) \text{ ,}
 \label{eq:taus_born_2D}
 \end{equation}
-où $\mathrm{I_0}$ est la fonction de Bessel modifiée d'ordre 0. Nous avons de plus fait apparaître l'énergie de corrélation $\ER$ dont l'expression se réduit à $\ER=\hb^2/m\sigmap^2\sim\SI{500}{\hertz}$ dans le cas d'un désordre bidimensionnel.
+où $\mathrm{I_0}$ est la fonction de Bessel modifiée d'ordre 0. Nous avons de plus fait apparaître l'énergie de corrélation $\ER$ dont l'expression se réduit à $\ER=\hb^2/m\sigmap^2\sim\SI{466}{\hertz}$ dans le cas d'un désordre bidimensionnel.
 
 Il apparaît donc que le temps de diffusion élastique dépend d'une manière simple de l'amplitude du désordre $\VR$: $\taus^{\mathrm{Born}} \propto 1/\VR^2$. De manière plus générale, on peut définir un temps de diffusion élastique renormalisé $\tilde{\tau}_{\mathrm{s}}^{\mathrm{Born}}$ tel que
 \begin{equation}
@@ -126,8 +126,11 @@ Le désordre est ensuite brusquement\footnote{Le temps d'allumage du faisceau sp
 Le temps de diffusion élastique pouvant être extrait de la déplétion de l'état initial $\etat{\mathbf{k}_{\mathrm{i}}}$ d'après l'équation \ref{eq:decroissance_exponentielle_taus}, l'approche naturelle à son étude consiste donc à suivre l'évolution de la distribution d'impulsion du nuage en fonction du temps de propagation $t$ dans le désordre. Celle-ci est obtenue à l'aide d'un très grand temps de vol après extinction du désordre: après une longue expansion balistique, la position des atomes ne dépend plus de la taille initiale du nuage et n'est due qu'à leur vitesse. Ainsi, des temps de vol allant jusqu'à \SI{300}{\milli\second} peuvent être utilisés grâce à la lévitation magnétique, permettant d'obtenir une résolution d'impulsion de $\Delta k_{\mathrm{res}}=\SI{0.2}{\micro\metre^{-1}}$\footnote{Cette résolution est supérieure à la dispersion initiale d'impulsion en raison de la taille du nuage, d'environ \SI{30}{\micro\metre}, et du temps fini d'expansion.}. Enfin, la densité atomique est mesurée dans le plan $(\mathbf{k}_{\mathrm{y}}-\mathbf{k}_{\mathrm{z}})$ (le plan $(y-z)$ du repère de l'expérience) à l'aide d'une imagerie par fluorescence.
 
 \subsection{Extraction du temps de diffusion élastique}
+\label{sc:traitement_donnees_extraction_taus}
 
-L'évolution temporelle de la population de l'état initial $n(\mathbf{k}_{\mathrm{i}},t)$ est obtenue à l'aide des images expérimentales de la distribution dans l'espace des impulsions. Plus particulièrement, la détermination de $\taus$ repose sur la succession de trois étapes de traitement de données illustrées figure \ref{fig:extraction_taus}.
+L'évolution temporelle de la population de l'état initial $n(\mathbf{k}_{\mathrm{i}},t)$ est obtenue à l'aide des images expérimentales de la distribution dans l'espace des impulsions. La figure \ref{fig:extraction_taus}.a représente la distribution expérimentale d'impulsion $n(\mathbf{k},t)$ pour les paramètres $k_{\mathrm{i}}=2.31\sigmap^{-1}$ et $\VR/h=\SI{-104}{\hertz}$, pour des temps de propagation dans le désordre $t=\SI{0}{\milli\second}$ (état initial) et $t=\SI{17.5}{\milli\second}$. 
+
+Après propagation dans le désordre, les atomes initialement dans l'état $\etat{\mathbf{k}_{\mathrm{i}}}$ sont diffusés dans les états $\etat{\mathbf{k}'}$. On remarque que les atomes diffusés se répartissent selon un anneau tel que $|\mathbf{k}'|=|\mathbf{k}_{\mathrm{i}}|$, témoignant du caractère élastique de la diffusion dans le désordre. Néanmoins, cet anneau admet une largeur finie $\Delta k_{\mathrm{incoh}}$ en raison de l'élargissement en énergie lié au temps de vie fini de l'onde plane initiale dans le désordre. On peut ainsi montrer que $\Delta k_{\mathrm{incoh}}\sim 2/\ls$ \citep{cherroret2012coherent}.
 
 \begin{figure}
 \centering
@@ -136,29 +139,85 @@ L'évolution temporelle de la population de l'état initial $n(\mathbf{k}_{\math
 \label{fig:extraction_taus}
 \end{figure}
 
-Dans un premier temps, la densité atomique $n(\mathbf{k},t)$ dans le plan $(\mathbf{k}_{\mathrm{y}}-\mathbf{k}_{\mathrm{z}})$ est intégrée radialement afin d'obtenir le profil angulaire $n(\theta,t)$. Les bornes d'intégration correspondent  à deux fois la demi-largeur de la distribution d'impulsion initiale $n(\mathbf{k},0)$ (figure \ref{fig:extraction_taus}.a). Le profil angulaire est ensuite normalisé par sa valeur à l'origine $\theta=0$ et $t=0$, $\tilde{n}(\theta,t)= n(\theta,t)/n(0,0)$. Le profil angulaire normalisé obtenu est le résultat de la somme de deux contributions, une distribution fine correspondant à la distribution initiale non diffusée $\tilde{n}_{\mathrm{i}}(\theta,t)$, et une seconde structure $\tilde{n}_{\mathrm{b}}(\theta,t)$ plus large identifiée aux atomes diffusés dans les états $\etat{\mathbf{k}'}$ (figure \ref{fig:extraction_taus}.b). 
+La détermination de $\taus$ repose sur la succession de trois étapes de traitement de données illustrées figure \ref{fig:extraction_taus}. Dans un premier temps, la densité atomique $n(\mathbf{k},t)$ dans le plan $(\mathbf{k}_{\mathrm{y}}-\mathbf{k}_{\mathrm{z}})$ est intégrée radialement afin d'obtenir le profil angulaire $n(\theta,t)$. Les bornes d'intégration correspondent  à deux fois la demi-largeur de la distribution d'impulsion initiale $n(\mathbf{k},0)$ (figure \ref{fig:extraction_taus}.a). Le profil angulaire est ensuite normalisé par sa valeur à l'origine $\theta=0$ et $t=0$, $\tilde{n}(\theta,t)= n(\theta,t)/n(0,0)$. Le profil angulaire normalisé obtenu est le résultat de la somme de deux contributions, une distribution fine correspondant à la distribution initiale non diffusée $\tilde{n}_{\mathrm{i}}(\theta,t)$, et une seconde structure $\tilde{n}_{\mathrm{b}}(\theta,t)$ plus large identifiée aux atomes diffusés dans les états $\etat{\mathbf{k}'}$ (figure \ref{fig:extraction_taus}.b). 
 
-Dans un second temps, le profil angulaire normalisé est ajusté à l'aide de la somme d'une gaussienne large, représentant le fond diffusé $\tilde{n}_{\mathrm{b}}(\theta,t)$, et d'une gaussienne étroite décrivant la distribution initiale $\tilde{n}_{\mathrm{i}}(\theta,t)$. On obtient ainsi l'amplitude normalisée $\tilde{n}_{\mathrm{i}}(t)=\tilde{n}_{\mathrm{i}}(0,t)$, dont les barres d'erreur sont estimées à l'aide des incertitudes expérimentales et des déviations de l'ajustement bi-modal. 
+Dans un second temps, le profil angulaire normalisé est ajusté à l'aide de la somme d'une gaussienne large, représentant le fond diffusé $\tilde{n}_{\mathrm{b}}(\theta,t)$, et d'une gaussienne étroite décrivant la distribution initiale $\tilde{n}_{\mathrm{i}}(\theta,t)$\footnote{Le profil du paquet d'onde ne correspond plus à un profil de Thomas-Fermi en raison de l'étape de refroidissement par delta-kick. Il a été observé que celui-ci était mieux décrit à l'aide d'une fonction gaussienne.}. On obtient ainsi l'amplitude normalisée $\tilde{n}_{\mathrm{i}}(t)=\tilde{n}_{\mathrm{i}}(0,t)$, dont les barres d'erreur sont estimées à l'aide des incertitudes expérimentales et des déviations de l'ajustement bi-modal. 
 
-Enfin, l'évolution temporelle de l'amplitude du pic initial $\tilde{n}_{\mathrm{i}}(t)$ est ajustée par une décroissance exponentielle \ref{eq:decroissance_exponentielle_taus} de temps de vie $\taus$\footnote{Il est attendu que dans un régime de très fort désordre la décroissance de l'état initial ne soit plus exponentielle \citep{trappe2015semiclassical}, cependant nous n'avons pas observé de déviation expérimentale importante à la décroissance exponentielle.} (figure \ref{fig:extraction_taus}.c). Les incertitudes associées sont estimées à partir des barres d'erreurs de l'amplitude du pic de la distribution initiale et de la déviation de l'ajustement exponentiel. 
-
-
+Enfin, l'évolution temporelle de l'amplitude du pic initial $\tilde{n}_{\mathrm{i}}(t)$, suivie sur deux décades, est ajustée par une décroissance exponentielle \ref{eq:decroissance_exponentielle_taus} de temps de vie $\taus$\footnote{Il est attendu que dans un régime de très fort désordre la décroissance de l'état initial ne soit plus exponentielle \citep{trappe2015semiclassical}, cependant nous n'avons pas observé de déviation expérimentale importante à la décroissance exponentielle.} (figure \ref{fig:extraction_taus}.c). Les incertitudes associées sont estimées à partir des barres d'erreurs de l'amplitude du pic de la distribution initiale et de la déviation de l'ajustement exponentiel. 
 
 
 
 
-Même procédure pour les traitements numériques. ajustement exponentiel local sur les mêmes plages de données que pour les expérimentales.
-Montrer les résultats.
+\subsection{Cartographie du temps de diffusion élastique}
+
+La procédure de mesure du temps de diffusion élastique décrite dans les deux sections précédentes est répétée pour une large gamme de paramètres expérimentaux $|\VR|$ et $k_{\mathrm{i}}$, ainsi que pour des désordres attractifs et répulsifs. En balayant l'impulsion initial $k_{\mathrm{i}}$ sur un ordre de grandeur et l'amplitude du désordre $|\VR|$ sur deux ordres de grandeur, nous avons pu observer des variations de $\taus$ sur près de quatre ordres de grandeur. 
+
+L'ensemble des valeurs mesurées peut être retrouvé figure \ref{fig:donnees_taus_prl}, dans laquelle le temps mesuré $\taus$ est tracé en fonction de l'impulsion initiale $k_{\mathrm{i}}$ en échelle logarithmique. Les différentes couleurs correspondent aux différentes amplitudes de désordre utilisées. Les données expérimentales (points) sont comparées à la prédiction de Born \ref{eq:taus_born_2D} (lignes pointillées) ainsi qu'à des simulations numériques (lignes continues). 
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/TauS_PRL/donnees_taus_prl.pdf}
+\caption{\textbf{Cartographie du temps de diffusion élastique en fonction des paramètres expérimentaux.} Le temps de diffusion élastique est tracé en fonction de l'impulsion initiale pour différentes amplitude du désordre (différentes couleurs) ainsi que pour des désordres attractifs (cadre de gauche) et des désordres répulsifs (cadre de droite). Les données expérimentales (points) sont comparées à des données numériques \textit{ab-initio} (lignes continues) ainsi qu'à la prédiction de Born \ref{eq:taus_born_2D} (lignes pointillées).}
+\label{fig:donnees_taus_prl}
+\end{figure}
+
+Ces simulations correspondent à la résolution numérique en deux dimensions de l'équation de Schrödinger décrivant l'évolution d'un paquet d'onde gaussien dans un désordre dont les propriétés vérifient la distribution de potentiel \ref{eq:distribution_potentiel_speckle} ainsi que la fonction de corrélation \ref{eq:correlation_2D_taus}. La résolution numérique s'appuie sur une méthode de différences finies ainsi que l'utilisation de conditions aux limites absorbantes. La distribution d'impulsion est obtenue par transformation de Fourier de la fonction d'onde avant d'être moyennée sur 14 réalisations du désordre\footnote{Nous avons déterminé que moyenner la distribution d'impulsion sur 14 réalisations du désordre permettait d'atteindre la convergence vers la distribution moyenne d'impulsion.}. La détermination du temps de diffusion élastique est finalement réalisée de la même manière que pour les données expérimentales, explicitée section \ref{sc:traitement_donnees_extraction_taus}.
+
+La figure \ref{fig:donnees_taus_prl} témoigne d'un accord remarquable entre les données expérimentales et les données numériques sur l'ensemble des paramètres expérimentaux et confirme ainsi le caractère quasi-2D de notre système. Néanmoins, des petites déviations sont observées dans la région d'impulsion et de désordre faibles (région en haut à gauche), que l'on peut attribuer à deux contributions. En effet, la zone d'impulsions faibles est susceptible de témoigner d'effets tridimensionnels. De plus, la résolution finie de la distribution d'impulsion $\Delta k_{\mathrm{res}}$ engendre des difficultés expérimentales pour déterminer précisément $\taus$.
+
+L'excellent accord entre les données expérimentales et les données numériques nous permet de calibrer l'amplitude du désordre $\VR$ utilisé expérimentalement. Notamment, celle-ci est estimée à l'aide de mesures photométriques de la puissance du faisceau utilisé, sujettes à des erreurs systématiques de quelques dizaines de pourcents, qu'il est possible de corriger à l'aide d'un facteur de calibration $\alpha$. En minimisant les différences entre les données numériques et expérimentales pour l'impulsion $k_{\mathrm{i}}=0.74 \sigmap^{-1}$, on détermine ainsi le facteur de calibration $\alpha=1.29\pm0.02$.
 
 
-
-
-
-\subsection{Calibration de l'amplitude du désordre}
-Excellent accord entre les données expérimentales et les données numériques. Du coup, on se sert de cet accord pour calibrer l'amplitude du désordre expérimental. Plus particulièrement, on utilise les données pour $k_{\mathrm{i}}=0.74 \sigma^{-1}$ pour apporter une correction à $\VR {}_{\mathrm{,expérimental}}$: $\alpha=1.29\pm0.02$.
 
 
 \section{Comportement du temps de diffusion élastique}
+phrases d'intro pour expliquer les comparaisons aux modèles et au critère de désordre faible.
+
 \subsection{Régime de Born}
+Les données expérimentales et numériques sont comparées aux prédictions du régime de Born dans la figure \ref{fig:donnees_taus_prl}. Remarquons que la prédiction théorique du régime de Born, représentée par les lignes pointillées, est simplement translatée verticalement en changeant l'amplitude du désordre $|\VR|$ en vertu de la loi d'échelle $\taus^{\mathrm{Born}} \propto 1/|\VR|^2$. De plus, celle-ci est identique pour les désordres attractif et répulsif étant donné que la prédiction \ref{eq:fermi_taus} ne dépend pas de la distribution de potentiel, mais uniquement du spectre des fréquences spatiales du désordre $\widetilde{C}(\mathbf{k}_{\mathrm{dis}})$. 
+
+De manière générale, $\taus^{\mathrm{Born}}$ montre un bon accord avec les données dans le régime de diffusion faible, c'est à dire la région de désordre faible (petits $|\VR|$) et d'impulsion importante (grands $k_{\mathrm{i}}$). On observe ainsi les comportements de diffusion isotrope ($k_{\mathrm{i}}\sigmap<1$) et de diffusion vers l'avant ($k_{\mathrm{i}}\sigmap>1$), notamment pour la courbe noire de plus faible désordre $|\VR|/h=\SI{39}{\hertz}$. 
+
+Cependant, l'augmentation de l'amplitude du désordre ou la diminution de l'impulsion initiale mènent à de fortes déviations à la prédiction de théorique de Born, obtenue dans le cadre de la théorie des perturbations. L'augmentation de la force de la diffusion montre alors la limite de l'approche de Born.
+
+
 \subsection{Déviations au régime de Born}
+En dehors du régime dans lequel l'approximation de Born permet de décrire quantitativement nos données, nous observons de larges déviations entre les désordres attractifs et répulsifs. Cette signature de l'influence de la distribution de potentiel $\mathcal{P}(V)$ montre l'insuffisance de l'approximation de Born pour décrire le régime de diffusion forte.
+
+Une représentation visuelle des déviations observées à l'approximation de Born est proposée figure \ref{fig:map_deviations_born}, où le rapport $\taus/\taus^{\mathrm{Born}}$ est tracé en échelle logarithmique en fausses couleurs en fonction des paramètres expérimentaux $k_{\mathrm{i}}$ et $|\VR|$ pour les différents désordres considérés.  Afin d'exposer le rôle fondamental de la distribution de potentiel, cette étude est de plus étendue au cas d'un désordre gaussien\footnote{L'extension de l'étude au potentiel gaussien n'a pu être réalisée que numériquement. Celui-ci possède la même fonction de corrélation \ref{eq:correlation_2D_taus} que les potentiels de type speckle. La génération expérimentale d'un tel potentiel peut être envisagée en réalisant l'interférence entre un speckle et une onde plane intense, ou encore à l'aide d'un modulateur spatial de lumière.} dont la distribution de potentiel est donnée par
+\begin{equation}
+\mathcal{P}(V)=\frac{1}{\sqrt{2\pi} \VR} e^{-V^2/2\VR^2} \text{ .}
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{Fig/TauS_PRL/map_deviations_born.pdf}
+\caption{\textbf{Cartographie des déviations au régime de Born.} Le rapport $\taus/\taus^{\mathrm{Born}}$ est tracé en échelle logarithmique en fausses couleurs en fonction des paramètres expérimentaux $k_{\mathrm{i}}$ et $|\VR|$. Les données expérimentales (colonne de gauche) et numériques (colonne de droite) sont tracées pour les désordres attractifs (première ligne), répulsifs (deuxième ligne) ainsi que pour un désordre gaussien (figure en bas à droite) ayant la même fonction de corrélation \ref{eq:correlation_2D_taus} que les désordres speckle. Les distributions $\mathcal{P}(V)$ des potentiels sont représentées dans la figure en bas à gauche. Les courbes blanches correspondent aux critères phénoménologiques de désordre faible $k_{\mathrm{i}}\ls^{\mathrm{Bron}}=1$ (ligne continue) et $k_{\mathrm{i}}\ls^{\mathrm{Born}}=40$ (ligne pointillée). }
+\label{fig:map_deviations_born}
+\end{figure}
+
+Le parties bleues des cartes du temps de diffusion élastique de la figure \ref{fig:map_deviations_born} représentent le régime pour lequel $\taus/\taus^{\mathrm{Born}}\sim 1$. On observe que ces régions où l'estimation de Born est quantitativement correcte se trouvent dans la zone de désordres faibles et d'impulsions importantes, comme attendu. La région de fort désordre et d'impulsion faible témoigne en revanche de déviations extrêmes, où des déviations de deux ordres de grandeurs ont pu êtres observées.
+
+Les déviations mesurées à l'approximation perturbative permettent ainsi de révéler la forte influence de la distribution de potentiel sur le régime de diffusion forte, ainsi que sur la transition entre le régime de Born et le régime de diffusion forte. Notamment, le critère de validité de l'approximation de Born communément admis $k_{\mathrm{i}}\ls^{\mathrm{Born}}=1$ est tracé en ligne blanche continue et semble reproduire remarquablement la zone de transition entre le régime de Born et le régime de diffusion forte. Plus particulièrement, nous avons observé que la ligne $k_{\mathrm{i}}\ls^{\mathrm{Born}}=1$ correspondait à une iso-déviation de 25\% dans le cas du désordre gaussien\footnote{Il s'agit de la ligne de niveau $\taus/\taus^{\mathrm{Born}}=1.25$ dans le cas du désordre gaussien.}. On vérifie ainsi la pertinence de ce critère pour localiser la transition entre régimes de diffusion faible et forte pour un désordre gaussien, largement utilisé.
+
+Néanmoins, les déviations observées sont beaucoup plus marquées pour les désordres de type speckle, montrant la désadaptation de ce critère à ce type de désordre. En effet, la ligne $k_{\mathrm{i}}\ls^{\mathrm{Born}}=1$ témoigne de déviations atteignant 250\% pour un speckle attractif, et 400\% pour un speckle répulsif. Il apparaît donc que la transition entre les régimes de diffusion faible et forte est déplacée vers des valeurs plus importantes de la quantité $k_{\mathrm{i}} \ls^{\mathrm{Born}}$, notamment, des déviations de 25\% mentionnées précédemment apparaissent dès $k_{\mathrm{i}} \ls^{\mathrm{Born}}=40$ (lignes blanches pointillées). La pertinence du critère communément admis $k_{\mathrm{i}} \ls^{\mathrm{Born}}\sim 1$ dépend donc de la nature du désordre utilisé.
+
+La description du comportement du temps de diffusion élastique hors du régime de Born fait l'objet du chapitre \ref{ch:TauS_NJP}, mais nous pouvons néanmoins décrire brièvement la nature des déviations au régime de Born. La région des faibles désordres correspond à celle où l'approximation de Born est susceptible d'être valide. Cependant, pour des impulsions faibles, l'énergie de l'onde initiale n'est pas suffisamment grande pour que seul le premier ordre de la théorie des perturbations puisse décrire correctement le temps de diffusion élastique. Notamment, l'ordre suivant de la théorie des perturbations, en $1/\VR^3$, permet d'expliquer l'asymétrie du comportement entre les trois désordre considérés dans la région de faibles désordre et impulsion.
+
+La région de fort désordre sort naturellement du cadre de la théorie perturbative de Born. Il s'agit de la région pour laquelle la distribution de potentiel joue un rôle capital, comme cela est illustré par la différence significative des déviations que l'on peut observer dans cette région pour les différents désordres. Nous verrons dans le chapitre suivant que dans ce régime, l'évolution temporelle de l'état initial est décrite par sa distribution d'énergie, donnée par la fonction spectrale $A(\mathbf{k}_{\mathrm{i}},E)$ et dont le profil est intimement relié à la distribution de potentiel.
+
+
 \subsection{Départ quadratique}
+parler du début de la décroissance qui n'est pas linéaire comme pour une exponentielle mais quadratique. Ce départ est bien vu dans les numériques même dans le régime de Born, mais pas sur la manip car durée associée trop courte.
+interprétation à l'aide du bouquin d'alain: à temps court, le couplage de la règle d'or de fermi ne peux pas satisfaire la condition de conservation de l'énergie et la fonction de couplage en énergie n'a pas encore convergé vers un dirac. on sonde ainsi un continuum de largeur finie $\ER$ (impulsion cutoff du désordre, transfert d'énergie cinétique), qui s'apparente à temps court à une oscillation de rabi (vu par la fonction de spectroscopie large en énergie, le continuum s'apparente à un niveau discret).
+On a donc deux régimes: un régime non résolu qui commence comme une oscillation de Rabi, puis la résolution en énergie s'améliore, on sonde les différents niveaux et on retrouve le comportement exponentiel.
+
+
+\citep{grynberg2010introduction}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{Fig/TauS_PRL/depart_quadratique_taus.pdf}
+\caption{\textbf{Départ quadratique de la décroissance de l'état initial.} Stuff.}
+\label{fig:depart_quadratique_taus}
+\end{figure}

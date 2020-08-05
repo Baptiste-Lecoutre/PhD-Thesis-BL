@@ -1,4 +1,4 @@
-\begin{thebibliography}{78}
+\begin{thebibliography}{81}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -94,6 +94,13 @@ J.~Chab{\'e}, G.~Lemari{\'e}, B.~Gr{\'e}maud, D.~Delande, P.~Szriftgiser, and
 \newblock \emph{Physical review letters}, 101\penalty0 (25):\penalty0 255702,
   2008.
 
+\bibitem[Cherroret et~al.(2012)Cherroret, Karpiuk, M{\"u}ller, Gr{\'e}maud, and
+  Miniatura]{cherroret2012coherent}
+N.~Cherroret, T.~Karpiuk, C.~A. M{\"u}ller, B.~Gr{\'e}maud, and C.~Miniatura.
+\newblock Coherent backscattering of ultracold matter waves: Momentum space
+  signatures.
+\newblock \emph{Physical Review A}, 85\penalty0 (1):\penalty0 011604, 2012.
+
 \bibitem[Cohen-Tannoudji(1996)]{cohen1996atomes}
 C.~Cohen-Tannoudji.
 \newblock Atomes ultrafroids: Piegeage non dissipatif et refroidissement
@@ -153,6 +160,13 @@ J.~W. Goodman.
 R.~Grimm, M.~Weidem{\"u}ller, and Y.~B. Ovchinnikov.
 \newblock Optical dipole traps for neutral atoms.
 \newblock \emph{arXiv preprint physics/9902072}, 1999.
+
+\bibitem[Grynberg et~al.(2010)Grynberg, Aspect, and
+  Fabre]{grynberg2010introduction}
+G.~Grynberg, A.~Aspect, and C.~Fabre.
+\newblock \emph{Introduction to quantum optics: from the semi-classical
+  approach to quantized light}.
+\newblock Cambridge university press, 2010.
 
 \bibitem[Hu et~al.(2008)Hu, Strybulevych, Page, Skipetrov, and van
   Tiggelen]{hu2008localization}
@@ -462,6 +476,14 @@ S.~Stellmer, B.~Pasquiou, R.~Grimm, and F.~Schreck.
 \newblock Laser cooling to quantum degeneracy.
 \newblock \emph{Physical review letters}, 110\penalty0 (26):\penalty0 263003,
   2013.
+
+\bibitem[Trappe et~al.(2015)Trappe, Delande, and
+  M{\"u}ller]{trappe2015semiclassical}
+M.~I. Trappe, D.~Delande, and C.~A. M{\"u}ller.
+\newblock Semiclassical spectral function for matter waves in random
+  potentials.
+\newblock \emph{Journal of Physics A: Mathematical and Theoretical},
+  48\penalty0 (24):\penalty0 245102, 2015.
 
 \bibitem[Volchkov et~al.(2018)Volchkov, Pasek, Denechaud, Mukhtar, Aspect,
   Delande, and Josse]{volchkov2018measurement}
