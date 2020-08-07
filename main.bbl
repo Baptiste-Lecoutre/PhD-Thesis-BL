@@ -1,4 +1,4 @@
-\begin{thebibliography}{81}
+\begin{thebibliography}{91}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -58,6 +58,13 @@ J.~Billy, V.~Josse, Z.~Zuo, A.~Bernard, B.~Hambrecht, P.~Lugan, D.~Cl'ement,
 \newblock Direct observation of anderson localization of matter waves in a
   controlled disorder.
 \newblock \emph{Nature}, 453:\penalty0 891--894, 2008.
+
+\bibitem[Bockelmann et~al.(1990)Bockelmann, Abstreiter, Weimann, and
+  Schlapp]{bockelmann1990single}
+U.~Bockelmann, G.~Abstreiter, G.~Weimann, and W.~Schlapp.
+\newblock Single-particle and transport scattering times in narrow gaas/al x ga
+  1- x as quantum wells.
+\newblock \emph{Physical Review B}, 41\penalty0 (11):\penalty0 7864, 1990.
 
 \bibitem[Boyer(2000)]{boyer2000condensation}
 V.~Boyer.
@@ -168,6 +175,14 @@ G.~Grynberg, A.~Aspect, and C.~Fabre.
   approach to quantized light}.
 \newblock Cambridge university press, 2010.
 
+\bibitem[Hildebrand et~al.(2014)Hildebrand, Strybulevych, Skipetrov,
+  Van~Tiggelen, and Page]{hildebrand2014observation}
+W.~Hildebrand, A.~Strybulevych, S.~Skipetrov, B.~Van~Tiggelen, and J.~Page.
+\newblock Observation of infinite-range intensity correlations above, at, and
+  below the mobility edges of the 3d anderson localization transition.
+\newblock \emph{Physical Review Letters}, 112\penalty0 (7):\penalty0 073902,
+  2014.
+
 \bibitem[Hu et~al.(2008)Hu, Strybulevych, Page, Skipetrov, and van
   Tiggelen]{hu2008localization}
 H.~Hu, A.~Strybulevych, J.~Page, S.~E. Skipetrov, and B.~A. van Tiggelen.
@@ -185,6 +200,13 @@ C.-L. Hung, X.~Zhang, N.~Gemelke, and C.~Chin.
 \newblock Accelerating evaporative cooling of atoms into bose-einstein
   condensation in optical traps.
 \newblock \emph{Physical Review A}, 78\penalty0 (1):\penalty0 011604, 2008.
+
+\bibitem[Jacques et~al.(2012)Jacques, Wang, and
+  Samatham]{jacques2012reflectance}
+S.~L. Jacques, B.~Wang, and R.~Samatham.
+\newblock Reflectance confocal microscopy of optical phantoms.
+\newblock \emph{Biomedical optics express}, 3\penalty0 (6):\penalty0
+  1162--1172, 2012.
 
 \bibitem[Jendrzejewski(2012)]{jendrzejewski2012quantum}
 F.~Jendrzejewski.
@@ -278,6 +300,23 @@ D.~Magatti, A.~Gatti, and F.~Ferri.
 \newblock Three-dimensional coherence of light speckles: experiment.
 \newblock \emph{Physical Review A}, 79\penalty0 (5):\penalty0 053831, 2009.
 
+\bibitem[Martin and Ben-Yakar(2016)]{martin2016determination}
+C.~Martin and A.~Ben-Yakar.
+\newblock Determination of scattering properties and damage thresholds in
+  tissue using ultrafast laser ablation.
+\newblock \emph{Journal of biomedical optics}, 21\penalty0 (11):\penalty0
+  115004, 2016.
+
+\bibitem[Monteverde et~al.(2010)Monteverde, Ojeda-Aristizabal, Weil, Bennaceur,
+  Ferrier, Gu{\'e}ron, Glattli, Bouchiat, Fuchs, and
+  Maslov]{monteverde2010transport}
+M.~Monteverde, C.~Ojeda-Aristizabal, R.~Weil, K.~Bennaceur, M.~Ferrier,
+  S.~Gu{\'e}ron, C.~Glattli, H.~Bouchiat, J.~Fuchs, and D.~Maslov.
+\newblock Transport and elastic scattering times as probes of the nature of
+  impurity scattering in single-layer and bilayer graphene.
+\newblock \emph{Physical review letters}, 104\penalty0 (12):\penalty0 126801,
+  2010.
+
 \bibitem[Moore et~al.(1995)Moore, Robinson, Bharucha, Sundaram, and
   Raizen]{moore1995atom}
 F.~Moore, J.~Robinson, C.~Bharucha, B.~Sundaram, and M.~Raizen.
@@ -316,12 +355,26 @@ P.~Murthy, D.~Kedar, T.~Lompe, M.~Neidig, M.~Ries, A.~Wenz, G.~Z{\"u}rn, and
   two-dimensional fermi gas.
 \newblock \emph{Physical Review A}, 90\penalty0 (4):\penalty0 043611, 2014.
 
+\bibitem[Niederer(1974)]{niederer1974magneto}
+H.~Niederer.
+\newblock Magneto oscillatory conductance in n-type inverted silicon surfaces.
+\newblock \emph{Japanese Journal of Applied Physics}, 13\penalty0
+  (S2):\penalty0 339, 1974.
+
 \bibitem[Nieuwenhuizen and Van~Rossum(1995)]{nieuwenhuizen1995intensity}
 T.~M. Nieuwenhuizen and M.~Van~Rossum.
 \newblock Intensity distributions of waves transmitted through a multiple
   scattering medium.
 \newblock \emph{Physical review letters}, 74\penalty0 (14):\penalty0 2674,
   1995.
+
+\bibitem[Obermann et~al.(2014)Obermann, Larose, Margerin, and
+  Rossetto]{obermann2014measuring}
+A.~Obermann, E.~Larose, L.~Margerin, and V.~Rossetto.
+\newblock Measuring the scattering mean free path of rayleigh waves on a
+  volcano from spatial phase decoherence.
+\newblock \emph{Geophysical Journal International}, 197\penalty0 (1):\penalty0
+  435--442, 2014.
 
 \bibitem[O’hara et~al.(2001)O’hara, Gehm, Granade, and
   Thomas]{o2001scaling}
@@ -335,6 +388,12 @@ M.~Paalanen, T.~Rosenbaum, G.~Thomas, and R.~Bhatt.
 \newblock Critical scaling of the conductance in a disordered insulator.
 \newblock \emph{Physical review letters}, 51\penalty0 (20):\penalty0 1896,
   1983.
+
+\bibitem[Page et~al.(1996)Page, Sheng, Schriemer, Jones, Jing, and
+  Weitz]{page1996group}
+J.~H. Page, P.~Sheng, H.~P. Schriemer, I.~Jones, X.~Jing, and D.~A. Weitz.
+\newblock Group velocity in strongly scattering media.
+\newblock \emph{Science}, 271\penalty0 (5249):\penalty0 634--637, 1996.
 
 \bibitem[Pasek et~al.(2017)Pasek, Orso, and Delande]{pasek2017anderson}
 M.~Pasek, G.~Orso, and D.~Delande.
@@ -406,6 +465,12 @@ L.~Sapienza, H.~Thyrrestrup, S.~Stobbe, P.~D. Garcia, S.~Smolka, and P.~Lodahl.
 \newblock Cavity quantum electrodynamics with anderson-localized modes.
 \newblock \emph{Science}, 327\penalty0 (5971):\penalty0 1352--1355, 2010.
 
+\bibitem[Savo et~al.(2017)Savo, Pierrat, Najar, Carminati, Rotter, and
+  Gigan]{savo2017observation}
+R.~Savo, R.~Pierrat, U.~Najar, R.~Carminati, S.~Rotter, and S.~Gigan.
+\newblock Observation of mean path length invariance in light-scattering media.
+\newblock \emph{Science}, 358\penalty0 (6364):\penalty0 765--768, 2017.
+
 \bibitem[Scheffold et~al.(1999)Scheffold, Lenke, Tweer, and
   Maret]{scheffold1999localization}
 F.~Scheffold, R.~Lenke, R.~Tweer, and G.~Maret.
@@ -418,6 +483,14 @@ T.~Schwartz, G.~Bartal, S.~Fishman, and M.~Segev.
 \newblock Transport and anderson localization in disordered two-dimensional
   photonic lattices.
 \newblock \emph{Nature}, 446\penalty0 (7131):\penalty0 52--55, 2007.
+
+\bibitem[Sebbah et~al.(2002)Sebbah, Hu, Genack, Pnini, and
+  Shapiro]{sebbah2002spatial}
+P.~Sebbah, B.~Hu, A.~Genack, R.~Pnini, and B.~Shapiro.
+\newblock Spatial-field correlation: the building block of mesoscopic
+  fluctuations.
+\newblock \emph{Physical review letters}, 88\penalty0 (12):\penalty0 123901,
+  2002.
 
 \bibitem[Semeghini et~al.(2015)Semeghini, Landini, Castilho, Roy, Spagnolli,
   Trenkwalder, Fattori, Inguscio, and Modugno]{semeghini2015measurement}

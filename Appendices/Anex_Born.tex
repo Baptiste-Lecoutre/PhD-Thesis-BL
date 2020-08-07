@@ -1,14 +1,26 @@
 \chapter{Calculs du temps de diffusion élastique}
 
 
+\section{Élements de calcul du temps de diffusion élastique à partir du développement de Born}
+La fonction de Green moyennée est donnée par 
 \begin{equation}
 \widetilde{G}(E,\mathbf{k})=\frac{1}{E-E_{\mathrm{k}}-\overline{V}-\Sigma(E,\mathbf{k})}
 \end{equation}
 
+
 \begin{equation}
 \Sigma=\Sigma^{(2)} + \Sigma^{(3)} + \dots
 \end{equation}
+avec $\Sigma^{(2)}=\overline{V G_0 V}$ et $\Sigma{(3)}=\overline{V G_0 V G_0 V}$.
 
+\begin{equation}
+\overline{V((\mathbf{x}_{\mathrm{1}})V(\mathbf{x}_{\mathrm{2}})}=\VR^2 e^{-\frac{(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}})^2}{\sigma^2}}
+\end{equation}
+
+\begin{align}
+\overline{V(\mathbf{x}_{\mathrm{1}})V(\mathbf{x}_{\mathrm{2}})V(\mathbf{x}_{\mathrm{3}})}&= 2\VR^3 e^{-\frac{(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}})^2}{2\sigma^2}}e^{-\frac{(\mathbf{x}_{\mathrm{3}}-\mathbf{x}_{\mathrm{2}})^2}{2\sigma^2}}e^{-\frac{(\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{3}})^2}{2\sigma^2}} \\ 
+&=2\VR^3 \gamma(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}})\gamma(\mathbf{x}_{\mathrm{3}}-\mathbf{x}_{\mathrm{2}})\gamma(\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{3}})
+\end{align}
 
 
 \section{Calcul de la Self-Energy au premier ordre}
@@ -106,11 +118,23 @@ en faisant apparaître les énergies adimensionnées $\epsilon=E/\ER=E\sigma^2$ 
 avec $\epsilon'=k_{\mathrm{4}}'^2\sigma^2/2$.
 
 
-
-
-
 \begin{align}
-\mathrm{Im}\left( \Sigma^{(3)}(\mathbf{k})\right)&= stuff \\
-&= -4 \pi \frac{\VR^3}{\ER^2} e^{-k^2\sigma^2} \int_{\R^+}{\diff k' \: k' e^{-\frac{3}{2}k'^2 \sigma^2} \mathrm{I_0}(k' k \sigma)^2 \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{k^2\sigma^2/2-\epsilon'} \mathrm{I_0}(k' \sqrt{2\epsilon'})}}
+\mathrm{Im}\left( \Sigma^{(3)}(\mathbf{k})\right)&= \frac{2 \VR^3 (2\pi\sigma^2)^3)}{(2\pi)^6} \int{\diff\mathbf{k}_{\mathrm{5}}' \: (-2\pi) 2\pi e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2/2} \int_{\R^+}{\diff\epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma\sqrt{2\epsilon'})}}\\
+&\nonumber \qquad \times 2\pi e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2/2} e^{-\epsilon} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma \sqrt{2\epsilon}) e^{-k_{\mathrm{5}}'^2\sigma^2/2} \\
+ &= -2\VR^3\sigma^6 \int{\diff\mathbf{k}_{\mathrm{5}}' \: e^{-\epsilon} e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2 \sigma^2} e^{-k_{\mathrm{5}}'^2 \sigma^2/2} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma \sqrt{2}\epsilon)} \\
+ &\nonumber \qquad \times \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma \sqrt{2\epsilon'})}
+\end{align}
+
+
+
+On fait le changement de variable $\mathbf{k}_{\mathrm{5}}''=\mathbf{k}-\mathbf{k}_{\mathrm{5}}'$:
+\begin{align}
+\mathrm{Im}\left( \Sigma^{(3)}(\mathbf{k})\right)&= -2\VR^3\sigma^6 \int{\diff\mathbf{k}_{\mathrm{5}}'' \: e^{-\epsilon} e^{-k_{\mathrm{5}}''^2\sigma^2} e^{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}''|^2\sigma^2/2} \mathrm{I_0}(k_{\mathrm{5}}''\sigma \sqrt{2\epsilon})} \\
+&\nonumber\qquad \times \int_{\R^+}{\diff\epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon'})} \\
+&=-4 \pi \VR^3\sigma^6 e^{-\epsilon} e^{-k^2\sigma^2/2} \int_{\R^+}{\diff k_{\mathrm{5}}'' \: k_{\mathrm{5}}'' e^{-\frac{3}{2}k_{\mathrm{5}}''^2 \sigma^2} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon})} \\
+&\nonumber \qquad \times \int_0^{2\pi}{\diff\theta_{\mathrm{5}}'' \: e^{\sigma^2 k k_{\mathrm{5}}'' \cos\theta_{\mathrm{5}}''} \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon'})}} \\
+&=-4 \pi \VR^3\sigma^6 e^{-\epsilon} e^{-k^2\sigma^2/2} \\
+&\nonumber \qquad \times\int_{\R^+}{\diff k_{\mathrm{5}}'' \: k_{\mathrm{5}}'' e^{-\frac{3}{2}k_{\mathrm{5}}''^2 \sigma^2} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon})^2 \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon'})}} \\
+&= -4 \pi \frac{\VR^3}{\ER^2} e^{-k^2\sigma^2} \int_{\R^+}{\diff k' \: k' e^{-\frac{3}{2}k'^2} \mathrm{I_0}(k' k \sigma)^2 \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{k^2\sigma^2/2-\epsilon'} \mathrm{I_0}(k' \sqrt{2\epsilon'})}}
 \end{align}
 en posant $k'=k_{\mathrm{5}}''\sigma$ et en faisant l'approximation en couche $E=\hb^2k^2/2m \rightarrow \epsilon=k^2\sigma^2/2$.
