@@ -204,6 +204,7 @@ On montre alors (voir annexe \ref{ch:anex_speckle}) que le profil d'intensité m
 \begin{align}
 \nonumber\overline{I}(\xd)&=\overline{E(\xd) E^*(\xd)} \\
 &\propto I_0 \left( \frac{\deff}{d} \xd \right) \ast \widetilde{\Cdiff}\left( \frac{\xd}{\lambda d} \right) \text{ ,}
+\label{eq:evolution_extension_transverse_speckle}
 \end{align}
 où le symbole $\ast$ dénote le produit de convolution. L'évolution du profil d'intensité moyenne en fonction de la distance $d$ est alors dû à deux contributions dont l'interprétation physique est la suivante:
 \begin{itemize}
@@ -356,6 +357,7 @@ Cette différence observée s'explique par le fait que les expressions des fonct
 Notons tout de même que la forme de la fonction de corrélation transverse est très bien décrite par une fonction gaussienne, comme représenté figure \ref{fig:speckle_correlations_exp}. En particulier, dans le cas d'un désordre 2D\footnote{Cette notion sera discutée dans le chapitre \ref{ch:TauS_PRL}.} tel qu'utilisé pour les mesures du temps de diffusion élastique, seule la corrélation transverse participe à la dynamique du transport de l'onde de matière. On définie alors la fonction de corrélation normalisée à deux dimensions par
 \begin{equation}
 c_{\mathrm{2D}}(\Delta \mathbf{r}_\perp)=e^{-\Delta \mathbf{r}^2_\perp / \sigmap^2}
+\label{eq:correlation_2D_normalisee}
 \end{equation}
 dont l'ajustement sur les données expérimentales donne $\sigmap=0.50\pm\SI{0.01}{\micro\metre}$. Il s'agit de la valeur de la longueur de corrélation transverse que l'on retiendra dans la suite.
 
@@ -404,7 +406,7 @@ Cependant, la mise en œuvre du modèle décrit par les équations \ref{eq:speck
 
 Dans le cadre de l'approximation paraxiale, on montre alors que la fonction de corrélation \ref{eq:correlation_3D_normalisee} aux alentours du plan de Fourier s'écrit
 \begin{equation}
-c_{\mathrm{3D}}(\Delta \mathbf{x}_\perp, \Delta z) \propto \left| \mathrm{TF} \left[ I_0'(\xzero) \: e^{i \pi \xzero^2 \Delta z /\lambda d} \right]_{\frac{\Delta \mathbf{x}_\perp}{\lambda d}} \right|^2 \text{ ,}
+c_{\mathrm{3D}}(\Delta \mathbf{x}_\perp, \Delta z) \propto \left| \mathrm{TF} \left[ I_0'(\xzero) \: e^{i \pi \xzero^2 \Delta z /\lambda d^2} \right]_{\frac{\Delta \mathbf{x}_\perp}{\lambda d}} \right|^2 \text{ ,}
 \label{eq:correlation_3D_paraxial_effectif}
 \end{equation}
 où le profil $I_0'(\xzero)$ d'intensité dans le plan du diffuseur vu sous l'ouverture numérique effective $\ON_{\mathrm{eff}}$ est donné par
@@ -468,6 +470,7 @@ d'après les lois de l'optique gaussienne. Les tailles typiques des nuages utili
 Une autre conséquence de l'expression \ref{eq:potentiel_dipolaire_approx} est qu'il est possible de créer un potentiel désordonné sur les atomes qui soit répulsif ($\delta>0$) ou bien attractif ($\delta<0$) selon le signe du désaccord $\delta$. Cette dernière possibilité nous permet d'avoir un degré de liberté expérimental supplémentaire, celui de la distribution de potentiel, dont l'importance sera illustrée dans les chapitres \ref{ch:TauS_PRL} et \ref{ch:TauS_NJP}. En effet, si la distribution de la norme du potentiel est fixée par celle de l'intensité lumineuse \ref{eq:proba_speckle}, ces deux quantités étant proportionnelles, le signe du désaccord nous permet de retourner la distribution de potentiel par rapport au potentiel nul $V=0$ (voir figure \ref{fig:distribution_potentiel})
 \begin{equation}
 \mathcal{P}(V)=\frac{1}{\left| \VR \right|} e^{-V/\VR} \cdot \Theta(V/\VR) \text{ ,}
+\label{eq:distribution_potentiel_speckle}
 \end{equation}
 où $\Theta$ est la fonction de Heaviside valant 1 pour $V/\VR>0$, et 0 sinon. $\VR$ est le potentiel moyen, proportionnel à l'intensité lumineuse moyenne et dont le signe peut changer suivant celui du désaccord. L'amplitude du désordre est quant à elle donnée par l'écart-type de la distribution de potentiel $ \sigma_{V}=(\overline{V^2}-\overline{V}^2)^{1/2}=\left|\VR\right|>0$ et sera toujours positive. Ainsi, sur notre dispositif, changer l'amplitude du désordre revient simplement à faire varier la puissance du faisceau speckle rayonné sur les atomes.
 

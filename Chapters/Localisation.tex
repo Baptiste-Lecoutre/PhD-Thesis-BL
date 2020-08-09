@@ -1,21 +1,17 @@
-\chapter{Phénomène de localisation d'Anderson} %% Titre ?
+\chapter{Phénomène de localisation d'Anderson} 
+\label{ch:Localisation}
 %\begin{tikzpicture}[remember picture, overlay]
 %\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Localisation/g825.png}};
 %\end{tikzpicture}
 
-présentation des effets d'interférences dans le désordre. scaling theory à la delande uniquement sur la conductance pour présenter la localisation 1D et 2D puis la 3D avec la transition. Terminer sur la quête du régime critique avec le graphe de delande2017, et introduction aux manips récentes et futures.
-
-
-Paragraphe d'introduction? 
-
 Dans ce chapitre, nous commencerons par décrire comment, lors de la propagation cohérente d'une onde dans un milieu désordonné, les interférences peuvent altérer la diffusion classique et engendrer le phénomène spectaculaire de \emph{Localisation d'Anderson} dont nous donnerons les principales propriétés. Dans un second temps, nous présenterons succinctement les principaux systèmes utilisés pour l'investigation de la localisation d'Anderson, pour s'attarder plus particulièrement sur les expériences d'atomes froids. Enfin, nous terminerons ce chapitre par une discussion de nos enjeux actuels, l'étude du régime critique de la transition d'Anderson, dont nous présenterons l'état de l'art.
 
 \section{Diffusion et interférences}
-Intro historique sur Anderson et le mécanisme de localisation faible pour donner une approche un peu plus intuitive au rôle des interférences.
+Cette première section a pour but de rappeler succinctement les mécanismes microscopiques à l'œuvre lors de l'étude de la propagation d'une onde dans un milieu désordonné, et comment le phénomène d'interférence peut modifier les grandeurs microscopiques associées. En particulier, nous nous focaliserons sur l'arrêt de la diffusion en conséquence de ces interférences, la localisation d'Anderson.
 
 \subsection{Phénomène de diffusion}
 \label{sc:diffusion_classique}
-Le phénomène de diffusion macroscopique est un phénomène de transport le plus connu de la physique classique. Celui-ci permet par exemple de décrire de manière simple la propagation de la chaleur dans un matériau homogène, l'homogénéisation de la concentration de particules dans un liquide ou encore le phénomène de résistance électrique dans un cadre unifié. 
+Le phénomène de diffusion macroscopique est un phénomène de transport des plus connus de la physique classique. Celui-ci permet par exemple de décrire de manière simple la propagation de la chaleur dans un matériau homogène, l'homogénéisation de la concentration de particules dans un liquide ou encore le phénomène de résistance électrique dans un cadre unifié. 
 
 En effet, le phénomène macroscopique de diffusion provient, de manière générale, d'une marche aléatoire des particules vectrices au sein de leur environnement. Drude a ainsi été le premier à calculer la résistivité électrique des matériaux en introduisant un temps de relaxation basé sur les collisions entre les électrons, vecteurs du courant électrique, et les impuretés du matériau dans lequel ceux-ci se déplacent \citep{ashcroft2010solid}. 
 
@@ -181,11 +177,11 @@ condition connue sous le nom de \emph{critère de Ioffe-Regel}.
 
 Il est possible de donner une interprétation intuitive au critère de Ioffe-Regel en se focalisant sur la phase accumulée par l'onde entre deux évènements successifs de diffusion. En effet, cette phase est de l'ordre de $\phi\sim k\lb$. Dans le régime de désordre fort, la phase de l'onde est donc similaire pour plusieurs évènements de diffusion successifs, générant ainsi des interférences constructives entre les différentes ondes diffusées. 
 
-Plus particulièrement, il a été montré à l'aide la \emph{théorie d'échelle de la localisation d'Anderson} qu'il existe une transition de phase du deuxième ordre entre états localisés et états diffusifs pour des systèmes à trois dimensions \citep{abrahams1979scaling}. Le paramètre de contrôle de la transition étant l'énergie $E$ de l'onde, la transition d'Anderson possède donc une énergie critique $E_{\mathrm{c}}$ appelée \emph{seuil de mobilité}, comme illustré figure \ref{fig:transition_anderson}.a. 
+Plus particulièrement, il a été montré à l'aide la \emph{théorie d'échelle de la localisation d'Anderson} qu'il existe une transition de phase du deuxième ordre entre états localisés et états diffusifs pour des systèmes à trois dimensions \citep{abrahams1979scaling}. Le paramètre de contrôle de la transition étant l'énergie $E$ de l'onde, la transition d'Anderson possède donc une énergie critique $\Ec$ appelée \emph{seuil de mobilité}, comme illustré figure \ref{fig:transition_anderson}.a. 
 
 La transition d'Anderson est de plus caractérisée par deux exposants critiques $\nu$ et $s$, décrivant respectivement comment la longueur de localisation $\xiloc$ diverge pour des états localisés proches du seuil de mobilité et comment le coefficient de diffusion $D$ s'approche de $0$ pour des états diffusifs (voir figure \ref{fig:transition_anderson}.b):
 \begin{equation}
-D \sim \left| E-E_{\mathrm{c}} \right|^s \quad \text{et} \quad \xi_{\mathrm{loc}} \sim \left| E-E_{\mathrm{c}} \right|^{-\nu} \text{ .}
+D \sim \left| E-\Ec \right|^s \quad \text{et} \quad \xi_{\mathrm{loc}} \sim \left| E-\Ec \right|^{-\nu} \text{ .}
 \end{equation}
 Bien qu'aucune théorie ne puisse décrire correctement le régime critique de la transition d'Anderson à l'heure actuelle, plusieurs études numériques s'accordent sur les valeurs $s=\nu=1.58$ des exposants critiques \citep{slevin1999corrections} \citep{evers2008anderson} \citep{slevin2014critical}.
 
@@ -339,16 +335,16 @@ Contrairement aux exposants critiques de la transition d'Anderson, l'énergie cr
 
 
 \paragraph*{Expérience d'Urbana Champaign}
-La première expérience à donner une estimation du seuil de mobilité à l'aide d'atomes ultra-froids a été menée en 2011 à Urbana Champaign aux États-Unis \citep{kondov2011three}. Celle-ci se base sur l'expansion d'un nuage thermique de \isotope[40]{K} polarisé\footnote{Le \isotope[40]{K} est une espèce fermionique dont les collisions dans l'onde \textit{s} sont supprimées si les atomes se trouvent dans le même état de spin. On peut ainsi négliger les interactions entre atomes.} dans un speckle répulsif anisotrope. L'analyse des auteurs repose sur l'observation d'une double structure du profil de densité atomique pour des temps de propagation $t\geq \SI{20}{\milli\second}$, interprétée comme la coexistence d'états localisés et d'états diffusifs. En définissant la fraction localisée comme la rapport entre le nombre d'atomes localisés et le nombre d'atomes total $f_{\mathrm{loc}}=N_{\mathrm{loc}}/(N_{\mathrm{loc}}+N_{\mathrm{D}})$, il est possible d'estimer le seuil de mobilité en remarquant que seuls les atomes d'énergie inférieure à $E_{\mathrm{c}}$ restent localisés:
+La première expérience à donner une estimation du seuil de mobilité à l'aide d'atomes ultra-froids a été menée en 2011 à Urbana Champaign aux États-Unis \citep{kondov2011three}. Celle-ci se base sur l'expansion d'un nuage thermique de \isotope[40]{K} polarisé\footnote{Le \isotope[40]{K} est une espèce fermionique dont les collisions dans l'onde \textit{s} sont supprimées si les atomes se trouvent dans le même état de spin. On peut ainsi négliger les interactions entre atomes.} dans un speckle répulsif anisotrope. L'analyse des auteurs repose sur l'observation d'une double structure du profil de densité atomique pour des temps de propagation $t\geq \SI{20}{\milli\second}$, interprétée comme la coexistence d'états localisés et d'états diffusifs. En définissant la fraction localisée comme la rapport entre le nombre d'atomes localisés et le nombre d'atomes total $\floc=N_{\mathrm{loc}}/(N_{\mathrm{loc}}+N_{\mathrm{D}})$, il est possible d'estimer le seuil de mobilité en remarquant que seuls les atomes d'énergie inférieure à $\Ec$ restent localisés:
 \begin{equation}
-f_{\mathrm{loc}}=\int_{-\infty}^{E_{\mathrm{c}}}{\mathrm{d}E \: \mathcal{D}_{\mathrm{E}} (E)} \text{ ,}
+\floc=\int_{-\infty}^{\Ec}{\mathrm{d}E \: \DE} \text{ ,}
 \label{eq:fraction_localisee}
 \end{equation}
-où $\mathcal{D}_{\mathrm{E}}(E)$ est la distribution d'énergie des atomes dans le potentiel désordonné.
+où $\DE$ est la distribution d'énergie des atomes dans le potentiel désordonné.
 
-Afin de déterminer la distribution d'énergie $\mathcal{D}_{\mathrm{E}}(E)$, les auteurs font l'hypothèse que l'allumage lent du désordre sur les atomes ne modifie par leur distribution d'énergie, alors déduite de la distribution des vitesses de Maxwell-Boltzmann. En introduisant la \emph{fonction spectrale}\footnote{Cette quantité est d'une importance capitale pour l'étude de la localisation d'Anderson avec des atomes froids. Elle sera étudiée plus en détails dans le chapitre \ref{ch:TauS_NJP}.} $A(\mathbf{k},E)$ représentant la probabilité qu'une particule d'impulsion $\mathbf{k}$ ait une énergie $E$ en présence de désordre
+Afin de déterminer la distribution d'énergie $\DE$, les auteurs font l'hypothèse que l'allumage lent du désordre sur les atomes ne modifie par leur distribution d'énergie, alors déduite de la distribution des vitesses de Maxwell-Boltzmann. En introduisant la \emph{fonction spectrale}\footnote{Cette quantité est d'une importance capitale pour l'étude de la localisation d'Anderson avec des atomes froids. Elle sera étudiée plus en détails dans le chapitre \ref{ch:TauS_NJP}.} $A(\mathbf{k},E)$ représentant la probabilité qu'une particule d'impulsion $\mathbf{k}$ ait une énergie $E$ en présence de désordre
 \begin{equation}
-\mathcal{D}_{\mathrm{E}}(E)= \int{\frac{\mathrm{d}^d \mathbf{k}}{{(2 \pi)}^d} \: A(\mathbf{k},E) \: \mathcal{D}_{\mathbf{k}}(\mathbf{k})} \text{ ,}
+\DE= \int{\frac{\mathrm{d}^d \mathbf{k}}{{(2 \pi)}^d} \: A(\mathbf{k},E) \: \mathcal{D}_{\mathbf{k}}(\mathbf{k})} \text{ ,}
 \label{eq:fonction_spectrale}
 \end{equation}
 l'hypothèse des auteurs selon laquelle le désordre n'affecte pas la distribution d'énergie des atomes revient à assimiler la fonction spectrale à une distribution infiniment fine:
@@ -357,26 +353,26 @@ A(\mathbf{k},E) = \delta\left(E- \frac{\hb^2 \mathbf{k}^2}{2m}\right) \text{ .}
 \label{eq:hypothese_urbana_champaign}
 \end{equation}
 
-De nombreuses critiques ont été formulées quant à l'interprétation des données expérimentales \citep{muller2014comment}. Notamment, les très courts temps de propagation dans le désordre ne permettent pas de conclure quant à l'observation à proprement parler d'états localisés, indissociables d'états très lentement diffusifs. La fraction localisée extraite et le seuil de mobilité sont donc largement surestimés. De plus, l'observation de la localisation d'Anderson à trois dimensions requiert l'utilisation d'un désordre fort (comme spécifié par le critère de Ioffe-Regel $k\lb\sim 1$) pour lequel la distribution d'énergie $\mathcal{D}_{\mathrm{E}}(E)$ est profondément modifiée. Les résultats de cette étude ne permettent donc pas de conclure quant à la mesure du seuil de mobilité \citep{pasek2017anderson}.
+De nombreuses critiques ont été formulées quant à l'interprétation des données expérimentales \citep{muller2014comment}. Notamment, les très courts temps de propagation dans le désordre ne permettent pas de conclure quant à l'observation à proprement parler d'états localisés, indissociables d'états très lentement diffusifs. La fraction localisée extraite et le seuil de mobilité sont donc largement surestimés. De plus, l'observation de la localisation d'Anderson à trois dimensions requiert l'utilisation d'un désordre fort (comme spécifié par le critère de Ioffe-Regel $k\lb\sim 1$) pour lequel la distribution d'énergie $\DE$ est profondément modifiée. Les résultats de cette étude ne permettent donc pas de conclure quant à la mesure du seuil de mobilité \citep{pasek2017anderson}.
 
 
 
 \paragraph*{Expérience de Palaiseau}
 La seconde expérience, réalisée à Palaiseau en 2012, se focalise sur l'évolution temporelle de l'expansion d'un condensat de Bose-Einstein de \isotope[87]{Rb} dans la superposition cohérente de deux speckles croisés afin d'obtenir un désordre quasi-isotrope \citep{jendrzejewski2012three}. Le suivi de la densité atomique $n(\mathbf{x},t)$ au cours de l'expansion jusqu'à \SI{6}{\second} témoigne d'une double structure pour les désordres les plus forts, identifiée à l'existence d'une partie localisée et d'un fond diffusif, comme illustré figure \ref{fig:experience_palaiseau}:
 \begin{equation}
-n(\mathbf{x},t)= f_{\mathrm{loc}} n_i(\mathbf{x}) + n_{\mathrm{D}}(\mathbf{x},t) \text{ .}
+n(\mathbf{x},t)= \floc n_i(\mathbf{x}) + n_{\mathrm{D}}(\mathbf{x},t) \text{ .}
 \end{equation}
 
-L'estimation de la fraction localisée $f_{\mathrm{loc}}$ est réalisée en suivant la densité atomique au centre du nuage\footnote{Il s'agit en réalité de la densité atomique intégrée suivant la direction d'imagerie, voir section \ref{sc:imagerie}.}, ajustée par l'asymptote $f_{\mathrm{loc}}+\chi/t$, qui tient compte de la contribution de la partie diffusive aux temps longs, voir figure \ref{fig:experience_palaiseau}. L'utilisation d'une telle limite asymptotique permet ainsi de s'affranchir des temps de propagation finis.
+L'estimation de la fraction localisée $\floc$ est réalisée en suivant la densité atomique au centre du nuage\footnote{Il s'agit en réalité de la densité atomique intégrée suivant la direction d'imagerie, voir section \ref{sc:imagerie}.}, ajustée par l'asymptote $\floc+\chi/t$, qui tient compte de la contribution de la partie diffusive aux temps longs, voir figure \ref{fig:experience_palaiseau}. L'utilisation d'une telle limite asymptotique permet ainsi de s'affranchir des temps de propagation finis.
 
 
 Étant donné la très faible énergie des atomes, l'onde de matière initiale peut être considérée comme une onde plane $\etat{\mathbf{k}=0}$. Contrairement à l'expérience d'Urbana Champaign, le désordre est allumé brusquement, projetant ainsi l'état initial sur les différents états propres du désordre. À l'aide de l'équation \ref{eq:fonction_spectrale}, on trouve que la distribution d'énergie des atomes dans le désordre est donnée par 
 \begin{equation}
-\mathcal{D}_{\mathrm{E}}(E) = A(\mathbf{k}=0,E) \text{ ,}
+\DE = A(\mathbf{k}=0,E) \text{ ,}
 \end{equation}
 calculée numériquement. Une fois la distribution d'énergie des atomes dans le désordre connue, il est possible d'estimer le seuil de mobilité à l'aide de l'équation \ref{eq:fraction_localisee} \citep{piraud2012localisation}.
 
-Si l'observation de l'arrêt de l'expansion d'une partie du nuage est directe dans cette expérience, la détermination du seuil de mobilité est quant à elle très indirecte. En effet, celle-ci repose sur deux calculs intermédiaires: le calcul numérique de la fonction spectrale $A(\mathbf{k}=0,E)$ et le calcul de $E_{\mathrm{c}}$. 
+Si l'observation de l'arrêt de l'expansion d'une partie du nuage est directe dans cette expérience, la détermination du seuil de mobilité est quant à elle très indirecte. En effet, celle-ci repose sur deux calculs intermédiaires: le calcul numérique de la fonction spectrale $A(\mathbf{k}=0,E)$ et le calcul de $\Ec$. 
 
 
 
@@ -417,13 +413,13 @@ Dans le cadre de l'étude de l'effet de l'anisotropie du potentiel sur la positi
 \end{equation}
 où les $\sigma_i$ correspondent aux longueurs de corrélation selon chaque direction.
 
-À l'aide de cette définition, Pasek et al. ont pu comparer les résultats des différentes expériences à une unique courbe universelle $E_{\mathrm{c}}/\VR=\mathcal{F}(\VR/\ER)$ obtenue à l'aide de simulations numériques. La compilation de ces résultats est illustrée figure \ref{fig:seuil_mobilite_delande}.
+À l'aide de cette définition, Pasek et al. ont pu comparer les résultats des différentes expériences à une unique courbe universelle $\Ec/\VR=\mathcal{F}(\VR/\ER)$ obtenue à l'aide de simulations numériques. La compilation de ces résultats est illustrée figure \ref{fig:seuil_mobilite_delande}.
 
 
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{Fig/Localisation/delande_expvsth.pdf}
-\caption{\textbf{Comparaison des résultats expérimentaux à des simulations numériques.} Evolution du seuil de mobilité $E_{\mathrm{c}}$ en fonction de l'amplitude du désordre $\VR$. La ligne pointillée noire correspond à la prédiction universelle $E_{\mathrm{c}}/\VR=\mathcal{F}(\VR/\ER)$. Les résultats de l'expérience de Palaiseau sont représentés par la ligne rouge, tandis que les résultats de l'expérience de Florence sont reportés par des points bleus. Les résultats de l'expérience d'Urbana Champaign sont représentés par des points verts dans l'encart. Figure tirée de \citep{pasek2017anderson}.}
+\caption{\textbf{Comparaison des résultats expérimentaux à des simulations numériques.} Evolution du seuil de mobilité $\Ec$ en fonction de l'amplitude du désordre $\VR$. La ligne pointillée noire correspond à la prédiction universelle $\Ec/\VR=\mathcal{F}(\VR/\ER)$. Les résultats de l'expérience de Palaiseau sont représentés par la ligne rouge, tandis que les résultats de l'expérience de Florence sont reportés par des points bleus. Les résultats de l'expérience d'Urbana Champaign sont représentés par des points verts dans l'encart. Figure tirée de \citep{pasek2017anderson}.}
 \label{fig:seuil_mobilite_delande}
 \end{figure}
 
@@ -433,13 +429,30 @@ Les résultats de l'expérience d'Urbana Champaign, en points verts dans l'encar
 
 
 \subsection{Nécessité d'une spectroscopie pour sonder le régime critique}
-besoin de connaître la distribution d'énergie des états dans le désordre: fonction spectrale. Besoin de la mesurer. Donc besoin d'adresser spécifiquement les niveaux d'énergie du désordre.
-Dans un second temps, pour sonder le régime critique, besoin de maitriser le paramètre de contrôle de la transition. 
-Protocole de mesure du régime critique: étape de chargement du désordre par spectroscopie puis expansion.
-Approche retenue RF-2photons?
+Les trois expériences citées précédemment reposent sur une détermination indirecte du seuil de mobilité, et nécessitent une estimation numérique de la distribution d'énergie $\DE$, capitale pour calculer le seuil de mobilité. Comme nous l'avons vu, l'obtention de la distribution d'énergie passe par l'intermédiaire de la fonction spectrale $A(\mathbf{k},E)$, qu'aucune de ces expériences n'a mesurée. 
+
+De plus, dans le cas d'une estimation fiable de la fonction spectrale, la coexistence d'une phase localisée et d'une phase diffusive témoigne d'une large distribution d'énergie, rendant l'étude du régime critique et plus particulièrement des exposants critiques de la transition impossible.
+
+Il apparaît donc que, dans l'optique de sonder le régime critique, il est important de maîtriser le paramètre de contrôle de la transition d'Anderson, c'est à dire l'énergie $E$ de l'onde. Pour cela, une nouvelle approche expérimentale résolue en énergie s'avère nécessaire, approche pour laquelle il est possible de peupler sélectivement les états $\etat{E}$ d'énergie bien définie du désordre. Il s'agit donc de réaliser une spectroscopie du désordre.
 
 
 
+
+
+Le protocole expérimental de spectroscopie de la transition d'Anderson est proche de celui de l'expérience de Florence: un état initial $\etat{i}$ libre de faible énergie est transféré sélectivement dans un état propre $\etat{E_\alpha}$ du désordre dans un premier temps, puis une expansion de plusieurs secondes dans le désordre permet de déterminer si cet état est localisé, ou non. 
+
+
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Localisation/spectroscopie_anderson.pdf}
+\caption{\textbf{Approche spectroscopique de l'étude la transition d'Anderson.} Dans l'optique de sonder la transition d'Anderson, il est nécessaire de peupler sélectivement les différentes énergies du désordre. Pour cela, l'onde est préparée dans un état insensible au désordre, puis est transférée à une énergie bien définie dans le désordre à l'aide d'une spectroscopie. Enfin, l'expansion du nuage permet de caractériser l'énergie adressée en terme de localisation ou de diffusion.}
+\label{fig:spectroscopie_anderson}
+\end{figure}
+
+
+Depuis ces premiers résultats expérimentaux novateurs, la mise en place d'une telle spectroscopie sur notre expérience a permit de mesurer les fonctions spectrales $A(\mathbf{k}=0,E)$, démontrant notre capacité à adresser des énergies spécifiques dans le désordre \citep{volchkov2018measurement}. Cependant, différentes limitations expérimentales ont empêché de procéder aux mesures d'expansion nécessaires à la caractérisation des différents états d'énergie. Les deux principales sources de limitation identifiées seront discutées dans les chapitres \ref{ch:new_exp} et \ref{ch:Speckle}.
 
 
 \begin{comment}

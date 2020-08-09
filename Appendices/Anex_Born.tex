@@ -1,1 +1,140 @@
-\chapter{Calcul du temps de diffusion élastique par le développement de Born}
+\chapter{Calculs du temps de diffusion élastique}
+
+
+\section{Élements de calcul du temps de diffusion élastique à partir du développement de Born}
+La fonction de Green moyennée est donnée par 
+\begin{equation}
+\widetilde{G}(E,\mathbf{k})=\frac{1}{E-E_{\mathrm{k}}-\overline{V}-\Sigma(E,\mathbf{k})}
+\end{equation}
+
+
+\begin{equation}
+\Sigma=\Sigma^{(2)} + \Sigma^{(3)} + \dots
+\end{equation}
+avec $\Sigma^{(2)}=\overline{V G_0 V}$ et $\Sigma{(3)}=\overline{V G_0 V G_0 V}$.
+
+\begin{equation}
+\overline{V((\mathbf{x}_{\mathrm{1}})V(\mathbf{x}_{\mathrm{2}})}=\VR^2 e^{-\frac{(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}})^2}{\sigma^2}}
+\end{equation}
+
+\begin{align}
+\overline{V(\mathbf{x}_{\mathrm{1}})V(\mathbf{x}_{\mathrm{2}})V(\mathbf{x}_{\mathrm{3}})}&= 2\VR^3 e^{-\frac{(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}})^2}{2\sigma^2}}e^{-\frac{(\mathbf{x}_{\mathrm{3}}-\mathbf{x}_{\mathrm{2}})^2}{2\sigma^2}}e^{-\frac{(\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{3}})^2}{2\sigma^2}} \\ 
+&=2\VR^3 \gamma(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}})\gamma(\mathbf{x}_{\mathrm{3}}-\mathbf{x}_{\mathrm{2}})\gamma(\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{3}})
+\end{align}
+
+
+\section{Calcul de la Self-Energy au premier ordre}
+\begin{align}
+\left\langle \mathbf{k} | \Sigma^{(2)} | \mathbf{k}' \right\rangle &= \left\langle \mathbf{k} | \overline{V G_0 V} | \mathbf{k}' \right\rangle \\
+&= \int{ \diff \mathbf{x}_{\mathrm{1}} \diff \mathbf{x}_{\mathrm{2}} \: \left\langle \mathbf{k} | \mathbf{x}_{\mathrm{1}} \right\rangle \overline{V(\mathbf{x}_{\mathrm{1}}) \left\langle \mathbf{x}_{\mathrm{1}} | G_0 | \mathbf{x}_{\mathrm{2}}\right\rangle V(\mathbf{x}_{\mathrm{2}}) } \left\langle \mathbf{x}_{\mathrm{2}} |\mathbf{k}' \right\rangle} \\
+&= \sum_{\mathbf{k}_{\mathrm{1}}}{\int{\diff\mathbf{x}_{\mathrm{1}} \diff\mathbf{x}_{\mathrm{2}} \: \left\langle \mathbf{k} |\mathbf{x}_{\mathrm{1}} \right\rangle \left\langle \mathbf{x}_{\mathrm{2}} | \mathbf{k}' \right\rangle \left\langle \mathbf{x}_{\mathrm{1}} | \mathbf{k}_{\mathrm{1}} \right\rangle \left\langle \mathbf{k}_{\mathrm{1}} | \mathbf{x}_{\mathrm{2}} \right\rangle G_0(\mathbf{k}_{\mathrm{1}})\overline{V(\mathbf{x}_{\mathrm{1}})V(\mathbf{x}_{\mathrm{2}})}}} \\
+&= \lim\limits_{L\rightarrow\infty} \left( \sum_{\mathbf{k}_{\mathrm{1}}}{\int{\diff\mathbf{x}_{\mathrm{1}}\diff\mathbf{x}_{\mathrm{2}}\: C(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}}) G_0(\mathbf{k}_{\mathrm{1}}) \frac{1}{L^{2d}} e^{i \mathbf{k}_{\mathrm{1}}(\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{2}})} e^{i \mathbf{x}_{\mathrm{2}} \mathbf{k}'} e^{-i \mathbf{x}_{\mathrm{1}} \mathbf{k}} }} \right) \\
+&= \lim\limits_{L\rightarrow\infty} \left( \int{\diff\mathbf{k}_{\mathrm{1}} \: \left(\frac{L}{2\pi}\right)^d G_0(\mathbf{k}_{\mathrm{1}}) \int{\diff\Delta\mathbf{x} \: C(\Delta\mathbf{x}) \frac{e^{i \Delta\mathbf{x}(\mathbf{k}'-\mathbf{k}_{\mathrm{1}})}}{L^d}} \int{\diff\mathbf{x}_{\mathrm{1}} \: \frac{e^{i \mathbf{x}_{\mathrm{1}}(\mathbf{k}'-\mathbf{k})}}{L^d}} } \right) \\
+&=\int{\frac{\diff\mathbf{k}_{\mathrm{1}}}{(2\pi)^d} \: G_0(\mathbf{k}_{\mathrm{1}}) \lim\limits_{L\rightarrow\infty}\left( \int{\diff\Delta\mathbf{x} \: C(\Delta\mathbf{x}) e^{i\Delta\mathbf{x}(\mathbf{k}'-\mathbf{k}_{\mathrm{1}})}} \int{\diff\mathbf{x}_{\mathrm{1}} \: \left\langle \mathbf{k} | \mathbf{x}_{\mathrm{1}}\right\rangle \left\langle \mathbf{x}_{\mathrm{1}} | \mathbf{k}' \right\rangle } \right)} \\
+&= \left\langle \mathbf{k} | \mathbf{k}' \right\rangle \int{\frac{\diff\mathbf{k}_{\mathrm{1}}}{(2\pi)^d} \: G_0(\mathbf{k}_{\mathrm{1}}) \widetilde{C}(\mathbf{k}'-\mathbf{k}_{\mathrm{1}})}
+\end{align}
+
+
+
+
+
+
+
+
+\section{Calcul de la Self-Energy au second ordre}
+
+
+
+\begin{equation}
+\widetilde{G_0}(\mathbf{k})=\frac{1}{E-k^2/2}-i \pi \delta(E-k^2/2)
+\end{equation}
+
+\begin{align}
+\gamma(\mathbf{x})=e^{-\frac{\mathrm{x}^2}{2\sigma^2}} \quad \rightarrow \quad \tilde{\gamma}(\mathbf{k}) &= (2\pi \sigma^2)^{d/2} e^{-\frac{k^2\sigma^2}{2}} \\
+&= (2\pi \sigma^2)^{d/2} V(\mathbf{k})
+\end{align}
+
+\begin{align}
+\Sigma^{(3)}(\mathbf{x}_{\mathrm{1}},\mathbf{x}_{\mathrm{2}}) &= \int{\diff \mathbf{x} \: G_0(\mathbf{x}_{\mathrm{1}} - \mathbf{x}) G_0(\mathbf{x}-\mathbf{x}_{\mathrm{2}}) \overline{V(\mathbf{x}_{\mathrm{1}})V(\mathbf{x})V(\mathbf{x}_{\mathrm{2}})}} \\
+&=2 \VR^3 \int{\diff\mathbf{x} \: G_0(\mathbf{x}_{\mathrm{1}} - \mathbf{x}) G_0(\mathbf{x}-\mathbf{x}_{\mathrm{2}}) \gamma(\mathbf{x}_{\mathrm{1}}-\mathbf{x})\gamma(\mathbf{x}-\mathbf{x}_{\mathrm{2}})\gamma(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}})} \\
+&=2 \VR^3 \int{\diff\mathbf{x} \int{\frac{\diff\mathbf{k}_{\mathrm{1}}\diff\mathbf{k}_{\mathrm{2}}\diff\mathbf{k}_{\mathrm{3}}\diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}}}{(2\pi)^{5d}}\: \widetilde{G_0}(\mathbf{k}_{\mathrm{1}}) \widetilde{G_0}(\mathbf{k}_{\mathrm{2}}) \tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}}) }} \\
+&\nonumber \qquad\times e^{-i\mathbf{k}_{\mathrm{1}}(\mathbf{x}_{\mathrm{1}}-\mathbf{x})} e^{-i\mathbf{k}_{\mathrm{2}}(\mathbf{x}-\mathbf{x}_{\mathrm{2}})} e^{-i\mathbf{k}_{\mathrm{3}}(\mathbf{x}_{\mathrm{1}}-\mathbf{x})} e^{-i\mathbf{k}_{\mathrm{4}}(\mathbf{x}-\mathbf{x}_{\mathrm{2}})} e^{-i\mathbf{k}_{\mathrm{5}}(\mathbf{x}_{\mathrm{2}}-\mathbf{x}_{\mathrm{1}})} \\
+&= \frac{2\VR^2}{(2\pi)^{5d}} \int{\diff\mathbf{k}_{\mathrm{1}}\diff\mathbf{k}_{\mathrm{2}}\diff\mathbf{k}_{\mathrm{3}}\diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}}\: \widetilde{G_0}(\mathbf{k}_{\mathrm{1}}) \widetilde{G_0}(\mathbf{k}_{\mathrm{2}}) \tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}})}\\
+&\nonumber \qquad \times e^{-i\mathbf{x}_{\mathrm{1}} (\mathbf{k}_{\mathrm{1}}+\mathbf{k}_{\mathrm{3}}-\mathbf{k}_{\mathrm{5}})} e^{-i\mathbf{x}_{\mathrm{2}}(\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{4}}-\mathbf{k}_{\mathrm{2}})} \int{\diff\mathbf{x}\: e^{-i\mathbf{x}(\mathbf{k}_{\mathrm{2}}-\mathbf{k}_{\mathrm{1}}-\mathbf{k}_{\mathrm{3}}+\mathbf{k}_{\mathrm{4}})}}\\
+&=\frac{2\VR^3}{(2\pi)^{4d}} \int{\diff\mathbf{k}_{\mathrm{1}}\diff\mathbf{k}_{\mathrm{2}}\diff\mathbf{k}_{\mathrm{3}}\diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}}\: \widetilde{G_0}(\mathbf{k}_{\mathrm{1}}) \widetilde{G_0}(\mathbf{k}_{\mathrm{2}}) \tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}})}\\
+&\nonumber \qquad \times e^{-i\mathbf{x}_{\mathrm{1}} (\mathbf{k}_{\mathrm{1}}+\mathbf{k}_{\mathrm{3}}-\mathbf{k}_{\mathrm{5}})} e^{-i\mathbf{x}_{\mathrm{2}}(\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{4}}-\mathbf{k}_{\mathrm{2}})} \delta(\mathbf{k}_{\mathrm{2}} +\mathbf{k}_{\mathrm{4}} -\mathbf{k}_{\mathrm{1}} -\mathbf{k}_{\mathrm{3}}) \\
+&= \frac{2\VR^3}{(2\pi)^{4d}} \int{\diff\mathbf{k}_{\mathrm{2}}\diff\mathbf{k}_{\mathrm{3}}\diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}}\: \widetilde{G_0}(\mathbf{k}_{\mathrm{2}}+\mathbf{k}_{\mathrm{4}}-\mathbf{k}_{\mathrm{3}}) \widetilde{G_0}(\mathbf{k}_{\mathrm{2}})\tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}})} \\
+&\nonumber \qquad \times e^{-i(\mathbf{k}_{\mathrm{2}}+\mathbf{k}_{\mathrm{4}}-\mathbf{k}_{\mathrm{5}})(\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{2}})}\\
+&=\Sigma^{(3)}(\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{2}})
+\end{align}
+montrant l'invariance par translation du système ($G_0$ est diagonal dans l'espace des $\mathbf{k}$ et la fonction de corrélation à trois points est aussi invariante par translation).
+
+\begin{align}
+\Sigma^{(3)}(\mathbf{k})&=\int{\diff\mathbf{x} \: e^{i \mathbf{k}\mathbf{x}} \Sigma^{(3)}(\mathbf{x})} \\
+&= \frac{2\VR^3}{(2\pi)^{4d}} \int{\diff\mathbf{x} \: \int{\diff\mathbf{k}_{\mathrm{2}}\diff\mathbf{k}_{\mathrm{3}}\diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}}\: \widetilde{G_0}(\mathbf{k}_{\mathrm{2}}+\mathbf{k}_{\mathrm{4}}-\mathbf{k}_{\mathrm{3}}) \widetilde{G_0}(\mathbf{k}_{\mathrm{2}})\tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}})}} \\
+&\nonumber \qquad \times e^{-i \mathbf{x} (\mathbf{k}_{\mathrm{2}} + \mathbf{k}_{\mathrm{4}} - \mathbf{k}_{\mathrm{5}} - \mathbf{k})} \\
+&= \frac{2\VR^3}{(2\pi)^{3d}} \int{\diff\mathbf{k}_{\mathrm{2}}\diff\mathbf{k}_{\mathrm{3}}\diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}}\: \widetilde{G_0}(\mathbf{k}_{\mathrm{2}}+\mathbf{k}_{\mathrm{4}}-\mathbf{k}_{\mathrm{3}}) \widetilde{G_0}(\mathbf{k}_{\mathrm{2}})\tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}})}\\
+&\nonumber \qquad \times\delta(\mathbf{k}_{\mathrm{2}} + \mathbf{k}_{\mathrm{4}} - \mathbf{k}_{\mathrm{5}} - \mathbf{k}) \\
+&= \frac{2\VR^3}{(2\pi)^{3d}} \int{\diff\mathbf{k}_{\mathrm{3}} \diff\mathbf{k}_{\mathrm{4}}\diff\mathbf{k}_{\mathrm{5}} \: \widetilde{G_0}(\mathbf{k}+\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{3}}) \widetilde{G_0}(\mathbf{k}+\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{3}})\tilde{\gamma}(\mathbf{k}_{\mathrm{4}})\tilde{\gamma}(\mathbf{k}_{\mathrm{5}})} 
+\end{align}
+
+On fait le changement de variables $\mathbf{k}_{\mathrm{3}}'=\mathbf{k}+\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{3}}$ et $\mathbf{k}_{\mathrm{4}}'=\mathbf{k}+\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{4}}$:
+\begin{align}
+\Sigma^{(3)}(\mathbf{k})&= \frac{2\VR^3}{(2\pi)^{3d}} \int{\diff\mathbf{k}_{\mathrm{5}} \: \left( \int{\diff\mathbf{k}_{\mathrm{3}}'\: \widetilde{G_0}(\mathbf{k}_{\mathrm{3}}')\tilde{\gamma}(\mathbf{k}+\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{3}}')} \right) \left( \int{\diff\mathbf{k}_{\mathrm{4}}'\: \widetilde{G_0}(\mathbf{k}_{\mathrm{4}}') \tilde{\gamma}(\mathbf{k}+\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{4}}')}\right) \tilde{\gamma}(\mathbf{k}_{\mathrm{5}}) } \\
+&= \frac{2\VR^3}{(2\pi)^{3d}} \int{\diff\mathbf{k}_{\mathrm{5}}' \: \left( \int{\diff\mathbf{k}_{\mathrm{3}}'\: \widetilde{G_0}(\mathbf{k}_{\mathrm{3}}')\tilde{\gamma}(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')} \right) \left( \int{\diff\mathbf{k}_{\mathrm{4}}'\: \widetilde{G_0}(\mathbf{k}_{\mathrm{4}}') \tilde{\gamma}(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{4}}')}\right) \tilde{\gamma}(\mathbf{k}_{\mathrm{5}}') }
+\end{align}
+en faisant le changement de variables $\mathbf{k}_{\mathrm{5}}'=-\mathbf{k}_{\mathrm{5}}$ et $\tilde{\gamma}(\mathbf{k}) $ est une fonction paire.
+
+On fait le calcul pour $d=2$.
+\begin{align}
+\mathrm{Im}\left( \Sigma^{(3)}(\mathbf{k})\right)&= \frac{2\VR^3 (2\pi\sigma^2)^3}{(2\pi)^6} \\
+&\nonumber \qquad\times\int{\diff\mathbf{k}_{\mathrm{5}}' \: \left( \int{\diff\mathbf{k}_{\mathrm{3}}' \: \frac{V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')}{E-k_{\mathrm{3}}'^2/2}} (-\pi) \int{\diff\mathbf{k}_{\mathrm{4}}' \: \delta(E-k_{\mathrm{4}}'^2/2) \: V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathbf{4}}')} \right.} \\
+&\nonumber \qquad \left.-\pi\int{\diff\mathbf{k}_{\mathrm{3}}' \: \delta(E-k_{\mathrm{3}}'^2/2) V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')} \int{\diff\mathbf{k}_{\mathrm{4}}' \: \frac{V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{4}}')}{E-k_{\mathrm{4}}'^2/2}}\right) V(\mathbf{k}_{\mathrm{5}}') \\
+&= \frac{2\VR^3 (2\pi\sigma^2)^3}{(2\pi)^6} \int{\diff\mathbf{k}_{\mathrm{5}}' \: (-2\pi) V(\mathbf{k}_{\mathrm{5}}')} \\
+&\nonumber\qquad \times\underbrace{\left(\int{\diff\mathbf{k}_{\mathrm{3}}' \:\frac{V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')}{E-k_{\mathrm{3}}'^2/2}}\right)}_{(a)} \times \underbrace{\left(\int{\diff\mathbf{k}_{\mathrm{4}}'\:\delta(E-k_{\mathrm{4}}'^2/2) V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{4}}')}\right)}_{(b)}
+\end{align}
+
+\begin{align}
+(a)&= \int{\diff\mathbf{k}_{\mathrm{3}}' \: \frac{V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')}{E-k_{\mathrm{3}}'^2/2}} \\
+&= \int{\diff\mathbf{k}_{\mathrm{3}}' \: \frac{1}{E-k_{\mathrm{3}}'^2/2} e^{-(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')^2 \sigma^2/2}} \\
+&= \int_{\R^+}{\diff k_{\mathrm{3}}' k_{\mathrm{3}}' \int_0^{\pi}{\diff\theta_{\mathrm{3}}'\: \frac{1}{E-k_{\mathrm{3}}'^2/2}e^{-\sigma^2/2\times (k_{\mathrm{3}}'^2+|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2-2k_{\mathrm{3}}' |\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| \cos{\theta_{\mathrm{3}}'})}}}
+\end{align}
+et en utilisant $\int_0^{2\pi}{\diff\theta\:\exp{(x\cos{\theta})}} =2\pi \mathrm{I_0}(x)$ pour $x>0$.
+
+\begin{align}
+(a)&=\int_{\R^+}{\diff k_{\mathrm{3}}' k_{\mathrm{3}}' e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2 \sigma^2/2} \frac{e^{-k_{\mathrm{3}}'^2\sigma^2/2}}{E-k_{\mathrm{3}}'^2/2} \: 2\pi \mathrm{I_0}(k_{\mathrm{3}}' |\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma^2)} \\
+&= 2\pi e^{-\frac{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2}{2}} \: \int_{\R^+}{\diff\epsilon'\:\frac{e^{-\epsilon'}}{\epsilon-\epsilon'}\mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma\sqrt{2\epsilon'})}
+\end{align}
+en faisant apparaître les énergies adimensionnées $\epsilon=E/\ER=E\sigma^2$ en unités naturelles. l'énergie cinétique s'écrit $\epsilon'=E_{\mathrm{k}}/\ER=k_{\mathrm{3}}'^2\sigma^2/2$.
+
+\begin{align}
+(b)&=\int{diff\mathbf{k}_{\mathrm{4}}' \: \delta(E-k_{\mathrm{4}}'^2/2) V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}' -\mathbf{k}_{\mathrm{4}}')} \\
+&= \int{\diff\mathbf{k}_{\mathrm{4}}' \: \delta(E-k_{\mathrm{4}}'^2/2) e^{-(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{4}}')\sigma^2/2}}\\
+&=\int_{\R^+}{\diff k_{\mathrm{4}}' k_{\mathrm{4}}' \: \int_0^{2\pi}{\diff\theta_{\mathrm{4}}' \: \delta(E-k_{\mathrm{4}}'^2/2) e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2/2} e^{-\sigma^2 k_{\mathrm{4}}'^2/2} e^{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| k_{\mathrm{4}}' \cos{\theta_{\mathrm{4}}'} } }} \\
+&=2\pi e^{-\frac{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2}{2}} \int_{\R^+}{\diff k_{\mathrm{4}}' k_{\mathrm{4}}' \:\delta(E- k_{\mathrm{4}}'^2/2) e^{-\sigma^2 k_{\mathrm{4}}'^2/2} \: \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| \sigma^2 k_{\mathrm{4}}')}\\
+&=2\pi e^{-\frac{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2}{2}} \int_{\R^+}{\diff\epsilon' \:\delta(\epsilon-\epsilon') e^{-\epsilon'} \: \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| \sigma \sqrt{2\epsilon'})}\\
+&=2\pi e^{-\frac{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2}{2}} e^{-\epsilon} \: \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| \sigma \sqrt{2\epsilon})
+\end{align}
+avec $\epsilon'=k_{\mathrm{4}}'^2\sigma^2/2$.
+
+
+\begin{align}
+\mathrm{Im}\left( \Sigma^{(3)}(\mathbf{k})\right)&= \frac{2 \VR^3 (2\pi\sigma^2)^3)}{(2\pi)^6} \int{\diff\mathbf{k}_{\mathrm{5}}' \: (-2\pi) 2\pi e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2/2} \int_{\R^+}{\diff\epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma\sqrt{2\epsilon'})}}\\
+&\nonumber \qquad \times 2\pi e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2/2} e^{-\epsilon} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma \sqrt{2\epsilon}) e^{-k_{\mathrm{5}}'^2\sigma^2/2} \\
+ &= -2\VR^3\sigma^6 \int{\diff\mathbf{k}_{\mathrm{5}}' \: e^{-\epsilon} e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2 \sigma^2} e^{-k_{\mathrm{5}}'^2 \sigma^2/2} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma \sqrt{2}\epsilon)} \\
+ &\nonumber \qquad \times \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma \sqrt{2\epsilon'})}
+\end{align}
+
+
+
+On fait le changement de variable $\mathbf{k}_{\mathrm{5}}''=\mathbf{k}-\mathbf{k}_{\mathrm{5}}'$:
+\begin{align}
+\mathrm{Im}\left( \Sigma^{(3)}(\mathbf{k})\right)&= -2\VR^3\sigma^6 \int{\diff\mathbf{k}_{\mathrm{5}}'' \: e^{-\epsilon} e^{-k_{\mathrm{5}}''^2\sigma^2} e^{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}''|^2\sigma^2/2} \mathrm{I_0}(k_{\mathrm{5}}''\sigma \sqrt{2\epsilon})} \\
+&\nonumber\qquad \times \int_{\R^+}{\diff\epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon'})} \\
+&=-4 \pi \VR^3\sigma^6 e^{-\epsilon} e^{-k^2\sigma^2/2} \int_{\R^+}{\diff k_{\mathrm{5}}'' \: k_{\mathrm{5}}'' e^{-\frac{3}{2}k_{\mathrm{5}}''^2 \sigma^2} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon})} \\
+&\nonumber \qquad \times \int_0^{2\pi}{\diff\theta_{\mathrm{5}}'' \: e^{\sigma^2 k k_{\mathrm{5}}'' \cos\theta_{\mathrm{5}}''} \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon'})}} \\
+&=-4 \pi \VR^3\sigma^6 e^{-\epsilon} e^{-k^2\sigma^2/2} \\
+&\nonumber \qquad \times\int_{\R^+}{\diff k_{\mathrm{5}}'' \: k_{\mathrm{5}}'' e^{-\frac{3}{2}k_{\mathrm{5}}''^2 \sigma^2} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon})^2 \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon'})}} \\
+&= -4 \pi \frac{\VR^3}{\ER^2} e^{-k^2\sigma^2} \int_{\R^+}{\diff k' \: k' e^{-\frac{3}{2}k'^2} \mathrm{I_0}(k' k \sigma)^2 \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{k^2\sigma^2/2-\epsilon'} \mathrm{I_0}(k' \sqrt{2\epsilon'})}}
+\end{align}
+en posant $k'=k_{\mathrm{5}}''\sigma$ et en faisant l'approximation en couche $E=\hb^2k^2/2m \rightarrow \epsilon=k^2\sigma^2/2$.
