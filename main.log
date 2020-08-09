@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  7 AUG 2020 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  9 AUG 2020 19:32
 entering extended mode
 **./main.tex
 (main.tex
@@ -1458,7 +1458,7 @@ Chapitre 1.
 File: Fig/Localisation/diffusion_classique.pdf Graphic file (type pdf)
 <use Fig/Localisation/diffusion_classique.pdf>
 Package pdftex.def Info: Fig/Localisation/diffusion_classique.pdf  used on inpu
-t line 48.
+t line 49.
 (pdftex.def)             Requested size: 426.79135pt x 195.12878pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
@@ -1468,14 +1468,14 @@ Package microtype Info: Character `029' is missing
 File: Fig/Localisation/localisation_faible.pdf Graphic file (type pdf)
 <use Fig/Localisation/localisation_faible.pdf>
 Package pdftex.def Info: Fig/Localisation/localisation_faible.pdf  used on inpu
-t line 112.
+t line 113.
 (pdftex.def)             Requested size: 384.1096pt x 155.01239pt.
  [9 <./Fig/Localisation/localisation_faible.pdf>] [10]
 <Fig/Localisation/transition_anderson.pdf, id=4023, 463.80559pt x 155.15831pt>
 File: Fig/Localisation/transition_anderson.pdf Graphic file (type pdf)
 <use Fig/Localisation/transition_anderson.pdf>
 Package pdftex.def Info: Fig/Localisation/transition_anderson.pdf  used on inpu
-t line 190.
+t line 191.
 (pdftex.def)             Requested size: 426.79135pt x 142.78288pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1487,7 +1487,7 @@ File: Fig/Localisation/experiences_localisation_anderson.pdf Graphic file (type
  pdf)
 <use Fig/Localisation/experiences_localisation_anderson.pdf>
 Package pdftex.def Info: Fig/Localisation/experiences_localisation_anderson.pdf
-  used on input line 237.
+  used on input line 238.
 (pdftex.def)             Requested size: 426.79135pt x 224.83719pt.
  [13 <./Fig/Localisation/experiences_localisation_anderson.pdf>]
 <Fig/Localisation/localisation_1D_atomes.pdf, id=6141, 470.89038pt x 205.39243p
@@ -1495,7 +1495,7 @@ t>
 File: Fig/Localisation/localisation_1D_atomes.pdf Graphic file (type pdf)
 <use Fig/Localisation/localisation_1D_atomes.pdf>
 Package pdftex.def Info: Fig/Localisation/localisation_1D_atomes.pdf  used on i
-nput line 268.
+nput line 269.
 (pdftex.def)             Requested size: 426.79135pt x 186.16148pt.
  [14]
 Underfull \vbox (badness 6842) has occurred while \output is active []
@@ -1506,13 +1506,13 @@ Underfull \vbox (badness 6842) has occurred while \output is active []
 File: Fig/Localisation/localisation_3D_atomes_v1.pdf Graphic file (type pdf)
 <use Fig/Localisation/localisation_3D_atomes_v1.pdf>
 Package pdftex.def Info: Fig/Localisation/localisation_3D_atomes_v1.pdf  used o
-n input line 295.
+n input line 296.
 (pdftex.def)             Requested size: 426.79135pt x 124.61124pt.
 <Fig/Localisation/kicked_rotor.pdf, id=6216, 288.69308pt x 208.12563pt>
 File: Fig/Localisation/kicked_rotor.pdf Graphic file (type pdf)
 <use Fig/Localisation/kicked_rotor.pdf>
 Package pdftex.def Info: Fig/Localisation/kicked_rotor.pdf  used on input line 
-311.
+312.
 (pdftex.def)             Requested size: 256.07741pt x 184.61511pt.
 
 Underfull \vbox (badness 2237) has occurred while \output is active []
@@ -1520,29 +1520,29 @@ Underfull \vbox (badness 2237) has occurred while \output is active []
  [16 <./Fig/Localisation/localisation_3D_atomes_v1.pdf>] [17 <./Fig/Localisatio
 n/kicked_rotor.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 337.
+(Font)              <9> on input line 338.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 337.
+(Font)              <7> on input line 338.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 337.
+(Font)              <5> on input line 338.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 337.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 338.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 337.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 338.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 337.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 338.
  [18]
 <Fig/Localisation/experience_palaiseau.pdf, id=6472, 369.0601pt x 267.69395pt>
 File: Fig/Localisation/experience_palaiseau.pdf Graphic file (type pdf)
 <use Fig/Localisation/experience_palaiseau.pdf>
 Package pdftex.def Info: Fig/Localisation/experience_palaiseau.pdf  used on inp
-ut line 380.
+ut line 381.
 (pdftex.def)             Requested size: 426.79135pt x 309.5898pt.
 <Fig/Localisation/experience_florence.pdf, id=6478, 502.56158pt x 456.30852pt>
 File: Fig/Localisation/experience_florence.pdf Graphic file (type pdf)
 <use Fig/Localisation/experience_florence.pdf>
 Package pdftex.def Info: Fig/Localisation/experience_florence.pdf  used on inpu
-t line 393.
+t line 394.
 (pdftex.def)             Requested size: 426.79135pt x 387.52986pt.
  [19] [20 <./Fig/Localisation/experience_palaiseau.pdf>] [21 <./Fig/Localisatio
 n/experience_florence.pdf>]
@@ -1550,7 +1550,7 @@ n/experience_florence.pdf>]
 File: Fig/Localisation/delande_expvsth.pdf Graphic file (type pdf)
 <use Fig/Localisation/delande_expvsth.pdf>
 Package pdftex.def Info: Fig/Localisation/delande_expvsth.pdf  used on input li
-ne 420.
+ne 421.
 (pdftex.def)             Requested size: 256.07741pt x 219.13478pt.
 
 Underfull \vbox (badness 1231) has occurred while \output is active []
@@ -1561,7 +1561,7 @@ Underfull \vbox (badness 1231) has occurred while \output is active []
 File: Fig/Localisation/spectroscopie_anderson.pdf Graphic file (type pdf)
 <use Fig/Localisation/spectroscopie_anderson.pdf>
 Package pdftex.def Info: Fig/Localisation/spectroscopie_anderson.pdf  used on i
-nput line 448.
+nput line 449.
 (pdftex.def)             Requested size: 426.79135pt x 134.6781pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2047,30 +2047,41 @@ t line 254.
 )
 (Chapters/TauS_NJP.tex [122 <./Fig/TauS_PRL/depart_quadratique_taus.pdf>]
 Chapitre 6.
-) (Appendices/Anex_speckle.tex [123
 
-] [124
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [123
+
+]
+[124]) (Appendices/Anex_speckle.tex
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+Make it at least 25.28426pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[125] [126
 
 ]
 Annexe A.
-[125] [126] [127] [128] [129]) (Appendices/Anex_Born.tex [130]
+[127] [128] [129] [130] [131]) (Appendices/Anex_Born.tex [132]
 Annexe B.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [131
+ [133
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [132]
+ [134]
 Overfull \hbox (5.82803pt too wide) detected at line 85
 []
  []
 
-[133] [134]) (main.bbl [135] [136
+[135] [136]) (main.bbl [137] [138
 
-] [137] [138]
+] [139] [140]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 36.
 
@@ -2082,7 +2093,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[139] [140] [141] [142]) [143]
+[141] [142] [143] [144]) [145]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
  (main.aux)
@@ -2095,10 +2106,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 31519 strings out of 480934
- 604787 string characters out of 2899917
- 1004403 words of memory out of 3000000
- 45532 multiletter control sequences out of 15000+200000
+ 31534 strings out of 480934
+ 605051 string characters out of 2899917
+ 1004615 words of memory out of 3000000
+ 45534 multiletter control sequences out of 15000+200000
  730680 words of font info for 347 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,1613b,1134s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2145,9 +2156,9 @@ iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 
-Output written on main.pdf (143 pages, 18408268 bytes).
+Output written on main.pdf (145 pages, 18417499 bytes).
 PDF statistics:
- 16177 PDF objects out of 18468 (max. 8388607)
- 722 named destinations out of 1000 (max. 500000)
+ 16203 PDF objects out of 18468 (max. 8388607)
+ 735 named destinations out of 1000 (max. 500000)
  70689 words of extra memory for PDF output out of 74296 (max. 10000000)
 

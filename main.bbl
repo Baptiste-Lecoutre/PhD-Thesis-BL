@@ -1,4 +1,4 @@
-\begin{thebibliography}{91}
+\begin{thebibliography}{92}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -512,6 +512,16 @@ I.~Shlimak, M.~Kaveh, R.~Ussyshkin, V.~Ginodman, and L.~Resnick.
   metal-insulator transition at nonzero temperatures: universality of the
   transition.
 \newblock \emph{Physical review letters}, 77\penalty0 (6):\penalty0 1103, 1996.
+
+\bibitem[Signoles et~al.(2019)Signoles, Lecoutre, Richard, Lim, Denechaud,
+  Volchkov, Angelopoulou, Jendrzejewski, Aspect, Sanchez-Palencia,
+  et~al.]{signoles2019ultracold}
+A.~Signoles, B.~Lecoutre, J.~Richard, L.-K. Lim, V.~Denechaud, V.~V. Volchkov,
+  V.~Angelopoulou, F.~Jendrzejewski, A.~Aspect, L.~Sanchez-Palencia, et~al.
+\newblock Ultracold atoms in disordered potentials: elastic scattering time in
+  the strong scattering regime.
+\newblock \emph{New Journal of Physics}, 21\penalty0 (10):\penalty0 105002,
+  2019.
 
 \bibitem[Skipetrov and Sokolov(2014)]{skipetrov2014absence}
 S.~E. Skipetrov and I.~M. Sokolov.
