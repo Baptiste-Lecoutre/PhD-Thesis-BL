@@ -1,4 +1,4 @@
-\begin{thebibliography}{92}
+\begin{thebibliography}{96}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -290,6 +290,14 @@ M.~Lopez, J.-F. Cl{\'e}ment, P.~Szriftgiser, J.~C. Garreau, and D.~Delande.
 \newblock \emph{Physical Review Letters}, 108\penalty0 (9):\penalty0 095701,
   2012.
 
+\bibitem[Lugan et~al.(2009)Lugan, Aspect, Sanchez-Palencia, Delande,
+  Gr{\'e}maud, M{\"u}ller, and Miniatura]{lugan2009one}
+P.~Lugan, A.~Aspect, L.~Sanchez-Palencia, D.~Delande, B.~Gr{\'e}maud, C.~A.
+  M{\"u}ller, and C.~Miniatura.
+\newblock One-dimensional anderson localization in certain correlated random
+  potentials.
+\newblock \emph{Physical Review A}, 80\penalty0 (2):\penalty0 023605, 2009.
+
 \bibitem[Luiten et~al.(1996)Luiten, Reynolds, and Walraven]{luiten1996kinetic}
 O.~Luiten, M.~Reynolds, and J.~Walraven.
 \newblock Kinetic theory of the evaporative cooling of a trapped gas.
@@ -420,6 +428,12 @@ M.~Piraud.
   d{\'e}sordre corr{\'e}l{\'e}: de 1D {\`a} 3D}.
 \newblock PhD thesis, Paris 11, 2012.
 
+\bibitem[Prat et~al.(2016)Prat, Cherroret, and Delande]{prat2016semiclassical}
+T.~Prat, N.~Cherroret, and D.~Delande.
+\newblock Semiclassical spectral function and density of states in speckle
+  potentials.
+\newblock \emph{Physical Review A}, 94\penalty0 (2):\penalty0 022114, 2016.
+
 \bibitem[Richard(2015)]{richard2015propagation}
 J.~Richard.
 \newblock \emph{Propagation d'atomes ultra-froids en milieu
@@ -530,6 +544,14 @@ S.~E. Skipetrov and I.~M. Sokolov.
 \newblock \emph{Physical review letters}, 112\penalty0 (2):\penalty0 023905,
   2014.
 
+\bibitem[Skipetrov et~al.(2008)Skipetrov, Minguzzi, van Tiggelen, and
+  Shapiro]{skipetrov2008anderson}
+S.~E. Skipetrov, A.~Minguzzi, B.~A. van Tiggelen, and B.~Shapiro.
+\newblock Anderson localization of a bose-einstein condensate in a 3d random
+  potential.
+\newblock \emph{Physical review letters}, 100\penalty0 (16):\penalty0 165301,
+  2008.
+
 \bibitem[Slevin and Ohtsuki(1999)]{slevin1999corrections}
 K.~Slevin and T.~Ohtsuki.
 \newblock Corrections to scaling at the anderson transition.
@@ -614,5 +636,11 @@ L.~Ye, G.~Cody, M.~Zhou, P.~Sheng, and A.~N. Norris.
   two dimensions.
 \newblock \emph{Physical review letters}, 69\penalty0 (21):\penalty0 3080,
   1992.
+
+\bibitem[Yedjour and Van~Tiggelen(2010)]{yedjour2010diffusion}
+A.~Yedjour and B.~Van~Tiggelen.
+\newblock Diffusion and localization of cold atoms in 3d optical speckle.
+\newblock \emph{The European Physical Journal D}, 59\penalty0 (2):\penalty0
+  249--255, 2010.
 
 \end{thebibliography}
