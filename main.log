@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  10 AUG 2020 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  12 AUG 2020 19:13
 entering extended mode
 **./main.tex
 (main.tex
@@ -1454,7 +1454,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 ]
 Chapitre 1.
 [5] [6]
-<Fig/Localisation/diffusion_classique.pdf, id=333, 423.44238pt x 193.59613pt>
+<Fig/Localisation/diffusion_classique.pdf, id=332, 423.44238pt x 193.59613pt>
 File: Fig/Localisation/diffusion_classique.pdf Graphic file (type pdf)
 <use Fig/Localisation/diffusion_classique.pdf>
 Package pdftex.def Info: Fig/Localisation/diffusion_classique.pdf  used on inpu
@@ -1464,14 +1464,14 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
  [7 <./Fig/Localisation/diffusion_classique.pdf>] [8]
-<Fig/Localisation/localisation_faible.pdf, id=963, 450.30333pt x 181.71753pt>
+<Fig/Localisation/localisation_faible.pdf, id=962, 450.30333pt x 181.71753pt>
 File: Fig/Localisation/localisation_faible.pdf Graphic file (type pdf)
 <use Fig/Localisation/localisation_faible.pdf>
 Package pdftex.def Info: Fig/Localisation/localisation_faible.pdf  used on inpu
 t line 113.
 (pdftex.def)             Requested size: 384.1096pt x 155.01239pt.
  [9 <./Fig/Localisation/localisation_faible.pdf>] [10]
-<Fig/Localisation/transition_anderson.pdf, id=4023, 463.80559pt x 155.15831pt>
+<Fig/Localisation/transition_anderson.pdf, id=4022, 463.80559pt x 155.15831pt>
 File: Fig/Localisation/transition_anderson.pdf Graphic file (type pdf)
 <use Fig/Localisation/transition_anderson.pdf>
 Package pdftex.def Info: Fig/Localisation/transition_anderson.pdf  used on inpu
@@ -1481,7 +1481,7 @@ t line 191.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11 <./Fig/Localisation/transition_anderson.pdf>] [12]
-<Fig/Localisation/experiences_localisation_anderson.pdf, id=5904, 525.86888pt x
+<Fig/Localisation/experiences_localisation_anderson.pdf, id=5903, 525.86888pt x
  277.01993pt>
 File: Fig/Localisation/experiences_localisation_anderson.pdf Graphic file (type
  pdf)
@@ -1490,7 +1490,7 @@ Package pdftex.def Info: Fig/Localisation/experiences_localisation_anderson.pdf
   used on input line 238.
 (pdftex.def)             Requested size: 426.79135pt x 224.83719pt.
  [13 <./Fig/Localisation/experiences_localisation_anderson.pdf>]
-<Fig/Localisation/localisation_1D_atomes.pdf, id=6141, 470.89038pt x 205.39243p
+<Fig/Localisation/localisation_1D_atomes.pdf, id=6140, 470.89038pt x 205.39243p
 t>
 File: Fig/Localisation/localisation_1D_atomes.pdf Graphic file (type pdf)
 <use Fig/Localisation/localisation_1D_atomes.pdf>
@@ -1501,14 +1501,14 @@ nput line 269.
 Underfull \vbox (badness 6842) has occurred while \output is active []
 
  [15 <./Fig/Localisation/localisation_1D_atomes.pdf>]
-<Fig/Localisation/localisation_3D_atomes_v1.pdf, id=6206, 458.34123pt x 133.816
+<Fig/Localisation/localisation_3D_atomes_v1.pdf, id=6205, 458.34123pt x 133.816
 35pt>
 File: Fig/Localisation/localisation_3D_atomes_v1.pdf Graphic file (type pdf)
 <use Fig/Localisation/localisation_3D_atomes_v1.pdf>
 Package pdftex.def Info: Fig/Localisation/localisation_3D_atomes_v1.pdf  used o
 n input line 296.
 (pdftex.def)             Requested size: 426.79135pt x 124.61124pt.
-<Fig/Localisation/kicked_rotor.pdf, id=6216, 288.69308pt x 208.12563pt>
+<Fig/Localisation/kicked_rotor.pdf, id=6215, 288.69308pt x 208.12563pt>
 File: Fig/Localisation/kicked_rotor.pdf Graphic file (type pdf)
 <use Fig/Localisation/kicked_rotor.pdf>
 Package pdftex.def Info: Fig/Localisation/kicked_rotor.pdf  used on input line 
@@ -1532,13 +1532,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 339.
  [18]
-<Fig/Localisation/experience_palaiseau.pdf, id=6472, 369.0601pt x 267.69395pt>
+<Fig/Localisation/experience_palaiseau.pdf, id=6471, 369.0601pt x 267.69395pt>
 File: Fig/Localisation/experience_palaiseau.pdf Graphic file (type pdf)
 <use Fig/Localisation/experience_palaiseau.pdf>
 Package pdftex.def Info: Fig/Localisation/experience_palaiseau.pdf  used on inp
 ut line 382.
 (pdftex.def)             Requested size: 426.79135pt x 309.5898pt.
-<Fig/Localisation/experience_florence.pdf, id=6478, 502.56158pt x 456.30852pt>
+<Fig/Localisation/experience_florence.pdf, id=6477, 502.56158pt x 456.30852pt>
 File: Fig/Localisation/experience_florence.pdf Graphic file (type pdf)
 <use Fig/Localisation/experience_florence.pdf>
 Package pdftex.def Info: Fig/Localisation/experience_florence.pdf  used on inpu
@@ -1546,7 +1546,7 @@ t line 395.
 (pdftex.def)             Requested size: 426.79135pt x 387.52986pt.
  [19] [20 <./Fig/Localisation/experience_palaiseau.pdf>] [21 <./Fig/Localisatio
 n/experience_florence.pdf>]
-<Fig/Localisation/delande_expvsth.pdf, id=6927, 347.98378pt x 297.77217pt>
+<Fig/Localisation/delande_expvsth.pdf, id=6926, 347.98378pt x 297.77217pt>
 File: Fig/Localisation/delande_expvsth.pdf Graphic file (type pdf)
 <use Fig/Localisation/delande_expvsth.pdf>
 Package pdftex.def Info: Fig/Localisation/delande_expvsth.pdf  used on input li
@@ -1556,7 +1556,7 @@ ne 422.
 Underfull \vbox (badness 1231) has occurred while \output is active []
 
  [22]
-<Fig/Localisation/spectroscopie_anderson.pdf, id=6937, 452.456pt x 142.77167pt>
+<Fig/Localisation/spectroscopie_anderson.pdf, id=6936, 452.456pt x 142.77167pt>
 
 File: Fig/Localisation/spectroscopie_anderson.pdf Graphic file (type pdf)
 <use Fig/Localisation/spectroscopie_anderson.pdf>
@@ -2030,11 +2030,11 @@ Package pdftex.def Info: Fig/TauS_PRL/donnees_taus_prl.pdf  used on input line
 File: Fig/TauS_PRL/map_deviations_born.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/map_deviations_born.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/map_deviations_born.pdf  used on input li
-ne 216.
+ne 218.
 (pdftex.def)             Requested size: 405.45047pt x 552.50874pt.
 
 
-LaTeX Warning: Float too large for page by 10.57846pt on input line 219.
+LaTeX Warning: Float too large for page by 10.57846pt on input line 221.
 
 [119] [120 <./Fig/TauS_PRL/map_deviations_born.pdf>] [121]
 <Fig/TauS_PRL/depart_quadratique_taus.pdf, id=15415, 296.38025pt x 187.97522pt>
@@ -2042,7 +2042,7 @@ LaTeX Warning: Float too large for page by 10.57846pt on input line 219.
 File: Fig/TauS_PRL/depart_quadratique_taus.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/depart_quadratique_taus.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/depart_quadratique_taus.pdf  used on inpu
-t line 254.
+t line 256.
 (pdftex.def)             Requested size: 298.75264pt x 189.48059pt.
 )
 (Chapters/TauS_NJP.tex [122 <./Fig/TauS_PRL/depart_quadratique_taus.pdf>]
@@ -2054,50 +2054,101 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 [124]
-<Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf, id=15475, 414.8217
+<Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf, id=15476, 414.8217
 5pt x 133.86089pt>
 File: Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf Graphic file (
 type pdf)
 <use Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf>
 Package pdftex.def Info: Fig/TauS_NJP/illustration_fonction_spectrale_diffusion
-.pdf  used on input line 80.
+.pdf  used on input line 81.
 (pdftex.def)             Requested size: 426.79135pt x 137.72505pt.
- [125] [126 <./Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf>]
-<Fig/TauS_NJP/donnees_taus_ordre3.pdf, id=15510, 410.29305pt x 136.65945pt>
+ [125] [126 <./Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf>] [12
+7]
+<Fig/TauS_NJP/donnees_taus_ordre3.pdf, id=15534, 410.29305pt x 136.65945pt>
 File: Fig/TauS_NJP/donnees_taus_ordre3.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/donnees_taus_ordre3.pdf>
 Package pdftex.def Info: Fig/TauS_NJP/donnees_taus_ordre3.pdf  used on input li
-ne 124.
+ne 152.
 (pdftex.def)             Requested size: 426.79135pt x 142.15791pt.
-) (Appendices/Anex_speckle.tex
+ [128 <./Fig/TauS_NJP/donnees_taus_ordre3.pdf>] [129]
+<Fig/TauS_NJP/SCBA_gauss.pdf, id=15564, 414.44727pt x 175.82883pt>
+File: Fig/TauS_NJP/SCBA_gauss.pdf Graphic file (type pdf)
+<use Fig/TauS_NJP/SCBA_gauss.pdf>
+Package pdftex.def Info: Fig/TauS_NJP/SCBA_gauss.pdf  used on input line 188.
+(pdftex.def)             Requested size: 426.79135pt x 181.06813pt.
+ [130 <./Fig/TauS_NJP/SCBA_gauss.pdf>]
+Overfull \hbox (14.748pt too wide) in paragraph at lines 204--204
+|[]\T1/lmss/bx/n/14.4 Temps de dif-fu-sion élas-tique et fonc-tions spec-trales
+ pour un désordre
+ []
 
-Package Fancyhdr Warning: \headheight is too small (14.5pt): 
-Make it at least 25.28426pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
+[131] [132]
+<Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf, id=15615, 237.30286pt
+ x 166.42601pt>
+File: Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf Graphic file (typ
+e pdf)
+<use Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf>
+Package pdftex.def Info: Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pd
+f  used on input line 260.
+(pdftex.def)             Requested size: 284.76198pt x 199.71019pt.
+<Fig/TauS_NJP/aek0_panel_red.pdf, id=15616, 531.7814pt x 262.78539pt>
+File: Fig/TauS_NJP/aek0_panel_red.pdf Graphic file (type pdf)
+<use Fig/TauS_NJP/aek0_panel_red.pdf>
+Package pdftex.def Info: Fig/TauS_NJP/aek0_panel_red.pdf  used on input line 28
+1.
+(pdftex.def)             Requested size: 426.79135pt x 210.91425pt.
+<Fig/TauS_NJP/aek0_panel_blue.pdf, id=15617, 537.33572pt x 263.08818pt>
+File: Fig/TauS_NJP/aek0_panel_blue.pdf Graphic file (type pdf)
+<use Fig/TauS_NJP/aek0_panel_blue.pdf>
+Package pdftex.def Info: Fig/TauS_NJP/aek0_panel_blue.pdf  used on input line 2
+82.
+(pdftex.def)             Requested size: 426.79135pt x 208.96944pt.
 
-[127 <./Fig/TauS_NJP/donnees_taus_ordre3.pdf>] [128
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [133 <./Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf>] [134 <./Fig/
+TauS_NJP/aek0_panel_red.pdf> <./Fig/TauS_NJP/aek0_panel_blue.pdf
+
+pdfTeX warning: pdflatex (file ./Fig/TauS_NJP/aek0_panel_blue.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>]
+<Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf, id=15686, 414.40862pt x 218.
+79286pt>
+File: Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf Graphic file (type pdf)
+<use Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf>
+Package pdftex.def Info: Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf  used
+ on input line 296.
+(pdftex.def)             Requested size: 426.79135pt x 225.3291pt.
+<Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf, id=15687, 414.34483pt x 215.8
+9252pt>
+File: Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf Graphic file (type pdf)
+<use Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf>
+Package pdftex.def Info: Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf  used 
+on input line 304.
+(pdftex.def)             Requested size: 426.79135pt x 222.37506pt.
+) (Appendices/Anex_speckle.tex [135 <./Fig/TauS_NJP/comparaison_specfunc_taus_r
+ouge.pdf>] [136 <./Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf>]
 Annexe A.
-[129] [130] [131] [132] [133]) (Appendices/Anex_Born.tex [134]
+[137
+
+] [138] [139] [140] [141]) (Appendices/Anex_Born.tex [142]
 Annexe B.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [135
+ [143
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [136]
+ [144]
 Overfull \hbox (5.82803pt too wide) detected at line 85
 []
  []
 
-[137] [138]) (main.bbl [139] [140
+[145] [146]) (main.bbl [147] [148
 
-] [141] [142]
+] [149] [150]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 36.
 
@@ -2109,7 +2160,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[143] [144] [145] [146]) [147]
+[151] [152] [153] [154]) [155]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
  (main.aux)
@@ -2119,22 +2170,25 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 135.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 31585 strings out of 480934
- 606452 string characters out of 2899917
- 1006183 words of memory out of 3000000
- 45563 multiletter control sequences out of 15000+200000
- 730899 words of font info for 349 fonts, out of 3000000 for 9000
+ 31665 strings out of 480934
+ 608809 string characters out of 2899917
+ 1014923 words of memory out of 3000000
+ 45607 multiletter control sequences out of 15000+200000
+ 731083 words of font info for 351 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,1613b,1134s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
-c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.en
-c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
-y.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-t
-s1.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-mathit.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
+c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathi
+t.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
+m.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
+athsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+lm-ts1.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
 /lm-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/lm/lmbx5.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/t
@@ -2146,35 +2200,36 @@ onts/type1/public/lm/lmbx8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.
 iKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/lecou
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmib10.pfb><C:/Users/
-lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Use
-rs/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/
-Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr5.pfb><C
-:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb>
-<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pf
-b><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.
-pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr
-9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-mri10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-lm/lmri9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmss10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/lm/lmssbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmsy10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmsy6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/lm/lmsy7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/lecou/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-
-Output written on main.pdf (147 pages, 18610780 bytes).
+al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi5.pfb><C:/Users/lecou/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/le
+cou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmib10.pfb><C:/Use
+rs/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/
+Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><
+C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr5.pfb
+><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.p
+fb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7
+.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
+r8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmr9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
+m/lmri10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmri9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmss10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmssbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/lm/lmsy10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/lm/lmsy6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/lecou/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.p
+fb>
+Output written on main.pdf (155 pages, 19599343 bytes).
 PDF statistics:
- 16269 PDF objects out of 18468 (max. 8388607)
- 750 named destinations out of 1000 (max. 500000)
- 70699 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 16469 PDF objects out of 18468 (max. 8388607)
+ 776 named destinations out of 1000 (max. 500000)
+ 70729 words of extra memory for PDF output out of 74296 (max. 10000000)
 

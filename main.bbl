@@ -1,4 +1,4 @@
-\begin{thebibliography}{96}
+\begin{thebibliography}{97}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -402,6 +402,12 @@ M.~Paalanen, T.~Rosenbaum, G.~Thomas, and R.~Bhatt.
 J.~H. Page, P.~Sheng, H.~P. Schriemer, I.~Jones, X.~Jing, and D.~A. Weitz.
 \newblock Group velocity in strongly scattering media.
 \newblock \emph{Science}, 271\penalty0 (5249):\penalty0 634--637, 1996.
+
+\bibitem[Pasek et~al.(2015)Pasek, Zhao, Delande, and Orso]{pasek2015phase}
+M.~Pasek, Z.~Zhao, D.~Delande, and G.~Orso.
+\newblock Phase diagram of the three-dimensional anderson model for short-range
+  speckle potentials.
+\newblock \emph{Physical Review A}, 92\penalty0 (5):\penalty0 053618, 2015.
 
 \bibitem[Pasek et~al.(2017)Pasek, Orso, and Delande]{pasek2017anderson}
 M.~Pasek, G.~Orso, and D.~Delande.
