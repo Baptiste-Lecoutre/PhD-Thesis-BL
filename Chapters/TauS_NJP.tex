@@ -226,17 +226,53 @@ Dans le cas d'un désordre répulsif, l'accord est bien moins correct et l'appro
 
 
 \subsection{Fonctions spectrales d'un désordre speckle}
-Nous avons pu voir au cours du chapitre \ref{ch:Localisation} l'importance de la détermination précise de la forme de fonctions spectrales. Cette idée n'en a été que renforcée par l'étude détaillée du comportement du temps de diffusion élastique. Dans la perspective d'adresser spécifiquement les niveaux d'énergie du désordre, l'équipe a mis en place un chargement spectroscopique du désordre, permettant la détermination expérimentale des fonctions spectrales pour un désordre de type speckle. Ces mesures ont fait l'objet de la thèse de Vincent Denechaud, où de nombreux détails expérimentaux et théoriques pourront être retrouvés \citep{denechaud2018vers}.
+Nous avons pu voir au cours du chapitre \ref{ch:Localisation} l'importance de la détermination précise des fonctions spectrales. Cette idée n'en a été que renforcée par l'étude détaillée du comportement du temps de diffusion élastique. Dans la perspective d'adresser spécifiquement les niveaux d'énergie du désordre, l'équipe a mis en place un chargement spectroscopique du désordre, permettant la détermination expérimentale des fonctions spectrales pour un désordre de type speckle. Ces mesures ont fait l'objet de la thèse de Vincent Denechaud, où de nombreux détails expérimentaux et théoriques pourront être retrouvés \citep{denechaud2018vers}.
 
-Commençons par réécrire la fonction spectrale:
+
+\paragraph*{Mesure des fonctions spectrales}
+Le protocole de mesure des fonctions spectrales est schématisé sur la figure \ref{fig:illustration_fonction_spectrale}. Celui-ci combine de nombreuses astuces expérimentales que nous avons présentées dans les chapitres précédents, notamment l'approche de désordre dépendant de l'état interne (voir section \ref{sc:state_dependent_disorder}), et l'utilisation d'un champ magnétique magique (voir section \ref{sc:implementation_levitation}). 
+
+L'utilisation de l'approche de potentiel dépendant de l'état interne nécessite d'utiliser un sous-état Zeeman dans chacun des états hyperfins $\etatF{1}{}$ et $\etatF{2}{}$. On note ainsi les états correspondants $\etat{1}=\etatF{1}{-1}$ et $\etat{2}=\etatF{2}{+1}$, pour lesquels il existe un biais magnétique \emph{magique} $\magicB=\SI{3.2}{\gauss}$ où les états $\etat{1}$ et $\etat{2}$ possèdent la même susceptibilité magnétique. Le choix de ces états permet donc d'affranchir la séparation en énergie de ces niveaux des fluctuations de champ magnétique en plus d'être lévités simultanément.
+
+Le chargement du désordre à une énergie bien définie nécessite de coupler les états $\etat{1}$ $\etat{2}$ afin de pouvoir transférer les atomes initialement dans l'état libre vers l'état habillé par le désordre. Compte-tenu de la séparation entre ces états, le choix d'un transfert radio-fréquences est retenu, appuyé par l'excellent contrôle des fréquences qu'il est possible d'obtenir. En raison de la séparation en spin de $\Delta\mf=2$, il s'agira donc d'une transition à deux photons.
+
+
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=1.2]{Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf}
+\caption{\textbf{Illustration du protocole spectroscopique de mesure des fonctions spectrales.} \textbf{a.} Illustration du protocole de génération de speckle dépendant de l'état interne. Un laser quasi-résonant sur l'état $\protect\etat{2}$ génère un potentiel attractif (pour $\delta_{\mathrm{L}}<0$) ou bien répulsif (pour $\delta_{\mathrm{L}}>0$). Ce potentiel qui est négligeable pour l'état $\protect\etat{1}$ en raison du grand désaccord $2\pi\deltahf^*+\delta_{\mathrm{L}}$ lié à la séparation hyperfine. \textbf{b. et c.} Illustration du protocole de spectroscopie. L'état $\protect\etat{1}$ libre est transféré vers l'état $\protect\etat{2}$ habillé par le désordre à l'aide de radio-fréquences. Le choix d'un désaccord $\delta$ par rapport à la résonance $\protect\etat{1}\rightarrow \protect\etat{2}$ en absence de désordre permet d'adresser une énergie bien définie dans le désordre. }
+\label{fig:illustration_fonction_spectrale}
+\end{figure}
+
+La séquence commence par la création d'un condensat de Bose-Einstein  très décomprimé d'environ \SI{2e5}{} atomes de \isotope[87]{Rb} dans l'état $\etat{1}$. Le désordre est allumé brusquement à $t=0$, et simultanément  le transfert radio-fréquences a lieu pendant une durée $t_0$. Le taux de transfert est ensuite mesuré en imageant par fluorescence sélectivement les atomes dans l'état $\etat{2}$
+\begin{equation}
+n_2(t_0)=n_1(0) \times \Gamma t_0 \text{ .}
+\end{equation}
+
+
+
+Les atomes transférés possèdent une énergie finale $E_{\mathrm{f}}=E_{\mathrm{i}} +\hb\omega$, avec $\omega$ la pulsation de la radio-fréquence rayonnée. Il est possible d'assimiler l'état initial à une onde plane d'impulsion nulle $\etat{\mathbf{k}=0}$ dans la mesure où $\mu\ll\VR$, et son énergie $E_{\mathrm{i}}$ correspond alors à l'énergie interne $E_{\etat{1}}$. On montre alors que les atomes transférés dans le désordre possèdent une énergie externe $E=\hb\delta$, où $\delta=\omega-2\pi \deltahf^*$ correspond au désaccord par rapport à la résonance au biais magique en absence de désordre donnée par $\deltahf^*=E_{\etat{2}}-E_{\etat{1}}\approx \SI{6.8}{\giga\hertz}$, c'est à dire la différence d'énergie interne. Cette situation est schématisée dans la partie basse de la figure \ref{fig:illustration_fonction_spectrale}. Étant donné le temps fini de transfert radio-fréquence, l'énergie adressée dans le désordre possède une résolution $\Delta E\sim \hb/t_0$ mesurée à l'aide d'un spectre de Rabi à deux photons en absence de désordre. Il a ainsi été montré que pour un temps de transfert de \SI{100}{\milli\second}, la résolution en énergie obtenue était d'environ $h\times\SI{10}{\hertz}$, correspondant à la limite de Fourier\footnote{Nous avons récemment pu obtenir une résolution de $h\times\SI{5}{\hertz}$ grâce à l'étude détaillée des champs magnétiques dans la chambre de science.}. 
+
+
+
+
+
+
+
+
+
+\paragraph*{Correspondance entre fonction spectrale et taux de transfert}
+Nous avons vu dans le paragraphe précédent comment nous pouvons mesurer le taux de transfert des atomes dans le désordre à une énergie ciblée. Celui-ci est relié à la fonction spectrale $A(\mathbf{k}=0,E)$, que nous pouvons réécrire
 \begin{align}
-A(\mathbf{k}_{\mathrm{i}},E)&=\overline{\left\langle \mathbf{k}_{\mathrm{I}} \left| \delta(E-\hat{H}) \right| \mathbf{k}_{\mathrm{i}} \right\rangle} \\
-&= \overline{\sum_{\alpha}{|\langle\mathbf{k}_{\mathrm{i}} | \psi_{\alpha}\rangle|^2.\delta(E-E_{\alpha})}}
+A(\mathbf{k}=0,E)&=\overline{\left\langle \mathbf{k}=0 \left| \delta(E-\hat{H}) \right| \mathbf{k}=0 \right\rangle} \\
+&= \overline{\sum_{\alpha}{|\langle\mathbf{k}=0 | \psi_{\alpha}\rangle|^2.\delta(E-E_{\alpha})}}
 \end{align}
-en introduisant les états propres $\etat{\psi_{\alpha}}$ du désordre et d'énergie $E_{\alpha}$. Les fluctuations du terme de recouvrement $|\langle \mathbf{k}_{\mathrm{i}} | \psi_{\alpha} \rangle|^2$ disparaissent avec le moyennage sur les différentes réalisations du désordre. On peut alors sortir sa valeur moyenne $\overline{|\langle \mathbf{k}_{\mathrm{i}} | \psi_{\mathrm{E}} \rangle|^2}$ à l'énergie $E$ de la somme:
+en introduisant les états propres $\etat{\psi_{\alpha}}$ du désordre et d'énergie $E_{\alpha}$. Les fluctuations du terme de recouvrement $|\langle \mathbf{k}=0 | \psi_{\alpha} \rangle|^2$ disparaissent avec le moyennage sur les différentes réalisations du désordre. On peut alors sortir sa valeur moyenne $\overline{|\langle \mathbf{k}=0 | \psi_{\mathrm{E}} \rangle|^2}$ à l'énergie $E$ de la somme:
 \begin{align}
-A(\mathbf{k}_{\mathrm{i}},E)&\approx \overline{|\langle \mathbf{k}_{\mathrm{i}} | \psi_{\alpha} \rangle|^2}. \overline{\sum_{\alpha}{\delta(E-E_{\alpha})}} \\
-&\approx \overline{|\langle \mathbf{k}_{\mathrm{i}} | \psi_{\mathrm{E}} \rangle|^2} . \rho(E) \text{ .}
+A(\mathbf{k}=0,E)&\approx \overline{|\langle \mathbf{k}=0 | \psi_{\alpha} \rangle|^2}. \overline{\sum_{\alpha}{\delta(E-E_{\alpha})}} \\
+&\approx \overline{|\langle \mathbf{k}=0 | \psi_{\mathrm{E}} \rangle|^2} . \rho(E) \text{ .}
 \end{align}
 La fonction spectrale apparaît alors comme correspondant au recouvrement moyen entre l'état initial et les états d'énergie $E$ du désordre.
 
@@ -249,28 +285,15 @@ où $\Gamma(\delta)$ correspond au taux de transfert entre l'état initial du co
 De nombreuses hypothèses sont nécessaires pour obtenir ce résultat, dont une discussion détaillée est donnée dans les références \citep{denechaud2018vers}\citep{volchkov2018measurement}. Notamment, cette correspondance entre fonction spectrale et taux de transfert n'est valide que pour un couplage faible ($\Omega$ petit devant les autres échelles d'énergie) et des temps $t$ courts tels que $\Gamma t \ll 1$. Une conséquence forte de ces contraintes est seuls quelques pourcents des atomes sont transférés dans le désordre. 
 
 
-\paragraph*{Mesure des fonctions spectrales}
-Le protocole de mesure des fonctions spectrales est schématisé sur la figure \ref{fig:illustration_fonction_spectrale}. 
-
-
-
-
-\begin{figure}
-\centering
-\includegraphics[scale=1.2]{Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf}
-\caption{\textbf{Illustration du protocole spectroscopique de mesure des fonctions spectrales.} \textbf{a.} Illustration du protocole de génération de speckle dépendant de l'état interne. Un laser quasi-résonant sur l'état $\protect\etat{2}$ génère un potentiel attractif (pour $\delta_{\mathrm{L}}<0$) ou bien répulsif (pour $\delta_{\mathrm{L}}>0$). Ce potentiel qui est négligeable pour l'état $\protect\etat{1}$ en raison du grand désaccord $2\pi\Delta_{\mathrm{hf}}+\delta_{\mathrm{L}}$ lié à la séparation hyperfine. \textbf{b. et c.} Illustration du protocole de spectroscopie. L'état $\protect\etat{1}$ libre est transféré vers l'état $\protect\etat{2}$ habillé par le désordre à l'aide de radio-fréquences. Le choix d'un désaccord $\delta$ par rapport à la résonance $\protect\etat{1}\rightarrow \protect\etat{2}$ en absence de désordre permet d'adresser une énergie bien définie en présence de désordre. }
-\label{fig:illustration_fonction_spectrale}
-\end{figure}
-
-
-
-
-Considérations expérimentales
-réalisation d'un désordre dépendant de l'état interne
-utilisation des états horloge pour lesquels le comportement magnétique est identique
-transfert RF, résolution de 10Hz limitée par fourier. 
 
 \paragraph*{Résultats}
+L'ensemble des mesures des fonctions spectrales $A(\mathbf{k}=0,E=\hb\delta)$ est représenté figures \ref{fig:mesures_fonctions_spectrales_rouge} et \ref{fig:mesures_fonctions_spectrales_bleu} en points bleus. Sur ces mêmes figures sont tracées en rouge des simulations numériques réalisées par Michael Pasek et Dominique Delande du Laboratoire Kastler Brossel, dont les détails peuvent être retrouvés dans la référence \citep{volchkov2018measurement}. Afin de comparer les données expérimentales et les simulations, l'amplitude du désordre expérimental est calibrée à l'aide de la fonction spectrale numérique pour $\VR/h=\SI{-121}{\hertz}$, permettant de corriger la mesure photométrique de l'amplitude du désordre. 
+
+L'accord entre les données expérimentales et numériques est remarquable: les données expérimentales se superposent aux simulations sur l'ensemble des paramètres expérimentaux, sans paramètre ajustable. De plus, chaque point correspond à un unique cycle expérimental: il n'y a pas de moyennage sur les réalisations du désordre pour les données expérimentales. La validation de l'hypothèse ergodique repose notamment sur le fait que notre condensat de Bose-Einstein est très grand devant la taille des grains du désordre\footnote{Le rayon de Thomas-Fermi de notre condensat est d'environ \SI{30}{\micro\metre}, bien plus grand que les tailles des grains de speckle $\sigmap=\SI{0.5}{\micro\metre}$ et $\sigmal\approx\SI{4.1}{\micro\metre}$.}, chaque atome ressentant une réalisation du désordre différente.
+
+
+Deux régimes se distinguent.
+
 régime quantique, régime classique
 résonance du bleu
 
@@ -278,30 +301,47 @@ résonance du bleu
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{Fig/TauS_NJP/aek0_panel_red.pdf}
-\includegraphics[width=\textwidth]{Fig/TauS_NJP/aek0_panel_blue.pdf}
-\caption{\textbf{Mesure des fonctions spectrales.} Stuff.}
-\label{fig:mesures_fonctions_spectrales}
+\includegraphics[width=\textwidth]{Fig/TauS_NJP/fonctions_spectrales_rouge.pdf}
+\caption{\textbf{Mesures des fonctions spectrales pour un désordre attractif.} Stuff.}
+\label{fig:mesures_fonctions_spectrales_rouge}
+
+\vspace{1cm}
+\includegraphics[width=\textwidth]{Fig/TauS_NJP/fonctions_spectrales_bleu.pdf}
+\caption{\textbf{Mesure des fonctions spectrales pour un désordre répulsif.} Stuff.}
+\label{fig:mesures_fonctions_spectrales_bleu}
 \end{figure}
 
 
-\subsection{Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}
-extraction du temps de diffusion élastique des fonctions spectrales mesurées.
 
-comparaison pour le rouge et pour le bleu .
+
+
+\subsection{Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}
+Comme nous avons vu précédemment, il est possible de donner une estimation du temps de vie de l'état initial $\etat{\mathbf{k}_{\mathrm{i}}}$ dans le désordre à l'aide de la largeur à mi-hauteur de la fonction spectrale. Nous pouvons alors extraire un temps $\taus^{\mathrm{sf}}$ des fonctions spectrales mesurées $A(\mathbf{k}=0,E)$ mesurées pour différentes amplitudes de désordre $\VR$.
+
+Dans le cas d'un désordre attractif, la largeur à mi-hauteur de la fonction spectrale mesurée est obtenue à l'aide d'un ajustement des données expérimentales par la convolution d'une lorentzienne avec une fonction exponentielle \ref{eq:distribution_potentiel_speckle}, qui permet de reproduire fidèlement  la forme de fonctions spectrales pour toutes les amplitudes de désordre. La largeur à mi-hauteur $\Delta E$ est ensuite extraite à l'aide d'un algorithme, permettant de déterminer un temps de vie $\taus^{\mathrm{sf}}=\hb/\Delta E$ pour chaque amplitude de désordre considérée. Le temps de vie pour n'importe quelle amplitude de désordre est ensuite obtenue par interpolation.
+
+Les valeurs de $\taus^{\mathrm{sf}}$ sont donc déterminées pour les amplitudes de désordres considérées  dans le chapitre \ref{ch:TauS_PRL}. Celles-ci sont tracées aux côtés des mesures de $\taus$ dans la figure \ref{fig:comparaison_taus_specfunc_rouge} et montrent un bon accord avec les mesures à impulsion faible, notamment dans le domaine de désordre fort. Cet accord entre données temporelles et données dans le domaine des énergies indique que nos mesures de $\taus$ sont entièrement compatibles avec le profil des fonctions spectrales pour un désordre speckle attractif.
 
 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf}
-\caption{}
+\caption{\textbf{Comparaison des fonctions spectrales mesurées au temps de diffusion élastique pour un speckle attractif.} \textbf{a.} Le temps de diffusion élastique est comparé à la prédiction de l'approximation auto-consistante de Born. Cette dernière est proche des données expérimentales dans le régime de désordre faible, mais ne permet pas de décrire le régime de désordre fort. La \textit{SCBA} échoue de plus à décrire les asymétries du potentiel. Les temps de vie $\taus^{\mathrm{sf}}$ extraits des fonctions spectrales mesurées sont compatibles avec les mesures de $\taus$ de basse impulsion.\textbf{b.} Illustration de l'extraction du temps de vie $\taus^{\mathrm{sf}}$. Le temps de vie est extrait en déterminant la largeur à mi-hauteur d'une fonction d'ajustement des données expérimentales. Ces données sont celles de la figure \ref{fig:mesures_fonctions_spectrales_rouge}.}
 \label{fig:comparaison_taus_specfunc_rouge}
 \end{figure}
 
 
+Comme nous avons vu dans la section précédente, un désordre speckle répulsif présente un comportement pathologique en raison de la présence d'une résonance sur les premiers états liées du désordre. Cette pathologie se manifeste sous la forme d'un pic de résonance dans la fonction spectrale. On s'attend alors à ce que l'évolution temporelle de l'état initial présente deux échelles de temps différentes en raison de la double structure de la fonction spectrale. Un premier temps court est associé à la structure large de la distribution de potentiel, tandis qu'un second temps, plus long, est dû à la structure étroite de la résonance à basse énergie. Expérimentalement, nous ne sommes sensibles qu'à ce dernier temps.
+
+Comme précédemment, le temps de vie estimé de l'état initial est obtenu en déterminant la largeur de la fonction spectrale mesurée expérimentalement par un ajustement. Afin de tenir compte de la double structure, la fonction heuristique d'ajustement est donnée par la somme de la convolution d'une lorentzienne et d'une exponentielle \ref{eq:distribution_potentiel_speckle}, comme précédemment, et d'une gaussienne étroite pour décrire le pic de résonance. On reproduit ainsi la forme des fonctions spectrales mesurées de manière fidèle. Le temps de vie $\taus^{\mathrm{sf}}$ est extrait de la largeur à mi-hauteur de cette gaussienne, et une interpolation permet de l'estimer pour différentes amplitudes de désordre. 
+
+Ces mesures de $\taus^{\mathrm{sf}}$ sont confrontées aux mesures de $\taus$ sur la figure \ref{fig:comparaison_taus_specfunc_bleu} et témoignent d'un très bon accord avec les données à basse impulsion, particulièrement dans le régime classique. De même que pour un speckle attractif, cette comparaison entre données temporelles et données spectrales montre qu'il est capital de connaître précisément les détails de la fonction spectrale pour étudier la dynamique de l'état initial.
+
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf}
-\caption{}
+\caption{\textbf{Comparaion des fonctions spectrales mesurées au temps de diffusion élastique pour un speckle répulsif.} \textbf{a.} Les données expérimentales du temps de diffusion élastique sont comparées à la prédiction de l'approximation auto-consistante de Born. Celle-ci ne permet de rendre compte que du régime de désordre faible, et de grande impulsion, et échoue encre à décrire les asymétries du potentiel. Les temps de vie $\taus^{\mathrm{sf}}$ estimés à partir du pic de résonance des fonctions spectrales mesurées sont tout à fait compatibles avec les mesures du temps de diffusion élastique à faible impulsion. \textbf{b.} Illustration de l'extraction du temps de vie $\taus^{\mathrm{sf}}$. Le temps de vie est extrait en déterminant la largeur à mi-hauteur d'une fonction d'ajustement bi-modale des données expérimentales. Plus particulièrement, le temps de vie est extrait de la largeur à mi-hauteur de la structure étroite associée à la résonance des premiers états liés du désordre. Ces données sont celles de la figure \ref{fig:mesures_fonctions_spectrales_bleu}.}
 \label{fig:comparaison_taus_specfunc_bleu}
 \end{figure}
+
+

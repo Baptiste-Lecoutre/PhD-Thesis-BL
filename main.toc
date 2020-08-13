@@ -77,19 +77,19 @@
 \contentsline {subsection}{\numberline {6.2.1}Limite de l'approche auto-consistante pour un désordre de type speckle}{131}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Fonctions spectrales d'un désordre speckle}{132}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}{135}{subsection.6.2.3}%
-\contentsline {chapter}{\numberline {A}Propriétés spatiales du speckle}{137}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Fonction de corrélation du diffuseur}{137}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Amplitude rayonnée}{138}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Fonction de corrélation}{139}{section.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Calcul général}{139}{subsection.A.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}Expression de l'extension transverse du champ de tavelures le long de l'axe optique}{140}{subsection.A.3.2}%
-\contentsline {section}{\numberline {A.4}Corrélations transverse et longitudinales d'un speckle monochromatique}{140}{section.A.4}%
-\contentsline {subsection}{\numberline {A.4.1}Corrélation transverse le long de l'axe optique}{140}{subsection.A.4.1}%
-\contentsline {subsection}{\numberline {A.4.2}Corrélation longitudinale autour du plan de Fourier}{141}{subsection.A.4.2}%
-\contentsline {subsection}{\numberline {A.4.3}Corrélation tridimensionnelle aux alentours du plan de Fourier}{141}{subsection.A.4.3}%
-\contentsline {section}{\numberline {A.5}Corrélation d'un speckle bichromatique}{141}{section.A.5}%
-\contentsline {chapter}{\numberline {B}Calculs du temps de diffusion élastique}{143}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Élements de calcul du temps de diffusion élastique à partir du développement de Born}{143}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Calcul de la Self-Energy au premier ordre}{144}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Calcul de la Self-Energy au second ordre}{144}{section.B.3}%
+\contentsline {chapter}{\numberline {A}Propriétés spatiales du speckle}{139}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Fonction de corrélation du diffuseur}{139}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Amplitude rayonnée}{140}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Fonction de corrélation}{141}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Calcul général}{141}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Expression de l'extension transverse du champ de tavelures le long de l'axe optique}{142}{subsection.A.3.2}%
+\contentsline {section}{\numberline {A.4}Corrélations transverse et longitudinales d'un speckle monochromatique}{142}{section.A.4}%
+\contentsline {subsection}{\numberline {A.4.1}Corrélation transverse le long de l'axe optique}{142}{subsection.A.4.1}%
+\contentsline {subsection}{\numberline {A.4.2}Corrélation longitudinale autour du plan de Fourier}{143}{subsection.A.4.2}%
+\contentsline {subsection}{\numberline {A.4.3}Corrélation tridimensionnelle aux alentours du plan de Fourier}{143}{subsection.A.4.3}%
+\contentsline {section}{\numberline {A.5}Corrélation d'un speckle bichromatique}{143}{section.A.5}%
+\contentsline {chapter}{\numberline {B}Calculs du temps de diffusion élastique}{145}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Élements de calcul du temps de diffusion élastique à partir du développement de Born}{145}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Calcul de la Self-Energy au premier ordre}{146}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Calcul de la Self-Energy au second ordre}{146}{section.B.3}%
 \contentsfinish 
