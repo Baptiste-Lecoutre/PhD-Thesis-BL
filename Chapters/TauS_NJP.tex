@@ -289,39 +289,71 @@ De nombreuses hypothèses sont nécessaires pour obtenir ce résultat, dont une 
 \paragraph*{Résultats}
 L'ensemble des mesures des fonctions spectrales $A(\mathbf{k}=0,E=\hb\delta)$ est représenté figures \ref{fig:mesures_fonctions_spectrales_rouge} et \ref{fig:mesures_fonctions_spectrales_bleu} en points bleus. Sur ces mêmes figures sont tracées en rouge des simulations numériques réalisées par Michael Pasek et Dominique Delande du Laboratoire Kastler Brossel, dont les détails peuvent être retrouvés dans la référence \citep{volchkov2018measurement}. Afin de comparer les données expérimentales et les simulations, l'amplitude du désordre expérimental est calibrée à l'aide de la fonction spectrale numérique pour $\VR/h=\SI{-121}{\hertz}$, permettant de corriger la mesure photométrique de l'amplitude du désordre. 
 
-L'accord entre les données expérimentales et numériques est remarquable: les données expérimentales se superposent aux simulations sur l'ensemble des paramètres expérimentaux, sans paramètre ajustable. De plus, chaque point correspond à un unique cycle expérimental: il n'y a pas de moyennage sur les réalisations du désordre pour les données expérimentales. La validation de l'hypothèse ergodique repose notamment sur le fait que notre condensat de Bose-Einstein est très grand devant la taille des grains du désordre\footnote{Le rayon de Thomas-Fermi de notre condensat est d'environ \SI{30}{\micro\metre}, bien plus grand que les tailles des grains de speckle $\sigmap=\SI{0.5}{\micro\metre}$ et $\sigmal\approx\SI{4.1}{\micro\metre}$.}, chaque atome ressentant une réalisation du désordre différente.
-
-
-Deux régimes se distinguent.
-
-régime quantique, régime classique
-résonance du bleu
-
-
-
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/TauS_NJP/fonctions_spectrales_rouge.pdf}
-\caption{\textbf{Mesures des fonctions spectrales pour un désordre attractif.} Stuff.}
+\caption{\textbf{Mesures des fonctions spectrales pour un désordre attractif.} La fonction spectrale multipliée par $|\VR|$ est tracée en fonction de $\delta/2\pi$, correspondant à l'énergie externe qu'ont les atomes transférés dans le désordre. Les points bleux correspondent aux données expérimentales, qui sont comparées à des simulations numériques tracées en lignes rouges. Dans le panneau de plus fort désordre, les données sont comparées à la limite classique donnée par la distribution de potentiel, tracée en vert. La prise en compte de l'effet du désordre résiduel sur l'état libre $\etat{1}$ est représentée par la courbe marron. Figure adaptée de \citep{denechaud2018vers}.}
 \label{fig:mesures_fonctions_spectrales_rouge}
 
 \vspace{1cm}
 \includegraphics[width=\textwidth]{Fig/TauS_NJP/fonctions_spectrales_bleu.pdf}
-\caption{\textbf{Mesure des fonctions spectrales pour un désordre répulsif.} Stuff.}
+\caption{\textbf{Mesure des fonctions spectrales pour un désordre répulsif.} La fonction spectrale multipliée par $\VR$ est tracée en fonction de $\delta/2\pi$, correspondant à l'énergie externe qu'ont les atomes transférés dans le désordre. Les points bleux correspondent aux données expérimentales, qui sont comparées à des simulations numériques tracées en lignes rouges. Dans le panneau de plus fort désordre, les données sont comparées à la limite classique donnée par la distribution de potentiel, tracée en vert. La prise en compte de l'effet du désordre résiduel sur l'état libre $\etat{1}$ est représentée par la courbe marron. La zone grise correspond aux énergies qu'il est impossible de peupler étant donné que $V(\mathbf{x})>0$. Figure adaptée de \citep{denechaud2018vers}.}
 \label{fig:mesures_fonctions_spectrales_bleu}
 \end{figure}
 
+L'accord entre les données expérimentales et numériques est remarquable: les données expérimentales se superposent aux simulations sur l'ensemble des paramètres expérimentaux, sans paramètre ajustable. De plus, chaque point correspond à un unique cycle expérimental: il n'y a pas de moyennage sur les réalisations du désordre pour les données expérimentales. La validation de l'hypothèse ergodique repose notamment sur le fait que notre condensat de Bose-Einstein est très grand devant la taille des grains du désordre\footnote{Le rayon de Thomas-Fermi de notre condensat est d'environ \SI{30}{\micro\metre}, bien plus grand que les tailles des grains de speckle $\sigmap=\SI{0.5}{\micro\metre}$ et $\sigmal\approx\SI{4.1}{\micro\metre}$.}, chaque atome ressentant une réalisation du désordre différente.
+
+Il est possible de distinguer deux régimes dans les figures \ref{fig:mesures_fonctions_spectrales_rouge} et \ref{fig:mesures_fonctions_spectrales_bleu}, régimes que nous avons brièvement présentés dans la section \ref{sc:taus_born}. La fonction spectrale possède une forme étroite dans le régime de désordre faible (régime de désordre quantique), tandis que celle-ci s'élargit fortement dans le régime de désordre fort (régime de désordre classique). Ces régimes se distinguent en comparant l'amplitude du désordre à l'énergie de corrélation $\ER\sim\SI{440}{\hertz}$\footnote{Étant donné que l'état couplé au désordre est assimilé à l'onde plane $\protect\etat{\mathbf{k}=0}$, il est nécessaire de tenir compte de la longueur de corrélation longitudinale des grains de speckle.}.
 
 
+
+
+
+\paragraph*{Régime de désordre quantique}
+Le régime de désordre quantique est obtenu lorsque $|\VR|\ll\ER$. Dans ce régime, l'amplitude du désordre est trop faible pour celui-ci puisse supporter des état liés sur une taille typique des grains de speckle. Les atomes, dont l'énergie est de l'ordre de $|\VR|$, ont alors une longueur d'onde de de Broglie plus grande que les grains de speckle. 
+
+De fait, la fonction d'onde s'étale sur plusieurs granularités du potentiel et \emph{lisse} le potentiel vu par la fonction d'onde par effet tunnel. On peut alors montrer que le potentiel effectif issu de ce lissage possède une amplitude $\sim\VR^2/\ER$ assimilable à la largeur de la fonction spectrale, indépendante du caractère attractif ou répulsif du potentiel \citep{bloch2012quantum}\citep{pasek2017anderson}. Les fonctions spectrales des figures \ref{fig:mesures_fonctions_spectrales_rouge} et \ref{fig:mesures_fonctions_spectrales_bleu} mesurées pour les désordres les plus faibles présentent donc des similarités (pour $|\VR|/h=\SI{60}{\hertz}$ et $|\VR|/h=\SI{121}{\hertz}$). 
+
+Dans la continuité de la correspondance entre largeur de la fonction spectrale et temps de vie de l'état initial développée en début de chapitre, le temps de vie $\taus^{\mathrm{sf}}$ se comporte selon $\hb\ER/\VR^2$, comme attendu dans le régime de désordre faible (voir section \ref{sc:taus_born}). La forme de la fonction spectrale serait alors de forme Lorentzienne dans ce régime\citep{kuhn2007coherent}.
+
+En réalité, la condition de désordre perturbatif $E_{\mathrm{k}}\gg \VR^2/\ER$ n'est pas validée. Au contraire, l'état initial étant assimilé à une onde plane d'impulsion nulle $\etat{\mathbf{k}=0}$, l'énergie cinétique des atomes est quasi-nulle $E_{\mathrm{k}}\sim 0$. Il s'agit donc d'un régime très non-perturbatif $E_{\mathrm{k}}\ll\VR^2/\ER$. La forme attendue de la fonction spectrale n'est donc pas lorentzienne, mais plutôt de forme gaussienne en raison du lissage du potentiel \citep{denechaud2018vers}. 
+
+
+
+\paragraph*{Régime de désordre classique}
+
+Dans le cas contraire d'une amplitude de désordre grande devant l'énergie de corrélation $|\VR|\gg\ER$, les fonctions spectrales mesurées témoignent de profils spécifiques aux distributions de potentiels associées. Cet effet du régime de désordre classique est particulièrement marqué pour les amplitudes de désordre de $|\VR|/h=\SI{4008}{\hertz}$, illustrées figure \ref{fig:fonctions_spectrales_classiques}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/TauS_NJP/fonctions_spectrales_classiques.pdf}
+\caption{\textbf{Fonctions spectrales dans le régime classique.} Dans le régime classique, la forme des fonctions spectrales dépend fortement de la distribution de potentiel. Ces spectres convergent vers la distribution de potentiel pour les hautes énergies, mais montrent un comportement très différent spécifique à la distribution de potentiel pour les basses énergies ($\mathbf{a_1}$ et $\mathbf{b_1}$). Dans la partie de haute énergie, seul les zones de potentiel vérifiant la condition de résonance $V(\mathbf{x})=\hb\delta$ sont adressés. La spectroscopie sonde ainsi la distribution de potentiel ($\mathbf{a_2}$ et $\mathbf{b_2}$). Dans la zone de basse énergie pour un potentiel attractif, la fonction d'onde des états $\etat{\hb\delta}$ s'étale sur plusieurs fluctuations de potentiel, engendrant un lissage analogue au régime de désordre quantique ($\mathbf{a_3}$). La discontinuité de la distribution de potentiel en devient adoucie ($\mathbf{a_1}$). La zone de basse énergie d'un speckle répulsif sonde l'accumulation des minimas locaux de potentiel à $V=0$ ($\mathbf{b_3}$). Ceux-ci supportent un premier état lié d'énergie typique $E_{\mathrm{b}}=\sqrt{\VR\ER}$, traduit par un pic étroit du spectre ($\mathbf{b_1}$).}
+\label{fig:fonctions_spectrales_classiques}
+\end{figure}
+
+Les distributions des potentiels attractifs et répulsifs sont tracées en vert sur la figure \ref{fig:fonctions_spectrales_classiques} et représentent la limite vers laquelle les fonctions spectrales convergent pour $|\VR|/\ER\rightarrow\infty$. On observe que cette convergence est atteinte pour la partie des hautes énergies de la fonction spectrale, aussi bien attractive que répulsive. Cependant, on observe un lissage de celle-ci pour les basses énergies $\delta\sim 0$ en comparaison à la discontinuité attendue par la distribution de potentiel. Les fonctions spectrales témoignent donc de deux comportements selon l'énergie adressée.
+
+Étant donné que l'amplitude du désordre est grande devant l'énergie de corrélation, la longueur d'onde de de Broglie des atomes à haute énergie est petite devant la taille des grains de speckle, et l'onde peut être piégée classiquement. Les fonctions d'onde piégées exhibent des oscillations spatiales courtes, dont le recouvrement avec l'état initial $etat{\mathbf{k}=0}$ est très mauvais, excepté pour les points de rebroussement classique qui satisfont la condition de résonance $V(\mathbf{x})=\hb\delta$. Le transfert radio-fréquence sonde donc la distribution de potentiel, comme illustré sur la ligne du milieu de la figure \ref{fig:fonctions_spectrales_classiques}.
+
+Néanmoins, cette considération ne permet pas décrire les parties de basse énergie des fonctions spectrales, qui montrent des déviations à la prédiction classique. En particulier, celles-ci ne se comportent pas de manière identique à basse énergie, révélant une influence forte supplémentaire de la distribution de potentiel sur la nature des états de basse énergie.
+
+Dans le cas d'un speckle attractif $\VR<0$ il est possible d'approximer le profil du potentiel proche de 0 comme étant composé d'oscillateurs harmoniques inversés, donc expulsants. Les fonctions d'onde couplées s'étalent ainsi sur plusieurs grains du potentiel, il en résulte ainsi un lissage du potentiel proche du potentiel nul, de manière analogue au régime de désordre quantique comme illustrée sur la figure \ref{fig:fonctions_spectrales_classiques} (figure en bas à gauche). La discontinuité de la distribution de potentiel pour le potentiel nul s'en retrouve donc régularisée \citep{prat2016semiclassical}.
+
+La fonction spectrale d'un speckle répulsif est beaucoup plus spectaculaire. En plus d'être nulle pour les énergies négatives, elle exhibe un pic étroit à basse énergie. L'origine de cette résonance provient de l'accumulation de minimas de potentiel pour $V=0$, supportant des états liés d'énergie similaire\citep{prat2016semiclassical}. En particulier, il est possible de décrire ces minimas locaux comme un oscillateur harmonique de la taille typique d'un grain de speckle et de profondeur $\VR$ (voir figure \ref{fig:fonctions_spectrales_classiques}, en bas à droite). L'énergie de l'état fondamental de ces oscillateurs harmoniques est alors donnée par 
+\begin{equation}
+E_{\mathrm{b}}=\sqrt{\VR\ER} \text{ ,}
+\end{equation}
+pour laquelle un grand nombre d'états participent. L'accumulation de ces états autour de la même énergie se traduit donc par un pic de résonance dans la fonction spectrale. 
+
+Les fonctions spectrales des désordres de type speckle présentent donc des spécificités importantes, pouvant se manifester sous la forme d'une structure bi-modale qu'il convient de déterminer précisément pour étudier l'effet du désordre sur l'état initial. 
+
+Les spectres tracés sur la figure \ref{fig:fonctions_spectrales_classiques} permettent de plus d'illustrer la limite de l'approche de potentiel dépendant de l'état interne discutée dans la section \ref{sc:state_dependent_disorder}. En effet, cette approche n'est valide que lorsque le potentiel résiduel sur l'état $\etat{1}$ peut être négligé devant le potentiel chimique, le potentiel étant écranté par des modulation de densité du condensat. Dans le cas des spectres à $|\VR|/h=\SI{4008}{\hertz}$, le potentiel résiduel est de l'ordre du potentiel chimique $\mu$ et commence à perturber l'état initial. Cet effet a pu être modélisé numériquement, et est tracé sur la figure \ref{fig:fonctions_spectrales_classiques} en lignes marron. Cette correction permet de reproduire remarquablement les données expérimentales.
 
 
 \subsection{Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}
 Comme nous avons vu précédemment, il est possible de donner une estimation du temps de vie de l'état initial $\etat{\mathbf{k}_{\mathrm{i}}}$ dans le désordre à l'aide de la largeur à mi-hauteur de la fonction spectrale. Nous pouvons alors extraire un temps $\taus^{\mathrm{sf}}$ des fonctions spectrales mesurées $A(\mathbf{k}=0,E)$ mesurées pour différentes amplitudes de désordre $\VR$.
 
 Dans le cas d'un désordre attractif, la largeur à mi-hauteur de la fonction spectrale mesurée est obtenue à l'aide d'un ajustement des données expérimentales par la convolution d'une lorentzienne avec une fonction exponentielle \ref{eq:distribution_potentiel_speckle}, qui permet de reproduire fidèlement  la forme de fonctions spectrales pour toutes les amplitudes de désordre. La largeur à mi-hauteur $\Delta E$ est ensuite extraite à l'aide d'un algorithme, permettant de déterminer un temps de vie $\taus^{\mathrm{sf}}=\hb/\Delta E$ pour chaque amplitude de désordre considérée. Le temps de vie pour n'importe quelle amplitude de désordre est ensuite obtenue par interpolation.
-
-Les valeurs de $\taus^{\mathrm{sf}}$ sont donc déterminées pour les amplitudes de désordres considérées  dans le chapitre \ref{ch:TauS_PRL}. Celles-ci sont tracées aux côtés des mesures de $\taus$ dans la figure \ref{fig:comparaison_taus_specfunc_rouge} et montrent un bon accord avec les mesures à impulsion faible, notamment dans le domaine de désordre fort. Cet accord entre données temporelles et données dans le domaine des énergies indique que nos mesures de $\taus$ sont entièrement compatibles avec le profil des fonctions spectrales pour un désordre speckle attractif.
-
 
 \begin{figure}
 \centering
@@ -330,12 +362,13 @@ Les valeurs de $\taus^{\mathrm{sf}}$ sont donc déterminées pour les amplitudes
 \label{fig:comparaison_taus_specfunc_rouge}
 \end{figure}
 
+Les valeurs de $\taus^{\mathrm{sf}}$ sont donc déterminées pour les amplitudes de désordres considérées  dans le chapitre \ref{ch:TauS_PRL}. Celles-ci sont tracées aux côtés des mesures de $\taus$ dans la figure \ref{fig:comparaison_taus_specfunc_rouge} et montrent un bon accord avec les mesures à impulsion faible, notamment dans le domaine de désordre fort. Cet accord entre données temporelles et données dans le domaine des énergies indique que nos mesures de $\taus$ sont entièrement compatibles avec le profil des fonctions spectrales pour un désordre speckle attractif.
+
+
+
+
 
 Comme nous avons vu dans la section précédente, un désordre speckle répulsif présente un comportement pathologique en raison de la présence d'une résonance sur les premiers états liées du désordre. Cette pathologie se manifeste sous la forme d'un pic de résonance dans la fonction spectrale. On s'attend alors à ce que l'évolution temporelle de l'état initial présente deux échelles de temps différentes en raison de la double structure de la fonction spectrale. Un premier temps court est associé à la structure large de la distribution de potentiel, tandis qu'un second temps, plus long, est dû à la structure étroite de la résonance à basse énergie. Expérimentalement, nous ne sommes sensibles qu'à ce dernier temps.
-
-Comme précédemment, le temps de vie estimé de l'état initial est obtenu en déterminant la largeur de la fonction spectrale mesurée expérimentalement par un ajustement. Afin de tenir compte de la double structure, la fonction heuristique d'ajustement est donnée par la somme de la convolution d'une lorentzienne et d'une exponentielle \ref{eq:distribution_potentiel_speckle}, comme précédemment, et d'une gaussienne étroite pour décrire le pic de résonance. On reproduit ainsi la forme des fonctions spectrales mesurées de manière fidèle. Le temps de vie $\taus^{\mathrm{sf}}$ est extrait de la largeur à mi-hauteur de cette gaussienne, et une interpolation permet de l'estimer pour différentes amplitudes de désordre. 
-
-Ces mesures de $\taus^{\mathrm{sf}}$ sont confrontées aux mesures de $\taus$ sur la figure \ref{fig:comparaison_taus_specfunc_bleu} et témoignent d'un très bon accord avec les données à basse impulsion, particulièrement dans le régime classique. De même que pour un speckle attractif, cette comparaison entre données temporelles et données spectrales montre qu'il est capital de connaître précisément les détails de la fonction spectrale pour étudier la dynamique de l'état initial.
 
 \begin{figure}
 \centering
@@ -343,5 +376,11 @@ Ces mesures de $\taus^{\mathrm{sf}}$ sont confrontées aux mesures de $\taus$ su
 \caption{\textbf{Comparaion des fonctions spectrales mesurées au temps de diffusion élastique pour un speckle répulsif.} \textbf{a.} Les données expérimentales du temps de diffusion élastique sont comparées à la prédiction de l'approximation auto-consistante de Born. Celle-ci ne permet de rendre compte que du régime de désordre faible, et de grande impulsion, et échoue encre à décrire les asymétries du potentiel. Les temps de vie $\taus^{\mathrm{sf}}$ estimés à partir du pic de résonance des fonctions spectrales mesurées sont tout à fait compatibles avec les mesures du temps de diffusion élastique à faible impulsion. \textbf{b.} Illustration de l'extraction du temps de vie $\taus^{\mathrm{sf}}$. Le temps de vie est extrait en déterminant la largeur à mi-hauteur d'une fonction d'ajustement bi-modale des données expérimentales. Plus particulièrement, le temps de vie est extrait de la largeur à mi-hauteur de la structure étroite associée à la résonance des premiers états liés du désordre. Ces données sont celles de la figure \ref{fig:mesures_fonctions_spectrales_bleu}.}
 \label{fig:comparaison_taus_specfunc_bleu}
 \end{figure}
+
+Comme précédemment, le temps de vie estimé de l'état initial est obtenu en déterminant la largeur de la fonction spectrale mesurée expérimentalement par un ajustement. Afin de tenir compte de la double structure, la fonction heuristique d'ajustement est donnée par la somme de la convolution d'une lorentzienne et d'une exponentielle \ref{eq:distribution_potentiel_speckle}, comme précédemment, et d'une gaussienne étroite pour décrire le pic de résonance. On reproduit ainsi la forme des fonctions spectrales mesurées de manière fidèle. Le temps de vie $\taus^{\mathrm{sf}}$ est extrait de la largeur à mi-hauteur de cette gaussienne, et une interpolation permet de l'estimer pour différentes amplitudes de désordre. 
+
+Ces mesures de $\taus^{\mathrm{sf}}$ sont confrontées aux mesures de $\taus$ sur la figure \ref{fig:comparaison_taus_specfunc_bleu} et témoignent d'un très bon accord avec les données à basse impulsion, particulièrement dans le régime classique. De même que pour un speckle attractif, cette comparaison entre données temporelles et données spectrales montre qu'il est capital de connaître précisément les détails de la fonction spectrale pour étudier la dynamique de l'état initial.
+
+
 
 
