@@ -1,4 +1,4 @@
-\begin{thebibliography}{97}
+\begin{thebibliography}{105}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -59,6 +59,11 @@ J.~Billy, V.~Josse, Z.~Zuo, A.~Bernard, B.~Hambrecht, P.~Lugan, D.~Cl'ement,
   controlled disorder.
 \newblock \emph{Nature}, 453:\penalty0 891--894, 2008.
 
+\bibitem[Bloch et~al.(2012)Bloch, Dalibard, and Nascimbene]{bloch2012quantum}
+I.~Bloch, J.~Dalibard, and S.~Nascimbene.
+\newblock Quantum simulations with ultracold quantum gases.
+\newblock \emph{Nature Physics}, 8\penalty0 (4):\penalty0 267--276, 2012.
+
 \bibitem[Bockelmann et~al.(1990)Bockelmann, Abstreiter, Weimann, and
   Schlapp]{bockelmann1990single}
 U.~Bockelmann, G.~Abstreiter, G.~Weimann, and W.~Schlapp.
@@ -84,6 +89,15 @@ E.~Burt, R.~Ghrist, C.~Myatt, M.~Holland, E.~A. Cornell, and C.~Wieman.
 \newblock Coherence, correlations, and collisions: What one learns about
   bose-einstein condensates from their decay.
 \newblock \emph{Physical Review Letters}, 79\penalty0 (3):\penalty0 337, 1997.
+
+\bibitem[Canuel et~al.(2014)Canuel, Amand, Bertoldi, Chaibi, Geiger, Gillot,
+  Landragin, Merzougui, Riou, Schmid, et~al.]{canuel2014matter}
+B.~Canuel, L.~Amand, A.~Bertoldi, W.~Chaibi, R.~Geiger, J.~Gillot,
+  A.~Landragin, M.~Merzougui, I.~Riou, S.~Schmid, et~al.
+\newblock The matter-wave laser interferometer gravitation antenna (miga): New
+  perspectives for fundamental physics and geosciences.
+\newblock In \emph{E3S Web of Conferences}, volume~4, page 01004. EDP Sciences,
+  2014.
 
 \bibitem[Casati et~al.(1989)Casati, Guarneri, and
   Shepelyansky]{casati1989anderson}
@@ -128,10 +142,23 @@ V.~Denechaud.
   d'Anderson}.
 \newblock PhD thesis, Universit{\'e} Paris Saclay, 2018.
 
+\bibitem[Derevianko and Katori(2011)]{derevianko2011colloquium}
+A.~Derevianko and H.~Katori.
+\newblock Colloquium: Physics of optical lattice clocks.
+\newblock \emph{Reviews of Modern Physics}, 83\penalty0 (2):\penalty0 331,
+  2011.
+
 \bibitem[Diu et~al.(1989)Diu, Roulet, Guthmann, and Lederer]{diu1989elements}
 B.~Diu, B.~Roulet, C.~Guthmann, and D.~Lederer.
 \newblock \emph{El{\'e}ments de physique statistique}.
 \newblock Hermann, 1989.
+
+\bibitem[Eckel et~al.(2014)Eckel, Lee, Jendrzejewski, Murray, Clark, Lobb,
+  Phillips, Edwards, and Campbell]{eckel2014hysteresis}
+S.~Eckel, J.~G. Lee, F.~Jendrzejewski, N.~Murray, C.~W. Clark, C.~J. Lobb,
+  W.~D. Phillips, M.~Edwards, and G.~K. Campbell.
+\newblock Hysteresis in a quantized superfluid ‘atomtronic’circuit.
+\newblock \emph{Nature}, 506\penalty0 (7487):\penalty0 200--203, 2014.
 
 \bibitem[Evers and Mirlin(2008)]{evers2008anderson}
 F.~Evers and A.~D. Mirlin.
@@ -213,14 +240,23 @@ F.~Jendrzejewski.
 \newblock \emph{Quantum transport of ultracold atoms in disordered potentials}.
 \newblock PhD thesis, Paris 11, 2012.
 
-\bibitem[Jendrzejewski et~al.(2012)Jendrzejewski, Bernard, Mueller, Cheinet,
-  Josse, Piraud, Pezz{\'e}, Sanchez-Palencia, Aspect, and
+\bibitem[Jendrzejewski et~al.(2012{\natexlab{a}})Jendrzejewski, Bernard,
+  Mueller, Cheinet, Josse, Piraud, Pezz{\'e}, Sanchez-Palencia, Aspect, and
   Bouyer]{jendrzejewski2012three}
 F.~Jendrzejewski, A.~Bernard, K.~Mueller, P.~Cheinet, V.~Josse, M.~Piraud,
   L.~Pezz{\'e}, L.~Sanchez-Palencia, A.~Aspect, and P.~Bouyer.
 \newblock Three-dimensional localization of ultracold atoms in an optical
   disordered potential.
-\newblock \emph{Nature Physics}, 8\penalty0 (5):\penalty0 398--403, 2012.
+\newblock \emph{Nature Physics}, 8\penalty0 (5):\penalty0 398--403,
+  2012{\natexlab{a}}.
+
+\bibitem[Jendrzejewski et~al.(2012{\natexlab{b}})Jendrzejewski, M{\"u}ller,
+  Richard, Date, Plisson, Bouyer, Aspect, and Josse]{jendrzejewski2012coherent}
+F.~Jendrzejewski, K.~M{\"u}ller, J.~Richard, A.~Date, T.~Plisson, P.~Bouyer,
+  A.~Aspect, and V.~Josse.
+\newblock Coherent backscattering of ultracold atoms.
+\newblock \emph{Physical Review Letters}, 109\penalty0 (19):\penalty0 195302,
+  2012{\natexlab{b}}.
 
 \bibitem[Katsumoto et~al.(1987)Katsumoto, Komori, Sano, and
   Kobayashi]{katsumoto1987fine}
@@ -355,6 +391,15 @@ K.~Muller.
   Manipulation of time-reversal symmetry in weak localization experiments}.
 \newblock PhD thesis, Paris 11, 2015.
 
+\bibitem[M{\"u}ller et~al.(2015)M{\"u}ller, Richard, Volchkov, Denechaud,
+  Bouyer, Aspect, and Josse]{muller2015suppression}
+K.~M{\"u}ller, J.~Richard, V.~V. Volchkov, V.~Denechaud, P.~Bouyer, A.~Aspect,
+  and V.~Josse.
+\newblock Suppression and revival of weak localization through control of
+  time-reversal symmetry.
+\newblock \emph{Physical Review Letters}, 114\penalty0 (20):\penalty0 205301,
+  2015.
+
 \bibitem[Murthy et~al.(2014)Murthy, Kedar, Lompe, Neidig, Ries, Wenz, Z{\"u}rn,
   and Jochim]{murthy2014matter}
 P.~Murthy, D.~Kedar, T.~Lompe, M.~Neidig, M.~Ries, A.~Wenz, G.~Z{\"u}rn, and
@@ -389,6 +434,13 @@ A.~Obermann, E.~Larose, L.~Margerin, and V.~Rossetto.
 K.~O’hara, M.~E. Gehm, S.~Granade, and J.~Thomas.
 \newblock Scaling laws for evaporative cooling in time-dependent optical traps.
 \newblock \emph{Physical Review A}, 64\penalty0 (5):\penalty0 051403, 2001.
+
+\bibitem[Ott(2016)]{ott2016single}
+H.~Ott.
+\newblock Single atom detection in ultracold quantum gases: a review of current
+  progress.
+\newblock \emph{Reports on Progress in Physics}, 79\penalty0 (5):\penalty0
+  054401, 2016.
 
 \bibitem[Paalanen et~al.(1983)Paalanen, Rosenbaum, Thomas, and
   Bhatt]{paalanen1983critical}
@@ -478,6 +530,12 @@ M.~Robert-De-Saint-Vincent, J.-P. Brantut, B.~Allard, T.~Plisson, L.~Pezz{\'e},
   potential.
 \newblock \emph{Physical Review Letters}, 104\penalty0 (22):\penalty0 220602,
   2010.
+
+\bibitem[Robins et~al.(2013)Robins, Altin, Debs, and Close]{robins2013atom}
+N.~Robins, P.~Altin, J.~Debs, and J.~Close.
+\newblock Atom lasers: Production, properties and prospects for precision
+  inertial measurement.
+\newblock \emph{Physics Reports}, 529\penalty0 (3):\penalty0 265--296, 2013.
 
 \bibitem[Sapienza et~al.(2010)Sapienza, Thyrrestrup, Stobbe, Garcia, Smolka,
   and Lodahl]{sapienza2010cavity}

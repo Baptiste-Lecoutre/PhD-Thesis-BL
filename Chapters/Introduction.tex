@@ -13,18 +13,25 @@ x=\sqrt{Dt} \text{ ,}
 \end{equation}
 avec $D$ le coefficient de diffusion. 
 
-En s'intéressant à la diffusion d'électrons dans les solides, \emph{P.W. Anderson} a montré en 1958 que le phénomène de diffusion pouvait être annulé, $D=0$, sous certaines conditions \citep{anderson1958absence}. Ce phénomène universel à tout type d'onde, baptisé \emph{Localisation d'Anderson}, a depuis fait l'objet de recherches intenses, aussi bien théoriques qu'expérimentales. 
+En s'intéressant à la diffusion cohérente d'électrons dans les solides, \emph{P.W. Anderson} a montré en 1958 que le phénomène de diffusion pouvait être annulé, $D=0$, sous certaines conditions \citep{anderson1958absence}. Ce phénomène commun à tout type d'onde, baptisé \emph{Localisation d'Anderson}, a depuis fait l'objet de recherches intenses, aussi bien théoriques qu'expérimentales. 
 
 
 \section*{Localisation d'atomes ultra-froids}
 
-Atomes ultra-froids
+Les atomes ultra-froids constituent un outil très versatile permettant de simuler des hamiltoniens personnalisés. Ceux-ci promettent de nombreuses applications telles que les lasers à atomes \citep{robins2013atom}, des interféromètres atomiques \citep{canuel2014matter}, des horloges atomiques sur réseaux optiques \citep{derevianko2011colloquium} encore le domaine récent de l'atomtronique \citep{eckel2014hysteresis}. Ces systèmes présentent en effet un degré de contrôle inédit des paramètres expérimentaux à l'aide de nombreux outils d'interaction matière-rayonnement \citep{bloch2012quantum}. Il est en effet possible de
+\begin{itemize}
+\item[\textendash] Générer des potentiels sur mesure. À l'aide d'ondes lasers, il est possible de réaliser des potentiels harmoniques, quartiques, sinusoïdaux, des potentiels désordonnés...
+\item[\textendash] Contrôler les interactions entre particules. De nombreuses espèces atomiques possèdent des résonances de Feshbach, qui permet de contrôler les interactions inter-atomique à l'aide de champs magnétiques. Il est ainsi possible de générer des interactions attractives, répulsives, ou ben encore de les annuler \citep{walraven2010elements}.
+\item[\textendash] Imager la fonction d'onde d'un état quantique macroscopique. Il s'agit alors d'imagerie \emph{in-situ}, souvent irréalisable dans d'autres systèmes. Il est de plus possible d'obtenir une grande résolution, capable de détecter un unique atome \citep{ott2016single}.
+\end{itemize}
 
-L'observation directe de la localisation d'Anderson d'ondes de matière à une dimension en 2008 a marqué une étape importante dans l'étude de systèmes désordonnés à l'aide d'atomes ultra-froids \citep{roati2008anderson}\citep{billy2008direct}. Rapidement, les efforts se sont tournés vers l'observation de la localisation d'Anderson à trois dimensions, rapportée par trois expériences \citep{kondov2011three}\citep{jendrzejewski2012three}\citep{semeghini2015measurement} au cours de la dernière décennie. 
 
-Ces observations de la localisation d'Anderson se basent toutes sur l'arrêt de l'expansion d'un paquet d'onde. Néanmoins
 
-historique de la manip.
+L'observation directe de la localisation d'Anderson d'ondes de matière à une dimension en 2008 a marqué une étape importante dans l'étude de systèmes désordonnés à l'aide d'atomes ultra-froids \citep{roati2008anderson}\citep{billy2008direct}. Rapidement, les efforts se sont tournés vers l'observation de la localisation d'Anderson à trois dimensions, rapportée par trois expériences \citep{kondov2011three}\citep{jendrzejewski2012three}\citep{semeghini2015measurement} au cours de la dernière décennie. Des signatures d'effets de localisation ont par suite été recherchées dans l'espace des vitesses, menant à la mesure des paramètres microscopiques de la diffusion \citep{richard2019elastic} ainsi qu'à l'observation du pic de rétro-diffusion cohérente \citep{jendrzejewski2012coherent}, signature d'effets de localisation faible. La preuve de la cohérence des processus de localisation faible a ensuite été observée sur notre expérience en manipulant la symétrie par renversement du temps \citep{muller2015suppression}.
+
+Les efforts expérimentaux sont à présent tournés vers l'étude du régime critique de la transition de phase quantique d'Anderson, qui reste un véritable défi expérimental. Si les comportements localisés et diffusifs ont pu être observés dans les expériences pionnières de la localisation d'Anderson à trois dimensions, aucune n'a pu sonder le régime critique, ni même déterminer précisément l'énergie critique de la transition, appelée \emph{seuil de mobilité}.
+
+
 
 
 \section*{Déroulement de la thèse}
@@ -34,6 +41,13 @@ historique de la manip.
 Les trois expériences témoignant de la localisation d'Anderson d'onde de matière à trois dimensions n'ont pas pu fournir une mesure directe du seuil de mobilité. Notamment, l'application du désordre sur l'état initial élargit significativement sa distribution d'énergie. De fait, une fraction des atomes pour lesquels $E<\Ec$ reste localisée, tandis qu'une majorité d'énergie supérieure au seuil de mobilité ont un comportement diffusif. Si l'estimation de la fraction localisée est mesurable expérimentalement, la détermination du seuil de mobilité demande une connaissance fine de la distribution d'énergie des atomes dans la désordre.
 
 Dans l'optique de sonder le régime critique de la transition d'Anderson, il s'avère nécessaire de mesurer la distribution d'énergie des atomes dans le désordre, liée à la fonction spectrale\citep{pasek2017anderson}. Pour cela, l'équipe a développé une approche spectroscopique pouvant adresser sélectivement les différentes énergies du désordre, et ayant mené à la mesure des fonctions spectrales \citep{volchkov2018measurement}\citep{denechaud2018vers}. Cependant, différentes contraintes expérimentales n'ont pas permit de procéder aux expériences d'expansion nécessaires à la mesure du seuil de mobilité.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Introduction/AL3D.pdf}
+\caption{\textbf{Observation de la localisation d'Anderson à trois dimensions.} Gauche: images expérimentales de la localisation d'Anderson d'ondes de matière. Une partie des atomes reste localisée à temps long, tandis que le reste des atomes diffuse lentement. Droite: Illustration de la distribution d'énergie des atomes. La partie de basse énergie est localisée, tandis que la partie de haute énergie est diffusive. Ces comportements sont séparés par une transition de phase, d'énergie critique $\Ec$ appelée seuil de mobilité.}
+\label{fig:AL3D}
+\end{figure}
 
 L'objectif de cette thèse était donc de dépasser les limitations expérimentales précédentes pour étendre le procédé de mesure des fonctions spectrales à la détermination du seuil de mobilité. Cependant, deux avaries majeures de l'expérience (détaillées dans la section suivante) n'ont pas rendu cette mesure possible dans le temps imparti. Ma contribution scientifique se focalise alors sur l'exploitation des données expérimentales relatives au temps de diffusion élastique, mesurées lors de la thèse de Jérémie Richard \citep{richard2015propagation}\citep{richard2019elastic}, et leur confrontation aux mesures des fonctions spectrales \citep{signoles2019ultracold}. Notamment, nous avons montré que cette approche permet de décrire le comportement du temps de diffusion élastique sur la très large gamme de paramètres expérimentaux utilisée.
 
@@ -49,7 +63,7 @@ Une avarie du système informatique de contrôle de l'expérience, basé sur le 
 
 Au printemps 2018, une seconde avarie a paralysé l'expérience jusqu'au mois de novembre 2018. Une défaillance du circuit de refroidissement à eau des bobines de lévitation magnétique ont conduit au démontage d'une partie de l'expérience autour de la chambre de science. Des composants de génération du désordre, l'imagerie de la seconde chambre, des bobines de compensation de champs magnétiques et de lévitation ont ainsi été retirés du dispositif, puis remontés peu à peu. La calibration des champs magnétiques de la seconde chambre s'est déroulée entre le printemps et l'été 2019. L'étude du temps de diffusion élastique a eu lieu en parallèle de ces travaux de réparation, et ont duré jusqu'au printemps 2019.
 
-Le printemps 2019 a aussi été marqué par le remplacement du laser \emph{Ytterbium} source pour notre piège dipolaire. La calibration de ce nouveau piège ainsi que l'optimisation de l'étape d'évaporation optique menant à la condensation de Bose-Einstein s'est déroulée pendant l'automne 2019. 
+Le printemps 2019 a aussi été marqué par le remplacement du laser fibré Ytterbium source pour notre piège dipolaire. La calibration de ce nouveau piège ainsi que l'optimisation de l'étape d'évaporation optique menant à la condensation de Bose-Einstein s'est déroulée pendant l'automne 2019. 
 
 L'entretien d'une expérience d'atomes ultra-froids nécessitant une présence quotidienne et un renouvellement constant de matériel, une mise à jour du système laser dédié au refroidissement est actuellement en cours. Nos lasers \emph{fait-maison} sont ainsi progressivement remplacés par des systèmes commerciaux \emph{Sacher Lasertechnik Cheetah}.
 
