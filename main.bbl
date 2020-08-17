@@ -1,4 +1,4 @@
-\begin{thebibliography}{108}
+\begin{thebibliography}{114}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -45,6 +45,12 @@ J.-L. Basdevant, J.~Dalibard, and M.~Joffre.
 \newblock \emph{M{\'e}canique quantique}.
 \newblock Editions Ecole Polytechnique, 2002.
 
+\bibitem[Bender et~al.(2018)Bender, Y{\i}lmaz, Bromberg, and
+  Cao]{bender2018customizing}
+N.~Bender, H.~Y{\i}lmaz, Y.~Bromberg, and H.~Cao.
+\newblock Customizing speckle intensity statistics.
+\newblock \emph{Optica}, 5\penalty0 (5):\penalty0 595--600, 2018.
+
 \bibitem[Bernard(2010)]{bernard2010transport}
 A.~Bernard.
 \newblock \emph{Transport quantique d'ondes atomiques ultrafroides:
@@ -82,6 +88,13 @@ V.~Boyer.
 J.-P. Brantut.
 \newblock \emph{Manipulation d'atomes froids dans des potentiels lumineux}.
 \newblock PhD thesis, Paris 11, 2009.
+
+\bibitem[Brantut et~al.(2008)Brantut, Cl{\'e}ment, de~Saint~Vincent, Varoquaux,
+  Nyman, Aspect, Bourdel, and Bouyer]{brantut2008light}
+J.-P. Brantut, J.-F. Cl{\'e}ment, M.~R. de~Saint~Vincent, G.~Varoquaux, R.~A.
+  Nyman, A.~Aspect, T.~Bourdel, and P.~Bouyer.
+\newblock Light-shift tomography in an optical-dipole trap for neutral atoms.
+\newblock \emph{Physical Review A}, 78\penalty0 (3):\penalty0 031401, 2008.
 
 \bibitem[Burt et~al.(1997)Burt, Ghrist, Myatt, Holland, Cornell, and
   Wieman]{burt1997coherence}
@@ -121,13 +134,6 @@ N.~Cherroret, T.~Karpiuk, C.~A. M{\"u}ller, B.~Gr{\'e}maud, and C.~Miniatura.
 \newblock Coherent backscattering of ultracold matter waves: Momentum space
   signatures.
 \newblock \emph{Physical Review A}, 85\penalty0 (1):\penalty0 011604, 2012.
-
-\bibitem[Choi et~al.(2016)Choi, Hild, Zeiher, Schau{\ss}, Rubio-Abadal, Yefsah,
-  Khemani, Huse, Bloch, and Gross]{choi2016exploring}
-J.-y. Choi, S.~Hild, J.~Zeiher, P.~Schau{\ss}, A.~Rubio-Abadal, T.~Yefsah,
-  V.~Khemani, D.~A. Huse, I.~Bloch, and C.~Gross.
-\newblock Exploring the many-body localization transition in two dimensions.
-\newblock \emph{Science}, 352\penalty0 (6293):\penalty0 1547--1552, 2016.
 
 \bibitem[Cohen-Tannoudji(1996)]{cohen1996atomes}
 C.~Cohen-Tannoudji.
@@ -185,6 +191,12 @@ M.~Fauquembergue.
   Bose-Einstein et de transport d'un {\'e}chantillon coh{\'e}rent d'atomes}.
 \newblock PhD thesis, Paris 11, 2004.
 
+\bibitem[Filoche and Mayboroda(2012)]{filoche2012universal}
+M.~Filoche and S.~Mayboroda.
+\newblock Universal mechanism for anderson and weak localization.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 109\penalty0
+  (37):\penalty0 14761--14766, 2012.
+
 \bibitem[Gatti et~al.(2008)Gatti, Magatti, and Ferri]{gatti2008three}
 A.~Gatti, D.~Magatti, and F.~Ferri.
 \newblock Three-dimensional coherence of light speckles: theory.
@@ -196,6 +208,20 @@ A.~Genack and N.~Garcia.
   system.
 \newblock \emph{Physical review letters}, 66\penalty0 (16):\penalty0 2064,
   1991.
+
+\bibitem[Ghosh et~al.(2015)Ghosh, Delande, Miniatura, and
+  Cherroret]{ghosh2015coherent}
+S.~Ghosh, D.~Delande, C.~Miniatura, and N.~Cherroret.
+\newblock Coherent backscattering reveals the anderson transition.
+\newblock \emph{Physical Review Letters}, 115\penalty0 (20):\penalty0 200602,
+  2015.
+
+\bibitem[Ghosh et~al.(2017)Ghosh, Miniatura, Cherroret, and
+  Delande]{ghosh2017coherent}
+S.~Ghosh, C.~Miniatura, N.~Cherroret, and D.~Delande.
+\newblock Coherent forward scattering as a signature of anderson
+  metal-insulator transitions.
+\newblock \emph{Physical Review A}, 95\penalty0 (4):\penalty0 041602, 2017.
 
 \bibitem[Goodman(2007)]{goodman2007speckle}
 J.~W. Goodman.
@@ -214,6 +240,14 @@ G.~Grynberg, A.~Aspect, and C.~Fabre.
 \newblock \emph{Introduction to quantum optics: from the semi-classical
   approach to quantized light}.
 \newblock Cambridge university press, 2010.
+
+\bibitem[Hainaut et~al.(2018)Hainaut, Manai, Cl{\'e}ment, Garreau, Szriftgiser,
+  Lemari{\'e}, Cherroret, Delande, and Chicireanu]{hainaut2018controlling}
+C.~Hainaut, I.~Manai, J.-F. Cl{\'e}ment, J.~C. Garreau, P.~Szriftgiser,
+  G.~Lemari{\'e}, N.~Cherroret, D.~Delande, and R.~Chicireanu.
+\newblock Controlling symmetry and localization with an artificial gauge field
+  in a disordered quantum system.
+\newblock \emph{Nature communications}, 9\penalty0 (1):\penalty0 1--9, 2018.
 
 \bibitem[Hildebrand et~al.(2014)Hildebrand, Strybulevych, Skipetrov,
   Van~Tiggelen, and Page]{hildebrand2014observation}
@@ -270,6 +304,14 @@ F.~Jendrzejewski, K.~M{\"u}ller, J.~Richard, A.~Date, T.~Plisson, P.~Bouyer,
 \newblock Coherent backscattering of ultracold atoms.
 \newblock \emph{Physical Review Letters}, 109\penalty0 (19):\penalty0 195302,
   2012{\natexlab{b}}.
+
+\bibitem[Karpiuk et~al.(2012)Karpiuk, Cherroret, Lee, Gr{\'e}maud, M{\"u}ller,
+  and Miniatura]{karpiuk2012coherent}
+T.~Karpiuk, N.~Cherroret, K.~Lee, B.~Gr{\'e}maud, C.~M{\"u}ller, and
+  C.~Miniatura.
+\newblock Coherent forward scattering peak induced by anderson localization.
+\newblock \emph{Physical review letters}, 109\penalty0 (19):\penalty0 190601,
+  2012.
 
 \bibitem[Katsumoto et~al.(1987)Katsumoto, Komori, Sano, and
   Kobayashi]{katsumoto1987fine}
@@ -499,6 +541,13 @@ M.~Piraud.
   d{\'e}sordre corr{\'e}l{\'e}: de 1D {\`a} 3D}.
 \newblock PhD thesis, Paris 11, 2012.
 
+\bibitem[Plisson et~al.(2013)Plisson, Bourdel, and
+  M{\"u}ller]{plisson2013momentum}
+T.~Plisson, T.~Bourdel, and C.~A. M{\"u}ller.
+\newblock Momentum isotropisation in random potentials.
+\newblock \emph{The European Physical Journal Special Topics}, 217\penalty0
+  (1):\penalty0 79--84, 2013.
+
 \bibitem[Prat et~al.(2016)Prat, Cherroret, and Delande]{prat2016semiclassical}
 T.~Prat, N.~Cherroret, and D.~Delande.
 \newblock Semiclassical spectral function and density of states in speckle
@@ -567,14 +616,6 @@ R.~Savo, R.~Pierrat, U.~Najar, R.~Carminati, S.~Rotter, and S.~Gigan.
 F.~Scheffold, R.~Lenke, R.~Tweer, and G.~Maret.
 \newblock Localization or classical diffusion of light?
 \newblock \emph{Nature}, 398\penalty0 (6724):\penalty0 206--207, 1999.
-
-\bibitem[Schreiber et~al.(2015)Schreiber, Hodgman, Bordia, L{\"u}schen,
-  Fischer, Vosk, Altman, Schneider, and Bloch]{schreiber2015observation}
-M.~Schreiber, S.~S. Hodgman, P.~Bordia, H.~P. L{\"u}schen, M.~H. Fischer,
-  R.~Vosk, E.~Altman, U.~Schneider, and I.~Bloch.
-\newblock Observation of many-body localization of interacting fermions in a
-  quasirandom optical lattice.
-\newblock \emph{Science}, 349\penalty0 (6250):\penalty0 842--845, 2015.
 
 \bibitem[Schwartz et~al.(2007)Schwartz, Bartal, Fishman, and
   Segev]{schwartz2007transport}

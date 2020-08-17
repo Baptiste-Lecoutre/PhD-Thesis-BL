@@ -81,33 +81,69 @@ Cependant, l'observation de tels effets de localisation forte sur la dynamique d
 
 
 \subsection{Diffusion cohérente vers l'avant}
-
-Les états localisés peuvent être interprétés comme des états liés du désordre. Pour ces états $\etat{\psi}$, l'impulsion moyenne est nulle, impliquant
+Il est possible d'interpréter les états localisés comme des états liés au désordre. Pour ces états $\etat{\psi}$, l'impulsion moyenne est nulle, ce qui se traduit par
 \begin{equation}
-\int_{-\infty}^{+\infty}{\diff k \: k |\psi(k)|^2}=0
+\int_{-\infty}^{+\infty}{\diff k \: k |\psi(k)|^2}=0 \text{ .}
 \end{equation}
-ce qui se traduit par
+Cette condition peut se réécrire 
 \begin{equation}
-|\psi(k)|^2=|\psi(-k)|^2
+|\psi(k)|^2=|\psi(-k)|^2 \text{ ,}
 \end{equation}
-Et donc la distribution d'impulsion de ces états est symétrique. En particulier, cela se traduit par l'apparition d'un pic de diffusion cohérente vers l'avant comme symétrique du CBS.
+montrant que la distribution d'impulsion de ces états est symétrique. Cette symétrie est notamment décrite par l'apparition d'un pic de diffusion cohérente vers l'avant $\mathbf{k}=\mathbf{k}_{\mathrm{i}}$, découvert récemment par Karpiuk et al. \citep{karpiuk2012coherent} à l'aide de simulations numériques. Ce pic n'existant que pour des états localisés, il s'agit d'une signature dans l'espace des impulsions de la localisation d'Anderson.
 
- contraste du pic CFS qui pourrait être utilisé comme paramètre d'ordre. 
+L'évolution temporelle de la distribution d'impulsion dans le désordre peut alors se décomposer selon trois étapes:
+\begin{itemize}
+\item[\textendash] L'état initial $\etat{\mathbf{k}_{\mathrm{i}}}$ décroît avec un temps caractéristique $\taus$ et est déplété vers les autres états d'impulsion $\etat{\mathbf{k}'}$ avec $k=k_{\mathrm{i}}$. 
+\item[\textendash] Après de multiples diffusions, la distribution d'impulsion devient isotrope sur une durée typique $\taub$ et le pic CBS émerge de la distribution isotrope. 
+\item[\textendash] Aux temps longs, la localisation d'Anderson se manifeste dans l'espace des impulsions sous la forme du pic CFS.
+\end{itemize}
+
+Il a depuis été montré que le contraste $\Lambda$ de ce pic de diffusion cohérente vers l'avant (\emph{CFS} pour l'anglais \emph{Coherent Forward Scattering}) pouvait être utilisé comme paramètre d'ordre de la transition d'Anderson \citep{ghosh2017coherent}. En effet, il a été montré que 
+\begin{equation}
+\Lambda(t) \rightarrow \left\lbrace \begin{aligned}
+& 0  \quad &&\text{pour } E>\Ec \text{ ,}\\
+& \Lambda_{\mathrm{c}}\approx 0.34 \quad &&\text{pour } E=\Ec \text{ ,}\\
+& 1 \quad &&\text{pour } E<\Ec \text{ ,}
+\end{aligned}\right.
+\label{eq:contraste_cfs}
+\end{equation}
+illustré figure \ref{fig:cbs_cfs}b.
+
+L'observation expérimentale du pic de diffusion cohérente vers l'avant consiste un formidable défi expérimental et n'a pas encore été réalisée, excepté dans les systèmes de \emph{kicked rotor} pour lesquels l'analogue est observé dans l'espace des positions \citep{hainaut2018controlling}. Son observation en dimensions réduites nécessite une amélioration de la résolution d'impulsion $\Delta k_{\mathrm{res}}$, tandis que son observation en trois dimensions nécessite de plus une reconstruction tridimensionnelle de la fonction d'onde, avec une tomographie optique par exemple \citep{brantut2008light}. 
+
+
+
+
 
 
 
 \section{Générer un désordre sur mesure} 
-localization landscape, DMD pour autres types de désordre et classes d'universalité...
+Au cours de ce manuscrit, nous nous sommes attachés à démontrer l'importance capitale de la distribution de potentiel sur les propriétés de transport. Si l'amplitude du désordre $|\VR|$ est aisément contrôlable sur notre expérience, la distribution de potentiel reste déterminée par l'équation \ref{eq:distribution_potentiel_speckle}. L'implémentation d'un modulateur spatial de lumière en remplacement du diffuseur, ou d'une matrice de micro-miroirs, permet de générer un désordre entièrement déterminé. Celui-ci permet non seulement de modifier les corrélations spatiales du désordre, mais aussi sa distribution \citep{bender2018customizing}. Une telle implémentation ouvre de nombreuses applications expérimentales, parmi lesquelles figurent un test de l'universalité de la transition d'Anderson et l'étude la transition entre localisation d'Anderson et percolation classique. 
+
+Plus particulièrement, l'utilisation d'un modulateur spatial de lumière nous permettrait d'étudier expérimentalement la théorie de \emph{Landscape}, récemment développée par Marcel Filoche et Svitlana Mayboroda \citep{filoche2012universal}. Dans le cadre de leur théorie, les phénomènes de localisation faible et de localisation d'Anderson sont la manifestation d'un seul mécanisme universel encodé par la fonction de landscape $u$, solution de l'équation\footnote{Avec ces unités, l'équation de Schrödinger s'écrit $(-\Delta+V)\psi=E\psi$.}
+\begin{equation}
+(-\Delta+V)u=1 \text{ .}
+\label{eq:landscape}
+\end{equation}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Conclusion/landscape.pdf}
+\caption{\textbf{Illustration de la théorie de Landscape.} \textbf{a.} Fonction de landscape pour une réalisation du désordre calculée par l'équation \ref{eq:landscape}. \textbf{b.} Représentation de la même fonction de landscape avec son réseau de vallées pour une énergie donnée. Ce réseau de vallées délimite des sous-régions entre lesquelles la fonction d'onde est fortement atténuée. \textbf{c.} Représentation du réseau de vallées où sont superposés les premiers modes propres du système. Les vallées semblent définir les sous-régions qui supportent les modes propres associés.}
+\label{fig:landscape}
+\end{figure}
+
+Les auteurs ont ainsi montré que la fonction d'onde d'un mode est fortement atténuée le long des minimas de la fonction de landscape, séparant l'espace en sous-régions délimitées par un réseau de vallées de la fonction de landscape (voir figure \ref{fig:landscape}, milieu). Finalement, les auteurs ont remarqué que ce réseau de vallées reproduisait les domaines dans lesquels les modes propres du système étaient localisés (voir figure \ref{fig:landscape}, droite). Ils interprètent ainsi le phénomène de localisation comme de la percolation dans un potentiel caché $W=1/u$.
+
+La théorie de landscape prédit ainsi les régions de localisation et les énergies propres associées avec une précision remarquable. De plus, cette théorie ouvre la voie au \emph{problème inverse}, c'est à dire créer un désordre afin d'obtenir des propriétés souhaitées de localisation. Le développement récent de cette théorie suscite une très grosse activité de recherche dans le monde, dont la mise en place d'une collaboration entre les auteurs et notre équipe afin de reproduire les fonctions spectrales mesurées à l'aide de la théorie de landscape.
 
 
 
 
 
+\begin{comment}
+\section{Localisation d'Anderson et interactions}
 
-\section{Autres perspectives}
-Effets topologiques sur le graphène qui font de l'anti-localisation: CBS négatif. 
-
-\subsection{Localisation d'Anderson et interactions}
 Effet des interactions: many-body localization, verre de bose...
 \citep{schreiber2015observation} \citep{choi2016exploring}
 \begin{figure}
@@ -118,6 +154,11 @@ Effet des interactions: many-body localization, verre de bose...
 \label{fig:many_body_localisation}
 \end{figure}
 
+
+
+
+La physique du désordre n'en est encore qu'à son balbutiement.
+\end{comment}
 
 %\makeatletter
 %\def\toclevel@chapter{0}

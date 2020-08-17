@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  17 AUG 2020 13:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  17 AUG 2020 16:07
 entering extended mode
 **./main.tex
 (main.tex
@@ -1454,7 +1454,7 @@ Chapitre 1.
 [5
 
 ]
-<Fig/Introduction/AL3D.pdf, id=396, 519.4465pt x 104.2945pt>
+<Fig/Introduction/AL3D.pdf, id=390, 519.4465pt x 104.2945pt>
 File: Fig/Introduction/AL3D.pdf Graphic file (type pdf)
 <use Fig/Introduction/AL3D.pdf>
 Package pdftex.def Info: Fig/Introduction/AL3D.pdf  used on input line 47.
@@ -2194,59 +2194,48 @@ n input line 32.
 
 Underfull \vbox (badness 6944) has occurred while \output is active []
 
- [150 <./Fig/Conclusion/spectro_transition_anderson.pdf>]
-
-Package natbib Warning: Citation `plisson2013momentum' on page 151 undefined on
- input line 56.
-
-[151]
-
-Package natbib Warning: Citation `ghosh2015coherent' on page 152 undefined on i
-nput line 61.
-
-<Fig/Conclusion/cbs_cfs.pdf, id=16757, 481.9821pt x 297.50862pt>
+ [150 <./Fig/Conclusion/spectro_transition_anderson.pdf>] [151]
+<Fig/Conclusion/cbs_cfs.pdf, id=16760, 481.9821pt x 297.50862pt>
 File: Fig/Conclusion/cbs_cfs.pdf Graphic file (type pdf)
 <use Fig/Conclusion/cbs_cfs.pdf>
 Package pdftex.def Info: Fig/Conclusion/cbs_cfs.pdf  used on input line 74.
 (pdftex.def)             Requested size: 426.79135pt x 263.44719pt.
-[152 <./Fig/Conclusion/cbs_cfs.pdf>]
-<Fig/Conclusion/many_body_localisation.pdf, id=17986, 481.47705pt x 197.86494pt
->
-File: Fig/Conclusion/many_body_localisation.pdf Graphic file (type pdf)
-<use Fig/Conclusion/many_body_localisation.pdf>
-Package pdftex.def Info: Fig/Conclusion/many_body_localisation.pdf  used on inp
-ut line 115.
-(pdftex.def)             Requested size: 426.79135pt x 175.39275pt.
-) (Appendices/Anex_speckle.tex [153]
-[154 <./Fig/Conclusion/many_body_localisation.pdf>]
-Annexe A.
-[155
+ [152 <./Fig/Conclusion/cbs_cfs.pdf>] [153]
+<Fig/Conclusion/landscape.pdf, id=18008, 453.53421pt x 158.82379pt>
+File: Fig/Conclusion/landscape.pdf Graphic file (type pdf)
+<use Fig/Conclusion/landscape.pdf>
+Package pdftex.def Info: Fig/Conclusion/landscape.pdf  used on input line 131.
+(pdftex.def)             Requested size: 426.79135pt x 149.45917pt.
+ [154 <./Fig/Conclusion/landscape.pdf>])
+(Appendices/Anex_speckle.tex [155] [156
 
-] [156] [157] [158]) (Appendices/Anex_Born.tex [159] [160]
+]
+Annexe A.
+[157] [158] [159] [160]) (Appendices/Anex_Born.tex [161] [162]
 Annexe B.
-[161
+[163
 
 ]
 Overfull \hbox (6.44913pt too wide) detected at line 60
 []
  []
 
-[162] [163]
+[164] [165]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [164]
+ [166]
 Underfull \vbox (badness 2418) has occurred while \output is active []
 
- [165]
+ [167]
 Overfull \hbox (1.41833pt too wide) detected at line 167
 []
  []
 
-[166]) (main.bbl [167] [168
+[168]) (main.bbl [169] [170
 
-] [169] [170] [171]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-85.
+] [171] [172] [173]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+27.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2256,11 +2245,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[172] [173] [174] [175])
-
-Package natbib Warning: There were undefined citations.
-
-[176]
+[174] [175] [176] [177]) [178]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
  (main.aux)
@@ -2270,16 +2255,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
- 31870 strings out of 480934
- 613214 string characters out of 2899917
- 1021873 words of memory out of 3000000
- 45700 multiletter control sequences out of 15000+200000
+ 31898 strings out of 480934
+ 613800 string characters out of 2899917
+ 1022943 words of memory out of 3000000
+ 45718 multiletter control sequences out of 15000+200000
  728883 words of font info for 357 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,1890b,1134s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2327,9 +2309,9 @@ s/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb>
-Output written on main.pdf (176 pages, 23507735 bytes).
+Output written on main.pdf (178 pages, 21618150 bytes).
 PDF statistics:
- 19945 PDF objects out of 22161 (max. 8388607)
- 862 named destinations out of 1000 (max. 500000)
- 70386 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 18888 PDF objects out of 22161 (max. 8388607)
+ 872 named destinations out of 1000 (max. 500000)
+ 70370 words of extra memory for PDF output out of 74296 (max. 10000000)
 
