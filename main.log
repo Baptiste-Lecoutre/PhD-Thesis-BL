@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  16 AUG 2020 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  17 AUG 2020 13:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -2119,18 +2119,15 @@ e pdf)
 Package pdftex.def Info: Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pd
 f  used on input line 244.
 (pdftex.def)             Requested size: 284.76198pt x 199.71019pt.
- [138]
-Underfull \vbox (badness 5460) has occurred while \output is active []
-
- [139 <./Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf>]
-<Fig/TauS_NJP/fonctions_spectrales_rouge.pdf, id=15767, 514.48901pt x 243.04524
+ [138] [139 <./Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf>]
+<Fig/TauS_NJP/fonctions_spectrales_rouge.pdf, id=15769, 514.48901pt x 243.04524
 pt>
 File: Fig/TauS_NJP/fonctions_spectrales_rouge.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/fonctions_spectrales_rouge.pdf>
 Package pdftex.def Info: Fig/TauS_NJP/fonctions_spectrales_rouge.pdf  used on i
 nput line 294.
 (pdftex.def)             Requested size: 426.79135pt x 201.62364pt.
-<Fig/TauS_NJP/fonctions_spectrales_bleu.pdf, id=15770, 518.83864pt x 242.02167p
+<Fig/TauS_NJP/fonctions_spectrales_bleu.pdf, id=15772, 518.83864pt x 242.02167p
 t>
 File: Fig/TauS_NJP/fonctions_spectrales_bleu.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/fonctions_spectrales_bleu.pdf>
@@ -2147,7 +2144,7 @@ tions_spectrales_bleu.pdf
 pdfTeX warning: pdflatex (file ./Fig/TauS_NJP/fonctions_spectrales_bleu.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]
-<Fig/TauS_NJP/fonctions_spectrales_classiques.pdf, id=15809, 539.70927pt x 584.
+<Fig/TauS_NJP/fonctions_spectrales_classiques.pdf, id=15811, 539.70927pt x 584.
 4436pt>
 File: Fig/TauS_NJP/fonctions_spectrales_classiques.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/fonctions_spectrales_classiques.pdf>
@@ -2159,7 +2156,7 @@ Underfull \vbox (badness 6808) has occurred while \output is active []
 
  [142]
 [143 <./Fig/TauS_NJP/fonctions_spectrales_classiques.pdf>] [144]
-<Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf, id=16639, 414.40862pt x 218.
+<Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf, id=16641, 414.40862pt x 218.
 79286pt>
 File: Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf>
@@ -2167,7 +2164,7 @@ Package pdftex.def Info: Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf  used
  on input line 360.
 (pdftex.def)             Requested size: 426.79135pt x 225.3291pt.
  [145 <./Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf>]
-<Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf, id=16656, 414.34483pt x 215.8
+<Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf, id=16658, 414.34483pt x 215.8
 9252pt>
 File: Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf>
@@ -2183,50 +2180,71 @@ n.tex
 
 ]
 Chapitre 8.
-<Fig/Conclusion/spectro_transition_anderson.pdf, id=16694, 452.45566pt x 142.77
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [149]
+<Fig/Conclusion/spectro_transition_anderson.pdf, id=16702, 452.45566pt x 142.77
 16pt>
 File: Fig/Conclusion/spectro_transition_anderson.pdf Graphic file (type pdf)
 <use Fig/Conclusion/spectro_transition_anderson.pdf>
 Package pdftex.def Info: Fig/Conclusion/spectro_transition_anderson.pdf  used o
-n input line 26.
+n input line 32.
 (pdftex.def)             Requested size: 426.79135pt x 134.67804pt.
-[149 <./Fig/Conclusion/spectro_transition_anderson.pdf>]
-<Fig/Conclusion/many_body_localisation.pdf, id=16735, 481.47705pt x 197.86494pt
+
+Underfull \vbox (badness 6944) has occurred while \output is active []
+
+ [150 <./Fig/Conclusion/spectro_transition_anderson.pdf>]
+
+Package natbib Warning: Citation `plisson2013momentum' on page 151 undefined on
+ input line 56.
+
+[151]
+
+Package natbib Warning: Citation `ghosh2015coherent' on page 152 undefined on i
+nput line 61.
+
+<Fig/Conclusion/cbs_cfs.pdf, id=16757, 481.9821pt x 297.50862pt>
+File: Fig/Conclusion/cbs_cfs.pdf Graphic file (type pdf)
+<use Fig/Conclusion/cbs_cfs.pdf>
+Package pdftex.def Info: Fig/Conclusion/cbs_cfs.pdf  used on input line 74.
+(pdftex.def)             Requested size: 426.79135pt x 263.44719pt.
+[152 <./Fig/Conclusion/cbs_cfs.pdf>]
+<Fig/Conclusion/many_body_localisation.pdf, id=17986, 481.47705pt x 197.86494pt
 >
 File: Fig/Conclusion/many_body_localisation.pdf Graphic file (type pdf)
 <use Fig/Conclusion/many_body_localisation.pdf>
 Package pdftex.def Info: Fig/Conclusion/many_body_localisation.pdf  used on inp
-ut line 49.
+ut line 115.
 (pdftex.def)             Requested size: 426.79135pt x 175.39275pt.
-)
-(Appendices/Anex_speckle.tex [150 <./Fig/Conclusion/many_body_localisation.pdf>
-]
+) (Appendices/Anex_speckle.tex [153]
+[154 <./Fig/Conclusion/many_body_localisation.pdf>]
 Annexe A.
-[151
+[155
 
-] [152] [153] [154] [155]) (Appendices/Anex_Born.tex [156]
+] [156] [157] [158]) (Appendices/Anex_Born.tex [159] [160]
 Annexe B.
-[157
+[161
 
 ]
 Overfull \hbox (6.44913pt too wide) detected at line 60
 []
  []
 
-[158] [159]
+[162] [163]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [160]
+ [164]
 Underfull \vbox (badness 2418) has occurred while \output is active []
 
- [161]
+ [165]
 Overfull \hbox (1.41833pt too wide) detected at line 167
 []
  []
 
-[162]) (main.bbl [163] [164
+[166]) (main.bbl [167] [168
 
-] [165] [166] [167]
+] [169] [170] [171]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 85.
 
@@ -2238,7 +2256,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[168] [169] [170] [171]) [172]
+[172] [173] [174] [175])
+
+Package natbib Warning: There were undefined citations.
+
+[176]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
  (main.aux)
@@ -2254,13 +2276,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
- 31855 strings out of 480934
- 612929 string characters out of 2899917
- 1020204 words of memory out of 3000000
- 45695 multiletter control sequences out of 15000+200000
- 731778 words of font info for 357 fonts, out of 3000000 for 9000
+ 31870 strings out of 480934
+ 613214 string characters out of 2899917
+ 1021873 words of memory out of 3000000
+ 45700 multiletter control sequences out of 15000+200000
+ 728883 words of font info for 357 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,19n,62p,1613b,1134s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,19n,62p,1890b,1134s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
 c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathi
 t.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
@@ -2305,9 +2327,9 @@ s/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb>
-Output written on main.pdf (172 pages, 22661713 bytes).
+Output written on main.pdf (176 pages, 23507735 bytes).
 PDF statistics:
- 18691 PDF objects out of 22161 (max. 8388607)
- 854 named destinations out of 1000 (max. 500000)
- 70893 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 19945 PDF objects out of 22161 (max. 8388607)
+ 862 named destinations out of 1000 (max. 500000)
+ 70386 words of extra memory for PDF output out of 74296 (max. 10000000)
 
