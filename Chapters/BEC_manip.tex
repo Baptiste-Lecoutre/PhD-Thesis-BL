@@ -77,12 +77,12 @@ où $\overline{\omega}=(\omega_x \omega_y \omega_z)^{1/3}$ est la fréquence moy
 
 On peut écrire l'équation de Schrödinger pour l'état fondamental en tenant compte de ce terme d'interaction entre particules. La description en champ moyen du condensat est alors donnée par l'équation de Gross-Pitaevskii (aussi connue sous le nom d'\emph{équation de Schrödinger non-linéaire}):
 \begin{equation}
-\left[ -\frac{\hb^2}{2m}\Delta + V(\mathbf{r}) + g\left|\phi_0(\mathbf{r})\right|^2 \right] \phi_0((\mathbf{r}) = \mu \phi_0(\mathbf{r})
+\left[ -\frac{\hb^2}{2m}\Delta + V(\mathbf{x}) + g\left|\phi_0(\mathbf{x})\right|^2 \right] \phi_0(\mathbf{x}) = \mu \phi_0(\mathbf{x})
 \label{eq:gross_pitaevskii}
 \end{equation}
-où $\phi_0(\mathbf{r})$ est la fonction d'onde macroscopique du condensat et $\mu$ est le potentiel chimique. La densité d'atomes est donnée par $n(\mathbf{r})=\left| \phi_0(\mathbf{r}) \right|^2$. Ainsi, la fonction d'onde du condensat $\phi_0(\mathbf{r})$ est normalisée pour donner le nombre de particules dans le condensat $\Nzero=\int{\mathrm{d}\mathbf{r} \: \left| \phi_0(\mathbf{r}) \right|^2}$.
+où $\phi_0(\mathbf{x})$ est la fonction d'onde macroscopique du condensat et $\mu$ est le potentiel chimique. La densité d'atomes est donnée par $n(\mathbf{x})=\left| \phi_0(\mathbf{x}) \right|^2$. Ainsi, la fonction d'onde du condensat $\phi_0(\mathbf{x})$ est normalisée pour donner le nombre de particules dans le condensat $\Nzero=\int{\diff\mathbf{x} \: \left| \phi_0(\mathbf{x}) \right|^2}$.
 
-Le premier terme de gauche décrit l'énergie cinétique, le second le terme d'énergie potentielle provenant du piège, et le dernier décrit l'énergie d'interaction entre particules, proportionnelle à la densité locale $n(\mathbf{r})$. La somme de ces énergies donne le potentiel chimique $\mu$, qui correspond à l'énergie qu'il faut fournir pour rajouter une particule supplémentaire au système de $\Nzero$ particules.
+Le premier terme de gauche décrit l'énergie cinétique, le second le terme d'énergie potentielle provenant du piège, et le dernier décrit l'énergie d'interaction entre particules, proportionnelle à la densité locale $n(\mathbf{x})$. La somme de ces énergies donne le potentiel chimique $\mu$, qui correspond à l'énergie qu'il faut fournir pour rajouter une particule supplémentaire au système de $\Nzero$ particules.
 
 
 
@@ -91,20 +91,20 @@ Le premier terme de gauche décrit l'énergie cinétique, le second le terme d'�
 Considérons le cas d'un condensat comportant un grand nombre de particules $\Nzero$. L'énergie cinétique totale du condensat varie avec $\Nzero$ de manière linéaire: $\mean{E_{\mathrm{k}}}\propto \Nzero$. L'énergie totale d'interaction varie quant à elle en $E_{\mathrm{int}}\propto \Nzero^2$. Pour un nombre suffisamment grand de particules, il devient possible de négliger le terme d'énergie cinétique dans l'équation de Gross-Pitaevskii stationnaire: il s'agit du régime de Thomas-Fermi.
 Dans ce cas, le profil de densité s'écrit
 \begin{equation}
-n(\mathbf{r})=\left\{
+n(\mathbf{x})=\left\{
 					\begin{array}{ll}
-						(\mu-V(\mathbf{r}))/g &\quad \text{lorsque} \quad \mu>V(\mathbf{r})\\
+						(\mu-V(\mathbf{x}))/g &\quad \text{lorsque} \quad \mu>V(\mathbf{x})\\
 						0 &\quad \text{sinon}
 					\end{array} 
 				\right.
 \end{equation}
 Le profil de densité est donc une parabole inversée de rayons $R_{\mathrm{TF},i}=\sqrt{\frac{2\mu}{m\omega_i^2}}$ en considérant le piège harmonique de l'équation \ref{eq:piege_harmonique}.
-Ces rayons de Thomas-Fermi ont été déterminés par la condition $n(\mathbf{r})=0$. Il est intéressant de noter que le potentiel effectif vu par une particule $V_{\mathrm{eff}}(\mathbf{r})=V(\mathbf{r})+gn(\mathbf{r})$ est constant sur l'ensemble du condensat:
+Ces rayons de Thomas-Fermi ont été déterminés par la condition $n(\mathbf{x})=0$. Il est intéressant de noter que le potentiel effectif vu par une particule $V_{\mathrm{eff}}(\mathbf{x})=V(\mathbf{x})+gn(\mathbf{x})$ est constant sur l'ensemble du condensat:
 \begin{equation}
-V_{\mathrm{eff}}(\mathbf{r})= \left\{
+V_{\mathrm{eff}}(\mathbf{x})= \left\{
 									\begin{array}{ll}
-										\mu &\quad \text{lorsque} \quad \mu>V(\mathbf{r})\\
-										V(\mathbf{r}) &\quad \text{sinon}
+										\mu &\quad \text{lorsque} \quad \mu>V(\mathbf{x})\\
+										V(\mathbf{x}) &\quad \text{sinon}
 									\end{array}
 							\right.
 \end{equation}
@@ -203,7 +203,7 @@ E_{F=1} &= - \frac{h \deltahf}{2} \sqrt{1+ m_F \beta +\beta^2}
 \end{equation}
 avec $\beta \simeq 2 \mub \left| B \right| /h \deltahf$. À faible champ magnétique $\left| B \right| \ll h \deltahf / \mub$ (régime où $\beta \ll 1$), on retrouve l'effet Zeeman linéaire avec
 \begin{equation}
-U_{\mathrm{mag}} (\mathbf{r}) = \mf g_{\mathrm{F}} \mub \left| B(\mathbf{r}) \right|
+U_{\mathrm{mag}} (\mathbf{x}) = \mf g_{\mathrm{F}} \mub \left| B(\mathbf{x}) \right|
 \end{equation}
 et $g_{\mathrm{F}=2}= 1/2$ et $g_{\mathrm{F}=1} =-1/2$. L'utilisation d'un champ magnétique non homogène génère donc un potentiel dépendant de la position, tel que dans l'expérience de Stern \& Gerlach. L'utilisation de tels champs inhomogènes est très répandue dans le domaine des atomes ultra-froids, en particulier pour la génération de pièges magnétiques, l'accélération de particules, mais aussi pour réaliser une lévitation magnétique comme c'est le cas sur notre expérience. 
 
@@ -217,12 +217,12 @@ et $g_{\mathrm{F}=2}= 1/2$ et $g_{\mathrm{F}=1} =-1/2$. L'utilisation d'un champ
 \label{sc:forces_lumineuses}
 On se concentre à présent sur l'interaction entre un atome et un champ laser incident. Ce champ laser comporte un grand nombre de photons émis par seconde (typiquement \num{e12} photons par seconde pour une puissance de \SI{1}{\micro\watt}), on peut donc décrire ce champ laser par une onde classique 
 \begin{equation}
-\mathbf{E}(\mathbf{r},t)= \mathrm{Re} \left( E(\mathbf{r}) e^{-i \omega t - i\phi (\mathbf{r})}  \boldsymbol\epsilon \right)
+\mathbf{E}(\mathbf{x},t)= \mathrm{Re} \left( E(\mathbf{x}) e^{-i \omega t - i\phi (\mathbf{x})}  \boldsymbol\epsilon \right)
 \end{equation}
-dont l'effet sur un atome est donné par le hamiltonien $H_{\mathrm{AL}}=-\mathbf{D}.\mathbf{E}(\mathbf{r},t)$. 
+dont l'effet sur un atome est donné par le hamiltonien $H_{\mathrm{AL}}=-\mathbf{D}.\mathbf{E}(\mathbf{x},t)$. 
 Dans la cadre de la théorie de la réponse linéaire, on introduit la polarisabilité atomique $\alpha(\omega)$ et on montre alors que la force moyenne exercée sur un atome est la somme de deux termes:
 \begin{equation}
-\mathbf{F}=\frac{1}{2} \mathrm{Re}(\alpha(\omega)) E(\mathbf{r}) \nabla E(\mathbf{r})+\frac{1}{2}\mathrm{Im}(\alpha(\omega)) E^2(\mathbf{r}) \nabla \phi(\mathbf{r})
+\mathbf{F}=\frac{1}{2} \mathrm{Re}(\alpha(\omega)) E(\mathbf{x}) \nabla E(\mathbf{x})+\frac{1}{2}\mathrm{Im}(\alpha(\omega)) E^2(\mathbf{x}) \nabla \phi(\mathbf{x})
 \label{eq:forces_lumineuses}
 \end{equation}
 Un calcul pleinement quantique est nécessaire pour déterminer la polarisabilité, cependant on peut montrer que pour un système à deux niveaux, on a \citep{grimm1999optical}
@@ -234,10 +234,10 @@ où $\omega_0$ est la fréquence de résonance et $\Gamma$ est la largeur de la 
 \paragraph*{Potentiel dipolaire}
 Le premier terme de l'équation \ref{eq:forces_lumineuses} est proportionnel à la partie réelle de la polarisabilité atomique. Ce terme décrit donc comment un moment dipolaire électrique induit interagit avec le gradient d'intensité lumineuse. Cette force est conservative et dérive d'un potentiel qui est proportionnel à l'intensité lumineuse: on parle de \emph{potentiel dipolaire}. Dans le cas d'un faisceau très désaccordé, ce potentiel s'écrit:
 \begin{equation}
-U_{\mathrm{dip}}(\mathbf{r})=\frac{3\pi c^2 I(\mathbf{r})}{2 \omega_0^3} \left( \frac{\Gamma}{\omega - \omega_0} - \frac{\Gamma}{\omega + \omega_0} \right)
+U_{\mathrm{dip}}(\mathbf{x})=\frac{3\pi c^2 I(\mathbf{x})}{2 \omega_0^3} \left( \frac{\Gamma}{\omega - \omega_0} - \frac{\Gamma}{\omega + \omega_0} \right)
 \label{eq:potentiel_dipolaire}
 \end{equation}
-avec $I(\mathbf{r})$ l'intensité lumineuse à la position $\mathbf{r}$. Appliquée au \isotope[87]{Rb}, cette expression est valable très loin de résonance: cela signifie que le laser ne voit pas le détail de la raie $D$, c'est à dire que le désaccord $\omega-\omega_0$ doit être très grand devant la structure fine séparant les transitions $D_1$ et $D_2$, et l'onde laser ne voit qu'un système à deux niveaux $\lbrace 5 {}^2S, 5 {}^2P \rbrace$.
+avec $I(\mathbf{x})$ l'intensité lumineuse à la position $\mathbf{x}$. Appliquée au \isotope[87]{Rb}, cette expression est valable très loin de résonance: cela signifie que le laser ne voit pas le détail de la raie $D$, c'est à dire que le désaccord $\omega-\omega_0$ doit être très grand devant la structure fine séparant les transitions $D_1$ et $D_2$, et l'onde laser ne voit qu'un système à deux niveaux $\lbrace 5 {}^2S, 5 {}^2P \rbrace$.
 
 Un tel potentiel présente de nombreux avantages pour les expériences d'atomes ultrafroids. Suivant le signe de la quantité $\delta = \omega-\omega_0$, ce potentiel peut être soit attractif ($\delta<0$, on parlera alors de potentiel désaccordé vers le \emph{rouge}), soit répulsif ($\delta>0$, potentiel désaccordé vers le \emph{bleu}). Les atomes seront alors attirés par les maximas d'intensité lumineuse (pour un faisceau désaccordé vers le rouge) ou bien vers les zones d'ombre (pour les faisceaux désaccordés vers le bleu). Un faisceau gaussien focalisé et désaccordé vers le rouge permet ainsi de piéger les atomes en son foyer: la forme gaussienne du faisceau attire les atomes vers le centre du faisceau. 
 
@@ -248,7 +248,7 @@ Cependant, l'utilisation de tels désaccords (plusieurs centaines de nanomètres
 \begin{comment}
 Il se pose alors la question de la dissipation, liée à l'émission spontanée. Le taux d'émission spontanée peut être estimé par:
 \begin{equation}
-\Gamma_{\mathrm{sp}}(\mathbf{r})=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
+\Gamma_{\mathrm{sp}}(\mathbf{x})=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2
 \end{equation}
 et dans le cas dans d'un faisceau très désaccordé on peut souvent négliger ce taux et la dissipation qui lui est associée.
 \end{comment}
@@ -286,7 +286,7 @@ Notons enfin qu'il est possible de se rapprocher encore plus de résonance et de
 
 
 \paragraph*{Force de pression de radiation}
-Le second terme s'appelle \emph{force de pression de radiation}. Il provient de la partie imaginaire de la polarisabilité atomique, qui caractérise l'absorption de photons par l'atome. Il s'agit donc d'une force inélastique qui résulte d'un grand nombre de cycles d'absorption de photons du faisceau laser et d'émission spontanée dans des directions aléatoires de l'espace \footnote{Pour réaliser de tels cycles, il est nécessaire d'avoir une transition cyclante, c'est à dire de disposer d'un état excité dont la désexcitation renvoie forcément sur l'état d'origine.}. L'impulsion totale cédée par émission spontanée s'annule donc, et en moyenne le transfert d'impulsion ne provient que de l'absorption de photons du faisceau laser comme illustré par le terme de droite de l'équation \ref{eq:forces_lumineuses}. En effet, le gradient de la phase du laser vaut $\nabla \phi (\mathbf{r})=\mathbf{k}$. Cette force est donnée par
+Le second terme s'appelle \emph{force de pression de radiation}. Il provient de la partie imaginaire de la polarisabilité atomique, qui caractérise l'absorption de photons par l'atome. Il s'agit donc d'une force inélastique qui résulte d'un grand nombre de cycles d'absorption de photons du faisceau laser et d'émission spontanée dans des directions aléatoires de l'espace \footnote{Pour réaliser de tels cycles, il est nécessaire d'avoir une transition cyclante, c'est à dire de disposer d'un état excité dont la désexcitation renvoie forcément sur l'état d'origine.}. L'impulsion totale cédée par émission spontanée s'annule donc, et en moyenne le transfert d'impulsion ne provient que de l'absorption de photons du faisceau laser comme illustré par le terme de droite de l'équation \ref{eq:forces_lumineuses}. En effet, le gradient de la phase du laser vaut $\nabla \phi (\mathbf{x})=\mathbf{k}$. Cette force est donnée par
 \begin{equation}
 \mathbf{F}_{\mathrm{PR}}=\hb \mathbf{k} \Gamma_{\mathrm{sp}} 
 \end{equation}
@@ -294,7 +294,7 @@ avec $\Gamma_{\mathrm{sp}}$ le taux d'émission spontanée en présence du champ
 \begin{equation}
 \Gamma_{\mathrm{sp}}=\frac{\Gamma}{2} \frac{s}{1+s} \quad \text{avec} \quad s=\frac{I/I_{\mathrm{sat}}}{1+4\delta^2/\Gamma^2}
 \end{equation}
-où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}=\SI{1.67}{\milli\watt\per\centi\metre^2}$ est une constante de l'atome de \isotope[87]{Rb}. La grandeur $s$ s'appelle le paramètre de saturation. Celui-ci dépend de l'intensité lumineuse incidente (et donc du nombre de photons incidents) ainsi que du désaccord du laser par rapport à la résonance atomique\footnote{L'expression \ref{eq:potentiel_dipolaire} n'est valable que dans un régime de faible saturation. L'utilisation de grands désaccords autorise l'utilisation de grosses puissances optiques tout en gardant $s\ll 1$. Dans ce régime, on peut estimer le taux d'émission spontanée par $\Gamma_{\mathrm{sp}}(\mathbf{r})=\frac{3 \pi c^2 I(\mathbf{r})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2$.} $\delta = \omega-\omega_0$.  Le paramètre de saturation est maximal en $\delta=0$, c'est à dire lorsque le laser est à résonance. Dans le cas d'un laser très saturant $s \gg 1$, la force de pression de radiation s'écrit
+où l'intensité de saturation $I_{\mathrm{sat}}=\frac{\pi h c \Gamma}{3\lambda_0^3}=\SI{1.67}{\milli\watt\per\centi\metre^2}$ est une constante de l'atome de \isotope[87]{Rb}. La grandeur $s$ s'appelle le paramètre de saturation. Celui-ci dépend de l'intensité lumineuse incidente (et donc du nombre de photons incidents) ainsi que du désaccord du laser par rapport à la résonance atomique\footnote{L'expression \ref{eq:potentiel_dipolaire} n'est valable que dans un régime de faible saturation. L'utilisation de grands désaccords autorise l'utilisation de grosses puissances optiques tout en gardant $s\ll 1$. Dans ce régime, on peut estimer le taux d'émission spontanée par $\Gamma_{\mathrm{sp}}(\mathbf{x})=\frac{3 \pi c^2 I(\mathbf{x})}{2\hb \omega_0^3} \left( \frac{\omega}{\omega_0}\right)^3 \left( \frac{\Gamma}{\omega-\omega_0}-\frac{\Gamma}{\omega+\omega_0} \right)^2$.} $\delta = \omega-\omega_0$.  Le paramètre de saturation est maximal en $\delta=0$, c'est à dire lorsque le laser est à résonance. Dans le cas d'un laser très saturant $s \gg 1$, la force de pression de radiation s'écrit
 \begin{equation}
 \mathbf{F}_{\mathrm{PR}}=\frac{\hb \mathbf{k} \Gamma}{2}
 \end{equation}
@@ -347,7 +347,7 @@ Ces caractéristiques sont illustrées figure \ref{fig:rabi}. En effet, l'envelo
 
 
 \section{Description d'un cycle expérimental}
-Dans la partie précédente, nous nous sommes familiarisés avec quelques outils couramment utilisés sur les expériences d'atomes ultrafroids pour piéger et manipuler les atomes. Dans cette nouvelle partie, nous nous pencherons sur l'implémentation de ces outils sur notre expérience afin d'obtenir un condensat de Bose-Einstein de \isotope[87]{Rb}. La présentation qui en sera donnée ici se verra succincte, nous nous contenterons d'illustrer brièvement les différentes étapes de refroidissement qui mènent à la condensation. De nombreux détails pourront être trouvés dans les thèses des doctorants qui ont contribué à faire de cette expérience ce qu'elle est aujourd'hui: \citep{fauquembergue2004realisation}, \citep{riou2006etude}, \citep{bernard2010transport}, \citep{jendrzejewski2012quantum}, \citep{muller2015coherent}, \citep{denechaud2018vers}... 
+Dans la partie précédente, nous nous sommes familiarisés avec quelques outils couramment utilisés sur les expériences d'atomes ultrafroids pour piéger et manipuler les atomes. Dans cette nouvelle partie, nous nous pencherons sur l'implémentation de ces outils sur notre expérience afin d'obtenir un condensat de Bose-Einstein de \isotope[87]{Rb}. La présentation qui en sera donnée ici se verra succincte, nous nous contenterons d'illustrer brièvement les différentes étapes de refroidissement qui mènent à la condensation. De nombreux détails pourront être trouvés dans les thèses des doctorants qui ont contribué à faire de cette expérience ce qu'elle est aujourd'hui: \citep{fauquembergue2004realisation}\citep{riou2006etude}\citep{bernard2010transport}\citep{jendrzejewski2012quantum}\citep{muller2015coherent}\citep{denechaud2018vers}... 
 
 \subsection{Présentation générale du dispositif}
 Comme toutes les expériences d'atomes ultra-froids, la manipulation des atomes se déroule sous ultra-vide afin de s'affranchir des conditions extérieures. En particulier, on évite ainsi les collisions avec des particules extérieures à température ambiante, ce qui chaufferait notre gaz et détruirait la cohérence d'un nuage condensé. Une vue d'ensemble de l'enceinte à vide est donnée figure \ref{fig:manip} qui montre aussi les pompes utilisées en continu pour maintenir le vide. Notre dispositif est composé d'un four chauffé à \SI{120}{\degreeCelsius} qui éjecte les atomes de rubidium, il s'agit de notre source d'atomes. Un doigt froid refroidi à \SI{-30}{\degreeCelsius} sert de diaphragme et permet de filtrer le jet d'atomes tout en adsorbant les atomes qui sont bloqués afin de pas polluer le vide. Un obturateur mécanique permet de couper le jet lorsqu'on ne souhaite pas accumuler des atomes en cours de cycle. Les atomes sont décélérés dans le ralentisseur Zeeman et capturés dans la première cellule où ils subissent les premières étapes de refroidissement. Ils sont ensuite transportés dans la seconde cellule où ils sont refroidis jusqu'à la condensation. C'est dans cette seconde cellule que se déroulent les expériences de science, on l'appelle alors \emph{Chambre de science}.
@@ -412,7 +412,7 @@ Une fois le nuage thermalisé, on procède à une étape de refroidissement éva
 \item[\textendash]On tronque le piège de telle sorte que quelques atomes très énergétiques (la queue de la distribution de vitesses de Maxwell-Boltzmann) puisse s'échapper du piège.
 \item[\textendash]Les collisions entre les particules étant restées dans le piège permettent au système de retourner à l'équilibre thermique à une température plus basse.
 \end{itemize}
-La troncature du piège se fait à l'aide d'une onde radio-fréquence rayonnée par les bobines MOT. Celle-ci induit une transition de l'état piégé $\etatF{1}{-1}$ à l'état non piégé $\etatF{1}{0}$ lorsque la condition de résonance $\hb \omega_{\mathrm{RF}} = \mf g_{\mathrm{F}} \mub B(\mathbf{r})$ est vérifiée. En abaissant progressivement la fréquence rayonnée pendant une dizaine de secondes, on obtient finalement un nuage de \num{70e6} atomes à une température de \SI{10}{\micro\kelvin}.
+La troncature du piège se fait à l'aide d'une onde radio-fréquence rayonnée par les bobines MOT. Celle-ci induit une transition de l'état piégé $\etatF{1}{-1}$ à l'état non piégé $\etatF{1}{0}$ lorsque la condition de résonance $\hb \omega_{\mathrm{RF}} = \mf g_{\mathrm{F}} \mub B(\mathbf{x})$ est vérifiée. En abaissant progressivement la fréquence rayonnée pendant une dizaine de secondes, on obtient finalement un nuage de \num{70e6} atomes à une température de \SI{10}{\micro\kelvin}.
 
 \begin{figure}
 \centering
@@ -490,19 +490,19 @@ Après l'extinction du piège, l'énergie d'interaction du nuage est convertie e
 
 Une approche classique permet de justifier cela. En supposant que l'expansion des atomes est balistique, la position des atomes après un temps d'expansion $t_{\mathrm{exp}}$ suffisamment grand est donnée par leur vitesse initiale:
 \begin{equation}
-\mathbf{r}(t_{\mathrm{exp}})=\mathbf{v} t_{\mathrm{exp}}
+\mathbf{x}(t_{\mathrm{exp}})=\mathbf{v} t_{\mathrm{exp}}
 \end{equation}
 Et appliquons un kick de potentiel harmonique pendant un temps $\Delta t$. La vitesse des atomes à la fin de ce kick est donnée par
 \begin{equation}
-\dot{\mathbf{r}}(\Delta t) = -\mathbf{r} \omega \sin{(\omega \Delta t)}+ \mathbf{v} \cos{(\omega \Delta t)}
+\dot{\mathbf{x}}(\Delta t) = -\mathbf{x} \omega \sin{(\omega \Delta t)}+ \mathbf{v} \cos{(\omega \Delta t)}
 \end{equation}
 avec $\omega$ la fréquence du piège.
-On peut trouver $\Delta t$ tel que $\dot{\mathbf{r}}_i=0$:
+On peut trouver $\Delta t$ tel que $\dot{\mathbf{x}}_i=0$:
 \begin{equation}
 \Delta t= \frac{1}{\omega} \arctan{\left(\frac{1}{t_{\mathrm{exp}} \omega} \right)}
 \end{equation}
 On remarque que $\Delta t$ ne dépend pas de la vitesse initiale des atomes: on peut donc geler l'ensemble du nuage en appliquant un potentiel harmonique pendant la bonne durée de kick\footnote{Une approche équivalente consiste à dire que la force de rappel est proportionnelle à la distance parcourue par les atomes, qui est proportionnelle à la vitesse initiale. L'instant où les vitesses s'annulent ne dépend donc pas de la vitesse initiale des atomes.}. 
-La mise en œuvre expérimentale de cette technique est détaillée dans le manuscrit de thèse de Kilian Muller \citep{muller2015coherent} et témoigne de résultats impressionnants: la dispersion en vitesse s'est abaissée à $\Delta k \simeq \SI{0.15}{\per\micro\metre}$. La température effective associée est alors de $T\sim \SI{150}{\pico\kelvin}$, et en tenant compte de la taille du nuage de l'ordre de $\Delta r \sim \SI{30}{\micro\metre}$, on s'approche à un ordre de grandeur de la limite de Heisenberg $\Delta r \hb \Delta k \simeq 10 \hb /2$.
+La mise en œuvre expérimentale de cette technique est détaillée dans le manuscrit de thèse de Kilian Muller \citep{muller2015coherent} et témoigne de résultats impressionnants: la dispersion en vitesse s'est abaissée à $\Delta k \simeq \SI{0.15}{\per\micro\metre}$. La température effective associée est alors de $T\sim \SI{150}{\pico\kelvin}$, et en tenant compte de la taille du nuage de l'ordre de $\Delta x \sim \SI{30}{\micro\metre}$, on s'approche à un ordre de grandeur de la limite de Heisenberg $\Delta x \hb \Delta k \simeq 10 \hb /2$.
 
 \begin{figure}
 \centering
