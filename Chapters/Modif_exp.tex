@@ -14,7 +14,7 @@ De manière générale, les ordinateurs sont les éléments du dispositif avec l
 
 \subsection{Contrôle de l'expérience: passage à la suite Cicero}
 \label{sc:cicero}
-Une modification majeure a été le changement du séquenceur de l'expérience. Le précédent système développé par André Villing, ingénieur électronicien du laboratoire maintenant retraité, était piloté de manière programmatique depuis le logiciel Matlab. À des fins de maintenance ainsi que de meilleures performances, le nouveau séquenceur est d'origine commerciale et est basé sur du matériel \emph{National Instruments}:
+Une modification majeure a été le changement du séquenceur de l'expérience. Le précédent système développé par \emph{André Villing}, ingénieur électronicien du laboratoire maintenant retraité, était piloté de manière programmatique depuis le logiciel Matlab. À des fins de maintenance ainsi que de meilleures performances, le nouveau séquenceur est d'origine commerciale et est basé sur du matériel \emph{National Instruments}:
 \begin{itemize}
 \item[\textendash] Un ordinateur \emph{PXIe-8840} dans un châssis \emph{PXIe-1078} qui alimente aussi les cartes de génération de signaux.
 \item[\textendash] Deux cartes numériques \emph{PXIe-6535} de 32 voies chacune.
@@ -26,7 +26,7 @@ L'écriture de la séquence se fait à présent grâce à la suite \emph{Cicero 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth]{../Fig/Modif_exp/cicero.png}
+\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/cicero.png}
 \caption{\textbf{Capture d'écran de \emph{Cicero}.} Une séquence est une suite d'étapes (des colonnes dans l'interface) pendant lesquelles on peut faire des motifs avec les voies analogiques. Les voies numériques changent d'état en général entre deux étapes. Il est possible de désactiver certaines étapes et d'utiliser des variables. Figure tirée de \citep{keshet2013distributed}.}
 \label{fig:cicero}
 \end{figure}
@@ -79,7 +79,7 @@ La lévitation magnétique est composée de plusieurs bobines collées dans un s
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{../Fig/Modif_exp/levitation_refroidissement.pdf}
+\includegraphics[width=\textwidth]{Fig/Modif_exp/levitation_refroidissement.pdf}
 \caption{\textbf{a: Refroidissement de la lévitation magnétique.} L'un des supports des bobines de la lévitation est maintenant refroidi à l'aide de deux tubes en cuivre le traversant. Auparavant, l'eau circulait directement dans le support dans un circuit percé illustré par les traits rouges. Les tubes en cuivre ont pu être installés en rendant une partie de ce circuit débouchant. \textbf{b: Efficacité de refroidissement.} Ces mesures ont été réalisées dans des conditions proches de véritables cycles expérimentaux. Le même courant a été appliqué pendant \SI{10}{\second} sur toutes les bobines à la fin de séquences habituelles. La température a été mesurée après la répétition d'au moins 30 cycles et en s'assurant de sa stabilisation.}
 \label{fig:refroidissement_levitation}
 \end{figure}
@@ -119,8 +119,8 @@ Plusieurs stratégies expérimentales de lévitation s'offrent alors. La premiè
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{../Fig/Modif_exp/levitation_etats.pdf}
-\caption{\textbf{Gradient nécessaire pour compenser la gravité.} La valeur du gradient magnétique à appliquer pour léviter dépend de l'état électronique, mais aussi du biais magnétique $\protect\Bzero$ par la formule de Breit-Rabi. L'état $\protect\etatF{1}{-1}$ ne peut être lévité qu'à bas champ, l'alimentation des bobines de gradient ne pouvant délivrer plus de \SI{50}{\ampere} (limite tracée en pointillés).}
+\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/levitation_etats.pdf}
+\caption{\textbf{Gradient nécessaire pour compenser la gravité en fonction du biais magnétique.} La valeur du gradient magnétique à appliquer pour léviter dépend de l'état électronique, mais aussi du biais magnétique $\protect\Bzero$ par la formule de Breit-Rabi. L'état $\protect\etatF{1}{-1}$ ne peut être lévité qu'à bas champ (courbe bleue), l'alimentation des bobines de gradient ne pouvant délivrer plus de \SI{50}{\ampere} (limite tracée en pointillés). Les états $\protect\etatF{2}{+1}$ (courbe marron) et $\protect\etatF{2}{-2}$ (courbe bordeau) peuvent être lévités pour n'importe quel valeur du biais.}
 \label{fig:levitation_etats}
 \end{figure}
 
@@ -138,7 +138,7 @@ Cette dernière stratégie rend possible l'approche novatrice de désordre dépe
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{../Fig/Modif_exp/levitation_RF.pdf}
+\includegraphics[width=\textwidth]{Fig/Modif_exp/levitation_RF.pdf}
 \caption{\textbf{a: Principe de la spectroscopie radio-fréquences}. En balayant la fréquence de l'onde radio-fréquence appliquée, on adresse les différentes transitions entre sous-états Zeeman de $\protect\etatF{1}{}$ et $\protect\etatF{2}{}$ dont la séparation dépend du champ magnétique. \textbf{b: Spectre radio-fréquence.} Lorsque l'onde radio-fréquence est à résonance, on transfère des atomes initialement dans l'état $\protect\etatF{1}{}$ vers l'état $\protect\etatF{2}{}$. La présence de sept résonances équidistantes indique une dépolarisation partielle du nuage\protect\footnotemark, les règles de sélection imposant $\Delta \mf = \lbrace \pm 1,0 \rbrace$. Le champ magnétique extrait de ce spectre est alors d'environ $\SI{4.4}{\gauss}$.}
 \label{fig:calibration_RF}
 \end{figure}
@@ -220,8 +220,8 @@ En particulier, la mesure des fréquences de la lévitation permet de détermine
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{../Fig/Modif_exp/oscillation_levitation.pdf}
-\caption{\textbf{Oscillation du nuage dans la lévitation magnétique.} Le nuage, initialement dans le piège optique, est relâché sur le bord de la lévitation. Il acquiert alors un mouvement oscillatoire autour du centre de la lévitation pendant le temps de vol où la gravité est compensée. \textbf{\'Evolution des fréquences de piégeage de la lévitation.} Les fréquences mesurées (points) diminuent avec l'augmentation de $\Bzero$ et sont comparées à des simulations (lignes continues) afin de calibrer le champ créé par les bobines. L'influence des courbures est visible pour les plus champs les plus intenses, les simulations en absence de courbure (courbes tiretées) montrant alors une déviation par rapport aux données.}
+\includegraphics[width=\textwidth]{Fig/Modif_exp/oscillation_levitation.pdf}
+\caption{\textbf{a: Oscillation du nuage dans la lévitation magnétique.} Le nuage, initialement dans le piège optique, est relâché sur le bord de la lévitation. Il acquiert alors un mouvement oscillatoire autour du centre de la lévitation pendant le temps de vol où la gravité est compensée. \textbf{b: \'Evolution des fréquences de piégeage de la lévitation.} Les fréquences mesurées (points) diminuent avec l'augmentation de $\Bzero$ et sont comparées à des simulations (lignes continues) afin de calibrer le champ créé par les bobines. L'influence des courbures est visible pour les plus champs les plus intenses, les simulations en absence de courbure (courbes tiretées) montrant alors une déviation par rapport aux données.}
 \label{fig:frequences_levitation}
 \end{figure}
 
@@ -243,7 +243,7 @@ Biais B $c_{\mathrm{B}}''$ & \SI{-7e-2}{\gauss\per\centi\metre^2\per\ampere} \\
 \label{tb:courbures_levitation}
 \end{table}
 
-On peut alors estimer les fréquences de piégeage (ou d'anti-piégeage pour l'état $\etatF{2}{-2}$) dans les configurations expérimentales d'intérêt. Pour le champ magique $\magicB$, les états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont soumis à un piégeage de fréquence d'environ \SI{5}{\hertz} par les bobines de biais A tandis que dans le régime de champ fort, nécessaire pour obtenir les décompressions maximales qu'offre notre système, la fréquence de piégeage (anti-piégeage) pour $\etatF{2}{+1}$ ($\etatF{2}{-2}$) est diminuée jusqu'à \SI{0.20}{\hertz} (\SI{0.18}{\hertz}) sous un champ de \SI{2000}{G} \citep{bernard2010transport}.
+On peut alors estimer les fréquences de piégeage (ou d'anti-piégeage pour l'état $\etatF{2}{-2}$) dans les configurations expérimentales d'intérêt. Pour le champ magique $\magicB$, les états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont soumis à un piégeage de fréquence d'environ \SI{5}{\hertz} par les bobines de biais A tandis que dans le régime de champ fort, nécessaire pour obtenir les décompressions maximales qu'offre notre système, la fréquence de piégeage (anti-piégeage) pour l'état $\etatF{2}{+1}$ ($\etatF{2}{-2}$) est diminuée jusqu'à \SI{0.20}{\hertz} (\SI{0.18}{\hertz}) sous un champ de \SI{2000}{G} \citep{bernard2010transport}.
 
 
 
@@ -295,11 +295,11 @@ Dans le chapitre précédent, nous avons vu que le piège dipolaire était compo
 
 Les deux faisceaux du piège dipolaire croisé proviennent d'une source laser commune avant d'être mis en forme séparément. Cette source, un laser fibré Ytterbium de \emph{Keopsys} émettant une puissance \SI{20}{\watt} en continu à une longueur d'onde $\lambda=\SI{1070}{\nano\metre}$, a été changée au cours de ma thèse. Ce laser a été sujet à un grand nombre d'opérations de maintenance, et, dans les mois précédant son remplacement, il ne pouvait plus émettre que \SI{14}{\watt} lors de son allumage et seulement \SI{12.5}{\watt} en fin de journée.
  
-Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-Y12} de \emph{IPG}, opérant à la même longueur d'onde $\lambda=\SI{1070}{\nano\metre}$, et avec une puissance maximale mesurée à \SI{55}{\watt}. La taille du faisceau en sortie de fibre est de \SI{0.8}{\milli\metre} (contre \SI{1.4}{\milli\metre} pour le laser Keopsys), il a donc fallu adapter un télescope afin de conserver les mêmes tailles de faisceaux au niveau des atomes. Le montage de mise en forme des faisceaux est présenté figure \ref{fig:optique_1070}. Celui-ci est majoritairement mis dans des tubes (représentés figure \ref{fig:optique_1070}) contenant un grand nombre de diaphragmes, facilitant ainsi la procédure d'alignement.
+Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-Y12} de \emph{IPG}, opérant à la même longueur d'onde $\lambda=\SI{1070}{\nano\metre}$, et avec une puissance maximale mesurée à \SI{55}{\watt}. La taille du faisceau en sortie de fibre est de \SI{0.8}{\milli\metre} (contre \SI{1.4}{\milli\metre} pour le laser Keopsys), il a donc fallu adapter un télescope afin de conserver les mêmes tailles de faisceaux au niveau des atomes. Le montage de mise en forme des faisceaux est présenté figure \ref{fig:optique_1070}. Celui-ci est majoritairement mis dans des tubes (non représentés figure \ref{fig:optique_1070}) contenant un grand nombre de diaphragmes, facilitant ainsi la procédure d'alignement.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{../Fig/Modif_exp/optique_1070_new_style.pdf}
+\includegraphics[width=\textwidth]{Fig/Modif_exp/optique_1070_new_style.pdf}
 \caption{\textbf{Schéma du montage optique pour le piège dipolaire.} Le faisceau issu du laser source passe dans un premier télescope avant d'être séparé en deux parties. La partie déviée passe dans une fibre optique pour devenir le faisceau de la pince. La partie transmise passe ensuite dans un second télescope pour devenir elliptique et arrive dans la \emph{Dimple box}, qui envoie le faisceau sur les atomes et contient les optiques d'imagerie \citep{muller2015coherent}. Afin de garder les mêmes tailles de faisceaux, la première lentille du premier télescope a été remplacée par une lentille de focale +\SI{100}{\milli\metre}.}
 \label{fig:optique_1070}
 \end{figure}
@@ -327,8 +327,8 @@ La mesure des tailles du faisceau a été réalisée à l'aide d'une caméra \em
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{../Fig/Modif_exp/expansion_dimple.pdf}
-\caption{\textbf{Divergence du faisceau dimple après la cellule.} Les tailles du faisceau dimple sont représentées en fonction de la position de la caméra. La divergence du faisceau permet de remonter aux waists du faisceau et d'en estimer la position. Les waists extraits sont de $\mathrm{w_z}\simeq \SI{82}{\micro\metre}$ et de $\mathrm{w_x}\simeq \SI{160}{\micro\metre}$ et leur position est compatible avec celle des atomes.}
+\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/expansion_dimple.pdf}
+\caption{\textbf{Divergence du faisceau dimple après la cellule.} Les tailles du faisceau dimple sont représentées en fonction de la position de la caméra (points). La divergence du faisceau permet de remonter aux waists du faisceau et d'en estimer la position. Les waists extraits par ajustement (lignes continues) sont de $\mathrm{w_z}\simeq \SI{82}{\micro\metre}$ et de $\mathrm{w_x}\simeq \SI{160}{\micro\metre}$ et leur position est compatible avec celle des atomes.}
 \label{fig:taille_dimple}
 \end{figure}
 
@@ -370,8 +370,8 @@ L'ensemble de ces mesures est représenté figure \ref{fig:frequences_piege_opti
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{../Fig/Modif_exp/frequences_piege_optique.pdf}
-\caption{\textbf{a: Exemple d'oscillation dans le piège optique.} Le nuage oscille dans la direction $\vec{z}$ pour une puissance du dimple de \SI{0.70}{\watt} après avoir été poussé par un gradient magnétique. La fréquence d'oscillation est alors de $\omega_z /2\pi \simeq \SI{51}{\hertz}$. \textbf{b: Fréquences d'oscillations du piège optique.} Les fréquences mesurées par oscillations du nuage (points) sont comparées à des estimations issues de mesures de la taille des faisceaux et de mesures de puissance de ces faisceaux (lignes continues).}
+\includegraphics[width=\textwidth]{Fig/Modif_exp/frequences_piege_optique.pdf}
+\caption{\textbf{a: Exemple d'oscillation dans le piège optique.} Le nuage oscille dans la direction $\vec{z}$ pour une puissance du dimple de \SI{0.70}{\watt} après avoir été poussé par un gradient magnétique (points bleus). La fréquence d'oscillation est alors de $\omega_z /2\pi \simeq \SI{51}{\hertz}$, extraite par ajustement (courbe noire). \textbf{b: Fréquences d'oscillations du piège optique.} Les fréquences mesurées par oscillations du nuage (points) sont comparées à des estimations issues de mesures de la taille des faisceaux et de mesures de puissance de ces faisceaux (lignes continues).}
 \label{fig:frequences_piege_optique}
 \end{figure}
 
@@ -615,7 +615,7 @@ Notons que dans la configuration magnétique choisie, le piégeage vertical est 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/Modif_exp/focalisation_atomique.pdf}
-\caption{\textbf{a: Principe de la focalisation atomique.} L'évolution temporelle d'un nuage dans l'espace des phases est une rotation autour de l'origine. À $t=T_{\mathrm{osc}}/4$, la distribution du nuage dans l'espace des phases a subi une rotation de $-\pi/2$. On peut ainsi mesurer la distribution initiale d'impulsion par une mesure de densité atomique dans l'espace réel. \textbf{b: Évolution temporelle de la taille du nuage dans la champ de lévitation.} Le piégeage étant quasi-nul dans la direction verticale, le nuage s'étend de manière balistique (points rouges). Dans la direction horizontale, le nuage subit l'effet de piégeage harmonique de la lévitation magnétique et sa taille oscille à une fréquence correspondant au double de la fréquence de piégeage (points bleus). Pour un temps de vol d'environ \SI{45}{\milli\second}, le nuage atteint sa taille maximale représentative de la distribution initiale d'impulsion. Cette valeur est en accord avec la fréquence de piégeage estimée à environ \SI{5}{\hertz}. On remarque de plus que l'expansion du nuage est isotrope à temps court. La température du nuage, mesurée suivant les deux directions, est d'environ \SI{620}{\nano\kelvin}.}
+\caption{\textbf{a: Principe de la focalisation atomique.} L'évolution temporelle d'un nuage dans l'espace des phases est une rotation autour de l'origine. À $t=T_{\mathrm{osc}}/4$, la distribution du nuage dans l'espace des phases a subi une rotation de $-\pi/2$. On peut ainsi mesurer la distribution initiale d'impulsion par une mesure de densité atomique dans l'espace réel. \textbf{b: Évolution temporelle de la taille du nuage dans la champ de lévitation.} Le piégeage étant quasi-nul dans la direction verticale, le nuage s'étend de manière balistique (points bordeaux). Dans la direction horizontale, le nuage subit l'effet de piégeage harmonique de la lévitation magnétique et sa taille oscille à une fréquence correspondant au double de la fréquence de piégeage (points bleus). Pour un temps de vol d'environ \SI{45}{\milli\second}, le nuage atteint sa taille maximale représentative de la distribution initiale d'impulsion. Cette valeur est en accord avec la fréquence de piégeage estimée à environ \SI{5}{\hertz}. On remarque de plus que l'expansion du nuage est isotrope à temps court. La température du nuage, mesurée suivant les deux directions, est d'environ \SI{620}{\nano\kelvin}.}
 \label{fig:focalisation_atomique}
 \end{figure}
 

@@ -41,7 +41,7 @@
 \contentsline {section}{\numberline {4.3}Changement du laser telecom et calibration du piège optique}{68}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Changement du laser telecom}{68}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{68}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{73}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{72}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Lois d'échelle du refroidissement évaporatif}{73}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Implémentation expérimentale}{77}{subsection.4.4.2}%
 \contentsline {chapter}{\numberline {5}Propriétés d'un désordre de type speckle}{85}{chapter.5}%
@@ -108,4 +108,5 @@
 \contentsline {section}{\numberline {B.3}Calcul de la Self-Energy au second ordre}{167}{section.B.3}%
 \contentsline {subsection}{\numberline {B.3.1}Calcul à l'aide la représentation en impulsion}{168}{subsection.B.3.1}%
 \contentsline {subsection}{\numberline {B.3.2}Calcul à l'aide la représentation spatiale}{169}{subsection.B.3.2}%
+\contentsline {chapter}{Bibliographie}{180}{appendix*.78}%
 \contentsfinish 
