@@ -95,6 +95,10 @@
 \usechapterimagefalse
 \chapterimage{Fig/Localisation/g825.png}
 %\maketitle{}
+
+
+%\input{Chapters/Remerciements.tex}
+
 {\hypersetup{linkcolor=black}
 \tableofcontents}
 \setlength{\parskip}{\parskipnew}
@@ -126,11 +130,17 @@
 \input{Appendices/Anex_Born.tex}
 %\stopcontents
 
+
 %%%%%%%%\printbibliography
 \bibliographystyle{abbrvnat} 
 %\bibliographystyle{dinat-etal}
-\bibliography{biblio} 
-%\addtocontents{toc}{\bigskip}
+%\addcontentsline{toc}{chapter}{Bibliographie}
+\cleardoublepage
+\phantomsection
 \addcontentsline{toc}{chapter}{Bibliographie}
+\bibliography{biblio} 
+
+%\addtocontents{toc}{\bigskip}
+
 
 \end{document}
