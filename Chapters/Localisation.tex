@@ -4,42 +4,41 @@
 %\node[anchor=north east,inner sep=0pt] at (current page.north east) {\includegraphics[scale=1]{Fig/Localisation/g825.png}};
 %\end{tikzpicture}
 
-Dans ce chapitre, nous commencerons par décrire comment, lors de la propagation cohérente d'une onde dans un milieu désordonné, les interférences peuvent altérer la diffusion classique et engendrer le phénomène spectaculaire de \emph{Localisation d'Anderson} dont nous donnerons les principales propriétés. Dans un second temps, nous présenterons succinctement les principaux systèmes utilisés pour l'investigation de la localisation d'Anderson, pour s'attarder plus particulièrement sur les expériences d'atomes froids. Enfin, nous terminerons ce chapitre par une discussion de nos enjeux actuels, l'étude du régime critique de la transition d'Anderson, dont nous présenterons l'état de l'art.
+Dans ce chapitre, nous commencerons par décrire comment, lors de la propagation cohérente d'une onde dans un milieu désordonné, les interférences peuvent altérer la diffusion classique et engendrer le phénomène spectaculaire de \emph{Localisation d'Anderson} dont nous donnerons les principales propriétés. Dans un second temps, nous présenterons succinctement les principaux systèmes utilisés pour l'investigation de la localisation d'Anderson, pour s'attarder plus particulièrement sur les expériences d'atomes froids. Enfin, nous terminerons ce chapitre par une discussion de nos enjeux actuels, l'étude du régime critique de la transition d'Anderson avec des atomes froids, dont nous présenterons l'état de l'art.
 
 \section{Diffusion et interférences}
 Cette première section a pour but de rappeler succinctement les mécanismes microscopiques à l'œuvre lors de l'étude de la propagation d'une onde dans un milieu désordonné, et comment le phénomène d'interférence peut modifier les grandeurs microscopiques associées. En particulier, nous nous focaliserons sur l'arrêt de la diffusion en conséquence de ces interférences, la localisation d'Anderson.
 
 \subsection{Phénomène de diffusion}
 \label{sc:diffusion_classique}
-Le phénomène de diffusion macroscopique est un phénomène de transport des plus connus de la physique classique. Celui-ci permet par exemple de décrire de manière simple la propagation de la chaleur dans un matériau homogène, l'homogénéisation de la concentration de particules dans un liquide ou encore le phénomène de résistance électrique dans un cadre unifié. 
+Le phénomène de diffusion macroscopique est un des phénomènes de transport les plus connus de la physique classique. Celui-ci permet par exemple de décrire de manière simple et unifiée la propagation de la chaleur dans un matériau homogène, l'homogénéisation de la concentration de particules dans un liquide ou encore le phénomène de résistance électrique. 
 
-En effet, le phénomène macroscopique de diffusion provient, de manière générale, d'une marche aléatoire des particules vectrices au sein de leur environnement. Drude a ainsi été le premier à calculer la résistivité électrique des matériaux en introduisant un temps de relaxation basé sur les collisions entre les électrons, vecteurs du courant électrique, et les impuretés du matériau dans lequel ceux-ci se déplacent \citep{ashcroft2010solid}. 
+Le phénomène macroscopique de diffusion provient, de manière générale, de la marche aléatoire de particules au sein de leur environnement. Avec cette approche, Drude a par exemple été le premier à calculer la résistivité électrique des matériaux en introduisant un temps de relaxation microscopique basé sur des collisions élastiques entre les électrons, vecteurs du courant électrique, et les impuretés du matériau dans lequel ceux-ci se déplacent \citep{ashcroft2010solid}. 
 
-Il apparaît ainsi que certaines propriétés macroscopiques des matériaux sont reliées aux grandeurs caractéristiques de la marche aléatoire associée. Ces grandeurs sont des briques élémentaires de la propagation en milieu désordonné, telles que le temps de diffusion élastique, le temps de transport, ou encore le coefficient de diffusion, que nous présenterons dans la suite.
+Cet exemple historique illustre le fait que certaines propriétés macroscopiques des matériaux sont reliées aux grandeurs microscopiques de la marche aléatoire associée. Ces dernières grandeurs sont des briques élémentaires de la propagation en milieu désordonné, dont nous restreindrons l'étude au cas des collisions élastiques entre les particules et le désordre. Parmi ces briques élémentaires, que nous présenterons dans la suite, nous retrouvons le coefficient de diffusion, le temps de transport, ou encore le temps de diffusion élastique, auquel nous porterons une attention particulière.
 
 \paragraph*{Temps de diffusion élastique}
-La quantité la plus naturelle permettant de caractériser de manière microscopique le phénomène de diffusion est le \emph{temps de diffusion élastique} $\taus$, qui correspond à la durée typique entre deux évènements successifs de \emph{collision élastique} avec les impuretés du milieu. Ce temps est l'équivalent temporel du \emph{libre parcours moyen}  $\ls$ correspondant à la distance moyenne entre deux évènements de diffusion microscopique successifs. Dans le cas d'une particule de masse $m$ se déplaçant à une vitesse $v_{\mathrm{i}}$, ces deux grandeurs sont reliées par
+La quantité la plus naturelle permettant de caractériser de manière microscopique le phénomène de diffusion est le \emph{temps de diffusion élastique} $\taus$, qui correspond à la durée typique entre deux évènements successifs de \emph{collision élastique} avec les impuretés du milieu. Ce temps est l'équivalent temporel du \emph{libre parcours moyen}  $\ls$ correspondant à la distance moyenne entre deux évènements de diffusion microscopiques successifs, illustrée figure \ref{fig:diffusion_classique}.a. Dans le cas d'une particule de masse $m$ se déplaçant à une vitesse $v_{\mathrm{i}}$, ces deux grandeurs sont reliées par
 \begin{equation}
 \taus=\frac{\ls}{v_{\mathrm{i}}}=\frac{m}{\hb} \frac{\ls}{k_{\mathrm{i}}} \text{ ,}
 \label{eq:definition_taus}
 \end{equation}
-où $k_{\mathrm{i}}$ est le nombre d'onde de l'onde quantique associée à la particule (celui-ci est inchangé après chaque évènement de collision en raison de leur caractère élastique). On voit ainsi que $\taus$ est une quantité faisant intervenir la perte de cohérence de l'onde subissant une collision élastique.
+où $k_{\mathrm{i}}$ est le nombre d'onde de l'onde quantique associée à la particule (celui-ci est inchangé après chaque évènement de collision en raison de leur caractère élastique). 
 
-Comme nous le verrons plus en détails dans les chapitres \ref{ch:TauS_PRL} et \ref{ch:TauS_NJP}, le temps de diffusion élastique est une quantité qui dépend des détails microscopiques du système, établissant ainsi le lien entre processus microscopiques et phénomène macroscopique.
-
+Comme nous le verrons plus en détails dans les chapitres \ref{ch:TauS_PRL} et \ref{ch:TauS_NJP}, le temps de diffusion élastique est une quantité qui dépend des détails microscopiques du système et peut être interprété comme le temps de vie d'une onde plane dans le désordre.
 
 \paragraph*{Temps de transport}
-Si la norme du vecteur vitesse (ou de manière équivalente du vecteur d'onde) reste inchangée au cours de la propagation, sa direction est modifiée à chaque évènement de collision élastique. Comme nous le verrons plus en détails dans le chapitre \ref{ch:TauS_PRL}, lors de la collision avec un diffuseur de taille caractéristique $\sigma$, l'onde peut être diffusée selon un angle $\left\langle\theta\right\rangle\sim 1/k_{\mathrm{i}} \sigma$. La diffusion peut donc être \emph{anisotrope}, en analogie avec la diffraction en optique.
+Si la norme du vecteur vitesse (ou de manière équivalente du vecteur d'onde) reste inchangée au cours de la propagation, sa direction est modifiée à chaque évènement de collision élastique. Comme nous le verrons plus en détails dans le chapitre \ref{ch:TauS_PRL}, lors de la collision avec un diffuseur de taille caractéristique $\sigma$, l'onde peut être diffusée selon un angle typique $\theta_{\mathrm{typ}}\sim 1/k_{\mathrm{i}} \sigma$. La diffusion peut donc être \emph{anisotrope}, en analogie avec la diffusion de Mie ou la diffraction en optique.
 
 En considérant que la trajectoire d'une particule est composée de multiples collisions successives, il apparaît alors une seconde échelle de temps caractéristique, le \emph{temps de transport} ou temps de Boltzmann $\taub$, décrivant la durée nécessaire pour que la particule perde l'information de la direction initiale de sa vitesse. 
 
 
-On peut ainsi montrer que le temps de transport (et son analogue spatial, la \emph{longueur de transport}) s'expriment en fonction du temps de diffusion élastique \citep{akkermans2007mesoscopic}
+On peut ainsi montrer que le temps de transport (et son analogue spatial, la \emph{longueur de transport}) s'expriment en fonction du temps de diffusion élastique de la manière suivante \citep{akkermans2007mesoscopic}:
 \begin{equation}
 \taub=\frac{\taus}{1-\left\langle\cos{\theta}\right\rangle} \quad \text{et} \quad \lb=\frac{\ls}{1-\left\langle\cos{\theta}\right\rangle} \text{ ,}
 \label{eq:definition_taub}
 \end{equation}
-où $\langle\:\cdots\:\rangle$ représente la valeur moyenne sur les différents évènements de diffusion.
+où $\langle\:\cdots\:\rangle$ représente la valeur moyenne sur les différents évènements de diffusion, et $\theta$ l'angle de diffusion comme indiqué sur la figure \ref{fig:diffusion_classique}.
 
 On voit donc que dans le cas de collisions élastiques isotropes, $\taub=\taus$, montrant qu'une seule collision suffit à perdre l'information sur la direction initiale de la vitesse de la particule. En revanche, un grand nombre de collisions sont nécessaires pour obtenir une isotropisation de la direction des vitesses dans le cas d'évènements de diffusion anisotrope, comme illustré figure \ref{fig:diffusion_classique}.a.
 
@@ -47,7 +46,7 @@ On voit donc que dans le cas de collisions élastiques isotropes, $\taub=\taus$,
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/Localisation/diffusion_classique.pdf}
-\caption{\textbf{a: Longueur de transport pour des collisions anisotropes.} Une unique collision élastique ne modifie que peu la direction de la vitesse d'une particule. Il faut donc un grand nombre de collisions successives pour que la direction de la vitesse d'une particule soit décorrélée de la direction initiale. En conséquence, le temps de transport est beaucoup plus grand que le temps de diffusion élastique. \textbf{b: Mécanisme microscopique de la diffusion.} Le mouvement d'une particule peut être considérée comme une marche aléatoire composée d'évènements de diffusion isotropes tous les $\taub$ entre lesquels la particule se déplace d'une distance $\lb=v \taub$ dans une direction aléatoire. L'étalement typique obtenu croit avec le temps selon $\Delta \mathbf{x} \propto \sqrt{t}$.}
+\caption{\textbf{a: Longueur de transport pour des collisions anisotropes.} Dans le cas de diffusion fortement anisotrope vers l'avant, une unique collision élastique ne modifie que peu la direction de la vitesse d'une particule. Il faut donc un grand nombre de collisions successives pour que la direction de la vitesse d'une particule soit décorrélée de la direction initiale. En conséquence, le temps de transport est beaucoup plus grand que le temps de diffusion élastique. \textbf{b: Mécanisme microscopique de la diffusion.} Le mouvement d'une particule peut être considérée comme une marche aléatoire composée d'évènements de diffusion isotropes tous les $\taub$ entre lesquels la particule se déplace d'une distance $\lb=v \taub$ dans une direction aléatoire. L'étalement typique obtenu croit avec le temps selon $\Delta \mathbf{x} =\sqrt{2dDt}$, avec $D$ le coefficient de diffusion.}
 \label{fig:diffusion_classique}
 \end{figure}
 
@@ -62,12 +61,12 @@ Ainsi, on peut déterminer l'étalement typique de la région explorée par la p
 \begin{equation}
 \left\langle \Delta \mathbf{x}^2 \right\rangle=2 N \lb^2 \text{ .}
 \end{equation}
-En définissant le coefficient de diffusion par $ \left\langle \Delta \mathbf{x}^2 \right\rangle = 2 d D t$ et en faisant apparaître le temps $t=N \taub$, mon montre ainsi que 
+En définissant le coefficient de diffusion par $ \left\langle \Delta \mathbf{x}^2 \right\rangle = 2 d D t$ et en faisant apparaître le temps $t=N \taub$, on montre ainsi que \citep{akkermans2007mesoscopic}:
 \begin{equation}
 D=\frac{v \lb}{d}=\frac{\hb}{m d} k \lb \text{ ,}
 \label{eq:definition_coefficient_diffusion}
 \end{equation}
-où on a fait apparaître la quantité $k \lb$, que l'on peut interpréter comme une mesure de la force du désordre, et qui sera essentielle dans la suite.
+en faisant apparaître la quantité $k \lb$, qui sera essentielle dans la suite. Notamment, cette quantité peut être interprétée comme une mesure de la force du désordre comme nous aurons l'occasion de le voir dans la section \ref{sc:localisation_anderson} et dans le chapitre \ref{ch:TauS_PRL}.
 
 Une conséquence de l'équation \ref{eq:definition_coefficient_diffusion} est qu'une diminution de la longueur de transport entraîne une diminution du coefficient de diffusion. Ainsi, plus un système sera désordonné, plus le coefficient de diffusion sera petit.
 
