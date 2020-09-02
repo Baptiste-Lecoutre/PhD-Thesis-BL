@@ -1,4 +1,4 @@
-\begin{thebibliography}{114}
+\begin{thebibliography}{120}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -345,11 +345,24 @@ S.~Kondov, W.~McGehee, J.~Zirbel, and B.~DeMarco.
 \newblock Three-dimensional anderson localization of ultracold matter.
 \newblock \emph{Science}, 334\penalty0 (6052):\penalty0 66--68, 2011.
 
+\bibitem[Kramer and MacKinnon(1993)]{kramer1993localization}
+B.~Kramer and A.~MacKinnon.
+\newblock Localization: theory and experiment.
+\newblock \emph{Reports on Progress in Physics}, 56\penalty0 (12):\penalty0
+  1469, 1993.
+
 \bibitem[Kuhn et~al.(2007)Kuhn, Sigwarth, Miniatura, Delande, and
   M{\"u}ller]{kuhn2007coherent}
 R.~Kuhn, O.~Sigwarth, C.~Miniatura, D.~Delande, and C.~M{\"u}ller.
 \newblock Coherent matter wave transport in speckle potentials.
 \newblock \emph{New Journal of Physics}, 9\penalty0 (6):\penalty0 161, 2007.
+
+\bibitem[Larose et~al.(2004)Larose, Margerin, Van~Tiggelen, and
+  Campillo]{larose2004weak}
+E.~Larose, L.~Margerin, B.~Van~Tiggelen, and M.~Campillo.
+\newblock Weak localization of seismic waves.
+\newblock \emph{Physical review letters}, 93\penalty0 (4):\penalty0 048501,
+  2004.
 
 \bibitem[Lemari{\'e}(2009)]{lemarietel-00424399}
 G.~Lemari{\'e}.
@@ -405,6 +418,12 @@ C.~Martin and A.~Ben-Yakar.
   tissue using ultrafast laser ablation.
 \newblock \emph{Journal of biomedical optics}, 21\penalty0 (11):\penalty0
   115004, 2016.
+
+\bibitem[Mishchenko(1993)]{mishchenko1993nature}
+M.~I. Mishchenko.
+\newblock On the nature of the polarization opposition effect exhibited by
+  saturn's rings.
+\newblock \emph{The Astrophysical Journal}, 411:\penalty0 351--361, 1993.
 
 \bibitem[Monteverde et~al.(2010)Monteverde, Ojeda-Aristizabal, Weil, Bennaceur,
   Ferrier, Gu{\'e}ron, Glattli, Bouchiat, Fuchs, and
@@ -653,6 +672,13 @@ I.~Shlimak, M.~Kaveh, R.~Ussyshkin, V.~Ginodman, and L.~Resnick.
   transition.
 \newblock \emph{Physical review letters}, 77\penalty0 (6):\penalty0 1103, 1996.
 
+\bibitem[Siegrist et~al.(2011)Siegrist, Jost, Volker, Woda, Merkelbach,
+  Schlockermann, and Wuttig]{siegrist2011disorder}
+T.~Siegrist, P.~Jost, H.~Volker, M.~Woda, P.~Merkelbach, C.~Schlockermann, and
+  M.~Wuttig.
+\newblock Disorder-induced localization in crystalline phase-change materials.
+\newblock \emph{Nature materials}, 10\penalty0 (3):\penalty0 202--208, 2011.
+
 \bibitem[Signoles et~al.(2019)Signoles, Lecoutre, Richard, Lim, Denechaud,
   Volchkov, Angelopoulou, Jendrzejewski, Aspect, Sanchez-Palencia,
   et~al.]{signoles2019ultracold}
@@ -756,6 +782,13 @@ D.~S. Wiersma, P.~Bartolini, A.~Lagendijk, and R.~Righini.
 \newblock Localization of light in a disordered medium.
 \newblock \emph{Nature}, 390\penalty0 (6661):\penalty0 671--673, 1997.
 
+\bibitem[Wolf and Maret(1985)]{wolf1985weak}
+P.-E. Wolf and G.~Maret.
+\newblock Weak localization and coherent backscattering of photons in
+  disordered media.
+\newblock \emph{Physical review letters}, 55\penalty0 (24):\penalty0 2696,
+  1985.
+
 \bibitem[Ye et~al.(1992)Ye, Cody, Zhou, Sheng, and Norris]{ye1992observation}
 L.~Ye, G.~Cody, M.~Zhou, P.~Sheng, and A.~N. Norris.
 \newblock Observation of bending wave localization and quasi mobility edge in
@@ -768,5 +801,11 @@ A.~Yedjour and B.~Van~Tiggelen.
 \newblock Diffusion and localization of cold atoms in 3d optical speckle.
 \newblock \emph{The European Physical Journal D}, 59\penalty0 (2):\penalty0
   249--255, 2010.
+
+\bibitem[Ying et~al.(2016)Ying, Gu, Chen, Wang, Jin, Zhao, Zhang, and
+  Chen]{ying2016anderson}
+T.~Ying, Y.~Gu, X.~Chen, X.~Wang, S.~Jin, L.~Zhao, W.~Zhang, and X.~Chen.
+\newblock Anderson localization of electrons in single crystals: Lixfe7se8.
+\newblock \emph{Science advances}, 2\penalty0 (2):\penalty0 e1501283, 2016.
 
 \end{thebibliography}

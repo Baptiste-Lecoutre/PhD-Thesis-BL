@@ -38,15 +38,15 @@ On peut ainsi montrer que le temps de transport (et son analogue spatial, la \em
 \taub=\frac{\taus}{1-\left\langle\cos{\theta}\right\rangle} \quad \text{et} \quad \lb=\frac{\ls}{1-\left\langle\cos{\theta}\right\rangle} \text{ ,}
 \label{eq:definition_taub}
 \end{equation}
-où $\langle\:\cdots\:\rangle$ représente la valeur moyenne sur les différents évènements de diffusion, et $\theta$ l'angle de diffusion comme indiqué sur la figure \ref{fig:diffusion_classique}.
+où $\langle\:\cdots\:\rangle$ représente la valeur moyenne sur les différents évènements de diffusion, et $\theta$ l'angle de diffusion comme indiqué sur la figure \ref{fig:diffusion_classique}.a.
 
-On voit donc que dans le cas de collisions élastiques isotropes, $\taub=\taus$, montrant qu'une seule collision suffit à perdre l'information sur la direction initiale de la vitesse de la particule. En revanche, un grand nombre de collisions sont nécessaires pour obtenir une isotropisation de la direction des vitesses dans le cas d'évènements de diffusion anisotrope, comme illustré figure \ref{fig:diffusion_classique}.a.
+On voit donc que dans le cas de collisions élastiques isotropes, $\taub=\taus$, montrant qu'une seule collision suffit à perdre l'information sur la direction initiale de la vitesse de la particule. En revanche, un grand nombre de collisions sont nécessaires pour obtenir une isotropisation de la direction des vitesses dans le cas d'évènements de diffusion anisotrope.
 
 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/Localisation/diffusion_classique.pdf}
-\caption{\textbf{a: Longueur de transport pour des collisions anisotropes.} Dans le cas de diffusion fortement anisotrope vers l'avant, une unique collision élastique ne modifie que peu la direction de la vitesse d'une particule. Il faut donc un grand nombre de collisions successives pour que la direction de la vitesse d'une particule soit décorrélée de la direction initiale. En conséquence, le temps de transport est beaucoup plus grand que le temps de diffusion élastique. \textbf{b: Mécanisme microscopique de la diffusion.} Le mouvement d'une particule peut être considérée comme une marche aléatoire composée d'évènements de diffusion isotropes tous les $\taub$ entre lesquels la particule se déplace d'une distance $\lb=v \taub$ dans une direction aléatoire. L'étalement typique obtenu croit avec le temps selon $\Delta \mathbf{x} =\sqrt{2dDt}$, avec $D$ le coefficient de diffusion.}
+\caption{\textbf{a: Longueur de transport pour des collisions anisotropes.} Dans le cas de diffusion fortement anisotrope vers l'avant, une unique collision élastique ne modifie que peu la direction de la vitesse d'une particule. Il faut donc un grand nombre de collisions successives pour que la direction de la vitesse d'une particule soit décorrélée de la direction initiale. En conséquence, le temps de transport est beaucoup plus grand que le temps de diffusion élastique. \textbf{b: Mécanisme microscopique de la diffusion.} Le mouvement d'une particule peut être considérée comme une marche aléatoire composée d'évènements de diffusion isotropes tous les $\taub$ entre lesquels la particule se déplace d'une distance $\lb=v \taub$ dans une direction aléatoire. L'étalement typique obtenu croit avec le temps selon $\Delta \mathrm{x} =\sqrt{2dDt}$, avec $D$ le coefficient de diffusion.}
 \label{fig:diffusion_classique}
 \end{figure}
 
@@ -57,7 +57,7 @@ On voit donc que dans le cas de collisions élastiques isotropes, $\taub=\taus$,
 \paragraph*{Coefficient de diffusion}
 Une fois que la particule a parcouru une distance $\lb$, on peut considérer qu'elle subit une diffusion isotrope. On assimile alors le mouvement des particules à une marche aléatoire pour laquelle les particules de vitesse $v$ subissent des évènements de collision isotrope à chaque intervalle de temps $\taub$ pendant lesquels la particule parcourt une distance $\lb=v \taub$, comme illustré figure \ref{fig:diffusion_classique}.b.
 
-Ainsi, on peut déterminer l'étalement typique de la région explorée par la particule après $N$ collisions à l'aide du théorème central limite \citep{diu1989elements},
+Ainsi, on peut déterminer l'étalement typique de la région explorée par la particule après $N$ collisions\footnote{On peut montrer que la probabilité qu'une particule ne subisse pas de collision isotrope sur une distance $x$ est donnée par $\mathcal{P}_x(x)=\frac{1}{\lb} e^{-x/\lb}$. La variance est alors obtenue par $\langle\Delta x^2 \rangle = \int_0^\infty{\diff x \: x^2 \:  \mathcal{P}_x(x)}=2\lb^2 $. Les $N$ collisions successives étant décorrélées, l'étalement typique de la région explorée est alors de $N \langle\Delta x^2 \rangle$.},
 \begin{equation}
 \left\langle \Delta \mathbf{x}^2 \right\rangle=2 N \lb^2 \text{ .}
 \end{equation}
@@ -66,7 +66,7 @@ En définissant le coefficient de diffusion par $ \left\langle \Delta \mathbf{x}
 D=\frac{v \lb}{d}=\frac{\hb}{m d} k \lb \text{ ,}
 \label{eq:definition_coefficient_diffusion}
 \end{equation}
-en faisant apparaître la quantité $k \lb$, qui sera essentielle dans la suite. Notamment, cette quantité peut être interprétée comme une mesure de la force du désordre comme nous aurons l'occasion de le voir dans la section \ref{sc:localisation_anderson} et dans le chapitre \ref{ch:TauS_PRL}.
+en faisant apparaître la quantité $k \lb$, qui sera essentielle dans la suite. Cette quantité peut être interprétée comme une mesure de la force du désordre comme nous aurons l'occasion de le voir dans la section \ref{sc:localisation_anderson} et dans le chapitre \ref{ch:TauS_PRL}. Notamment, le régime de désordre faible est défini par la condition $k\lb\gg 1$, signifiant que la distance entre deux collisions isotropes successives est très grande devant la longueur d'onde.
 
 Une conséquence de l'équation \ref{eq:definition_coefficient_diffusion} est qu'une diminution de la longueur de transport entraîne une diminution du coefficient de diffusion. Ainsi, plus un système sera désordonné, plus le coefficient de diffusion sera petit.
 
@@ -88,23 +88,25 @@ Une conséquence de l'équation \ref{eq:definition_coefficient_diffusion} est qu
 Si le mécanisme de marche aléatoire présenté permet de décrire un grand nombre de situations de diffusion classique, nous avons omis un ingrédient essentiel à la propagation d'ondes en milieu désordonné: la \emph{cohérence}, ou encore la capacité qu'une onde a à interférer. En particulier, nous verrons que celle-ci peut avoir des conséquences dramatiques sur les propriétés de transport d'une onde en présence de désordre.
 
 \paragraph*{Mécanisme de localisation faible}
-Pour cela, intéressons-nous à la probabilité $P(\mathbf{x},\mathbf{x}')$ qu'une onde initialement à la position $\mathbf{x}$ se retrouve à la position $\mathbf{x}'$ après propagation dans le milieu désordonné. Dans la limite $k\lb\gg 1$, la trajectoire de l'onde peut être vu comme une marche aléatoire, où chaque trajectoire de diffusion est associée à une amplitude complexe de probabilité $\left| A_j \right| e^{i \phi_j}$, avec $\phi_j$ la phase de la trajectoire. Ainsi, la probabilité $P(\mathbf{x},\mathbf{x}')$ est donnée par la somme de l'amplitude sur toutes les trajectoires possibles:
+Pour cela, intéressons-nous à la probabilité $P(\mathbf{x},\mathbf{x}')$ qu'une onde initialement à la position $\mathbf{x}$ se retrouve à la position $\mathbf{x}'$ après propagation dans le milieu désordonné. Dans la limite $k\lb\gg 1$, la trajectoire de l'onde peut être vue comme une marche aléatoire, où chaque trajectoire de diffusion est associée à une amplitude complexe de probabilité $\left| A_j \right| e^{i \phi_j}$, avec $\phi_j$ la phase de la trajectoire. Ainsi, la probabilité $P(\mathbf{x},\mathbf{x}')$ est donnée par la somme de l'amplitude sur toutes les trajectoires possibles:
 \begin{align}
-P(\mathbf{x},\mathbf{x}') \nonumber&= {\left| \sum_j{ \left|A_j\right| e^{i \phi_j} }\right| }^2 = \sum_{j,l} {\left| A_j \right| \left| A_l \right| e^{i (\phi_j - \phi_l)}} \\
-&= \sum_j{{\left| A_j \right|}^2} + \sum_{j\neq l}{\left| A_j \right| \left|A_l \right| e^{i(\phi_j - \phi_l)}} \text{ ,}
+P(\mathbf{x},\mathbf{x}') \nonumber&= \overline{{\left| \sum_j{ \left|A_j\right| e^{i \phi_j} }\right| }^2} = \overline{\sum_{j,l} {\left| A_j \right| \left| A_l \right| e^{i (\phi_j - \phi_l)}}} \\
+&= \overline{\sum_j{{\left| A_j \right|}^2}} + \overline{\sum_{j\neq l}{\left| A_j \right| \left|A_l \right| e^{i(\phi_j - \phi_l)}}} \text{ ,}
 \label{eq:amplitude_localisation_faible}
 \end{align}
-où le premier terme décrit le phénomène de diffusion classique, où la probabilité $P(\mathbf{x},\mathbf{x}')$ est la somme des probabilités de chaque trajectoire. 
+où $\overline{\:\cdots\:}$ désigne la moyenne sur les différentes réalisations du désordre.
 
-Le second terme de l'équation \ref{eq:amplitude_localisation_faible} représente quant à lui les interférences dues aux différentes phases accumulées par les différents chemins de diffusion. Intuitivement, on peut considérer que la contribution de ce terme s'annule en moyennant sur les différentes réalisations du désordre, $\overline{e^{i(\phi_j - \phi_l)}}=0$, où $\overline{\:\cdots\:}$ désigne la moyenne d'ensemble. Cependant, une étude attentive montre que certaines trajectoires résistent au moyennage sur les réalisations du désordre.
+Le premier terme décrit le phénomène de diffusion classique, pour lequel la probabilité $P(\mathbf{x},\mathbf{x}')$ est la somme des probabilités de chaque trajectoire. 
 
-En particulier, les trajectoires pour lesquelles l'onde se retrouve à son point de départ forment des boucles qu'il est possible de parcourir dans les deux sens, comme illustré figure \ref{fig:localisation_faible}. Par \emph{symétrie par renversement du temps}, il est donc possible de trouver des paires de trajectoires dont la phase accumulée sera identique. De plus, ces paires de trajectoires existent quelque soit la réalisation du désordre, rendant ce processus d'interférences constructives robuste vis-à-vis du moyennage d'ensemble et $\overline{e^{i(\phi_j - \phi_l)}}=1$. Ainsi, la probabilité qu'une onde retourne à son point de départ est le double de la prédiction classique:
+Le second terme de l'équation \ref{eq:amplitude_localisation_faible} représente quant à lui les interférences dues aux différentes phases accumulées par les différents chemins de diffusion. Intuitivement, on peut considérer que la contribution de ce terme s'annule en moyennant sur les différentes réalisations du désordre, $\overline{e^{i(\phi_j - \phi_l)}}=0$\footnote{L'annulation de ce second terme est à l'origine du traitement classique de la propagation d'ondes dans le désordre tels que dans la théorie de Drude ou du transfert radiatif.}. Cependant, une étude attentive montre que certaines trajectoires résistent au moyennage sur les réalisations du désordre.
+
+En particulier, les trajectoires pour lesquelles l'onde se retrouve à son point de départ forment des boucles qu'il est possible de parcourir dans les deux sens, comme illustré figure \ref{fig:localisation_faible}. Par \emph{symétrie par renversement du temps}, la phase accumulée le long de ces trajectoires est identique pour les deux sens de propagation. De plus, ces paires de trajectoires existent quelque soit la réalisation du désordre, rendant ce processus d'interférences constructives robuste vis-à-vis du moyennage d'ensemble et $\overline{e^{i(\phi_j - \phi_l)}}=1$. Ainsi, la probabilité qu'une onde retourne à son point de départ est le double de la prédiction classique:
 \begin{equation}
-P(\mathbf{x},\mathbf{x})=2 \sum_j{{\left| A_j \right|}^2} \text{ .}
+P(\mathbf{x},\mathbf{x})=2 \overline{\sum_j{{\left| A_j \right|}^2}} \text{ .}
 \label{eq:proba_retour_origine}
 \end{equation}
 
-Les interférences entre chemins de diffusion tendent alors à favoriser le retour de l'onde à son point d'origine, ralentissant ainsi la diffusion. Cet effet de \emph{localisation faible}, commun à tout type d'onde, a été intensivement étudié dans de nombreux domaines, aussi théoriquement que expérimentalement.
+Les interférences entre chemins de diffusion tendent alors à favoriser le retour de l'onde à son point d'origine, ralentissant ainsi la diffusion. Cet effet de \emph{localisation faible}, commun à tout type d'onde, a été intensivement étudié aussi théoriquement que expérimentalement dans de nombreux domaines, tels qu'en physique des solides \citep{kramer1993localization}\citep{akkermans2007mesoscopic}, en optique \citep{wolf1985weak}\citep{mishchenko1993nature}, avec des ondes sismiques \citep{larose2004weak} ou encore avec des atomes froids \citep{jendrzejewski2012coherent}\citep{muller2015suppression}.
 
 
 \begin{figure}
@@ -121,20 +123,16 @@ Comme le montre l'équation \ref{eq:proba_retour_origine}, le retour de l'onde �
 \begin{equation}
 D= D_{\mathrm{0}}-\delta D \text{ ,}
 \end{equation}
-où $D_{\mathrm{0}}$ est le coefficient de diffusion classique \ref{eq:definition_coefficient_diffusion}, et $\delta D$ est la correction de localisation faible.
-
-
-
-Ces corrections de localisation faible dépendent des détails microscopiques du système, mais aussi de sa dimension $d$ et de sa taille $L$. Celles-ci sont données par \citep{akkermans2007mesoscopic}:
+où $D_{\mathrm{0}}$ est le coefficient de diffusion classique \ref{eq:definition_coefficient_diffusion}, et $\delta D$ est la correction de localisation faible. Ces corrections de localisation faible dépendent des détails microscopiques du système, mais aussi de sa dimension $d$ et de sa taille $L$. En estimant le poids des boucles de localisation faible, on peut montrer que \citep{akkermans2007mesoscopic}:
 \begin{equation}
 \delta D/ D_{\mathrm{0}} = \left\lbrace \begin{aligned}
 & \mathcal{O}\left(L/l_{\mathrm{B}}\right)  \quad &&\text{en 1D ,}\\
 & \mathcal{O}\left(\frac{1}{k l_{\mathrm{B}}} \ln{\frac{L}{l_{\mathrm{B}}}} \right) \quad &&\text{en 2D ,}\\
-& \mathcal{O}\left(\frac{1}{(k l_{\mathrm{B}})^2}\right) \quad &&\text{en 3D ,}
+& \mathcal{O}\left(\frac{1}{(k l_{\mathrm{B}})^2}\right) \quad &&\text{en 3D .}
 \end{aligned}\right.
 \label{eq:correction_localisation_faible}
 \end{equation}
-et témoignent ainsi de la forte influence de la dimension du système comme nous le verrons plus en détails dans la section suivante.
+Ces relations témoignent ainsi de la forte influence de la dimension du système comme nous le verrons plus en détails dans la section suivante.
 
 
 
@@ -144,30 +142,29 @@ et témoignent ainsi de la forte influence de la dimension du système comme nou
 \subsection{Suppression du transport: Localisation d'Anderson}
 \label{sc:localisation_anderson}
 
-Les corrections de localisation faible données par l'équation \ref{eq:correction_localisation_faible} font apparaître un comportement remarquable: sous certaines conditions, il est possible que la correction $\delta D$ soit égale au coefficient de diffusion classique $D_{\mathrm{0}}$, entraînant ainsi la suppression du transport avec $D=0$. Cet effet dit de \emph{Localisation forte}, ou encore de \emph{Localisation d'Anderson}, a été découvert en 1958 par \emph{Philip W. Anderson} s'intéressant alors à la diffusion d'une particule quantique dans un réseau désordonné dans le cadre de la physique de la matière condensée \citep{anderson1958absence}. Ces travaux furent récompensés par le prix Nobel de physique en 1977, conjointement avec \emph{Sir Nevill Francis Mott} et \emph{John Hasbrouck van Vleck}. 
+Les corrections de localisation faible données par l'équation \ref{eq:correction_localisation_faible} font apparaître un comportement remarquable: sous certaines conditions, il est possible que la correction $\delta D$ soit égale au coefficient de diffusion classique $D_{\mathrm{0}}$, entraînant ainsi la suppression du transport avec $D=0$. Cet effet dit de \emph{Localisation forte}, ou encore de \emph{Localisation d'Anderson}, a été découvert en 1958\footnote{Le phénomène de localisation d'Anderson a été découvert avant les processus de localisation faible.} par \emph{Philip W. Anderson} s'intéressant alors à la diffusion d'une particule quantique dans un réseau désordonné dans le cadre de la physique de la matière condensée \citep{anderson1958absence}. Cette inhibition du transport constitue la signature la plus spectaculaire de l'influence de la cohérence de l'onde lors de sa propagation dans un milieu désordonné. Ces travaux furent récompensés par le prix Nobel de physique en 1977, conjointement avec \emph{Sir Nevill Francis Mott} et \emph{John Hasbrouck van Vleck}. 
 
 
 
-\paragraph*{Localisation d'Anderson}
-La signature la plus spectaculaire de l'influence de la cohérence d'une onde lors de sa propagation dans un milieu désordonné est l'inhibition du transport. 
-
+\paragraph*{Localisation d'Anderson et rôle de la dimension}
 Dans le régime \emph{isolant}\footnote{Par opposition au régime \emph{métallique} où le transport existe.} de localisation d'Anderson, la fonction d'onde reste localisée aux alentours du point d'origine et présente un profil exponentiel
 \begin{equation}
 \left| \psi (\mathbf{x}) \right|^2 \propto e^{-\mathrm{x}/\xiloc} \text{ ,}
 \label{eq:exponentielle_anderson}
 \end{equation}
-où $\xiloc$ correspond à la longueur typique sur laquelle l'onde s'étend, et est appelée \emph{longueur de localisation}.
+où $\xiloc$ correspond à la longueur typique sur laquelle l'onde s'étend, et est appelée \emph{longueur de localisation}\footnote{La longueur de localisation est définie comme la longueur caractéristique de décroissance des ailes de la fonction d'onde moyenne $\xiloc=\lim\limits_{x\rightarrow\infty} -\frac{x}{\;\overline{\ln|\psi(x)|^2}\;}$.}.
 
-Il est possible de donner une estimation de cette longueur à l'aide des corrections de localisation faible \ref{eq:correction_localisation_faible}. On montre ainsi que pour un système unidimensionnel, tous les états sont très efficacement localisés et $\xiloc=2 \lb$. De ce fait, la localisation d'Anderson se manifeste même pour des désordres faibles pour lesquels $k\lb \gg 1$. 
-
-De même, à deux dimensions, il a été montré que tous les états restent localisés mais sur des échelles de longueurs bien plus grandes, de l'ordre de $\xiloc \sim \lb \exp{(k \lb)}$. Pour des désordres faibles ($k \lb \gg 1$), la longueur de localisation excède généralement la taille du système. 
-
-Remarquablement, les corrections de localisation faible à trois dimensions ne dépendent pas de la taille du système, mais seulement de la force du désordre $k \lb$. Dans le cas d'un désordre faible, les boucles de localisation faible ne sont pas assez nombreuses pour changer de manière significative la dynamique diffusive de l'onde. En revanche, la localisation d'Anderson persiste dans le cas d'un désordre fort où $k \lb \leq 1$, pour lequel la phase l'onde varie peu entre deux évènements successifs de diffusion. 
+Pour un système de taille suffisamment grande, les corrections de localisation faible $\delta D$ de l'équation \ref{eq:correction_localisation_faible} en dimension 1 sont du même ordre que le coefficient de diffusion classique $D_{\mathrm{0}}$. On constate ainsi qu'en dimension 1, les processus de localisation faible sont très efficaces, rendant tous les états localisés. Il est possible d'estimer la longueur de localisation à l'aide des corrections de localisation faible en écrivant $\delta D(\xiloc)\sim D_{\mathrm{0}}$, d'où on déduit que $\xiloc=2 \lb$ pour un système unidimensionnel. De fait, la localisation d'Anderson se manifeste même pour des désordres faibles, témoignant de son caractère spectaculaire. 
 
 
+De même, à deux dimensions, il apparaît des corrections de localisation faible \ref{eq:correction_localisation_faible} que tous les états sont localisés pour un système de taille suffisamment grande. En écrivant $\delta D(\xiloc)\sim D_{\mathrm{0}}$, on trouve ainsi que les états restent localisés mais sur des échelles de longueurs bien plus grandes que dans le cas unidimensionnel, de l'ordre de $\xiloc \sim \lb \exp{(k \lb)}$. Pour des désordres faibles ($k \lb \gg 1$), la longueur de localisation excède généralement la taille du système. On parle ainsi de dimension \emph{marginale} de la localisation d'Anderson.
 
-\paragraph*{Transition d'Anderson}
-Il apparaît donc que le cas à trois dimensions présente un intérêt particulier. En effet, un même système peut, selon la force du désordre, présenter un comportement qui soit métallique , soit isolant. Selon l'équation \ref{eq:correction_localisation_faible}, on peut estimer que ce changement de comportement se manifeste lorsque
+Remarquablement, les corrections de localisation faible à trois dimensions ne dépendent pas de la taille du système, mais seulement de la force du désordre $k \lb$. Dans le cas d'un désordre faible ($k\lb\gg 1$), les boucles de localisation faible ne sont pas assez nombreuses pour changer de manière significative la dynamique diffusive de l'onde ($\delta D \ll D_{\mathrm{0}}$). En revanche, la localisation d'Anderson persiste dans le cas d'un désordre fort où $k \lb \leq 1$, pour lequel la phase de l'onde varie peu entre deux évènements successifs de diffusion. 
+
+Notons que l'analyse intuitive des propriétés de localisation en fonction de la dimension à l'aide des corrections de localisation faible présentée ici a été rigoureusement étudiée et validée dans le cadre de la \emph{théorie d'échelle de la localisation d'Anderson}, développée à la fin des années 1970 \citep{abrahams1979scaling}.
+
+\paragraph*{Transition d'Anderson à trois dimensions}
+Il apparaît donc que le cas à trois dimensions présente un intérêt particulier. En effet, un même système peut, selon la force du désordre, présenter un comportement qui soit métallique ou isolant. Selon l'équation \ref{eq:correction_localisation_faible}, on peut estimer que ce changement de comportement se manifeste lorsque
 \begin{equation}
 k \lb \sim 1 \text{ ,}
 \label{eq:ioffe_regel}
@@ -176,13 +173,13 @@ condition connue sous le nom de \emph{critère de Ioffe-Regel}.
 
 Il est possible de donner une interprétation intuitive au critère de Ioffe-Regel en se focalisant sur la phase accumulée par l'onde entre deux évènements successifs de diffusion. En effet, cette phase est de l'ordre de $\phi\sim k\lb$. Dans le régime de désordre fort, la phase de l'onde est donc similaire pour plusieurs évènements de diffusion successifs, générant ainsi des interférences constructives entre les différentes ondes diffusées. 
 
-Plus particulièrement, il a été montré à l'aide la \emph{théorie d'échelle de la localisation d'Anderson} qu'il existe une transition de phase du deuxième ordre entre états localisés et états diffusifs pour des systèmes à trois dimensions \citep{abrahams1979scaling}. Le paramètre de contrôle de la transition étant l'énergie $E$ de l'onde, la transition d'Anderson possède donc une énergie critique $\Ec$ appelée \emph{seuil de mobilité}, comme illustré figure \ref{fig:transition_anderson}.a. 
+Plus particulièrement, il a été montré à l'aide la théorie d'échelle de la localisation d'Anderson qu'il existe une transition de phase du deuxième ordre entre états localisés et états diffusifs pour des systèmes à trois dimensions \citep{abrahams1979scaling}. Le paramètre de contrôle de la transition étant l'énergie $E$ de l'onde, la transition d'Anderson possède donc une énergie critique $\Ec$ appelée \emph{seuil de mobilité}, comme illustré figure \ref{fig:transition_anderson}.a. 
 
 La transition d'Anderson est de plus caractérisée par deux exposants critiques $\nu$ et $s$, décrivant respectivement comment la longueur de localisation $\xiloc$ diverge pour des états localisés proches du seuil de mobilité et comment le coefficient de diffusion $D$ s'approche de $0$ pour des états diffusifs (voir figure \ref{fig:transition_anderson}.b):
 \begin{equation}
 D \sim \left| E-\Ec \right|^s \quad \text{et} \quad \xi_{\mathrm{loc}} \sim \left| E-\Ec \right|^{-\nu} \text{ .}
 \end{equation}
-Bien qu'aucune théorie ne puisse décrire correctement le régime critique de la transition d'Anderson à l'heure actuelle, plusieurs études numériques s'accordent sur les valeurs $s=\nu=1.58$ des exposants critiques \citep{slevin1999corrections} \citep{evers2008anderson} \citep{slevin2014critical}.
+Bien qu'aucune théorie ne puisse décrire exactement le régime critique de la transition d'Anderson à l'heure actuelle, plusieurs études numériques s'accordent sur les valeurs $s=\nu=1.58$ des exposants critiques \citep{slevin1999corrections} \citep{evers2008anderson} \citep{slevin2014critical}. À ce jour, seule une expérience \textit{indirecte} a été capable de mesurer ces exposants critiques (voir section \ref{sc:localisation_atomes_froids}) \citep{lopez2012experimental}
 
 
 \begin{figure}
@@ -216,15 +213,15 @@ L'étude expérimentale de la localisation d'Anderson constitue un domaine de re
 \paragraph*{Localisation dans les systèmes électroniques}
 Les premières expériences furent menées à l'aide de systèmes électroniques, et purent démontrer des effets de localisation faible ainsi que des effets de localisation forte \citep{mott1979electronic}\citep{paalanen1983critical}. Rapidement, les efforts se sont concentrés sur l'observation de la transition métal-isolant\footnote{Cette dénomination prend tout son sens dans les systèmes électroniques: les expériences menées correspondent à des mesures de conductivité.} prédite par la théorie d'échelle de la localisation. 
 
-Cependant, une étude quantitative de la transition s'est révélée ardue en raison de la complexité de ces systèmes. En particulier, la présence d'interactions coulombiennes entre les électrons modifie profondément les propriétés de localisation, et rend délicate la distinction expérimentale entre la transition métal-isolant liée au désordre (transition d'Anderson) et la transition métal-isolant liée aux interactions (transition de Mott). Ces effets sont particulièrement marqués par la comparaison entre les exposants critiques mesurés ($\nu\sim 1$ pour \citep{shlimak1996determination}) et ceux estimés à l'aide de simulations numériques ($\nu\sim1.58$).
+Cependant, une étude quantitative de la transition s'est révélée ardue en raison de la complexité de ces systèmes. En particulier, la présence d'interactions coulombiennes entre les électrons modifie profondément les propriétés de localisation, et rend délicate la distinction expérimentale entre la transition métal-isolant liée au désordre (transition d'Anderson) et la transition métal-isolant liée aux interactions (transition de Mott). Ces effets sont particulièrement marqués par la comparaison entre les exposants critiques mesurés ($\nu\sim 1$ pour \citep{shlimak1996determination}) et ceux estimés à l'aide de simulations numériques ($\nu\sim1.58$). Notons tout de même que de nouvelles expériences rapportent l'observation de la localisation d'Anderson à l'aide systèmes électroniques \citep{siegrist2011disorder}\citep{ying2016anderson}.
 
 
 \paragraph*{Localisation dans les systèmes classiques} 
 L'utilisation des ondes classiques s'est alors imposée comme étant un moyen de réaliser des systèmes mieux contrôlés que dans le cadre de la matière condensée. Les premières signatures de la localisation d'Anderson ont été obtenues dans les années 90 avec des ondes ultrasonores \citep{weaver1990anderson}, des ondes mécaniques de flexion \citep{ye1992observation}, des micro-ondes \citep{genack1991observation} ainsi que des ondes lumineuses \citep{wiersma1997localization}. 
 
-Cependant, ces expériences s'appuyaient sur la décroissance exponentielle de l'intensité de l'onde pour analyser leurs résultats. Leur interprétation fut controversée en raison de l'existence d'autres phénomènes présentant la même signature, en particulier l'absorption qui présente aussi une décroissance exponentielle de l'intensité de l'onde comme décrit par la loi de Beer-Lambert \citep{scheffold1999localization}. Depuis, d'autres signatures ont été exploitées telle que la dynamique de l'onde en régime pulsé \citep{weaver1993anomalous} ou encore les fluctuations géantes de transmission \citep{nieuwenhuizen1995intensity} afin d'observer sans ambiguïté la localisation d'Anderson.
+Cependant, ces premières expériences s'appuyaient sur la décroissance exponentielle de l'intensité de l'onde pour analyser leurs résultats. Leur interprétation fut controversée en raison de l'existence d'autres phénomènes présentant la même signature, en particulier l'absorption qui présente aussi une décroissance exponentielle de l'intensité de l'onde comme décrit par la loi de Beer-Lambert \citep{scheffold1999localization}. Depuis, d'autres signatures ont été exploitées telle que la dynamique de l'onde en régime pulsé \citep{weaver1993anomalous} ou encore les fluctuations géantes de transmission \citep{nieuwenhuizen1995intensity} afin d'observer sans ambiguïté la localisation d'Anderson.
 
-Encore aujourd'hui, la difficulté expérimentale s'accroît fortement en augmentant la dimension du système. En particulier, augmenter le pouvoir diffusant du milieu à trois dimensions afin d'atteindre le critère de Ioffe-Regel $k \lb \sim 1$ tout en s'affranchissant de l'absorption reste un tour de force expérimental. Ainsi, la seule observation de la localisation d'Anderson à trois dimensions faisant consensus à été réalisée au Canada dans le groupe de J. Page à l'aide d'ondes acoustiques se propageant dans des billes d'aluminium \citep{hu2008localization}.
+Aujourd'hui encore, la difficulté expérimentale s'accroît fortement en augmentant la dimension du système. En particulier, augmenter le pouvoir diffusant du milieu à trois dimensions afin d'atteindre le critère de Ioffe-Regel $k \lb \sim 1$ tout en s'affranchissant de l'absorption reste un tour de force expérimental. Ainsi, la seule observation de la localisation d'Anderson à trois dimensions faisant consensus à été réalisée au Canada dans le groupe de J. Page à l'aide d'ondes acoustiques se propageant dans des billes d'aluminium \citep{hu2008localization}.
 
 Notons finalement que la localisation à trois dimensions d'ondes lumineuses fait l'objet de recherches intenses très débattues. Enfin, une récente étude numérique prédit l'absence de la localisation d'Anderson à trois dimensions dans le cas d'ondes lumineuses en raison de leur caractère vectoriel \citep{skipetrov2014absence}.
 
@@ -235,7 +232,7 @@ Notons finalement que la localisation à trois dimensions d'ondes lumineuses fai
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/Localisation/experiences_localisation_anderson.pdf}
-\caption{\textbf{Etudes expérimentales de la localisation d'Anderson.} A basse température, un métal peut devenir isolant à cause du désordre, sa conductivité s'annulant alors. Cette transition peut être atteinte en diminuant la densité d'électrons. Figure tirée de \citep{katsumoto1987fine}. La localisation d'Anderson d'ondes acoustiques dans un réseau désordonné de billes d'aluminium peut être étudiée à l'aide d'un hydrophone après sa propagation. Il est possible de relever la distribution d'intensité de l'onde ainsi que son profil temporel qui présentent des signatures de la localisation d'Anderson. Figure tirée de \citep{hu2008localization}. La localisation de la lumière peut être étudiée à l'aide de plusieurs systèmes, tels que des matériaux photoréfractifs composés d'un réseau désordonné de guides d'ondes (figure tirée de \citep{schwartz2007transport}) ou encore dans des cristaux photoniques (figure tirée de \citep{sapienza2010cavity}).}
+\caption{\textbf{Etudes expérimentales de la localisation d'Anderson.} \textbf{a:} A basse température, un métal peut devenir isolant à cause du désordre, sa conductivité s'annulant alors. Cette transition peut être atteinte en diminuant la densité d'électrons. Figure tirée de \citep{katsumoto1987fine}. \textbf{b:} La localisation d'Anderson d'ondes élastiques dans un réseau désordonné de billes d'aluminium peut être étudiée à l'aide d'un hydrophone après sa propagation. Il est possible de relever la distribution d'intensité de l'onde ainsi que son profil temporel qui présentent des signatures de la localisation d'Anderson. Figures tirées de \citep{hu2008localization}. \textbf{c} et \textbf{d:} La localisation de la lumière peut être étudiée à l'aide de plusieurs systèmes, tels que des matériaux photoréfractifs composés d'un réseau désordonné de guides d'ondes (\textbf{c}, figure tirée de \citep{schwartz2007transport}) ou encore dans des cristaux photoniques (\textbf{d}, figure tirée de \citep{sapienza2010cavity}).}
 \label{fig:experiences_localisation_anderson}
 \end{figure}
 
@@ -245,19 +242,20 @@ Notons finalement que la localisation à trois dimensions d'ondes lumineuses fai
 
 
 \subsection{L'approche des atomes froids}
-Depuis le milieu des années 2000, une nouvelle plateforme présentant un degré de contrôle du système inédit participe à l'étude de la physique du désordre: les atomes ultra-froids. Ces systèmes, utilisés en interférométrie atomique et pour de la simulation quantique, sont bien connus pour leurs propriétés de cohérence sous forme de \emph{condensats de Bose-Einstein} et offrent des possibilités expérimentales complexes qu'il n'est pas possible de réaliser à l'aide d'autres systèmes.
+\label{sc:localisation_atomes_froids}
+Depuis le milieu des années 2000, une nouvelle plateforme participe à l'étude de la physique du désordre: les atomes ultra-froids. Ces systèmes, utilisés en interférométrie atomique et pour de la simulation quantique, sont bien connus pour leurs propriétés de cohérence sous forme de \emph{condensats de Bose-Einstein}. Ceux-ci présentent un degré de contrôle inédit et offrent des possibilités expérimentales complexes qu'il est impossible d'obtenir à l'aide d'autres systèmes.
 
-En effet, les expériences d'atomes ultra-froids présentent un grand nombre d'avantages: il est possible d'imager la fonction d'onde des atomes aussi bien dans l'espace réel grâce à une imagerie \emph{in-situ} que dans l'espace des vitesses à l'aide d'une imagerie par \emph{temps de vol}. De plus, les atomes ultra-froids ne présentent pas d'absorption, et dépassent ainsi les difficultés des expériences pionnières d'observation de la localisation d'Anderson. Enfin, de tels systèmes offrent un contrôle absolu des paramètres microscopiques, en particulier des paramètres du désordre, mais aussi ceux de l'onde et des interactions entre particules, et la dimension du système. Les atomes ultra-froids apparaissent alors comme une plateforme idéale pour étudier la physique du désordre.
+En effet, les expériences d'atomes ultra-froids présentent un grand nombre d'avantages: il est possible d'imager la fonction d'onde des atomes aussi bien dans l'espace réel grâce à une imagerie \emph{in-situ} que dans l'espace des vitesses à l'aide d'une imagerie par \emph{temps de vol}. De plus, les atomes ultra-froids ne présentent pas d'absorption, et dépassent ainsi les difficultés des expériences pionnières d'observation de la localisation d'Anderson. Enfin, de tels systèmes offrent un vaste contrôle des paramètres microscopiques, de l'onde comme du désordre en passant par la dimension. Les atomes ultra-froids apparaissent alors comme une plateforme idéale pour étudier la physique du désordre.
 
 
 \paragraph*{Atomes ultra-froids et désordre}
-Il existe différentes méthodes pour générer un désordre sur les atomes. Parmi les plus utilisées on retrouve les champs de tavelures optiques, ou \emph{speckle}, et les réseaux bichromatiques pour lesquels un réseau de faible amplitude vient moduler de manière quasi-aléatoire le réseau principal (voir figure \ref{fig:localisation_1D_atomes_froids}. Notons aussi le développement récent de désordres générés à l'aide de modulateurs spatiaux de lumière ou de matrices de micro-miroirs, permettant de réaliser des profils d'illumination arbitraires.
+Il existe différentes méthodes pour générer un désordre sur les atomes. Parmi les plus utilisées on retrouve les champs de tavelures optiques, ou \emph{speckle}, et les réseaux bichromatiques pour lesquels un réseau de faible amplitude vient moduler de manière quasi-aléatoire le réseau principal (voir figure \ref{fig:localisation_1D_atomes_froids}). Notons aussi le développement récent de désordres générés à l'aide de modulateurs spatiaux de lumière ou de matrices de micro-miroirs, permettant de réaliser des profils d'illumination arbitraires.
 
-Toutes ces façons de réaliser un désordre pour les atomes possèdent un point commun: ils sont générés à l'aide de champs lumineux et possèdent donc une longueur typique de variation, ou \emph{longueur de corrélation} $\sigma$, généralement de l'ordre du micromètre. En particulier, les effets quantiques associés au comportement ondulatoire de la matière sont attendus lorsque la longueur de \emph{de Broglie} est plus grande que la longueur de corrélation:
+Toutes ces façons de réaliser un désordre pour les atomes possèdent un point commun: ils sont générés à l'aide de champs lumineux et possèdent donc une longueur typique de variation, ou \emph{longueur de corrélation} $\sigma$, généralement de l'ordre du micromètre. L'existence de cette longueur typique impose une température critique pour le système présente un comportement quantique. En particulier, les effets quantiques associés au comportement ondulatoire de la matière sont attendus lorsque la longueur de \emph{de Broglie} est plus grande que la longueur de corrélation:
 \begin{equation}
 \ldb\geq\sigma \quad \text{soit} \quad T_{\mathrm{typ}} \leq \frac{\hb^2}{ \kB m \sigma^2}\sim \text{ quelques nanokelvins.}
 \end{equation}
-L'observation d'effets quantiques en présence de désordre nécessite donc des températures extraordinairement basses obtenues avec des \emph{condensats de Bose-Einstein}. 
+L'observation d'effets quantiques en présence de désordre nécessite donc des températures extraordinairement basses qui sont typiquement obtenues avec des \emph{condensats de Bose-Einstein}. 
 
 Cependant, l'obtention de telles températures n'est pas nécessaire pour observer la dynamique diffusive d'atomes dans un désordre optique. Notamment, celle-ci a été étudiée en deux dimensions en se concentrant sur la décroissance temporelle de la densité atomique \citep{robert2010anisotropic}. Plus particulièrement, une décroissance de la densité atomique en $1/t$ au centre du nuage servant de point source, signature de la dynamique diffusive, a été observée en présence de désordre, tandis que celle-ci est caractérisée par une décroissance en $1/t^2$ pour une expansion balistique en absence de désordre.
 
@@ -266,7 +264,7 @@ Cependant, l'obtention de telles températures n'est pas nécessaire pour observ
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/Localisation/localisation_1D_atomes.pdf}
-\caption{\textbf{Localisation d'ondes atomiques dans un réseau bichromatique.} Un condensat de Bose-Einstein s'étend dans l'espace libre (image du haut), tandis que son expansion est arrêtée lorsque celui-ci est placé dans un potentiel quasi-périodique (image du bas). Figure tirée de \citep{roati2008anderson} \textbf{Localisation d'Anderson d'ondes de matière dans un speckle.} Mesure de densité atomique après une seconde d'expansion dans un potentiel de type speckle. Les ailes du profil sont caractérisées par un décroissance exponentielle (traits bleus). Le profil rose correspond à la densité atomique initiale. Figure tirée de \citep{billy2008direct}.}
+\caption{\textbf{Premières expériences de localisation unidimensionnelle.} \textbf{a:} Localisation d'ondes atomiques dans un réseau bichromatique unidimensionnel. Un condensat de Bose-Einstein s'étend dans l'espace libre (image du haut), tandis que son expansion est arrêtée lorsque celui-ci est placé dans un potentiel quasi-périodique (image du bas). Figure tirée de \citep{roati2008anderson}. \textbf{b:} Localisation d'Anderson unidimensionelle d'ondes de matière dans un speckle. La densité atomique est mesurée après une seconde d'expansion dans un guide d'onde unidimensionnel et dans un potentiel de type speckle. Les ailes du profil sont caractérisées par un décroissance exponentielle (traits bleus). Le profil rose correspond à la densité atomique initiale. Figure tirée de \citep{billy2008direct}.}
 \label{fig:localisation_1D_atomes_froids}
 \end{figure}
 
@@ -276,7 +274,7 @@ Cependant, l'obtention de telles températures n'est pas nécessaire pour observ
 \paragraph*{Localisation d'Anderson d'ondes atomiques}
 C'est en 2008 qu'a été observée la localisation d'Anderson d'ondes de matière simultanément dans deux expériences illustrées sur la figure \ref{fig:localisation_1D_atomes_froids}. L'expérience de Roati et al. \citep{roati2008anderson} réalisée au LENS à Florence, rapporte l'arrêt de l'expansion d'un condensat de Bose-Einstein de \isotope[39]{K} placé dans un potentiel unidimensionnel composé d'un réseau bichromatique. La seconde expérience, menée au Laboratoire Charles Fabry à Palaiseau, rapporte aussi l'arrêt de l'expansion d'un condensat de Bose-Einstein de \isotope[87]{Rb} plongé dans un guide d'onde optique unidimensionnel et dans un désordre de type speckle \citep{billy2008direct}. De plus, la mesure du profil de densité atomique montre la décroissance exponentielle \ref{eq:exponentielle_anderson} de la fonction d'onde localisée, comme représenté figure \ref{fig:localisation_1D_atomes_froids}.b. 
 
-Ce expériences ont ainsi démontré la pertinence des atomes ultra-froids pour l'étude des systèmes désordonnés, et déclenché ainsi de nombreux efforts expérimentaux pour l'étude de la localisation d'Anderson dans des systèmes de dimensions 2 et 3. 
+Ces expériences ont ainsi démontré la pertinence des atomes ultra-froids pour l'étude des systèmes désordonnés, et ont déclenché ainsi de nombreux efforts expérimentaux pour l'étude de la localisation d'Anderson dans des systèmes de dimensions 2 et 3. 
 
 Ce n'est que récemment (2019) que la localisation d'Anderson a pu être observée à l'aide d'atomes froids en raison de l'augmentation exponentielle de la longueur de localisation avec la faiblesse du désordre. White et al. rapportent ainsi l'observation de la localisation d'Anderson en deux dimensions à l'aide d'une expérience de transmission entre deux réservoirs, et témoignent du profil exponentiel de la fonction d'onde dans le canal désordonné \citep{white2019observation}. 
 
@@ -286,7 +284,7 @@ Ce n'est que récemment (2019) que la localisation d'Anderson a pu être observ�
 
 C'est principalement vers l'étude de la localisation d'Anderson à trois dimensions et plus particulièrement vers l'étude du régime critique que ce se sont concentrés les efforts expérimentaux après l'observation de la localisation unidimensionnelle. Un des facteurs expliquant ce développement en faveur du cas tridimensionnel par rapport au cas bidimensionnel provient de la distinction entre la localisation d'Anderson, d'origine quantique, et le piégeage classique. Notamment, il a été montré que pour un potentiel de type speckle à trois dimensions, la percolation classique est négligeable \citep{pilati2010dilute}, contrairement au cas bidimensionnel où cette question est critique.
 
-Trois expériences rapportent ainsi l'observation de la localisation d'Anderson à trois dimensions. Le groupe de B. de Marco à Urbana Champaign a ainsi utilisé un gaz fermionique de \isotope[40]{K} dans un potentiel speckle anisotrope \citep{kondov2011three}. Simultanément, l'équipe de Palaiseau a observé un arrêt de l'expansion d'une partie du nuage de \isotope[87]{Rb} plongé dans un désordre isotrope généré par la superposition cohérente de deux speckles, pour des durées d'observation allant jusqu'à \SI{8}{\second} \citep{jendrzejewski2012three}. Enfin, une expérience récente menée au LENS dans l'équipe de G. Modugno rapporte l'observation de la localisation complète du nuage atomique de \isotope[39]{K}, dont les interactions ont été annulées à l'aide de résonances de Feshbach \citep{semeghini2015measurement}.
+Trois expériences rapportent ainsi l'observation de la localisation d'Anderson à trois dimensions. Le groupe de B. de Marco à Urbana Champaign a ainsi utilisé un gaz fermionique de \isotope[40]{K} dans un potentiel speckle anisotrope \citep{kondov2011three}. Simultanément, l'équipe de Palaiseau a observé un arrêt de l'expansion d'une partie du nuage d'atomes de \isotope[87]{Rb} plongé dans un désordre isotrope généré par la superposition cohérente de deux speckles, pour des durées d'observation allant jusqu'à \SI{6}{\second} \citep{jendrzejewski2012three}. Enfin, une expérience récente menée au LENS dans l'équipe de G. Modugno rapporte l'observation de la localisation complète du nuage atomique de \isotope[39]{K}, dont les interactions ont été annulées à l'aide de résonances de Feshbach \citep{semeghini2015measurement}.
 
 Ces trois expériences constituent une étape importante de l'étude de la localisation d'Anderson, mais ne permettent pas d'adresser l'étude du régime critique, comme nous le verrons dans la partie suivante. 
 
@@ -302,7 +300,7 @@ Ces trois expériences constituent une étape importante de l'étude de la local
 
 
 \paragraph*{Localisation dynamique}
-Notons enfin l'existence d'un autre système permettant d'étudier la localisation d'Anderson à l'aide d'atomes froids, basé sur le phénomène de \emph{localisation dynamique}. Développé expérimentalement dans les années 1990 \citep{moore1995atom}, le système de \emph{rotateurs forcés} (ou \emph{kicked rotors} en anglais) repose sur un mapping entre un rotateur pulsé périodiquement et un modèle d'Anderson, et se focalise sur l'apparition du phénomène de localisation dans l'espace des vitesses \citep{lemarietel-00424399}. 
+Notons enfin l'existence d'un autre système permettant d'étudier la localisation d'Anderson à l'aide d'atomes froids, basé sur le phénomène de \emph{localisation dynamique}. Développé expérimentalement dans les années 1990 \citep{moore1995atom}, le système de \emph{rotateurs forcés} (ou \emph{kicked rotors} en anglais) repose sur un mapping entre un rotateur pulsé périodiquement et un modèle d'Anderson. Celui-ci se focalise sur l'apparition du phénomène de localisation dans l'espace des vitesses \citep{lemarietel-00424399}. 
 
 En effet, à l'aide d'une onde stationnaire pulsée périodiquement, équivalente à une transmission périodique d'impulsion aléatoire, on peut décrire le mouvement des atomes soumis à ces \emph{kicks} comme une marche aléatoire dans l'espace des vitesses. Cependant, la richesse de ce système réside dans sa dynamique quantique, grâce à laquelle le phénomène de localisation apparaît de manière équivalente à celle dans l'espace réel et présente une localisation exponentielle de la distribution de vitesses des atomes illustrée figure \ref{fig:kicked_rotors}.
 
@@ -313,7 +311,7 @@ En effet, à l'aide d'une onde stationnaire pulsée périodiquement, équivalent
 \label{fig:kicked_rotors}
 \end{figure}
 
-L'extension du kicked rotor unidimensionnel à des dimensions supérieures $d=2$ et $d=3$ a pu se faire à l'aide d'une modulation temporelle des kicks \citep{casati1989anderson}. Le \emph{kicked rotor quasi-périodique} possède une transition de phase métal-isolant d'Anderson, confortée par l'existence d'un mapping \citep{lemarie2009observation} ainsi que par des études numériques \citep{lemarie2009universality}. L'expérience de Chabé et al. réalisée à Lille rapporte ainsi une valeur de $\nu=1.63\pm0.05$ de l'exposant critique de la transition de phase associée. Cette mesure constitue aujourd'hui encore la seule mesure expérimentale des exposants critiques de la transition d'Anderson compatible avec les estimations numériques \citep{chabe2008experimental}\citep{lopez2012experimental}.
+L'extension du kicked rotor unidimensionnel à des dimensions supérieures $d=2$ et $d=3$ a pu se faire à l'aide d'une modulation temporelle des kicks \citep{casati1989anderson}. Le \emph{kicked rotor quasi-périodique} possède une transition de phase métal-isolant d'Anderson, confortée par l'existence d'un mapping \citep{lemarie2009observation} ainsi que par des études numériques \citep{lemarie2009universality}. L'expérience de Chabé et al. \citep{chabe2008experimental} réalisée à Lille rapporte ainsi une valeur de $\nu=1.63\pm0.05$ de l'exposant critique de la transition de phase associée, tout en vérifiant l'universalité de celle-ci \citep{lopez2012experimental}. Cette mesure constitue aujourd'hui encore la seule mesure expérimentale des exposants critiques de la transition d'Anderson compatible avec les estimations numériques \citep{slevin2014critical}.
 
 
 
