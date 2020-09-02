@@ -602,16 +602,6 @@ G.~Roati, C.~D’Errico, L.~Fallani, M.~Fattori, C.~Fort, M.~Zaccanti,
 \newblock Anderson localization of a non-interacting bose--einstein condensate.
 \newblock \emph{Nature}, 453\penalty0 (7197):\penalty0 895--898, 2008.
 
-\bibitem[Robert-De-Saint-Vincent et~al.(2010)Robert-De-Saint-Vincent, Brantut,
-  Allard, Plisson, Pezz{\'e}, Sanchez-Palencia, Aspect, Bourdel, and
-  Bouyer]{robert2010anisotropic}
-M.~Robert-De-Saint-Vincent, J.-P. Brantut, B.~Allard, T.~Plisson, L.~Pezz{\'e},
-  L.~Sanchez-Palencia, A.~Aspect, T.~Bourdel, and P.~Bouyer.
-\newblock Anisotropic 2d diffusive expansion of ultracold atoms in a disordered
-  potential.
-\newblock \emph{Physical Review Letters}, 104\penalty0 (22):\penalty0 220602,
-  2010.
-
 \bibitem[Robins et~al.(2013)Robins, Altin, Debs, and Close]{robins2013atom}
 N.~Robins, P.~Altin, J.~Debs, and J.~Close.
 \newblock Atom lasers: Production, properties and prospects for precision
@@ -623,6 +613,12 @@ N.~Robins, P.~Altin, J.~Debs, and J.~Close.
 L.~Sapienza, H.~Thyrrestrup, S.~Stobbe, P.~D. Garcia, S.~Smolka, and P.~Lodahl.
 \newblock Cavity quantum electrodynamics with anderson-localized modes.
 \newblock \emph{Science}, 327\penalty0 (5971):\penalty0 1352--1355, 2010.
+
+\bibitem[Sarma et~al.(1988)Sarma, He, and Xie]{sarma1988mobility}
+S.~D. Sarma, S.~He, and X.~Xie.
+\newblock Mobility edge in a model one-dimensional potential.
+\newblock \emph{Physical review letters}, 61\penalty0 (18):\penalty0 2144,
+  1988.
 
 \bibitem[Savo et~al.(2017)Savo, Pierrat, Najar, Carminati, Rotter, and
   Gigan]{savo2017observation}
