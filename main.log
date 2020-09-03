@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  3 SEP 2020 19:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  4 SEP 2020 00:00
 entering extended mode
 **./main.tex
 (main.tex
@@ -1635,7 +1635,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 File: ./Fig/../Fig/BEC_manip/Rb87.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/Rb87.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/Rb87.pdf  used on input line 18
-4.
+6.
 (pdftex.def)             Requested size: 341.43437pt x 199.59186pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1645,29 +1645,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <./Fig/../Fig/BEC_manip/rabi.pdf, id=7796, 754.06688pt x 264.8047pt>
 File: ./Fig/../Fig/BEC_manip/rabi.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/rabi.pdf>
-Package pdftex.def Info: ./Fig/../Fig/BEC_manip/rabi.pdf  used on input line 33
-9.
+Package pdftex.def Info: ./Fig/../Fig/BEC_manip/rabi.pdf  used on input line 34
+1.
 (pdftex.def)             Requested size: 426.79135pt x 149.87352pt.
  [43 <./Fig/../Fig/BEC_manip/rabi.pdf>]
 <./Fig/../Fig/BEC_manip/manip.pdf, id=7941, 433.61185pt x 283.43782pt>
 File: ./Fig/../Fig/BEC_manip/manip.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/manip.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/manip.pdf  used on input line 3
-57.
+59.
 (pdftex.def)             Requested size: 426.79135pt x 278.98679pt.
  [44 <./Fig/../Fig/BEC_manip/manip.pdf>]
 <./Fig/../Fig/BEC_manip/table_optique2.pdf, id=7963, 436.53725pt x 348.388pt>
 File: ./Fig/../Fig/BEC_manip/table_optique2.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/table_optique2.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/table_optique2.pdf  used on inp
-ut line 376.
+ut line 378.
 (pdftex.def)             Requested size: 341.43437pt x 272.49107pt.
  [45] [46 <./Fig/../Fig/BEC_manip/table_optique2.pdf>]
 <./Fig/../Fig/BEC_manip/MOT_magtrap.pdf, id=7977, 360.07681pt x 197.41502pt>
 File: ./Fig/../Fig/BEC_manip/MOT_magtrap.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/MOT_magtrap.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/MOT_magtrap.pdf  used on input 
-line 393.
+line 395.
 (pdftex.def)             Requested size: 426.79135pt x 233.999pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1677,7 +1677,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./Fig/../Fig/BEC_manip/evapRF.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/evapRF.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/evapRF.pdf  used on input line 
-419.
+421.
 (pdftex.def)             Requested size: 384.1096pt x 202.19177pt.
  [48]
 <./Fig/../Fig/BEC_manip/piege_optique2.pdf, id=8075, 423.59935pt x 236.41693pt>
@@ -1685,7 +1685,7 @@ Package pdftex.def Info: ./Fig/../Fig/BEC_manip/evapRF.pdf  used on input line
 File: ./Fig/../Fig/BEC_manip/piege_optique2.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/piege_optique2.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/piege_optique2.pdf  used on inp
-ut line 437.
+ut line 439.
 (pdftex.def)             Requested size: 384.1096pt x 214.37856pt.
  [49 <./Fig/../Fig/BEC_manip/evapRF.pdf>] [50 <./Fig/../Fig/BEC_manip/piege_opt
 ique2.pdf>]
@@ -1694,7 +1694,7 @@ t>
 File: ./Fig/../Fig/BEC_manip/levitation_simple.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/levitation_simple.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/levitation_simple.pdf  used on 
-input line 462.
+input line 464.
 (pdftex.def)             Requested size: 252.72076pt x 181.70764pt.
  [51 <./Fig/../Fig/BEC_manip/levitation_simple.pdf>]
 <./Fig/../Fig/BEC_manip/BEC_double_struct.pdf, id=9534, 412.8108pt x 175.07729p
@@ -1702,7 +1702,7 @@ t>
 File: ./Fig/../Fig/BEC_manip/BEC_double_struct.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/BEC_double_struct.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/BEC_double_struct.pdf  used on 
-input line 484.
+input line 486.
 (pdftex.def)             Requested size: 384.1096pt x 162.9137pt.
  [52 <./Fig/../Fig/BEC_manip/BEC_double_struct.pdf>]
 <./Fig/../Fig/BEC_manip/adia_opening_and_delta_kick2.pdf, id=9624, 765.07376pt 
@@ -1711,7 +1711,7 @@ File: ./Fig/../Fig/BEC_manip/adia_opening_and_delta_kick2.pdf Graphic file (typ
 e pdf)
 <use ./Fig/../Fig/BEC_manip/adia_opening_and_delta_kick2.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/adia_opening_and_delta_kick2.pd
-f  used on input line 509.
+f  used on input line 511.
 (pdftex.def)             Requested size: 426.79135pt x 170.70528pt.
 
 [53]
@@ -1719,7 +1719,7 @@ f  used on input line 509.
 File: ./Fig/../Fig/BEC_manip/img_mot.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/img_mot.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/img_mot.pdf  used on input line
- 545.
+ 547.
 (pdftex.def)             Requested size: 426.79135pt x 113.40204pt.
 
 Underfull \vbox (badness 6575) has occurred while \output is active []
@@ -1730,7 +1730,7 @@ Underfull \vbox (badness 6575) has occurred while \output is active []
 File: ./Fig/../Fig/BEC_manip/img_science_3.pdf Graphic file (type pdf)
 <use ./Fig/../Fig/BEC_manip/img_science_3.pdf>
 Package pdftex.def Info: ./Fig/../Fig/BEC_manip/img_science_3.pdf  used on inpu
-t line 563.
+t line 565.
 (pdftex.def)             Requested size: 318.99184pt x 189.45561pt.
  [55 <./Fig/../Fig/BEC_manip/img_mot.pdf>] [56 <./Fig/../Fig/BEC_manip/img_scie
 nce_3.pdf>])
@@ -1789,7 +1789,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: Fig/Modif_exp/oscillation_levitation.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/oscillation_levitation.pdf>
 Package pdftex.def Info: Fig/Modif_exp/oscillation_levitation.pdf  used on inpu
-t line 223.
+t line 224.
 (pdftex.def)             Requested size: 426.79135pt x 147.80418pt.
  [68 <./Fig/Modif_exp/oscillation_levitation.pdf>] [69]
 <Fig/Modif_exp/optique_1070_new_style.pdf, id=10631, 454.72154pt x 306.19962pt>
@@ -1797,14 +1797,14 @@ t line 223.
 File: Fig/Modif_exp/optique_1070_new_style.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/optique_1070_new_style.pdf>
 Package pdftex.def Info: Fig/Modif_exp/optique_1070_new_style.pdf  used on inpu
-t line 302.
+t line 304.
 (pdftex.def)             Requested size: 426.79135pt x 287.38849pt.
  [70] [71 <./Fig/Modif_exp/optique_1070_new_style.pdf>]
 <Fig/Modif_exp/expansion_dimple.pdf, id=11191, 461.32204pt x 320.72536pt>
 File: Fig/Modif_exp/expansion_dimple.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/expansion_dimple.pdf>
 Package pdftex.def Info: Fig/Modif_exp/expansion_dimple.pdf  used on input line
- 330.
+ 332.
 (pdftex.def)             Requested size: 298.75264pt x 207.70555pt.
 
 [72 <./Fig/Modif_exp/expansion_dimple.pdf>] [73]
@@ -1813,7 +1813,7 @@ t>
 File: Fig/Modif_exp/frequences_piege_optique.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/frequences_piege_optique.pdf>
 Package pdftex.def Info: Fig/Modif_exp/frequences_piege_optique.pdf  used on in
-put line 373.
+put line 375.
 (pdftex.def)             Requested size: 426.79135pt x 159.25198pt.
  [74 <./Fig/Modif_exp/frequences_piege_optique.pdf>] [75] [76] [77] [78] [79]
 <Fig/Modif_exp/comparaison_consignes_evap.pdf, id=11309, 369.27931pt x 259.2744
@@ -1821,21 +1821,21 @@ put line 373.
 File: Fig/Modif_exp/comparaison_consignes_evap.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/comparaison_consignes_evap.pdf>
 Package pdftex.def Info: Fig/Modif_exp/comparaison_consignes_evap.pdf  used on 
-input line 568.
+input line 570.
 (pdftex.def)             Requested size: 298.75264pt x 209.76982pt.
  [80 <./Fig/Modif_exp/comparaison_consignes_evap.pdf>] [81]
 <Fig/Modif_exp/focalisation_atomique.pdf, id=11339, 512.08612pt x 209.60849pt>
 File: Fig/Modif_exp/focalisation_atomique.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/focalisation_atomique.pdf>
 Package pdftex.def Info: Fig/Modif_exp/focalisation_atomique.pdf  used on input
- line 617.
+ line 619.
 (pdftex.def)             Requested size: 426.79135pt x 174.701pt.
 <Fig/Modif_exp/Evolution_température_eta.pdf, id=11344, 367.07071pt x 254.4134
 2pt>
 File: Fig/Modif_exp/Evolution_température_eta.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/Evolution_température_eta.pdf>
 Package pdftex.def Info: Fig/Modif_exp/Evolution_température_eta.pdf  used on 
-input line 630.
+input line 632.
 (pdftex.def)             Requested size: 298.75264pt x 207.06364pt.
  [82] [83 <./Fig/Modif_exp/focalisation_atomique.pdf> <./Fig/Modif_exp/Evolutio
 n_température_eta.pdf
@@ -1847,7 +1847,7 @@ pdfTeX warning: pdflatex (file ./Fig/Modif_exp/Evolution_température_eta.pdf):
 File: Fig/modif_exp/Nombre_atomes_evap.pdf Graphic file (type pdf)
 <use Fig/modif_exp/Nombre_atomes_evap.pdf>
 Package pdftex.def Info: Fig/modif_exp/Nombre_atomes_evap.pdf  used on input li
-ne 652.
+ne 654.
 (pdftex.def)             Requested size: 298.75264pt x 227.44644pt.
  [84 <./Fig/modif_exp/Nombre_atomes_evap.pdf>]
 <Fig/Modif_exp/efficacité_évaporation_optique.pdf, id=11432, 397.40723pt x 28
@@ -1856,7 +1856,7 @@ File: Fig/Modif_exp/efficacité_évaporation_optique.pdf Graphic file (type pdf
 )
 <use Fig/Modif_exp/efficacité_évaporation_optique.pdf>
 Package pdftex.def Info: Fig/Modif_exp/efficacité_évaporation_optique.pdf  us
-ed on input line 667.
+ed on input line 669.
 (pdftex.def)             Requested size: 341.43437pt x 244.65025pt.
 ) (Chapters/Speckle.tex
 [85 <./Fig/Modif_exp/efficacité_évaporation_optique.pdf>] [86
@@ -2243,10 +2243,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 31942 strings out of 480934
- 614343 string characters out of 2899917
- 1024095 words of memory out of 3000000
- 45741 multiletter control sequences out of 15000+200000
+ 31943 strings out of 480934
+ 614362 string characters out of 2899917
+ 1024097 words of memory out of 3000000
+ 45742 multiletter control sequences out of 15000+200000
  729055 words of font info for 359 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,1890b,1134s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2294,7 +2294,7 @@ s/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb>
-Output written on main.pdf (182 pages, 22687770 bytes).
+Output written on main.pdf (182 pages, 22688030 bytes).
 PDF statistics:
  19037 PDF objects out of 22161 (max. 8388607)
  891 named destinations out of 1000 (max. 500000)

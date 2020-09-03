@@ -158,31 +158,32 @@ où $B_{\mathrm{i}}=c_{\mathrm{i}} I_{\mathrm{i}}$ est la composante du champ ra
 
 \renewcommand{\arraystretch}{1.1}
 \begin{table}[!h]
+{\rowcolors{2}{white}{MainColor!10}
 \begin{center}
-\begin{tabular}{ |c|c| }
-\hline
-\textbf{Grandeur} & \textbf{Valeur} \\
-\hline
+\begin{tabular}{ c|c }
+%\hline
+{\color{MainColor}\textbf{Grandeur}} & {\color{MainColor}\textbf{Valeur}} \\
+%\hline
 Calibration Biais A $c_{\mathrm{A}}$ & \SI{4.704}{\gauss\per\ampere} \\
-\hline
+%\hline
 Calibration Biais B $c_{\mathrm{B}}$ & \SI{6.180}{\gauss\per\ampere} \\
-\hline
+%\hline
 Calibration Compensation X $c_{\mathrm{x}}$ & \SI{4.903}{\gauss\per\ampere} \\
-\hline
+%\hline
 Calibration Compensation Z $c_{\mathrm{z}}$ & \SI{4.969}{\gauss\per\ampere} \\
-\hline
+%\hline
 Courant seuil Biais A $I_{\mathrm{0,A}}$ & $< \SI{1}{\milli\ampere}$ \\
-\hline
+%\hline
 Courant seuil Biais B $I_{\mathrm{0,B}}$ & \SI{0.345}{\ampere} \\
-\hline
+%\hline
 Champ rémanent $b_{\mathrm{0x}}$ & \SI{0.089}{\gauss} \\
-\hline
+%\hline
 Champ rémanent $b_{\mathrm{0y}}$ & \SI{0.426}{\gauss} \\
-\hline
+%\hline
 Champ rémanent $b_{\mathrm{0z}}$ & \SI{-0.416}{\gauss} \\
-\hline
+%\hline
 \end{tabular}
-\end{center}
+\end{center}}
 \caption{\textbf{Calibration des champs de biais dans la chambre de science.} Les champs rémanents $b_{\mathrm{0i}}$ correspondent aux champs extérieurs dans la direction $\vec{i}$. Le champ magnétique généré dans la cellule est proportionnel au courant parcourant les bobines $B_{\mathrm{i}} = c_{\mathrm{i}} \times (I_{\mathrm{i}}-I_{\mathrm{0,i}})$ avec $I_{\mathrm{0,i}}$ le courant seuil, qui correspond à la consigne minimale à appliquer pour le courant circule dans les bobines.}
 \label{tb:levitation_RF}
 \end{table}
@@ -229,15 +230,16 @@ En particulier, la mesure des fréquences de la lévitation permet de détermine
 %\renewcommand{\arraystretch}{1.1}
 \begin{table}[!h]
 \begin{center}
-\begin{tabular}{ |c|c| }
-\hline
-Courbure & Valeur \\
-\hline
+{\rowcolors{2}{white}{MainColor!10}
+\begin{tabular}{ c|c }
+%\hline
+{\color{MainColor} \textbf{Courbure}} & {\color{MainColor} \textbf{Valeur}} \\
+%\hline
 Biais A $c_{\mathrm{A}}''$ & \SI{4e-2}{\gauss\per\centi\metre^2\per\ampere} \\
-\hline
+%\hline
 Biais B $c_{\mathrm{B}}''$ & \SI{-7e-2}{\gauss\per\centi\metre^2\per\ampere} \\
-\hline
-\end{tabular}
+%\hline
+\end{tabular}}
 \end{center}
 \caption{\textbf{Calibration des courbures de la lévitation magnétique.} Les bobines générant les champs de biais n'étant pas en configuration de Helmholtz, elles créent donc une courbure de champ magnétique au niveau des atomes. Cette courbure dépend de la géométrie des bobines ainsi que du courant les parcourant $b_{\mathrm{i}}''= c_{\mathrm{i}}'' \times (I_{\mathrm{i}}-I_{\mathrm{0,i}})$.}
 \label{tb:courbures_levitation}
