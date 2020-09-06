@@ -596,6 +596,7 @@ Le caractère limitant du désordre résiduel apparaît donc lorsque celui-ci es
 
 \section{Potentiel composé d'un \speckle\ bichromatique}
 \label{sc:speckle_bichromatique}
+Comme nous avons pu le voir dans la section \ref{sc:spectroscopie_transition}, le protocole expérimental envisagé pour l'étude la transition d'Anderson comporte deux étapes: une première étape de chargement d'états du désordre à énergie résolue est suivie de la caractérisation de ces états en terme de localisation. 
 
 Si l'approche décrite dans la section précédente permet de réaliser une spectroscopie du potentiel désordonné appliqué aux atomes, celle-ci ne permet pas d'étudier la transition d'Anderson dans la mesure où celle-ci nécessite de réaliser des expériences d'expansion du nuage suite à la spectroscopie. 
 
@@ -612,14 +613,15 @@ L'approche intuitive pour diminuer le taux d'émission spontanée consiste à s'
 \end{equation}
 où $\Gamma=2\pi \times \SI{6.07}{\mega\hertz}$ correspond à la largeur de la transition $D_2$ du \isotope[87]{Rb} et $\delta$ est le désaccord.
 
-Afin d'obtenir un temps de vie $\Gamma_2^{-1}$ de l'ordre de la seconde pour un désordre d'environ \SI{500}{\hertz} typiquement utilisé sur l'expérience, il est nécessaire d'utiliser un désaccord de plusieurs \SI{}{\giga\hertz}. Cette condition est donc incompatible avec celle de désordre dépendant de l'état interne $\delta/2\pi \ll \deltahf$.
+Afin d'obtenir un temps de vie $\Gamma_2^{-1}$ de l'ordre de la seconde pour un désordre d'environ \SI{500}{\hertz} typiquement utilisé sur l'expérience, il est nécessaire d'utiliser un désaccord de plusieurs \SI{}{\giga\hertz}. Cette condition est donc incompatible avec celle de désordre dépendant de l'état interne dans la mesure où les potentiels $\overline{V_1}\sim\overline{V_2}$ deviennent comparables pour de tels désaccords.
 
 
 La question est alors la suivante: est-il possible de réaliser un désordre dépendant de l'état interne tout en ayant un taux d'émission spontanée suffisamment faible pour permettre l'étude de la localisation d'Anderson?
 
 
 \paragraph*{Speckle bichromatique}
-La réponse apportée par l'équipe pour augmenter le temps de vie des atomes vis-à-vis de l'émission spontanée consiste à utiliser des désaccords plus importants, de l'ordre de \SI{100}{\giga\hertz}. Cependant, l'utilisation de désaccords aussi grands ($\delta/2\pi \gg \deltahf$) ne permet plus la sélectivité en état interne recherchée pour réaliser une spectroscopie du désordre. L'idée est alors de compenser le potentiel ressenti par l'état $\etatF{1}{}$ à l'aide d'une seconde fréquence optique, comme illustré figure \ref{fig:speckle_bichromatique_principe}. Une étude quantitative et détaillée de cette approche peut être retrouvée dans le manuscrit de thèse de Musawwadah Mukhtar \citep{mukhtar2019state}, aussi nous nous contenterons de décrire les grandes lignes de cette approche. 
+La réponse apportée par l'équipe pour augmenter le temps de vie des atomes vis-à-vis de l'émission spontanée consiste à utiliser des désaccords plus importants, de l'ordre de \SI{100}{\giga\hertz}. %Cependant, l'utilisation de désaccords aussi grands ($\delta/2\pi \gg \deltahf$) ne permet plus la sélectivité en état interne recherchée pour réaliser une spectroscopie du désordre. 
+L'idée est alors de compenser le potentiel ressenti par l'état $\etatF{1}{}$ à l'aide d'une seconde fréquence optique, comme l'illustre la figure \ref{fig:speckle_bichromatique_principe}. Une étude quantitative et détaillée de cette approche peut être retrouvée dans le manuscrit de thèse de Musawwadah Mukhtar \citep{mukhtar2019state}, aussi nous nous contenterons de décrire les grandes lignes de cette approche. 
 
 \begin{figure}
 \centering
@@ -631,8 +633,9 @@ La réponse apportée par l'équipe pour augmenter le temps de vie des atomes vi
 
 
 
+Le désordre soumis aux atomes résulte alors de la superposition de deux figures de \speckle , générées par deux lasers. Un laser \emph{principal} grandement désaccordé crée un potentiel comparable sur les états $\etatF{1}{}$ et $\etatF{2}{}$. Un laser de \emph{compensation} crée un second potentiel de telle sorte que son effet sur l'état $\etatF{1}{}$ soit de compenser le potentiel du laser principal (voir figure \ref{fig:speckle_bichromatique_principe}). 
 
-Dans le cadre de la théorie de la réponse linéaire, on montre à l'aide de la partie réelle de la polarisabilité atomique que le potentiel moyen total ressenti par chaque état est la somme des potentiels générés par chaque faisceau. Ces potentiels sont alors donnés par:
+Dans le cadre de la théorie de la réponse linéaire, on montre à l'aide de la partie réelle de la polarisabilité atomique que le potentiel moyen total ressenti par chaque état est la somme des potentiels générés par chaque laser. Ces potentiels sont alors donnés par:
 \begin{equation}
 \overline{V_1}=\overline{V_{\mathrm{P},1}}+\overline{V_{\mathrm{C},1}}=0 \quad \text{et} \quad
 \overline{V_2}=\overline{V_{\mathrm{P},2}}+\overline{V_{\mathrm{C},2}}=\VR \text{ ,}
@@ -645,24 +648,39 @@ avec $\overline{V_{\mathrm{P},i}}$ ($\overline{V_{\mathrm{C},i}}$) le potentiel 
 \end{equation}
 avec $\Gamma_{\mathrm{sp},i}$ le taux d'émission spontanée pour l'état $\etatF{i}{}$.
 
-Afin de pouvoir étudier la dynamique des atomes dans le désordre pendant de très longs temps d'expansions, il est nécessaire de maximiser le temps de vie de l'état $\etatF{2}{}$. Cependant, cette procédure tend à diminuer le temps de vie de l'état $\etat{F=1}$, qui doit être suffisamment long pour pouvoir réaliser l'étape de \emph{chargement} du désordre. Le but cette étude est alors d'optimiser les temps de vie \ref{eq:temps_vie_desordre} des deux états pour un désordre $\VR$ fixé, tout en respectant les contraintes \ref{eq:contraintes_potentiel_bichromatique} du potentiel. Expérimentalement, nous disposons de quatre degrés de liberté (la puissance et le désaccord de chaque \speckle) pour atteindre la configuration optimale. En particulier, les désaccords des deux faisceaux doivent satisfaire des conditions afin de permettre l'approche de désordre dépendant de l'état interne.
+Afin de pouvoir étudier la dynamique des atomes dans le désordre pendant de très longs temps d'expansions, il est nécessaire de maximiser le temps de vie de l'état $\etatF{2}{}$. Cependant, cette procédure tend à diminuer le temps de vie de l'état $\etat{F=1}$, qui doit être suffisamment long pour pouvoir réaliser l'étape de \emph{chargement} du désordre. Le but cette étude est alors d'optimiser les temps de vie \ref{eq:temps_vie_desordre} des deux états pour un désordre $\VR$ fixé, tout en respectant les contraintes \ref{eq:contraintes_potentiel_bichromatique} du potentiel. Expérimentalement, nous disposons de quatre degrés de liberté (la puissance et le désaccord de chaque \speckle) pour atteindre la configuration optimale. %En particulier, les désaccords des deux faisceaux doivent satisfaire des conditions afin de permettre l'approche de désordre dépendant de l'état interne.
 
-Considérons d'abord le cas d'un désordre répulsif sur l'état $\etatF{2}{}$. Le laser principal étant très désaccordé, le potentiel moyen induit sur les états $\etatF{1}{}$ et $\etatF{2}{}$ est similaire et vaut $\VR>0$. En prenant comme référence la transition fictive $\etatF{1}{}\rightarrow\etat{F'=3}$\footnote{Bien que cette transition n'existe pas en pratique, cela ne nous empêche pas de définir les désaccords par rapport à cette référence de fréquence.}, le désaccord du laser principal doit alors satisfaire la condition $\delta_{\mathrm{p}}>0$\footnote{En prenant comme référence la transition $\protect\etatF{2}{}\rightarrow\protect\etat{F'=3}$, cette condition devient $\delta_{\mathrm{p}}/2\pi>\deltahf$}. Afin de compenser le potentiel répulsif induit par le laser principal sur l'état $\etatF{1}{}$, il est nécessaire que le laser de compensation réalise un potentiel attractif, impliquant alors que le désaccord soit négatif $\delta_{\mathrm{c}}<0$\footnote{Pour les désaccords supérieurs au \SI{}{\giga\hertz} utilisés, on peut négliger le détail de la structure hyperfine de l'état excité, large de \SI{229}{\mega\hertz} pour les états accessibles.}. De plus, le choix d'un désaccord inférieur à la séparation hyperfine des états fondamentaux permet de générer un potentiel répulsif sur l'état $\etatF{2}{}$. On retiendra alors
+\paragraph*{Potentiel répulsif}
+Considérons tout d'abord le cas d'un désordre répulsif sur l'état $\etatF{2}{}$, qui correspond à celui illustré sur la figure \ref{fig:speckle_bichromatique_principe}. Le laser principal étant grandement désaccordé, le potentiel moyen que celui-ci induit sur les états $\etatF{1}{}$ et $\etatF{2}{}$ est similaire. En prenant comme référence la transition $\etatF{1}{}\rightarrow\etat{F'}$\footnote{En choisissant un désaccord de \SI{100}{\giga\hertz}, on peut négliger la structure hyperfine de l'état excité.}, le désaccord du laser principal satisfait alors la condition $\delta_{\mathrm{p}}>0$\footnote{En prenant comme référence la transition $\protect\etatF{2}{}\rightarrow\protect\etat{F'}$, cette condition devient $\delta_{\mathrm{p}}/2\pi>\deltahf$.}, pour laquelle le potentiel généré sur les deux états hyperfins est répulsif. 
+
+Afin de compenser le potentiel répulsif induit par le laser principal sur l'état $\etatF{1}{}$, il est nécessaire que le laser de compensation réalise un potentiel attractif, impliquant alors que le désaccord soit négatif $\delta_{\mathrm{c}}<0$\footnote{Pour les désaccords supérieurs au \SI{}{\giga\hertz} considérés, nous pourrons négliger le détail de la structure hyperfine de l'état excité, large de \SI{229}{\mega\hertz} pour les états accessibles.}. Notons de plus que le choix d'un désaccord inférieur à la séparation hyperfine des états fondamentaux permet de générer un potentiel répulsif sur l'état $\etatF{2}{}$. On retiendra alors:
 \begin{equation}
-\delta_{\mathrm{p}}>0 \quad \text{et} \quad -\deltahf<\delta_{\mathrm{c}}/2\pi<0 \text{ .}
+\delta_{\mathrm{p}}>0 \quad \text{et} \quad -\deltahf<\delta_{\mathrm{c}}/2\pi<0 
 \label{eq:condition_desordre_repulsif}
 \end{equation}
+comme configuration pour un désordre bichromatique répulsif.
 
-Considérons à présent le cas d'un potentiel attractif pour l'état $\etatF{2}{}$. De même que dans le cas répulsif, le laser principal est très désaccordé, mais son désaccord doit être négatif pour les deux états fondamentaux $\delta_{\mathrm{p}}/2\pi<-\deltahf$ en prenant la transition $\etatF{1}{}\rightarrow\etat{F'}$ comme référence\footnote{En choisissant un désaccord de \SI{100}{\giga\hertz}, on peut négliger la structure hyperfine de l'état excité.}. La principale différence provient ici du laser de compensation, qui ne peut pas générer à la fois un potentiel attractif pour l'état $\etatF{2}{}$ et un potentiel répulsif qui pourrait compenser le potentiel attractif du laser principal sur l'état $\etatF{1}{}$. La contrainte d'annulation du potentiel sur l'état initial impose alors le choix d'un désaccord positif $\delta_{\mathrm{c}}>0$ du laser de compensation par rapport à la transition fictive $\etatF{1}{}\rightarrow\etat{F'=3}$. Le choix d'un potentiel total attractif sur l'état $\etatF{2}{}$ impose donc:
+\paragraph*{Potentiel attractif}
+Considérons à présent le cas d'un potentiel attractif pour l'état $\etatF{2}{}$. De même que dans le cas répulsif, le laser principal est très désaccordé, cependant son désaccord doit être négatif pour les deux états fondamentaux $\delta_{\mathrm{p}}/2\pi<-\deltahf$ en prenant la transition $\etatF{1}{}\rightarrow\etat{F'}$ comme référence. 
+
+La principale différence provient ici du laser de compensation, qui ne peut pas générer à la fois un potentiel attractif pour l'état $\etatF{2}{}$ et un potentiel répulsif qui pourrait compenser le potentiel attractif du laser principal sur l'état $\etatF{1}{}$. La contrainte d'annulation du potentiel sur l'état initial impose alors le choix d'un désaccord positif $\delta_{\mathrm{c}}>0$ du laser de compensation par rapport à la transition $\etatF{1}{}\rightarrow\etat{F'}$. Le choix d'un potentiel total attractif sur l'état $\etatF{2}{}$ impose donc:
 \begin{equation}
 \delta_{\mathrm{p}}/2\pi<-\deltahf \quad \text{et} \quad \delta_{\mathrm{c}}>0 \text{ .}
 \label{eq:condition_desordre_attractif}
 \end{equation}
-Contrairement au cas répulsif, la sélectivité en état interne dans le cas attractif provient donc d'un déséquilibrage des potentiels sur l'état $\etatF{2}{}$.
+
+Contrairement au cas répulsif, la sélectivité en état interne dans le cas attractif provient donc d'un déséquilibrage des potentiels sur l'état $\etatF{2}{}$, voir figure \ref{fig:speckle_bichromatique_rouge}.
 
 
+\paragraph*{Performances d'un désordre bichromatique}
+Si l'optimisation de la durée de vie $\Gamma_2^{-1}$ est d'importance capitale pour procéder aux mesures d'expansion des atomes chargés dans le désordre, il est tout de même nécessaire que les atomes dans l'état $\etatF{1}{}$ possèdent un temps de vie $\Gamma_1^{-1}$ suffisamment grand devant la durée du transfert spectroscopique. Nous verrons section \ref{sc:mesure_fonction_spectrale} que pour les désordres utilisés les plus forts, les temps de couplage radio-fréquence entre les états $\etatF{1}{}$ et $\etatF{2}{}$ sont de l'ordre de \SI{10}{\milli\second}. Ceci impose donc:
+\begin{equation}
+\Gamma_1^{-1}\geq\SI{10}{\milli\second} \text{ .}
+\end{equation}
 
-La table \ref{tb:speckle_bichromatique} présente les résultats de la détermination des paramètres optimisant la temps de vie $\Gamma_2^{-1}$ de l'état $\etatF{2}{}$ avec la contrainte $\Gamma_1^{-1}\geq\SI{10}{\milli\second}$ permettant l'étape de chargement du désordre. Cette étude a été menée pour un désordre d'amplitude $\VR/h=\SI{4}{\kilo\hertz}$ qui correspond au désordre le plus extrême utilisé lors de la mesure des fonctions spectrales. Le choix du désaccord $\delta_{\mathrm{p}}=2\pi\times\SI{100}{\giga\hertz}$ permet de fixer déterminer la valeur des trois autres grandeurs expérimentales $\delta_{\mathrm{c}}$, $P_{\mathrm{p}}$ et $P_{\mathrm{c}}$, et permet d'obtenir un temps de vie $\Gamma_2^{-1}$ de l'ordre de \SI{150}{\milli\second}. Comparé au temps de vie de \SI{0.4}{\milli\second} obtenu avec un speckle monochromatique, ceci représente une amélioration de près de trois ordres de grandeur. 
+Aussi, nous choisissons de fixer le désaccord du laser principal à $\delta_{\mathrm{p}}= \pm 2\pi\times\SI{100}{\giga\hertz}$. Ce choix permet de réduire la complexité de la détermination des trois autres degrés de liberté expérimentaux $\delta_{\mathrm{c}}$, $P_{\mathrm{p}}$ et $P_{\mathrm{c}}$.
+
+La table \ref{tb:speckle_bichromatique} présente les résultats de la détermination des paramètres optimisant le temps de vie $\Gamma_2^{-1}$ de l'état $\etatF{2}{}$. Cette étude a été menée pour un désordre d'amplitude $\VR/h=\SI{4}{\kilo\hertz}$, correspondant au désordre le plus extrême utilisé lors de la mesure des fonctions spectrales. L'optimisation des paramètres expérimentaux permet alors d'obtenir un temps de vie $\Gamma_2^{-1}$ de l'ordre de \SI{150}{\milli\second}. Comparé au temps de vie de \SI{0.4}{\milli\second} obtenu avec un speckle monochromatique, ceci représente une amélioration de près de trois ordres de grandeur. 
 
 
 
@@ -689,7 +707,7 @@ Temps de vie $\Gamma_2^{-1}$ & \SI{165}{\milli\second} & \SI{149}{\milli\second}
 %\hline
 \end{tabular}}
 \end{center}
-\caption{\textbf{Paramètres expérimentaux optimisés pour un désordre de \SI[detect-weight]{4}{\kilo\hertz}.} La détermination de ces paramètres est détaillée dans la thèse Musawwadah Mukhtar \citep{mukhtar2019state}. Cette étude est menée pour le désordre le plus extrême utilisé pour la mesure des fonctions spectrales \citep{volchkov2018measurement} pour lequel le temps de vie $\Gamma_2^{-1}$ n'était que \SI{0.4}{\milli\second}. On remarque que les conditions \ref{eq:condition_desordre_repulsif} et \ref{eq:condition_desordre_attractif} sont vérifiées.}
+\caption{\textbf{Paramètres expérimentaux optimisés pour un désordre de 4~kHz.} La détermination de ces paramètres est détaillée dans la thèse Musawwadah Mukhtar \citep{mukhtar2019state}. Cette étude est menée pour le désordre le plus extrême utilisé pour la mesure des fonctions spectrales \citep{volchkov2018measurement} pour lequel le temps de vie $\Gamma_2^{-1}$ n'était que \SI{0.4}{\milli\second}. On remarque que les conditions \ref{eq:condition_desordre_repulsif} et \ref{eq:condition_desordre_attractif} sont vérifiées.}
 \label{tb:speckle_bichromatique}
 \end{table}
 
