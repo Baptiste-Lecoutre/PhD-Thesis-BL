@@ -4,12 +4,13 @@
 
 \usepackage[top=3cm,bottom=3cm,left=3cm,right=3cm,marginparwidth=2.5cm,headsep=10pt,a4paper]{geometry} % Page margins
 
+
 \usepackage{graphicx} % Required for including pictures
 \graphicspath{{./Fig/}}% Specifies the directory where pictures are stored
 \usepackage[svgnames,table]{xcolor} % Required to specify font color
 %\usepackage{colortbl}
 \usepackage{verbatim}
-
+\usepackage[absolute]{textpos} 
 \usepackage{tikz} % Required for drawing custom shapes
 %\usepackage{stmaryrd}
 \usepackage[francais]{babel}%\usepackage[french]{} % English language/hyphenation
@@ -53,8 +54,18 @@
 \usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym�bol, Chancery and Com�puter Modern fonts
 
 \usepackage{microtype} % Slightly tweak font spacing for aesthetics
-%\usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage[utf8]{inputenc} % Required for including letters with accents
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+
+\usepackage{subcaption}
+\usepackage{lmodern}
+\usepackage{lipsum}
+\usepackage{mdframed}
+\usepackage{multirow} %% Pour mettre un texte sur plusieurs rangées
+\usepackage{multicol} %% Pour mettre un texte sur plusieurs colonnes
+\usepackage{scrextend} %Forcer la 4eme  de couverture en page pair
+\usepackage{ups-cover}
 
 %----------------------------------------------------------------------------------------
 %	NOUVELLES COMMANDES
@@ -362,6 +373,12 @@ addtohook={%
 \setlength{\parskipnew}{1em}
 %\setlength{\parskip}{\parskipnew}
 \setlength{\parskip}{\parskipinitial}
+
+\newlength{\parindentinitial}
+\newlength{\parindentnew}
+\setlength{\parindentinitial}{\parindent}
+\setlength{\parindentnew}{0em}
+
 % Notes in the documents
 
 
@@ -499,10 +516,7 @@ addtohook={%
 
 
 
-\usepackage{subcaption}
-\usepackage{lmodern}
-\usepackage{lipsum}
-\usepackage{psl-cover}
+
 \usepackage{siunitx}
 \usepackage{xifthen}
 \DeclareSIUnit\gauss{G}

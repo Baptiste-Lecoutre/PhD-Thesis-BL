@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  5 SEP 2020 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  6 SEP 2020 18:13
 entering extended mode
 **./main.tex
 (main.tex
@@ -124,6 +124,29 @@ Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks20
 \verbatim@in@stream=\read2
 )
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/textpos\textpos.st
+y"
+Package: textpos 2019/04/15 v1.9.1
+
+Package: textpos 2019/04/15 1.9.1, absolute positioning of text on the page
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)
+\TP@textbox=\box47
+\TP@holdbox=\box48
+\TPHorizModule=\dimen147
+\TPVertModule=\dimen148
+\TP@margin=\dimen149
+\TP@absmargin=\dimen150
+
+Grid set 16 x 16 = 37.34424pt x 52.81541pt
+\TPboxrulesize=\dimen151
+\TP@ox=\dimen152
+\TP@oy=\dimen153
+\TP@tbargs=\toks21
+\TP@prevdepth=\dimen154
+TextBlockOrigin set to 0pt x 0pt
+)
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendlayer\
 tikz.sty"
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf
@@ -132,19 +155,16 @@ tikz.sty"
 cs.sty"
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 futil-common.tex"
-\pgfutil@everybye=\toks21
-\pgfutil@tempdima=\dimen147
-\pgfutil@tempdimb=\dimen148
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen155
+\pgfutil@tempdimb=\dimen156
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 futil-common-lists.tex"))
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 futil-latex.def"
-\pgfutil@abb=\box47
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
+\pgfutil@abb=\box49
+)
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 frcs.code.tex"
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.revision
@@ -163,32 +183,32 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 fkeys.code.tex"
-\pgfkeys@pathtoks=\toks22
-\pgfkeys@temptoks=\toks23
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pg
 fkeysfiltered.code.tex"
-\pgfkeys@tmptoks=\toks24
+\pgfkeys@tmptoks=\toks25
 ))
-\pgf@x=\dimen149
-\pgf@y=\dimen150
-\pgf@xa=\dimen151
-\pgf@ya=\dimen152
-\pgf@xb=\dimen153
-\pgf@yb=\dimen154
-\pgf@xc=\dimen155
-\pgf@yc=\dimen156
-\pgf@xd=\dimen157
-\pgf@yd=\dimen158
+\pgf@x=\dimen157
+\pgf@y=\dimen158
+\pgf@xa=\dimen159
+\pgf@ya=\dimen160
+\pgf@xb=\dimen161
+\pgf@yb=\dimen162
+\pgf@xc=\dimen163
+\pgf@yc=\dimen164
+\pgf@xd=\dimen165
+\pgf@yd=\dimen166
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
 \c@pgf@counta=\count180
 \c@pgf@countb=\count181
 \c@pgf@countc=\count182
 \c@pgf@countd=\count183
-\t@pgf@toka=\toks25
-\t@pgf@tokb=\toks26
-\t@pgf@tokc=\toks27
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
 \pgf@sys@id@count=\count184
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\
@@ -227,12 +247,12 @@ calc.code.tex"
 util.code.tex")
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
 parser.code.tex"
-\pgfmath@dimen=\dimen159
+\pgfmath@dimen=\dimen167
 \pgfmath@count=\count187
-\pgfmath@box=\box48
-\pgfmath@toks=\toks28
-\pgfmath@stack@operand=\toks29
-\pgfmath@stack@operation=\toks30
+\pgfmath@box=\box50
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
 functions.code.tex"
@@ -261,52 +281,52 @@ code.tex")
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen160
-\pgf@picmaxx=\dimen161
-\pgf@picminy=\dimen162
-\pgf@picmaxy=\dimen163
-\pgf@pathminx=\dimen164
-\pgf@pathmaxx=\dimen165
-\pgf@pathminy=\dimen166
-\pgf@pathmaxy=\dimen167
-\pgf@xx=\dimen168
-\pgf@xy=\dimen169
-\pgf@yx=\dimen170
-\pgf@yy=\dimen171
-\pgf@zx=\dimen172
-\pgf@zy=\dimen173
+\pgf@picminx=\dimen168
+\pgf@picmaxx=\dimen169
+\pgf@picminy=\dimen170
+\pgf@picmaxy=\dimen171
+\pgf@pathminx=\dimen172
+\pgf@pathmaxx=\dimen173
+\pgf@pathminy=\dimen174
+\pgf@pathmaxy=\dimen175
+\pgf@xx=\dimen176
+\pgf@xy=\dimen177
+\pgf@yx=\dimen178
+\pgf@yy=\dimen179
+\pgf@zx=\dimen180
+\pgf@zy=\dimen181
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen174
-\pgf@path@lasty=\dimen175
+\pgf@path@lastx=\dimen182
+\pgf@path@lasty=\dimen183
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen176
-\pgf@shorten@start@additional=\dimen177
+\pgf@shorten@end@additional=\dimen184
+\pgf@shorten@start@additional=\dimen185
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box49
-\pgf@hbox=\box50
-\pgf@layerbox@main=\box51
+\pgfpic=\box51
+\pgf@hbox=\box52
+\pgf@layerbox@main=\box53
 \pgf@picture@serial@count=\count189
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen178
+\pgflinewidth=\dimen186
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen179
-\pgf@pt@y=\dimen180
-\pgf@pt@temp=\dimen181
+\pgf@pt@x=\dimen187
+\pgf@pt@y=\dimen188
+\pgf@pt@temp=\dimen189
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorequick.code.tex"
@@ -323,12 +343,12 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen182
+\pgfarrowsep=\dimen190
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen183
+\pgf@max=\dimen191
 \pgf@sys@shading@range@num=\count190
 \pgf@shadingcount=\count191
 )
@@ -339,7 +359,7 @@ File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box52
+\pgfexternal@startupbox=\box54
 ))
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\p
 gfcorelayers.code.tex"
@@ -360,7 +380,7 @@ File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfm
 oduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box53
+\pgfnodeparttextbox=\box55
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfm
 oduleplot.code.tex"
@@ -369,8 +389,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\
 pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen184
-\pgf@nodesepend=\dimen185
+\pgf@nodesepstart=\dimen192
+\pgf@nodesepend=\dimen193
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\
 pgfcomp-version-1-18.sty"
@@ -392,10 +412,10 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath
 .code.tex")
-\pgffor@iter=\dimen186
-\pgffor@skip=\dimen187
-\pgffor@stack=\toks31
-\pgffor@toks=\toks32
+\pgffor@iter=\dimen194
+\pgffor@skip=\dimen195
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
 ))
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
 r/tikz\tikz.code.tex"
@@ -405,20 +425,20 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 flibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@plot@mark@count=\count192
-\pgfplotmarksize=\dimen188
+\pgfplotmarksize=\dimen196
 )
-\tikz@lastx=\dimen189
-\tikz@lasty=\dimen190
-\tikz@lastxsaved=\dimen191
-\tikz@lastysaved=\dimen192
-\tikz@lastmovetox=\dimen193
-\tikz@lastmovetoy=\dimen194
-\tikzleveldistance=\dimen195
-\tikzsiblingdistance=\dimen196
-\tikz@figbox=\box54
-\tikz@figbox@bg=\box55
-\tikz@tempbox=\box56
-\tikz@tempbox@bg=\box57
+\tikz@lastx=\dimen197
+\tikz@lasty=\dimen198
+\tikz@lastxsaved=\dimen199
+\tikz@lastysaved=\dimen256
+\tikz@lastmovetox=\dimen257
+\tikz@lastmovetoy=\dimen258
+\tikzleveldistance=\dimen259
+\tikzsiblingdistance=\dimen260
+\tikz@figbox=\box56
+\tikz@figbox@bg=\box57
+\tikz@tempbox=\box58
+\tikz@tempbox@bg=\box59
 \tikztreelevel=\count193
 \tikznumberofchildren=\count194
 \tikznumberofcurrentchild=\count195
@@ -467,7 +487,7 @@ Language: french 2020/01/30 v3.5g French support from the babel system
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2020/02/28 3.41 Babel common definitions
 \babel@savecnt=\count267
-\U@D=\dimen197
+\U@D=\dimen261
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
 ef")
@@ -484,21 +504,21 @@ Package babel Info: Making ; an active character on input line 420.
 Package babel Info: Making ! an active character on input line 421.
 Package babel Info: Making ? an active character on input line 422.
 \FBguill@level=\count270
-\FBold@everypar=\toks33
-\FB@Mht=\dimen198
+\FBold@everypar=\toks34
+\FB@Mht=\dimen262
 \mc@charclass=\count271
 \mc@charfam=\count272
 \mc@charslot=\count273
 \std@mcc=\count274
 \dec@mcc=\count275
 \c@FBcaption@count=\count276
-\listindentFB=\dimen199
-\descindentFB=\dimen256
-\labelindentFB=\dimen257
-\labelwidthFB=\dimen258
-\leftmarginFB=\dimen259
-\parindentFFN=\dimen260
-\FBfnindent=\dimen261
+\listindentFB=\dimen263
+\descindentFB=\dimen264
+\labelindentFB=\dimen265
+\labelwidthFB=\dimen266
+\leftmarginFB=\dimen267
+\parindentFFN=\dimen268
+\FBfnindent=\dimen269
 )))
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/carlisle\scalefnt.
 sty")
@@ -535,26 +555,26 @@ nment
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count284
-\float@exts=\toks34
-\float@box=\box58
-\@float@everytoks=\toks35
-\@floatcapt=\box59
+\float@exts=\toks35
+\float@box=\box60
+\@float@everytoks=\toks36
+\@floatcapt=\box61
 )
-\@float@every@algorithm=\toks36
+\@float@every@algorithm=\toks37
 \c@algorithm=\count285
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem.
 sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip55
-\enit@outerparindent=\dimen262
-\enit@toks=\toks37
-\enit@inbox=\box60
+\enit@outerparindent=\dimen270
+\enit@toks=\toks38
+\enit@inbox=\box62
 \enit@count@id=\count286
 \enitdp@description=\count287
 )
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 2
-2.
+3.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\t1txtt.fd"
 File: t1txtt.fd 2000/12/15 v3.1
@@ -562,24 +582,24 @@ File: t1txtt.fd 2000/12/15 v3.1
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
 sty"
 \lst@mode=\count288
-\lst@gtempboxa=\box61
-\lst@token=\toks38
+\lst@gtempboxa=\box63
+\lst@token=\toks39
 \lst@length=\count289
-\lst@currlwidth=\dimen263
+\lst@currlwidth=\dimen271
 \lst@column=\count290
 \lst@pos=\count291
-\lst@lostspace=\dimen264
-\lst@width=\dimen265
+\lst@lostspace=\dimen272
+\lst@width=\dimen273
 \lst@newlines=\count292
 \lst@lineno=\count293
-\lst@maxwidth=\dimen266
+\lst@maxwidth=\dimen274
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
 ty"
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 \c@lstnumber=\count294
 \lst@skipnumbers=\count295
-\lst@framebox=\box62
+\lst@framebox=\box64
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
 cfg"
@@ -615,23 +635,23 @@ Package pdftexcmds Info: \pdfdraftmode found.
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.
 sty"
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen267
-\lightrulewidth=\dimen268
-\cmidrulewidth=\dimen269
-\belowrulesep=\dimen270
-\belowbottomsep=\dimen271
-\aboverulesep=\dimen272
-\abovetopsep=\dimen273
-\cmidrulesep=\dimen274
-\cmidrulekern=\dimen275
-\defaultaddspace=\dimen276
+\heavyrulewidth=\dimen275
+\lightrulewidth=\dimen276
+\cmidrulewidth=\dimen277
+\belowrulesep=\dimen278
+\belowbottomsep=\dimen279
+\aboverulesep=\dimen280
+\abovetopsep=\dimen281
+\cmidrulesep=\dimen282
+\cmidrulekern=\dimen283
+\defaultaddspace=\dimen284
 \@cmidla=\count296
 \@cmidlb=\count297
-\@aboverulesep=\dimen277
-\@belowrulesep=\dimen278
+\@aboverulesep=\dimen285
+\@belowrulesep=\dimen286
 \@thisruleclass=\count298
 \@lastruleclass=\count299
-\@thisrulewidth=\dimen279
+\@thisrulewidth=\dimen287
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\avant.sty"
 Package: avant 2005/04/12 PSNFSS-v9.2a (SPQR) 
@@ -676,10 +696,10 @@ LaTeX Info: Redefining \hbar on input line 50.
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtyp
 e.sty"
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
-\MT@toks=\toks39
+\MT@toks=\toks40
 \MT@count=\count300
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen280
+\MT@outer@kern=\dimen288
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
 \MT@listname@count=\count301
 
@@ -697,322 +717,18 @@ Package microtype Info: Loading configuration file microtype.cfg.
 e.cfg"
 File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
 ))
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks41
+\inpenc@posthook=\toks42
+) ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
+"
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
 2.
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1ptm.fd"
+ ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)) ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/natbib\natbib.s
-ty"
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip57
-\bibsep=\skip58
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count302
-) ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count303
-\calc@Bcount=\count304
-\calc@Adimen=\dimen281
-\calc@Bdimen=\dimen282
-\calc@Askip=\skip59
-\calc@Bskip=\skip60
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count305
-\calc@Cskip=\skip61
-) ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\makeidx.sty
-"
-Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-)
-\@indexfile=\write4
-\openout4 = `main.idx'.
-
-
-Writing index file main.idx
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titletoc.
-sty"
-Package: titletoc 2019/10/16 v2.13 TOC entries
-\ttl@leftsep=\dimen283
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.
-sty"
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip62
-\f@nch@O@elh=\skip63
-\f@nch@O@erh=\skip64
-\f@nch@O@olh=\skip65
-\f@nch@O@orh=\skip66
-\f@nch@O@elf=\skip67
-\f@nch@O@erf=\skip68
-\f@nch@O@olf=\skip69
-\f@nch@O@orf=\skip70
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
-y"
-Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip71
-
-For additional information on amsmath, use the `?' option.
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
-y"
-Package: amstext 2000/06/29 v2.01 AMS text
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
-"
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks40
-\ex@=\dimen284
 ))
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
-"
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen285
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
-"
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count306
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count307
-\leftroot@=\count308
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count309
-\DOTSCASE@=\count310
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box63
-\strutbox@=\box64
-\big@size=\dimen286
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count311
-\c@MaxMatrixCols=\count312
-\dotsspace@=\muskip16
-\c@parentequation=\count313
-\dspbrk@lvl=\count314
-\tag@help=\toks41
-\row@=\count315
-\column@=\count316
-\maxfields@=\count317
-\andhelp@=\toks42
-\eqnshift@=\dimen287
-\alignsep@=\dimen288
-\tagshift@=\dimen289
-\tagwidth@=\dimen290
-\totwidth@=\dimen291
-\lineht@=\dimen292
-\@envbody=\toks43
-\multlinegap=\skip72
-\multlinetaggap=\skip73
-\mathdisplay@stack=\toks44
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
-sty"
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup6
-\symAMSb=\mathgroup7
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
-ty"
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
-Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks45
-\thm@bodyfont=\toks46
-\thm@headfont=\toks47
-\thm@notefont=\toks48
-\thm@headpunct=\toks49
-\thm@preskip=\skip74
-\thm@postskip=\skip75
-\thm@headsep=\skip76
-\dth@everypar=\toks50
-)
-\esp=\skip77
-\ecart=\skip78
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
-sty"
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetk
-eys.sty"
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kvd
-efinekeys.sty"
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape\pdfesc
-ape.sty"
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hycolor.st
-y"
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro\letltx
-macro.sty"
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\auxhook.st
-y"
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoption
-s.sty"
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
-)
-\@linkdim=\dimen293
-\Hy@linkcounter=\count318
-\Hy@pagecounter=\count319
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
-f"
-File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\intcalc.
-sty"
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-\Hy@SavedSpaceFactor=\count320
-Package hyperref Info: Hyper figures OFF on input line 4547.
-Package hyperref Info: Link nesting OFF on input line 4552.
-Package hyperref Info: Hyper index ON on input line 4555.
-Package hyperref Info: Plain pages OFF on input line 4562.
-Package hyperref Info: Backreferencing OFF on input line 4567.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count321
- ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen294
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.st
-y"
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcalc\bigin
-tcalc.sty"
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
-))
-\Fld@menulength=\count322
-\Field@Width=\dimen295
-\Fld@charsize=\dimen296
-Package hyperref Info: Hyper figures OFF on input line 6430.
-Package hyperref Info: Link nesting OFF on input line 6435.
-Package hyperref Info: Hyper index ON on input line 6438.
-Package hyperref Info: backreferencing OFF on input line 6445.
-Package hyperref Info: Link coloring OFF on input line 6450.
-Package hyperref Info: Link coloring with OCG OFF on input line 6455.
-Package hyperref Info: PDF/A mode OFF on input line 6460.
-LaTeX Info: Redefining \ref on input line 6500.
-LaTeX Info: Redefining \pageref on input line 6504.
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegshi\atbegsh
-i.sty"
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
-)
-\Hy@abspage=\count323
-\c@Item=\count324
-\c@Hfootnote=\count325
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
-ef"
-File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/atveryend\atveryen
-d.sty"
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-)
-\Fld@listcount=\count326
-\c@bookmark@seq@number=\count327
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\rer
-unfilecheck.sty"
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecounter\un
-iquecounter.sty"
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
-)
-\Hy@SectionHShift=\skip79
-)
-
-Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 337.
-
-
-Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 337.
-
-
-Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 337.
-
-Package hyperref Info: Option `colorlinks' set `false' on input line 337.
-Package hyperref Info: Option `breaklinks' set `true' on input line 337.
-
-Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 337.
-
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 337.
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bookmark\bookmark.
-sty"
-Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bookmark\bkm-pdfte
-x.def"
-File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
-\BKM@id=\count328
-))
-Package hyperref Info: Option `colorlinks' set `true' on input line 357.
-\parskipinitial=\skip80
-\parskipnew=\skip81
-
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/marginnote\marginn
-ote.sty"
-Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
-\c@mn@abspage=\count329
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titlesec.
-sty"
-Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box65
-\beforetitleunit=\skip82
-\aftertitleunit=\skip83
-\ttl@plus=\dimen297
-\ttl@minus=\dimen298
-\ttl@toksa=\toks51
-\titlewidth=\dimen299
-\titlewidthlast=\dimen300
-\titlewidthfirst=\dimen301
-)
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaption
 .sty"
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
@@ -1025,23 +741,22 @@ Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 ty"
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen302
-\captionmargin@=\dimen303
-\captionwidth=\dimen304
-\caption@tempdima=\dimen305
-\caption@indent=\dimen306
-\caption@parindent=\dimen307
-\caption@hangindent=\dimen308
+\captionmargin=\dimen289
+\captionmargin@=\dimen290
+\captionwidth=\dimen291
+\caption@tempdima=\dimen292
+\caption@indent=\dimen293
+\caption@parindent=\dimen294
+\caption@hangindent=\dimen295
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count330
-\c@continuedfloat=\count331
+\c@caption@flags=\count302
+\c@continuedfloat=\count303
 Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
-\c@subfigure=\count332
-\c@subtable=\count333
+\c@subfigure=\count304
+\c@subtable=\count305
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
@@ -1086,47 +801,567 @@ Package: expl3 2020-03-06 L3 programming layer (loader)
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
 d-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count334
-\l__pdf_internal_box=\box66
+\l__kernel_color_stack_int=\count306
+\l__pdf_internal_box=\box65
 ))
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse\
 xparse.sty"
 Package: xparse 2020-03-06 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count335
-\g__xparse_grabber_int=\count336
-\l__xparse_m_args_int=\count337
-\l__xparse_v_nesting_int=\count338
+\l__xparse_current_arg_int=\count307
+\g__xparse_grabber_int=\count308
+\l__xparse_m_args_int=\count309
+\l__xparse_v_nesting_int=\count310
 )
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.
 tex"
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-)) (psl-cover.sty
-Package: psl-cover 
+))
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mdframed\mdframed.
+sty"
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoption
+s.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetk
+eys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.
+sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count311
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/zref\zref-abspage.
+sty"
+Package: zref-abspage 2020-03-03 v2.29 Module abspage for zref (HO)
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/zref\zref-base.sty
+"
+Package: zref-base 2020-03-03 v2.29 Module base for zref (HO)
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kvd
+efinekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\auxhook.st
+y"
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 763.
+Package zref Info: New property: default on input line 764.
+Package zref Info: New property: page on input line 765.
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegshi\atbegsh
+i.sty"
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\c@abspage=\count312
+Package zref Info: New property: abspage on input line 66.
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/needspace\needspac
+e.sty"
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip57
+\c@mdf@globalstyle@cnt=\count313
+\mdf@skipabove@length=\skip58
+\mdf@skipbelow@length=\skip59
+\mdf@leftmargin@length=\skip60
+\mdf@rightmargin@length=\skip61
+\mdf@innerleftmargin@length=\skip62
+\mdf@innerrightmargin@length=\skip63
+\mdf@innertopmargin@length=\skip64
+\mdf@innerbottommargin@length=\skip65
+\mdf@splittopskip@length=\skip66
+\mdf@splitbottomskip@length=\skip67
+\mdf@outermargin@length=\skip68
+\mdf@innermargin@length=\skip69
+\mdf@linewidth@length=\skip70
+\mdf@innerlinewidth@length=\skip71
+\mdf@middlelinewidth@length=\skip72
+\mdf@outerlinewidth@length=\skip73
+\mdf@roundcorner@length=\skip74
+\mdf@footenotedistance@length=\skip75
+\mdf@userdefinedwidth@length=\skip76
+\mdf@needspace@length=\skip77
+\mdf@frametitleaboveskip@length=\skip78
+\mdf@frametitlebelowskip@length=\skip79
+\mdf@frametitlerulewidth@length=\skip80
+\mdf@frametitleleftmargin@length=\skip81
+\mdf@frametitlerightmargin@length=\skip82
+\mdf@shadowsize@length=\skip83
+\mdf@extratopheight@length=\skip84
+\mdf@subtitleabovelinewidth@length=\skip85
+\mdf@subtitlebelowlinewidth@length=\skip86
+\mdf@subtitleaboveskip@length=\skip87
+\mdf@subtitlebelowskip@length=\skip88
+\mdf@subtitleinneraboveskip@length=\skip89
+\mdf@subtitleinnerbelowskip@length=\skip90
+\mdf@subsubtitleabovelinewidth@length=\skip91
+\mdf@subsubtitlebelowlinewidth@length=\skip92
+\mdf@subsubtitleaboveskip@length=\skip93
+\mdf@subsubtitlebelowskip@length=\skip94
+\mdf@subsubtitleinneraboveskip@length=\skip95
+\mdf@subsubtitleinnerbelowskip@length=\skip96
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mdframed\md-frame-
+0.mdf"
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box66
+\mdf@footnotebox=\box67
+\mdf@splitbox@one=\box68
+\mdf@splitbox@two=\box69
+\mdf@splitbox@save=\box70
+\mdfsplitboxwidth=\skip97
+\mdfsplitboxtotalwidth=\skip98
+\mdfsplitboxheight=\skip99
+\mdfsplitboxdepth=\skip100
+\mdfsplitboxtotalheight=\skip101
+\mdfframetitleboxwidth=\skip102
+\mdfframetitleboxtotalwidth=\skip103
+\mdfframetitleboxheight=\skip104
+\mdfframetitleboxdepth=\skip105
+\mdfframetitleboxtotalheight=\skip106
+\mdffootnoteboxwidth=\skip107
+\mdffootnoteboxtotalwidth=\skip108
+\mdffootnoteboxheight=\skip109
+\mdffootnoteboxdepth=\skip110
+\mdffootnoteboxtotalheight=\skip111
+\mdftotallinewidth=\skip112
+\mdfboundingboxwidth=\skip113
+\mdfboundingboxtotalwidth=\skip114
+\mdfboundingboxheight=\skip115
+\mdfboundingboxdepth=\skip116
+\mdfboundingboxtotalheight=\skip117
+\mdf@freevspace@length=\skip118
+\mdf@horizontalwidthofbox@length=\skip119
+\mdf@verticalmarginwhole@length=\skip120
+\mdf@horizontalspaceofbox=\skip121
+\mdfsubtitleheight=\skip122
+\mdfsubsubtitleheight=\skip123
+\c@mdfcountframes=\count314
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count315
+\c@mdf@env@i=\count316
+\c@mdf@env@ii=\count317
+\c@mdf@zref@counter=\count318
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow.
+sty"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip124
+\multirow@cntb=\count319
+\multirow@dima=\skip125
+\bigstrutjot=\dimen296
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\multicol.sty
+"
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count320
+\mult@box=\box71
+\multicol@leftmargin=\dimen297
+\c@unbalance=\count321
+\c@collectmore=\count322
+\doublecol@number=\count323
+\multicoltolerance=\count324
+\multicolpretolerance=\count325
+\full@width=\dimen298
+\page@free=\dimen299
+\premulticols=\dimen300
+\postmulticols=\dimen301
+\multicolsep=\skip126
+\multicolbaselineskip=\skip127
+\partial@page=\box72
+\last@line=\box73
+\maxbalancingoverflow=\dimen302
+\mult@rightbox=\box74
+\mult@grightbox=\box75
+\mult@gfirstbox=\box76
+\mult@firstbox=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\c@minrows=\count326
+\c@columnbadness=\count327
+\c@finalcolumnbadness=\count328
+\last@try=\dimen303
+\multicolovershoot=\dimen304
+\multicolundershoot=\dimen305
+\mult@nat@firstbox=\box115
+\colbreak@box=\box116
+\mc@col@check@num=\count329
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrext
+end.sty"
+Package: scrextend 2020/07/22 v3.31 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkba
+se.sty"
+Package: scrkbase 2020/07/22 v3.31 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbas
+e.sty"
+Package: scrbase 2020/07/22 v3.31 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlfi
+le.sty"
+Package: scrlfile 2020/07/22 v3.31 KOMA-Script package (loading files)
+)))) (ups-cover.sty
+Package: ups-cover 
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabularx.sty
 "
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen309
-\TX@old@table=\dimen310
-\TX@old@col=\dimen311
-\TX@target=\dimen312
-\TX@delta=\dimen313
-\TX@cols=\count339
-\TX@ftn=\toks52
-)
-("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.
-sty"
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count340
+\TX@col@width=\dimen306
+\TX@old@table=\dimen307
+\TX@old@col=\dimen308
+\TX@target=\dimen309
+\TX@delta=\dimen310
+\TX@cols=\count330
+\TX@ftn=\toks43
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlaye
 r/tikz/libraries\tikzlibrarybackgrounds.code.tex"
 File: tikzlibrarybackgrounds.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@layerbox@background=\box67
-\pgf@layerboxsaved@background=\box68
+\pgf@layerbox@background=\box117
+\pgf@layerboxsaved@background=\box118
 ))
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip128
+\bibsep=\skip129
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count331
+) ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count332
+\calc@Bcount=\count333
+\calc@Adimen=\dimen311
+\calc@Bdimen=\dimen312
+\calc@Askip=\skip130
+\calc@Bskip=\skip131
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count334
+\calc@Cskip=\skip132
+) ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\makeidx.sty
+"
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write4
+\openout4 = `main.idx'.
+
+
+Writing index file main.idx
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titletoc.
+sty"
+Package: titletoc 2019/10/16 v2.13 TOC entries
+\ttl@leftsep=\dimen313
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.
+sty"
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip133
+\f@nch@O@elh=\skip134
+\f@nch@O@erh=\skip135
+\f@nch@O@olh=\skip136
+\f@nch@O@orh=\skip137
+\f@nch@O@elf=\skip138
+\f@nch@O@erf=\skip139
+\f@nch@O@olf=\skip140
+\f@nch@O@orf=\skip141
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
+y"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip142
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
+y"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
+"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks44
+\ex@=\dimen314
+))
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
+"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen315
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count335
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count336
+\leftroot@=\count337
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count338
+\DOTSCASE@=\count339
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box119
+\strutbox@=\box120
+\big@size=\dimen316
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count340
+\c@MaxMatrixCols=\count341
+\dotsspace@=\muskip16
+\c@parentequation=\count342
+\dspbrk@lvl=\count343
+\tag@help=\toks45
+\row@=\count344
+\column@=\count345
+\maxfields@=\count346
+\andhelp@=\toks46
+\eqnshift@=\dimen317
+\alignsep@=\dimen318
+\tagshift@=\dimen319
+\tagwidth@=\dimen320
+\totwidth@=\dimen321
+\lineht@=\dimen322
+\@envbody=\toks47
+\multlinegap=\skip143
+\multlinetaggap=\skip144
+\mathdisplay@stack=\toks48
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
+sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
+ty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks49
+\thm@bodyfont=\toks50
+\thm@headfont=\toks51
+\thm@notefont=\toks52
+\thm@headpunct=\toks53
+\thm@preskip=\skip145
+\thm@postskip=\skip146
+\thm@headsep=\skip147
+\dth@everypar=\toks54
+)
+\esp=\skip148
+\ecart=\skip149
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
+sty"
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape\pdfesc
+ape.sty"
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hycolor.st
+y"
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro\letltx
+macro.sty"
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+\@linkdim=\dimen323
+\Hy@linkcounter=\count347
+\Hy@pagecounter=\count348
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
+f"
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\intcalc.
+sty"
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count349
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count350
+ ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen324
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.st
+y"
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcalc\bigin
+tcalc.sty"
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count351
+\Field@Width=\dimen325
+\Fld@charsize=\dimen326
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+\Hy@abspage=\count352
+\c@Item=\count353
+\c@Hfootnote=\count354
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
+ef"
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/atveryend\atveryen
+d.sty"
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\HyAnn@Count=\count355
+\Fld@listcount=\count356
+\c@bookmark@seq@number=\count357
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\rer
+unfilecheck.sty"
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecounter\un
+iquecounter.sty"
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip150
+)
+
+Package hyperref Warning: Option `backref' has already been used,
+(hyperref)                setting the option has no effect on input line 348.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 348.
+
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 348.
+
+Package hyperref Info: Option `colorlinks' set `false' on input line 348.
+Package hyperref Info: Option `breaklinks' set `true' on input line 348.
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 348.
+
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 348.
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bookmark\bookmark.
+sty"
+Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bookmark\bkm-pdfte
+x.def"
+File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
+\BKM@id=\count358
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 368.
+\parskipinitial=\skip151
+\parskipnew=\skip152
+\parindentinitial=\skip153
+\parindentnew=\skip154
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/marginnote\marginn
+ote.sty"
+Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
+\c@mn@abspage=\count359
+)
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titlesec.
+sty"
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box121
+\beforetitleunit=\skip155
+\aftertitleunit=\skip156
+\ttl@plus=\dimen327
+\ttl@minus=\dimen328
+\ttl@toksa=\toks55
+\titlewidth=\dimen329
+\titlewidthlast=\dimen330
+\titlewidthfirst=\dimen331
+)
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunitx.st
 y"
 Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
@@ -1135,46 +1370,46 @@ Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
 e\l3keys2e.sty"
 Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
 )
-\l__siunitx_tmp_box=\box69
-\l__siunitx_tmp_dim=\dimen314
-\l__siunitx_tmp_int=\count341
-\l__siunitx_number_mantissa_length_int=\count342
-\l__siunitx_number_uncert_length_int=\count343
-\l__siunitx_round_int=\count344
-\l__siunitx_process_decimal_int=\count345
-\l__siunitx_process_uncertainty_int=\count346
-\l__siunitx_process_fixed_int=\count347
-\l__siunitx_process_integer_min_int=\count348
-\l__siunitx_process_precision_int=\count349
-\l__siunitx_group_min_int=\count350
-\l__siunitx_angle_marker_box=\box70
-\l__siunitx_angle_unit_box=\box71
-\l__siunitx_angle_marker_dim=\dimen315
-\l__siunitx_angle_unit_dim=\dimen316
-\l__siunitx_unit_int=\count351
-\l__siunitx_unit_denominator_int=\count352
-\l__siunitx_unit_numerator_int=\count353
-\l__siunitx_unit_prefix_int=\count354
-\l__siunitx_unit_prefix_base_int=\count355
-\l__siunitx_unit_prefix_gram_int=\count356
-\l__siunitx_number_product_int=\count357
-\c__siunitx_one_fill_skip=\skip84
-\l__siunitx_table_unit_align_skip=\skip85
-\l__siunitx_table_exponent_dim=\dimen317
-\l__siunitx_table_integer_dim=\dimen318
-\l__siunitx_table_mantissa_dim=\dimen319
-\l__siunitx_table_marker_dim=\dimen320
-\l__siunitx_table_result_dim=\dimen321
-\l__siunitx_table_uncert_dim=\dimen322
-\l__siunitx_table_fill_pre_dim=\dimen323
-\l__siunitx_table_fill_post_dim=\dimen324
-\l__siunitx_table_fill_mid_dim=\dimen325
-\l__siunitx_table_pre_box=\box72
-\l__siunitx_table_post_box=\box73
-\l__siunitx_table_mantissa_box=\box74
-\l__siunitx_table_result_box=\box75
-\l__siunitx_table_number_align_skip=\skip86
-\l__siunitx_table_text_align_skip=\skip87
+\l__siunitx_tmp_box=\box122
+\l__siunitx_tmp_dim=\dimen332
+\l__siunitx_tmp_int=\count360
+\l__siunitx_number_mantissa_length_int=\count361
+\l__siunitx_number_uncert_length_int=\count362
+\l__siunitx_round_int=\count363
+\l__siunitx_process_decimal_int=\count364
+\l__siunitx_process_uncertainty_int=\count365
+\l__siunitx_process_fixed_int=\count366
+\l__siunitx_process_integer_min_int=\count367
+\l__siunitx_process_precision_int=\count368
+\l__siunitx_group_min_int=\count369
+\l__siunitx_angle_marker_box=\box123
+\l__siunitx_angle_unit_box=\box124
+\l__siunitx_angle_marker_dim=\dimen333
+\l__siunitx_angle_unit_dim=\dimen334
+\l__siunitx_unit_int=\count370
+\l__siunitx_unit_denominator_int=\count371
+\l__siunitx_unit_numerator_int=\count372
+\l__siunitx_unit_prefix_int=\count373
+\l__siunitx_unit_prefix_base_int=\count374
+\l__siunitx_unit_prefix_gram_int=\count375
+\l__siunitx_number_product_int=\count376
+\c__siunitx_one_fill_skip=\skip157
+\l__siunitx_table_unit_align_skip=\skip158
+\l__siunitx_table_exponent_dim=\dimen335
+\l__siunitx_table_integer_dim=\dimen336
+\l__siunitx_table_mantissa_dim=\dimen337
+\l__siunitx_table_marker_dim=\dimen338
+\l__siunitx_table_result_dim=\dimen339
+\l__siunitx_table_uncert_dim=\dimen340
+\l__siunitx_table_fill_pre_dim=\dimen341
+\l__siunitx_table_fill_post_dim=\dimen342
+\l__siunitx_table_fill_mid_dim=\dimen343
+\l__siunitx_table_pre_box=\box125
+\l__siunitx_table_post_box=\box126
+\l__siunitx_table_mantissa_box=\box127
+\l__siunitx_table_result_box=\box128
+\l__siunitx_table_number_align_skip=\skip159
+\l__siunitx_table_text_align_skip=\skip160
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\transla
 tor.sty"
@@ -1197,23 +1432,23 @@ Package: isotope 2011/08/26 v0.3 for typesetting isotopes
 )) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 92
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 41
 .
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
@@ -1257,17 +1492,17 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
-\scratchdimen=\dimen326
-\scratchbox=\box76
-\nofMPsegments=\count359
-\nofMParguments=\count360
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count361
-\MPscratchDim=\dimen327
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count377
+\scratchdimen=\dimen344
+\scratchbox=\box129
+\nofMPsegments=\count378
+\nofMParguments=\count379
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count380
+\MPscratchDim=\dimen345
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
+\everyMPtoPDFconversion=\toks57
 )
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
 pdf-base.sty"
@@ -1275,29 +1510,29 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 ) ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \degres on input line 92.
-LaTeX Info: Redefining \dots on input line 92.
+LaTeX Info: Redefining \degres on input line 41.
+LaTeX Info: Redefining \dots on input line 41.
 
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 92.
+(french.ldf)                BEFORE babel/french; reported on input line 41.
 
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 92.
+(french.ldf)             reported on input line 41.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 92.
-LaTeX Info: Redefining \up on input line 92.
-\c@lstlisting=\count364
-LaTeX Info: Redefining \microtypecontext on input line 92.
+(french.ldf)             reported on input line 41.
+LaTeX Info: Redefining \up on input line 41.
+\c@lstlisting=\count383
+LaTeX Info: Redefining \microtypecontext on input line 41.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 92.
+LaTeX Info: Redefining \showhyphens on input line 41.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1307,8 +1542,11 @@ fg"
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\AtBeginShipoutBox=\box77
-Package hyperref Info: Link coloring ON on input line 92.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box130
+Package hyperref Info: Link coloring ON on input line 41.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -1322,13 +1560,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count365
+\c@section@level=\count384
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\transla
 tor-basic-dictionary-English.dict"
@@ -1338,64 +1574,64 @@ Dictionary: translator-basic-dictionary, Language: English
 breviations.cfg"
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \celsius on input line 92.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 92.
+LaTeX Info: Redefining \celsius on input line 41.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 41.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 92.
-Package gensymb Info: Using \upOmega for \ohm on input line 92.
+LaTeX Info: Redefining \ohm on input line 41.
+Package gensymb Info: Using \upOmega for \ohm on input line 41.
 
 Package gensymb Warning: Not defining \micro.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
-2.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
+1.
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
-2.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
+1.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-92.
+41.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-92.
+41.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 92.
+(Font)              <10.95> on input line 41.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 92.
+(Font)              <8> on input line 41.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 92.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 9
-2.
+(Font)              <6> on input line 41.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
+1.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-ptm.c
 fg"
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msa.c
 fg"
@@ -1406,7 +1642,7 @@ fg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-92.
+41.
  ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1415,7 +1651,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-92.
+41.
  ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1423,8 +1659,50 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-01.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 44
+.
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1phv.fd"
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 20.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 23.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 26.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 46.
+
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<Fig/Bandeau_UPaS.pdf, id=6, 303.6027pt x 849.97972pt>
+File: Fig/Bandeau_UPaS.pdf Graphic file (type pdf)
+<use Fig/Bandeau_UPaS.pdf>
+Package pdftex.def Info: Fig/Bandeau_UPaS.pdf  used on input line 44.
+(pdftex.def)             Requested size: 303.60196pt x 849.97765pt.
+ [1
+
+{C:/Users/lecou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Fig/Bande
+au_UPaS.pdf>] [2
+
+]
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 5
+0.
+
 ("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1442,19 +1720,30 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
- [1
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 ...ge radio-fréquence}{42}{subsection.3.2.4}
+                                                  % [1
 
 
-{C:/Users/lecou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3])
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.71 ...ffusion élastique}{127}{subsection.6.2.3}
+                                                  % [2] [3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- (Chapters/Introduction.tex [4]
+
+(Chapters/Introduction.tex [4]
 Chapitre 1.
 [5
 
 ]
-<Fig/Introduction/AL3D.pdf, id=393, 519.4465pt x 104.2945pt>
+<Fig/Introduction/AL3D.pdf, id=415, 519.4465pt x 104.2945pt>
 File: Fig/Introduction/AL3D.pdf Graphic file (type pdf)
 <use Fig/Introduction/AL3D.pdf>
 Package pdftex.def Info: Fig/Introduction/AL3D.pdf  used on input line 47.
@@ -1492,40 +1781,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 ]
 Chapitre 2.
 [11] [12]
-<Fig/Localisation/diffusion_classique.pdf, id=489, 423.44238pt x 193.59613pt>
+<Fig/Localisation/diffusion_classique.pdf, id=511, 423.44238pt x 193.59613pt>
 File: Fig/Localisation/diffusion_classique.pdf Graphic file (type pdf)
 <use Fig/Localisation/diffusion_classique.pdf>
 Package pdftex.def Info: Fig/Localisation/diffusion_classique.pdf  used on inpu
 t line 48.
 (pdftex.def)             Requested size: 426.79135pt x 195.12878pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 60.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 60.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 60.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
  [13 <./Fig/Localisation/diffusion_classique.pdf>] [14]
-<Fig/Localisation/localisation_faible.pdf, id=1134, 450.30333pt x 181.71753pt>
+<Fig/Localisation/localisation_faible.pdf, id=1155, 450.30333pt x 181.71753pt>
 File: Fig/Localisation/localisation_faible.pdf Graphic file (type pdf)
 <use Fig/Localisation/localisation_faible.pdf>
 Package pdftex.def Info: Fig/Localisation/localisation_faible.pdf  used on inpu
 t line 114.
 (pdftex.def)             Requested size: 384.1096pt x 155.01239pt.
  [15 <./Fig/Localisation/localisation_faible.pdf>] [16]
-<Fig/Localisation/transition_anderson.pdf, id=4207, 463.80559pt x 155.15831pt>
+<Fig/Localisation/transition_anderson.pdf, id=4228, 463.80559pt x 155.15831pt>
 File: Fig/Localisation/transition_anderson.pdf Graphic file (type pdf)
 <use Fig/Localisation/transition_anderson.pdf>
 Package pdftex.def Info: Fig/Localisation/transition_anderson.pdf  used on inpu
 t line 187.
 (pdftex.def)             Requested size: 426.79135pt x 142.78288pt.
  [17] [18 <./Fig/Localisation/transition_anderson.pdf>]
-<Fig/Localisation/experiences_localisation_anderson.pdf, id=6078, 525.8252pt x 
+<Fig/Localisation/experiences_localisation_anderson.pdf, id=6100, 525.8252pt x 
 279.08379pt>
 File: Fig/Localisation/experiences_localisation_anderson.pdf Graphic file (type
  pdf)
@@ -1537,7 +1814,7 @@ Package pdftex.def Info: Fig/Localisation/experiences_localisation_anderson.pdf
 Underfull \vbox (badness 3758) has occurred while \output is active []
 
  [19 <./Fig/Localisation/experiences_localisation_anderson.pdf>] [20]
-<Fig/Localisation/localisation_1D_atomes.pdf, id=6346, 436.12257pt x 204.25754p
+<Fig/Localisation/localisation_1D_atomes.pdf, id=6367, 436.12257pt x 204.25754p
 t>
 File: Fig/Localisation/localisation_1D_atomes.pdf Graphic file (type pdf)
 <use Fig/Localisation/localisation_1D_atomes.pdf>
@@ -1554,14 +1831,14 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Underfull \vbox (badness 6608) has occurred while \output is active []
 
  [22 <./Fig/Localisation/localisation_1D_atomes.pdf>]
-<Fig/Localisation/localisation_3D_atomes_v1.pdf, id=6411, 458.34123pt x 133.816
+<Fig/Localisation/localisation_3D_atomes_v1.pdf, id=6432, 458.34123pt x 133.816
 35pt>
 File: Fig/Localisation/localisation_3D_atomes_v1.pdf Graphic file (type pdf)
 <use Fig/Localisation/localisation_3D_atomes_v1.pdf>
 Package pdftex.def Info: Fig/Localisation/localisation_3D_atomes_v1.pdf  used o
 n input line 303.
 (pdftex.def)             Requested size: 426.79135pt x 124.61124pt.
-<Fig/Localisation/kicked_rotor.pdf, id=6421, 288.69308pt x 208.12563pt>
+<Fig/Localisation/kicked_rotor.pdf, id=6442, 288.69308pt x 208.12563pt>
 File: Fig/Localisation/kicked_rotor.pdf Graphic file (type pdf)
 <use Fig/Localisation/kicked_rotor.pdf>
 Package pdftex.def Info: Fig/Localisation/kicked_rotor.pdf  used on input line 
@@ -1572,7 +1849,7 @@ Underfull \vbox (badness 2237) has occurred while \output is active []
 
  [23 <./Fig/Localisation/localisation_3D_atomes_v1.pdf>] [24 <./Fig/Localisatio
 n/kicked_rotor.pdf>] [25]
-<Fig/Localisation/experience_palaiseau.pdf, id=6674, 372.49123pt x 268.79498pt>
+<Fig/Localisation/experience_palaiseau.pdf, id=6695, 372.49123pt x 268.79498pt>
 
 File: Fig/Localisation/experience_palaiseau.pdf Graphic file (type pdf)
 <use Fig/Localisation/experience_palaiseau.pdf>
@@ -1580,7 +1857,7 @@ Package pdftex.def Info: Fig/Localisation/experience_palaiseau.pdf  used on inp
 ut line 392.
 (pdftex.def)             Requested size: 426.79135pt x 307.99623pt.
  [26] [27 <./Fig/Localisation/experience_palaiseau.pdf>]
-<Fig/Localisation/experience_florence.pdf, id=6740, 502.47177pt x 423.87253pt>
+<Fig/Localisation/experience_florence.pdf, id=6761, 502.47177pt x 423.87253pt>
 File: Fig/Localisation/experience_florence.pdf Graphic file (type pdf)
 <use Fig/Localisation/experience_florence.pdf>
 Package pdftex.def Info: Fig/Localisation/experience_florence.pdf  used on inpu
@@ -1588,14 +1865,14 @@ t line 415.
 (pdftex.def)             Requested size: 426.79135pt x 360.02817pt.
  [28]
 [29 <./Fig/Localisation/experience_florence.pdf>]
-<Fig/Localisation/delande_expvsth.pdf, id=7124, 349.80762pt x 298.66583pt>
+<Fig/Localisation/delande_expvsth.pdf, id=7146, 349.80762pt x 298.66583pt>
 File: Fig/Localisation/delande_expvsth.pdf Graphic file (type pdf)
 <use Fig/Localisation/delande_expvsth.pdf>
 Package pdftex.def Info: Fig/Localisation/delande_expvsth.pdf  used on input li
 ne 438.
 (pdftex.def)             Requested size: 256.07741pt x 218.65314pt.
  [30 <./Fig/Localisation/delande_expvsth.pdf>]
-<Fig/Localisation/spectroscopie_anderson.pdf, id=7143, 452.456pt x 142.77167pt>
+<Fig/Localisation/spectroscopie_anderson.pdf, id=7165, 452.456pt x 142.77167pt>
 
 File: Fig/Localisation/spectroscopie_anderson.pdf Graphic file (type pdf)
 <use Fig/Localisation/spectroscopie_anderson.pdf>
@@ -1608,13 +1885,13 @@ Chapitre 3.
 [33
 
 ]
-<Fig/BEC_manip/stat_bose.pdf, id=7230, 403.5041pt x 116.06998pt>
+<Fig/BEC_manip/stat_bose.pdf, id=7251, 403.5041pt x 116.06998pt>
 File: Fig/BEC_manip/stat_bose.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/stat_bose.pdf>
 Package pdftex.def Info: Fig/BEC_manip/stat_bose.pdf  used on input line 28.
 (pdftex.def)             Requested size: 426.79135pt x 122.7679pt.
  [34 <./Fig/BEC_manip/stat_bose.pdf>] [35] [36]
-<Fig/BEC_manip/thomas_fermi.pdf, id=7611, 457.74942pt x 163.38528pt>
+<Fig/BEC_manip/thomas_fermi.pdf, id=7633, 457.74942pt x 163.38528pt>
 File: Fig/BEC_manip/thomas_fermi.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/thomas_fermi.pdf>
 Package pdftex.def Info: Fig/BEC_manip/thomas_fermi.pdf  used on input line 119
@@ -1630,7 +1907,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\isotope' on input line 134.
 
-<Fig/BEC_manip/Rb87.pdf, id=7634, 440.87213pt x 257.70801pt>
+<Fig/BEC_manip/Rb87.pdf, id=7655, 440.87213pt x 257.70801pt>
 File: Fig/BEC_manip/Rb87.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/Rb87.pdf>
 Package pdftex.def Info: Fig/BEC_manip/Rb87.pdf  used on input line 186.
@@ -1640,27 +1917,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
 [39 <./Fig/BEC_manip/Rb87.pdf>] [40] [41] [42]
-<Fig/BEC_manip/rabi.pdf, id=7796, 754.06688pt x 264.8047pt>
+<Fig/BEC_manip/rabi.pdf, id=7818, 754.06688pt x 264.8047pt>
 File: Fig/BEC_manip/rabi.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/rabi.pdf>
 Package pdftex.def Info: Fig/BEC_manip/rabi.pdf  used on input line 341.
 (pdftex.def)             Requested size: 426.79135pt x 149.87352pt.
  [43 <./Fig/BEC_manip/rabi.pdf>]
-<Fig/BEC_manip/manip.pdf, id=7941, 433.61185pt x 283.43782pt>
+<Fig/BEC_manip/manip.pdf, id=7962, 433.61185pt x 283.43782pt>
 File: Fig/BEC_manip/manip.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/manip.pdf>
 Package pdftex.def Info: Fig/BEC_manip/manip.pdf  used on input line 359.
 (pdftex.def)             Requested size: 426.79135pt x 278.98679pt.
 
 [44 <./Fig/BEC_manip/manip.pdf>]
-<Fig/BEC_manip/table_optique2.pdf, id=7963, 436.53725pt x 348.388pt>
+<Fig/BEC_manip/table_optique2.pdf, id=7984, 436.53725pt x 348.388pt>
 File: Fig/BEC_manip/table_optique2.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/table_optique2.pdf>
 Package pdftex.def Info: Fig/BEC_manip/table_optique2.pdf  used on input line 3
 78.
 (pdftex.def)             Requested size: 341.43437pt x 272.49107pt.
  [45] [46 <./Fig/BEC_manip/table_optique2.pdf>]
-<Fig/BEC_manip/MOT_magtrap.pdf, id=7977, 360.07681pt x 197.41502pt>
+<Fig/BEC_manip/MOT_magtrap.pdf, id=7998, 360.07681pt x 197.41502pt>
 File: Fig/BEC_manip/MOT_magtrap.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/MOT_magtrap.pdf>
 Package pdftex.def Info: Fig/BEC_manip/MOT_magtrap.pdf  used on input line 395.
@@ -1670,27 +1947,27 @@ Package pdftex.def Info: Fig/BEC_manip/MOT_magtrap.pdf  used on input line 395.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47 <./Fig/BEC_manip/MOT_magtrap.pdf>]
-<Fig/BEC_manip/evapRF.pdf, id=8062, 388.57635pt x 204.5393pt>
+<Fig/BEC_manip/evapRF.pdf, id=8084, 388.57635pt x 204.5393pt>
 File: Fig/BEC_manip/evapRF.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/evapRF.pdf>
 Package pdftex.def Info: Fig/BEC_manip/evapRF.pdf  used on input line 421.
 (pdftex.def)             Requested size: 384.1096pt x 202.19177pt.
  [48]
-<Fig/BEC_manip/piege_optique2.pdf, id=8075, 423.59935pt x 236.41693pt>
+<Fig/BEC_manip/piege_optique2.pdf, id=8097, 423.59935pt x 236.41693pt>
 File: Fig/BEC_manip/piege_optique2.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/piege_optique2.pdf>
 Package pdftex.def Info: Fig/BEC_manip/piege_optique2.pdf  used on input line 4
 39.
 (pdftex.def)             Requested size: 384.1096pt x 214.37856pt.
  [49 <./Fig/BEC_manip/evapRF.pdf>] [50 <./Fig/BEC_manip/piege_optique2.pdf>]
-<Fig/BEC_manip/levitation_simple.pdf, id=9418, 252.72139pt x 181.7081pt>
+<Fig/BEC_manip/levitation_simple.pdf, id=9439, 252.72139pt x 181.7081pt>
 File: Fig/BEC_manip/levitation_simple.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/levitation_simple.pdf>
 Package pdftex.def Info: Fig/BEC_manip/levitation_simple.pdf  used on input lin
 e 464.
 (pdftex.def)             Requested size: 252.72076pt x 181.70764pt.
  [51 <./Fig/BEC_manip/levitation_simple.pdf>]
-<Fig/BEC_manip/BEC_double_struct.pdf, id=9534, 412.8108pt x 175.07729pt>
+<Fig/BEC_manip/BEC_double_struct.pdf, id=9555, 412.8108pt x 175.07729pt>
 File: Fig/BEC_manip/BEC_double_struct.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/BEC_double_struct.pdf>
 Package pdftex.def Info: Fig/BEC_manip/BEC_double_struct.pdf  used on input lin
@@ -1698,7 +1975,7 @@ e 486.
 (pdftex.def)             Requested size: 384.1096pt x 162.9137pt.
 
 [52 <./Fig/BEC_manip/BEC_double_struct.pdf>]
-<Fig/BEC_manip/adia_opening_and_delta_kick2.pdf, id=9624, 765.07376pt x 306.008
+<Fig/BEC_manip/adia_opening_and_delta_kick2.pdf, id=9645, 765.07376pt x 306.008
 64pt>
 File: Fig/BEC_manip/adia_opening_and_delta_kick2.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/adia_opening_and_delta_kick2.pdf>
@@ -1706,7 +1983,7 @@ Package pdftex.def Info: Fig/BEC_manip/adia_opening_and_delta_kick2.pdf  used o
 n input line 511.
 (pdftex.def)             Requested size: 426.79135pt x 170.70528pt.
  [53]
-<Fig/BEC_manip/img_mot.pdf, id=9638, 431.52072pt x 114.65497pt>
+<Fig/BEC_manip/img_mot.pdf, id=9660, 431.52072pt x 114.65497pt>
 File: Fig/BEC_manip/img_mot.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/img_mot.pdf>
 Package pdftex.def Info: Fig/BEC_manip/img_mot.pdf  used on input line 547.
@@ -1715,7 +1992,7 @@ Package pdftex.def Info: Fig/BEC_manip/img_mot.pdf  used on input line 547.
 Underfull \vbox (badness 6575) has occurred while \output is active []
 
  [54 <./Fig/BEC_manip/adia_opening_and_delta_kick2.pdf>]
-<Fig/BEC_manip/img_science_3.pdf, id=10329, 318.99263pt x 189.45609pt>
+<Fig/BEC_manip/img_science_3.pdf, id=10351, 318.99263pt x 189.45609pt>
 File: Fig/BEC_manip/img_science_3.pdf Graphic file (type pdf)
 <use Fig/BEC_manip/img_science_3.pdf>
 Package pdftex.def Info: Fig/BEC_manip/img_science_3.pdf  used on input line 56
@@ -1728,7 +2005,7 @@ Chapters/Modif_exp.tex [57]
 ]
 Chapitre 4.
 [59]
-<Fig/Modif_exp/cicero.png, id=10469, 510.40688pt x 514.92375pt>
+<Fig/Modif_exp/cicero.png, id=10491, 510.40688pt x 514.92375pt>
 File: Fig/Modif_exp/cicero.png Graphic file (type png)
 <use Fig/Modif_exp/cicero.png>
 Package pdftex.def Info: Fig/Modif_exp/cicero.png  used on input line 29.
@@ -1744,7 +2021,7 @@ Underfull \vbox (badness 2970) has occurred while \output is active []
 
  [60]
 [61 <./Fig/Modif_exp/cicero.png>] [62]
-<Fig/Modif_exp/levitation_refroidissement.pdf, id=10501, 470.89154pt x 229.2899
+<Fig/Modif_exp/levitation_refroidissement.pdf, id=10522, 470.89154pt x 229.2899
 pt>
 File: Fig/Modif_exp/levitation_refroidissement.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/levitation_refroidissement.pdf>
@@ -1752,7 +2029,7 @@ Package pdftex.def Info: Fig/Modif_exp/levitation_refroidissement.pdf  used on
 input line 82.
 (pdftex.def)             Requested size: 426.79135pt x 207.82143pt.
  [63 <./Fig/Modif_exp/levitation_refroidissement.pdf>] [64]
-<Fig/Modif_exp/levitation_etats.pdf, id=10575, 529.10655pt x 366.34715pt>
+<Fig/Modif_exp/levitation_etats.pdf, id=10596, 529.10655pt x 366.34715pt>
 File: Fig/Modif_exp/levitation_etats.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/levitation_etats.pdf>
 Package pdftex.def Info: Fig/Modif_exp/levitation_etats.pdf  used on input line
@@ -1762,7 +2039,7 @@ Package pdftex.def Info: Fig/Modif_exp/levitation_etats.pdf  used on input line
 Underfull \vbox (badness 3250) has occurred while \output is active []
 
  [65 <./Fig/Modif_exp/levitation_etats.pdf>]
-<Fig/Modif_exp/levitation_RF.pdf, id=10584, 563.3009pt x 209.90251pt>
+<Fig/Modif_exp/levitation_RF.pdf, id=10606, 563.3009pt x 209.90251pt>
 File: Fig/Modif_exp/levitation_RF.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/levitation_RF.pdf>
 Package pdftex.def Info: Fig/Modif_exp/levitation_RF.pdf  used on input line 14
@@ -1773,7 +2050,7 @@ Package pdftex.def Info: Fig/Modif_exp/levitation_RF.pdf  used on input line 14
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [66 <./Fig/Modif_exp/levitation_RF.pdf>] [67]
-<Fig/Modif_exp/oscillation_levitation.pdf, id=10609, 547.48448pt x 189.59718pt>
+<Fig/Modif_exp/oscillation_levitation.pdf, id=10630, 547.48448pt x 189.59718pt>
 
 File: Fig/Modif_exp/oscillation_levitation.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/oscillation_levitation.pdf>
@@ -1781,7 +2058,7 @@ Package pdftex.def Info: Fig/Modif_exp/oscillation_levitation.pdf  used on inpu
 t line 224.
 (pdftex.def)             Requested size: 426.79135pt x 147.80418pt.
  [68 <./Fig/Modif_exp/oscillation_levitation.pdf>] [69]
-<Fig/Modif_exp/optique_1070_new_style.pdf, id=10631, 454.72154pt x 306.19962pt>
+<Fig/Modif_exp/optique_1070_new_style.pdf, id=10652, 454.72154pt x 306.19962pt>
 
 File: Fig/Modif_exp/optique_1070_new_style.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/optique_1070_new_style.pdf>
@@ -1789,7 +2066,7 @@ Package pdftex.def Info: Fig/Modif_exp/optique_1070_new_style.pdf  used on inpu
 t line 304.
 (pdftex.def)             Requested size: 426.79135pt x 287.38849pt.
  [70] [71 <./Fig/Modif_exp/optique_1070_new_style.pdf>]
-<Fig/Modif_exp/expansion_dimple.pdf, id=11191, 461.32204pt x 320.72536pt>
+<Fig/Modif_exp/expansion_dimple.pdf, id=11213, 461.32204pt x 320.72536pt>
 File: Fig/Modif_exp/expansion_dimple.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/expansion_dimple.pdf>
 Package pdftex.def Info: Fig/Modif_exp/expansion_dimple.pdf  used on input line
@@ -1797,7 +2074,7 @@ Package pdftex.def Info: Fig/Modif_exp/expansion_dimple.pdf  used on input line
 (pdftex.def)             Requested size: 298.75264pt x 207.70555pt.
 
 [72 <./Fig/Modif_exp/expansion_dimple.pdf>] [73]
-<Fig/Modif_exp/frequences_piege_optique.pdf, id=11215, 564.67683pt x 210.69902p
+<Fig/Modif_exp/frequences_piege_optique.pdf, id=11236, 564.67683pt x 210.69902p
 t>
 File: Fig/Modif_exp/frequences_piege_optique.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/frequences_piege_optique.pdf>
@@ -1805,7 +2082,7 @@ Package pdftex.def Info: Fig/Modif_exp/frequences_piege_optique.pdf  used on in
 put line 375.
 (pdftex.def)             Requested size: 426.79135pt x 159.25198pt.
  [74 <./Fig/Modif_exp/frequences_piege_optique.pdf>] [75] [76] [77] [78] [79]
-<Fig/Modif_exp/comparaison_consignes_evap.pdf, id=11309, 369.27931pt x 259.2744
+<Fig/Modif_exp/comparaison_consignes_evap.pdf, id=11330, 369.27931pt x 259.2744
 6pt>
 File: Fig/Modif_exp/comparaison_consignes_evap.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/comparaison_consignes_evap.pdf>
@@ -1813,13 +2090,13 @@ Package pdftex.def Info: Fig/Modif_exp/comparaison_consignes_evap.pdf  used on
 input line 570.
 (pdftex.def)             Requested size: 298.75264pt x 209.76982pt.
  [80 <./Fig/Modif_exp/comparaison_consignes_evap.pdf>] [81]
-<Fig/Modif_exp/focalisation_atomique.pdf, id=11339, 512.08612pt x 209.60849pt>
+<Fig/Modif_exp/focalisation_atomique.pdf, id=11360, 512.08612pt x 209.60849pt>
 File: Fig/Modif_exp/focalisation_atomique.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/focalisation_atomique.pdf>
 Package pdftex.def Info: Fig/Modif_exp/focalisation_atomique.pdf  used on input
  line 619.
 (pdftex.def)             Requested size: 426.79135pt x 174.701pt.
-<Fig/Modif_exp/Evolution_température_eta.pdf, id=11344, 367.07071pt x 254.4134
+<Fig/Modif_exp/Evolution_température_eta.pdf, id=11365, 367.07071pt x 254.4134
 2pt>
 File: Fig/Modif_exp/Evolution_température_eta.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/Evolution_température_eta.pdf>
@@ -1832,14 +2109,14 @@ n_température_eta.pdf
 pdfTeX warning: pdflatex (file ./Fig/Modif_exp/Evolution_température_eta.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Fig/modif_exp/Nombre_atomes_evap.pdf, id=11413, 385.9038pt x 293.77733pt>
+<Fig/modif_exp/Nombre_atomes_evap.pdf, id=11435, 385.9038pt x 293.77733pt>
 File: Fig/modif_exp/Nombre_atomes_evap.pdf Graphic file (type pdf)
 <use Fig/modif_exp/Nombre_atomes_evap.pdf>
 Package pdftex.def Info: Fig/modif_exp/Nombre_atomes_evap.pdf  used on input li
 ne 654.
 (pdftex.def)             Requested size: 298.75264pt x 227.44644pt.
  [84 <./Fig/modif_exp/Nombre_atomes_evap.pdf>]
-<Fig/Modif_exp/efficacité_évaporation_optique.pdf, id=11432, 397.40723pt x 28
+<Fig/Modif_exp/efficacité_évaporation_optique.pdf, id=11454, 397.40723pt x 28
 4.76048pt>
 File: Fig/Modif_exp/efficacité_évaporation_optique.pdf Graphic file (type pdf
 )
@@ -1853,34 +2130,34 @@ ed on input line 669.
 ]
 Chapitre 5.
 [87]
-<Fig/Speckle/speckle_pattern.pdf, id=11455, 393.74275pt x 187.88626pt>
+<Fig/Speckle/speckle_pattern.pdf, id=11476, 393.74275pt x 187.88626pt>
 File: Fig/Speckle/speckle_pattern.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_pattern.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_pattern.pdf  used on input line 21
 .
 (pdftex.def)             Requested size: 384.1096pt x 183.29872pt.
  [88 <./Fig/Speckle/speckle_pattern.pdf>] [89]
-<Fig/Speckle/diffus_prop.pdf, id=11540, 300.06396pt x 226.78568pt>
+<Fig/Speckle/diffus_prop.pdf, id=11562, 300.06396pt x 226.78568pt>
 File: Fig/Speckle/diffus_prop.pdf Graphic file (type pdf)
 <use Fig/Speckle/diffus_prop.pdf>
 Package pdftex.def Info: Fig/Speckle/diffus_prop.pdf  used on input line 80.
 (pdftex.def)             Requested size: 300.06323pt x 226.78511pt.
  [90 <./Fig/Speckle/diffus_prop.pdf>]
-<Fig/Speckle/montage_speckle_taus.pdf, id=11650, 495.35794pt x 234.57649pt>
+<Fig/Speckle/montage_speckle_taus.pdf, id=11672, 495.35794pt x 234.57649pt>
 File: Fig/Speckle/montage_speckle_taus.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_speckle_taus.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_speckle_taus.pdf  used on input li
 ne 116.
 (pdftex.def)             Requested size: 426.79135pt x 202.11124pt.
  [91 <./Fig/Speckle/montage_speckle_taus.pdf>]
-<Fig/Speckle/montage_diffuseur.pdf, id=12256, 489.34206pt x 294.36562pt>
+<Fig/Speckle/montage_diffuseur.pdf, id=12277, 489.34206pt x 294.36562pt>
 File: Fig/Speckle/montage_diffuseur.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_diffuseur.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_diffuseur.pdf  used on input line 
 146.
 (pdftex.def)             Requested size: 384.1096pt x 231.07301pt.
  [92] [93 <./Fig/Speckle/montage_diffuseur.pdf>]
-<Fig/Speckle/geometrie_effective_speckle.pdf, id=12304, 327.5211pt x 219.06755p
+<Fig/Speckle/geometrie_effective_speckle.pdf, id=12325, 327.5211pt x 219.06755p
 t>
 File: Fig/Speckle/geometrie_effective_speckle.pdf Graphic file (type pdf)
 <use Fig/Speckle/geometrie_effective_speckle.pdf>
@@ -1889,7 +2166,7 @@ nput line 166.
 (pdftex.def)             Requested size: 294.76625pt x 197.15895pt.
  [94 <./Fig/Speckle/geometrie_effective_speckle.pdf>]
 [95]
-<Fig/Speckle/speckle_extension.pdf, id=12387, 481.08609pt x 201.40439pt>
+<Fig/Speckle/speckle_extension.pdf, id=12409, 481.08609pt x 201.40439pt>
 File: Fig/Speckle/speckle_extension.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_extension.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_extension.pdf  used on input line 
@@ -1899,7 +2176,7 @@ Package pdftex.def Info: Fig/Speckle/speckle_extension.pdf  used on input line
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [96 <./Fig/Speckle/speckle_extension.pdf>] [97]
-<Fig/Speckle/correlation_speckle.pdf, id=12584, 474.40244pt x 204.32954pt>
+<Fig/Speckle/correlation_speckle.pdf, id=12605, 474.40244pt x 204.32954pt>
 File: Fig/Speckle/correlation_speckle.pdf Graphic file (type pdf)
 <use Fig/Speckle/correlation_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/correlation_speckle.pdf  used on input lin
@@ -1909,7 +2186,7 @@ e 296.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [99 <./Fig/Speckle/correlation_speckle.pdf>] [100] [101]
-<Fig/Speckle/speckle_correlations_exp.pdf, id=12868, 533.51053pt x 174.36984pt>
+<Fig/Speckle/speckle_correlations_exp.pdf, id=12890, 533.51053pt x 174.36984pt>
 
 File: Fig/Speckle/speckle_correlations_exp.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_correlations_exp.pdf>
@@ -1917,14 +2194,14 @@ Package pdftex.def Info: Fig/Speckle/speckle_correlations_exp.pdf  used on inpu
 t line 415.
 (pdftex.def)             Requested size: 426.79135pt x 139.49072pt.
  [102 <./Fig/Speckle/speckle_correlations_exp.pdf>] [103] [104]
-<Fig/Speckle/distribution_potentiel.pdf, id=12913, 374.98036pt x 249.39107pt>
+<Fig/Speckle/distribution_potentiel.pdf, id=12934, 374.98036pt x 249.39107pt>
 File: Fig/Speckle/distribution_potentiel.pdf Graphic file (type pdf)
 <use Fig/Speckle/distribution_potentiel.pdf>
 Package pdftex.def Info: Fig/Speckle/distribution_potentiel.pdf  used on input 
 line 500.
 (pdftex.def)             Requested size: 362.77525pt x 241.27734pt.
  [105 <./Fig/Speckle/distribution_potentiel.pdf>]
-<Fig/Speckle/principe_potentiel_etat_interne.pdf, id=12984, 355.09534pt x 220.2
+<Fig/Speckle/principe_potentiel_etat_interne.pdf, id=13005, 355.09534pt x 220.2
 7208pt>
 File: Fig/Speckle/principe_potentiel_etat_interne.pdf Graphic file (type pdf)
 <use Fig/Speckle/principe_potentiel_etat_interne.pdf>
@@ -1932,7 +2209,7 @@ Package pdftex.def Info: Fig/Speckle/principe_potentiel_etat_interne.pdf  used
 on input line 526.
 (pdftex.def)             Requested size: 341.43437pt x 211.79825pt.
 [106 <./Fig/Speckle/principe_potentiel_etat_interne.pdf>]
-<Fig/Speckle/potentiel_dipolaire_hyperfin.pdf, id=12998, 388.47842pt x 254.2505
+<Fig/Speckle/potentiel_dipolaire_hyperfin.pdf, id=13019, 388.47842pt x 254.2505
 6pt>
 File: Fig/Speckle/potentiel_dipolaire_hyperfin.pdf Graphic file (type pdf)
 <use Fig/Speckle/potentiel_dipolaire_hyperfin.pdf>
@@ -1940,7 +2217,7 @@ Package pdftex.def Info: Fig/Speckle/potentiel_dipolaire_hyperfin.pdf  used on
 input line 550.
 (pdftex.def)             Requested size: 384.1096pt x 251.39459pt.
  [107 <./Fig/Speckle/potentiel_dipolaire_hyperfin.pdf>]
-<Fig/Speckle/montage_speckle_specfunc.pdf, id=13082, 495.35797pt x 234.57649pt>
+<Fig/Speckle/montage_speckle_specfunc.pdf, id=13104, 495.35797pt x 234.57649pt>
 
 File: Fig/Speckle/montage_speckle_specfunc.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_speckle_specfunc.pdf>
@@ -1948,7 +2225,7 @@ Package pdftex.def Info: Fig/Speckle/montage_speckle_specfunc.pdf  used on inpu
 t line 569.
 (pdftex.def)             Requested size: 426.79135pt x 202.11124pt.
  [108] [109 <./Fig/Speckle/montage_speckle_specfunc.pdf>]
-<Fig/Speckle/speckle_bichromatique.pdf, id=13713, 507.09283pt x 203.79584pt>
+<Fig/Speckle/speckle_bichromatique.pdf, id=13734, 507.09283pt x 203.79584pt>
 File: Fig/Speckle/speckle_bichromatique.pdf Graphic file (type pdf)
 <use Fig/Speckle/speckle_bichromatique.pdf>
 Package pdftex.def Info: Fig/Speckle/speckle_bichromatique.pdf  used on input l
@@ -1959,7 +2236,7 @@ ine 626.
 Package mathptmx Warning: There are no bold math fonts on input line 692.
 
 [112] [113]
-<Fig/Speckle/illustration_correlation_double_speckle.pdf, id=13787, 474.40244pt
+<Fig/Speckle/illustration_correlation_double_speckle.pdf, id=13809, 474.40244pt
  x 204.32954pt>
 File: Fig/Speckle/illustration_correlation_double_speckle.pdf Graphic file (typ
 e pdf)
@@ -1968,7 +2245,7 @@ Package pdftex.def Info: Fig/Speckle/illustration_correlation_double_speckle.pd
 f  used on input line 757.
 (pdftex.def)             Requested size: 426.79135pt x 183.83252pt.
  [114] [115 <./Fig/Speckle/illustration_correlation_double_speckle.pdf>] [116]
-<Fig/Speckle/montage_speckle_bichromatique.pdf, id=13988, 599.2902pt x 262.5814
+<Fig/Speckle/montage_speckle_bichromatique.pdf, id=14009, 599.2902pt x 262.5814
 pt>
 File: Fig/Speckle/montage_speckle_bichromatique.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_speckle_bichromatique.pdf>
@@ -1984,7 +2261,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [119
 
 ]
-<Fig/TauS_PRL/illustration_contexte_taus.pdf, id=14931, 234.62099pt x 133.5281p
+<Fig/TauS_PRL/illustration_contexte_taus.pdf, id=14953, 234.62099pt x 133.5281p
 t>
 File: Fig/TauS_PRL/illustration_contexte_taus.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/illustration_contexte_taus.pdf>
@@ -1993,13 +2270,13 @@ nput line 22.
 (pdftex.def)             Requested size: 234.62039pt x 133.52777pt.
 
 [120 <./Fig/TauS_PRL/illustration_contexte_taus.pdf>]
-<Fig/TauS_PRL/desordre_2D.pdf, id=14984, 516.13782pt x 219.69249pt>
+<Fig/TauS_PRL/desordre_2D.pdf, id=15006, 516.13782pt x 219.69249pt>
 File: Fig/TauS_PRL/desordre_2D.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/desordre_2D.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/desordre_2D.pdf  used on input line 58.
 (pdftex.def)             Requested size: 426.79135pt x 181.6642pt.
  [121 <./Fig/TauS_PRL/desordre_2D.pdf>]
-<Fig/TauS_PRL/prediction_taus_born.pdf, id=15235, 307.61336pt x 174.78033pt>
+<Fig/TauS_PRL/prediction_taus_born.pdf, id=15256, 307.61336pt x 174.78033pt>
 File: Fig/TauS_PRL/prediction_taus_born.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/prediction_taus_born.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/prediction_taus_born.pdf  used on input l
@@ -2007,21 +2284,21 @@ ine 104.
 (pdftex.def)             Requested size: 307.6126pt x 174.77989pt.
  [122] [123 <./Fig/TauS_PRL/prediction_taus_born.pdf>] [124]
 [125]
-<Fig/TauS_PRL/extraction_taus.pdf, id=15423, 552.55775pt x 180.51674pt>
+<Fig/TauS_PRL/extraction_taus.pdf, id=15445, 552.55775pt x 180.51674pt>
 File: Fig/TauS_PRL/extraction_taus.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/extraction_taus.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/extraction_taus.pdf  used on input line 1
 57.
 (pdftex.def)             Requested size: 426.79135pt x 139.4335pt.
  [126 <./Fig/TauS_PRL/extraction_taus.pdf>]
-<Fig/TauS_PRL/donnees_taus_prl.pdf, id=15542, 539.3249pt x 260.84604pt>
+<Fig/TauS_PRL/donnees_taus_prl.pdf, id=15564, 539.3249pt x 260.84604pt>
 File: Fig/TauS_PRL/donnees_taus_prl.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/donnees_taus_prl.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/donnees_taus_prl.pdf  used on input line 
 179.
 (pdftex.def)             Requested size: 426.79135pt x 206.42033pt.
  [127 <./Fig/TauS_PRL/donnees_taus_prl.pdf>] [128]
-<Fig/TauS_PRL/map_deviations_born.pdf, id=15606, 237.00209pt x 322.96284pt>
+<Fig/TauS_PRL/map_deviations_born.pdf, id=15627, 237.00209pt x 322.96284pt>
 File: Fig/TauS_PRL/map_deviations_born.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/map_deviations_born.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/map_deviations_born.pdf  used on input li
@@ -2032,7 +2309,7 @@ ne 218.
 LaTeX Warning: Float too large for page by 10.57846pt on input line 221.
 
 [129] [130 <./Fig/TauS_PRL/map_deviations_born.pdf>] [131]
-<Fig/TauS_PRL/depart_quadratique_taus.pdf, id=15697, 296.38025pt x 187.97522pt>
+<Fig/TauS_PRL/depart_quadratique_taus.pdf, id=15719, 296.38025pt x 187.97522pt>
 
 File: Fig/TauS_PRL/depart_quadratique_taus.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/depart_quadratique_taus.pdf>
@@ -2049,7 +2326,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 [134]
-<Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf, id=15758, 414.8217
+<Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf, id=15779, 414.8217
 5pt x 133.86089pt>
 File: Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf Graphic file (
 type pdf)
@@ -2059,20 +2336,20 @@ Package pdftex.def Info: Fig/TauS_NJP/illustration_fonction_spectrale_diffusion
 (pdftex.def)             Requested size: 426.79135pt x 137.72505pt.
  [135] [136 <./Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf>] [13
 7]
-<Fig/TauS_NJP/donnees_taus_ordre3.pdf, id=15815, 1223.84964pt x 402.92387pt>
+<Fig/TauS_NJP/donnees_taus_ordre3.pdf, id=15837, 1223.84964pt x 402.92387pt>
 File: Fig/TauS_NJP/donnees_taus_ordre3.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/donnees_taus_ordre3.pdf>
 Package pdftex.def Info: Fig/TauS_NJP/donnees_taus_ordre3.pdf  used on input li
 ne 152.
 (pdftex.def)             Requested size: 426.79135pt x 140.50902pt.
  [138 <./Fig/TauS_NJP/donnees_taus_ordre3.pdf>] [139]
-<Fig/TauS_NJP/SCBA_gauss.pdf, id=15890, 986.68166pt x 418.55444pt>
+<Fig/TauS_NJP/SCBA_gauss.pdf, id=15911, 986.68166pt x 418.55444pt>
 File: Fig/TauS_NJP/SCBA_gauss.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/SCBA_gauss.pdf>
 Package pdftex.def Info: Fig/TauS_NJP/SCBA_gauss.pdf  used on input line 188.
 (pdftex.def)             Requested size: 426.79135pt x 181.04785pt.
  [140 <./Fig/TauS_NJP/SCBA_gauss.pdf>] [141]
-<Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf, id=15944, 238.26625pt
+<Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf, id=15965, 238.26625pt
  x 166.42601pt>
 File: Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf Graphic file (typ
 e pdf)
@@ -2081,14 +2358,14 @@ Package pdftex.def Info: Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pd
 f  used on input line 244.
 (pdftex.def)             Requested size: 285.91805pt x 199.71019pt.
  [142] [143 <./Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf>]
-<Fig/TauS_NJP/fonctions_spectrales_rouge.pdf, id=15974, 514.48901pt x 243.04524
+<Fig/TauS_NJP/fonctions_spectrales_rouge.pdf, id=15996, 514.48901pt x 243.04524
 pt>
 File: Fig/TauS_NJP/fonctions_spectrales_rouge.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/fonctions_spectrales_rouge.pdf>
 Package pdftex.def Info: Fig/TauS_NJP/fonctions_spectrales_rouge.pdf  used on i
 nput line 294.
 (pdftex.def)             Requested size: 426.79135pt x 201.62364pt.
-<Fig/TauS_NJP/fonctions_spectrales_bleu.pdf, id=15977, 518.83864pt x 242.02167p
+<Fig/TauS_NJP/fonctions_spectrales_bleu.pdf, id=15999, 518.83864pt x 242.02167p
 t>
 File: Fig/TauS_NJP/fonctions_spectrales_bleu.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/fonctions_spectrales_bleu.pdf>
@@ -2105,7 +2382,7 @@ tions_spectrales_bleu.pdf
 pdfTeX warning: pdflatex (file ./Fig/TauS_NJP/fonctions_spectrales_bleu.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]
-<Fig/TauS_NJP/fonctions_spectrales_classiques.pdf, id=16017, 539.70927pt x 584.
+<Fig/TauS_NJP/fonctions_spectrales_classiques.pdf, id=16038, 539.70927pt x 584.
 4436pt>
 File: Fig/TauS_NJP/fonctions_spectrales_classiques.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/fonctions_spectrales_classiques.pdf>
@@ -2117,7 +2394,7 @@ Underfull \vbox (badness 6808) has occurred while \output is active []
 
  [146]
 [147 <./Fig/TauS_NJP/fonctions_spectrales_classiques.pdf>] [148]
-<Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf, id=16847, 821.41615pt x 435.
+<Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf, id=16868, 821.41615pt x 435.
 9719pt>
 File: Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf>
@@ -2125,7 +2402,7 @@ Package pdftex.def Info: Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf  used
  on input line 360.
 (pdftex.def)             Requested size: 426.79135pt x 226.52042pt.
  [149 <./Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf>]
-<Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf, id=16874, 838.29054pt x 436.7
+<Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf, id=16896, 838.29054pt x 436.7
 43pt>
 File: Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf>
@@ -2145,7 +2422,7 @@ Chapitre 8.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [153]
-<Fig/Conclusion/spectro_transition_anderson.pdf, id=16920, 452.45566pt x 142.77
+<Fig/Conclusion/spectro_transition_anderson.pdf, id=16941, 452.45566pt x 142.77
 16pt>
 File: Fig/Conclusion/spectro_transition_anderson.pdf Graphic file (type pdf)
 <use Fig/Conclusion/spectro_transition_anderson.pdf>
@@ -2156,13 +2433,13 @@ n input line 32.
 Underfull \vbox (badness 6944) has occurred while \output is active []
 
  [154 <./Fig/Conclusion/spectro_transition_anderson.pdf>] [155]
-<Fig/Conclusion/cbs_cfs.pdf, id=16977, 481.9821pt x 297.50862pt>
+<Fig/Conclusion/cbs_cfs.pdf, id=16999, 481.9821pt x 297.50862pt>
 File: Fig/Conclusion/cbs_cfs.pdf Graphic file (type pdf)
 <use Fig/Conclusion/cbs_cfs.pdf>
 Package pdftex.def Info: Fig/Conclusion/cbs_cfs.pdf  used on input line 74.
 (pdftex.def)             Requested size: 426.79135pt x 263.44719pt.
  [156 <./Fig/Conclusion/cbs_cfs.pdf>] [157]
-<Fig/Conclusion/landscape.pdf, id=18226, 453.53421pt x 158.82379pt>
+<Fig/Conclusion/landscape.pdf, id=18247, 453.53421pt x 158.82379pt>
 File: Fig/Conclusion/landscape.pdf Graphic file (type pdf)
 <use Fig/Conclusion/landscape.pdf>
 Package pdftex.def Info: Fig/Conclusion/landscape.pdf  used on input line 131.
@@ -2208,73 +2485,122 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[178] [179] [180] [181]) [182]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+[178] [179] [180] [181]) [182] [183
+
+
+]
+<Fig/EDOM.png, id=18504, 1083.29718pt x 215.30438pt>
+File: Fig/EDOM.png Graphic file (type png)
+<use Fig/EDOM.png>
+Package pdftex.def Info: Fig/EDOM.png  used on input line 93.
+(pdftex.def)             Requested size: 350.74503pt x 69.70915pt.
+LaTeX Font Info:    Trying to load font information for T1+fvs on input line 93
+.
+
+("C:\Users\lecou\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bera\t1fvs.fd"
+File: t1fvs.fd 2004/09/07 scalable font definitions for T1/fvs.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fvs' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (19.91684pt too wide) in paragraph at lines 93--93
+[]|[]| 
+ []
+
+<Fig/e.png, id=18505, 45.16875pt x 62.51355pt>
+File: Fig/e.png Graphic file (type png)
+<use Fig/e.png>
+Package pdftex.def Info: Fig/e.png  used on input line 93.
+(pdftex.def)             Requested size: 45.02388pt x 62.3116pt.
+
+Overfull \vbox (21.51147pt too high) detected at line 93
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+rm on input line 93.
+
+LaTeX Font Info:    No file T1rm.fd. on input line 93.
+
+LaTeX Font Warning: Font shape `T1/rm/m/n' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 93.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `rm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+[184 <./Fig/EDOM.png> <./Fig/e.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 93.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 31947 strings out of 480934
- 613862 string characters out of 2899917
- 1024855 words of memory out of 3000000
- 45743 multiletter control sequences out of 15000+200000
- 729055 words of font info for 359 fonts, out of 3000000 for 9000
+ 34060 strings out of 480934
+ 652474 string characters out of 2899917
+ 1101309 words of memory out of 3000000
+ 47779 multiletter control sequences out of 15000+200000
+ 764185 words of font info for 382 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,2171b,1134s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
-c}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathi
-t.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-r
-m.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
-athsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
-lm-ts1.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmbx5.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmbx6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmbx7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmbx8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/lm/lmbx9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/lecou/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/lecou/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/lecou/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi5.pfb><C:/Users/lecou/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/lecou/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/lecou/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/lecou
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Users/le
-cou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmib10.pfb><C:/Use
-rs/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/
-Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><
-C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr5.pfb
-><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.p
-fb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7
-.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-r8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
-lmr9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
-m/lmri10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmri9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmss10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmssbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/lm/lmsy10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/lm/lmsy6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/lecou/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/lecou/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/lecou
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.p
-fb>
-Output written on main.pdf (182 pages, 23294290 bytes).
+ <C:\Users\lecou\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+ecrm1000.pk> <C:\Users\lecou\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecrm1095.pk>{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/e
+nc/dvips/base/8r.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/en
+c/dvips/lm/lm-ec.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/en
+c/dvips/lm/lm-mathit.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
+s/enc/dvips/lm/lm-rm.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
+s/enc/dvips/lm/lm-mathsy.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/
+fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9
+/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Users/lecou/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/bera/fvsr8a.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/lecou/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/lm/lmbx5.pfb><C:/Users/lecou/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmbx6.pfb><C:/Users/lecou/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmbx7.pfb><C:/Users/lecou/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Users/lecou/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.pfb><C:/Users/lecou/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/lecou/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/lecou/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/lec
+ou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users
+/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi5.pfb><C:/Us
+ers/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:
+/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb>
+<C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.p
+fb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi
+9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
+mmib10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmr10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmr12.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmr5.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/lm/lmr6.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmr7.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmr8.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/lm/lmr9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/lm/lmri10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/lm/lmri9.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/lecou/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/lecou/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/lecou/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/lecou/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/lecou/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/lecou/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Users/lecou/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/lecou
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.p
+fb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/urw/helvetic/uhvb8a.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on main.pdf (186 pages, 23427478 bytes).
 PDF statistics:
- 19117 PDF objects out of 22161 (max. 8388607)
- 895 named destinations out of 1000 (max. 500000)
- 70378 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 19242 PDF objects out of 22161 (max. 8388607)
+ 897 named destinations out of 1000 (max. 500000)
+ 77561 words of extra memory for PDF output out of 89155 (max. 10000000)
 
