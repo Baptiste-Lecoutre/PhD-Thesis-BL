@@ -621,29 +621,29 @@ La question est alors la suivante: est-il possible de réaliser un désordre dé
 
 \paragraph*{Speckle bichromatique}
 La réponse apportée par l'équipe pour augmenter le temps de vie des atomes vis-à-vis de l'émission spontanée consiste à utiliser des désaccords plus importants, de l'ordre de \SI{100}{\giga\hertz}. %Cependant, l'utilisation de désaccords aussi grands ($\delta/2\pi \gg \deltahf$) ne permet plus la sélectivité en état interne recherchée pour réaliser une spectroscopie du désordre. 
-L'idée est alors de compenser le potentiel ressenti par l'état $\etatF{1}{}$ à l'aide d'une seconde fréquence optique, comme l'illustre la figure \ref{fig:speckle_bichromatique_principe}. Une étude quantitative et détaillée de cette approche peut être retrouvée dans le manuscrit de thèse de Musawwadah Mukhtar \citep{mukhtar2019state}, aussi nous nous contenterons de décrire les grandes lignes de cette approche. 
+L'idée est alors de compenser le potentiel ressenti par l'état $\etatF{1}{}$ à l'aide d'une seconde fréquence optique, comme l'illustre la figure \ref{fig:speckle_bichromatique_repulsif}. Une étude quantitative et détaillée de cette approche peut être retrouvée dans le manuscrit de thèse de Musawwadah Mukhtar \citep{mukhtar2019state}, aussi nous nous contenterons de décrire les grandes lignes de cette approche. 
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{Fig/Speckle/speckle_bichromatique.pdf}
-\caption{\textbf{a: Principe de \speckle\ bichromatique.} Un laser principal très désaccordé soumet les deux états fondamentaux à un potentiel. Afin d'obtenir un potentiel dépendant de l'état interne, on utilise une seconde fréquence optique dans le but de compenser le potentiel créé par le laser principal sur l'état $\protect\etatF{1}{}$. Dans le cas d'un désordre répulsif comme illustré ici, il est de plus possible d'additionner les effets répulsifs des potentiels créés par ces lasers sur l'état $\protect\etatF{2}{}$. \textbf{b: Séquence expérimentale d'étude de la transition d'Anderson.} Après refroidissement et obtention d'un condensat de Bose-Einstein, une étape de chargement du désordre à énergie résolue est réalisée à l'aide d'un transfert radio-fréquence. Celle-ci est suivie d'une expansion du nuage dans le désordre qui constitue l'expérience de localisation d'Anderson à proprement parler.}
-\label{fig:speckle_bichromatique_principe}
+\includegraphics[width=\textwidth]{Fig/Speckle/speckle_bichromatique_repulsif.pdf}
+\caption{\textbf{Illustration du principe de \speckle\ bichromatique dans le cas d'un désordre répulsif.} Un laser principal de désaccord $\delta_{\mathrm{p}}$ important soumet les deux états fondamentaux à un potentiel similaire (lignes bordeaux). Afin d'obtenir un potentiel dépendant de l'état interne, on utilise une seconde fréquence optique générée par un laser de compensation de désaccord $\delta_{\mathrm{c}}$ (lignes oranges) dans le but de compenser le potentiel créé par le laser principal sur l'état $\protect\etatF{1}{}$ dans lequel est créé le condensat (zone grisée). Dans le cas d'un désordre répulsif comme illustré ici (voir miniature bleue), il est de plus possible d'additionner les effets répulsifs des potentiels créés par ces deux lasers sur l'état $\protect\etatF{2}{}$.}
+\label{fig:speckle_bichromatique_repulsif}
 \end{figure}
 
 
 
 
-Le désordre soumis aux atomes résulte alors de la superposition de deux figures de \speckle , générées par deux lasers. Un laser \emph{principal} grandement désaccordé crée un potentiel comparable sur les états $\etatF{1}{}$ et $\etatF{2}{}$. Un laser de \emph{compensation} crée un second potentiel de telle sorte que son effet sur l'état $\etatF{1}{}$ soit de compenser le potentiel du laser principal (voir figure \ref{fig:speckle_bichromatique_principe}). 
+Le désordre soumis aux atomes résulte alors de la superposition de deux figures de \speckle , générées par deux lasers. Un laser \emph{principal} grandement désaccordé crée un potentiel comparable sur les états $\etatF{1}{}$ et $\etatF{2}{}$. Un laser de \emph{compensation} crée un second potentiel de telle sorte que son effet sur l'état $\etatF{1}{}$ soit de compenser le potentiel du laser principal (voir figure \ref{fig:speckle_bichromatique_repulsif}). 
 
 Dans le cadre de la théorie de la réponse linéaire, on montre à l'aide de la partie réelle de la polarisabilité atomique que le potentiel moyen total ressenti par chaque état est la somme des potentiels générés par chaque laser. Ces potentiels sont alors donnés par:
 \begin{equation}
-\overline{V_1}=\overline{V_{\mathrm{P},1}}+\overline{V_{\mathrm{C},1}}=0 \quad \text{et} \quad
-\overline{V_2}=\overline{V_{\mathrm{P},2}}+\overline{V_{\mathrm{C},2}}=\VR \text{ ,}
+\overline{V_1}=\overline{V_{\mathrm{p},1}}+\overline{V_{\mathrm{c},1}}=0 \quad \text{et} \quad
+\overline{V_2}=\overline{V_{\mathrm{p},2}}+\overline{V_{\mathrm{c},2}}=\VR \text{ ,}
 \label{eq:contraintes_potentiel_bichromatique}
 \end{equation}
-avec $\overline{V_{\mathrm{P},i}}$ ($\overline{V_{\mathrm{C},i}}$) le potentiel moyen créé par le laser principal (de compensation) sur l'état $\etatF{i}{}$. Nous avons de plus fait apparaître la contrainte que le potentiel moyen total appliqué à l'état $\etatF{1}{}$ soit nul. De même, les taux d'émission spontanée s'additionnent, ceux-ci étant issus de la partie imaginaire de la polarisabilité atomique: 
+avec $\overline{V_{\mathrm{p},i}}$ ($\overline{V_{\mathrm{c},i}}$) le potentiel moyen créé par le laser principal (de compensation) sur l'état $\etatF{i}{}$. Nous avons de plus fait apparaître la contrainte que le potentiel moyen total appliqué à l'état $\etatF{1}{}$ soit nul. De même, les taux d'émission spontanée s'additionnent, ceux-ci étant issus de la partie imaginaire de la polarisabilité atomique: 
 \begin{equation}
-\Gamma_{\mathrm{sp},1}=\Gamma_{\mathrm{sp,P},1} + \Gamma_{\mathrm{sp,C},1} \quad \text{et} \quad \Gamma_{\mathrm{sp},2}=\Gamma_{\mathrm{sp,P},2} + \Gamma_{\mathrm{sp,C},2} \text{ ,}
+\Gamma_{\mathrm{sp},1}=\Gamma_{\mathrm{sp,p},1} + \Gamma_{\mathrm{sp,c},1} \quad \text{et} \quad \Gamma_{\mathrm{sp},2}=\Gamma_{\mathrm{sp,p},2} + \Gamma_{\mathrm{sp,c},2} \text{ ,}
 \label{eq:temps_vie_desordre}
 \end{equation}
 avec $\Gamma_{\mathrm{sp},i}$ le taux d'émission spontanée pour l'état $\etatF{i}{}$.
@@ -651,7 +651,7 @@ avec $\Gamma_{\mathrm{sp},i}$ le taux d'émission spontanée pour l'état $\etat
 Afin de pouvoir étudier la dynamique des atomes dans le désordre pendant de très longs temps d'expansions, il est nécessaire de maximiser le temps de vie de l'état $\etatF{2}{}$. Cependant, cette procédure tend à diminuer le temps de vie de l'état $\etat{F=1}$, qui doit être suffisamment long pour pouvoir réaliser l'étape de \emph{chargement} du désordre. Le but cette étude est alors d'optimiser les temps de vie \ref{eq:temps_vie_desordre} des deux états pour un désordre $\VR$ fixé, tout en respectant les contraintes \ref{eq:contraintes_potentiel_bichromatique} du potentiel. Expérimentalement, nous disposons de quatre degrés de liberté (la puissance et le désaccord de chaque \speckle) pour atteindre la configuration optimale. %En particulier, les désaccords des deux faisceaux doivent satisfaire des conditions afin de permettre l'approche de désordre dépendant de l'état interne.
 
 \paragraph*{Potentiel répulsif}
-Considérons tout d'abord le cas d'un désordre répulsif sur l'état $\etatF{2}{}$, qui correspond à celui illustré sur la figure \ref{fig:speckle_bichromatique_principe}. Le laser principal étant grandement désaccordé, le potentiel moyen que celui-ci induit sur les états $\etatF{1}{}$ et $\etatF{2}{}$ est similaire. En prenant comme référence la transition $\etatF{1}{}\rightarrow\etat{F'}$\footnote{En choisissant un désaccord de \SI{100}{\giga\hertz}, on peut négliger la structure hyperfine de l'état excité.}, le désaccord du laser principal satisfait alors la condition $\delta_{\mathrm{p}}>0$\footnote{En prenant comme référence la transition $\protect\etatF{2}{}\rightarrow\protect\etat{F'}$, cette condition devient $\delta_{\mathrm{p}}/2\pi>\deltahf$.}, pour laquelle le potentiel généré sur les deux états hyperfins est répulsif. 
+Considérons tout d'abord le cas d'un désordre répulsif sur l'état $\etatF{2}{}$, qui correspond à celui illustré sur la figure \ref{fig:speckle_bichromatique_repulsif}. Le laser principal étant grandement désaccordé, le potentiel moyen que celui-ci induit sur les états $\etatF{1}{}$ et $\etatF{2}{}$ est similaire. En prenant comme référence la transition $\etatF{1}{}\rightarrow\etat{F'}$\footnote{En choisissant un désaccord de \SI{100}{\giga\hertz}, on peut négliger la structure hyperfine de l'état excité.}, le désaccord du laser principal satisfait alors la condition $\delta_{\mathrm{p}}>0$\footnote{En prenant comme référence la transition $\protect\etatF{2}{}\rightarrow\protect\etat{F'}$, cette condition devient $\delta_{\mathrm{p}}/2\pi>\deltahf$.}, pour laquelle le potentiel généré sur les deux états hyperfins est répulsif. 
 
 Afin de compenser le potentiel répulsif induit par le laser principal sur l'état $\etatF{1}{}$, il est nécessaire que le laser de compensation réalise un potentiel attractif, impliquant alors que le désaccord soit négatif $\delta_{\mathrm{c}}<0$\footnote{Pour les désaccords supérieurs au \SI{}{\giga\hertz} considérés, nous pourrons négliger le détail de la structure hyperfine de l'état excité, large de \SI{229}{\mega\hertz} pour les états accessibles.}. Notons de plus que le choix d'un désaccord inférieur à la séparation hyperfine des états fondamentaux permet de générer un potentiel répulsif sur l'état $\etatF{2}{}$. On retiendra alors:
 \begin{equation}
@@ -669,7 +669,14 @@ La principale différence provient ici du laser de compensation, qui ne peut pas
 \label{eq:condition_desordre_attractif}
 \end{equation}
 
-Contrairement au cas répulsif, la sélectivité en état interne dans le cas attractif provient donc d'un déséquilibrage des potentiels sur l'état $\etatF{2}{}$, voir figure \ref{fig:speckle_bichromatique_rouge}.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/Speckle/speckle_bichromatique_attractif.pdf}
+\caption{\textbf{Configuration du \speckle\ bichromatique dans le cas d'un désordre attractif.} Un laser principal de désaccord $\delta_{\mathrm{p}}$ important soumet les deux états fondamentaux à un potentiel similaire attractif (lignes bordeaux). Afin d'obtenir un potentiel dépendant de l'état interne, on utilise une seconde fréquence optique générée par un laser de compensation de désaccord $\delta_{\mathrm{c}}>0$ (lignes oranges) dans le but de compenser le potentiel créé par le laser principal sur l'état $\protect\etatF{1}{}$. Dans le cas d'un désordre attractif comme illustré ici (voir miniature rouge), la sélectivité de l'état interne ne se fait que par déséquilibre des potentiels sur l'état $\protect\etatF{2}{}$.}
+\label{fig:speckle_bichromatique_attractif}
+\end{figure}
+
+Contrairement au cas répulsif, la sélectivité en état interne dans le cas attractif provient donc d'un déséquilibrage des potentiels sur l'état $\etatF{2}{}$, voir figure \ref{fig:speckle_bichromatique_attractif}.
 
 
 \paragraph*{Performances d'un désordre bichromatique}
@@ -684,7 +691,7 @@ La table \ref{tb:speckle_bichromatique} présente les résultats de la détermin
 
 
 
-\begin{table}[!ht]
+\begin{table}[!h]
 \begin{center}
 {\rowcolors{2}{white}{MainColor!10}
 \begin{tabular}{ c|c|c }
@@ -716,19 +723,28 @@ Temps de vie $\Gamma_2^{-1}$ & \SI{165}{\milli\second} & \SI{149}{\milli\second}
 
 
 \paragraph*{Augmenter encore plus le temps de vie}
-Si les potentiels générés par les deux faisceaux sont d'amplitudes semblables (l'annulation du potentiel sur $\etatF{1}{}$ ne serait pas possible autrement), on comprend aisément que le laser de compensation contribue fortement à la dissipation par émission spontanée compte-tenu de son petit désaccord en comparaison de celui du laser principal.
+Si les potentiels générés par les deux faisceaux sur l'état $\etatF{1}{}$ sont d'amplitudes semblables (l'annulation du potentiel total sur $\etatF{1}{}$ ne serait pas possible autrement), on comprend aisément que le laser de compensation contribue fortement à la dissipation par émission spontanée compte-tenu de son petit désaccord en comparaison de celui du laser principal.
 
-Cependant, après l'étape de chargement, une fois les atomes transférés dans l'état $\etatF{2}{}$ habillé par le désordre, il n'est plus nécessaire de compenser le potentiel vu par l'état $\etatF{1}{}$. Il est alors possible de s'affranchir du laser de compensation. Un moyen simple d'augmenter le temps de vie $\Gamma_2^{-1}$ consiste alors à diminuer progressivement la puissance du laser de compensation tout en augmentant celle du laser principal de manière à garder $\VR$ constant, comme illustré figure \ref{fig:speckle_bichromatique_principe}b. Il s'agit, après chargement dans le désordre, d'un moyen de s'éloigner encore plus de résonance.
+Cependant, après l'étape de chargement, une fois les atomes transférés dans l'état $\etatF{2}{}$ habillé par le désordre, il n'est plus nécessaire de compenser le potentiel vu par l'état $\etatF{1}{}$. Il est alors possible de s'affranchir du laser de compensation. Un moyen simple d'augmenter le temps de vie $\Gamma_2^{-1}$ consiste alors à diminuer progressivement la puissance du laser de compensation tout en modifiant celle du laser principal de manière à garder $\VR$ constant, comme illustré figure \ref{fig:sequence_spectro_transition}. Dans le cas d'un désordre répulsif, cela se traduit par l'augmentation de la puissance du laser principal $P_{\mathrm{p}}'$ tel que:
+\begin{equation}
+P_{\mathrm{p}}'=P_{\mathrm{p}}\times\VR/\overline{V_{\mathrm{p,2}}} \text{ .}
+\end{equation}
+%Il s'agit, après chargement dans le désordre, d'un moyen de s'éloigner encore plus de résonance.
 
-On montre alors que le nouveau temps de vie $\Gamma_2^{'-1}$ de l'état $\etatF{2}{}$ après extinction du laser de compensation est donné par:
+On montre alors que le nouveau temps de vie $\Gamma_2^{'-1}$ de l'état $\etatF{2}{}$ après extinction du laser de compensation est donné par \citep{mukhtar2019state}:
 \begin{equation}
 \Gamma_2^{'-1}=\Gamma_2^{-1} \frac{\overline{V_{\mathrm{p},2}}/\VR}{\Gamma_{\mathrm{p},2}/\Gamma_2} \text{ .}
 \end{equation}
-L'application à un désordre d'amplitude $\left|\VR\right|/h=\SI{4}{\kilo\hertz}$ fournit alors un temps de vie de \SI{0.68}{\second} pour un désordre attractif et de \SI{0.69}{\second} pour un désordre répulsif, soit un gain de plus de trois ordres de grandeur par rapport au cas d'un speckle simple.
+L'application à un désordre d'amplitude $\left|\VR\right|/h=\SI{4}{\kilo\hertz}$ fournit alors un temps de vie de \SI{0.68}{\second} pour un désordre attractif et de \SI{0.69}{\second} pour un désordre répulsif, soit un gain d'un facteur $\sim 5$ en comparaison à la configuration statique\footnote{Ceci représente un gain de plus de trois ordres de grandeur par rapport au cas d'un speckle simple.}.
 
 Notons de plus que cette étude a été menée pour le cas le plus défavorable d'un désordre d'amplitude $h\times\SI{4}{\kilo\hertz}$, l'utilisation de désordres plus modérés conduisant a des temps de vie plus bien grands. Un désordre d'amplitude $h\times\SI{400}{\hertz}$ possède ainsi un temps de vie supérieur à \SI{6}{\second}, permettant donc des temps de propagation extrêmement longs.
 
-
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{Fig/Speckle/sequence_spectro_transition.pdf}
+\caption{ \textbf{Séquence expérimentale d'étude de la transition d'Anderson.} Après refroidissement et obtention d'un condensat de Bose-Einstein, une étape de chargement du désordre bichromatique (ici représenté répulsif) à énergie résolue est réalisée à l'aide d'un transfert radio-fréquence. Une fois le transfert réalisé, le laser de compensation est éteint afin de maximiser le temps de vie des atomes dans l'état $\protect\etatF{2}{}$. Simultanément, la puissance du laser principal est modifiée afin de garder l'amplitude du potentiel $\overline{V_2}$ constante. Enfin, le piège optique croisé est relâché afin de procéder à l'expansion du nuage dans le désordre, ce qui constitue l'expérience de localisation d'Anderson à proprement parler.}
+\label{fig:sequence_spectro_transition}
+\end{figure}
 
 
 
@@ -736,10 +752,21 @@ Notons de plus que cette étude a été menée pour le cas le plus défavorable 
 \subsection{Étude de la similitude de deux \speckles}
 Nous avons ainsi montré que l'utilisation d'un \speckle\ bichromatique permettait d'étendre l'applicabilité du désordre dépendant de l'état interne à l'étude de la transition d'Anderson grâce à l'augmentation du temps de vie des atomes dans le désordre de plus de trois ordres de grandeurs.
 
-Cependant, cette approche repose sur une hypothèse cruciale jusqu'à présent passée sous silence. L'approche de l'utilisation d'une seconde fréquence optique afin de compenser le potentiel ressenti par l'état $\etatF{1}{}$ n'est valable que si nous pouvons compenser le potentiel du laser principal en chaque point de l'espace. Il est donc nécessaire que les variations spatiales du profil d'intensité lumineuse du \speckle\ de compensation soient exactement celles du \speckle\ principal:
+Cependant, cette approche repose sur une hypothèse cruciale jusqu'à présent passée sous silence. L'approche de l'utilisation d'une seconde fréquence optique afin de compenser le potentiel ressenti par l'état $\etatF{1}{}$ n'est valable que si nous pouvons compenser le potentiel du laser principal en chaque point de l'espace. Il est donc nécessaire que les variations spatiales du profil d'intensité lumineuse du \speckle\ de compensation soient exactement celles du \speckle\ principal (voir figure \ref{fig:speckle_bichromatique_spatial}):
 \begin{equation}
-V_{\mathrm{c,1}}(\mathbf{x})=-V_{\mathrm{p,1}}(\mathbf{x})
+V_{\mathrm{c,1}}(\mathbf{x})=-V_{\mathrm{p,1}}(\mathbf{x}) \text{ .}
 \end{equation}
+
+L'étude de la similitude de deux figures de \speckle\ présentée dans cette section représente ma contribution au développement du désordre bichromatique, entamé par Vincent Denechaud et Musawwadah Mukhtar avec le calcul de la polarisatibilité atomique.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{Fig/Speckle/speckle_bichromatique_spatial.pdf}
+\caption{\textbf{Similitude des potentiels générés par chaque laser sur l'état $\mathbf{\protect\etat{F=1}}$.} Afin que le potentiel total ressenti par l'état $\protect\etat{F=1}$ soit nul en tout point de l'espace, il est nécessaire que les potentiels générés par les lasers principal et de compensation soit opposés, c'est à dire $V_{\mathrm{c,1}}(\mathbf{x})=-V_{\mathrm{p,1}}(\mathbf{x})$. Cela implique que le \speckle\ de compensation doit être identique au \speckle\ principal.}
+\label{fig:speckle_bichromatique_spatial}
+\end{figure}
+
+
 
 \paragraph*{Cohérence temporelle d'une figure de \speckle\ bichromatique}
 De manière générale, un champ de speckle résulte de phénomènes d'interférence, et dépend donc fortement de la longueur d'onde du champ incident. Plus particulièrement, nous avons vu dans les sections \ref{sc:correlation_transverse} et \ref{sc:correlation_longitudinale} que la taille des grains de \speckle\ est donnée par la limite de diffraction du système et dépend donc linéairement de la longueur d'onde. 
@@ -780,7 +807,7 @@ où $c_{\mathrm{3D}}$ correspond à la fonction de corrélation \ref{eq:correlat
 La décorrélation des deux champs vis-à-vis de la cohérence temporelle est donc due à deux contributions:
 \begin{itemize}
 \item[\textendash] Le premier terme en $\exp{(-\delta\phi^2)}$ décrit l'effet de la propagation dans le diffuseur. Le déphasage accumulé localement dépendant de la longueur d'onde, la distribution de phases diffère entre le laser principal et celui de compensation. Le diffuseur ne se comportant pas exactement de la même manière en fonction de la fréquence de l'onde laser (la transmission $\tdiff(\xzero,\lambda)$ dépend de la longueur d'onde), il en résulte une décorrélation générale entre les profils d'intensité de deux \speckles .
-\item[\textendash] Le second terme traduit le déphasage accumulé lors de la propagation du laser, et décrit l'effet de la longueur d'onde du laser sur la taille des grains. Celle-ci étant proportionnelle à la longueur d'onde, les grains des deux figures de \speckle\ seront donc de tailles différentes et ne pourront se superposer que dans une zone réduite de l'espace autour du point de focalisation.
+\item[\textendash] Le second terme traduit le déphasage accumulé lors de la propagation du laser, et décrit l'effet de la longueur d'onde du laser sur la taille des grains. Celle-ci étant proportionnelle à la longueur d'onde, les grains des deux figures de \speckle\ seront donc de tailles différentes et ne pourront se superposer que dans une zone réduite de l'espace autour du point de focalisation, comme illustré figure \ref{fig:illustration_correlation_double_speckle}.
 \end{itemize}
 Une conséquence remarquable de l'équation \ref{eq:correlation_2_lambda} est que la forme de cette fonction, donnée par le degré de cohérence temporelle, est identique à celle de la corrélation spatiale d'un unique \speckle , donnée par le degré de cohérence spatiale. 
 
@@ -788,14 +815,14 @@ Une conséquence remarquable de l'équation \ref{eq:correlation_2_lambda} est qu
 La présence du facteur d'échelle $\lambda_{\mathrm{p}}/\delta \lambda\equiv \mathcal{F}$, que l'on appellera \emph{finesse}, s'interprète néanmoins aisément. En effet, la taille $\sigma$\footnote{Il n'est pas nécessaire de tenir compte de l'anisotropie des grains de \speckle\ pour ce raisonnement, les longueurs de corrélation transverse et longitudinale étant toutes deux proportionnelles à la longueur d'onde.} d'un grain de \speckle\ est donnée par la largeur de la fonction de corrélation $c_{\mathrm{3D}}$, et est proportionnelle à la longueur d'onde du laser. La largeur de la fonction de corrélation $c_{\mathrm{2}\lambda}$ est donc donnée par $l_{\mathrm{c}}=\sigma \mathcal{F}$ et correspond à la distance pour laquelle les grains des deux \speckles\ ne se superposent plus\footnote{Déterminons la distance $L$ sur laquelle deux grains de \speckle\ ne se superposent plus. On définit cette distance comme correspondant à un nombre $N$ de grains du \speckle\ du laser principal $L=N\sigma_{\mathrm{p}}$, et un nombre $N+1$ de grains du laser de compensation $L=(N+1)\sigma_{\mathrm{c}}$. Alors $N=\sigma_{\mathrm{c}}/(\sigma_{\mathrm{p}}-\sigma_{\mathrm{c}})\approx \lambda_{\mathrm{p}}/\delta\lambda=\mathcal{F}$.}.
 
 
-En choisissant le désaccord précédent d'environ \SI{100}{\giga\hertz} et une longueur d'onde proche de la transition $D_2$ du \isotope[87]{Rb}, $\lambda_{\mathrm{p}}\approx\SI{780.2}{\nano\metre}$, l'ordre de grandeur de cette longueur de corrélation est donc de plusieurs millimètres. Cette taille étant très grande devant la taille de nos nuages, la décorrélation par décalage des grains des deux \speckles\ ne nous limitera donc pas\footnote{À l'aide d'un banc de test similaire à celui présenté dans la thèse de Jérémie Richard \citep{richard2015propagation}, aucune décorrélation n'a pu être observée expérimentalement dans la limite de résolution du système optique dans une zone de \SI{100}{\micro\metre} autour du centre de la figure de \speckle .}.
+En choisissant le désaccord précédent d'environ \SI{100}{\giga\hertz} et une longueur d'onde proche de la transition $D_2$ du \isotope[87]{Rb}, $\lambda_{\mathrm{p}}\approx\SI{780.2}{\nano\metre}$, l'ordre de grandeur de cette longueur de corrélation $l_{\mathrm{c}}$ est donc de plusieurs millimètres. Cette taille étant très grande devant la taille de nos nuages, la décorrélation par décalage des grains des deux \speckles\ ne nous limitera donc pas\footnote{À l'aide d'un banc de test similaire à celui présenté dans la thèse de Jérémie Richard \citep{richard2015propagation}, aucune décorrélation n'a pu être observée expérimentalement dans la limite de résolution du système optique dans une zone de \SI{100}{\micro\metre} autour du centre de la figure de \speckle .}.
 
 
 
 
 
 \paragraph*{Estimation du potentiel résiduel sur $\mathbf{\etatF{1}{}}$}
-Si les profils d'intensité des \speckles\ sont varient de manières similaires à l'échelle des atomes, ceux-ci ne sont pas totalement corrélés, comme le montre le premier terme de l'équation \ref{eq:correlation_2_lambda}. Ainsi, cela signifie que le potentiel généré par le laser de compensation ne peut annuler le potentiel généré par le laser principal \emph{qu'en moyenne}. Le potentiel total $V_1(\mathbf{x})=V_{\mathrm{p,1}}(\mathbf{x})+V_{\mathrm{c,1}}(\mathbf{x})$ est donc de moyenne nulle $\overline{V_1(\mathbf{x})}=0$ et possède une variance $\sigma_{\mathrm{V}}^2$ non nulle.
+Si les profils d'intensité des \speckles\ varient de manières similaires à l'échelle des atomes ($l_{\mathrm{c}}$ est très grande devant la taille du nuage), ceux-ci ne sont pas totalement corrélés, comme le montre le facteur $\exp{( -\delta\phi^2 )}$ de l'équation \ref{eq:correlation_2_lambda}. Ainsi, cela signifie que le potentiel généré par le laser de compensation ne peut annuler le potentiel généré par le laser principal \emph{qu'en moyenne}. Le potentiel total $V_1(\mathbf{x})=V_{\mathrm{p,1}}(\mathbf{x})+V_{\mathrm{c,1}}(\mathbf{x})$ est donc de moyenne nulle $\overline{V_1(\mathbf{x})}=0$ et possède une variance $\sigma_{\mathrm{V}}^2$ non nulle.
 
 Simplifions l'étude en remplaçant les potentiels $V_{\mathrm{p,1}}(\mathbf{x})$ et $V_{\mathrm{c,1}}(\mathbf{x})$ par leurs intensités respectives $I_{\mathrm{p}}(\mathbf{x})$ et $I_{\mathrm{c}}(\mathbf{x})$ de telle sorte que
 \begin{equation}
@@ -817,12 +844,12 @@ en faisant apparaître la fonction de corrélation \ref{eq:correlation_2_lambda}
 avec $\delta\phi\approx 2\pi (n-1) \sigmae/\lambda_{\mathrm{p}} \mathcal{F} \ll 1$. Il apparaît donc que l'ordre de grandeur des fluctuations du potentiel bichromatique ne sont qu'une fraction du potentiel généré par chaque laser.
 
 
-Estimons l'ordre de grandeur de ces fluctuations de potentiel dans la configuration présentée section \ref{sc:speckle_bichromatique_mukhtar}, dans laquelle la différence de fréquence entre les deux lasers est de l'ordre de \SI{100}{\giga\hertz} pour une longueur d'onde proche de \SI{780}{\nano\metre}. La finesse associée est donc d'environ $\mathcal{F}\approx 4000$. En supposant que l'épaisseur typique de la granularité du diffuseur $\sigmae$ est de l'ordre de quelques longueurs d'onde $\lambda_{\mathrm{p}}$\footnote{L'utilisation d'un diffuseur avec $\sigmae\approx 5\lambda_{\mathrm{p}}$ suffit à générer un \speckle\ pleinement développé, la partie déterministe étant très fortement atténuée ($\overline{\tdiff}\sim e^{-100}$).}, on estime ainsi que les fluctuations du potentiel résiduel sont de l'ordre de 
+Estimons l'ordre de grandeur de ces fluctuations de potentiel dans la configuration présentée section \ref{sc:speckle_bichromatique_mukhtar}, dans laquelle la différence de fréquence entre les deux lasers est de l'ordre de \SI{100}{\giga\hertz} pour une longueur d'onde proche de \SI{780}{\nano\metre}. La finesse associée est donc d'environ $\mathcal{F}\approx 4000$. En supposant que l'épaisseur typique de la granularité du diffuseur $\sigmae$ est de l'ordre de quelques longueurs d'onde $\lambda_{\mathrm{p}}$\footnote{Nous ne possédons malheureusement pas données précises relatives à l'état de surface du diffuseur, il ne s'agit donc que d'une estimation dont l'ordre semble raisonnable. En effet, l'utilisation d'un diffuseur avec $\sigmae\approx 5\lambda_{\mathrm{p}}$ suffit à générer un \speckle\ pleinement développé, la partie déterministe étant très fortement atténuée ($\overline{\tdiff}\sim e^{-100}$).}, on estime ainsi que les fluctuations du potentiel résiduel sont de l'ordre de 
 \begin{equation}
 \sigma_{\mathrm{V}}\sim 0.01 \overline{V_{\mathrm{p,1}}} \text{ .}
 \end{equation}
 
-De même que dans la section \ref{sc:state_dependent_disorder}, le désordre résiduel que ressent l'état $\etatF{1}{}$ possède une borne supérieure pour laquelle le condensat devient perturbé. Ainsi, si les fluctuations du potentiel résiduel sont de l'ordre du potentiel chimique $\mu=\SI{40}{\hertz}$, les modulations de densité ne pourront plus écranter le potentiel désordonné. La condition $\sigma_{\mathrm{V}}\lesssim\mu$ se traduit donc en terme de potentiel maximal applicable aux atomes\footnote{$\VR$ et $\overline{V_{\mathrm{p,1}}}$ ne sont pas identiques, mais sont du même ordre de grandeur. La limite que nous présentons ne se veut pas quantitative étant donné que nous ne donnons qu'une estimation de $\sigmae$ et que la condition $\sigma_{\mathrm{V}}\lesssim\mu$ reste phénoménologique.}
+De même que dans la section \ref{sc:state_dependent_disorder}, le désordre résiduel que ressent l'état $\etatF{1}{}$ possède une borne supérieure pour laquelle le condensat devient perturbé, finalement du même ordre de grandeur que pour la configuration monochromatique (désordre résiduel de l'ordre de $1\%$ du potentiel appliqué). Ainsi, si les fluctuations du potentiel résiduel sont de l'ordre du potentiel chimique $\mu=\SI{40}{\hertz}$, les modulations de densité ne pourront plus écranter le potentiel désordonné. La condition $\sigma_{\mathrm{V}}\lesssim\mu$ se traduit donc en terme de potentiel maximal applicable aux atomes\footnote{$\VR$ et $\overline{V_{\mathrm{p,1}}}$ ne sont pas identiques, mais sont du même ordre de grandeur. La limite que nous présentons ne se veut pas quantitative étant donné que nous ne donnons qu'une estimation de $\sigmae$ et que la condition $\sigma_{\mathrm{V}}\lesssim\mu$ reste phénoménologique.}
 \begin{equation}
 \VR\lesssim\SI{4}{\kilo\hertz} \text{ ,}
 \end{equation}
@@ -831,7 +858,7 @@ semblable à la limite observée dans le cas d'un potentiel dépendant de l'éta
 
 \paragraph*{Implémentation expérimentale préliminaire}
 
-Comme annoncé section \ref{sc:montage_diffuseur}, la structure du montage optique du \speckle\ bichromatique suit la même philosophie que les montages présentés précédemment. Dans sa version préliminaire\footnote{À l'heure de l'écriture de ces lignes, seuls des tests préliminaires de stabilité ont pu être effectués. Si ceux-ci sont encourageants, il n'est pas exclu que ce montage soit modifié après essai en présence des atomes.}, celui-ci est composé d'un premier étage de mise en forme du faisceau, suivi de la partie générant le \speckle\ rayonné sur les atomes.
+Comme annoncé section \ref{sc:montage_diffuseur}, la structure du montage optique du \speckle\ bichromatique suit la même philosophie que les montages présentés précédemment. Dans sa version préliminaire\footnote{À l'heure de l'écriture de ces lignes, seuls des tests préliminaires de stabilité ont pu être effectués. Bien que ceux-ci soient encourageants, il n'est pas exclu que ce montage soit modifié après essai en présence des atomes.}, celui-ci est composé d'un premier étage de mise en forme du faisceau, suivi de la partie générant le \speckle\ rayonné sur les atomes.
 
 \begin{figure}
 \centering
@@ -843,8 +870,8 @@ Comme annoncé section \ref{sc:montage_diffuseur}, la structure du montage optiq
 Dans le cas de notre nouveau potentiel bichromatique, une étape supplémentaire de superposition des faisceaux est nécessaire afin d'obtenir les mêmes modes laser au niveau du diffuseur. L'ensemble de la partie \emph{mise en forme} est représentée figure \ref{fig:montage_speckle_bichromatique}, et comporte trois zones relatives aux différentes étapes de la mise en forme du faisceau:
 \begin{itemize}
 \item[\textendash] Une première zone est dédiée à la mise en forme du laser principal et est similaire aux montages précédents. Le faisceau du laser principal est généré par le laser Toptica TA-Pro, et son mode et sa polarisation sont filtrés à l'aide d'une fibre optique à maintien de polarisation et d'un cube séparateur de polarisation. Sa puissance est stabilisée à l'aide d'une boucle de rétroaction réalisée à l'aide d'un modulateur acousto-optique et d'une photodiode, et permet de plus de s'affranchir des fluctuations de puissance liées aux fluctuations de polarisation du laser, comme précédemment. Ce laser étant désaccordé d'environ \SI{100}{\giga\hertz}, il n'est pas nécessaire d'en asservir la fréquence.
-\item[\textendash] Une seconde zone, similaire à la première, permet de mettre en forme le faisceau du laser de compensation. Celui-ci est émis par un laser \emph{Sacher Lasertechnik Cheetah} d'une puissance maximale de \SI{380}{\milli\watt}, et subit le même traitement que le faisceau principal. Cependant, la fréquence de ce laser est stabilisée par battement sur le laser repompeur \emph{L2} étant donné son désaccord modéré.
-\item[\textendash] Enfin, une troisième zone permet de mélanger les lasers. Pour cela, les faisceaux sont superposés à l'aide d'une lame séparatrice $50/50$, et un polariseur permet de superposer les polarisations des deux lasers. Ceux-ci sont ensuite injectés dans la même fibre optique à maintien de polarisation, garantissant une superposition parfaite des modes pour la génération du \speckle .
+\item[\textendash] Une seconde zone, similaire à la première, permet de mettre en forme le faisceau du laser de compensation. Celui-ci est émis par un laser \emph{Sacher Lasertechnik Cheetah} d'une puissance maximale d'environ \SI{100}{\milli\watt}, et subit le même traitement que le faisceau principal. Cependant, la fréquence de ce laser est stabilisée par battement sur le laser repompeur \emph{L2} étant donné son désaccord modéré, de l'ordre de \SI{1.5}{\giga\hertz}.
+\item[\textendash] Enfin, une troisième zone permet de combiner dans le même mode spatial les lasers. Pour cela, les faisceaux sont superposés à l'aide d'une lame séparatrice $50/50$, et un polariseur permet de superposer les polarisations des deux lasers. Ceux-ci sont ensuite injectés dans la même fibre optique à maintien de polarisation, garantissant une superposition parfaite des modes pour la génération du \speckle .
 \end{itemize}
 
 

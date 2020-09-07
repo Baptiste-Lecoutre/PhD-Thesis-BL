@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  6 SEP 2020 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  7 SEP 2020 17:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -1732,7 +1732,7 @@ l.27 ...ge radio-fréquence}{42}{subsection.3.2.4}
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71 ...ffusion élastique}{129}{subsection.6.2.3}
+l.71 ...ffusion élastique}{131}{subsection.6.2.3}
                                                   % [2] [3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -2225,54 +2225,78 @@ Package pdftex.def Info: Fig/Speckle/montage_speckle_specfunc.pdf  used on inpu
 t line 569.
 (pdftex.def)             Requested size: 426.79135pt x 202.11124pt.
  [108] [109 <./Fig/Speckle/montage_speckle_specfunc.pdf>]
-<Fig/Speckle/speckle_bichromatique.pdf, id=13735, 507.09283pt x 203.79584pt>
-File: Fig/Speckle/speckle_bichromatique.pdf Graphic file (type pdf)
-<use Fig/Speckle/speckle_bichromatique.pdf>
-Package pdftex.def Info: Fig/Speckle/speckle_bichromatique.pdf  used on input l
-ine 628.
-(pdftex.def)             Requested size: 426.79135pt x 171.5325pt.
+<Fig/Speckle/speckle_bichromatique_repulsif.pdf, id=13735, 452.29414pt x 189.22
+226pt>
+File: Fig/Speckle/speckle_bichromatique_repulsif.pdf Graphic file (type pdf)
+<use Fig/Speckle/speckle_bichromatique_repulsif.pdf>
+Package pdftex.def Info: Fig/Speckle/speckle_bichromatique_repulsif.pdf  used o
+n input line 628.
+(pdftex.def)             Requested size: 426.79135pt x 178.5561pt.
  [110]
-Underfull \vbox (badness 2269) has occurred while \output is active []
+Underfull \vbox (badness 3590) has occurred while \output is active []
 
- [111 <./Fig/Speckle/speckle_bichromatique.pdf>]
+ [111 <./Fig/Speckle/speckle_bichromatique_repulsif.pdf>]
+<Fig/Speckle/speckle_bichromatique_attractif.pdf, id=13764, 452.29414pt x 185.0
+9686pt>
+File: Fig/Speckle/speckle_bichromatique_attractif.pdf Graphic file (type pdf)
+<use Fig/Speckle/speckle_bichromatique_attractif.pdf>
+Package pdftex.def Info: Fig/Speckle/speckle_bichromatique_attractif.pdf  used 
+on input line 674.
+(pdftex.def)             Requested size: 426.79135pt x 174.66325pt.
+ [112]
 
-LaTeX Warning: Reference `fig:speckle_bichromatique_rouge' on page 112 undefine
-d on input line 672.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[112]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [113]
-[114]
-<Fig/Speckle/illustration_correlation_double_speckle.pdf, id=13818, 474.40244pt
+Underfull \vbox (badness 3884) has occurred while \output is active []
+
+ [113 <./Fig/Speckle/speckle_bichromatique_attractif.pdf>]
+<Fig/Speckle/sequence_spectro_transition.pdf, id=13804, 314.39844pt x 167.42793
+pt>
+File: Fig/Speckle/sequence_spectro_transition.pdf Graphic file (type pdf)
+<use Fig/Speckle/sequence_spectro_transition.pdf>
+Package pdftex.def Info: Fig/Speckle/sequence_spectro_transition.pdf  used on i
+nput line 744.
+(pdftex.def)             Requested size: 384.1096pt x 204.56578pt.
+ [114]
+<Fig/Speckle/speckle_bichromatique_spatial.pdf, id=13813, 190.2677pt x 66.93187
+pt>
+File: Fig/Speckle/speckle_bichromatique_spatial.pdf Graphic file (type pdf)
+<use Fig/Speckle/speckle_bichromatique_spatial.pdf>
+Package pdftex.def Info: Fig/Speckle/speckle_bichromatique_spatial.pdf  used on
+ input line 764.
+(pdftex.def)             Requested size: 384.1096pt x 135.13284pt.
+ [115 <./Fig/Speckle/sequence_spectro_transition.pdf>] [116 <./Fig/Speckle/spec
+kle_bichromatique_spatial.pdf>]
+<Fig/Speckle/illustration_correlation_double_speckle.pdf, id=13851, 474.40244pt
  x 204.32954pt>
 File: Fig/Speckle/illustration_correlation_double_speckle.pdf Graphic file (typ
 e pdf)
 <use Fig/Speckle/illustration_correlation_double_speckle.pdf>
 Package pdftex.def Info: Fig/Speckle/illustration_correlation_double_speckle.pd
-f  used on input line 775.
+f  used on input line 802.
 (pdftex.def)             Requested size: 426.79135pt x 183.83252pt.
- [115]
-Underfull \vbox (badness 4792) has occurred while \output is active []
-
- [116 <./Fig/Speckle/illustration_correlation_double_speckle.pdf>] [117]
-<Fig/Speckle/montage_speckle_bichromatique.pdf, id=14020, 599.2902pt x 262.5814
+ [117 <./Fig/Speckle/illustration_correlation_double_speckle.pdf>] [118]
+<Fig/Speckle/montage_speckle_bichromatique.pdf, id=14041, 599.2902pt x 262.5814
 pt>
 File: Fig/Speckle/montage_speckle_bichromatique.pdf Graphic file (type pdf)
 <use Fig/Speckle/montage_speckle_bichromatique.pdf>
 Package pdftex.def Info: Fig/Speckle/montage_speckle_bichromatique.pdf  used on
- input line 838.
+ input line 865.
 (pdftex.def)             Requested size: 426.79135pt x 186.99902pt.
- [118 <./Fig/Speckle/montage_speckle_bichromatique.pdf>]) (Chapters/Taus_PRL.te
-x [119] [120
+
+[119]) (Chapters/Taus_PRL.tex [120 <./Fig/Speckle/montage_speckle_bichromatique
+.pdf>] [121
+
+] [122
 
 ]
 Chapitre 6.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [121]
-<Fig/TauS_PRL/illustration_contexte_taus.pdf, id=14964, 234.62099pt x 133.5281p
+ [123]
+<Fig/TauS_PRL/illustration_contexte_taus.pdf, id=14991, 234.62099pt x 133.5281p
 t>
 File: Fig/TauS_PRL/illustration_contexte_taus.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/illustration_contexte_taus.pdf>
@@ -2280,36 +2304,36 @@ Package pdftex.def Info: Fig/TauS_PRL/illustration_contexte_taus.pdf  used on i
 nput line 22.
 (pdftex.def)             Requested size: 234.62039pt x 133.52777pt.
 
-[122 <./Fig/TauS_PRL/illustration_contexte_taus.pdf>]
-<Fig/TauS_PRL/desordre_2D.pdf, id=15017, 516.13782pt x 219.69249pt>
+[124 <./Fig/TauS_PRL/illustration_contexte_taus.pdf>]
+<Fig/TauS_PRL/desordre_2D.pdf, id=15044, 516.13782pt x 219.69249pt>
 File: Fig/TauS_PRL/desordre_2D.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/desordre_2D.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/desordre_2D.pdf  used on input line 58.
 (pdftex.def)             Requested size: 426.79135pt x 181.6642pt.
- [123 <./Fig/TauS_PRL/desordre_2D.pdf>]
-<Fig/TauS_PRL/prediction_taus_born.pdf, id=15267, 307.61336pt x 174.78033pt>
+ [125 <./Fig/TauS_PRL/desordre_2D.pdf>]
+<Fig/TauS_PRL/prediction_taus_born.pdf, id=15295, 307.61336pt x 174.78033pt>
 File: Fig/TauS_PRL/prediction_taus_born.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/prediction_taus_born.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/prediction_taus_born.pdf  used on input l
 ine 104.
 (pdftex.def)             Requested size: 307.6126pt x 174.77989pt.
- [124] [125 <./Fig/TauS_PRL/prediction_taus_born.pdf>] [126]
-[127]
-<Fig/TauS_PRL/extraction_taus.pdf, id=15456, 552.55775pt x 180.51674pt>
+ [126] [127 <./Fig/TauS_PRL/prediction_taus_born.pdf>] [128]
+[129]
+<Fig/TauS_PRL/extraction_taus.pdf, id=15483, 552.55775pt x 180.51674pt>
 File: Fig/TauS_PRL/extraction_taus.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/extraction_taus.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/extraction_taus.pdf  used on input line 1
 57.
 (pdftex.def)             Requested size: 426.79135pt x 139.4335pt.
- [128 <./Fig/TauS_PRL/extraction_taus.pdf>]
-<Fig/TauS_PRL/donnees_taus_prl.pdf, id=15575, 539.3249pt x 260.84604pt>
+ [130 <./Fig/TauS_PRL/extraction_taus.pdf>]
+<Fig/TauS_PRL/donnees_taus_prl.pdf, id=15602, 539.3249pt x 260.84604pt>
 File: Fig/TauS_PRL/donnees_taus_prl.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/donnees_taus_prl.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/donnees_taus_prl.pdf  used on input line 
 179.
 (pdftex.def)             Requested size: 426.79135pt x 206.42033pt.
- [129 <./Fig/TauS_PRL/donnees_taus_prl.pdf>] [130]
-<Fig/TauS_PRL/map_deviations_born.pdf, id=15638, 237.00209pt x 322.96284pt>
+ [131 <./Fig/TauS_PRL/donnees_taus_prl.pdf>] [132]
+<Fig/TauS_PRL/map_deviations_born.pdf, id=15666, 237.00209pt x 322.96284pt>
 File: Fig/TauS_PRL/map_deviations_born.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/map_deviations_born.pdf>
 Package pdftex.def Info: Fig/TauS_PRL/map_deviations_born.pdf  used on input li
@@ -2319,8 +2343,8 @@ ne 218.
 
 LaTeX Warning: Float too large for page by 10.57846pt on input line 221.
 
-[131] [132 <./Fig/TauS_PRL/map_deviations_born.pdf>] [133]
-<Fig/TauS_PRL/depart_quadratique_taus.pdf, id=15730, 296.38025pt x 187.97522pt>
+[133] [134 <./Fig/TauS_PRL/map_deviations_born.pdf>] [135]
+<Fig/TauS_PRL/depart_quadratique_taus.pdf, id=15757, 296.38025pt x 187.97522pt>
 
 File: Fig/TauS_PRL/depart_quadratique_taus.pdf Graphic file (type pdf)
 <use Fig/TauS_PRL/depart_quadratique_taus.pdf>
@@ -2328,16 +2352,16 @@ Package pdftex.def Info: Fig/TauS_PRL/depart_quadratique_taus.pdf  used on inpu
 t line 256.
 (pdftex.def)             Requested size: 298.75264pt x 189.48059pt.
 )
-(Chapters/TauS_NJP.tex [134 <./Fig/TauS_PRL/depart_quadratique_taus.pdf>]
+(Chapters/TauS_NJP.tex [136 <./Fig/TauS_PRL/depart_quadratique_taus.pdf>]
 Chapitre 7.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [135
+ [137
 
 ]
-[136]
-<Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf, id=15790, 414.8217
+[138]
+<Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf, id=15818, 414.8217
 5pt x 133.86089pt>
 File: Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf Graphic file (
 type pdf)
@@ -2345,22 +2369,22 @@ type pdf)
 Package pdftex.def Info: Fig/TauS_NJP/illustration_fonction_spectrale_diffusion
 .pdf  used on input line 81.
 (pdftex.def)             Requested size: 426.79135pt x 137.72505pt.
- [137] [138 <./Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf>] [13
-9]
-<Fig/TauS_NJP/donnees_taus_ordre3.pdf, id=15848, 1223.84964pt x 402.92387pt>
+ [139] [140 <./Fig/TauS_NJP/illustration_fonction_spectrale_diffusion.pdf>] [14
+1]
+<Fig/TauS_NJP/donnees_taus_ordre3.pdf, id=15875, 1223.84964pt x 402.92387pt>
 File: Fig/TauS_NJP/donnees_taus_ordre3.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/donnees_taus_ordre3.pdf>
 Package pdftex.def Info: Fig/TauS_NJP/donnees_taus_ordre3.pdf  used on input li
 ne 152.
 (pdftex.def)             Requested size: 426.79135pt x 140.50902pt.
- [140 <./Fig/TauS_NJP/donnees_taus_ordre3.pdf>] [141]
-<Fig/TauS_NJP/SCBA_gauss.pdf, id=15922, 986.68166pt x 418.55444pt>
+ [142 <./Fig/TauS_NJP/donnees_taus_ordre3.pdf>] [143]
+<Fig/TauS_NJP/SCBA_gauss.pdf, id=15950, 986.68166pt x 418.55444pt>
 File: Fig/TauS_NJP/SCBA_gauss.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/SCBA_gauss.pdf>
 Package pdftex.def Info: Fig/TauS_NJP/SCBA_gauss.pdf  used on input line 188.
 (pdftex.def)             Requested size: 426.79135pt x 181.04785pt.
- [142 <./Fig/TauS_NJP/SCBA_gauss.pdf>] [143]
-<Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf, id=15977, 238.26625pt
+ [144 <./Fig/TauS_NJP/SCBA_gauss.pdf>] [145]
+<Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf, id=16004, 238.26625pt
  x 166.42601pt>
 File: Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf Graphic file (typ
 e pdf)
@@ -2368,15 +2392,15 @@ e pdf)
 Package pdftex.def Info: Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pd
 f  used on input line 245.
 (pdftex.def)             Requested size: 285.91805pt x 199.71019pt.
- [144] [145 <./Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf>]
-<Fig/TauS_NJP/fonctions_spectrales_rouge.pdf, id=16007, 514.48901pt x 243.04524
+ [146] [147 <./Fig/TauS_NJP/illustration_mesure_fonction_spectrale.pdf>]
+<Fig/TauS_NJP/fonctions_spectrales_rouge.pdf, id=16034, 514.48901pt x 243.04524
 pt>
 File: Fig/TauS_NJP/fonctions_spectrales_rouge.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/fonctions_spectrales_rouge.pdf>
 Package pdftex.def Info: Fig/TauS_NJP/fonctions_spectrales_rouge.pdf  used on i
 nput line 295.
 (pdftex.def)             Requested size: 426.79135pt x 201.62364pt.
-<Fig/TauS_NJP/fonctions_spectrales_bleu.pdf, id=16010, 518.83864pt x 242.02167p
+<Fig/TauS_NJP/fonctions_spectrales_bleu.pdf, id=16037, 518.83864pt x 242.02167p
 t>
 File: Fig/TauS_NJP/fonctions_spectrales_bleu.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/fonctions_spectrales_bleu.pdf>
@@ -2387,13 +2411,13 @@ put line 300.
 
 LaTeX Warning: Float too large for page by 7.03667pt on input line 303.
 
-[146] [147 <./Fig/TauS_NJP/fonctions_spectrales_rouge.pdf> <./Fig/TauS_NJP/fonc
+[148] [149 <./Fig/TauS_NJP/fonctions_spectrales_rouge.pdf> <./Fig/TauS_NJP/fonc
 tions_spectrales_bleu.pdf
 
 pdfTeX warning: pdflatex (file ./Fig/TauS_NJP/fonctions_spectrales_bleu.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]
-<Fig/TauS_NJP/fonctions_spectrales_classiques.pdf, id=16049, 539.70927pt x 584.
+<Fig/TauS_NJP/fonctions_spectrales_classiques.pdf, id=16077, 539.70927pt x 584.
 4436pt>
 File: Fig/TauS_NJP/fonctions_spectrales_classiques.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/fonctions_spectrales_classiques.pdf>
@@ -2403,17 +2427,17 @@ Package pdftex.def Info: Fig/TauS_NJP/fonctions_spectrales_classiques.pdf  used
 
 Underfull \vbox (badness 6808) has occurred while \output is active []
 
- [148]
-[149 <./Fig/TauS_NJP/fonctions_spectrales_classiques.pdf>] [150]
-<Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf, id=16880, 821.41615pt x 435.
+ [150]
+[151 <./Fig/TauS_NJP/fonctions_spectrales_classiques.pdf>] [152]
+<Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf, id=16907, 821.41615pt x 435.
 9719pt>
 File: Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf>
 Package pdftex.def Info: Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf  used
  on input line 361.
 (pdftex.def)             Requested size: 426.79135pt x 226.52042pt.
- [151 <./Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf>]
-<Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf, id=16907, 838.29054pt x 436.7
+ [153 <./Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf>]
+<Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf, id=16934, 838.29054pt x 436.7
 43pt>
 File: Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf Graphic file (type pdf)
 <use Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf>
@@ -2423,17 +2447,17 @@ on input line 376.
 
 Underfull \vbox (badness 7064) has occurred while \output is active []
 
- [152 <./Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf>]) (Chapters/Conclusio
+ [154 <./Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf>]) (Chapters/Conclusio
 n.tex
-[153] [154
+[155] [156
 
 ]
 Chapitre 8.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [155]
-<Fig/Conclusion/spectro_transition_anderson.pdf, id=16953, 452.45566pt x 142.77
+ [157]
+<Fig/Conclusion/spectro_transition_anderson.pdf, id=16980, 452.45566pt x 142.77
 16pt>
 File: Fig/Conclusion/spectro_transition_anderson.pdf Graphic file (type pdf)
 <use Fig/Conclusion/spectro_transition_anderson.pdf>
@@ -2443,48 +2467,48 @@ n input line 32.
 
 Underfull \vbox (badness 6944) has occurred while \output is active []
 
- [156 <./Fig/Conclusion/spectro_transition_anderson.pdf>] [157]
-<Fig/Conclusion/cbs_cfs.pdf, id=17010, 481.9821pt x 297.50862pt>
+ [158 <./Fig/Conclusion/spectro_transition_anderson.pdf>] [159]
+<Fig/Conclusion/cbs_cfs.pdf, id=17037, 481.9821pt x 297.50862pt>
 File: Fig/Conclusion/cbs_cfs.pdf Graphic file (type pdf)
 <use Fig/Conclusion/cbs_cfs.pdf>
 Package pdftex.def Info: Fig/Conclusion/cbs_cfs.pdf  used on input line 74.
 (pdftex.def)             Requested size: 426.79135pt x 263.44719pt.
- [158 <./Fig/Conclusion/cbs_cfs.pdf>] [159]
-<Fig/Conclusion/landscape.pdf, id=18258, 453.53421pt x 158.82379pt>
+ [160 <./Fig/Conclusion/cbs_cfs.pdf>] [161]
+<Fig/Conclusion/landscape.pdf, id=18286, 453.53421pt x 158.82379pt>
 File: Fig/Conclusion/landscape.pdf Graphic file (type pdf)
 <use Fig/Conclusion/landscape.pdf>
 Package pdftex.def Info: Fig/Conclusion/landscape.pdf  used on input line 131.
 (pdftex.def)             Requested size: 426.79135pt x 149.45917pt.
- [160 <./Fig/Conclusion/landscape.pdf>])
-(Appendices/Anex_speckle.tex [161] [162
+ [162 <./Fig/Conclusion/landscape.pdf>])
+(Appendices/Anex_speckle.tex [163] [164
 
 ]
 Annexe A.
-[163] [164] [165] [166]) (Appendices/Anex_Born.tex [167] [168]
+[165] [166] [167] [168]) (Appendices/Anex_Born.tex [169] [170]
 Annexe B.
-[169
+[171
 
 ]
 Overfull \hbox (6.44913pt too wide) detected at line 60
 []
  []
 
-[170] [171]
+[172] [173]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [172]
+ [174]
 Underfull \vbox (badness 2418) has occurred while \output is active []
 
- [173]
+ [175]
 Overfull \hbox (1.41833pt too wide) detected at line 167
 []
  []
 
-[174]) [175] [176
+[176]) [177] [178
 
-] (main.bbl [177
+] (main.bbl [179
 
-] [178] [179]
+] [180] [181]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
 27.
 
@@ -2496,11 +2520,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[180] [181] [182] [183]) [184] [185
+[182] [183] [184] [185]) [186] [187
 
 
 ]
-<Fig/EDOM.png, id=18516, 1083.29718pt x 215.30438pt>
+<Fig/EDOM.png, id=18543, 1083.29718pt x 215.30438pt>
 File: Fig/EDOM.png Graphic file (type png)
 <use Fig/EDOM.png>
 Package pdftex.def Info: Fig/EDOM.png  used on input line 93.
@@ -2520,7 +2544,7 @@ Overfull \hbox (19.91684pt too wide) in paragraph at lines 93--93
 []|[]| 
  []
 
-<Fig/e.png, id=18517, 45.16875pt x 62.51355pt>
+<Fig/e.png, id=18544, 45.16875pt x 62.51355pt>
 File: Fig/e.png Graphic file (type png)
 <use Fig/e.png>
 Package pdftex.def Info: Fig/e.png  used on input line 93.
@@ -2541,7 +2565,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
-[186 <./Fig/EDOM.png> <./Fig/e.png>]
+[188 <./Fig/EDOM.png> <./Fig/e.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
@@ -2550,19 +2574,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 93.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 34060 strings out of 480934
- 652530 string characters out of 2899917
- 1101543 words of memory out of 3000000
- 47781 multiletter control sequences out of 15000+200000
- 764013 words of font info for 380 fonts, out of 3000000 for 9000
+ 34085 strings out of 480934
+ 653632 string characters out of 2899917
+ 1103505 words of memory out of 3000000
+ 47798 multiletter control sequences out of 15000+200000
+ 763912 words of font info for 379 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,2171b,1134s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\lecou\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
@@ -2615,9 +2633,9 @@ fb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/urw/helvetic/uhvb8a.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on main.pdf (188 pages, 23430984 bytes).
+Output written on main.pdf (190 pages, 24099662 bytes).
 PDF statistics:
- 19254 PDF objects out of 22161 (max. 8388607)
- 899 named destinations out of 1000 (max. 500000)
- 77561 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 19283 PDF objects out of 22161 (max. 8388607)
+ 906 named destinations out of 1000 (max. 500000)
+ 77576 words of extra memory for PDF output out of 89155 (max. 10000000)
 
