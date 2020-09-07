@@ -767,31 +767,66 @@ L'étude de la similitude de deux figures de \speckle\ présentée dans cette se
 \end{figure}
 
 
+\paragraph*{Statistique du potentiel total sur $\mathbf{\etatF{1}{}}$}
+Étant donné que les degrés de libertés expérimentaux sont déterminés par la condition \ref{eq:contraintes_potentiel_bichromatique}, le potentiel total $V_1(\mathbf{x})=V_{\mathrm{p,1}}(\mathbf{x})+V_{\mathrm{c,1}}(\mathbf{x})$ est de moyenne nulle $\overline{V_1(\mathbf{x})}=0$ par construction. Cependant, sa variance $\sigma_{\mathrm{V}_1}^2$, caractérisant les fluctuations du potentiel total autour de sa valeur moyenne, ne s'annule pas forcément.
+
+%À l'aide des propriétés statistiques des potentiels de type speckle, on montre alors que la variance du potentiel total peut se mettre sous la forme:
+%\begin{equation}
+%\sigma_{\mathrm{V}_1}^2(\mathbf{x},\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=2 \left| \overline{V_{\mathrm{p,1}}}(\mathbf{x})\overline{V_{\mathrm{c,1}}}(\mathbf{x})\right| (1+c_{2\lambda}(\mathbf{x})) \quad \text{avec} \quad c_{2\lambda}(\mathbf{x})=\frac{\overline{\delta V_{\mathrm{p,1}}(\mathbf{x}) \delta V_{\mathrm{c,1}}(\mathbf{x})}}{\left|\overline{V_{\mathrm{p,1}}}(\mathbf{x})\overline{V_{\mathrm{c,1}}}(\mathbf{x})\right|} \text{ ,}
+%\end{equation}
+%en faisant apparaître les fluctuations de potentiel $\delta V_{\mathrm{p,1}}= V_{\mathrm{p,1}}-\overline{V_{\mathrm{p,1}}}$ et $\delta V_{\mathrm{c,1}} = V_{\mathrm{c,1}} - \overline{V_{\mathrm{c,1}}}$. 
+
+Simplifions l'étude en remplaçant les potentiels $V_{\mathrm{p,1}}(\mathbf{x})$ et $V_{\mathrm{c,1}}(\mathbf{x})$ par leurs intensités respectives $I_{\mathrm{p}}(\mathbf{x})$ et $I_{\mathrm{c}}(\mathbf{x})$ de telle sorte que
+\begin{equation}
+V_1(\mathbf{x})\propto I_{\mathrm{p}}(\mathbf{x}) - I_{\mathrm{c}}(\mathbf{x}) \text{ ,}
+\end{equation}
+et que $\overline{I_{\mathrm{p}}(\mathbf{x})}=\overline{I_{\mathrm{c}}(\mathbf{x})}=I_0(\mathbf{x})$\footnote{En réalité, les intensités des deux \speckles\ ne sont pas de mêmes valeurs moyennes, cependant il est possible de se ramener formellement à cette situation en tenant compte du fait que les différents désaccords des faisceaux équilibrent les potentiels associés.}. En définissant la différence de ces intensités par la variable $I=I_{\mathrm{p}}-I_{\mathrm{c}}$, l'étude de la variance du potentiel revient à étudier la quantité
+\begin{equation}
+\sigma_{\mathrm{I}}^2(\mathbf{x},\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=2 I_0^2(\mathbf{x}) \left(1- c_{\mathrm{2}\lambda}(\mathbf{x}) \right) \quad \text{avec} \quad c_{\mathrm{2}\lambda}(\mathbf{x})=\frac{\overline{\delta I_{\mathrm{p}}(\mathbf{x})\delta I_{\mathrm{c}}(\mathbf{x})}}{I_0^2(\mathbf{x})} \text{ ,}
+\label{eq:variance_intensite_bichromatique}
+\end{equation}
+en faisant apparaître la fonction de corrélation des fluctuations d'intensité. L'interprétation de cette équation est directe: si les deux intensités sont parfaitement corrélées, celles-ci se compensent exactement et $\sigma_{\mathrm{I}}=0$. Dans le cas où celles-ci sont totalement décorrélées, la variance totale est alors la somme des variances de chaque intensité, comme attendu dans le cas de variables aléatoires indépendantes.
+
+
+
+
+
+
+
+
+
+
 
 \paragraph*{Cohérence temporelle d'une figure de \speckle\ bichromatique}
 De manière générale, un champ de speckle résulte de phénomènes d'interférence, et dépend donc fortement de la longueur d'onde du champ incident. Plus particulièrement, nous avons vu dans les sections \ref{sc:correlation_transverse} et \ref{sc:correlation_longitudinale} que la taille des grains de \speckle\ est donnée par la limite de diffraction du système et dépend donc linéairement de la longueur d'onde. 
 
-On comprend donc que si les deux profils d'intensité lumineuse sont semblables au point de focalisation des faisceaux, la superposition des grains de lumière se dégrade en s'éloignant de ce point, comme illustré figure \ref{fig:illustration_correlation_double_speckle}. Cette question de superposition des figures d'interférences de plusieurs fréquences optiques est un problème bien connu en optique: il s'agit ici d'étudier l'influence de la cohérence temporelle sur notre désordre bichromatique. Cette influence est quantifiée par le degré de cohérence temporelle
+On comprend donc que si deux profils d'intensité lumineuse sont semblables au point de focalisation des faisceaux, la superposition des grains de lumière se dégrade en s'éloignant de ce point, comme illustré figure \ref{fig:illustration_correlation_double_speckle}. Cette question de superposition des figures d'interférences de plusieurs fréquences optiques est un problème bien connu en optique: il s'agit ici d'étudier l'influence de la cohérence temporelle sur notre désordre bichromatique. Cette influence est quantifiée par la fonction de corrélation des fluctuations d'intensité que nous avons identifiée équation \ref{eq:variance_intensite_bichromatique}, que l'on peut réécrire 
 \begin{equation}
 \overline{\delta I_{\mathrm{p}}(\mathbf{x}) \delta I_{\mathrm{c}} (\mathbf{x})} = \left| \overline{E_{\mathrm{p}}(\mathbf{x}) E^*_{\mathrm{c}}(\mathbf{x})} \right|^2 \text{ ,}
 \end{equation}
-qui fait apparaître la fonction de corrélation en amplitude entre les deux champs évalués au même point. En effet, l'objet de notre étude est de quantifier la mesure dans laquelle les deux motifs de \speckle\ sont similaires en un point donné.
+à l'aide du théorème de Wick. Il est alors possible d'interpréter cette dernière comme étant le degré de cohérence temporelle en faisant apparaître la fonction de corrélation en amplitude entre les deux champs évalués au même point. En effet, l'objet de notre étude est de quantifier la mesure dans laquelle les deux motifs de \speckle\ sont similaires en un point donné.
 
 
-De même que dans le cas d'un \speckle\ monochromatique, l'expression de la fonction de corrélation en amplitude $\overline{E_{\mathrm{p}}(\mathbf{x}) E^*_{\mathrm{c}}(\mathbf{x})}$ fait apparaître la fonction de corrélation du diffuseur, définie à l'aide de sa transmission:
+Supposons à présent que les modes de chacun des lasers soient identiques et parfaitement superposés\footnote{On satisfait expérimentalement cette hypothèse en injectant les deux faisceaux dans la même fibre optique, voir figure \ref{fig:montage_speckle_bichromatique}.}, de telle sorte que tous deux soient décrits par le même profil d'intensité $I'_0(\xzero)$ de l'équation \ref{eq:profil_intensite_diffuseur}. De même que dans le cas d'un \speckle\ monochromatique, l'expression de la fonction de corrélation en amplitude $\overline{E_{\mathrm{p}}(\mathbf{x}) E^*_{\mathrm{c}}(\mathbf{x})}$ fait apparaître la fonction de corrélation du diffuseur, définie à l'aide de sa transmission:
 \begin{equation}
 \Cdiff(\xzero,\xzero',\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=\overline{\tdiff(\xzero,\lambda_{\mathrm{p}})\tdiff^*(\xzero',\lambda_{\mathrm{c}})} \text{ ,}
 \end{equation}
-dont l'expression a été généralisée au cas bichromatique qui nous intéresse à présent. On montre annexe \ref{ch:anex_speckle} que l'expression \ref{eq:correlation_diffuseur} se généralise alors à
+dont l'expression a été généralisée au cas bichromatique qui nous intéresse à présent. 
+
+On montre que la fonction de corrélation du diffuseur peut s'écrire (voir annexe \ref{ch:anex_speckle}):
 \begin{equation}
 \Cdiff(\xzero,\xzero',\lambda_{\mathrm{p}},\lambda_{\mathrm{c}})=\exp{\left( -\frac{{\delta\phi}^2}{2}\right) } \exp{\left( -\frac{\pi^2 \theta_{\mathrm{diff}}^2}{2}\frac{(\xzero - \xzero')^2}{\lambda_{\mathrm{p}} \lambda_{\mathrm{c}}} \right)} \text{ ,}
 \end{equation}
-avec $\delta\phi=\left| \sigma_{\phi,\mathrm{p}} - \sigma_{\phi,\mathrm{c}} \right|$  la différence des largeurs des distributions de phases induites par le diffuseur aux deux longueurs d'onde d'intérêt $\lambda_{\mathrm{p}}$ et $\lambda_{\mathrm{c}}$, et $\theta_{\mathrm{diff}}$ est l'angle de diffusion, indépendant de la longueur d'onde.
+où la quantité $\delta\phi=\left| \sigma_{\phi,\mathrm{p}} - \sigma_{\phi,\mathrm{c}} \right|$  correspond à la différence des largeurs des distributions de phases induites par le diffuseur aux deux longueurs d'onde d'intérêt $\lambda_{\mathrm{p}}$ et $\lambda_{\mathrm{c}}$.  L'angle de diffusion $\theta_{\mathrm{diff}}\approx\SI{5}{\degree}$ est indépendant de la longueur d'onde et constitue une constante du diffuseur. 
+
+$\delta\phi\approx 2\pi (n-1) \sigmae|\delta\lambda|/\lambda_{\mathrm{p}}^2$, avec $\mathcal{F}=\lambda_{\mathrm{p}}/\delta\lambda$ la \emph{finesse}.
 
 
-Supposons à présent que les modes de chacun des lasers soient identiques et parfaitement superposés\footnote{On satisfait expérimentalement cette hypothèse en injectant les deux faisceaux dans la même fibre optique, voir figure \ref{fig:montage_speckle_bichromatique}.}, de telle sorte que tous deux soient décrits par le même profil d'intensité $I'_0(\xzero)$ de l'équation \ref{eq:profil_intensite_diffuseur}. On montre annexe \ref{ch:anex_speckle} que, aux alentours du plan de Fourier, la fonction de corrélation normalisée des fluctuations d'intensité à trois dimensions entre les deux \speckles\ générés par le même diffuseur est donnée par
+
+
+ On montre annexe \ref{ch:anex_speckle} que, aux alentours du plan de Fourier, la fonction de corrélation normalisée des fluctuations d'intensité à trois dimensions entre les deux \speckles\ générés par le même diffuseur est donnée par
 \begin{align}
-\nonumber c_{\mathrm{2}\lambda} (\mathbf{x}_{\perp},\delta z) &=\frac{\overline{\delta I_{\mathrm{p}}(\mathbf{x}_{\perp},\delta z) \delta I_{\mathrm{c}}(\mathbf{x}_{\perp},\delta z)}}{\sqrt{\overline{\delta I_{\mathrm{p}}^2(\mathbf{x}_{\perp},\delta z)} \: \overline{\delta I_{\mathrm{c}}^2(\mathbf{x}_{\perp},\delta z)}}}\\
+\nonumber c_{\mathrm{2}\lambda} (\mathbf{x}_{\perp},\delta z) &=\frac{\overline{\delta I_{\mathrm{p}}(\mathbf{x}_{\perp},\delta z) \delta I_{\mathrm{c}}(\mathbf{x}_{\perp},\delta z)}}{I_0^2(\mathbf{x}_{\perp},\delta z)}\\
 &=\exp{\left( -\delta\phi^2 \right)}\times c_{\mathrm{3D}}\left( \mathbf{x}_{\perp} \frac{\delta\lambda}{\lambda_{\mathrm{p}}}, \delta z\frac{\delta\lambda}{\lambda_{\mathrm{p}}} \right) \text{ ,}
 \label{eq:correlation_2_lambda}
 \end{align}
@@ -839,9 +874,9 @@ en faisant apparaître la fonction de corrélation \ref{eq:correlation_2_lambda}
 
 Étant donné la taille de nos nuages, on peut considérer que les atomes sont insensibles aux variations spatiales de la fonction de corrélation \ref{eq:correlation_2_lambda}, que l'on approxime alors par sa valeur au centre $c_{\mathrm{2}\lambda}(0)=\exp{(-\delta\phi^2)}$. On peut alors estimer les variations statistiques du potentiel ressenti par les atomes à $\left|\sigma_{\mathrm{V}}/\overline{V_{\mathrm{p,1}}}\right|=\sqrt{\sigma_{\mathrm{I}}^2/I_0^2}$, soit
 \begin{equation}
-\sigma_{\mathrm{V}}\sim \sqrt{2} \left|\overline{V_{\mathrm{p,1}}} \delta\phi \right| \text{ ,}
+\sigma_{\mathrm{V}}\sim \sqrt{2} \left|\overline{V_{\mathrm{p,1}}} \delta\phi \right| \text{ .}
 \end{equation}
-avec $\delta\phi\approx 2\pi (n-1) \sigmae/\lambda_{\mathrm{p}} \mathcal{F} \ll 1$. Il apparaît donc que l'ordre de grandeur des fluctuations du potentiel bichromatique ne sont qu'une fraction du potentiel généré par chaque laser.
+Il apparaît donc que l'ordre de grandeur des fluctuations du potentiel bichromatique ne sont qu'une fraction du potentiel généré par chaque laser.
 
 
 Estimons l'ordre de grandeur de ces fluctuations de potentiel dans la configuration présentée section \ref{sc:speckle_bichromatique_mukhtar}, dans laquelle la différence de fréquence entre les deux lasers est de l'ordre de \SI{100}{\giga\hertz} pour une longueur d'onde proche de \SI{780}{\nano\metre}. La finesse associée est donc d'environ $\mathcal{F}\approx 4000$. En supposant que l'épaisseur typique de la granularité du diffuseur $\sigmae$ est de l'ordre de quelques longueurs d'onde $\lambda_{\mathrm{p}}$\footnote{Nous ne possédons malheureusement pas données précises relatives à l'état de surface du diffuseur, il ne s'agit donc que d'une estimation dont l'ordre semble raisonnable. En effet, l'utilisation d'un diffuseur avec $\sigmae\approx 5\lambda_{\mathrm{p}}$ suffit à générer un \speckle\ pleinement développé, la partie déterministe étant très fortement atténuée ($\overline{\tdiff}\sim e^{-100}$).}, on estime ainsi que les fluctuations du potentiel résiduel sont de l'ordre de 
