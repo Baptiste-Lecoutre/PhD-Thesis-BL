@@ -20,15 +20,15 @@
 \contentsline {section}{\numberline {3.1}Condensation de Bose-Einstein}{33}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Statistique de Bose-Einstein}{34}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Propriétés d'un condensat de Bose-Einstein}{36}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Processus d'interaction lumière-matière}{37}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Processus d'interaction lumière-matière}{38}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Le rubidium \isotope [87]{Rb}}{38}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Potentiel magnétique}{39}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Potentiel magnétique}{38}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Forces lumineuses}{40}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Couplage radio-fréquence}{42}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Description d'un cycle expérimental}{43}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Présentation générale du dispositif}{44}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Première chambre}{44}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Chambre de science}{48}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.2}Première chambre}{45}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Chambre de science}{49}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Imagerie}{53}{subsection.3.3.4}%
 \contentsline {chapter}{\numberline {4}Mises à jour de l'expérience}{59}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Contributions au système informatique de l'expérience}{59}{section.4.1}%

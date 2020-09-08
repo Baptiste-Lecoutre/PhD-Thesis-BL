@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="3">
-    <document line="590" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Speckle.tex" bookmark2="0" master="false"/>
-    <document line="163" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Taus_PRL.tex" bookmark2="0" master="false"/>
-    <document line="442" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Localisation.tex" bookmark2="0" master="false"/>
-    <document line="144" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/BEC_manip.tex" bookmark2="0" master="false"/>
-    <document line="183" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Appendices/Anex_speckle.tex" bookmark2="0" master="false"/>
-    <document line="4" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/structure.tex" bookmark2="0" master="false"/>
-    <document line="36" bookmark1="0" bookmark3="0" hasfocus="false" file="C:\Users\lecou\Documents\GitHub\PhD-Thesis-BL\main.tex" bookmark2="0" master="true"/>
-    <document line="59" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Appendices/Anex_Born.tex" bookmark2="0" master="false"/>
-    <document line="1130" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/biblio.bib" bookmark2="0" master="false"/>
-    <document line="184" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Modif_exp.tex" bookmark2="0" master="false"/>
-    <document line="377" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/TauS_NJP.tex" bookmark2="0" master="false"/>
-    <document line="107" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Conclusion.tex" bookmark2="0" master="false"/>
-    <document line="17" bookmark1="0" bookmark3="0" hasfocus="false" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Introduction.tex" bookmark2="0" master="false"/>
-    <document line="328" bookmark1="0" bookmark3="0" hasfocus="true" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/ups-cover.sty" bookmark2="0" master="false"/>
+    <document hasfocus="true" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Speckle.tex" master="false" bookmark3="0" bookmark2="0" line="850"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Appendices/Anex_speckle.tex" master="false" bookmark3="0" bookmark2="0" line="183"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/structure.tex" master="false" bookmark3="0" bookmark2="0" line="56"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/BEC_manip.tex" master="false" bookmark3="0" bookmark2="0" line="144"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Localisation.tex" master="false" bookmark3="0" bookmark2="0" line="448"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Taus_PRL.tex" master="false" bookmark3="0" bookmark2="0" line="163"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/TauS_NJP.tex" master="false" bookmark3="0" bookmark2="0" line="224"/>
+    <document hasfocus="false" bookmark1="0" file="C:\Users\lecou\Documents\GitHub\PhD-Thesis-BL\main.tex" master="true" bookmark3="0" bookmark2="0" line="59"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Appendices/Anex_Born.tex" master="false" bookmark3="0" bookmark2="0" line="73"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Modif_exp.tex" master="false" bookmark3="0" bookmark2="0" line="184"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/biblio.bib" master="false" bookmark3="0" bookmark2="0" line="0"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/ups-cover.sty" master="false" bookmark3="0" bookmark2="0" line="232"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Conclusion.tex" master="false" bookmark3="0" bookmark2="0" line="107"/>
+    <document hasfocus="false" bookmark1="0" file="C:/Users/lecou/Documents/GitHub/PhD-Thesis-BL/Chapters/Introduction.tex" master="false" bookmark3="0" bookmark2="0" line="17"/>
 </TexmakerSession>

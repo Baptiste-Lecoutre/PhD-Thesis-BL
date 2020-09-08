@@ -1,4 +1,4 @@
-\begin{thebibliography}{121}
+\begin{thebibliography}{124}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -141,6 +141,12 @@ C.~Cohen-Tannoudji.
   {\'e}vaporatif.
 \newblock \emph{Cours au College de France}, 1997, 1996.
 
+\bibitem[Cohen-Tannoudji et~al.(2012)Cohen-Tannoudji, Dupont-Roc, and
+  Grynberg]{cohen2012processus}
+C.~Cohen-Tannoudji, J.~Dupont-Roc, and G.~Grynberg.
+\newblock \emph{Processus d'interaction entre photons et atomes}.
+\newblock Edp Sciences, 2012.
+
 \bibitem[Davis et~al.(1995)Davis, Mewes, Andrews, van Druten, Durfee, Kurn, and
   Ketterle]{davis1995bose}
 K.~B. Davis, M.-O. Mewes, M.~R. Andrews, N.~J. van Druten, D.~S. Durfee,
@@ -178,6 +184,12 @@ S.~Eckel, J.~G. Lee, F.~Jendrzejewski, N.~Murray, C.~W. Clark, C.~J. Lobb,
   W.~D. Phillips, M.~Edwards, and G.~K. Campbell.
 \newblock Hysteresis in a quantized superfluid ‘atomtronic’circuit.
 \newblock \emph{Nature}, 506\penalty0 (7487):\penalty0 200--203, 2014.
+
+\bibitem[Ertmer et~al.(1985)Ertmer, Blatt, Hall, and Zhu]{ertmer1985laser}
+W.~Ertmer, R.~Blatt, J.~Hall, and M.~Zhu.
+\newblock Laser manipulation of atomic beam velocities: demonstration of
+  stopped atoms and velocity reversal.
+\newblock \emph{Physical review letters}, 54\penalty0 (10):\penalty0 996, 1985.
 
 \bibitem[Evers and Mirlin(2008)]{evers2008anderson}
 F.~Evers and A.~D. Mirlin.
@@ -228,11 +240,12 @@ J.~W. Goodman.
 \newblock \emph{Speckle phenomena in optics: theory and applications}.
 \newblock Roberts and Company Publishers, 2007.
 
-\bibitem[Grimm et~al.(1999)Grimm, Weidem{\"u}ller, and
-  Ovchinnikov]{grimm1999optical}
+\bibitem[Grimm et~al.(2000)Grimm, Weidem{\"u}ller, and
+  Ovchinnikov]{grimm2000optical}
 R.~Grimm, M.~Weidem{\"u}ller, and Y.~B. Ovchinnikov.
 \newblock Optical dipole traps for neutral atoms.
-\newblock \emph{arXiv preprint physics/9902072}, 1999.
+\newblock In \emph{Advances in atomic, molecular, and optical physics},
+  volume~42, pages 95--170. Elsevier, 2000.
 
 \bibitem[Grynberg et~al.(2010)Grynberg, Aspect, and
   Fabre]{grynberg2010introduction}
@@ -809,5 +822,11 @@ A.~Yedjour and B.~Van~Tiggelen.
 T.~Ying, Y.~Gu, X.~Chen, X.~Wang, S.~Jin, L.~Zhao, W.~Zhang, and X.~Chen.
 \newblock Anderson localization of electrons in single crystals: Lixfe7se8.
 \newblock \emph{Science advances}, 2\penalty0 (2):\penalty0 e1501283, 2016.
+
+\bibitem[Zhu et~al.(1991)Zhu, Oates, and Hall]{zhu1991continuous}
+M.~Zhu, C.~W. Oates, and J.~L. Hall.
+\newblock Continuous high-flux monovelocity atomic beam based on a broadband
+  laser-cooling technique.
+\newblock \emph{Physical review letters}, 67\penalty0 (1):\penalty0 46, 1991.
 
 \end{thebibliography}
