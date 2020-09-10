@@ -25,9 +25,9 @@
 \contentsline {subsection}{\numberline {3.2.2}Potentiel magnétique}{38}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Forces lumineuses}{40}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Couplage radio-fréquence}{42}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Description d'un cycle expérimental}{43}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Description d'un cycle expérimental}{44}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Présentation générale du dispositif}{44}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Première chambre}{45}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Première chambre}{44}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Chambre de science}{49}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Imagerie}{54}{subsection.3.3.4}%
 \contentsline {chapter}{\numberline {4}Mises à jour de l'expérience}{59}{chapter.4}%
@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {4.2.1}Implémentation de la lévitation magnétique}{63}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Calibration par radio-fréquences}{65}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}\'Etude du piégeage}{67}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Changement du laser telecom et calibration du piège optique}{70}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Changement du laser telecom et calibration du piège optique}{69}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Changement du laser telecom}{70}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{70}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{74}{section.4.4}%
