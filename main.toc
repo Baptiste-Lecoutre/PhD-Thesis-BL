@@ -40,9 +40,9 @@
 \contentsline {subsection}{\numberline {4.2.3}\'Etude du piégeage}{67}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}Changement du laser telecom et calibration du piège optique}{69}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Changement du laser telecom}{70}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{70}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{71}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{74}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Lois d'échelle du refroidissement évaporatif}{75}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}Lois d'échelle du refroidissement évaporatif}{74}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Implémentation expérimentale}{79}{subsection.4.4.2}%
 \contentsline {chapter}{\numberline {5}Propriétés d'un désordre de type speckle}{87}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Génération d'un champ de speckle}{87}{section.5.1}%
@@ -89,7 +89,7 @@
 \contentsline {subsection}{\numberline {8.2.1}Rétro-diffusion cohérente}{159}{subsection.8.2.1}%
 \contentsline {subsection}{\numberline {8.2.2}Diffusion cohérente vers l'avant}{161}{subsection.8.2.2}%
 \contentsline {section}{\numberline {8.3}Générer un désordre sur mesure}{162}{section.8.3}%
-\contentsline {chapter}{\numberline {A}Extraction de quantités thermodynamiques des images expérimentales}{165}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Traitement des images expérimentales}{165}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Propriétés spatiales du speckle}{167}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Fonction de corrélation du diffuseur}{167}{section.B.1}%
 \contentsline {section}{\numberline {B.2}Amplitude rayonnée}{168}{section.B.2}%

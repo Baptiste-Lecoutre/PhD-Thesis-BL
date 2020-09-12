@@ -290,59 +290,56 @@ L'étude du système de lévitation magnétique nous a non seulement permis de c
 
 \section{Changement du laser telecom et calibration du piège optique}
 %Listés dans la partie \ref{sc:chambre_science}, u
-Uniquement deux éléments participent à la manipulation d'atomes dans la chambre de science avant condensation. Le premier élément, la lévitation magnétique, a fait l'objet d'un entretien essentiel présenté dans la partie précédente. 
+Uniquement deux éléments participent à la manipulation d'atomes dans la chambre de science avant condensation. Le premier élément, la lévitation magnétique, a fait l'objet de l'étude présentée dans la partie précédente. 
 
 Cette partie se concentrera sur le second élément, le piège optique. Nous commencerons par présenter le système optique et décrire les changements opérés, puis nous décrirons la calibration de ce piège sur les atomes.
 
 \subsection{Changement du laser telecom}
 Dans le chapitre précédent, nous avons vu que le piège dipolaire était composé de deux faisceaux se croisant dans la chambre de science. Ces deux faisceaux, la pince et le dimple, sont orientés suivant les directions $\vec{z}$ et $\vec{y}$ respectivement et permettent de franchir le seuil de condensation. Il s'agit donc du piège donnant au condensat ses propriétés. De plus, c'est avec ce même piège que l'on met en œuvre les techniques de refroidissement extrêmes que sont l'ouverture adiabatique du piège ou encore le refroidissement par delta-kick. Il est donc primordial d'avoir une connaissance complète des caractéristiques de ce piège.
 
-Les deux faisceaux du piège dipolaire croisé proviennent d'une source laser commune avant d'être mis en forme séparément. Cette source, un laser fibré Ytterbium de \emph{Keopsys} émettant une puissance \SI{20}{\watt} en continu à une longueur d'onde $\lambda=\SI{1070}{\nano\metre}$, a été changée au cours de ma thèse. Ce laser a été sujet à un grand nombre d'opérations de maintenance, et, dans les mois précédant son remplacement, il ne pouvait plus émettre que \SI{14}{\watt} lors de son allumage et seulement \SI{12.5}{\watt} en fin de journée.
- 
-Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-Y12} de \emph{IPG}, opérant à la même longueur d'onde $\lambda=\SI{1070}{\nano\metre}$, et avec une puissance maximale mesurée à \SI{55}{\watt}. La taille du faisceau en sortie de fibre est de \SI{0.8}{\milli\metre} (contre \SI{1.4}{\milli\metre} pour le laser Keopsys), il a donc fallu adapter un télescope afin de conserver les mêmes tailles de faisceaux au niveau des atomes. Le montage de mise en forme des faisceaux est présenté figure \ref{fig:optique_1070}. Celui-ci est majoritairement mis dans des tubes (non représentés figure \ref{fig:optique_1070}) contenant un grand nombre de diaphragmes, facilitant ainsi la procédure d'alignement.
-
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/Modif_exp/optique_1070_new_style.pdf}
-\caption{\textbf{Schéma du montage optique pour le piège dipolaire.} Le faisceau issu du laser source passe dans un premier télescope avant d'être séparé en deux parties. La partie déviée passe dans une fibre optique pour devenir le faisceau de la pince. La partie transmise passe ensuite dans un second télescope pour devenir elliptique et arrive dans la \emph{Dimple box}, qui transmet le faisceau jusqu'aux atomes et contient les optiques d'imagerie \citep{muller2015coherent}. Afin de garder les mêmes tailles de faisceaux, la première lentille du premier télescope a été remplacée par une lentille de focale +\SI{100}{\milli\metre}.}
+\caption{\textbf{Schéma du montage optique pour le piège dipolaire.} Le faisceau issu du laser source passe dans un premier télescope avant d'être séparé en deux parties. La partie déviée passe dans une fibre optique pour devenir le faisceau de la pince. La partie transmise passe ensuite dans un second télescope pour devenir elliptique et arrive dans la \emph{Dimple box}, qui transmet le faisceau jusqu'aux atomes et contient les optiques d'imagerie \citep{muller2015coherent}. Afin de garder les mêmes tailles de faisceaux, la première lentille du premier télescope, de focale +\SI{175}{\milli\metre}, a été remplacée par une lentille de focale +\SI{100}{\milli\metre}.}
 \label{fig:optique_1070}
 \end{figure}
 
-
-\subsection{Calibration du piège optique}
-\label{sc:calibration_piege_optique}
-La présence d'une fibre optique pour la mise en forme du faisceau de la pince permet de s'assurer que le mode envoyé sur les atomes n'a pas changé. Pour le faisceau dimple en revanche, le trajet jusqu'à la cellule se fait sans filtrage. La présence de deux périscopes, d'un nombre d'éléments optiques important et l'utilisation d'un profil elliptique imposent une étude attentive des caractéristiques de ce faisceau au niveau des atomes.
-
+Les deux faisceaux du piège dipolaire croisé proviennent d'une source laser commune avant d'être mis en forme séparément. Cette source, un laser fibré Ytterbium de \emph{Keopsys} émettant une puissance \SI{20}{\watt} en continu à une longueur d'onde $\lambda=\SI{1070}{\nano\metre}$, a été remplacée au cours de ma thèse. Ce laser a été sujet à un grand nombre d'opérations de maintenance, et, dans les mois précédant son changement, il ne pouvait plus émettre que \SI{14}{\watt} lors de son allumage et seulement \SI{12.5}{\watt} en fin de journée.
+ 
+Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-Y12} de \emph{IPG}, opérant à la même longueur d'onde $\lambda=\SI{1070}{\nano\metre}$, et avec une puissance maximale mesurée à \SI{55}{\watt}. La taille du faisceau en sortie de fibre est de \SI{0.8}{\milli\metre} (contre \SI{1.4}{\milli\metre} pour le laser Keopsys), il a donc fallu adapter un télescope afin de conserver les mêmes tailles de faisceaux au niveau des atomes. Le montage de mise en forme des faisceaux est présenté figure \ref{fig:optique_1070}. Celui-ci est majoritairement mis dans des tubes (non représentés figure \ref{fig:optique_1070}) contenant un grand nombre de diaphragmes, facilitant ainsi la procédure d'alignement.
 
 
-\paragraph*{Estimation de la taille du faisceau au niveau des atomes}
-Le faisceau dimple est rendu elliptique à l'aide du second télescope qui comporte quatre lentilles dont deux cylindriques, comme illustré figure \ref{fig:optique_1070}. Le rapport de forme du faisceau est alors de 2. Cependant, l'utilisation de plusieurs périscopes risque de faire tourner cette ellipse, il est donc primordial de connaître les tailles du faisceau au niveau des atomes.
 
-L'approche suivie pour estimer le profil du faisceau au niveau des atomes consiste à en étudier la divergence après la cellule à l'aide d'une caméra, la zone d'intérêt se trouvant sous vide. Un avantage de cette méthode est de s'affranchir d'un système optique qui compliquerait le traitement, sous réserve que la caméra soit suffisamment large pour imager l'entièreté du faisceau. Le principal inconvénient est qu'il est nécessaire d'extrapoler la forme du faisceau pour en estimer le profil au niveau des atomes.
+\paragraph*{Estimation de la taille du faisceau dimple au niveau des atomes}
+L'utilisation d'une fibre optique pour la mise en forme du faisceau de la pince permet de s'assurer que le mode envoyé sur les atomes n'a pas changé. Pour le faisceau dimple en revanche, le trajet jusqu'à la cellule se fait en espace libre. Celui-ci est rendu elliptique à l'aide d'un second télescope, comportant quatre lentilles dont deux cylindriques, comme illustré figure \ref{fig:optique_1070}. Le rapport d'aspect du faisceau est alors de 2. 
 
+
+%L'approche suivie pour estimer le profil du faisceau au niveau des atomes consiste à en étudier la divergence après la cellule à l'aide d'une caméra, la zone d'intérêt se trouvant sous vide. Un avantage de cette méthode est de s'affranchir d'un système optique qui compliquerait le traitement, sous réserve que la caméra soit suffisamment large pour imager l'entièreté du faisceau. Le principal inconvénient est qu'il est nécessaire d'extrapoler la forme du faisceau pour en estimer le profil au niveau des atomes.
+
+L'estimation de la taille du faisceau au niveau des atomes est réalisée en étudiant l'évolution de son profil d'intensité après le passage au travers de la cellule. 
 Cette extrapolation est en réalité aisée: la taille du faisceau $\mathrm{w}_{\mathrm{i}}(y)$ dans la direction $\vec{i}$ ($\vec{i}= \lbrace \vec{x},\vec{z} \rbrace$) est donnée par l'optique gaussienne:
 \begin{equation}
-\mathrm{w}_{\mathrm{i}}(y)=\mathrm{w}_{\mathrm{i}} \sqrt{1+\left( \frac{y}{y_{\mathrm{Ri}}} \right)^2} \text{ ,}
+\mathrm{w}_{\mathrm{i}}(y)=\mathrm{w}_{\mathrm{i}} \sqrt{1+\left( \frac{y-y_0}{y_{\mathrm{Ri}}} \right)^2} \text{ ,}
 \label{eq:taille_faisceau}
 \end{equation}
 où $\mathrm{w}_{\mathrm{i}}$ est le waist du faisceau dans la direction $\vec{i}$. La distance de Rayleigh associée s'exprime $y_{\mathrm{Ri}}=\pi \mathrm{w}_{\mathrm{i}}^2 / \lambda$ et correspond à la distance sur laquelle la taille du faisceau suivant la direction $\vec{i}$ change peu. Dans le régime de champ lointain $y \gg y_{\mathrm{Ri}}$, le faisceau diverge selon un angle $\tan \theta_{\mathrm{i}} \simeq \lambda / \pi \mathrm{w}_{\mathrm{i}}$.
 
-La mesure des tailles du faisceau a été réalisée à l'aide d'une caméra \emph{IDS Ueye} disposant d'une matrice de $1024 \times 1280$ pixels de \SI{5.2}{\micro\metre} de côté. Les tailles ont été extraites par ajustement gaussien après intégration suivant une direction. Enfin, l'évolution de la taille en fonction de la position a été ajustée par la formule \ref{eq:taille_faisceau}, illustrée figure \ref{fig:taille_dimple}.
+La mesure des tailles du faisceau a été réalisée à l'aide d'une caméra \emph{IDS Ueye} disposant d'une matrice de $1024 \times 1280$ pixels de \SI{5.2}{\micro\metre} de côté. Les tailles ont été extraites par ajustement gaussien d'un profil unidimensionnel obtenu par intégration suivant une direction. Enfin, l'évolution de la taille en fonction de la position a été ajustée par la formule \ref{eq:taille_faisceau}, illustrée figure \ref{fig:taille_dimple}.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{Fig/Modif_exp/expansion_dimple.pdf}
-\caption{\textbf{Divergence du faisceau dimple après la cellule.} Les tailles du faisceau dimple sont représentées en fonction de la position de la caméra (points). La divergence du faisceau permet de remonter aux waists du faisceau et d'en estimer la position. Les waists extraits par ajustement (lignes continues) sont de $\mathrm{w_z}\simeq \SI{82}{\micro\metre}$ et de $\mathrm{w_x}\simeq \SI{160}{\micro\metre}$ et leur position est compatible avec celle des atomes.}
+\caption{\textbf{Évolution des tailles du faisceau dimple après la cellule.} Les tailles du faisceau dimple sont représentées en fonction de la position de la caméra (points). La divergence du faisceau permet de remonter aux waists du faisceau et d'en estimer la position. Les waists extraits par ajustement (lignes continues) sont de $\mathrm{w_z}\simeq \SI{82}{\micro\metre}$ et de $\mathrm{w_x}\simeq \SI{160}{\micro\metre}$ et leur position est compatible avec celle des atomes.}
 \label{fig:taille_dimple}
 \end{figure}
 
-On estime alors les waists du faisceau à $\mathrm{w_z}=81.6\pm\SI{7.8}{\micro\metre}$ et $\mathrm{w_x}=160\pm \SI{13}{\micro\metre}$, assez proche des valeurs précédentes. La position de ces waists est compatible avec la position des atomes, et la longueur de Rayleigh du faisceau est de l'ordre de $y_{\mathrm{Rz}}\simeq \SI{2}{\centi\metre}$.
+On estime alors les waists du faisceau à $\mathrm{w_z}=81.6\pm\SI{7.8}{\micro\metre}$ et $\mathrm{w_x}=160\pm \SI{13}{\micro\metre}$, assez proche des valeurs précédentes. La position $y_0$ de ces waists est compatible avec la position des atomes, et la longueur de Rayleigh du faisceau est de l'ordre de $y_{\mathrm{Rz}}\simeq \SI{2}{\centi\metre}$.
 
 
 
-
-
-
+\subsection{Calibration du piège optique}
+\label{sc:calibration_piege_optique}
+L'utilisation d'une fibre optique pour la mise en forme du faisceau de la pince permet de s'assurer que le mode envoyé sur les atomes n'a pas changé. Pour le faisceau dimple en revanche, le trajet jusqu'à la cellule se fait sans filtrage. La présence de deux périscopes, d'un nombre d'éléments optiques important et l'utilisation d'un profil elliptique imposent une étude attentive des caractéristiques de ce faisceau au niveau des atomes.
 
 
 \paragraph*{Calibration des fréquences de piégeage}
