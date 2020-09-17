@@ -1,4 +1,4 @@
-\begin{thebibliography}{125}
+\begin{thebibliography}{127}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -432,6 +432,12 @@ C.~Martin and A.~Ben-Yakar.
 \newblock \emph{Journal of biomedical optics}, 21\penalty0 (11):\penalty0
   115004, 2016.
 
+\bibitem[Metcalf and Van~der Straten(2007)]{metcalf2007laser}
+H.~J. Metcalf and P.~Van~der Straten.
+\newblock Laser cooling and trapping of neutral atoms.
+\newblock \emph{The Optics Encyclopedia: Basic Foundations and Practical
+  Applications}, 2007.
+
 \bibitem[Mishchenko(1993)]{mishchenko1993nature}
 M.~I. Mishchenko.
 \newblock On the nature of the polarization opposition effect exhibited by
@@ -643,6 +649,11 @@ S.~D. Sarma, S.~He, and X.~Xie.
 \newblock Mobility edge in a model one-dimensional potential.
 \newblock \emph{Physical review letters}, 61\penalty0 (18):\penalty0 2144,
   1988.
+
+\bibitem[Savard et~al.(1997)Savard, O’hara, and Thomas]{savard1997laser}
+T.~Savard, K.~O’hara, and J.~Thomas.
+\newblock Laser-noise-induced heating in far-off resonance optical traps.
+\newblock \emph{Physical Review A}, 56\penalty0 (2):\penalty0 R1095, 1997.
 
 \bibitem[Savo et~al.(2017)Savo, Pierrat, Najar, Carminati, Rotter, and
   Gigan]{savo2017observation}
