@@ -43,7 +43,7 @@
 \contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{71}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{74}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Lois d'échelle du refroidissement évaporatif}{74}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Implémentation expérimentale}{79}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.2}Résultats de l'optimisation de l'évaporation}{79}{subsection.4.4.2}%
 \contentsline {chapter}{\numberline {5}Propriétés d'un désordre de type speckle}{85}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Génération d'un champ de speckle}{85}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Statistiques de l'intensité d'un speckle}{86}{subsection.5.1.1}%

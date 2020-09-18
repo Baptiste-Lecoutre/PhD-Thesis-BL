@@ -571,47 +571,37 @@ témoignant ainsi de la réduction de l'efficacité de l'évaporation par les pe
 
 
 
-\subsection{Implémentation expérimentale}
+\subsection{Résultats de l'optimisation de l'évaporation}
 Nous allons à présent détailler la manière dont cette étape d'évaporation est implémentée sur notre dispositif. Les résultats présentés ici sont le fruit d'une optimisation de l'efficacité de l'évaporation, où nous avons maximisé le gain de densité dans l'espace des phases vis-à-vis de la perte d'atomes. De plus, nous discuterons l'influence qu'a la lévitation magnétique lors de cette étape de refroidissement.
 
 
 
 \paragraph*{Consigne d'évaporation}
 L'implémentation de la formule \ref{eq:nouvelle_consigne_evap} comme consigne de puissance sur les deux faisceaux du piège dipolaire est rendue possible grâce à l'utilisation des nouvelles cartes analogiques \emph{National Instruments} et de la suite \emph{Cicero Word Generator}.
-L'optimisation de l'étape d'évaporation nous a permis de déterminer les paramètres $\beta_{\mathrm{pince}}=\beta_{\mathrm{dimple}}=6$, $\tau_{\mathrm{pince}}=\SI{1.2}{\second}$ et $\tau_{\mathrm{dimple}}=\SI{1.3}{\second}$. dont le profil est comparé à l'ancienne consigne composée de morceaux de rampes linéaires\footnote{Les cartes analogiques du précédent système informatique de contrôle de l'expérience ne permettait d'utiliser que des profils de consignes composées de morceaux de rampes linéaires. } figure \ref{fig:comparaison_consigne_evap}.
-
-
+L'optimisation de l'étape d'évaporation nous a permis de déterminer les paramètres $\beta_{\mathrm{pince}}=\beta_{\mathrm{dimple}}=6$, $\tau_{\mathrm{pince}}=\SI{1.2}{\second}$ et $\tau_{\mathrm{dimple}}=\SI{1.3}{\second}$. La nouvelle consigne d'évaporation est alors tracée figure \ref{fig:comparaison_consigne_evap}, et est comparée à la consigne composée de morceaux de rampes linéaires\footnote{Les cartes analogiques du précédent système informatique de contrôle de l'expérience ne permettait d'utiliser que des profils de consignes composées de morceaux de rampes linéaires. } de notre configuration précédente.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{Fig/Modif_exp/comparaison_consignes_evap.pdf}
-\caption{\textbf{Comparaison de la nouvelle consigne d'évaporation du piège optique.} L'ancienne consigne, composée de cinq morceaux de rampe linéaire, est représentée en bordeaux. La nouvelle consigne, donnée par l'équation \ref{eq:nouvelle_consigne_evap} est représentée en bleu, possède une décroissance plus rapide que dans le cas de l'ancienne consigne. Elle permet de plus d'obtenir un condensat de Bose-Einstein plus rapidement.}
+\caption{\textbf{Comparaison de la nouvelle et de l'ancienne consigne d'évaporation du faisceau pince.} L'ancienne consigne, composée de cinq morceaux de rampe linéaire, est représentée en bordeaux. La nouvelle consigne, donnée par l'équation \ref{eq:nouvelle_consigne_evap} est représentée en bleu, possède une décroissance plus rapide que dans le cas de l'ancienne consigne. Elle permet de plus d'obtenir un condensat de Bose-Einstein plus rapidement.}
 \label{fig:comparaison_consigne_evap}
 \end{figure}
 
-On remarque que la nouvelle consigne appliquée est de forme similaire à l'ancienne et possède deux dynamiques distinctes. Comme annoncé dans la section \ref{sc:scaling_laws_ohara}, l'évaporation est dans un premier temps rapide afin de profiter du grand taux de collisions, puis dans un second temps, la consigne est lentement abaissée en raison de l'augmentation du temps de thermalisation. 
+Par construction, la formule \ref{eq:nouvelle_consigne_evap} permet de mieux tirer parti du processus d'évaporation naturelle. Il est alors possible d'effectuer une évaporation plus rapide, réduisant l'impact de la durée de vie finie des atomes par collisions avec le gaz résiduel. 
 
-Notons tout de même la principale différence entre ces courbes. Par construction, la formule \ref{eq:nouvelle_consigne_evap} permet de mieux tirer parti du processus d'évaporation naturelle. Il est alors possible d'effectuer une évaporation plus rapide, réduisant l'impact de la durée de vie finie des atomes par collisions avec le gaz résiduel\footnote{Dans le cadre d'une évaporation à $\eta$ constant, le taux de pertes à trois corps ne dépend pas de la vitesse à laquelle l'évaporation est effectuée.}.
+Dans la suite, nous nous concentrerons sur les premières \SI{700}{\milli\second} de l'évaporation, qui correspondent à la durée nécessaire pour atteindre le seuil $\mathcal{D}\sim 1$, pour lequel une partie condensée apparaît. Au delà de ce seuil, l'approche classique pour laquelle les lois d'échelle ont été déterminées précédemment n'est plus valide.%\footnote{Dans le cadre d'une évaporation à $\eta$ constant, le taux de pertes à trois corps ne dépend pas de la vitesse à laquelle l'évaporation est effectuée.}.
  
 
 
 
+\paragraph*{Évolution de la température}
 
-
-
-
-
-
-
-
-
-
-Nous pouvons alors comparer la température du nuage à la profondeur du piège, que l'on estime au cours de l'évaporation à l'aide de la calibration du piège optique présentée dans la section \ref{sc:calibration_piege_optique}. L'évolution temporelle de la température du nuage est représentée figure \ref{fig:eta_constant}, à laquelle nous superposons sans paramètre ajustable\footnote{L'estimation de la profondeur du piège optique est réalisée selon la calibration présentée dans la section \ref{sc:calibration_piege_optique}, donc uniquement à l'aide de mesures photométriques des puissances et tailles des faisceaux, complétées par les mesures des fréquences de piégeage obtenues par oscillations du centre de masse du nuage.} la profondeur estimée du piège divisée par 10. L'accord entre ces courbes est remarquable, validant ainsi l'approche d'une évaporation à $\eta$ constant.
+L'évolution de la température du nuage\footnote{La détermination expérimentale de la température en présence du champ de lévitation, basée sur le principe de focalisation atomique, est détaillée dans l'annexe \ref{ch:anex_mesure_temp}.} au cours de l'évaporation est représentée figure \ref{fig:eta_constant}, et témoigne d'un refroidissement important au cours de l'évaporation, comme attendu. Nous avons superposé à ces mesures la profondeur estimée\footnote{Cette estimation provient de la calibration du piège optique présentée section \ref{sc:calibration_piege_optique}.} de la pince divisée par 10, sans paramètre ajustable. L'accord entre ces courbes est remarquable, validant ainsi l'approche d'une évaporation à $\eta=10$ constant. Ceci constitue une preuve du caractère adiabatique de notre évaporation, le nuage étant constamment dans un état de quasi-équilibre thermodynamique.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{Fig/Modif_exp/Evolution_température_eta.pdf}
-\caption{\textbf{Évolution de la température au cours de l'évaporation.} La température (points bleus) est mesurée après différentes durées d'évaporation et comparée à la profondeur du piège divisée par 10 (courbe noire). Sans paramètre ajustable, les deux courbes se superposent remarquablement. Chaque point correspond à une mesure unique, répétée plusieurs fois pour chaque durée d'évaporation sans moyenner.}
+\caption{\textbf{Évolution de la température au cours de l'évaporation.} La température (points bleus) est mesurée après différentes durées d'évaporation et comparée à la profondeur de piégeage du faisceau pince divisée par 10 (courbe noire). Sans paramètre ajustable, les deux courbes se superposent remarquablement.}
 \label{fig:eta_constant}
 \end{figure}
 
@@ -620,24 +610,28 @@ Nous pouvons alors comparer la température du nuage à la profondeur du piège,
 
 
 
-\paragraph*{Résultats de l'optimisation de l'évaporation}
-L'évolution du nombre d'atomes au cours de l'évaporation présente un intérêt particulier car celle-ci contient les informations liées aux processus inélastiques.
 
-En particulier, il est possible de mesurer la densité atomique du nuage au cours de l'évaporation, et ainsi d'évaluer les pertes à trois corps à l'aide de la formule \ref{eq:pertes_atomes_3corps}. En comparant ces pertes aux variations mesurées du nombre d'atomes, on obtient un rapport $R$ de l'ordre de 0.1. Il apparaît donc que les pertes à trois corps ont un effet marqué sur la cinétique de l'évaporation, mais que celles-ci ne constituent pas une limite pour notre système. 
+\paragraph*{Évolution du nombre d'atomes}
+
+L'évolution du nombre d'atomes au cours de l'évaporation présente un intérêt particulier car celle-ci contient les informations liées aux processus de pertes inélastiques. Notamment, nous pouvons estimer le taux de pertes à trois corps à l'aide d'une mesure de la densité atomique et de la formule \ref{eq:pertes_atomes_3corps}. En comparant ces pertes aux variations mesurées du nombre d'atomes, on détermine que le rapport $R=\dot{N}_{\mathrm{3b}}/\dot{N}$ de l'ordre de 0.1, approximativement constant tout au long de l'évaporation. Il apparaît donc que les pertes à trois corps ont un effet marqué sur l'évolution du nombre d'atomes au cours de l'évaporation, mais que celles-ci ne constituent pas une limite pour notre système. 
 
 De plus, il est possible de négliger l'effet des pertes due aux collisions avec le gaz résiduel, limitant le temps de vie des atomes dans le piège à $1/\Gamma_{\mathrm{bg}}\approx\SI{10}{\second}$. En effet, l'optimisation de notre évaporation se concentre sur les premières \SI{700}{\milli\second} d'abaissement de la profondeur du piège\footnote{Cette durée correspond au temps nécessaire pour franchir le seuil de condensation $\mathcal{D}\approx 1$ et l'obtention d'un gaz dégénéré. Celle-ci était d'environ \SI{1.2}{\second} avec l'ancienne consigne.} comme illustré sur les figures \ref{fig:eta_constant} et \ref{fig:nombre_atomes_evap}, et la durée totale de notre évaporation est de \SI{3.5}{\second}, courte comparée au temps de vie permis par le gaz résiduel.
 
-L'évolution du nombre d'atomes au cours de l'évaporation est représentée figure \ref{fig:nombre_atomes_evap} et est comparée à la prédiction de la loi d'échelle \ref{eq:scaling_atomes_3corps}, tracée avec les paramètres $\eta=10$ et $R=0.1$, extraits de la mesure de température et du nombre d'atomes. En ajustant uniquement le nombre d'atomes initial du modèle, il apparaît que la théorie d'échelle permet de décrire correctement l'évolution du nombre d'atomes. 
+L'évolution du nombre d'atomes au cours de l'évaporation est représentée figure \ref{fig:nombre_atomes_evap} et est comparée à la prédiction de la loi d'échelle \ref{eq:scaling_atomes_3corps}, tracée avec les paramètres $\eta=10$ (déterminé précédemment grâce à l'évolution de la température au cours de l'évaporation) et $R=0.1$ (déterminé en estimant le taux de pertes à trois corps et rapporté aux pertes totales mesurées expérimentalement). Il apparaît donc que la théorie d'échelle permet de décrire correctement l'évolution du nombre d'atomes. 
 
 
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{Fig/modif_exp/Nombre_atomes_evap.pdf}
-\caption{\textbf{Évolution du nombre d'atomes au cours de l'évaporation.} Les points bleus correspondent aux mesures expérimentales du nombre d'atomes, chaque point étant issu d'un unique cycle expérimental. La ligne continue noire correspond à la prédiction de la loi d'échelle \ref{eq:scaling_atomes_3corps} avec les paramètres $\eta=10$ et $R=0.1$, et où le seul paramètre ajustable est le nombre d'atomes initial. Il apparaît alors un très bon accord entre les données et le modèle.}
+\caption{\textbf{Évolution du nombre d'atomes au cours de l'évaporation.} Les points bleus correspondent aux mesures expérimentales du nombre d'atomes, chaque point étant issu d'un unique cycle expérimental. La ligne continue noire correspond à la prédiction de la loi d'échelle \ref{eq:scaling_atomes_3corps} sans paramètre ajustable, avec les grandeurs $\eta=10$ et $R=0.1$ déterminées indépendamment. Il apparaît alors un très bon accord entre les données et le modèle.}
 \label{fig:nombre_atomes_evap}
 \end{figure}
 
-Enfin, rappelons que l'optimisation de l'évaporation est réalisée en maximisant le gain de densité dans l'espace des phases par atome perdu, donné par le paramètre $\gamma$ en présence de pertes à trois corps (voir la formule \ref{eq:efficacite_evap_3corps}. 
+
+
+
+\paragraph*{Évolution de la densité dans l'espace des phases}
+Enfin, rappelons que l'optimisation de l'évaporation est réalisée en maximisant le gain de densité dans l'espace des phases par atome perdu, encodé par le paramètre $\gamma$. 
 
 L'évolution de la densité dans l'espace des phases en fonction du nombre d'atomes est représentée figure \ref{fig:efficacite_evaporation_optique} en échelle logarithmique pour dans le cas de notre nouvelle consigne (en bleu) ainsi que pour notre ancienne consigne (en bordeaux). La comparaison est immédiate: la nouvelle consigne permet d'atteindre le seuil de condensation $\mathcal{D}\approx 1$ pour une perte d'atomes bien moindre que l'ancienne.
 
