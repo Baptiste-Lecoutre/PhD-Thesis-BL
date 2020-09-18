@@ -2,9 +2,13 @@
 \chapter{Traitement des images expérimentales}
 \label{ch:anex_mesure_temp}
 
+\section{Détermination du profil de densité intégrée}
+
+\section{Estimation de la température}
+\subsection{Mesure de la température par temps de vol}
 
 
-\paragraph*{Mesure de la température d'un nuage lévité}
+\subsection{Mesure de la température d'un nuage lévité}
 La quantité thermodynamique permettant de témoigner du refroidissement du gaz au cours de l'évaporation correspond naturellement à sa température. De manière générale, celle-ci est estimée à l'aide d'une imagerie par \emph{temps de vol}. Son principe repose sur l'expansion libre du nuage après extinction du piège, expansion dont l'origine provient de la distribution des vitesses des atomes. Dans le cas d'un nuage thermique, la température est donnée par la largeur de la distribution des vitesses du gaz, qui est directement donnée par la taille du nuage après un temps d'expansion suffisamment long\footnote{La taille du nuage thermique évolue selon $\sigma_{\mathrm{i}}^2= \sigma_{\mathrm{i,0}}^2+ t^2 \kB T/m$, avec $T$ la température, $m$ la masse des atomes, $t$ le temps d'expansion libre et $\sigma_{\mathrm{i,0}}$ a taille du nuage à $t=0$. Pour $t$ suffisamment grand, on peut ainsi négliger la taille initiale du nuage.}.
 
 Cependant, pour des nuages particulièrement froids, les temps d'expansion requis pour estimer correctement la température du nuage peuvent dépasser le temps d'observation possible des atomes alors en mouvement de chute libre. L'utilisation de la lévitation magnétique pendant cette phase d'expansion permet de dépasser cette limite en compensant la gravité\footnote{Un second intérêt de la lévitation magnétique est de supprimer l'influence de la gravité lors de l'évaporation. La pesanteur a pour effet de \textit{pencher} le potentiel, pouvant changer la dimensionnalité de l'évaporation \citep{boyer2000condensation}, mais aussi limiter la profondeur du piège optique à environ $U/\kB \sim \SI{2.5}{\micro\kelvin}$ pour laquelle la gradient maximal d'intensité lumineuse ne permet plus de compenser le poids des atomes.}. Néanmoins, comme nous l'avons détaillé dans la section \ref{sc:oscillations_levitation}, l'utilisation de la lévitation magnétique conduit à un piégeage de l'état $\etatF{1}{-1}$ dans lequel nous souhaitons franchir le seuil de condensation.
@@ -39,3 +43,10 @@ Notons que dans la configuration magnétique choisie, le piégeage vertical est 
 \caption{\textbf{a: Principe de la focalisation atomique.} L'évolution temporelle d'un nuage dans l'espace des phases est une rotation autour de l'origine. À $t=T_{\mathrm{osc}}/4$, la distribution du nuage dans l'espace des phases a subi une rotation de $-\pi/2$. On peut ainsi mesurer la distribution initiale d'impulsion par une mesure de densité atomique dans l'espace réel. \textbf{b: Évolution temporelle de la taille du nuage dans la champ de lévitation.} Le piégeage étant quasi-nul dans la direction verticale, le nuage s'étend de manière balistique (points bordeaux). Dans la direction horizontale, le nuage subit l'effet de piégeage harmonique de la lévitation magnétique et sa taille oscille à une fréquence correspondant au double de la fréquence de piégeage (points bleus). Pour un temps de vol d'environ \SI{45}{\milli\second}, le nuage atteint sa taille maximale représentative de la distribution initiale d'impulsion. Cette valeur est en accord avec la fréquence de piégeage estimée à environ \SI{5}{\hertz}. On remarque de plus que l'expansion du nuage est isotrope à temps court. La température du nuage, estimée suivant les deux directions, est ici d'environ \SI{620}{\nano\kelvin}.}
 \label{fig:focalisation_atomique}
 \end{figure}
+
+
+\section{Détermination des autres grandeurs thermodynamiques}
+densité au centre
+
+taux de collisions
+

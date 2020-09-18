@@ -90,6 +90,11 @@
 \contentsline {subsection}{\numberline {8.2.2}Diffusion cohérente vers l'avant}{161}{subsection.8.2.2}%
 \contentsline {section}{\numberline {8.3}Générer un désordre sur mesure}{162}{section.8.3}%
 \contentsline {chapter}{\numberline {A}Traitement des images expérimentales}{165}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Détermination du profil de densité intégrée}{165}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Estimation de la température}{165}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Mesure de la température par temps de vol}{165}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Mesure de la température d'un nuage lévité}{165}{subsection.A.2.2}%
+\contentsline {section}{\numberline {A.3}Détermination des autres grandeurs thermodynamiques}{166}{section.A.3}%
 \contentsline {chapter}{\numberline {B}Propriétés spatiales du speckle}{169}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Fonction de corrélation du diffuseur}{169}{section.B.1}%
 \contentsline {section}{\numberline {B.2}Amplitude rayonnée}{170}{section.B.2}%
