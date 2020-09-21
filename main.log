@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  18 SEP 2020 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  21 SEP 2020 15:16
 entering extended mode
 **./main.tex
 (main.tex
@@ -2109,20 +2109,23 @@ Underfull \vbox (badness 4479) has occurred while \output is active []
 
  [77]
 [78] [79]
-<Fig/Modif_exp/comparaison_consignes_evap.pdf, id=11382, 369.27931pt x 259.2744
+<Fig/Modif_exp/comparaison_consignes_evap.pdf, id=11383, 369.27931pt x 259.2744
 6pt>
 File: Fig/Modif_exp/comparaison_consignes_evap.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/comparaison_consignes_evap.pdf>
 Package pdftex.def Info: Fig/Modif_exp/comparaison_consignes_evap.pdf  used on 
 input line 585.
 (pdftex.def)             Requested size: 298.75264pt x 209.76982pt.
-<Fig/Modif_exp/Evolution_température_eta.pdf, id=11391, 367.07071pt x 254.4134
+<Fig/Modif_exp/Evolution_température_eta.pdf, id=11392, 367.07071pt x 254.4134
 2pt>
 File: Fig/Modif_exp/Evolution_température_eta.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/Evolution_température_eta.pdf>
 Package pdftex.def Info: Fig/Modif_exp/Evolution_température_eta.pdf  used on 
 input line 603.
 (pdftex.def)             Requested size: 298.75264pt x 207.06364pt.
+
+Underfull \vbox (badness 2334) has occurred while \output is active []
+
  [80 <./Fig/Modif_exp/comparaison_consignes_evap.pdf>]
 <Fig/modif_exp/Nombre_atomes_evap.pdf, id=11409, 385.9038pt x 293.77733pt>
 File: Fig/modif_exp/Nombre_atomes_evap.pdf Graphic file (type pdf)
@@ -2510,19 +2513,15 @@ Package pdftex.def Info: Fig/Conclusion/landscape.pdf  used on input line 131.
 
 ]
 Annexe A.
-
-Underfull \vbox (badness 2096) has occurred while \output is active []
-
- [165]
-<Fig/Modif_exp/focalisation_atomique.pdf, id=18320, 512.08612pt x 209.60849pt>
+[165] [166]
+<Fig/Modif_exp/focalisation_atomique.pdf, id=18327, 512.08612pt x 209.60849pt>
 File: Fig/Modif_exp/focalisation_atomique.pdf Graphic file (type pdf)
 <use Fig/Modif_exp/focalisation_atomique.pdf>
 Package pdftex.def Info: Fig/Modif_exp/focalisation_atomique.pdf  used on input
- line 42.
+ line 78.
 (pdftex.def)             Requested size: 426.79135pt x 174.701pt.
-)
-(Appendices/Anex_speckle.tex [166] [167 <./Fig/Modif_exp/focalisation_atomique.
-pdf>] [168]
+) (Appendices/Anex_speckle.tex [167] [168 <./Fig/Modif_exp/focalisation_atomiqu
+e.pdf>]
 Annexe B.
 [169
 
@@ -2566,7 +2565,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ] [193]
-<Fig/EDOM.png, id=18622, 1083.29718pt x 215.30438pt>
+<Fig/EDOM.png, id=18623, 1083.29718pt x 215.30438pt>
 File: Fig/EDOM.png Graphic file (type png)
 <use Fig/EDOM.png>
 Package pdftex.def Info: Fig/EDOM.png  used on input line 96.
@@ -2586,7 +2585,7 @@ Overfull \hbox (19.91684pt too wide) in paragraph at lines 96--96
 []|[]| 
  []
 
-<Fig/e.png, id=18623, 45.16875pt x 62.51355pt>
+<Fig/e.png, id=18624, 45.16875pt x 62.51355pt>
 File: Fig/e.png Graphic file (type png)
 <use Fig/e.png>
 Package pdftex.def Info: Fig/e.png  used on input line 96.
@@ -2618,11 +2617,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 34140 strings out of 480934
- 654735 string characters out of 2899917
- 1104481 words of memory out of 3000000
+ 34141 strings out of 480934
+ 654752 string characters out of 2899917
+ 1104012 words of memory out of 3000000
  47830 multiletter control sequences out of 15000+200000
- 763651 words of font info for 376 fonts, out of 3000000 for 9000
+ 763654 words of font info for 376 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,62p,2171b,1192s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\lecou\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
@@ -2676,9 +2675,9 @@ m10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on main.pdf (196 pages, 24136887 bytes).
+Output written on main.pdf (196 pages, 24138307 bytes).
 PDF statistics:
- 19388 PDF objects out of 22161 (max. 8388607)
- 932 named destinations out of 1000 (max. 500000)
+ 19389 PDF objects out of 22161 (max. 8388607)
+ 933 named destinations out of 1000 (max. 500000)
  77624 words of extra memory for PDF output out of 89155 (max. 10000000)
 
