@@ -98,6 +98,7 @@ n(\mathbf{x})=\left\{
 						0 &\quad \text{sinon.}
 					\end{array} 
 				\right.
+				\label{eq:thomas_fermi}
 \end{equation}
 Le profil de densité est donc une parabole inversée de rayons $R_{\mathrm{TF},i}=\sqrt{\frac{2\mu}{m\omega_i^2}}$ en considérant le piège harmonique de l'équation \ref{eq:piege_harmonique}.
 Ces rayons de Thomas-Fermi ont été déterminés par la condition $n(\mathbf{x})=0$. Il est intéressant de noter que le potentiel effectif vu par une particule $V_{\mathrm{eff}}(\mathbf{x})=V(\mathbf{x})+gn(\mathbf{x})$ est constant sur l'ensemble du condensat:
@@ -540,7 +541,7 @@ La mise en œuvre expérimentale de cette technique est détaillée dans le manu
 
 \subsection{Imagerie}
 \label{sc:imagerie}
-Nos cycles expérimentaux se concluent par une étape de mesure, nous permettant d'obtenir des informations à propos de notre gaz d'atomes. Une grande partie de ces informations peut être extraite d'une image du nuage après extinction du piège, image que l'on obtient à l'aide d'une caméra et l'utilisation de lasers à résonance avec les atomes \footnote{L'utilisation de lasers à résonance conduit inévitablement à la destruction du nuage sur notre expérience. Il est donc nécessaire de répéter l'ensemble du cycle expérimental pour obtenir une seconde image des atomes.}. %L'utilisation d'un retard (appelé \emph{temps de vol} et abrégé en \emph{TOF} pour l'anglais \textit{Time Of Flight}) entre l'extinction du piège et la prise de l'image est extrêmement courant fournit de précieux renseignements.
+Nos cycles expérimentaux se concluent par une étape de mesure, nous permettant d'obtenir des informations à propos de notre gaz d'atomes. Une grande partie de ces informations peut être extraite d'une image du nuage après extinction du piège (voir annexe \ref{ch:anex_mesure_temp}), image que l'on obtient à l'aide d'une caméra et l'utilisation de lasers à résonance avec les atomes \footnote{L'utilisation de lasers à résonance conduit inévitablement à la destruction du nuage sur notre expérience. Il est donc nécessaire de répéter l'ensemble du cycle expérimental pour obtenir une seconde image des atomes.}. %L'utilisation d'un retard (appelé \emph{temps de vol} et abrégé en \emph{TOF} pour l'anglais \textit{Time Of Flight}) entre l'extinction du piège et la prise de l'image est extrêmement courant fournit de précieux renseignements.
 
 \paragraph*{Implémentation expérimentale de l'imagerie}
 L'expérience est équipée de trois caméras \textit{EMCCD C9102} de \textit{Hamamatsu}, chacune comportant une matrice de $1000 \times 1000$ pixels de taille $\SI{8}{\micro\metre} \times \SI{8}{\micro\metre}$. Ces trois caméras sont contrôlées via l'outil d'acquisition d'images du logiciel \emph{MATLAB}, qui permet aussi de récupérer et traiter les images obtenues. L'acquisition des images est déclenchée de manière externe par un second ordinateur pilotant l'ensemble de l'expérience.

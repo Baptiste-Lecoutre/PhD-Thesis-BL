@@ -4,21 +4,38 @@
 
 \section{Détermination du profil de densité intégrée}
 
-Les images expérimentales obtenues correspondent à des profils de densité intégrés suivant l'axe d'imagerie, il s'agit de profils de densité bidimensionnels $n_{\mathrm{2D}}(y,z)$ (pour une imagerie selon l'axe $\vec{x}$).
+Les images expérimentales obtenues correspondent à des profils de densité bidimensionnels $n_{\mathrm{2D}}(y,z)$ intégrés suivant l'axe d'imagerie $\vec{x}$:
+\begin{equation}
+n_{\mathrm{2D}}(y,z)=\int{\diff x \: n(x,y,z)} \text{ .}
+\end{equation}
 
-Pour faciliter le traitement des images expérimentales, on détermine un profil unidimensionnel à l'aide d'une intégration suivant une seconde direction. On obtient ainsi un profil $n_{\mathrm{1D}}$: 
+Afin de faciliter le traitement des images expérimentales, on détermine un profil unidimensionnel à l'aide d'une intégration suivant une seconde direction. On obtient ainsi: 
 \begin{equation}
 n_{\mathrm{1D}}(z)=\int{\diff y \: n_{\mathrm{2D}}(y,z)} \text{ ,}
 \end{equation}
-sur lequel nous effectuons nos opérations de détermination des grandeurs thermodynamiques.
+profil sur lequel nous effectuons nos opérations de détermination des grandeurs thermodynamiques à l'aide d'ajustements.
 
-Dans le cas de nuages thermiques, ces profils unidimensionnels sont ajustés à l'aide d'une gaussienne, dont l'intégrale fournit le nombre d'atomes présent dans le nuage, le centre fournit la position du nuage suivant la direction considérée, et enfin la largeur nous donne une mesure de la taille du nuage suivant cette même direction.
+\subsection{Analyse d'un nuage thermique}
+Dans le cas de nuages thermiques, les distributions d'impulsion et densité sont connues pour être de forme gaussienne. Les profils unidimensionnels expérimentaux sont alors ajustées par des fonctions gaussiennes, dont nous tirons trois informations: l'amplitude, la largeur et le centre. 
 
+Il est alors possible de déterminer le nombre d'atomes $N$, donné par l'intégration du profil ajusté:  
+\begin{equation}
+N=\int{\diff z \: n_{\mathrm{1D}}(z)} \text{ ,}
+\end{equation}
+ainsi que la taille $\sigma_{\mathrm{z}}$ du nuage et la position du centre de masse suivant l'axe $\vec{z}$. Les autres grandeurs thermodynamiques sont déduites des précédentes à l'aide d'informations supplémentaires telles que le temps de vol et les fréquences de piégeage. 
 
+\subsection{Analyse d'un nuage partiellement condensé}
+Le profil de densité d'un nuage partiellement condensé est caractérisé par une structure bimodale, composée d'une structure gaussienne thermique de laquelle émerge un profil parabolique de Thomas-Fermi \ref{eq:thomas_fermi}, comme illustré figure \ref{fig:BEC_double_struct}.
 
+La procédure d'ajustement se décompose selon quatre étapes:
+\begin{itemize}
+\item[\textendash] Un premier ajustement gaussien est réalisé sur l'ensemble du profil pour en déterminer la position et une largeur.
+\item[\textendash] À l'aide de l'ajustement précédent, la partie centrale du profil expérimental est ignorée et les ailes sont ajustées par une gaussienne thermique.
+\item[\textendash] La partie condensée du centre du profil, obtenue en soustrayant la partie thermique déterminée à l'étape précédente, est ajustée par une parabole inversée.
+\item[\textendash] Les profils obtenus précédemment sont utilisés comme paramètres initiaux d'un ajustement du profil complet par la fonction d'ajustement bimodale.
+\end{itemize}
 
-
-
+Les paramètres thermodynamiques sont ensuite déduits des largeurs et amplitudes des composantes thermique et condensée de manière similaire au nuage thermique.
 
 
 
@@ -81,8 +98,8 @@ De plus, notons que dans la configuration de faible champ magnétique choisie, l
 \end{figure}
 
 
-\section{Détermination des autres grandeurs thermodynamiques}
-densité au centre
+%\section{Détermination des autres grandeurs thermodynamiques}
+%densité au centre
 
-taux de collisions
+%taux de collisions
 
