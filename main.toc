@@ -65,12 +65,12 @@
 \contentsline {subsection}{\numberline {6.1.1}Temps de diffusion élastique dans le régime de désordre faible}{122}{subsection.6.1.1}%
 \contentsline {subsection}{\numberline {6.1.2}Diffusion isotrope et diffusion vers l'avant}{123}{subsection.6.1.2}%
 \contentsline {subsection}{\numberline {6.1.3}Temps de diffusion élastique dans le régime de Born}{124}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Mesure du temps de diffusion élastique}{126}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Mesure du temps de diffusion élastique}{127}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Procédure expérimentale}{127}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Extraction du temps de diffusion élastique}{128}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Cartographie du temps de diffusion élastique}{129}{subsection.6.2.3}%
 \contentsline {section}{\numberline {6.3}Comportement du temps de diffusion élastique}{130}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Régime de Born}{130}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.1}Régime de Born}{131}{subsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.3.2}Déviations au régime de Born}{131}{subsection.6.3.2}%
 \contentsline {subsection}{\numberline {6.3.3}Déviation à la décroissance exponentielle}{133}{subsection.6.3.3}%
 \contentsline {chapter}{\numberline {7}Approche spectrale}{137}{chapter.7}%
