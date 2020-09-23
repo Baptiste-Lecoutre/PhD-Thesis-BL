@@ -73,6 +73,7 @@
 \contentsline {subsection}{\numberline {6.3.1}Régime de Born}{131}{subsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.3.2}Déviations au régime de Born}{131}{subsection.6.3.2}%
 \contentsline {subsection}{\numberline {6.3.3}Déviation à la décroissance exponentielle}{133}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Conclusion}{135}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Approche spectrale}{137}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Temps de diffusion élastique et fonctions spectrales}{137}{section.7.1}%
 \contentsline {subsection}{\numberline {7.1.1}Généralités sur la fonction spectrale}{138}{subsection.7.1.1}%
@@ -83,6 +84,7 @@
 \contentsline {subsection}{\numberline {7.2.1}Limite de l'approche auto-consistante pour un désordre de type speckle}{145}{subsection.7.2.1}%
 \contentsline {subsection}{\numberline {7.2.2}Fonctions spectrales d'un désordre speckle}{146}{subsection.7.2.2}%
 \contentsline {subsection}{\numberline {7.2.3}Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}{153}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Conclusion}{156}{section.7.3}%
 \contentsline {chapter}{\numberline {8}Conclusion et perspectives}{157}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Vers l'étude du régime critique}{158}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Signatures de la localisation d'Anderson dans l'espace des impulsions}{159}{section.8.2}%
