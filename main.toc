@@ -84,7 +84,7 @@
 \contentsline {subsection}{\numberline {7.2.1}Limite de l'approche auto-consistante pour un désordre de type speckle}{145}{subsection.7.2.1}%
 \contentsline {subsection}{\numberline {7.2.2}Fonctions spectrales d'un désordre speckle}{146}{subsection.7.2.2}%
 \contentsline {subsection}{\numberline {7.2.3}Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}{153}{subsection.7.2.3}%
-\contentsline {section}{\numberline {7.3}Conclusion}{156}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Conclusion}{155}{section.7.3}%
 \contentsline {chapter}{\numberline {8}Conclusion et perspectives}{157}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Vers l'étude du régime critique}{158}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Signatures de la localisation d'Anderson dans l'espace des impulsions}{159}{section.8.2}%

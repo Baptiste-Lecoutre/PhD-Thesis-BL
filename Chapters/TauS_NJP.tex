@@ -44,12 +44,12 @@ G_0(E,\mathbf{k}_{\mathrm{i}})=\left\langle\mathbf{k}_{\mathrm{i}} | \hat{G}_0(E
 \end{equation}
 avec $E_{\mathrm{k}_i}$ l'énergie cinétique de la particule. 
 
-À l'aide de l'équation de Dyson \ref{eq:dyson}, on peut déterminer la fonction de Green moyenne 
+À l'aide de l'équation de Dyson \ref{eq:dyson} et en identifiant les processus irréductibles\footnote{Un processus irréductible correspond à un processus de diffusion qui ne peut pas se \emph{factoriser} comme une succession d'évènements élémentaires indépendants de diffusion. Cette notion prend tout son sens dans le cadre de l'approche diagrammatique à la détermination de la fonction de Green, au-delà de la portée de cette thèse.}, on peut montrer la fonction de Green moyenne se met sous la forme
 \begin{equation}
 \overline{G}(E,\mathbf{k}_{\mathrm{i}})=\frac{1}{E-E_{\mathrm{k}_i}-\overline{V}-\Sigma(E,\mathbf{k}_{\mathrm{i}})} \text{ ,}
 \label{eq:fonction_green_moyenne}
 \end{equation}
-où $\overline{\cdots}$ représente la moyenne sur les différentes réalisations du désordre. La quantité complexe $\Sigma(E,\mathbf{k}_{\mathrm{i}})$, la \emph{Self-Energy}, est homogène à une énergie et encode l'effet des fluctuations du potentiel désordonné $\hat{V}$\footnote{Seules les fluctuations du potentiel sont contenues dans la \selfenergy\ telle qu'écrite ici puisque nous avons fait apparaître explicitement la valeur moyenne du potentiel.}. Si l'expression de la fonction de Green moyenne \ref{eq:fonction_green_moyenne} est exacte, sa détermination reste ardue et demande l'utilisation d'approximations pour déterminer la \selfenergy , telles que l'expansion de Born\citep{kuhn2007coherent}\citep{lugan2009one}, l'approche auto-consistante de Born \citep{skipetrov2008anderson}\citep{yedjour2010diffusion}, ou encore des approximations semi-classiques \citep{trappe2015semiclassical}\citep{prat2016semiclassical}. 
+où $\overline{\cdots}$ représente la moyenne sur les différentes réalisations du désordre \citep{akkermans2007mesoscopic}\citep{kuhn2007coherent}. La quantité complexe $\Sigma(E,\mathbf{k}_{\mathrm{i}})$, la \emph{Self-Energy}, est homogène à une énergie et encode l'effet des fluctuations du potentiel désordonné $\hat{V}$\footnote{Seules les fluctuations du potentiel sont contenues dans la \selfenergy\ telle qu'écrite ici puisque nous avons fait apparaître explicitement la valeur moyenne du potentiel.}. Si l'expression de la fonction de Green moyenne \ref{eq:fonction_green_moyenne} est exacte, sa détermination reste ardue et demande l'utilisation d'approximations pour déterminer la \selfenergy , telles que l'expansion de Born\citep{kuhn2007coherent}\citep{lugan2009one}, l'approche auto-consistante de Born \citep{skipetrov2008anderson}\citep{yedjour2010diffusion}, ou encore des approximations semi-classiques \citep{trappe2015semiclassical}\citep{prat2016semiclassical}. 
 
 
 \paragraph*{La fonction spectrale}
@@ -102,12 +102,17 @@ Notons ici qu'il est ainsi possible d'expliquer l'origine du départ quadratique
 Dans la continuité de l'image physique selon laquelle le temps de diffusion élastique correspond au temps de vie de l'état initial $\etat{\mathbf{k}_{\mathrm{i}}}$ dans le désordre, il est possible de définir un temps caractéristique $\taus^{\mathrm{sf}}$ basé sur la largeur de la distribution d'énergie. On définit ainsi $\Delta E = \hb/\taus^{\mathrm{sf}}$ avec $\Delta E$ la largeur totale à mi-hauteur de la fonction spectrale tel qu'illustré dans la figure \ref{fig:illustration_fonction_spectrale_diffusion}. 
 
 \subsection{Approximation de Born}
-En itérant l'équation de Dyson \ref{eq:dyson} et en moyennant sur les différentes réalisations du désordre, on peut décomposer la \selfenergy\ sous la forme d'une série en puissances du potentiel
+Afin d'estimer quantitativement la \selfenergy , une méthode couramment utilisée consiste à décomposer cette dernière sous la forme d'une série
+%En itérant l'équation de Dyson \ref{eq:dyson} et en moyennant sur les différentes réalisations du désordre, on peut décomposer la \selfenergy\ sous la forme d'une série
+%\begin{equation}
+%\Sigma(E,\mathbf{k}_{\mathrm{i}}) = \sum_{n=1}^{+\infty}{\overline{\left\langle \mathbf{k}_{\mathrm{i}}\left| \hat{V} \left(\hat{G}_0(E) \hat{V}\right)^n \right|\mathbf{k}_{\mathrm{i}}\right\rangle}} \text{ ,}
+%\label{eq:developpement_born}
+%\end{equation}
 \begin{equation}
-\Sigma(E,\mathbf{k}_{\mathrm{i}}) = \sum_{n=1}^{+\infty}{\overline{\left\langle \mathbf{k}_{\mathrm{i}}\left| \hat{V} \left(\hat{G}_0(E) \hat{V}\right)^n \right|\mathbf{k}_{\mathrm{i}}\right\rangle}} \text{ ,}
+\Sigma = \Sigma^{(1)} + \Sigma^{(2)} + \cdots \text{ ,}
 \label{eq:developpement_born}
 \end{equation}
-connue sous le nom de développement de Born. Il est ainsi possible d'écrire la \selfenergy\ selon $\Sigma=\Sigma^{(1)}+\Sigma^{(2)} + \cdots$, où chaque terme $\Sigma^{(i)}$ est composé de $i+1$ occurrences du potentiel $\hat{V}$. Notamment, les premiers termes du développement de Born s'expriment $\Sigma^{(1)}=\overline{V G_0 V}$ et $\Sigma^{(2)}=\overline{V G_0 V G_0 V}$.
+connue sous le nom de développement de Born. La \selfenergy\ est alors donnée par une somme infinie de termes $\Sigma^{(i)}$, où chaque terme est composé de $i+1$ occurrences du potentiel $\hat{V}$ \citep{kuhn2007coherent}. Notamment, les premiers termes du développement de Born s'expriment $\Sigma^{(1)}=\overline{V G_0 V}$ et $\Sigma^{(2)}=\overline{V G_0 V G_0 V}$.
 
 Dans la limite de désordre faible, il apparaît de l'équation \ref{eq:developpement_born} que seul le premier terme $\Sigma^{(1)}$ contribue à la \selfenergy , chaque occurrence supplémentaire du potentiel atténuant le poids du terme $\Sigma^{(i)}$ correspondant. L'approximation de Born consiste donc à tronquer l'expression de la \selfenergy\ à son premier terme:
 \begin{equation}
@@ -121,13 +126,13 @@ On montre dans l'annexe \ref{ch:anex_taus} que le premier terme du développemen
 
 
 
-On peut montrer que le premier terme du développement $\Sigma^{(1)}$ varie peu autour de l'énergie cinétique, ce qui permet de remplacer la \selfenergy\ par sa valeur en couche $E=\Eki$ \citep{kuhn2007coherent}. La fonction spectrale obtenue à l'aide de l'équation \ref{eq:fonction_spectrale_self_energy} présente alors un profil lorentzien
+On peut montrer que le premier terme du développement $\Sigma^{(1)}$ varie peu autour de l'énergie cinétique, ce qui permet de remplacer la \selfenergy\ par sa valeur en couche $E=\Eki$ \citep{kuhn2007coherent}. La fonction spectrale obtenue à l'aide de l'équation \ref{eq:fonction_spectrale_self_energy} présente alors un profil lorentzien:
 \begin{equation}
 A(\mathbf{k}_{\mathrm{i}},E)= \frac{1}{\pi} \frac{\Delta E/2}{(\Eki - \Eki')^2+\Delta E^2/4} \text{ ,}
 \end{equation}
 où la largeur totale à mi-hauteur $\Delta E$ s'exprime $\Delta E=-2 \mathrm{Im}[\Sigma^{(1)}(\Eki,\mathbf{k}_{\mathrm{i}})]$ et le centre $\Eki'=\Eki+\overline{V}+\mathrm{Re}[\Sigma^{(1)}(\Eki,\mathbf{k}_{\mathrm{1}})]$.
 
-En vertu du lien entre la fonction spectrale et la décroissance de l'état initial, on extrait ainsi un temps de décroissance typique $\taus^{\mathrm{sf}}$ 
+En vertu du lien entre la fonction spectrale et la décroissance de l'état initial, on extrait ainsi un temps de décroissance typique $\taus^{\mathrm{sf}}$:
 \begin{equation}
 \frac{\hb}{\taus^{\mathrm{sf}}}=-2 \mathrm{Im}[\Sigma^{(1)}(E_{\mathrm{k}_i},\mathbf{k}_{\mathrm{i}})]=2\pi \sum_{\mathbf{k}'}{\widetilde{C}(\mathbf{k}'-\mathbf{k}_{\mathrm{i}}) \delta(E_{\mathrm{k}'}-E_{\mathrm{k}_i})} \text{ .}
 \end{equation}
@@ -213,11 +218,13 @@ Si l'approximation auto-consistante de Born permet de décrire correctement l'en
 
 L'approche auto-consistante de Born ne contenant que des puissances paires du potentiel \citep{trappe2015semiclassical}, celle-ci ne peut pas décrire les asymétries du potentiel. L'approche auto-consistante ne peut donc pas prétendre à une meilleure description du régime de désordre faible que l'approximation de Born au second ordre pour des désordres \speckle . 
 
-La comparaison entre nos données expérimentales et la prédiction auto-consistante est montrée figures \ref{fig:comparaison_taus_specfunc_rouge} (pour un \speckle\ attractif) et \ref{fig:comparaison_taus_specfunc_bleu} (pour un désordre répulsif). Dans le régime de désordre intermédiaire, si la comparaison de l'approximation auto-consistante s'accorde correctement aux données pour un désordre attractif, ce n'est pas le cas pour un désordre répulsif. 
+Comme nous le verrons plus en détails dans la section \ref{sc:comparaison_fonctions_spectrales} et sur les figures \ref{fig:comparaison_taus_specfunc_rouge} et \ref{fig:comparaison_taus_specfunc_bleu}, la SCBA fournit une meilleure prédiction du temps $\taus^{\mathrm{scba}}$ que l'approximation de Born au premier ordre. Néanmoins, celle prédiction reste identique pour les \speckles\ attractif et répulsif, en désaccord avec le comportement de nos données expérimentales, particulièrement dans le régime classique où de fortes déviations entre désordres attractif et répulsif apparaissent (voir la discussion des fonctions spectrales dans la section \ref{sc:mesure_fonction_spectrale}). Cet effet montre clairement le manquement de la \textit{SCBA} à décrire le régime classique pour lequel la distribution de potentiel est capitale. Il apparaît donc nécessaire d'analyser les détails de la fonction spectrale pour un désordre de type \speckle .
 
-Dans le régime de désordre classique, la prédiction de la \textit{SCBA} est meilleure que l'approximation de Born au premier ordre. De plus, $\taus$ et $\taus^{\mathrm{scba}}$ se comportent tous deux en $1/|\VR|$ pour un \speckle\ attractif\footnote{Le rayon de la prédiction classique de la \textit{SCBA} et de $2|\VR|$. Dans la limite classique, la fonction spectrale converge vers la distribution de potentiel, qui correspond à une exponentielle de largeur à $1/e$ valant $|\VR|$.}, résultant en une erreur systématique d'un facteur $\taus^{\mathrm{sf,cl}}/\taus^{\mathrm{scba,cl}}\approx 5$. Expérimentalement, nous mesurons une déviation de $\taus/\taus^{\mathrm{scba,cl}}=3.2\pm0.5$, compatible avec la valeur théorique\footnote{Cette valeur provient de la valeur de $\taus$ mesurée pour notre désordre le plus fort $|\VR|/\ER\sim 8.5$ et d'impulsion $k_{\mathrm{i}}=0.33\sigmap^{-1}$. Pour ces paramètres, le régime classique n'est pas encore entièrement atteint, voir \citep{prat2016semiclassical} par exemple.}. 
+%La comparaison entre nos données expérimentales et la prédiction auto-consistante est montrée figures \ref{fig:comparaison_taus_specfunc_rouge} (pour un \speckle\ attractif) et \ref{fig:comparaison_taus_specfunc_bleu} (pour un désordre répulsif). Dans le régime de désordre intermédiaire, si la comparaison de l'approximation auto-consistante s'accorde correctement aux données pour un désordre attractif, ce n'est pas le cas pour un désordre répulsif. 
 
-Dans le cas d'un désordre répulsif, l'accord est bien moins correct et l'approximation auto-consistante échoue à décrire les données expérimentales. Cet effet montre clairement le manquement de la \textit{SCBA} à décrire le régime classique pour lequel la distribution de potentiel est capitale. Il apparaît donc nécessaire d'analyser les détails de la fonction spectrale pour un désordre de type \speckle .
+%Dans le régime de désordre classique, la prédiction de la \textit{SCBA} est meilleure que l'approximation de Born au premier ordre. De plus, $\taus$ et $\taus^{\mathrm{scba}}$ se comportent tous deux en $1/|\VR|$ pour un \speckle\ attractif\footnote{Le rayon de la prédiction classique de la \textit{SCBA} et de $2|\VR|$. Dans la limite classique, la fonction spectrale converge vers la distribution de potentiel, qui correspond à une exponentielle de largeur à $1/e$ valant $|\VR|$.}, résultant en une erreur systématique d'un facteur $\taus^{\mathrm{sf,cl}}/\taus^{\mathrm{scba,cl}}\approx 5$. Expérimentalement, nous mesurons une déviation de $\taus/\taus^{\mathrm{scba,cl}}=3.2\pm0.5$, compatible avec la valeur théorique\footnote{Cette valeur provient de la valeur de $\taus$ mesurée pour notre désordre le plus fort $|\VR|/\ER\sim 8.5$ et d'impulsion $k_{\mathrm{i}}=0.33\sigmap^{-1}$. Pour ces paramètres, le régime classique n'est pas encore entièrement atteint, voir \citep{prat2016semiclassical} par exemple.}. 
+
+%Dans le cas d'un désordre répulsif, l'accord est bien moins correct et l'approximation auto-consistante échoue à décrire les données expérimentales. Cet effet montre clairement le manquement de la \textit{SCBA} à décrire le régime classique pour lequel la distribution de potentiel est capitale. Il apparaît donc nécessaire d'analyser les détails de la fonction spectrale pour un désordre de type \speckle .
 
 
 
@@ -352,6 +359,7 @@ Les spectres tracés sur la figure \ref{fig:fonctions_spectrales_classiques} per
 
 
 \subsection{Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}
+\label{sc:comparaison_fonctions_spectrales}
 Comme nous l'avons vu précédemment, il est possible de donner une estimation du temps de vie de l'état initial $\etat{\mathbf{k}_{\mathrm{i}}}$ dans le désordre à l'aide de la largeur à mi-hauteur de la fonction spectrale. Nous pouvons alors extraire un temps $\taus^{\mathrm{sf}}$ des fonctions spectrales mesurées $A(\mathbf{k}=0,E)$ mesurées pour différentes amplitudes de désordre $\VR$.
 
 Dans le cas d'un désordre attractif, la largeur à mi-hauteur de la fonction spectrale mesurée est obtenue à l'aide d'un ajustement des données expérimentales par la convolution d'une lorentzienne avec une fonction exponentielle \ref{eq:distribution_potentiel_speckle}, qui permet de reproduire fidèlement  la forme de fonctions spectrales pour toutes les amplitudes de désordre. La largeur à mi-hauteur $\Delta E$ est ensuite extraite à l'aide d'un algorithme, permettant de déterminer un temps de vie $\taus^{\mathrm{sf}}=\hb/\Delta E$ pour chaque amplitude de désordre considérée. Le temps de vie pour n'importe quelle amplitude de désordre est ensuite obtenue par interpolation.
@@ -359,7 +367,7 @@ Dans le cas d'un désordre attractif, la largeur à mi-hauteur de la fonction sp
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/TauS_NJP/comparaison_specfunc_taus_rouge.pdf}
-\caption{\textbf{Comparaison des fonctions spectrales mesurées au temps de diffusion élastique pour un \speckle\ attractif.} \textbf{a:} Le temps de diffusion élastique est comparé à la prédiction de l'approximation auto-consistante de Born. Cette dernière est proche des données expérimentales dans le régime de désordre faible, mais ne permet pas de décrire le régime de désordre fort. La \textit{SCBA} échoue de plus à décrire les asymétries du potentiel. Les temps de vie $\taus^{\mathrm{sf}}$ extraits des fonctions spectrales mesurées sont compatibles avec les mesures de $\taus$ de basse impulsion. \textbf{b:} Illustration de l'extraction du temps de vie $\taus^{\mathrm{sf}}$. Le temps de vie est extrait en déterminant la largeur à mi-hauteur d'une fonction d'ajustement des données expérimentales. Ces données sont celles de la figure \ref{fig:mesures_fonctions_spectrales_rouge}.}
+\caption{\textbf{Comparaison des fonctions spectrales mesurées au temps de diffusion élastique pour un \speckle\ attractif.} \textbf{a:} Le temps de diffusion élastique est comparé à la prédiction de l'approximation auto-consistante de Born. Cette dernière est proche des données expérimentales dans le régime de désordre faible, mais ne permet pas de décrire le régime de désordre fort. La SCBA échoue de plus à décrire les asymétries du potentiel. Néanmoins, cette dernière fournit une meilleure prédiction que celle issue de l'approximation de Born au premier ordre. Les temps de vie $\taus^{\mathrm{sf}}$ extraits des fonctions spectrales mesurées pour $\etat{\mathbf{k}=0}$ sont compatibles avec les mesures de $\taus$ de basse impulsion ($k_{\mathrm{i}}=0.33\sigmap^{-1}$). \textbf{b:} Illustration de l'extraction du temps de vie $\taus^{\mathrm{sf}}$. Le temps de vie est extrait en déterminant la largeur à mi-hauteur d'une fonction d'ajustement des données expérimentales. Ces données sont celles de la figure \ref{fig:mesures_fonctions_spectrales_rouge}.}
 \label{fig:comparaison_taus_specfunc_rouge}
 \end{figure}
 
@@ -374,7 +382,7 @@ Comme nous avons vu dans la section précédente, un désordre \speckle\ répuls
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/TauS_NJP/comparaison_specfunc_taus_bleu.pdf}
-\caption{\textbf{Comparaion des fonctions spectrales mesurées au temps de diffusion élastique pour un \speckle\ répulsif.} \textbf{a:} Les données expérimentales du temps de diffusion élastique sont comparées à la prédiction de l'approximation auto-consistante de Born. Celle-ci ne permet de rendre compte que du régime de désordre faible, et de grande impulsion, et échoue encre à décrire les asymétries du potentiel. Les temps de vie $\taus^{\mathrm{sf}}$ estimés à partir du pic de résonance des fonctions spectrales mesurées sont tout à fait compatibles avec les mesures du temps de diffusion élastique à faible impulsion. \textbf{b:} Illustration de l'extraction du temps de vie $\taus^{\mathrm{sf}}$. Le temps de vie est extrait en déterminant la largeur à mi-hauteur d'une fonction d'ajustement bimodale des données expérimentales. Plus particulièrement, le temps de vie est extrait de la largeur à mi-hauteur de la structure étroite associée à la résonance des premiers états liés du désordre. Ces données sont celles de la figure \ref{fig:mesures_fonctions_spectrales_bleu}.}
+\caption{\textbf{Comparaion des fonctions spectrales mesurées au temps de diffusion élastique pour un \speckle\ répulsif.} \textbf{a:} Les données expérimentales du temps de diffusion élastique sont comparées à la prédiction de l'approximation auto-consistante de Born. Celle-ci ne permet de rendre compte que du régime de désordre faible, et de grande impulsion, et échoue encore à décrire les asymétries du potentiel. La prédiction de la SCBA reste néanmoins meilleure que l'approximation de Born au premier ordre. Les temps de vie $\taus^{\mathrm{sf}}$ estimés à partir du pic de résonance des fonctions spectrales mesurées sont tout à fait compatibles avec les mesures du temps de diffusion élastique à faible impulsion. \textbf{b:} Illustration de l'extraction du temps de vie $\taus^{\mathrm{sf}}$. Le temps de vie est extrait en déterminant la largeur à mi-hauteur d'une fonction d'ajustement bimodale des données expérimentales. Plus particulièrement, le temps de vie est extrait de la largeur à mi-hauteur de la structure étroite associée à la résonance des premiers états liés du désordre. Ces données sont celles de la figure \ref{fig:mesures_fonctions_spectrales_bleu}.}
 \label{fig:comparaison_taus_specfunc_bleu}
 \end{figure}
 
@@ -389,4 +397,12 @@ Ces mesures de $\taus^{\mathrm{sf}}$ sont confrontées aux mesures de $\taus$ su
 
 
 \section{Conclusion}
+étude dans le régime classique
 
+confrontation des 2 approches, approche temporelle naturelle et approche spectrale avec le concept général des fonctions spectrales.
+
+ordre 2.
+
+Une diffusion unique, tout marche bien, on comprend bien avec l'aide d'un temps heuristique (taus)
+
+Vers l'étude des propriétés de transport

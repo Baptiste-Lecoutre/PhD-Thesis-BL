@@ -238,14 +238,14 @@ La région de fort désordre sort naturellement du cadre de la théorie perturba
 
 
 \subsection{Déviation à la décroissance exponentielle}
-La décroissance exponentielle de la population de l'état initial étant une prédiction du régime perturbatif de Born, des déviations à ce comportement exponentiel sont attendues dans le régime de diffusion forte. Si celles-ci n'ont pas pu être observées avec nos données expérimentales\footnote{La précision de nos mesures n'a permis de démontrer des déviations significatives au comportement exponentiel.}, nos simulations révèlent des signatures de la physique hors-Born dans les décroissances de l'état initial.
+La décroissance exponentielle de la population de l'état initial étant une prédiction du régime perturbatif de Born, des déviations à ce comportement exponentiel sont attendues dans le régime de diffusion forte. Si celles-ci n'ont pas pu être observées avec nos données expérimentales\footnote{La précision de nos mesures n'a permis de démontrer des déviations significatives au comportement exponentiel.}, nos simulations révèlent de telles déviations à la décroissance exponentielle de l'état initial.
 
 En particulier, un comportement \emph{universel} à temps court a pu être observé à l'aide de nos données numériques
 \begin{equation}
 \tilde{n}_{\mathrm{i}}(t)=1-\frac{\VR^2t^2}{\hb^2} \text{ ,}
 \label{eq:depart_quadratique}
 \end{equation}
-valide pour les temps courts $t<\hb/\ER$. Si ce départ quadratique est attendu dans le régime classique\footnote{Celui-ci trouve son origine dans le comportement des fonctions spectrales dans le régime classique. Nous aborderons ce point dans le chapitre \ref{ch:TauS_NJP}.}, celui-ci est aussi observé dans le régime de Born, que nous allons à présenter détailler.
+valide pour les temps courts $t<\hb/\ER$. Si ce départ quadratique est attendu dans le régime classique\footnote{Celui-ci trouve son origine dans le comportement des fonctions spectrales dans le régime classique. Nous aborderons ce point dans le chapitre \ref{ch:TauS_NJP}.}, celui-ci est aussi observé dans le régime de Born, que nous allons à présenter détailler à l'aide d'un modèle simple.
 
 L'application de la règle d'or de Fermi \ref{eq:fermi_golden_rule} repose non seulement sur l'hypothèse de désordre perturbatif, mais aussi sur la considération de temps de couplage $t$ suffisamment longs pour résoudre les niveaux d'énergie du système. Notamment, le terme de conservation de l'énergie $\delta(E_{\mathrm{k}'} - E_{\mathrm{k}_i})$ correspond à la limite aux temps longs d'une fonction donnant la résolution en énergie du couplage \citep{grynberg2010introduction}:
 \begin{equation}
@@ -264,14 +264,14 @@ Néanmoins, dans la limite de temps courts $t<\hb/\ER$, la fonction de résoluti
 \label{fig:depart_quadratique_taus}
 \end{figure}
 
-La décroissance de l'état initial est donc composée de deux régimes comme illustré sur la figure \ref{fig:depart_quadratique_taus} pour les paramètres $\VR=\SI{-104}{\hertz}$ et $k_{\mathrm{i}}=0.59\sigmap^{-1}$. Un premier régime à temps court est caractérisé par une décroissance quadratique liée au début d'une oscillation de Rabi entre l'état initial et le continuum de largeur finie lui-même. Dans un second temps, le couplage est suffisamment long pour que la conservation de l'énergie soit satisfaite, la décroissance est alors exponentielle avec un temps de vie donné par la règle d'or de Fermi.
+La décroissance de l'état initial est donc composée de deux régimes comme illustré sur la figure \ref{fig:depart_quadratique_taus} pour les paramètres $\VR=\SI{-104}{\hertz}$ et $k_{\mathrm{i}}=0.59\sigmap^{-1}$. Un premier régime à temps court est caractérisé par une décroissance quadratique liée au début d'une oscillation de Rabi entre l'état initial et le continuum de largeur finie lui-même. Cet effet de temps très court est observé à l'aide de nos simulations numériques, cependant il est difficile à identifier expérimentalement. Dans un second temps, le couplage est suffisamment long pour que la conservation de l'énergie soit satisfaite, la décroissance est alors exponentielle avec un temps de vie donné par la règle d'or de Fermi.
 
-Ainsi, il est possible d'obtenir une expression de la décroissance à l'aide d'un modèle simple dans le régime de désordre faible \citep{grynberg2010introduction} permettant de décrire à la fois le départ quadratique observé et la décroissance exponentielle de l'état initial:
+Ainsi, il est possible d'obtenir une expression heuristique de la décroissance à l'aide d'un modèle simple de continuum de largeur finie dans le régime de désordre faible \citep{grynberg2010introduction} permettant de décrire à la fois le départ quadratique observé et la décroissance exponentielle de l'état initial:
 \begin{equation}
 \tilde{n}_{\mathrm{i}}(t)=\left| e^{-t/\taus^{\mathrm{Born}}/2} \left(1+\frac{\hb}{2\ER\taus^{\mathrm{Born}}} \right) - \frac{\hb}{2\ER\taus^{\mathrm{Born}}} e^{-\ER t/\hb}\right|^2 \text{ ,}
 \label{eq:depart_quadratique_total}
 \end{equation}
-dont le développement limité permet de retrouver le départ quadratique \ref{eq:depart_quadratique}. Cette forme est utilisée pour ajuster la décroissance numérique, et est représentée en pointillés rouges sur la figure \ref{fig:depart_quadratique_taus}. On remarque que celle-ci décrit correctement l'ensemble de la décroissance là où une décroissance exponentielle pure ne permet pas d'en reproduire le début. Cependant, cette approche de désordre de faible reste inadaptée à la description du régime de désordre fort.
+dont le développement limité permet de retrouver le départ quadratique \ref{eq:depart_quadratique}. Cette forme est utilisée pour ajuster la décroissance numérique, et est représentée en pointillés rouges sur la figure \ref{fig:depart_quadratique_taus}. On remarque que celle-ci décrit correctement l'ensemble de la décroissance là où une décroissance exponentielle pure ne permet pas d'en reproduire le début. Si l'accord est remarquable sur toute une plage de données dans le régime de désordre faible, ce modèle ne permet pas d'étendre le domaine de validité de l'approche perturbative. Cette approche de désordre faible reste donc inadaptée à la description du régime de désordre fort, dont l'étude sera l'objet du chapitre suivant.
 
 
 \section{Conclusion}
