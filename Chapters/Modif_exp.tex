@@ -67,7 +67,7 @@ Comme présenté partie \ref{sc:chambre_science}, la lévitation magnétique est
 
 Malheureusement, la formation d'un bouchon à base de précipités métalliques dans le circuit de refroidissement de la lévitation a conduit au démontage d'une partie importante du système de la lévitation. Les modifications apportées avant remontage ayant pu conduire à une modification du comportement magnétique du système, une nouvelle calibration des champs générés a été menée.
 
-Dans cette partie, nous présenterons dans un premier temps notre système de lévitation ainsi que les modifications qui y ont été apportées. Ensuite, nous nous pencherons sur les méthodes utilisées pour calibrer le système après sa réinstallation sur l'expérience, en commençant par des expériences d'oscillations puis à l'aide transitions radio-fréquences.
+Dans cette partie, nous présenterons dans un premier temps notre système de lévitation ainsi que les modifications qui y ont été apportées. Ensuite, nous nous pencherons sur les méthodes utilisées pour calibrer le système après sa réinstallation sur l'expérience, en commençant par des expériences d'oscillations puis à l'aide de transitions radio-fréquences.
 
 
 
@@ -90,7 +90,7 @@ Ces supports, disposés de part et d'autre de la cellule, comportent chacun troi
 
 Le champ magnétique au niveau des atomes peut alors être écrit
 \begin{equation}
-\mathbf{B}=\left( \frac{b'}{2}x \right) \vec{x} + \left[ \Bzero - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}z \right) \vec{z} \text{ ,}
+\mathbf{B}=\left[ \Bzero - b'y + b'' \left( y^2 - \frac{x^2+z^2}{2} \right) \right] \vec{y} + \left( \frac{b'}{2}x \right) \vec{x} + \left( \frac{b'}{2}z \right) \vec{z} \text{ ,}
 \end{equation}
 où $b'$ correspond au gradient magnétique généré par les bobines de \emph{Gradient}, les plus éloignées de la cellule. Le  paramètre $b''$ est la courbure du champ généré par l'écart des bobines de \emph{Biais} à la configuration de Helmholtz. 
 Le potentiel magnétique étant proportionnel à la norme du champ, celle-ci est donnée à l'ordre deux par
@@ -371,11 +371,11 @@ La fréquence de piégeage dans les directions $\vec{x}$ et $\vec{y}$, liée à 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/Modif_exp/frequences_piege_optique.pdf}
-\caption{\textbf{a: Exemple d'oscillation dans le piège optique.} Le nuage oscille dans la direction $\vec{z}$ pour une puissance du faisceau dimple de \SI{0.70}{\watt} après avoir été poussé par un gradient magnétique (points bleus). La fréquence d'oscillation est alors de $\omega_z /2\pi \simeq \SI{51}{\hertz}$, extraite par ajustement (courbe noire). \textbf{b: Fréquences d'oscillations du piège optique.} Les fréquences mesurées par oscillations du nuage (points) sont comparées à des estimations issues de mesures de la taille des faisceaux et de mesures de puissance de ces faisceaux (lignes continues).}
+\caption{\textbf{a: Exemple d'oscillation dans le piège optique.} Le nuage oscille dans la direction $\vec{z}$ pour une puissance du faisceau dimple de \SI{0.70}{\watt} après avoir été poussé par un gradient magnétique (points bleus). La fréquence d'oscillation est alors de $\omega_z /2\pi \simeq \SI{51}{\hertz}$, extraite par ajustement (courbe noire). \textbf{b: Fréquences d'oscillations du piège optique.} Les fréquences mesurées par oscillations du nuage (points) sont tracées en fonction de la puissance du faisceau associé. Les valeurs des calibrations $A_{\mathrm{pince}}$ et $A_{\mathrm{dimple}}$ sont ensuite extraites par ajustement de ces données (lignes continues).}
 \label{fig:frequences_piege_optique}
 \end{figure}
 
-L'évolution des fréquences de piégeage de chaque faisceau en fonction de la puissance optique est représentée figure \ref{fig:frequences_piege_optique}.b en échelle logarithmique. La variation des fréquences s'est faite en abaissant la puissance du laser au cours de l'évaporation optique, celle-ci conduisant à une décompression du piège de comportement $\omega /2\pi =A \sqrt{P}$ comme le témoignent les formules \ref{eq:profondeur_piege_optique} et \ref{eq:frequences_piege_optique}. Les fréquences mesurées expérimentalement (carrés pour la pince optique, losanges pour le faisceau dimple) sont ajustées par une loi de puissance (lignes continues). La calibration de la pince est alors déterminée à $A_{\mathrm{pince}}=912\pm \SI{30}{\hertz\per\watt^{1/2}}$, et celle du dimple à $A_{\mathrm{dimple}}=62.5\pm \SI{1.2}{\hertz\per\watt^{1/2}}$, proche de la valeur précédant le remplacement du laser source\footnote{La dernière calibration date de la mise en place de la \emph{dimple box} lors de la thèse de Kilian Muller \citep{muller2015coherent}. Celle du dimple était alors de $A_{\mathrm{dimple}}=64.5\pm \SI{1.2}{\hertz\per\watt^{1/2}}$.}.
+L'évolution des fréquences de piégeage de chaque faisceau en fonction de la puissance optique est représentée figure \ref{fig:frequences_piege_optique}.b en échelle logarithmique. La variation des fréquences s'est faite en abaissant la puissance du laser au cours de l'évaporation optique, celle-ci conduisant à une décompression du piège de comportement $\omega /2\pi =A \sqrt{P}$ comme le témoignent les formules \ref{eq:profondeur_piege_optique} et \ref{eq:frequences_piege_optique}. Les fréquences mesurées expérimentalement (carrés pour la pince optique, losanges pour le faisceau dimple) sont ajustées par une loi de puissance (lignes continues). La calibration de la pince est alors déterminée à $A_{\mathrm{pince}}=980\pm \SI{20}{\hertz\per\watt^{1/2}}$, et celle du dimple à $A_{\mathrm{dimple}}=60.5\pm \SI{1.0}{\hertz\per\watt^{1/2}}$, proche de la valeur précédant le remplacement du laser source\footnote{La dernière calibration date de la mise en place de la \emph{dimple box} lors de la thèse de Kilian Muller \citep{muller2015coherent}. Celle du dimple était alors de $A_{\mathrm{dimple}}=64.5\pm \SI{1.2}{\hertz\per\watt^{1/2}}$.}.
 
 
 
