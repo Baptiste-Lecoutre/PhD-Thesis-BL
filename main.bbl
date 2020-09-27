@@ -155,12 +155,6 @@ K.~B. Davis, M.-O. Mewes, M.~R. Andrews, N.~J. van Druten, D.~S. Durfee,
 \newblock \emph{Physical review letters}, 75\penalty0 (22):\penalty0 3969,
   1995.
 
-\bibitem[Delande and Orso(2014)]{delande2014mobility}
-D.~Delande and G.~Orso.
-\newblock Mobility edge for cold atoms in laser speckle potentials.
-\newblock \emph{Physical review letters}, 113\penalty0 (6):\penalty0 060601,
-  2014.
-
 \bibitem[Denechaud(2018)]{denechaud2018vers}
 V.~Denechaud.
 \newblock \emph{Vers une {\'e}tude spectroscopique de la transition
@@ -369,6 +363,12 @@ B.~Kramer and A.~MacKinnon.
 R.~Kuhn, O.~Sigwarth, C.~Miniatura, D.~Delande, and C.~M{\"u}ller.
 \newblock Coherent matter wave transport in speckle potentials.
 \newblock \emph{New Journal of Physics}, 9\penalty0 (6):\penalty0 161, 2007.
+
+\bibitem[Lagendijk et~al.(2009)Lagendijk, Van~Tiggelen, and
+  Wiersma]{lagendijk2009fifty}
+A.~Lagendijk, B.~Van~Tiggelen, and D.~S. Wiersma.
+\newblock Fifty years of anderson localization.
+\newblock \emph{Phys. Today}, 62\penalty0 (8):\penalty0 24--29, 2009.
 
 \bibitem[Larose et~al.(2004)Larose, Margerin, Van~Tiggelen, and
   Campillo]{larose2004weak}
