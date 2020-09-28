@@ -208,9 +208,10 @@ E_{F=1} &= - \frac{h \deltahf}{2} \sqrt{1+ m_F \beta +\beta^2} \text{ ,}
 \end{aligned}
 \label{eq:Breit-Rabi}
 \end{equation}
-avec $\beta \simeq 2 \mub \left| B \right| /h \deltahf$. À faible champ magnétique $\left| B \right| \ll h \deltahf / \mub$ (régime où $\beta \ll 1$), on retrouve l'effet Zeeman linéaire avec
+avec $\beta \simeq 2 \mub  B  /h \deltahf$ et $B$ est la norme du champ magnétique. À faible champ $ B \ll h \deltahf / \mub$ (régime où $\beta \ll 1$), on retrouve l'effet Zeeman linéaire avec
 \begin{equation}
-U_{\mathrm{mag}} (\mathbf{x}) = \mf g_{\mathrm{F}} \mub \left| B(\mathbf{x}) \right| \text{ ,}
+U_{\mathrm{mag}} (\mathbf{x}) = \mf g_{\mathrm{F}} \mub  B(\mathbf{x}) \text{ ,}
+\label{eq:potentiel_mag}
 \end{equation}
 et $g_{\mathrm{F}=2}= 1/2$ et $g_{\mathrm{F}=1} =-1/2$. L'utilisation d'un champ magnétique non homogène génère donc un potentiel dépendant de la position, tel que dans l'expérience de Stern \& Gerlach. L'utilisation de tels champs inhomogènes est très répandue dans le domaine des atomes ultra-froids, en particulier pour la génération de pièges magnétiques, l'accélération de particules, mais aussi pour réaliser une lévitation magnétique comme c'est le cas sur notre expérience. 
 
@@ -462,12 +463,12 @@ Une contrainte forte de l'étude la localisation d'Anderson réside dans les gra
 
 Le principe de la lévitation magnétique est de compenser la force de pesanteur à l'aide d'un gradient magnétique. Pour l'état $\etatF{1}{-1}$ qui est \emph{Low Field Seeker}, il s'agit d'un gradient de \SI{30}{\gauss\per\centi\metre}. Cependant, la conservation du flux magnétique $\boldsymbol{\nabla} . \mathbf{B}=0$ induit des gradients dans les autres directions. Ceci impose une valeur minimale aux fréquences de piégeage par le biais du théorème de Wing \citep{sackett2006limits}:
 \begin{equation}
-\sum_{i=x,y,z} \omega_i^2 \geq \left| \frac{mg^2}{2 \mf g_{\mathrm{f}} \mub \Bzero}\right| \text{ ,}
+\sum_{i=x,y,z} \omega_i^2 \geq \left| \frac{mg^2}{2 \mf g_{\mathrm{F}} \mub \Bzero}\right| \text{ ,}
 \label{eq:theoreme_wing}
 \end{equation} 
 avec $g$ l'accélération de la pesanteur et $B_0$ la norme du champ magnétique à la position des atomes. Une stratégie de réduction de ces fréquences consiste alors à augmenter fortement le champ $\Bzero$. On utilise donc des bobines supplémentaires pour générer un tel champ, qui peut monter jusqu'à \SI{2000}{\gauss}, permettant de réduire les fréquences de piégeage à environ $\omega_i /2 \pi \sim \SI{0.2}{\hertz}$. Une version simpliste du design de notre lévitation est donnée figure \ref{fig:levitation_simple}.
 
-Une autre stratégie couramment utilisée par l'équipe est de se placer dans l'état $\etatF{2}{-2}$ qui est \textit{High Field Seeker}, il sera donc expulsé de la lévitation par les courbures résiduelles. Il s'agit pour nous d'un avantage puisque cela favorise le processus d'évaporation, de plus on ne pourra pas attribuer à la lévitation un éventuel arrêt de l'expansion du nuage dans l'étude de la localisation d'Anderson. Pour atteindre cet état, on applique une transition radio-fréquence dans le piège optique croisé avant évaporation.
+Une stratégie couramment utilisée par l'équipe est de se placer dans l'état $\etatF{2}{-2}$ qui est \textit{High Field Seeker}, il sera donc expulsé de la lévitation par les courbures résiduelles. Il s'agit pour nous d'un avantage puisque cela favorise le processus d'évaporation, de plus on ne pourra pas attribuer à la lévitation un éventuel arrêt de l'expansion du nuage dans l'étude de la localisation d'Anderson. Pour atteindre cet état, on applique une transition radio-fréquence dans le piège optique croisé avant évaporation.
 
 \begin{figure}
 \centering

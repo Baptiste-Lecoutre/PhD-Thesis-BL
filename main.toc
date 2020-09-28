@@ -36,15 +36,15 @@
 \contentsline {subsection}{\numberline {4.1.2}Développement d'une nouvelle interface d'acquisition et de traitement d'images}{62}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Calibration de la lévitation magnétique}{62}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Implémentation de la lévitation magnétique}{63}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Intervention sur le circuit de refroidissement}{65}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Calibration des champs par radio-fréquences}{65}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}\'Etude du potentiel magnétique}{68}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Changement du laser infrarouge et calibration du piège optique}{71}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Changement du laser infrarouge fibré Ytterbium }{71}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{74}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{75}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Lois d'échelle du refroidissement évaporatif}{76}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Résultats de l'optimisation de l'évaporation}{81}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.2.2}Intervention sur le circuit de refroidissement}{64}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Calibration des champs par radio-fréquences}{66}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}\'Etude du potentiel de lévitation}{67}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Changement du laser infrarouge et calibration du piège optique}{72}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Changement du laser infrarouge fibré Ytterbium }{72}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{75}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{76}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Lois d'échelle du refroidissement évaporatif}{77}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Résultats de l'optimisation de l'évaporation}{82}{subsection.4.4.2}%
 \contentsline {chapter}{\numberline {5}Propriétés d'un désordre de type speckle}{87}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Génération d'un champ de speckle}{87}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Statistiques de l'intensité d'un speckle}{88}{subsection.5.1.1}%
