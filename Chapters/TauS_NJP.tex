@@ -33,7 +33,7 @@ Un outil couramment utilisé pour décrire l'évolution de ce système quantique
 \hat{G}(E)=\frac{1}{E-\hat{H}+i 0^+} 
 \label{eq:definition_green}
 \end{equation}
-dans la base des énergies \citep{akkermans2007mesoscopic}\citep{kuhn2007coherent}. En remplaçant le hamiltonien $\hat{H}$ par son expression, on montre ainsi que la fonction de Green est solution de l'équation de Dyson
+dans la base des énergies \citep{akkermans2007mesoscopic, kuhn2007coherent}. En remplaçant le hamiltonien $\hat{H}$ par son expression, on montre ainsi que la fonction de Green est solution de l'équation de Dyson
 \begin{equation}
 \hat{G}(E)=\hat{G}_0(E) + \hat{G}_0(E) \hat{V} \hat{G}(E) \text{ ,}
 \label{eq:dyson}
@@ -49,7 +49,7 @@ avec $E_{\mathrm{k}_i}$ l'énergie cinétique de la particule.
 \overline{G}(E,\mathbf{k}_{\mathrm{i}})=\frac{1}{E-E_{\mathrm{k}_i}-\overline{V}-\Sigma(E,\mathbf{k}_{\mathrm{i}})} \text{ ,}
 \label{eq:fonction_green_moyenne}
 \end{equation}
-où $\overline{\cdots}$ représente la moyenne sur les différentes réalisations du désordre \citep{akkermans2007mesoscopic}\citep{kuhn2007coherent}. La quantité complexe $\Sigma(E,\mathbf{k}_{\mathrm{i}})$, la \emph{Self-Energy}, est homogène à une énergie et encode l'effet des fluctuations du potentiel désordonné $\hat{V}$\footnote{Seules les fluctuations du potentiel sont contenues dans la \selfenergy\ telle qu'écrite ici puisque nous avons fait apparaître explicitement la valeur moyenne du potentiel.}. Si l'expression de la fonction de Green moyenne \ref{eq:fonction_green_moyenne} est exacte, sa détermination reste ardue et demande l'utilisation d'approximations pour déterminer la \selfenergy , telles que l'expansion de Born\citep{kuhn2007coherent}\citep{lugan2009one}, l'approche auto-consistante de Born \citep{skipetrov2008anderson}\citep{yedjour2010diffusion}, ou encore des approximations semi-classiques \citep{trappe2015semiclassical}\citep{prat2016semiclassical}. 
+où $\overline{\cdots}$ représente la moyenne sur les différentes réalisations du désordre \citep{akkermans2007mesoscopic, kuhn2007coherent}. La quantité complexe $\Sigma(E,\mathbf{k}_{\mathrm{i}})$, la \emph{Self-Energy}, est homogène à une énergie et encode l'effet des fluctuations du potentiel désordonné $\hat{V}$\footnote{Seules les fluctuations du potentiel sont contenues dans la \selfenergy\ telle qu'écrite ici puisque nous avons fait apparaître explicitement la valeur moyenne du potentiel.}. Si l'expression de la fonction de Green moyenne \ref{eq:fonction_green_moyenne} est exacte, sa détermination reste ardue et demande l'utilisation d'approximations pour déterminer la \selfenergy , telles que l'expansion de Born \citep{kuhn2007coherent, lugan2009one}, l'approche auto-consistante de Born \citep{skipetrov2008anderson, yedjour2010diffusion}, ou encore des approximations semi-classiques \citep{prat2016semiclassical, trappe2015semiclassical}. 
 
 
 \paragraph*{La fonction spectrale}
@@ -290,7 +290,7 @@ Cette dernière expression présente un intérêt expérimental particulier. En 
 \end{equation}
 où $\Gamma(\delta)$ correspond au taux de transfert entre l'état initial du condensat de Bose-Einstein $\etat{\mathbf{k}=0}$ et les états $\etat{\psi_{\delta}}$ d'énergie externe $E=\hb\delta$ du désordre réalisé à l'aide d'un couplage de pulsation de Rabi $\Omega$. La mesure de la fonction spectrale peut donc être faite en déterminant le taux de transfert d'une spectroscopie du désordre.
 
-De nombreuses hypothèses sont nécessaires pour obtenir ce résultat, dont une discussion détaillée est donnée dans les références \citep{denechaud2018vers}\citep{volchkov2018measurement}. Notamment, cette correspondance entre fonction spectrale et taux de transfert n'est valide que pour un couplage faible ($\Omega$ petit devant les autres échelles d'énergie) et des temps $t$ courts tels que $\Gamma t \ll 1$. Une conséquence forte de ces contraintes est que seulement quelques pourcents des atomes sont transférés dans le désordre. 
+De nombreuses hypothèses sont nécessaires pour obtenir ce résultat, dont une discussion détaillée est donnée dans les références \citep{denechaud2018vers, volchkov2018measurement}. Notamment, cette correspondance entre fonction spectrale et taux de transfert n'est valide que pour un couplage faible ($\Omega$ petit devant les autres échelles d'énergie) et des temps $t$ courts tels que $\Gamma t \ll 1$. Une conséquence forte de ces contraintes est que seulement quelques pourcents des atomes sont transférés dans le désordre. 
 
 
 
@@ -320,7 +320,7 @@ Il est possible de distinguer deux régimes dans les figures \ref{fig:mesures_fo
 \paragraph*{Régime de désordre quantique}
 Le régime de désordre quantique est obtenu lorsque $|\VR|\ll\ER$. Dans ce régime, l'amplitude du désordre est trop faible pour que celui-ci puisse supporter des état liés sur une taille typique des grains de \speckle . Les atomes, dont l'énergie est de l'ordre de $|\VR|$, ont alors une longueur d'onde de de Broglie plus grande que les grains de \speckle . 
 
-De fait, la fonction d'onde s'étale sur plusieurs granularités du potentiel et \emph{lisse} le potentiel vu par la fonction d'onde par effet tunnel. On peut alors montrer que le potentiel effectif issu de ce lissage possède une amplitude $\sim\VR^2/\ER$ assimilable à la largeur de la fonction spectrale, indépendante du caractère attractif ou répulsif du potentiel \citep{bloch2012quantum}\citep{pasek2017anderson}. Les fonctions spectrales des figures \ref{fig:mesures_fonctions_spectrales_rouge} et \ref{fig:mesures_fonctions_spectrales_bleu} mesurées pour les désordres les plus faibles présentent donc des similarités (pour $|\VR|/h=\SI{60}{\hertz}$ et $|\VR|/h=\SI{121}{\hertz}$). 
+De fait, la fonction d'onde s'étale sur plusieurs granularités du potentiel et \emph{lisse} le potentiel vu par la fonction d'onde par effet tunnel. On peut alors montrer que le potentiel effectif issu de ce lissage possède une amplitude $\sim\VR^2/\ER$ assimilable à la largeur de la fonction spectrale, indépendante du caractère attractif ou répulsif du potentiel \citep{bloch2012quantum, pasek2017anderson}. Les fonctions spectrales des figures \ref{fig:mesures_fonctions_spectrales_rouge} et \ref{fig:mesures_fonctions_spectrales_bleu} mesurées pour les désordres les plus faibles présentent donc des similarités (pour $|\VR|/h=\SI{60}{\hertz}$ et $|\VR|/h=\SI{121}{\hertz}$). 
 
 Dans la continuité de la correspondance entre largeur de la fonction spectrale et temps de vie de l'état initial développée en début de chapitre, le temps de vie $\taus^{\mathrm{sf}}$ se comporte selon $\hb\ER/\VR^2$, comme attendu dans le régime de désordre faible (voir section \ref{sc:taus_born}). La forme de la fonction spectrale serait alors de forme Lorentzienne dans ce régime\citep{kuhn2007coherent}.
 

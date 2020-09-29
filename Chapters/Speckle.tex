@@ -119,7 +119,7 @@ Les expériences menées sur notre dispositif jusqu'en 2014 utilisaient un \spec
 \label{fig:montage_speckle_taus}
 \end{figure}
 
-Par vœux de concision, seules les grandes lignes du montage de génération du \speckle\ à \SI{780}{\nano\metre} seront données ici, de nombreux détails à propos de ce montage pouvant être retrouvés dans les thèses de Jérémie Richard, Vincent Denechaud et Musawwadah Mukhtar \citep{richard2015propagation, denechaud2018vers, mukhtar2019state}. De plus, les détails des éléments du montage dépendent fortement de la mesure souhaitée comme nous le verrons dans la suite de chapitre, néanmoins la philosophie en reste inchangée.
+Par vœux de concision, seules les grandes lignes du montage de génération du \speckle\ à \SI{780}{\nano\metre} seront données ici, de nombreux détails à propos de ce montage pouvant être retrouvés dans les thèses de Jérémie Richard, Vincent Denechaud et Musawwadah Mukhtar \citep{denechaud2018vers, mukhtar2019state, richard2015propagation}. De plus, les détails des éléments du montage dépendent fortement de la mesure souhaitée comme nous le verrons dans la suite de chapitre, néanmoins la philosophie en reste inchangée.
 
 Ce montage se décompose en deux parties, la première permettant de mettre en forme les propriétés du faisceau laser, et la seconde génère le désordre sur les atomes.
 
@@ -533,7 +533,7 @@ Avec la condition d'un petit désaccord, on obtient alors $\left| \overline{V_1}
 \paragraph*{Détails du potentiel dipolaire}
 À l'échelle des désaccords typiques recherchés dans une telle situation (de l'ordre de \SI{100}{\mega\hertz}), il est aussi nécessaire de tenir compte de la structure hyperfine de l'état excité $5^2 P_{3/2}$ du \isotope[87]{Rb}, qui se décompose en quatre états hyperfins $\etat{F'=\lbrace 0,1,2,3 \rbrace}$. On peut alors montrer que le potentiel dipolaire ressenti par les états fondamentaux $\etatF{1}{}$ et $\etatF{2}{}$ est la somme des contributions de chacune des transitions vers un état excité \citep{grimm2000optical}. 
 
-De plus, le faisceau \speckle\ étant polarisé linéairement suivant l'axe du champ magnétique $\vec{y}$, les contributions au potentiel dipolaire se restreignent aux transitions $\pi$ ($\Delta\mf=0$) et on peut alors montrer à l'aide d'un calcul attentif de la polarisabilité atomique que le potentiel dipolaire ressenti par les états fondamentaux hyperfins est donné par \citep{grimm2000optical}\citep{steck2001rubidium}\citep{denechaud2018vers}:
+De plus, le faisceau \speckle\ étant polarisé linéairement suivant l'axe du champ magnétique $\vec{y}$, les contributions au potentiel dipolaire se restreignent aux transitions $\pi$ ($\Delta\mf=0$) et on peut alors montrer à l'aide d'un calcul attentif de la polarisabilité atomique que le potentiel dipolaire ressenti par les états fondamentaux hyperfins est donné par \citep{denechaud2018vers, grimm2000optical, steck2001rubidium}:
 \begin{equation}
 V_2(\mathbf{x}) = \frac{3 \pi c^2 \Gamma I(\mathbf{x})}{\omega_0^3} \left( \frac{1}{40 \: \delta_{2,1}} + \frac{1}{24 \: \delta_{2,2}} + \frac{4}{15 \: \delta_{2,3}} \right) 
 \label{eq:potentiel_dipolaire_hyperfin_V2}
@@ -583,7 +583,7 @@ Nous avons vu section \ref{sc:propriete_BEC} que pour un condensat de Bose-Einst
 
 Augmentons alors la force du désordre: le potentiel résiduel augmente jusqu'à ce que celui-ci dépasse par endroits le potentiel chimique. À ces endroits, l'énergie d'interaction n'est plus suffisante pour écranter l'énergie potentielle du désordre et on crée un trou dans le condensat. Notons de plus que localement l'énergie ne sera plus égale au potentiel chimique. La conséquence la plus néfaste est l'apparition de nouvelles énergies dans la distribution d'énergie de l'état libre, dégradant ainsi la spectroscopie recherchée.
 
-Le caractère limitant du désordre résiduel apparaît donc lorsque celui-ci est de l'ordre du potentiel chimique $\overline{V_1} \lesssim \mu \approx h\times\SI{40}{\hertz}$\footnote{La détermination exacte de la limite applicable fait aussi intervenir la longueur de cicatrisation du condensat ainsi que la longueur de corrélation du potentiel. Le raisonnement présenté ici permet de tout même d'expliquer qualitativement l'origine de cette limitation.}. En utilisant le rapport \ref{eq:ratio_desordre_etat}, on estime alors que le désordre maximal applicable à l'aide de cette technique est de l'ordre de quelques $h\times\SI{}{\kilo\hertz}$\footnote{Cet effet a été observé lors de la mesure des fonctions spectrales. \citep{volchkov2018measurement}\citep{denechaud2018vers}}. 
+Le caractère limitant du désordre résiduel apparaît donc lorsque celui-ci est de l'ordre du potentiel chimique $\overline{V_1} \lesssim \mu \approx h\times\SI{40}{\hertz}$\footnote{La détermination exacte de la limite applicable fait aussi intervenir la longueur de cicatrisation du condensat ainsi que la longueur de corrélation du potentiel. Le raisonnement présenté ici permet de tout même d'expliquer qualitativement l'origine de cette limitation.}. En utilisant le rapport \ref{eq:ratio_desordre_etat}, on estime alors que le désordre maximal applicable à l'aide de cette technique est de l'ordre de quelques $h\times\SI{}{\kilo\hertz}$\footnote{Cet effet a été observé lors de la mesure des fonctions spectrales \citep{denechaud2018vers, volchkov2018measurement}.}. 
 
 
 

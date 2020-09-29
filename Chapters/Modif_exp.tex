@@ -504,7 +504,7 @@ L'évolution des fréquences de piégeage de chaque faisceau en fonction de la p
 
 \section{Optimisation de l'évaporation tout-optique}
 \label{sc:evap_optique}
-Vingt-cinq ans après l'obtention du premier condensat de Bose-Einstein, l'étape de refroidissement par évaporation forcée reste un passage obligatoire pour l'obtention d'un gaz dégénéré, à l'exception de quelques développements récents se basant sur des techniques novatrices de refroidissement laser \citep{stellmer2013laser} \citep{hu2017creation}. 
+Vingt-cinq ans après l'obtention du premier condensat de Bose-Einstein, l'étape de refroidissement par évaporation forcée reste un passage obligatoire pour l'obtention d'un gaz dégénéré, à l'exception de quelques développements récents se basant sur des techniques novatrices de refroidissement laser \citep{hu2017creation,stellmer2013laser}. 
 
 Comme brièvement présenté dans le chapitre précédent, le principe du refroidissement évaporatif repose sur l'extraction de particules très énergétiques, suivie par la thermalisation des particules restantes moins énergétiques en moyenne, se traduisant donc par une diminution de la température. Néanmoins, l'efficacité de ce processus dépend fortement de la configuration expérimentale. Les modifications apportées à notre piège optique nécessitent donc d'adapter les consignes d'évaporation à notre nouvelle géométrie. %De plus, l'utilisation de nouvelles cartes analogiques \emph{National Instruments} avec la suite \emph{Cicero Word Generator} permet de générer de nouvelles consignes arbitraires, non limitées à des morceaux de rampes telles qu'auparavant. 
 
@@ -616,7 +616,7 @@ En revanche, l'évaporation optique est réalisée en abaissant la puissance des
 
 \paragraph*{Consigne d'évaporation}
 Les lois d'échelle présentées dans la section précédente montrent comment évoluent les différentes grandeurs thermodynamiques du nuage en fonction de la profondeur du piège, sans pour autant spécifier la dépendance temporelle de celle-ci. Afin de déterminer le profil optimal de la consigne d'évaporation, il est possible d'établir un bilan du nombre d'atomes présents dans le piège\footnote{Les lois d'échelle présentées dans les paragraphes précédents ont été obtenues à l'aide d'un bilan d'énergie.}.
-En considérant que les atomes sont uniquement perdus par évaporation, on peut écrire les variations du nombre d'atomes à l'aide d'une équation de taux \citep{luiten1996kinetic}\citep{o2001scaling}
+En considérant que les atomes sont uniquement perdus par évaporation, on peut écrire les variations du nombre d'atomes à l'aide d'une équation de taux \citep{luiten1996kinetic,o2001scaling}
 \begin{equation}
 \dot{N} = - \Gamma_{\mathrm{ev}} N \quad \text{avec} \quad \Gamma_{\mathrm{ev}}=2(\eta-4) e^{-\eta} \Gamma_{\mathrm{c}} \text{ .}
 \label{eq:pertes_evap_naturelle}
@@ -656,12 +656,12 @@ Puisque ce mécanisme nécessite la collision de trois atomes, on peut décrire 
 \dot{n}_{\mathrm{3b}}(\mathbf{x})&=-K_{\mathrm{3b}} n^3(\mathbf{x}) \label{eq:pertes_atomes_3corps} \\
 \dot{E}_{\mathrm{3b}}&= \frac{3}{2}\dot{N}_{\mathrm{3b}} \kB T + \int{\mathrm{d}\mathbf{x} \: U(\mathbf{x}) \dot{n}_{\mathrm{3b}}(\mathbf{x})}\text{ ,}
 \end{align}
-où le coefficient $K_{\mathrm{3b}}$ est une constante du \isotope[87]{Rb} et vaut \SI{1.8e-29}{\centi\metre^6\second^{-1}} \citep{burt1997coherence}\citep{soding1999three}.
+où le coefficient $K_{\mathrm{3b}}$ est une constante du \isotope[87]{Rb} et vaut \SI{1.8e-29}{\centi\metre^6\second^{-1}} \citep{burt1997coherence,soding1999three}.
 
 
 Comme illustré par l'équation \ref{eq:pertes_atomes_3corps}, le mécanisme de pertes à trois corps devient important dans des régions de fortes densités. Les pièges optiques étant fortement comprimés afin d'avoir un taux de collisions suffisant pour pouvoir évaporer, ceux-ci sont particulièrement susceptibles de générer des pertes à trois corps. 
 
-En présence de ces pertes, il est possible de modifier les lois d'échelles présentées précédemment \citep{luiten1996kinetic}\citep{brantut2009manipulation}. En particulier, on peut montrer que dans le cas d'un piège harmonique profond, l'équation \ref{eq:nombre_atome_evap} régissant l'évolution du nombre d'atomes se généralise en
+En présence de ces pertes, il est possible de modifier les lois d'échelles présentées précédemment \citep{brantut2009manipulation,luiten1996kinetic}. En particulier, on peut montrer que dans le cas d'un piège harmonique profond, l'équation \ref{eq:nombre_atome_evap} régissant l'évolution du nombre d'atomes se généralise en
 \begin{equation}
 \frac{\dot{N}}{N}= \left( \frac{\eta'-3}{3(1-\nu)} + R \frac{2-\eta'}{3(1-\nu)} \right)^{-1} \frac{\dot{U}}{U} \text{ ,}
 \label{eq:scaling_atomes_3corps}
