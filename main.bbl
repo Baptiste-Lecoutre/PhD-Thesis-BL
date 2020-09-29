@@ -1,4 +1,4 @@
-\begin{thebibliography}{128}
+\begin{thebibliography}{129}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -649,6 +649,13 @@ C.~Sackett.
 L.~Sapienza, H.~Thyrrestrup, S.~Stobbe, P.~D. Garcia, S.~Smolka, and P.~Lodahl.
 \newblock Cavity quantum electrodynamics with anderson-localized modes.
 \newblock \emph{Science}, 327\penalty0 (5971):\penalty0 1352--1355, 2010.
+
+\bibitem[S{\'a}rk{\'a}ny et~al.(2014)S{\'a}rk{\'a}ny, Weiss, Hattermann, and
+  Fort{\'a}gh]{sarkany2014controlling}
+L.~S{\'a}rk{\'a}ny, P.~Weiss, H.~Hattermann, and J.~Fort{\'a}gh.
+\newblock Controlling the magnetic-field sensitivity of atomic-clock states by
+  microwave dressing.
+\newblock \emph{Physical Review A}, 90\penalty0 (5):\penalty0 053416, 2014.
 
 \bibitem[Sarma et~al.(1988)Sarma, He, and Xie]{sarma1988mobility}
 S.~D. Sarma, S.~He, and X.~Xie.
