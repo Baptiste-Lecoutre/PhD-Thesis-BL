@@ -68,9 +68,9 @@ L'utilisation de cette nouvelle interface a donc permis de centraliser les donn�
 \label{sc:levitation}
 Comme présenté partie \ref{sc:chambre_science}, la lévitation magnétique est un élément essentiel de notre expérience. En plus d'être un pré-requis pour l'étude de la localisation d'Anderson à trois dimensions, celle-ci nous permet de manière plus générale d'obtenir des échantillons particulièrement froids. Son bon fonctionnement est donc crucial pour notre expérience. 
 
-Notons également que dans le cadre de l'étude la transition d'Anderson à énergie résolue, il s'avère nécessaire d'avoir une connaissance fine du potentiel magnétique dans lequel les atomes évoluent. En effet, l'approche spectroscopique mentionnée dans le chapitre \ref{ch:Localisation} repose sur l'existence d'un \emph{champ magnétique magique} $\magicB$ précis et à bas champ, pour lequel les inhomogénéités du potentiel de lévitation peuvent affecter un piège optique très décomprimé. De plus, il est nécessaire de caractériser le potentiel de lévitation à fort courant dans lequel les atomes vont évoluer en présence de désordre.% Importance de calibrer proprement tous les champs magnétiques.
+Notons également que dans le cadre de l'étude la transition d'Anderson à énergie résolue, il s'avère nécessaire d'avoir une connaissance fine du potentiel magnétique dans lequel les atomes évoluent. En effet, l'approche spectroscopique mentionnée dans le chapitre \ref{ch:Localisation} repose sur l'existence d'un \emph{champ magnétique magique} $\magicB$ précis et à bas champ, pour lequel les inhomogénéités du potentiel de lévitation peuvent affecter un piège optique très décomprimé. De plus, il est nécessaire de caractériser le potentiel de lévitation à fort champ dans lequel les atomes vont évoluer en présence de désordre.% Importance de calibrer proprement tous les champs magnétiques.
 
-Malheureusement, la formation d'un bouchon à base de précipités métalliques dans le circuit de refroidissement de la lévitation a conduit au démontage d'une partie importante du système de la lévitation. Les modifications apportées avant remontage ayant pu conduire à une modification du comportement magnétique du système, une nouvelle calibration attentive des champs magnétiques a été menée.
+Malheureusement, la formation d'un bouchon à base de précipités métalliques dans le circuit de refroidissement de la lévitation a conduit au démontage d'une partie importante du système de lévitation magnétique. Les modifications apportées avant remontage ayant pu conduire à une modification du comportement magnétique du système, une nouvelle calibration attentive des champs magnétiques a été menée.
 
 Dans cette partie, nous présenterons dans un premier temps notre système de lévitation ainsi que les modifications qui y ont été apportées. Ensuite, nous nous pencherons sur les méthodes utilisées pour calibrer le système après sa réinstallation sur l'expérience, en commençant par  une spectroscopie radio-fréquence permettant de calibrer très précisément les champs magnétiques, puis à l'aide d'expériences d'oscillations afin de caractériser le potentiel de lévitation.
 
@@ -170,7 +170,7 @@ où le champ $B$ correspond à la norme du champ magnétique total, c'est-à-dir
 B=\sqrt{(b_{\mathrm{c,x}}+b_{\mathrm{0x}})^2+(B_{\mathrm{A}}+B_{\mathrm{B}}+b_{\mathrm{0y}})^2+(b_{\mathrm{c,z}}+b_{\mathrm{0z}})^2} \text{ .}
 \end{equation}
 
-En réalisant cette opération pour différents courants pour chacune des bobines de biais, il nous est possible de déterminer les calibrations des champs magnétiques \ref{eq:calibration_biais_lev} et \ref{eq:calibration_biais_comp}. En particulier, le comportement à très bas champ nous permet de déterminer les différentes composantes $b_{\mathrm{0i}}$ du champ rémanent, souvent négligeable devant le champ rayonné pour des courants usuels. L'ensemble des calibrations des champs de biais que nous avons pu déterminer est donné table \ref{tb:levitation_RF}.
+En réalisant cette opération pour différents courants pour chacune des bobines de biais, il nous est possible de déterminer les calibrations des champs magnétiques \ref{eq:calibration_biais_lev} et \ref{eq:calibration_biais_comp}. En particulier, le comportement à très bas champ nous permet de déterminer les différentes composantes $b_{\mathrm{0i}}$ du champ rémanent, souvent négligeable devant le champ rayonné pour des courants usuels. L'ensemble des calibrations des champs de biais est alors donné table \ref{tb:levitation_RF}.
  
 
 \renewcommand{\arraystretch}{1.1}
@@ -181,23 +181,23 @@ En réalisant cette opération pour différents courants pour chacune des bobine
 %\hline
 {\color{MainColor}\textbf{Grandeur}} & {\color{MainColor}\textbf{Valeur}} \\
 %\hline
-Calibration Biais A $c_{\mathrm{A}}$ & \SI{4.704}{\gauss\per\ampere} \\
+Calibration Biais A $c_{\mathrm{A}}$ & $\SI{4.70}{}\pm\SI{0.05}{\gauss\per\ampere}$ \\
 %\hline
-Calibration Biais B $c_{\mathrm{B}}$ & \SI{6.180}{\gauss\per\ampere} \\
+Calibration Biais B $c_{\mathrm{B}}$ & $\SI{6.18}{}\pm\SI{0.06}{\gauss\per\ampere}$ \\
 %\hline
-Calibration Compensation X $c_{\mathrm{x}}$ & \SI{4.903}{\gauss\per\ampere} \\
+Calibration Compensation X $c_{\mathrm{x}}$ & $\SI{4.90}{}\pm\SI{0.05}{\gauss\per\ampere}$ \\
 %\hline
-Calibration Compensation Z $c_{\mathrm{z}}$ & \SI{4.969}{\gauss\per\ampere} \\
+Calibration Compensation Z $c_{\mathrm{z}}$ & $\SI{4.97}{}\pm\SI{0.05}{\gauss\per\ampere}$ \\
 %\hline
 Courant seuil Biais A $I_{\mathrm{0,A}}$ & $< \SI{1}{\milli\ampere}$ \\
 %\hline
-Courant seuil Biais B $I_{\mathrm{0,B}}$ & \SI{0.345}{\ampere} \\
+Courant seuil Biais B $I_{\mathrm{0,B}}$ & $\SI{0.345}{}\pm\SI{0.003}{\ampere}$ \\
 %\hline
-Champ rémanent $b_{\mathrm{0x}}$ & \SI{0.089}{\gauss} \\
+Champ rémanent $b_{\mathrm{0x}}$ & $\SI{0.089}{}\pm\SI{0.002}{\gauss}$ \\
 %\hline
-Champ rémanent $b_{\mathrm{0y}}$ & \SI{0.426}{\gauss} \\
+Champ rémanent $b_{\mathrm{0y}}$ & $\SI{0.426}{}\pm\SI{0.002}{\gauss}$ \\
 %\hline
-Champ rémanent $b_{\mathrm{0z}}$ & \SI{-0.416}{\gauss} \\
+Champ rémanent $b_{\mathrm{0z}}$ & $\SI{-0.416}{}\pm\SI{0.002}{\gauss}$ \\
 %\hline
 \end{tabular}
 \end{center}}
@@ -251,7 +251,7 @@ dans une zone proche autour du centre du potentiel de lévitation.
 \end{figure}
 
 \paragraph*{Gradient de lévitation}
-À l'aide du potentiel \ref{eq:potentiel_levitation}, il nous est possible de déterminer la valeur du gradient nécessaire pour compenser la gravité:
+À l'aide du potentiel \ref{eq:potentiel_levitation}, il nous est possible de déterminer la valeur du gradient magnétique nécessaire pour compenser la gravité:
 \begin{equation}
 b'=\frac{mg}{\mf \gftilde(\Bzero) \mub} \text{ ,}
 \label{eq:gradient_levitation}
@@ -265,11 +265,11 @@ Notons trois résultats remarquables de la figure \ref{fig:levitation_etats}:
 \item[\textendash] Les états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont lévités pour le même gradient à bas champ. Plus précisément, la susceptibilité magnétique de ces états est égale uniquement pour un \emph{champ magnétique magique} $\magicB=\SI{3.229}{\gauss}$\footnote{Ce champ magique est dû au spin nucléaire. Une dérivation de ce champ peut être trouvée dans la référence \citep{denechaud2018vers}.}, impliquant que ces états \emph{d'horloge} ont le même comportement magnétique \citep{sarkany2014controlling}. Cela se traduit notamment par une lévitation simultanée de ces états.
 \item[\textendash] L'état $\etatF{1}{-1}$ ne peut être lévité que pour des champs inférieurs à environ \SI{150}{\gauss} en raison de la limitation de courant (\SI{50}{\ampere}) de l'alimentation des bobines de gradient. En effet, le gradient nécessaire pour contrer la gravité augmente avec le champ magnétique.
 \end{itemize}
-Plusieurs stratégies expérimentales de lévitation s'offrent alors. La première provient de l'état $\etatF{2}{-2}$ qui peut être lévité à l'aide du bon gradient magnétique tout en gardant la valeur du champ de biais comme un degré de liberté. On peut alors fortement augmenter le champ de biais afin de réaliser des lévitations très décomprimées. Il s'agit de l'approche utilisée pour la mesure du temps de diffusion élastique, présentée chapitre \ref{ch:TauS_PRL}. Une autre possibilité est que les états d'horloge $\etatF{1}{-1}$ et $\etatF{2}{+1}$ peuvent coexister dans le champ de lévitation, on peut ainsi utiliser l'état interne de l'atome comme degré de liberté tout en étant lévité. Cette stratégie a par exemple été utilisée pour la mesure des fonctions spectrales \citep{volchkov2018measurement}.
+Plusieurs stratégies expérimentales de lévitation s'offrent alors. La première provient de l'état $\etatF{2}{-2}$ qui peut être lévité à l'aide du bon gradient magnétique tout en gardant la valeur du champ de biais comme un degré de liberté. On peut alors fortement augmenter le champ de biais afin de réaliser des lévitations très décomprimées (carré bordeaux de la figure \ref{fig:levitation_etats}). Il s'agit de l'approche utilisée pour la mesure du temps de diffusion élastique, présentée chapitre \ref{ch:TauS_PRL}. Une autre possibilité est que les états d'horloge $\etatF{1}{-1}$ et $\etatF{2}{+1}$ peuvent coexister dans le champ de lévitation, on peut ainsi utiliser l'état interne de l'atome comme degré de liberté tout en étant lévité (carré bleu). Cette stratégie a par exemple été utilisée pour la mesure des fonctions spectrales \citep{volchkov2018measurement}.
 
 
 
-Enfin, il est possible de déduire une calibration des bobines de gradient de la relation \ref{eq:gradient_levitation} entre le gradient magnétique et le biais $\Bzero$. En identifiant des couples $\lbrace I_{\mathrm{Gradient}}, I_{\mathrm{Biais}} \rbrace$ permettant de compenser précisément la gravité, on parcourt ainsi la courbe de la figure \ref{fig:levitation_etats} pour l'état $\etatF{1}{-1}$. On détermine alors le facteur de calibration $c_{\mathrm{G}}=\SI{0.66}{\gauss\per\centi\metre\per\ampere}$.
+Enfin, il est possible de déduire une calibration des bobines de gradient de la relation \ref{eq:gradient_levitation} entre le gradient magnétique et le biais $\Bzero$. En identifiant des couples $\lbrace I_{\mathrm{Gradient}}, I_{\mathrm{Biais}} \rbrace$ permettant de compenser précisément la gravité, on parcourt ainsi la courbe de la figure \ref{fig:levitation_etats} pour l'état $\etatF{1}{-1}$. On détermine alors le facteur de calibration $c_{\mathrm{G}}=0.66\pm\SI{0.01}{\gauss\per\centi\metre\per\ampere}$.
 
 
 
@@ -277,7 +277,7 @@ Enfin, il est possible de déduire une calibration des bobines de gradient de la
 \paragraph*{Fréquences de la lévitation}
 De manière générale, nous avons besoin de caractériser le piégeage résiduel de la lévitation, celui-ci pouvant influencer un piège optique fortement décomprimé dans une configuration à bas champ, et il est nécessaire d'estimer le potentiel résiduel des atomes en expansion dans le désordre dans le cas d'une configuration à fort champ.
 
-Pour l'état $\etatF{1}{-1}$ en particulier, état d'horloge dans lequel nous créons notre condensat de Bose-Einstein\footnote{L'étude des oscillations est ici menée avec l'état $\etatF{1}{-1}$, mais peut être étendue aux autres états.}, le centre de masse du nuage décrit des oscillations autour du centre de la lévitation dont les fréquences peuvent être trouvées à l'aide de la norme du champ magnétique \ref{eq:norme_levitation} et du potentiel magnétique \ref{eq:potentiel_levitation}:
+Pour l'état $\etatF{1}{-1}$ en particulier, état d'horloge dans lequel nous créons notre condensat de Bose-Einstein\footnote{L'étude des oscillations est ici menée avec l'état $\etatF{1}{-1}$, mais peut être étendue aux autres états.}, le centre de masse du nuage décrit des oscillations autour du centre du potentiel de lévitation dont les fréquences peuvent être trouvées à l'aide de la norme du champ magnétique \ref{eq:norme_levitation} et du potentiel magnétique \ref{eq:potentiel_levitation}:
 \begin{equation}
 \omega_x^2=\omega_z^2=\left| \frac{\mf \gftilde \mub}{m} \left( \frac{b'^2}{4 \Bzero} - b'' \right) \right|
 \quad \text{et} \quad
@@ -307,11 +307,11 @@ En particulier, la mesure des fréquences du potentiel de lévitation permet de 
 %\hline
 {\color{MainColor} \textbf{Courbure}} & {\color{MainColor} \textbf{Valeur}} \\
 %\hline
-Gradient $c_{\mathrm{G}}$ & \SI{0.66}{\gauss\per\centi\metre\per\ampere} \\
+Gradient $c_{\mathrm{G}}$ & $0.66\pm\SI{0.01}{\gauss\per\centi\metre\per\ampere}$ \\
 %\hline
-Biais A $c_{\mathrm{A}}''$ & \SI{4e-2}{\gauss\centi\metre^{-2}\ampere^{-1}} \\
+Biais A $c_{\mathrm{A}}''$ & $\SI{4e-2}{}\pm\SI{1e-2}{\gauss\centi\metre^{-2}\ampere^{-1}}$ \\
 %\hline
-Biais B $c_{\mathrm{B}}''$ & \SI{-7e-2}{\gauss\centi\metre^{-2}\ampere^{-1}} \\
+Biais B $c_{\mathrm{B}}''$ & $\SI{-7e-2}{}\pm\SI{1e-2}{\gauss\centi\metre^{-2}\ampere^{-1}}$ \\
 %\hline
 \end{tabular}}
 \end{center}
@@ -351,8 +351,6 @@ L'étude du système de lévitation magnétique nous a non seulement permis de c
 
 
 
-
-La décompression de la lévitation magnétique peut alors entraîner un déplacement du nuage, dont l'effet peut être critique pour l'étude à énergie résolue de la transition d'Anderson. 
 
 
 
@@ -501,13 +499,13 @@ Une conséquence de cette profondeur finie est que la fonction de partition $f(E
 f(E)\propto e^{-\frac{E}{\kB T}} \Theta(U-E) \text{ .}
 \label{eq:fonction_partition}
 \end{equation}
-Le temps de convergence vers cette distribution, c'est à dire le temps de thermalisation $\tau_{\mathrm{th}}$, est de l'ordre de quelques collisions entres les particules du gaz, dont le taux s'exprime $\Gamma_{\mathrm{c}}=n \sigma \overline{v}$, avec $n$ la densité du gaz, $\sigma$ la section efficace de diffusion et $\overline{v}$ la vitesse moyenne relative entre deux atomes \citep{walraven2010elements}.
+Le temps de convergence vers cette distribution, c'est-à-dire le temps de thermalisation $\tau_{\mathrm{th}}$, est de l'ordre de quelques collisions entres les particules du gaz, dont le taux s'exprime $\Gamma_{\mathrm{c}}=n \sigma \overline{v}$, avec $n$ la densité du gaz, $\sigma$ la section efficace de diffusion et $\overline{v}$ la vitesse moyenne relative entre deux atomes \citep{walraven2010elements}.
 
 En effet, la collision de deux particules permet de transférer de l'énergie d'une particule à la seconde. En particulier, une particule est susceptible d'acquérir par collision une énergie mécanique totale supérieure à la profondeur de piège, celle-ci est donc extraite du piège et emporte une énergie $U+\kappa\kB T$ ($\kappa>0$) supérieure à l'énergie moyenne par particule. %La particule restante a quant à elle perdu de l'énergie. 
 
 Ce processus étant le plus probable pour des particules de grandes énergies, celui-ci favorise l'accumulation des particules dans les états de basse énergie tandis qu'il dépeuple les états de grande énergie. Ce raisonnement permet d'expliquer de manière qualitative la forme de la fonction de partition \ref{eq:fonction_partition}, qui favorise les états de basse énergie.
 
-Ce phénomène d'\emph{évaporation naturelle} conduit donc à une diminution de la température, dont l'efficacité décroît avec le refroidissement du nuage. En effet, l'énergie moyenne par particule diminuant, la probabilité que des particules acquièrent suffisamment d'énergie pour s'échapper du piège décroît exponentiellement \citep{walraven2010elements}. Ainsi, le processus d'évaporation naturelle est fortement ralenti et le taux d'évaporation, c'est à dire le nombre de particules expulsées du piège par évaporation naturelle par unité de temps, peut être estimé par 
+Ce phénomène d'\emph{évaporation naturelle} conduit donc à une diminution de la température, dont l'efficacité décroît avec le refroidissement du nuage. En effet, l'énergie moyenne par particule diminuant, la probabilité que des particules acquièrent suffisamment d'énergie pour s'échapper du piège décroît exponentiellement \citep{walraven2010elements}. Ainsi, le processus d'évaporation naturelle est fortement ralenti et le taux d'évaporation, c'est-à-dire le nombre de particules expulsées du piège par évaporation naturelle par unité de temps, peut être estimé par 
 \begin{equation}
 \Gamma_{\mathrm{ev}}\sim e^{-U/\kB T} \Gamma_{\mathrm{c}} \text{ ,}
 \label{eq:taux_evap}
@@ -583,7 +581,7 @@ Une conséquence remarquable de l'équation \ref{eq:efficacite_evaporation} est 
 
 
 \paragraph*{Taux de collisions et régime d'emballement}
-Si l'équation \ref{eq:efficacite_evaporation} ne fait pas apparaître l'influence du paramètre $\nu$, celui-ci joue cependant un rôle primordial quant à la cinétique de l'évaporation. En effet, la vitesse maximale d'évaporation est limitée par la vitesse à laquelle le gaz atteint un état d'équilibre thermique, c'est à dire le taux de thermalisation $1/\tau_{\mathrm{th}}$. Celui-ci est de l'ordre du taux de collisions $\Gamma_{\mathrm{c}}$, qui varie au cours de l'évaporation avec le nombre d'atomes, la température et la forme du piège.%=n \sigma \overline{v}$, avec $n$ la densité du gaz, $\sigma$ la section efficace de diffusion et $\overline{v}$ la vitesse moyenne relative entre deux atomes \citep{walraven2010elements}. 
+Si l'équation \ref{eq:efficacite_evaporation} ne fait pas apparaître l'influence du paramètre $\nu$, celui-ci joue cependant un rôle primordial quant à la cinétique de l'évaporation. En effet, la vitesse maximale d'évaporation est limitée par la vitesse à laquelle le gaz atteint un état d'équilibre thermique, c'est-à-dire le taux de thermalisation $1/\tau_{\mathrm{th}}$. Celui-ci est de l'ordre du taux de collisions $\Gamma_{\mathrm{c}}$, qui varie au cours de l'évaporation avec le nombre d'atomes, la température et la forme du piège.%=n \sigma \overline{v}$, avec $n$ la densité du gaz, $\sigma$ la section efficace de diffusion et $\overline{v}$ la vitesse moyenne relative entre deux atomes \citep{walraven2010elements}. 
 
 Dans le cas d'un piège harmonique, on montre que la loi de variation du taux de collisions peut s'écrire \citep{o2001scaling}
 \begin{equation}

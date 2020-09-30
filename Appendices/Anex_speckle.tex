@@ -97,7 +97,7 @@ Appliquons alors le changement de variables $\left\lbrace \mathbf{x}_0, \mathbf{
   \CE \propto &\int{\diff\xzero \diff\Deltax \: \Cdiff(\Deltax) \: \Ezero(\xzero)\Ezero^*(\xzero+\Deltax)} \\ 
   \nonumber & e^{i \frac{\xzero^2}{2}(\frac{k}{\deff}-\frac{k'}{\deff'})} e^{-i\frac{k'\Deltax'^2}{2\deff'}} e^{-i\frac{k'\xzero \Deltax}{\deff'}} e^{i\frac{k'\xd \Deltax}{d'}} e^{i \xzero.(\frac{k'\xd'}{d'}-\frac{k\xd}{d})} \text{ .}
 \end{align}
-Supposons à présent que la taille des grains du diffuseur sont très petits devant la taille typique de l'éclairement incident, c'est à dire qu'à l'échelle de variation de $\Cdiff$, l'éclairement incident sera constant. $\Ezero(\xzero)\Ezero^*(\xzero+\Deltax) \approx \Ezero(\xzero)\Ezero^*(\xzero)=I_0(\xzero)$. En supprimant le terme en $\Deltax^2$ supposé petit devant toutes les autres échelles de longueur, on obtient: 
+Supposons à présent que la taille des grains du diffuseur sont très petits devant la taille typique de l'éclairement incident, c'est-à-dire qu'à l'échelle de variation de $\Cdiff$, l'éclairement incident sera constant. $\Ezero(\xzero)\Ezero^*(\xzero+\Deltax) \approx \Ezero(\xzero)\Ezero^*(\xzero)=I_0(\xzero)$. En supprimant le terme en $\Deltax^2$ supposé petit devant toutes les autres échelles de longueur, on obtient: 
 \begin{equation}
 \CE \propto \int{\diff\xzero  \: I_0(\xzero) \: e^{i \frac{\xzero^2}{2}(\frac{k}{\deff}-\frac{k'}{\deff'})} e^{i \xzero.(\frac{k'\xd'}{d'}-\frac{k\xd}{d})} \int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{i \Deltax (\frac{k'\xd'}{d'}-\frac{k'\xzero}{\deff'})}}} \text{ .}
 \end{equation}
@@ -166,7 +166,7 @@ Et donc pour le degré en cohérence $\left| \mu \right|^2=\left| \CE \right|^2$
 &\propto \frac{1}{1+\delta z^2 \frac{k^2 w_0^4}{16f^4}} \\
 &\propto \frac{1}{1+\delta z^2/\sigma_{\parallel}^2}
 \end{align}
-On retrouve bien la lorentzienne avec $\sigma_{\parallel}=4 \sigma_{\perp} / \mathrm{ON}$, c'est à dire la distance de rayleigh. Interprétation: Magati2008 et Magati2009 montrent que dans une géométrie sans lentille, et à grande distance (régime de Fraunhofer), les grains de \speckle\ s'apparentent à des tubes de lumière de corrélation longitudinale tendant vers l'infini (ils font de la physique avec les mains pour expliquer pourquoi). Avec une lentille, ce régime se retrouve autour du plan focal, sur une distance donnée par la longueur de Rayleigh. La forme lorentzienne est aussi typique d'effets longitudinaux en optique gaussienne autour du plan de focalisation.
+On retrouve bien la lorentzienne avec $\sigma_{\parallel}=4 \sigma_{\perp} / \mathrm{ON}$, c'est-à-dire la distance de rayleigh. Interprétation: Magati2008 et Magati2009 montrent que dans une géométrie sans lentille, et à grande distance (régime de Fraunhofer), les grains de \speckle\ s'apparentent à des tubes de lumière de corrélation longitudinale tendant vers l'infini (ils font de la physique avec les mains pour expliquer pourquoi). Avec une lentille, ce régime se retrouve autour du plan focal, sur une distance donnée par la longueur de Rayleigh. La forme lorentzienne est aussi typique d'effets longitudinaux en optique gaussienne autour du plan de focalisation.
 \end{comment}
 
 
@@ -232,7 +232,7 @@ Prenons un speckle composé de deux longueurs d'onde, étudié selon l'axe optiq
 C_E &= \overline{E(0,0,d,\lambda)E^*(0,0,d,\lambda')} \\
 & \propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{i\frac{\mathbf{x}_0^2}{2d_{\mathrm{eff}}}(k-k')} \: \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: e^{-i\Delta\mathbf{x} \frac{k' \mathbf{x}_0}{d_{\mathrm{eff}}}}}}
 \end{align}
-Supposons à présent que l'on s'éloigne peu du plan de Fourier tel que $r_{\mathrm{diff}} w_0 k'/d_{\mathrm{eff}} \ll 1$, c'est à dire $\delta z \ll W_{\mathrm{speckle}} / \mathrm{ON}$ avec $ \delta z$ tel que définit avant, $W_{\mathrm{speckle}}$ l'extension du faisceau de speckle dans le plan de Fourier et $w_0$ la taille du faisceau incident. Dans ce cas, on peut négliger la dernière exponentielle et on a pour un faisceau gaussien:
+Supposons à présent que l'on s'éloigne peu du plan de Fourier tel que $r_{\mathrm{diff}} w_0 k'/d_{\mathrm{eff}} \ll 1$, c'est-à-dire $\delta z \ll W_{\mathrm{speckle}} / \mathrm{ON}$ avec $ \delta z$ tel que définit avant, $W_{\mathrm{speckle}}$ l'extension du faisceau de speckle dans le plan de Fourier et $w_0$ la taille du faisceau incident. Dans ce cas, on peut négliger la dernière exponentielle et on a pour un faisceau gaussien:
 \begin{align}
 C_E &\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\frac{2\mathbf{x}_0^2}{w_0^2}} \: e^{i\frac{\mathbf{x}_0^2}{2d_{\mathrm{eff}}}(k-k')}} \\ 
 &\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\mathbf{x}_0^2 (2/w_0^2-i\frac{k-k'}{2d_{\mathrm{eff}}})}} \\
