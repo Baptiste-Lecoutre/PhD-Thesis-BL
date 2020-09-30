@@ -4,7 +4,7 @@
 \section{Éléments de calcul du temps de diffusion élastique à partir du développement de Born}
 La fonction de Green de la particule libre est donnée par:
 \begin{equation}
-G_0(E,\mathbf{k})=\frac{1}{E-\hb^2k^2/2m+i0^+}=\frac{1}{E-\hb^2k^2/2m}-i \pi \delta(E-\hb^2k^2/2m)
+G_0(E,\mathbf{k})=\frac{1}{E-k^2/2+i0^+}=\frac{1}{E-k^2/2}-i \pi \delta(E-k^2/2)
 \end{equation}
 en utilisant la relation $ 1/(x+i0^+)=\mathrm{vp}(1/x)-i\pi \delta(x)$.
 
@@ -12,7 +12,7 @@ En présence de désordre, la fonction de Green moyennée sur les différentes r
 \begin{equation}
 \widetilde{G}(E,\mathbf{k})=\frac{1}{E-E_{\mathrm{k}}-\overline{V}-\Sigma(E,\mathbf{k})} \text{ ,}
 \end{equation}
-en faisant apparaître l'énergie cinétique $E_{\mathrm{k}}=\hb^2k^2/2m$, la valeur moyenne du potentiel $\overline{V}$ et la \selfenergy\ $\Sigma(E,\mathbf{k})=\langle\mathbf{k}|\Sigma(E)|\mathbf{k}\rangle$. Cette dernière peut être décomposée sous la forme d'une série:
+en faisant apparaître l'énergie cinétique $E_{\mathrm{k}}=k^2/2$, la valeur moyenne du potentiel $\overline{V}$ et la \selfenergy\ $\Sigma(E,\mathbf{k})=\langle\mathbf{k}|\Sigma(E)|\mathbf{k}\rangle$. Cette dernière peut être décomposée sous la forme d'une série:
 \begin{equation}
 \Sigma(E)=\Sigma^{(1)}(E) + \Sigma^{(2)}(E) + \dots \text{ ,}
 \end{equation}
@@ -79,7 +79,7 @@ où $\mathrm{I_0}(x)$ est la fonction de Bessel modifiée d'ordre 0, donnée par
 \int_{0}^{2\pi}{\diff\theta\:e^{x\cos\theta}}=2\pi \mathrm{I_0}(x) \quad \text{pour} \quad x>0 \text{ .}
 \end{equation}
 
-On fait maintenant l'approximation en couche $E=E_{\mathrm{k}}$, et on fait apparaître le temps de diffusion élastique
+On fait maintenant l'approximation en couche $E=E_{\mathrm{k}}$, et on fait apparaître le temps de diffusion élastique en restaurant les unités:
 \begin{align}
 \frac{\hb}{\taus^{\mathrm{sf}}}&=-2\mathrm{Im}[\Sigma^{(1)}(E_{\mathrm{k}},\mathbf{k})] \\
 &= \pi \frac{\VR^2}{\ER} \int{\diff k_{\mathrm{1}}^2 \: e^{-k^2\sigma^2 /4} e^{-k_{\mathrm{1}}^2\sigma^2/4} \mathrm{I_0}(k k_{\mathrm{1}} \sigma^2 /2) \delta(k^2-k_{\mathrm{1}}^2)} \\
@@ -108,11 +108,11 @@ Commençons par évaluer le deuxième ordre de la \selfenergy\ dans l'espace des
 &= 2 \VR^3 \sum_{\mathbf{k}_{\mathrm{1}},\mathbf{k}_{\mathrm{2}}}{G_0(E,\mathbf{k}_{\mathrm{1}}) G_0(E,\mathbf{k}_{\mathrm{2}})} \int{\diff\mathbf{x}_{\mathrm{1}}'\diff\mathbf{x}_{\mathrm{2}}'\diff\mathbf{x}_{\mathrm{3}}' \: \gamma(\mathbf{x}_{\mathrm{1}}')\gamma(\mathbf{x}_{\mathrm{2}}')\gamma(\mathbf{x}_{\mathrm{1}}'-\mathbf{x}_{\mathrm{2}}')}\\
 &\nonumber \qquad\times e^{-i(\mathbf{k}-\mathbf{k}_{\mathrm{1}})\mathbf{x}_{\mathrm{1}}'} e^{-i(\mathbf{k}_{\mathrm{2}}'-\mathbf{k}')\mathbf{x}_{\mathrm{2}}'} e^{-i(\mathbf{k}-\mathbf{k}')\mathbf{x}_{\mathrm{3}}'} \\
 &=\langle \mathbf{k} | \mathbf{k}'\rangle \times 2 \VR^3 \sum_{\mathbf{k}_{\mathrm{1}},\mathbf{k}_{\mathrm{2}}}{G_0(E,\mathbf{k}_{\mathrm{1}}) G_0(E,\mathbf{k}_{\mathrm{2}})} \int{\diff\mathbf{x}_{\mathrm{1}}'\diff\mathbf{x}_{\mathrm{2}}'} \\
-&\nonumber \qquad\times \gamma(\mathbf{x}_{\mathrm{1}}')\gamma(\mathbf{x}_{\mathrm{2}}')\gamma(\mathbf{x}_{\mathrm{1}}'-\mathbf{x}_{\mathrm{2}}') e^{-i(\mathbf{k}-\mathbf{k}_{\mathrm{1}})\mathbf{x}_{\mathrm{1}}'} e^{-i(\mathbf{k}_{\mathrm{2}}'-\mathbf{k}')\mathbf{x}_{\mathrm{2}}'}
+&\nonumber \qquad\times \gamma(\mathbf{x}_{\mathrm{1}}')\gamma(\mathbf{x}_{\mathrm{2}}')\gamma(\mathbf{x}_{\mathrm{1}}'-\mathbf{x}_{\mathrm{2}}') e^{-i(\mathbf{k}-\mathbf{k}_{\mathrm{1}})\mathbf{x}_{\mathrm{1}}'} e^{-i(\mathbf{k}_{\mathrm{2}}'-\mathbf{k}')\mathbf{x}_{\mathrm{2}}'} \text{ ,}
 \end{align}
 en réalisant le changement de variables $\lbrace \mathbf{x}_{\mathrm{1}},\mathbf{x}_{\mathrm{2}},\mathbf{x}_{\mathrm{3}}\rbrace \rightarrow \lbrace \mathbf{x}_{\mathrm{1}}'=\mathbf{x}_{\mathrm{1}}-\mathbf{x}_{\mathrm{2}}, \mathbf{x}_{\mathrm{2}}'=\mathbf{x}_{\mathrm{3}}-\mathbf{x}_{\mathrm{2}}, \mathbf{x}_{\mathrm{3}}'=\mathbf{x}_{\mathrm{2}}\rbrace$. On fait une nouvelle fois apparaître le fait que la \selfenergy\ est diagonale dans l'espace des $\etat{\mathbf{k}}$, traduisant l'invariance par translation du système. 
 
-On peut alors donner une expression simple du deuxième ordre de la \selfenergy
+On peut alors donner une expression simple du deuxième ordre de la \selfenergy\ :
 \begin{align}
 \Sigma^{(2)}(E,\mathbf{k})&= 2\VR^3 \sum_{\mathbf{k}_{\mathrm{1}},\mathbf{k}_{\mathrm{2}}}{G_0(E,\mathbf{k}_{\mathrm{1}}) G_0(E,\mathbf{k}_{\mathrm{2}})} \int{\diff\mathbf{x}_{\mathrm{1}}' \diff\mathbf{x}_{\mathrm{2}}' \: \gamma(\mathbf{x}_{\mathrm{1}}')\gamma(\mathbf{x}_{\mathrm{2}}')\gamma(\mathbf{x}_{\mathrm{1}}'-\mathbf{x}_{\mathrm{2}}')}\\
 &\nonumber\qquad\times e^{-i(\mathbf{k}-\mathbf{k}_{\mathrm{1}})\mathbf{x}_{\mathrm{1}}'} e^{-i(\mathbf{k}_{\mathrm{2}}-\mathbf{k})\mathbf{x}_{\mathrm{2}}'} \\
@@ -153,7 +153,7 @@ et faisons le changement de variables $\mathbf{k}_{\mathrm{3}}'=\mathbf{k}+\math
 \Sigma^{(2)}(E,\mathbf{k})&= \frac{2\VR^3}{(2\pi)^{3d}} \int{\diff\mathbf{k}_{\mathrm{5}} \: \left( \int{\diff\mathbf{k}_{\mathrm{3}}'\: G_0(E,\mathbf{k}_{\mathrm{3}}')\tilde{\gamma}(\mathbf{k}+\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{3}}')} \right)} \\
 &\nonumber \qquad \times\left( \int{\diff\mathbf{k}_{\mathrm{4}}'\: G_0(E,\mathbf{k}_{\mathrm{4}}') \tilde{\gamma}(\mathbf{k}+\mathbf{k}_{\mathrm{5}}-\mathbf{k}_{\mathrm{4}}')}\right) \tilde{\gamma}(\mathbf{k}_{\mathrm{5}})  \\
 &= \frac{2\VR^3}{(2\pi)^{3d}} \int{\diff\mathbf{k}_{\mathrm{5}}' \: \left( \int{\diff\mathbf{k}_{\mathrm{3}}'\: G_0(E,\mathbf{k}_{\mathrm{3}}')\tilde{\gamma}(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')} \right)}\\
-&\nonumber\qquad\times \left( \int{\diff\mathbf{k}_{\mathrm{4}}'\: G_0(E,\mathbf{k}_{\mathrm{4}}') \tilde{\gamma}(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{4}}')}\right) \tilde{\gamma}(\mathbf{k}_{\mathrm{5}}') 
+&\nonumber\qquad\times \left( \int{\diff\mathbf{k}_{\mathrm{4}}'\: G_0(E,\mathbf{k}_{\mathrm{4}}') \tilde{\gamma}(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{4}}')}\right) \tilde{\gamma}(\mathbf{k}_{\mathrm{5}}') \text{ ,}
 \end{align}
 en faisant le changement de variables $\mathbf{k}_{\mathrm{5}}'=-\mathbf{k}_{\mathrm{5}}$ et en remarquant que $\tilde{\gamma}(\mathbf{k}) $ est une fonction paire.
 
@@ -163,21 +163,21 @@ Plaçons-nous à présent en dimension $d=2$.
 &\nonumber \qquad\times\int{\diff\mathbf{k}_{\mathrm{5}}' \: \left( \int{\diff\mathbf{k}_{\mathrm{3}}' \: \frac{V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')}{E-k_{\mathrm{3}}'^2/2}} (-\pi) \int{\diff\mathbf{k}_{\mathrm{4}}' \: \delta(E-k_{\mathrm{4}}'^2/2) \: V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathbf{4}}')} \right.} \\
 &\nonumber \qquad \left.-\pi\int{\diff\mathbf{k}_{\mathrm{3}}' \: \delta(E-k_{\mathrm{3}}'^2/2) V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')} \int{\diff\mathbf{k}_{\mathrm{4}}' \: \frac{V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{4}}')}{E-k_{\mathrm{4}}'^2/2}}\right) V(\mathbf{k}_{\mathrm{5}}') \\
 &= \frac{2\VR^3 (2\pi\sigma^2)^3}{(2\pi)^6} \int{\diff\mathbf{k}_{\mathrm{5}}' \: (-2\pi) V(\mathbf{k}_{\mathrm{5}}')} \\
-&\nonumber\qquad \times\underbrace{\left(\int{\diff\mathbf{k}_{\mathrm{3}}' \:\frac{V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')}{E-k_{\mathrm{3}}'^2/2}}\right)}_{(a)} \times \underbrace{\left(\int{\diff\mathbf{k}_{\mathrm{4}}'\:\delta(E-k_{\mathrm{4}}'^2/2) V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{4}}')}\right)}_{(b)}
+&\nonumber\qquad \times\underbrace{\left(\int{\diff\mathbf{k}_{\mathrm{3}}' \:\frac{V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')}{E-k_{\mathrm{3}}'^2/2}}\right)}_{(a)} \times \underbrace{\left(\int{\diff\mathbf{k}_{\mathrm{4}}'\:\delta(E-k_{\mathrm{4}}'^2/2) V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{4}}')}\right)}_{(b)} \text{ .}
 \end{align}
 
 Calculons à présent le premier terme:
 \begin{align}
 (a)&= \int{\diff\mathbf{k}_{\mathrm{2}}' \: \frac{V(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')}{E-k_{\mathrm{3}}'^2/2}} \\
 &= \int{\diff\mathbf{k}_{\mathrm{3}}' \: \frac{1}{E-k_{\mathrm{3}}'^2/2} e^{-(\mathbf{k}-\mathbf{k}_{\mathrm{5}}'-\mathbf{k}_{\mathrm{3}}')^2 \sigma^2/2}} \\
-&= \int_{\R^+}{\diff k_{\mathrm{3}}' k_{\mathrm{3}}' \int_0^{\pi}{\diff\theta_{\mathrm{3}}'\: \frac{1}{E-k_{\mathrm{3}}'^2/2}e^{-\sigma^2/2\times (k_{\mathrm{3}}'^2+|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2-2k_{\mathrm{3}}' |\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| \cos{\theta_{\mathrm{3}}'})}}}
+&= \int_{\R^+}{\diff k_{\mathrm{3}}' k_{\mathrm{3}}' \int_0^{\pi}{\diff\theta_{\mathrm{3}}'\: \frac{1}{E-k_{\mathrm{3}}'^2/2}e^{-\sigma^2/2\times (k_{\mathrm{3}}'^2+|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2-2k_{\mathrm{3}}' |\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| \cos{\theta_{\mathrm{3}}'})}}} \text{ ,}
 \end{align}
-et en utilisant l'expression de la fonction de Bessel $\int_0^{2\pi}{\diff\theta\:\exp{(x\cos{\theta})}} =2\pi \mathrm{I_0}(x)$ pour $x>0$.
+et en utilisant l'expression de la fonction de Bessel $\int_0^{2\pi}{\diff\theta\:\exp{(x\cos{\theta})}} =2\pi \mathrm{I_0}(x)$ pour $x>0$,
 \begin{align}
 (a)&=\int_{\R^+}{\diff k_{\mathrm{3}}' k_{\mathrm{3}}' e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2 \sigma^2/2} \frac{e^{-k_{\mathrm{3}}'^2\sigma^2/2}}{E-k_{\mathrm{3}}'^2/2} \: 2\pi \mathrm{I_0}(k_{\mathrm{3}}' |\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma^2)} \\
-&= 2\pi e^{-\frac{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2}{2}} \: \int_{\R^+}{\diff\epsilon'\:\frac{e^{-\epsilon'}}{\epsilon-\epsilon'}\mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma\sqrt{2\epsilon'})}
+&= 2\pi e^{-\frac{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2}{2}} \: \int_{\R^+}{\diff\epsilon'\:\frac{e^{-\epsilon'}}{\epsilon-\epsilon'}\mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma\sqrt{2\epsilon'})} \text{ ,}
 \end{align}
-en faisant apparaître les énergies adimensionnées $\epsilon=E/\ER=E\sigma^2$ en unités naturelles. l'énergie cinétique s'écrit $\epsilon'=E_{\mathrm{k}}/\ER=k_{\mathrm{3}}'^2\sigma^2/2$.
+en faisant apparaître les énergies adimensionnées $\epsilon=E/\ER=E\sigma^2$. Avec ces unités naturelles, l'énergie cinétique s'écrit $\epsilon'=E_{\mathrm{k}}/\ER=k_{\mathrm{3}}'^2\sigma^2/2$.
 
 Calculons le second terme:
 \begin{align}
@@ -186,16 +186,16 @@ Calculons le second terme:
 &=\int_{\R^+}{\diff k_{\mathrm{4}}' k_{\mathrm{4}}' \: \int_0^{2\pi}{\diff\theta_{\mathrm{4}}' \: \delta(E-k_{\mathrm{4}}'^2/2) e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2/2} e^{-\sigma^2 k_{\mathrm{4}}'^2/2} e^{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| k_{\mathrm{4}}' \cos{\theta_{\mathrm{4}}'} } }} \\
 &=2\pi e^{-\frac{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2}{2}} \int_{\R^+}{\diff k_{\mathrm{4}}' k_{\mathrm{4}}' \:\delta(E- k_{\mathrm{4}}'^2/2) e^{-\sigma^2 k_{\mathrm{4}}'^2/2} \: \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| \sigma^2 k_{\mathrm{4}}')}\\
 &=2\pi e^{-\frac{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2}{2}} \int_{\R^+}{\diff\epsilon' \:\delta(\epsilon-\epsilon') e^{-\epsilon'} \: \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| \sigma \sqrt{2\epsilon'})}\\
-&=2\pi e^{-\frac{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2}{2}} e^{-\epsilon} \: \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| \sigma \sqrt{2\epsilon})
+&=2\pi e^{-\frac{|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2}{2}} e^{-\epsilon} \: \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'| \sigma \sqrt{2\epsilon}) \text{ ,}
 \end{align}
 avec $\epsilon'=k_{\mathrm{4}}'^2\sigma^2/2$ l'énergie cinétique adimensionnée.
 
-La partie imaginaire de la \selfenergy\ vaut alors
+La partie imaginaire de la \selfenergy\ vaut alors:
 \begin{align}
 \mathrm{Im}[ \Sigma^{(2)}(E,\mathbf{k})]&= \frac{2 \VR^3 (2\pi\sigma^2)^3)}{(2\pi)^6} \int{\diff\mathbf{k}_{\mathrm{5}}' \: (-2\pi) 2\pi e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2/2} \int_{\R^+}{\diff\epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma\sqrt{2\epsilon'})}}\\
 &\nonumber \qquad \times 2\pi e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2\sigma^2/2} e^{-\epsilon} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma \sqrt{2\epsilon}) e^{-k_{\mathrm{5}}'^2\sigma^2/2} \\
  &= -2\VR^3\sigma^6 \int{\diff\mathbf{k}_{\mathrm{5}}' \: e^{-\epsilon} e^{-|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|^2 \sigma^2} e^{-k_{\mathrm{5}}'^2 \sigma^2/2} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma \sqrt{2}\epsilon)} \\
- &\nonumber \qquad \times \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma \sqrt{2\epsilon'})}
+ &\nonumber \qquad \times \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(|\mathbf{k}-\mathbf{k}_{\mathrm{5}}'|\sigma \sqrt{2\epsilon'})} \text{ .}
 \end{align}
 
 
@@ -208,9 +208,9 @@ On fait le changement de variable $\mathbf{k}_{\mathrm{5}}''=\mathbf{k}-\mathbf{
 &\nonumber \qquad \times \int_0^{2\pi}{\diff\theta_{\mathrm{5}}'' \: e^{\sigma^2 k k_{\mathrm{5}}'' \cos\theta_{\mathrm{5}}''} \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon'})}} \\
 &=-4 \pi \VR^3\sigma^6 e^{-\epsilon} e^{-k^2\sigma^2/2} \\
 &\nonumber \qquad \times\int_{\R^+}{\diff k_{\mathrm{5}}'' \: k_{\mathrm{5}}'' e^{-\frac{3}{2}k_{\mathrm{5}}''^2 \sigma^2} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon})^2 \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{\epsilon-\epsilon'} \mathrm{I_0}(k_{\mathrm{5}}'' \sigma \sqrt{2\epsilon'})}} \\
-&= -4 \pi \frac{\VR^3}{\ER^2} e^{-k^2\sigma^2} \int_{\R^+}{\diff k' \: k' e^{-\frac{3}{2}k'^2} \mathrm{I_0}(k' k \sigma)^2 \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{k^2\sigma^2/2-\epsilon'} \mathrm{I_0}(k' \sqrt{2\epsilon'})}}
+&= -4 \pi \frac{\VR^3}{\ER^2} e^{-k^2\sigma^2} \int_{\R^+}{\diff k' \: k' e^{-\frac{3}{2}k'^2} \mathrm{I_0}(k' k \sigma)^2 \int_{\R^+}{\diff \epsilon' \: \frac{e^{-\epsilon'}}{k^2\sigma^2/2-\epsilon'} \mathrm{I_0}(k' \sqrt{2\epsilon'})}} \text{ ,}
 \end{align}
-en posant $k'=k_{\mathrm{5}}''\sigma$ et en faisant l'approximation en couche $E=\hb^2k^2/2m \rightarrow \epsilon=k^2\sigma^2/2$. Cette dernière expression est celle que nous avons évaluée numériquement à l'aide du principe de Cauchy pour déterminer les corrections au second ordre de $\taus^{\mathrm{sf}}$ dans le chapitre \ref{ch:TauS_NJP}, par
+en posant $k'=k_{\mathrm{5}}''\sigma$ et en faisant l'approximation en couche $E=\hb^2k^2/2m \rightarrow \epsilon=k^2\sigma^2/2$. Cette dernière expression est celle que nous avons évaluée numériquement à l'aide du principe de Cauchy pour déterminer les corrections au second ordre de $\taus^{\mathrm{sf}}$ dans le chapitre \ref{ch:TauS_NJP}, par:
 \begin{equation}
-\frac{\hb}{\taus^{\mathrm{sf}}}=-2 \mathrm{Im}\left[\Sigma^{(1)}(E_{\mathrm{k}},\mathbf{k})+\Sigma^{(2)}(E_{\mathrm{k}},\mathbf{k})\right]
+\frac{\hb}{\taus^{\mathrm{sf}}}=-2 \mathrm{Im}\left[\Sigma^{(1)}(E_{\mathrm{k}},\mathbf{k})+\Sigma^{(2)}(E_{\mathrm{k}},\mathbf{k})\right] \text{ .}
 \end{equation}

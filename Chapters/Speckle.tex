@@ -561,9 +561,6 @@ où les quantités $\delta_{\mathrm{F,F'}}$ correspondent aux désaccords en \SI
 montrant donc la très forte différence entre les potentiels ressentis par les deux états fondamentaux de notre espèce atomique. La mise en œuvre expérimentale d'un tel désordre dépendant de l'état interne des atomes a permis la mesure des fonctions spectrales \citep{volchkov2018measurement}, dont les grandes lignes seront décrites dans le chapitre \ref{ch:TauS_NJP}. %Une discussion complète des détails de mesures peut être retrouvée dans la thèse de Vincent Denechaud \citep{denechaud2018vers}.
 
 \paragraph*{Implémentation expérimentale}
-L'utilisation d'un tel potentiel proche de résonance impose certaines contraintes quant à la puissance et à la fréquence du laser utilisé. En particulier, il est nécessaire de stabiliser la fréquence du laser afin de réduire au maximum les fluctuations du potentiel étant donné le faible désaccord ($\left|\delta_{2,3}\right|/2\pi\sim\SI{80}{\mega\hertz}$).
-
-Une spécificité de notre montage réside dans sa capacité à stabiliser des très faibles puissances optiques\footnote{L'exemple du paragraphe précédent montre que des fluctuations de puissance de l'ordre de \SI{1}{\micro\watt} peut engendrer des fluctuations de potentiel de \SI{500}{\hertz}.}. Pour cela, le montage de mise en forme du faisceau est très similaire à celui présenté section \ref{sc:montage_diffuseur} où l'accent a été mis sur la contrainte de l'utilisation de très faibles puissances optiques, voir figure \ref{fig:montage_speckle_specfunc}. La lame séparatrice utilisée pour la stabilisation de puissance permet de dévier 90\% de la puissance vers la photodiode, permettant ainsi d'obtenir une grande sensibilité aux fluctuations de puissance. Les 10\% transmis sont ensuite atténués à l'aide d'une densité optique \emph{Thorlabs NE30A-B} permettant de diviser la puissance d'un facteur 1000. Les puissances alors obtenues sont stabilisées et contrôlables entre typiquement \SI{30}{\nano\watt} et \SI{15}{\micro\watt}.
 
 \begin{figure}
 \centering
@@ -571,6 +568,12 @@ Une spécificité de notre montage réside dans sa capacité à stabiliser des t
 \caption{\textbf{Montage \speckle\ pour un désordre dépendant de l'état interne.} L'approche de désordre dépendant de l'état interne nécessitant de très faibles puissances optiques, le montage précédent a été adapté afin de pouvoir stabiliser des puissances de l'ordre du \SI{}{\micro\watt} à l'aide d'une densité optique atténuant fortement le faisceau. L'utilisation de 90\% de la puissance du faisceau pour la stabilisation en puissance permet d'obtenir une meilleure sensibilité aux fluctuations de puissance. De plus, la fréquence du faisceau laser est stabilisée par battements avec le laser repompeur \emph{L2}.}
 \label{fig:montage_speckle_specfunc}
 \end{figure}
+
+L'utilisation d'un tel potentiel proche de résonance impose certaines contraintes quant à la puissance et à la fréquence du laser utilisé. En particulier, il est nécessaire de stabiliser la fréquence du laser afin de réduire au maximum les fluctuations du potentiel étant donné le faible désaccord ($\left|\delta_{2,3}\right|/2\pi\sim\SI{80}{\mega\hertz}$).
+
+Une spécificité de notre montage réside dans sa capacité à stabiliser des très faibles puissances optiques\footnote{L'exemple du paragraphe précédent montre que des fluctuations de puissance de l'ordre de \SI{1}{\micro\watt} peut engendrer des fluctuations de potentiel de \SI{500}{\hertz}.}. Pour cela, le montage de mise en forme du faisceau est très similaire à celui présenté section \ref{sc:montage_diffuseur} où l'accent a été mis sur la contrainte de l'utilisation de très faibles puissances optiques, voir figure \ref{fig:montage_speckle_specfunc}. La lame séparatrice utilisée pour la stabilisation de puissance permet de dévier 90\% de la puissance vers la photodiode, permettant ainsi d'obtenir une grande sensibilité aux fluctuations de puissance. Les 10\% transmis sont ensuite atténués à l'aide d'une densité optique \emph{Thorlabs NE30A-B} permettant de diviser la puissance d'un facteur 1000. Les puissances alors obtenues sont stabilisées et contrôlables entre typiquement \SI{30}{\nano\watt} et \SI{15}{\micro\watt}.
+
+
 
 
 \paragraph*{Limitation du potentiel résiduel sur l'état $\etatF{1}{}$}
@@ -662,13 +665,7 @@ Afin de compenser le potentiel répulsif induit par le laser principal sur l'ét
 comme configuration pour un désordre bichromatique répulsif.
 
 \paragraph*{Potentiel attractif}
-Considérons à présent le cas d'un potentiel attractif pour l'état $\etatF{2}{}$. De même que dans le cas répulsif, le laser principal est très désaccordé, cependant son désaccord doit être négatif pour les deux états fondamentaux $\delta_{\mathrm{p}}/2\pi<-\deltahf$ en prenant la transition $\etatF{1}{}\rightarrow\etat{F'}$ comme référence. 
-
-La principale différence provient ici du laser de compensation, qui ne peut pas générer à la fois un potentiel attractif pour l'état $\etatF{2}{}$ et un potentiel répulsif qui pourrait compenser le potentiel attractif du laser principal sur l'état $\etatF{1}{}$. La contrainte d'annulation du potentiel sur l'état initial impose alors le choix d'un désaccord positif $\delta_{\mathrm{c}}>0$ du laser de compensation par rapport à la transition $\etatF{1}{}\rightarrow\etat{F'}$. Le choix d'un potentiel total attractif sur l'état $\etatF{2}{}$ impose donc:
-\begin{equation}
-\delta_{\mathrm{p}}/2\pi<-\deltahf \quad \text{et} \quad \delta_{\mathrm{c}}>0 \text{ .}
-\label{eq:condition_desordre_attractif}
-\end{equation}
+Considérons à présent le cas d'un potentiel attractif pour l'état $\etatF{2}{}$, dont la configuration est présentée figure \ref{fig:speckle_bichromatique_attractif}. De même que dans le cas répulsif, le laser principal est très désaccordé, excepté que son désaccord doit être négatif pour les deux états fondamentaux $\delta_{\mathrm{p}}/2\pi<-\deltahf$ en prenant la transition $\etatF{1}{}\rightarrow\etat{F'}$ comme référence. 
 
 \begin{figure}
 \centering
@@ -676,6 +673,12 @@ La principale différence provient ici du laser de compensation, qui ne peut pas
 \caption{\textbf{Configuration du \speckle\ bichromatique dans le cas d'un désordre attractif.} Un laser principal de désaccord $\delta_{\mathrm{p}}$ important soumet les deux états fondamentaux à un potentiel similaire attractif (lignes bordeaux). Afin d'obtenir un potentiel dépendant de l'état interne, on utilise une seconde fréquence optique générée par un laser de compensation de désaccord $\delta_{\mathrm{c}}>0$ (lignes oranges) dans le but de compenser le potentiel créé par le laser principal sur l'état $\protect\etatF{1}{}$. Dans le cas d'un désordre attractif comme illustré ici (voir miniature rouge), la sélectivité de l'état interne ne se fait que par déséquilibre des potentiels sur l'état $\protect\etatF{2}{}$.}
 \label{fig:speckle_bichromatique_attractif}
 \end{figure}
+
+La principale différence provient ici du laser de compensation, qui ne peut pas générer à la fois un potentiel attractif pour l'état $\etatF{2}{}$ et un potentiel répulsif qui pourrait compenser le potentiel attractif du laser principal sur l'état $\etatF{1}{}$. La contrainte d'annulation du potentiel sur l'état initial impose alors le choix d'un désaccord positif $\delta_{\mathrm{c}}>0$ du laser de compensation par rapport à la transition $\etatF{1}{}\rightarrow\etat{F'}$. Le choix d'un potentiel total attractif sur l'état $\etatF{2}{}$ impose donc:
+\begin{equation}
+\delta_{\mathrm{p}}/2\pi<-\deltahf \quad \text{et} \quad \delta_{\mathrm{c}}>0 \text{ .}
+\label{eq:condition_desordre_attractif}
+\end{equation}
 
 Contrairement au cas répulsif, la sélectivité en état interne dans le cas attractif provient donc d'un déséquilibrage des potentiels sur l'état $\etatF{2}{}$, voir figure \ref{fig:speckle_bichromatique_attractif}.
 
@@ -686,11 +689,7 @@ Si l'optimisation de la durée de vie $\Gamma_2^{-1}$ est d'importance capitale 
 \Gamma_1^{-1}\geq\SI{10}{\milli\second} \text{ .}
 \end{equation}
 
-Aussi, nous choisissons de fixer le désaccord du laser principal à $\delta_{\mathrm{p}}= \pm 2\pi\times\SI{100}{\giga\hertz}$. Ce choix permet de réduire la complexité de la détermination des trois autres degrés de liberté expérimentaux $\delta_{\mathrm{c}}$, $P_{\mathrm{p}}$ et $P_{\mathrm{c}}$.
-
-La table \ref{tb:speckle_bichromatique} présente les résultats de la détermination des paramètres optimisant le temps de vie $\Gamma_2^{-1}$ de l'état $\etatF{2}{}$. Cette étude a été menée pour un désordre d'amplitude $\VR/h=\SI{4}{\kilo\hertz}$, correspondant au désordre le plus extrême utilisé lors de la mesure des fonctions spectrales. L'optimisation des paramètres expérimentaux permet alors d'obtenir un temps de vie $\Gamma_2^{-1}$ de l'ordre de \SI{150}{\milli\second}. Comparé au temps de vie de \SI{0.4}{\milli\second} obtenu avec un speckle monochromatique, ceci représente une amélioration de près de trois ordres de grandeur. 
-
-
+Aussi, nous choisissons de fixer le désaccord du laser principal à $\delta_{\mathrm{p}}= \pm 2\pi\times\SI{100}{\giga\hertz}$. Ce choix permet de réduire la complexité de la détermination des trois autres degrés de liberté expérimentaux $\delta_{\mathrm{c}}$, $P_{\mathrm{p}}$ et $P_{\mathrm{c}}$. 
 
 \begin{table}[!h]
 \begin{center}
@@ -719,6 +718,12 @@ Temps de vie $\Gamma_2^{-1}$ & \SI{165}{\milli\second} & \SI{149}{\milli\second}
 \label{tb:speckle_bichromatique}
 \end{table}
 
+La table \ref{tb:speckle_bichromatique} présente les résultats de la détermination des paramètres optimisant le temps de vie $\Gamma_2^{-1}$ de l'état $\etatF{2}{}$. Cette étude a été menée pour un désordre d'amplitude $\VR/h=\SI{4}{\kilo\hertz}$, correspondant au désordre le plus extrême utilisé lors de la mesure des fonctions spectrales. L'optimisation des paramètres expérimentaux permet alors d'obtenir un temps de vie $\Gamma_2^{-1}$ de l'ordre de \SI{150}{\milli\second}. Comparé au temps de vie de \SI{0.4}{\milli\second} obtenu avec un speckle monochromatique, ceci représente une amélioration de près de trois ordres de grandeur. 
+
+
+
+
+
 
 
 
@@ -732,20 +737,22 @@ P_{\mathrm{p}}'=P_{\mathrm{p}}\times\VR/\overline{V_{\mathrm{p,2}}} \text{ .}
 \end{equation}
 %Il s'agit, après chargement dans le désordre, d'un moyen de s'éloigner encore plus de résonance.
 
-On montre alors que le nouveau temps de vie $\Gamma_2^{'-1}$ de l'état $\etatF{2}{}$ après extinction du laser de compensation est donné par \citep{mukhtar2019state}:
-\begin{equation}
-\Gamma_2^{'-1}=\Gamma_2^{-1} \frac{\overline{V_{\mathrm{p},2}}/\VR}{\Gamma_{\mathrm{p},2}/\Gamma_2} \text{ .}
-\end{equation}
-L'application à un désordre d'amplitude $\left|\VR\right|/h=\SI{4}{\kilo\hertz}$ fournit alors un temps de vie de \SI{0.68}{\second} pour un désordre attractif et de \SI{0.69}{\second} pour un désordre répulsif, soit un gain d'un facteur $\sim 5$ en comparaison à la configuration statique\footnote{Ceci représente un gain de plus de trois ordres de grandeur par rapport au cas d'un speckle simple.}.
-
-Notons de plus que cette étude a été menée pour le cas le plus défavorable d'un désordre d'amplitude $h\times\SI{4}{\kilo\hertz}$, l'utilisation de désordres plus modérés conduisant a des temps de vie bien plus grands. Un désordre d'amplitude $h\times\SI{400}{\hertz}$ possède ainsi un temps de vie supérieur à \SI{6}{\second}, permettant donc des temps de propagation extrêmement longs.
-
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{Fig/Speckle/sequence_spectro_transition.pdf}
 \caption{ \textbf{Séquence expérimentale d'étude de la transition d'Anderson.} Après refroidissement et obtention d'un condensat de Bose-Einstein, une étape de chargement du désordre bichromatique (ici représenté répulsif) à énergie résolue est réalisée à l'aide d'un transfert radio-fréquence. Une fois le transfert réalisé, le laser de compensation est éteint afin de maximiser le temps de vie des atomes dans l'état $\protect\etatF{2}{}$. Simultanément, la puissance du laser principal est modifiée afin de garder l'amplitude du potentiel $\overline{V_2}$ constante. Enfin, le piège optique croisé est relâché afin de procéder à l'expansion du nuage dans le désordre, ce qui constitue l'expérience de localisation d'Anderson à proprement parler.}
 \label{fig:sequence_spectro_transition}
 \end{figure}
+
+On montre alors que le nouveau temps de vie $\Gamma_2^{'-1}$ de l'état $\etatF{2}{}$ après extinction du laser de compensation est donné par \citep{mukhtar2019state}:
+\begin{equation}
+\Gamma_2^{'-1}=\Gamma_2^{-1} \frac{\overline{V_{\mathrm{p},2}}/\VR}{\Gamma_{\mathrm{p},2}/\Gamma_2} \text{ .}
+\end{equation}
+L'application à un désordre d'amplitude $\left|\VR\right|/h=\SI{4}{\kilo\hertz}$ fournit alors un temps de vie de \SI{0.68}{\second} pour un désordre attractif et de \SI{0.69}{\second} pour un désordre répulsif, soit un gain d'un facteur $\sim 5$ en comparaison à la configuration statique\footnote{Ceci représente un gain de plus de trois ordres de grandeur par rapport au cas d'un speckle monochromatique.}.
+
+Notons de plus que cette étude a été menée pour le cas le plus défavorable d'un désordre d'amplitude $h\times\SI{4}{\kilo\hertz}$, l'utilisation de désordres plus modérés conduisant a des temps de vie bien plus grands. Un désordre d'amplitude $h\times\SI{400}{\hertz}$ possède ainsi un temps de vie supérieur à \SI{6}{\second}, permettant donc des temps de propagation extrêmement longs.
+
+
 
 
 

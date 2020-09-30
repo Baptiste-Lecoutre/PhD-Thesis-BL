@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {3.1.2}Propriétés d'un condensat de Bose-Einstein}{36}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Processus d'interaction lumière-matière}{38}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Le rubidium \isotope [87]{Rb}}{38}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Potentiel magnétique}{38}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Potentiel magnétique}{40}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Forces lumineuses}{40}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Couplage radio-fréquence}{42}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Description d'un cycle expérimental}{44}{section.3.3}%
@@ -33,18 +33,18 @@
 \contentsline {chapter}{\numberline {4}Mises à jour de l'expérience}{59}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Contributions au système informatique de l'expérience}{59}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Contrôle de l'expérience: passage à la suite Cicero}{60}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Développement d'une nouvelle interface d'acquisition et de traitement d'images}{62}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Développement d'une nouvelle interface d'acquisition et de traitement d'images}{61}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Calibration de la lévitation magnétique}{62}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Implémentation de la lévitation magnétique}{63}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Intervention sur le circuit de refroidissement}{65}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.1}Implémentation de la lévitation magnétique}{62}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Intervention sur le circuit de refroidissement}{64}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Calibration des champs par radio-fréquences}{65}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}\'Etude du potentiel de lévitation}{67}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.4}\'Etude du potentiel de lévitation}{66}{subsection.4.2.4}%
 \contentsline {section}{\numberline {4.3}Changement du laser infrarouge et calibration du piège optique}{72}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Changement du laser infrarouge fibré Ytterbium }{72}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{75}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{77}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Lois d'échelle du refroidissement évaporatif}{77}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Résultats de l'optimisation de l'évaporation}{82}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{74}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{76}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Lois d'échelle du refroidissement évaporatif}{76}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Résultats de l'optimisation de l'évaporation}{81}{subsection.4.4.2}%
 \contentsline {chapter}{\numberline {5}Propriétés d'un désordre de type speckle}{87}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Génération d'un champ de speckle}{87}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Statistiques de l'intensité d'un speckle}{88}{subsection.5.1.1}%
@@ -60,7 +60,7 @@
 \contentsline {subsection}{\numberline {5.3.2}Possibilité d'un potentiel dépendant de l'état interne}{105}{subsection.5.3.2}%
 \contentsline {section}{\numberline {5.4}Potentiel composé d'un speckle\ bichromatique}{109}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}S'éloigner de résonance}{110}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Étude de la similitude de deux speckles}{114}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.2}Étude de la similitude de deux speckles}{115}{subsection.5.4.2}%
 \contentsline {chapter}{\numberline {6}Temps de diffusion élastique}{123}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Approximation de Born}{124}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Temps de diffusion élastique dans le régime de désordre faible}{124}{subsection.6.1.1}%
@@ -118,5 +118,5 @@
 \contentsline {section}{\numberline {C.3}Calcul de la self-energy\ au second ordre}{177}{section.C.3}%
 \contentsline {subsection}{\numberline {C.3.1}Calcul à l'aide la représentation en impulsion}{178}{subsection.C.3.1}%
 \contentsline {subsection}{\numberline {C.3.2}Calcul à l'aide la représentation spatiale}{179}{subsection.C.3.2}%
-\contentsline {chapter}{Bibliographie}{183}{section*.83}%
+\contentsline {chapter}{Bibliographie}{183}{section*.84}%
 \contentsfinish 

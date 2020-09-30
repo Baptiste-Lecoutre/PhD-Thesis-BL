@@ -57,17 +57,22 @@ Ainsi, chaque particule supplémentaire peuplera forcément l'état fondamental.
 \end{equation}
 avec m la masse de la particule, un atome de \isotope[87]{Rb} dans le cas de notre expérience. La distance inter-particules dans un piège est estimée à partir de la densité de particules $d \sim n^{-1/3}$. On peut alors formuler le critère phénoménologique suivant:
 \begin{equation}
-n \ldb^3 \gtrsim 1 \text{ .}
+n \ldb^3 \gtrsim 1 \text{ ,}
 \label{eq:critere_condensation}
 \end{equation}
-La quantité $n \ldb^3$ est appelée \emph{densité dans l'espace des phases}. Tout l'enjeu des expériences d'atomes ultrafroids est d'arriver à augmenter la densité dans l'espace des phases afin de franchir le seuil donné par l'équation \ref{eq:critere_condensation}. Cette condition peut se réécrire en terme de température critique:
+dont une illustration est proposée figure \ref{fig:critere_condensation}. La quantité $n \ldb^3$ est appelée \emph{densité dans l'espace des phases}. Tout l'enjeu des expériences d'atomes ultrafroids est d'arriver à augmenter la densité dans l'espace des phases afin de franchir le seuil donné par l'équation \ref{eq:critere_condensation}. Cette condition peut se réécrire en terme de température critique:
 \begin{equation}
-T_{\mathrm{C}}\sim \frac{\hb \overline{\omega}}{\kB}N^{1/3} \text{ ,}
+T_{\mathrm{c}}\sim \frac{\hb \overline{\omega}}{\kB}N^{1/3} \text{ ,}
 \label{eq:temperature_critique}
 \end{equation}
 où $\overline{\omega}=(\omega_x \omega_y \omega_z)^{1/3}$ est la fréquence moyenne du piège. Cette température critique est de l'ordre de quelques centaines de nanokelvin pour les expériences typiques d'atomes ultra-froids.
 
-
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{Fig/BEC_manip/critere_condensation.pdf}
+\caption{\textbf{Critère phénoménologique de condensation de Bose-Einstein.} L'accumulation de particules dans le même état quantique nécessite que les paquets d'onde des particules individuelles se recouvrent, c'est-à-dire que les extensions typiques de ces paquets d'onde soient plus grandes que les distances entre particules. Ainsi, lorsque $\protect\ldb>d$, l'état fondamental d'énergie $E_{\mathbf{0}}$ est peuplé macroscopiquement.}
+\label{fig:critere_condensation}
+\end{figure}
 
 
 
@@ -140,6 +145,13 @@ Comme déjà mentionné plusieurs fois, l'espèce atomique utilisée sur notre e
 
 La raie $D$ est en réalité composée de deux transitions: la raie $D_1$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{1/2}$ à \SI{795}{\nano\metre}, et la raie $D_2$ correspondant à la transition $5^2S_{1/2}\rightarrow5^2P_{3/2}$ à \SI{780}{\nano\metre}. Sauf mention contraire, nous n'utiliserons que la raie $D_2$ dans la suite de ce manuscrit, la plupart de nos fréquences optiques se trouvant autour de \SI{780}{\nano\metre}. Le choix de l'atome de rubidium est aussi dû à ses bonnes propriétés. En particulier, sa longueur de diffusion $a_{\mathrm{s}}=\SI{5.3}{\nano\metre}$ résulte en des taux de collisions relativement élevés, permettant une thermalisation rapide du nuage. 
 
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Fig/BEC_manip/Rb87.pdf}
+\caption{\textbf{Structure de la raie $D$ du rubidium \isotope[87]{Rb}.} Celle-ci est composée de deux transitions, la $D_1$ à \SI{795}{\nano\metre}, et la transition $D_2$ à \SI{780}{\nano\metre} que nous utilisons sur l'expérience. L'état fondamental $5^2S_{1/2}$ est dégénéré en deux sous-niveaux hyperfins séparés d'une énergie $h \deltahf$ avec $\deltahf=\SI{6.835}{\giga\hertz}$.}
+\label{fig:Rb87}
+\end{figure}
+
 La structure hyperfine de l'état fondamental $5^2S_{1/2}$ consiste en deux niveaux hyperfins dégénérés $\etatF{1}{}$ et $\etatF{2}{}$ séparés de $\deltahf=\SI{6.835}{\giga\hertz}$. Chacun de ces états est composé de $2F+1$ sous-états Zeeman $\etat{F,\mf}$. Une vue simplifiée de cette structure est donnée figure \ref{fig:Rb87}, et un tableau récapitulatif des principales grandeurs du \isotope[87]{Rb} peut être trouvé table \ref{tbl:Rb87}.
 
 %\renewcommand{\arraystretch}{1.1}
@@ -186,12 +198,7 @@ Longueur de diffusion & $a_{\mathrm{s}}$ & \SI{5.3}{\nano\metre} \\
 \label{tbl:Rb87}
 \end{table}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.8\textwidth]{Fig/BEC_manip/Rb87.pdf}
-\caption{\textbf{Structure de la raie $D$ du rubidium \isotope[87]{Rb}.} Celle-ci est composée de deux transitions, la $D_1$ à \SI{795}{\nano\metre}, et la transition $D_2$ à \SI{780}{\nano\metre} que nous utilisons sur l'expérience. L'état fondamental $5^2S_{1/2}$ est dégénéré en deux sous-niveaux hyperfins séparés d'une énergie $h \deltahf$ avec $\deltahf=\SI{6.835}{\giga\hertz}$.}
-\label{fig:Rb87}
-\end{figure}
+
 
 \subsection{Potentiel magnétique}
 Commençons par décrire l'interaction d'un atome de rubidium avec un champ magnétique statique. Ces champs magnétiques sont couramment utilisés dans les expériences d'atomes ultra-froids pour réaliser des pièges conservatifs à l'aide champs inhomogènes (après un refroidissement laser par exemple). En particulier, l'expérience de Stern \& Gerlach montre que la force appliquée aux atomes par un gradient de champ magnétique dépend de l'état interne de l'atome. Explicitons cela.
@@ -317,6 +324,13 @@ où le facteur 2 indique que, à forte saturation, un atome a autant de chance d
 \subsection{Couplage radio-fréquence} 
 Les outils de manipulation des atomes présentés précédemment offrent la possibilité de créer des potentiels conservatifs (comme le potentiel dipolaire ou le potentiel magnétique) ou encore des forces dissipatives à l'aide la force de pression de radiation. De manière générale, certains de ces outils dépendent de l'état interne des atomes\footnote{Le potentiel magnétique dépend bien évidemment de l'état interne, tandis que ce n'est pas de le cas du potentiel dipolaire dans la limite des grands désaccords.}, une dernière possibilité de manipulation des atomes consiste donc à contrôler leur état électronique.% Un bon contrôle de ce degré de liberté permet donc d'augmenter l'efficacité des processus qui en dépendent (le chargement d'un piège magnétique par exemple), ainsi que de proposer des solutions technologiques originales. 
 
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Fig/BEC_manip/rabi.pdf}
+\caption{\textbf{a: Oscillations de Rabi tracées pour différents désaccords.} Les populations oscillent à la pulsation $\sqrt{\Omega^2+\delta^2}$ avec une amplitude qui dépend du désaccord. L'amplitude est maximale et atteint 1 lorsque l'onde radio-fréquence est à résonance, et la population maximale transférée décroît avec l'augmentation du désaccord. \textbf{b: Spectres de Rabi pour différentes durées d'application $\boldsymbol{t_p}$.} Le transfert de population est le plus efficace à résonance ($\delta=0$), et l'utilisation d'un désaccord entraîne une diminution de l'efficacité de transfert. Les populations maximales transférées sont décrites par l'enveloppe lorentzienne de l'équation \ref{eq:rabi_formule}.}
+\label{fig:rabi}
+\end{figure}
+
 Comme présenté section \ref{sc:Rb87}, la séparation entre les états fondamentaux $\etatF{1}{}$ et $\etatF{2}{}$ correspond à une fréquence $\deltahf$ de l'ordre du \SI{}{\giga\hertz}, donc à une fréquence qui se trouve accessible électroniquement. Il apparaît alors possible de contrôler de l'état interne des atomes à l'aide d'un rayonnement radio-fréquence. L'effet de ce couplage sur les atomes peut être décrit par un système à deux niveaux dont le hamiltonien\footnote{Le terme de couplage \ref{eq:hamiltonien_rabi} est obtenu en appliquant l'approximation de l'onde tournante, c'est à dire que l'on néglige les termes en $\omega +2\pi\Delta_{\mathrm{hf}}$ devant les termes en $\omega - 2\pi\Delta_{\mathrm{hf}}$ car on estime qu'ils évoluent rapidement, et donc qu'ils s'apparentent à leur valeur moyenne qui est nulle.} est donné dans la base $\etatF{1}{}, \etatF{2}{}$ par 
 \begin{equation}
 \hat{H}(t)=\frac{\hb}{2} \begin{pmatrix}
@@ -345,12 +359,7 @@ Cette formule met en évidence un caractère résonant des transitions radio-fr�
 La formule de Rabi \ref{eq:rabi_formule} est tracée figure \ref{fig:rabi} en représentations temporelle et spectrale, et permet d'en illustrer les caractéristiques. Notamment, la figure \ref{fig:rabi}.a témoigne des oscillations de la probabilité de transition avec une amplitude dépendant du désaccord $\delta$. 
 En particulier, l'enveloppe lorentzienne de la probabilité maximale de transition en fonction de $\delta$ est représentée en pointillés noirs figure \ref{fig:rabi}.b. On montre ainsi que la probabilité maximale de transition ne peut être atteinte qu'à résonance ($\delta=0$), et que celle-ci décroît en augmentant le désaccord.
 
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{Fig/BEC_manip/rabi.pdf}
-\caption{\textbf{a: Oscillations de Rabi tracées pour différents désaccords.} Les populations oscillent à la pulsation $\sqrt{\Omega^2+\delta^2}$ avec une amplitude qui dépend du désaccord. L'amplitude est maximale et atteint 1 lorsque l'onde radio-fréquence est à résonance, et la population maximale transférée décroît avec l'augmentation du désaccord. \textbf{b: Spectres de Rabi pour différentes durées d'application $\boldsymbol{t_p}$.} Le transfert de population est le plus efficace à résonance ($\delta=0$), et l'utilisation d'un désaccord entraîne une diminution de l'efficacité de transfert. Les populations maximales transférées sont décrites par l'enveloppe lorentzienne de l'équation \ref{eq:rabi_formule}.}
-\label{fig:rabi}
-\end{figure}
+
 
 
 
@@ -400,15 +409,12 @@ De plus, deux bobines en configuration anti-Helmholtz permettent de générer un
 On charge environ \num{2e9} atomes en moins d'une seconde grâce à la mélasse transverse qui permet de collimater le jet d'atomes et donc d'améliorer le flux. 
 Une fois le chargement saturé, on coupe le champ magnétique pendant quelques millisecondes afin de réduite fortement la température: c'est l'étape de mélasse optique qui permet de descendre la température à environ \SI{50}{\micro\kelvin}. 
 
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{Fig/BEC_manip/MOT_magtrap.pdf}
-\caption{\textbf{a: Éléments du piège magnéto-optique.} Il est réalisé à l'aide de trois paires de faisceaux contra-propageants et de deux bobines formant un champ quadrupolaire. Ces bobines sont faites à partir de circuits imprimés posés sur la cellule. \textbf{b: Géométrie du piège magnétique.} Un champ quadrupolaire intense est créé selon les directions $\vec{y}$ et $\vec{z}$ par un électroaimant. Un champ de biais est généré par deux paires de bobines suivant la direction $\vec{x}$. Ce champ possède une courbure longitudinale et est responsable du confinement suivant cette direction. }
-\label{fig:MOT_magtrap}
-\end{figure}
+
 
 \paragraph*{Piège magnétique et évaporation radio-fréquence}
 À l'issue de l'étape de mélasse, les atomes sont chargés dans un piège magnétique qui va permettre de se rapprocher considérablement du seuil de condensation. Afin d'augmenter le nombre d'atomes piégeables magnétiquement, il est nécessaire de manipuler l'état interne des atomes. On procède ainsi à une étape de dépompage en éteignant le faisceau de repompage et en accordant le faisceau de refroidissement sur la transition $\etatF{2}{} \rightarrow\etat{F'=2}$: en moins d'une milliseconde, les atomes se trouvent dans l'état $\etatF{1}{}$, dont seul le sous-état Zeeman $\etatF{1}{-1}$ peut être piégé\footnote{Il est le seul des trois sous-états Zeeman de $\etatF{1}{}$ à avoir le produit $g_{\mathrm{F}} \mf > 0$, c'est à dire qu'il s'agit d'un état \emph{Low Field Seeker}, qui est attiré par les zones de faible champ magnétique. En effet, c'est à l'aide d'un minimum de champ magnétique que l'on réalise ce piège, le théorème de Wing interdisant les maximas de champ magnétique. }\footnote{Des huit sous-états Zeeman fondamentaux, il s'agit de celui ayant la plus grande probabilité d'occupation tout en étant piégeable, justifiant son choix. }. Afin de maximiser la population de ce sous-état, on allume un faisceau de pompage optique accordé sur la transition $\etatF{1}{} \rightarrow \etat{F'=1}$ et polarisé $\sigma^-$ pendant \SI{40}{\micro\second}. En parallèle, on allume le champ du \emph{dipôle} afin de définir un axe de quantification.
+
+
 
 Le piège magnétique que l'on utilise est un piège de type \emph{Ioffe-Pritchard}. Il est composé essentiellement de deux éléments:
 \begin{itemize}
@@ -418,17 +424,24 @@ Le piège magnétique que l'on utilise est un piège de type \emph{Ioffe-Pritcha
 Le confinement dans la direction $\vec{x}$ est donc réalisée par le champ de \emph{dipôle}\footnote{Notons que la présence du champ de dipôle permet aussi de s'affranchir des pertes par transition Majorana, le champ ne s'annulant à aucun endroit de l'espace.}, tandis que le confinement dans les directions $\vec{y}$ et $\vec{z}$ est fait par le \emph{quadrupôle}. 
 On obtient ainsi un nuage piégé magnétiquement comportant environ \num{1e9} atomes tous dans le même sous-état zeeman à une température de $\sim \SI{300}{\micro\kelvin}$.
 
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{Fig/BEC_manip/MOT_magtrap.pdf}
+\caption{\textbf{a: Éléments du piège magnéto-optique.} Il est réalisé à l'aide de trois paires de faisceaux contra-propageants et de deux bobines formant un champ quadrupolaire. Ces bobines sont faites à partir de circuits imprimés posés sur la cellule. \textbf{b: Géométrie du piège magnétique.} Un champ quadrupolaire intense est créé selon les directions $\vec{y}$ et $\vec{z}$ par un électroaimant. Un champ de biais est généré par deux paires de bobines suivant la direction $\vec{x}$. Ce champ possède une courbure longitudinale et est responsable du confinement suivant cette direction. }
+\label{fig:MOT_magtrap}
+\end{figure}
+
 Une fois le nuage thermalisé, on procède à une étape de refroidissement évaporatif grâce à la méthode de \emph{couteau radio-fréquence}. Une étude détaillée du refroidissement évaporatif est proposée section \ref{sc:evap_optique}, mais on peut en résumer le principe, illustré figure \ref{fig:evapRF}, de la manière suivante:
 \begin{itemize}
 \item[\textendash]On tronque le piège de telle sorte que quelques atomes très énergétiques (la queue de la distribution de vitesses de Maxwell-Boltzmann) puissent s'en échapper, chaque atome emportant une énergie supérieure à l'énergie moyenne par atome.
-\item[\textendash]Les collisions entre les particules étant restées dans le piège permettent au système de thermaliser. Ce nouvel état d'équilibre thermique est caractérisé par une température plus basse.
+\item[\textendash]Les collisions entre les particules étant restées dans le piège permettent au système de thermaliser. Ce nouvel état d'équilibre thermique est caractérisé par une température plus basse, témoignant du refroidissement du système.
 \end{itemize}
 
 La troncature du piège se fait à l'aide d'une onde radio-fréquence rayonnée par les bobines MOT. Celle-ci induit une transition de l'état piégé $\etatF{1}{-1}$ à l'état non piégé $\etatF{1}{0}$ lorsque la condition de résonance $\hb \omega_{\mathrm{RF}} = \mf g_{\mathrm{F}} \mub B(\mathbf{x})$ est vérifiée. En abaissant progressivement la fréquence rayonnée pendant une dizaine de secondes, on obtient finalement un nuage d'environ \num{70e6} atomes à une température de \SI{10}{\micro\kelvin}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{Fig/BEC_manip/evapRF.pdf}
+\includegraphics[width=0.85\textwidth]{Fig/BEC_manip/evapRF.pdf}
 \caption{\textbf{Principe de l'évaporation radio-fréquence.} L'application d'une radio-fréquence permet de tronquer le piège magnétique, et d'éliminer les atomes les plus énergétiques. L'énergie moyenne par particule étant plus basse, la température s'en retrouve abaissée après thermalisation.}
 \label{fig:evapRF}
 \end{figure}
@@ -447,7 +460,7 @@ Le transport dans la seconde chambre se fait à l'aide d'une platine de translat
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{Fig/BEC_manip/piege_optique2.pdf}
+\includegraphics[width=0.85\textwidth]{Fig/BEC_manip/piege_optique2.pdf}
 \caption{\textbf{Illustration du transport et du piège optique.} Les atomes sont capturés autour du foyer de la pince dans la première chambre, et le point de focalisation est déplacé de \SI{40}{\centi\metre} à l'aide d'une platine de translation. Une fois le transport terminé, on allume un second faisceau de piégeage vertical (\emph{dimple}).}
 \label{fig:piege_optique}
 \end{figure}
@@ -461,6 +474,13 @@ Enfin, une dernière étape d'évaporation est requise pour franchir le seuil de
 \paragraph*{Lévitation magnétique}
 Une contrainte forte de l'étude la localisation d'Anderson réside dans les grands temps de propagation dans le désordre nécessaires pour pouvoir qualifier un état de localisé. Dans l'expérience visant à observer la localisation d'Anderson à trois dimensions, l'évolution du nuage dans le désordre a pu être suivie pendant plusieurs secondes \citep{jendrzejewski2012three}, ce qui n'est possible qu'en compensant la gravité. En conséquence, notre expérience dispose d'une lévitation magnétique. Celle-ci a été mise en place durant la thèse d'Alain Bernard et de nombreux détails concernant ce système et ses performances se trouvent dans son manuscrit. Cependant, la lévitation magnétique a fait l'objet d'une attention particulière durant ma thèse, aussi une étude approfondie en sera donnée dans la partie \ref{sc:levitation}. Donnons en tout de même quelques caractéristiques.
 
+\begin{figure}
+\centering
+\includegraphics[scale=1]{Fig/BEC_manip/levitation_simple.pdf}
+\caption{\textbf{Design simplifié de la lévitation magnétique}. Un gradient magnétique est appliqué aux atomes grâce à une paire de bobines parcourues par des courants opposés (en rouge). La conservation du flux magnétique entraîne des gradients dans les autres directions de l'espace. L'application d'un fort champ de biais créé par d'autres bobines (en bleu) permet de minimiser l'impact de ces gradients et de diminuer les fréquences de piégeage (ou d'anti-piégeage) associées.}
+\label{fig:levitation_simple}
+\end{figure}
+
 Le principe de la lévitation magnétique est de compenser la force de pesanteur à l'aide d'un gradient magnétique. Pour l'état $\etatF{1}{-1}$ qui est \emph{Low Field Seeker}, il s'agit d'un gradient de \SI{30}{\gauss\per\centi\metre}. Cependant, la conservation du flux magnétique $\boldsymbol{\nabla} . \mathbf{B}=0$ induit des gradients dans les autres directions. Ceci impose une valeur minimale aux fréquences de piégeage par le biais du théorème de Wing \citep{sackett2006limits}:
 \begin{equation}
 \sum_{i=x,y,z} \omega_i^2 \geq \left| \frac{mg^2}{2 \mf g_{\mathrm{F}} \mub \Bzero}\right| \text{ ,}
@@ -468,14 +488,9 @@ Le principe de la lévitation magnétique est de compenser la force de pesanteur
 \end{equation} 
 avec $g$ l'accélération de la pesanteur et $B_0$ la norme du champ magnétique à la position des atomes. Une stratégie de réduction de ces fréquences consiste alors à augmenter fortement le champ $\Bzero$. On utilise donc des bobines supplémentaires pour générer un tel champ, qui peut monter jusqu'à \SI{2000}{\gauss}, permettant de réduire les fréquences de piégeage à environ $\omega_i /2 \pi \sim \SI{0.2}{\hertz}$. Une version simpliste du design de notre lévitation est donnée figure \ref{fig:levitation_simple}.
 
-Une stratégie couramment utilisée par l'équipe est de se placer dans l'état $\etatF{2}{-2}$ qui est \textit{High Field Seeker}, il sera donc expulsé de la lévitation par les courbures résiduelles. Il s'agit pour nous d'un avantage puisque cela favorise le processus d'évaporation, de plus on ne pourra pas attribuer à la lévitation un éventuel arrêt de l'expansion du nuage dans l'étude de la localisation d'Anderson. Pour atteindre cet état, on applique une transition radio-fréquence dans le piège optique croisé avant évaporation.
+Une stratégie couramment utilisée par l'équipe consiste à placer les atomes dans l'état $\etatF{2}{-2}$ qui est \textit{High Field Seeker}, il sera donc expulsé de la lévitation par les courbures résiduelles. Il s'agit pour nous d'un avantage puisque cela favorise le processus d'évaporation, de plus on ne pourra pas attribuer à la lévitation un éventuel arrêt de l'expansion du nuage dans l'étude de la localisation d'Anderson. Cet état présente des avantages supplémentaires que nous présenterons au cours du chapitre \ref{ch:new_exp}. Pour atteindre cet état, on applique une transition radio-fréquence dans le piège optique croisé avant évaporation.
 
-\begin{figure}
-\centering
-\includegraphics[scale=1]{Fig/BEC_manip/levitation_simple.pdf}
-\caption{\textbf{Design simplifié de la lévitation magnétique}. Un gradient magnétique est appliqué aux atomes grâce à une paire de bobines parcourues par des courants opposés (en rouge). La conservation du flux magnétique entraîne des gradients dans les autres directions de l'espace. L'application d'un fort champ de biais créé par d'autres bobines (en bleu) permet de minimiser l'impact de ces gradients et de diminuer les fréquences de piégeage (ou d'anti-piégeage) associées.}
-\label{fig:levitation_simple}
-\end{figure}
+
 
 Pour finir, citons un dernier avantage offert par la lévitation magnétique: la compensation de la gravité permet de ne pas "pencher" le potentiel de notre piège optique. Nous avons donc la possibilité de pousser l'évaporation optique jusque dans un domaine où la gravité aurait normalement dû tirer les atomes en dehors du piège, permettant ainsi d'évaporer beaucoup plus loin et d'atteindre des pièges optiques très peu profonds et très décomprimés.
 
@@ -490,11 +505,11 @@ T'=\frac{\omega_{\mathrm{r}}'}{\omega_{\mathrm{r}}}T < T \text{ ,}
 \end{equation}
 avec $\omega_{\mathrm{r}}$ la fréquence de piégeage de la pince dans la direction radiale. L'abaissement de la température est donc obtenu par diminution de la densité du nuage, c'est à dire par dilution. Cette étape se déroule en même temps que l'évaporation optique.
 
-À la fin du cycle d'évaporation et d'ouverture adiabatique, il reste environ \num{2e5} atomes dont environ 50\% forment un condensat de Bose-Einstein. Le potentiel chimique de la partie condensée est estimée à $\mu/h=\SI{40}{\hertz}$, et la température de la fraction thermique est d'environ \SI{5}{\nano\kelvin}. 
+À la fin du cycle d'évaporation et d'ouverture adiabatique, il reste environ \num{2e5} atomes dont environ 50\% forment un condensat de Bose-Einstein. Le potentiel chimique de la partie condensée est estimée à $\mu/h=\SI{40}{\hertz}$, et la température de la fraction thermique est d'environ \SI{5}{\nano\kelvin}. Une illustration expérimentale de la structure bimodale associée à ces contributions est présentée figure \ref{fig:BEC_double_struct}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{Fig/BEC_manip/BEC_double_struct.pdf}
+\includegraphics[width=0.8\textwidth]{Fig/BEC_manip/BEC_double_struct.pdf}
 \caption{\textbf{Image expérimentale d'un condensat de Bose-Einstein}. Cette image correspond à celle d'un condensat après expansion pendant un temps de vol de \SI{150}{\milli\second}. L'image de droite correspond au profil de la densité intégrée suivant une direction, et montre la double structure témoignant d'une partie condensée. La partie condensée a un profil parabolique (en rouge), tandis que la partie thermique est de forme gaussienne (en bleu).}
 \label{fig:BEC_double_struct}
 \end{figure}
@@ -564,7 +579,7 @@ avec $\sigma$ la section efficace d'absorption des atomes. En effet, lorsque qu'
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{Fig/BEC_manip/img_mot.pdf}
+\includegraphics[width=0.9\textwidth]{Fig/BEC_manip/img_mot.pdf}
 \caption{\textbf{Imagerie par absorption.} Un faisceau collimaté est envoyé sur les atomes, qui absorbent une partie des photons qui traversent le nuage. Le signal détecté à la caméra correspond à "l'ombre" des atomes, et la comparaison avec une image du faisceau incident sans atomes permet de remonter à la densité atomique intégrée selon la direction longitudinale.}
 \label{fig:img_mot}
 \end{figure}
@@ -587,7 +602,7 @@ Le principe de l'imagerie par fluorescence consiste à éclairer les atomes avec
 
 \begin{figure}
 \centering
-\includegraphics[scale=1]{Fig/BEC_manip/img_science_3.pdf}
+\includegraphics[scale=0.9]{Fig/BEC_manip/img_science_3.pdf}
 \caption{\textbf{Dispositif d'imagerie par fluorescence pour la chambre de science.} Une caméra capte les photons de fluorescence émis par les atomes selon une direction horizontale (\emph{Science Cam}), tandis qu'une autre capte ceux émis vers le bas avec un transport d'image (\emph{Bottom Cam}). Les faisceaux de fluorescence ne sont pas représentés ici (selon l'axe $\vec{z}$).}
 \label{fig:img_science}
 \end{figure}

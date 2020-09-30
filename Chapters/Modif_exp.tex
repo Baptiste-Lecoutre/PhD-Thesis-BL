@@ -24,16 +24,19 @@ En addition, un circuit logique programmable (\emph{FPGA}) \emph{XEM3001} proven
 
 L'écriture de la séquence se fait à présent grâce à la suite \emph{Cicero Word Generator}, développée au \emph{MIT} dans le groupe de Wolfgang Ketterle \citep{keshet2013distributed}. Cette suite comporte deux logiciels qui fonctionnent selon une architecture client/serveur. Le client \emph{Cicero} est une interface graphique dans laquelle l'utilisateur écrit une séquence sous la forme d'une suite d'étapes comme illustré figure \ref{fig:cicero}. Au lancement d'un cycle expérimental, \emph{Cicero} envoie les données de séquence au serveur \emph{Atticus} qui calcule alors les consignes des cartes ainsi que l'horloge variable à appliquer \citep{keshet2008cicero}.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/cicero.png}
-\caption{\textbf{Capture d'écran de \emph{Cicero}.} Une séquence est une suite d'étapes (des colonnes dans l'interface) pendant lesquelles on peut faire des motifs avec les voies analogiques. Les voies numériques changent d'état en général entre deux étapes. Il est possible de désactiver certaines étapes et d'utiliser des variables. Figure tirée de \citep{keshet2013distributed}.}
-\label{fig:cicero}
-\end{figure}
+
 
 Grâce à cette architecture client/serveur, il est possible de connecter une interface \emph{Cicero} à plusieurs serveurs. Nous avons ainsi développé un serveur supplémentaire\footnote{Une attention particulière a été accordée à n'apporter aucune modification au code source de la suite \emph{Cicero} excepté dans l'environnement de ce serveur. Les environnements de \emph{Cicero}, \emph{Atticus} et les environnements communs n'ont subit aucun changement pour s'assurer de la compatibilité avec la version compilée 1.64rev7 de la suite.} afin de faciliter notre traitement de données. Celui-ci enregistre les principales données de séquence\footnote{Il s'agit du nom de séquence, de l'heure de lancement, de l'ensemble des variables, des étapes, des groupes d'étapes et de la dernière consigne du piège dipolaire avant le temps de vol.} à chaque cycle.
 
 Ce changement de séquenceur ouvre de nouvelles perspectives en augmentant le nombre de voies utilisables (16 voies analogiques codées sur 12 bits et 48 voies numériques avec le précédent système) tout en permettant la génération de signaux arbitraires (auparavant limités à des morceaux de rampes).
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{Fig/Modif_exp/cicero.png}
+\caption{\textbf{Capture d'écran de \emph{Cicero}.} Une séquence est une suite d'étapes (des colonnes dans l'interface) pendant lesquelles on peut faire des motifs avec les voies analogiques. Les voies numériques changent d'état en général entre deux étapes. Il est possible de désactiver certaines étapes et d'utiliser des variables. Figure tirée de \citep{keshet2013distributed}.}
+\label{fig:cicero}
+\end{figure}
+
 
 
 \subsection{Développement d'une nouvelle interface d'acquisition et de traitement d'images}
@@ -45,9 +48,10 @@ En conséquence, nous avons développé une nouvelle interface graphique permett
 \item[\textendash] Imagerie par absorption et par fluorescence.
 \item[\textendash] Calcul en direct des grandeurs physiques pour chaque image.
 \item[\textendash] Lecture des données de Cicero récupérées grâce au serveur que nous avons développé.
-\item[\textendash] Programmation en début de cycle des sources radio-fréquence utilisées pour l'évaporation radio-fréquence et la manipulation de l'état de spin dans la chambre de science\footnote{Cette programmation en début de cycle est rendue possible grâce à l'utilisation d'un \emph{FileSystemWatcher} provenant d'une bibliothèque .NET utilisable dans Matlab. Un fichier texte contenant les données du cycle en cours est généré en début de séquence par le serveur que nous avons développé, déclenchant alors automatiquement sa lecture par l'interface.}.
+\item[\textendash] Programmation en début de cycle des sources radio-fréquence utilisées pour l'évaporation radio-fréquence et la manipulation de l'état de spin dans la chambre de science\footnote{Cette programmation en début de cycle est rendue possible grâce à l'utilisation d'un \emph{FileSystemWatcher} provenant d'une bibliothèque .NET utilisable dans le logiciel Matlab. Un fichier texte contenant les données du cycle en cours est généré en début de séquence par le serveur que nous avons développé. Le FileSystemWatcher déclenche alors automatiquement la lecture du fichier texte par l'interface, permettant à celle-ci de disposer des données de séquence dès le début de celle-ci.}.
 \item[\textendash] Enregistrement de l'ensemble des données et des paramètres du cycle pour un futur traitement.
 \end{itemize}
+
 L'utilisation de cette nouvelle interface a donc permis de centraliser les données générées par l'acquisition d'images. De plus, ce changement a permis de s'affranchir de plusieurs canaux de communication, les libérant ainsi pour le contrôle d'instruments. Enfin, l'utilisation et le fonctionnement de cette nouvelle interface Matlab sont simplifiés, permettant d'opérer avec une plus grande facilité les changements à venir sur l'expérience.
 
 
@@ -126,7 +130,7 @@ Cependant, la formation d'un précipité métallique à l'intérieur de ces supp
 
 Après de nombreux travaux de débouchage et d'étanchéité, ce refroidissement est à présent effectué par le contact entre le support en aluminium et la circulation d'eau dans deux tubes en cuivre encastrés\footnote{Le débouchage des trous leur a fait perdre leur étanchéité, et après plusieurs essais infructueux, nous avons retenu la solution de deux tubes de cuivre encastrés et débouchants. De nombreux tests électriques ont été menés sur les bobines tout au long de leur maintenance pour s'assurer de l'absence de dégradation.}, visibles figure \ref{fig:refroidissement_levitation}.a. On comprend aisément que ce nouveau refroidissement sera moins efficace que précédemment, celui-ci se faisant par le biais de deux contacts thermiques et la surface de contact étant diminuée. Néanmoins, on observe une réelle efficacité de refroidissement comme en témoigne la figure \ref{fig:refroidissement_levitation}.b.
 
-\begin{figure}
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth]{Fig/Modif_exp/levitation_refroidissement.pdf}
 \caption{\textbf{a: Refroidissement de la lévitation magnétique.} L'un des supports des bobines de la lévitation est maintenant refroidi à l'aide de deux tubes en cuivre le traversant. Auparavant, l'eau circulait directement dans le support dans un circuit percé illustré par les traits rouges. Les tubes en cuivre ont pu être installés en rendant une partie de ce circuit débouchant. \textbf{b: Efficacité de refroidissement.} Ces mesures ont été réalisées dans des conditions proches de véritables cycles expérimentaux. Le même courant a été appliqué pendant \SI{10}{\second} sur toutes les bobines à la fin de séquences habituelles. La température a été mesurée après la répétition d'au moins 30 cycles et en s'assurant de sa stabilisation.}
@@ -142,40 +146,12 @@ Après de nombreux travaux de débouchage et d'étanchéité, ce refroidissement
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \subsection{Calibration des champs par radio-fréquences}
 \label{sc:levitation_RF}
 
-
-%Cette dernière stratégie rend possible l'approche novatrice de désordre dépendant de l'état interne, qui impose de travailler à un \emph{biais magique} $\magicB=\SI{3.229}{\gauss}$ pour lequel les susceptibilités magnétiques des états $\etatF{1}{-1}$ et $\etatF{2}{+1}$ sont identiques \citep{denechaud2018vers}. La valeur précise de ce champ magique demande alors une connaissance fine des caractéristiques du dispositif de génération des champs magnétiques de l'expérience.
-
 Afin de déterminer très précisément le champ magnétique généré par les bobines de biais, la mesure de ces champs a été effectuée par spectroscopie radio-fréquence. Son principe repose sur le transfert de population entre l'état d'origine $\etatF{1}{-1}$ et les états $\etatF{2}{\lbrace -2,-1,0\rbrace}$ accessibles\footnote{Au cours de cette étude, nous nous sommes rendus compte que le nuage subissait une dépolarisation peuplant les trois sous états Zeeman $\etatF{1}{\lbrace-1,0,1}$, faisant alors apparaître sept résonances visibles sur la figure \ref{fig:calibration_RF}. Cette dépolarisation a été confirmée par une analyse Stern-Gerlach. Depuis, cette dépolarisation a pu être évitée.}, dont la séparation en énergie avec l'état d'origine dépend du champ magnétique en vertu de la formule de Breit-Rabi \ref{eq:Breit-Rabi}. Ainsi, lorsque la radio-fréquence satisfait la condition de résonance $\nu_{\mathrm{RF}}=\deltahf + \delta \nu (B)$ avec $\delta \nu (B)$ le décalage dû au champ magnétique, une partie des atomes sera transférée dans l'un des sous-états de $\etatF{2}{}$. Le principe de cette spectroscopie est illustré figure \ref{fig:calibration_RF}.a.
 
-\begin{figure}
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth]{Fig/Modif_exp/levitation_RF.pdf}
 \caption{\textbf{a: Principe de la spectroscopie radio-fréquences}. En balayant la fréquence de l'onde radio-fréquence appliquée, on adresse les différentes transitions entre sous-états Zeeman de $\protect\etatF{1}{}$ et $\protect\etatF{2}{}$ dont la séparation dépend du champ magnétique. \textbf{b: Spectre radio-fréquence.} Lorsque l'onde radio-fréquence est à résonance, on transfère des atomes initialement dans l'état $\protect\etatF{1}{}$ vers l'état $\protect\etatF{2}{}$. La présence de sept résonances équidistantes indique une dépolarisation du nuage, les règles de sélection imposant $\Delta \mf = \lbrace \pm 1,0 \rbrace$. Les trois premières résonances correspondent à celles illustrées sur la figure \textbf{a}. Le champ magnétique extrait de ce spectre est d'environ $\SI{4.4}{\gauss}$.}
@@ -194,7 +170,7 @@ où le champ $B$ correspond à la norme du champ magnétique total, c'est-à-dir
 B=\sqrt{(b_{\mathrm{c,x}}+b_{\mathrm{0x}})^2+(B_{\mathrm{A}}+B_{\mathrm{B}}+b_{\mathrm{0y}})^2+(b_{\mathrm{c,z}}+b_{\mathrm{0z}})^2} \text{ .}
 \end{equation}
 
-En réalisant cette opération pour différents courants pour chacune des bobines de biais, il nous est possible de déterminer les calibrations des champs magnétiques \ref{eq:calibration_biais_lev} et \ref{eq:calibration_biais_comp}. En particulier, le comportement à très bas champ nous permet de déterminer les différentes composantes $b_{\mathrm{0i}}$ du champ rémanent, souvent négligeable devant le champ rayonné pour des courants usuels. L'ensemble des calibrations des champs de biais est donné table \ref{tb:levitation_RF}.
+En réalisant cette opération pour différents courants pour chacune des bobines de biais, il nous est possible de déterminer les calibrations des champs magnétiques \ref{eq:calibration_biais_lev} et \ref{eq:calibration_biais_comp}. En particulier, le comportement à très bas champ nous permet de déterminer les différentes composantes $b_{\mathrm{0i}}$ du champ rémanent, souvent négligeable devant le champ rayonné pour des courants usuels. L'ensemble des calibrations des champs de biais que nous avons pu déterminer est donné table \ref{tb:levitation_RF}.
  
 
 \renewcommand{\arraystretch}{1.1}
@@ -267,7 +243,12 @@ U_{\mathrm{mag}}(\mathbf{x})=m_{\mathrm{F}}\gftilde(\Bzero)\mub B(\mathbf{x}) \t
 dans une zone proche autour du centre du potentiel de lévitation.
 
 
-
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/levitation_etats.pdf}
+\caption{\textbf{Gradient nécessaire pour compenser la gravité en fonction du biais magnétique.} La valeur du gradient magnétique à appliquer pour léviter dépend de l'état électronique, mais aussi du biais magnétique $\protect\Bzero$ par la formule de Breit-Rabi. L'état $\protect\etatF{1}{-1}$ ne peut être lévité qu'à bas champ (courbe bleue), l'alimentation des bobines de gradient ne pouvant délivrer plus de \SI{50}{\ampere} (limite tracée en pointillés). Les états $\protect\etatF{2}{+1}$ (courbe marron) et $\protect\etatF{2}{-2}$ (courbe bordeaux) peuvent être lévités pour n'importe quelle valeur du biais. Les carrés correspondent aux différentes configurations expérimentales d'intérêt pour cette thèse.}
+\label{fig:levitation_etats}
+\end{figure}
 
 \paragraph*{Gradient de lévitation}
 À l'aide du potentiel \ref{eq:potentiel_levitation}, il nous est possible de déterminer la valeur du gradient nécessaire pour compenser la gravité:
@@ -286,12 +267,7 @@ Notons trois résultats remarquables de la figure \ref{fig:levitation_etats}:
 \end{itemize}
 Plusieurs stratégies expérimentales de lévitation s'offrent alors. La première provient de l'état $\etatF{2}{-2}$ qui peut être lévité à l'aide du bon gradient magnétique tout en gardant la valeur du champ de biais comme un degré de liberté. On peut alors fortement augmenter le champ de biais afin de réaliser des lévitations très décomprimées. Il s'agit de l'approche utilisée pour la mesure du temps de diffusion élastique, présentée chapitre \ref{ch:TauS_PRL}. Une autre possibilité est que les états d'horloge $\etatF{1}{-1}$ et $\etatF{2}{+1}$ peuvent coexister dans le champ de lévitation, on peut ainsi utiliser l'état interne de l'atome comme degré de liberté tout en étant lévité. Cette stratégie a par exemple été utilisée pour la mesure des fonctions spectrales \citep{volchkov2018measurement}.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/levitation_etats.pdf}
-\caption{\textbf{Gradient nécessaire pour compenser la gravité en fonction du biais magnétique.} La valeur du gradient magnétique à appliquer pour léviter dépend de l'état électronique, mais aussi du biais magnétique $\protect\Bzero$ par la formule de Breit-Rabi. L'état $\protect\etatF{1}{-1}$ ne peut être lévité qu'à bas champ (courbe bleue), l'alimentation des bobines de gradient ne pouvant délivrer plus de \SI{50}{\ampere} (limite tracée en pointillés). Les états $\protect\etatF{2}{+1}$ (courbe marron) et $\protect\etatF{2}{-2}$ (courbe bordeaux) peuvent être lévités pour n'importe quelle valeur du biais. Les carrés correspondent aux différentes configurations expérimentales d'intérêt pour cette thèse.}
-\label{fig:levitation_etats}
-\end{figure}
+
 
 Enfin, il est possible de déduire une calibration des bobines de gradient de la relation \ref{eq:gradient_levitation} entre le gradient magnétique et le biais $\Bzero$. En identifiant des couples $\lbrace I_{\mathrm{Gradient}}, I_{\mathrm{Biais}} \rbrace$ permettant de compenser précisément la gravité, on parcourt ainsi la courbe de la figure \ref{fig:levitation_etats} pour l'état $\etatF{1}{-1}$. On détermine alors le facteur de calibration $c_{\mathrm{G}}=\SI{0.66}{\gauss\per\centi\metre\per\ampere}$.
 
@@ -310,7 +286,7 @@ Pour l'état $\etatF{1}{-1}$ en particulier, état d'horloge dans lequel nous cr
 \end{equation}
 Nous allons donc utiliser ces oscillations naturelles du nuage (une fois relâché après extinction du piège dipolaire) dans le piège de la lévitation magnétique pour caractériser le potentiel de lévitation en terme de centre et de courbure.%L'exploitation de ces oscillations fournit donc de précieux renseignements quant à la position du centre de la lévitation, mais aussi quant à la forme du potentiel magnétique dans lequel les atomes évoluent. 
 
-En particulier, la mesure des fréquences du potentiel de lévitation permet de déterminer la courbure des champs générés par les bobines de biais A et de biais B. L'influence de ces courbures est représentée figure \ref{fig:frequences_levitation} pour les champs de biais A et de biais B. Pour un courant suffisamment grand, le terme de courbure $b_{\mathrm{i}}''= c_{\mathrm{i}}'' \times (I_{\mathrm{i}}-I_{\mathrm{0,i}})$ n'est plus négligeable devant celui de gradient, atténué par le biais. En effet, la comparaison des fréquences expérimentales aux fréquences \ref{eq:frequences_leviation} à courbure nulle $b''=0$ montre un désaccord significatif dans la zone des courants les plus hauts, tandis qu'un modèle tenant compte d'une courbure proportionnelle au courant décrit correctement cette zone (voir figure \ref{fig:frequences_levitation}.b). On peut alors extraire le facteur de conversion courbure/courant $c_{\mathrm{i}}''$.
+En particulier, la mesure des fréquences du potentiel de lévitation permet de déterminer la courbure des champs générés par les bobines de biais A et de biais B. L'influence de ces courbures est représentée figure \ref{fig:frequences_levitation} pour les champs de biais A et de biais B. Pour un courant suffisamment grand, le terme de courbure $b_{\mathrm{i}}''= c_{\mathrm{i}}'' \times (I_{\mathrm{i}}-I_{\mathrm{0,i}})$ n'est plus négligeable devant celui de gradient, atténué par le biais. En effet, la comparaison des fréquences expérimentales aux fréquences \ref{eq:frequences_leviation} à courbure nulle $b''=0$ montre un désaccord significatif dans la zone des courants les plus hauts, tandis qu'un modèle tenant compte d'une courbure proportionnelle au courant décrit correctement cette zone (voir figure \ref{fig:frequences_levitation}.b). On peut alors extraire le facteur de conversion courbure/courant $c_{\mathrm{i}}''$, dont les valeurs sont données dans la table \ref{tb:courbures_levitation}.
 
 
 
@@ -403,24 +379,31 @@ Cette partie se concentrera sur le second élément, le piège optique. Nous com
 \subsection{Changement du laser infrarouge fibré Ytterbium }
 Dans le chapitre précédent, nous avons vu que le piège dipolaire était composé de deux faisceaux se croisant dans la chambre de science. Ces deux faisceaux, la pince et le dimple, sont orientés suivant les directions $\vec{z}$ et $\vec{y}$ respectivement et permettent de franchir le seuil de condensation. Il s'agit donc du piège donnant au condensat ses propriétés. De plus, c'est avec ce même piège que l'on met en œuvre les techniques de refroidissement extrêmes que sont l'ouverture adiabatique du piège ou encore le refroidissement par delta-kick. Il est donc primordial d'avoir une connaissance complète des caractéristiques de ce piège.
 
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{Fig/Modif_exp/optique_1070_new_style.pdf}
-\caption{\textbf{Schéma du montage optique pour le piège dipolaire.} Le faisceau issu du laser source passe dans un premier télescope avant d'être séparé en deux parties. La partie déviée passe dans une fibre optique pour devenir le faisceau de la pince. La partie transmise passe ensuite dans un second télescope pour devenir elliptique et arrive dans la \emph{Dimple box}, qui transmet le faisceau jusqu'aux atomes et contient les optiques d'imagerie \citep{muller2015coherent}. Afin de garder les mêmes tailles de faisceaux, la première lentille du premier télescope, de focale +\SI{175}{\milli\metre}, a été remplacée par une lentille de focale +\SI{100}{\milli\metre}.}
-\label{fig:optique_1070}
-\end{figure}
+
 
 Les deux faisceaux du piège dipolaire croisé proviennent d'une source laser commune avant d'être mis en forme séparément. Cette source, un laser fibré Ytterbium de \emph{Keopsys} émettant une puissance initiale de \SI{20}{\watt} en continu à une longueur d'onde $\lambda=\SI{1070}{\nano\metre}$, a été remplacée au cours de ma thèse. Ce laser a été sujet à un grand nombre d'opérations de maintenance, et, dans les mois précédant son changement, il ne pouvait plus émettre que \SI{14}{\watt} lors de son allumage et seulement \SI{12.5}{\watt} en fin de journée.
  
 Cette source a été remplacée par un laser fibré Ytterbium \emph{YLR-50-LP-A-Y12} de \emph{IPG}, opérant à la même longueur d'onde $\lambda=\SI{1070}{\nano\metre}$, et avec une puissance maximale mesurée à \SI{55}{\watt}. La taille du faisceau en sortie de fibre est de \SI{0.8}{\milli\metre} (contre \SI{1.4}{\milli\metre} pour le laser Keopsys), il a donc fallu adapter un télescope afin de conserver les mêmes tailles de faisceaux au niveau des atomes. Le montage de mise en forme des faisceaux est présenté figure \ref{fig:optique_1070}. Celui-ci est majoritairement mis dans des tubes\footnote{Seule la zone du montage dédiée à l'asservissement de puissance n'est pas mise sous tube. La zone sous tube s'arrête au niveau du modulateur acousto-optique, puis reprend au niveau du second télescope, voir figure \ref{fig:optique_1070}.} contenant un grand nombre de diaphragmes, facilitant ainsi la procédure d'alignement.
 
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{Fig/Modif_exp/optique_1070_new_style.pdf}
+\caption{\textbf{Schéma du montage optique pour le piège dipolaire.} Le faisceau issu du laser source passe dans un premier télescope avant d'être séparé en deux parties. La partie déviée passe dans une fibre optique pour devenir le faisceau de la pince. La partie transmise passe ensuite dans un second télescope pour devenir elliptique et arrive dans la \emph{Dimple box}, qui transmet le faisceau jusqu'aux atomes et contient les optiques d'imagerie \citep{muller2015coherent}. Afin de garder les mêmes tailles de faisceaux, la première lentille du premier télescope, de focale +\SI{175}{\milli\metre}, a été remplacée par une lentille de focale +\SI{100}{\milli\metre}.}
+\label{fig:optique_1070}
+\end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/expansion_dimple.pdf}
+\caption{\textbf{Évolution des tailles du faisceau dimple après la cellule.} Les tailles du faisceau dimple sont représentées en fonction de la position de la caméra (points). La divergence du faisceau permet de remonter aux waists du faisceau et d'en estimer la position. Les waists extraits par ajustement (lignes continues) sont de $\mathrm{w_z}\simeq \SI{82}{\micro\metre}$ et de $\mathrm{w_x}\simeq \SI{160}{\micro\metre}$ et leur position est compatible avec celle des atomes.}
+\label{fig:taille_dimple}
+\end{figure}
 
 \paragraph*{Estimation de la taille du faisceau dimple au niveau des atomes}
 L'utilisation d'une fibre optique pour la mise en forme du faisceau de la pince permet de s'assurer que le mode envoyé sur les atomes n'a pas changé. Pour le faisceau dimple en revanche, le trajet jusqu'à la cellule se fait en espace libre. Celui-ci est rendu elliptique à l'aide d'un second télescope, comportant quatre lentilles dont deux cylindriques, comme illustré figure \ref{fig:optique_1070}. Le rapport d'aspect du faisceau est alors de 2. 
 
 
-%L'approche suivie pour estimer le profil du faisceau au niveau des atomes consiste à en étudier la divergence après la cellule à l'aide d'une caméra, la zone d'intérêt se trouvant sous vide. Un avantage de cette méthode est de s'affranchir d'un système optique qui compliquerait le traitement, sous réserve que la caméra soit suffisamment large pour imager l'entièreté du faisceau. Le principal inconvénient est qu'il est nécessaire d'extrapoler la forme du faisceau pour en estimer le profil au niveau des atomes.
+
 
 L'estimation de la taille du faisceau au niveau des atomes est réalisée en étudiant l'évolution de son profil d'intensité lumineuse après le passage au travers de la cellule. 
 Cette estimation est aisée pour des faisceaux gaussiens: la taille du faisceau $\mathrm{w}_{\mathrm{i}}(y)$ dans la direction $\vec{i}$ ($\vec{i}= \lbrace \vec{x},\vec{z} \rbrace$) est donnée par:
@@ -432,12 +415,7 @@ où $y_0$ correspond à la position pour laquelle la taille du faisceau $\mathrm
 
 La mesure des tailles du faisceau a été réalisée à l'aide d'une caméra \emph{IDS Ueye} disposant d'une matrice de $1024 \times 1280$ pixels de \SI{5.2}{\micro\metre} de côté. Les tailles ont été extraites par ajustement gaussien d'un profil unidimensionnel d'intensité lumineuse obtenu par intégration suivant une direction. Enfin, l'évolution de la taille en fonction de la position a été ajustée par la formule \ref{eq:taille_faisceau}, illustrée figure \ref{fig:taille_dimple}.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{Fig/Modif_exp/expansion_dimple.pdf}
-\caption{\textbf{Évolution des tailles du faisceau dimple après la cellule.} Les tailles du faisceau dimple sont représentées en fonction de la position de la caméra (points). La divergence du faisceau permet de remonter aux waists du faisceau et d'en estimer la position. Les waists extraits par ajustement (lignes continues) sont de $\mathrm{w_z}\simeq \SI{82}{\micro\metre}$ et de $\mathrm{w_x}\simeq \SI{160}{\micro\metre}$ et leur position est compatible avec celle des atomes.}
-\label{fig:taille_dimple}
-\end{figure}
+
 
 On estime alors les waists du faisceau dimple à $\mathrm{w_z}=81.6\pm\SI{7.8}{\micro\metre}$ et $\mathrm{w_x}=160\pm \SI{13}{\micro\metre}$, proches des valeurs de la configuration précédant le changement du laser source. La position $y_0$ de ces waists est compatible avec la position des atomes, et la longueur de Rayleigh du faisceau est de l'ordre de $y_{\mathrm{Rz}}\simeq \SI{2}{\centi\metre}$.
 
@@ -468,18 +446,20 @@ En supposant que les atomes restent proches du centre du piège, on peut de plus
 %La caractérisation finale du piège dipolaire croisé se fait à l'aide des fréquences de piégeage, qui fixent les propriétés physiques du nuage. 
 Afin de mesurer ces fréquences, nous avons fait le choix\footnote{Nous avons retenu la méthode de mesure des fréquences de piégeage à l'aide d'excitations dipolaires. Il est aussi possible de mesurer ces fréquences par excitations paramétriques à l'aide de petites modulations de la profondeur du piège \citep{savard1997laser}.} d'induire de petites oscillations du centre de masse du nuage à l'intérieur du piège à l'aide d'une force extérieure, et de suivre ces oscillations en fonction du temps d'évolution dans le piège de manière équivalente à celle présentée pour la lévitation magnétique section \ref{sc:oscillations_levitation}. En relevant la position des atomes en fonction de la durée d'évolution dans le piège après excitation, on extrait alors la fréquence associée à l'aide d'un ajustement illustré figure \ref{fig:frequences_piege_optique}.a.
 
-La fréquence de piégeage dans les directions $\vec{x}$ et $\vec{y}$, liée à la pince optique, a pu être mesurée à l'aide de la lévitation magnétique. En commutant rapidement le courant des bobines de gradient, on dispose d'un bouton pour allumer et éteindre la gravité, et donc générer une force pendant un bref instant pour donner un mouvement aux atomes dans le piège. La mesure de la fréquence de piégeage dans la direction $\vec{z}$ a été effectuée selon deux méthodes en fonction de la puissance du faisceau dimple:
-\begin{itemize}
-\item[\textendash] À haute puissance, les atomes sont poussés à l'aide d'un gradient magnétique suivant la direction $\vec{z}$ provenant de bobines de compensation branchées en configuration anti-Helmholtz. Celles-ci peuvent exercer une force sur les atomes pendant de courts instants à l'aide d'un commutateur rapide.
-\item[\textendash] À plus basse puissance, le piège optique est très décomprimé et peu profond. Cependant, le piégeage de la lévitation peut arracher les atomes du piège optique, il est donc nécessaire de déplacer le centre de la lévitation magnétique à l'aide de champs de compensation suivant la direction $\vec{z}$. Pour pousser les atomes, on utilise alors les bobines de compensation dans leur configuration normale, et leur brève extinction conduit à accélérer les atomes en déplaçant le centre de la lévitation magnétique.
-\end{itemize}
-
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Fig/Modif_exp/frequences_piege_optique.pdf}
 \caption{\textbf{a: Exemple d'oscillation dans le piège optique.} Le nuage oscille dans la direction $\vec{z}$ pour une puissance du faisceau dimple de \SI{0.70}{\watt} après avoir été poussé par un gradient magnétique (points bleus). La fréquence d'oscillation est alors de $\omega_z /2\pi \simeq \SI{51}{\hertz}$, extraite par ajustement (courbe noire). \textbf{b: Fréquences d'oscillations du piège optique.} Les fréquences mesurées par oscillations du nuage (points) sont tracées en fonction de la puissance du faisceau associé. Les valeurs des calibrations $A_{\mathrm{pince}}$ et $A_{\mathrm{dimple}}$ sont ensuite extraites par ajustement de ces données (lignes continues).}
 \label{fig:frequences_piege_optique}
 \end{figure}
+
+La fréquence de piégeage dans les directions $\vec{x}$ et $\vec{y}$, liée à la pince optique, a pu être mesurée à l'aide de la lévitation magnétique. En commutant rapidement le courant des bobines de gradient, on dispose d'un bouton pour allumer et éteindre la gravité, et donc générer une force pendant un bref instant pour donner un mouvement aux atomes dans le piège. La mesure de la fréquence de piégeage dans la direction $\vec{z}$ a été effectuée selon deux méthodes en fonction de la puissance du faisceau dimple:
+\begin{itemize}
+\item[\textendash] À haute puissance, les atomes sont poussés à l'aide d'un gradient magnétique suivant la direction $\vec{z}$ provenant de bobines de compensation branchées en configuration anti-Helmholtz. Celles-ci peuvent exercer une force sur les atomes pendant de courts instants à l'aide d'un commutateur rapide.
+\item[\textendash] À plus basse puissance, le piège optique est très décomprimé et peu profond. Cependant, le piégeage de la lévitation peut arracher les atomes du piège optique, il est donc nécessaire de déplacer le centre de la lévitation magnétique à l'aide de champs de compensation suivant la direction $\vec{z}$. Pour pousser les atomes, on utilise alors les bobines de compensation dans leur configuration normale, et leur brève extinction conduit à accélérer les atomes en déplaçant le centre de la lévitation magnétique.
+\end{itemize}
+
+
 
 L'évolution des fréquences de piégeage de chaque faisceau en fonction de la puissance optique est représentée figure \ref{fig:frequences_piege_optique}.b en échelle logarithmique. La variation des fréquences s'est faite en abaissant la puissance du laser au cours de l'évaporation optique, celle-ci conduisant à une décompression du piège de comportement $\omega /2\pi =A \sqrt{P}$ comme le témoignent les formules \ref{eq:profondeur_piege_optique} et \ref{eq:frequences_piege_optique}. Les fréquences mesurées expérimentalement (carrés pour la pince optique, losanges pour le faisceau dimple) sont ajustées par une loi de puissance (lignes continues). La calibration de la pince est alors déterminée à $A_{\mathrm{pince}}=980\pm \SI{20}{\hertz\per\watt^{1/2}}$, et celle du dimple à $A_{\mathrm{dimple}}=60.5\pm \SI{1.0}{\hertz\per\watt^{1/2}}$, proche de la valeur précédant le remplacement du laser source\footnote{La dernière calibration date de la mise en place de la \emph{dimple box} lors de la thèse de Kilian Muller \citep{muller2015coherent}. Celle du dimple était alors de $A_{\mathrm{dimple}}=64.5\pm \SI{1.2}{\hertz\per\watt^{1/2}}$.}.
 
