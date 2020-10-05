@@ -482,7 +482,7 @@ addtohook={%
 \begin{tikzpicture}[remember picture,overlay]
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north west,inner sep=0pt,opacity=0.7] at (0,0) {\ifusechapterimage\includegraphics[width=0.7\paperwidth]{\thechapterimage}\fi};%image en tête de chapitre, intialement opacité max et width=\paperwidth
+\node[anchor=north west,inner sep=0pt,opacity=0.7] at (0.5cm,-0.5cm) {\ifusechapterimage\includegraphics[width=0.55\paperwidth]{\thechapterimage}\fi};%image en tête de chapitre, intialement opacité max et width=\paperwidth
 %\draw[anchor=east] (\Gm@lmargin+\textwidth,-7cm) node {\fontsize{180}{100}\sffamily\bfseries\color{ocre!70}\thechapter\strut}; %rajouté
 \node[anchor=east] (test) at (\Gm@lmargin+\textwidth,-7.3cm) {\fontsize{200}{100}\sffamily\bfseries\color{MainColor!70}\thechapter\strut};
 \draw[anchor=west] (\Gm@lmargin,-7cm) node [line width=2pt,rounded corners=0pt,draw=MainColor,fill=white,fill opacity=0.8,inner sep=10pt, align=left]{\strut\makebox[22cm][l]{
@@ -492,7 +492,7 @@ addtohook={%
 \end{minipage}
 }}; %cadre autour du texte, -9cm, 22cm
 %\draw[anchor=west] (\Gm@lmargin+0.3cm,-7cm) node {\raggedright\huge\sffamily\bfseries\color{black}\thechapter\autodot~#1\strut}; %texte \sffamily, -9cm
-\draw[anchor=north east] (test.north west) node {\Large\sffamily\bfseries\color{MainColor!50} \chaptertitlename }; %modifier ça un peu plus pour que ça marche aussi sur les annexes. essayer de trouver un équivalent de chaptertitlename sans titlesec.
+\draw[anchor=north east] (test.north west) node [fill=white, fill opacity=0.8]{\Large\sffamily\bfseries\color{MainColor!50} \chaptertitlename }; %modifier ça un peu plus pour que ça marche aussi sur les annexes. essayer de trouver un équivalent de chaptertitlename sans titlesec.
 \end{tikzpicture}};
 \end{tikzpicture}
 \else
