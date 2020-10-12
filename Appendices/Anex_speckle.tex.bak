@@ -1,96 +1,222 @@
-\chapter{Calculs de champs de tavelures}
+\chapter{Propriétés spatiales du \speckle}
 \label{ch:anex_speckle}
 
-\section{Propriétés du diffuseur}
-décrire comment on arrive à la fonction de corrélation du diffuseur, avec taille des grains et angle de diffusion. Faire tout le calcul.
+
+\section{Fonction de corrélation du diffuseur}
+On s'attache ici à donner l'expression de la fonction de corrélation du diffuseur et à introduire les différents paramètres nécessaires. La géométrie du diffuseur est détaillée section \ref{sc:prop_diffuseur}.
+
+La phase localement accumulée par l'onde laser s'écrit:
+\begin{equation}
+\phi(\xzero)=2\pi (n-1) \frac{e(\xzero)}{\lambda} \text{ ,}
+\end{equation}
+avec $e(\xzero)$ l'épaisseur localement traversée et $\lambda$ la longueur d'onde du laser. La transmission du diffuseur est aussi une grandeur aléatoire (car reliée à l'épaisseur aléatoire traversée) donnée par:
+\begin{equation}
+\tdiff(\xzero,\lambda)=e^{i \phi(\xzero)} \text{ .}
+\end{equation}
+En considérant une distribution de phase (et donc d'épaisseur) gaussienne, on peut alors obtenir une expression pour la transmission moyenne (on note $\overline{\:\cdots\:}$ la valeur moyenne sur l'ensemble des réalisations du diffuseur):
+\begin{equation}
+\overline{\tdiff}= \overline{e^{i \phi}} = \int{ \mathrm{d}\phi \: e^{i \phi} \: \mathcal{P}(\phi)} \quad \text{avec} \quad \mathcal{P}(\phi) = \frac{1}{\sigma_{\phi} \sqrt{2 \pi}} e^{-(\phi - \overline{\phi})^2 /2 \sigma_{\phi}^2} \text{ ,}
+\end{equation}
+qui correspond alors à la transformée de Fourier de la distribution de phase. On a alors
+\begin{equation}
+\overline{\tdiff} = e^{-\overline{\phi^2}/2} = e^{-\sigma_{\phi}^2/2}
+\end{equation}
+en choisissant $\overline{\phi}=0$. 
+
+Dans le cas général de l'étude de la corrélation entre deux \speckles\ générés par la même réalisation du diffuseur et le même mode spatial à deux longueurs d'onde légèrement différentes, la fonction de corrélation du diffuseur est définie par la corrélation des transmissions des deux champs:
+\begin{equation}
+\Cdiff(\xzero,\xzero',\lambda,\lambda')=\overline{\tdiff(\xzero,\lambda)\tdiff^*(\xzero',\lambda')} \text{ .}
+\end{equation}
+Avec cette définition, l'étude de la fonction de corrélation d'un unique \speckle\ revient à prendre $\lambda'=\lambda$. 
+
+Supposons à présent que tout comme les phases individuelles, la différence de phases $\phi(\xzero)-\phi'(\xzero')$ est elle aussi une variable gaussienne:
+\begin{align}
+\Cdiff(\xzero,\xzero',\lambda,\lambda') &= \overline{e^{i(\phi(\xzero) - \phi'(\xzero'))}} \\
+&= \exp{\left[-\frac{1}{2} \overline{(\phi(\xzero)-\phi'(\xzero'))^2}\right]} \\
+&= \exp{\left[ -\frac{1}{2} \overline{(\phi(\xzero)^2 + \phi'(\xzero')^2 -2 \phi(\xzero) \phi'(\xzero'))} \right] } \\
+&= \exp{\left[-2\pi^2 (n-1)^2 \sigmae^2 \left( \frac{1}{\lambda^2} + \frac{1}{\lambda'^2} - \frac{2}{\lambda\lambda'} \frac{\overline{e(\xzero)(e\xzero')}}{\sigmae^2}\right)\right]} \text{ ,}
+\end{align}
+en faisant apparaître la fonction de corrélation de l'épaisseur et l'écart-type de la distribution d'épaisseur $\sigmae$, reliée à la largeur de la distribution de phase par $\sigma_{\phi} = 2\pi (n-1) \sigmae /\lambda$. La largeur $\re$ de celle-ci décrit la taille de la granularité transverse de l'épaisseur du diffuseur. Comme décrit section \ref{sc:prop_diffuseur}, pour une large de distribution de phases $\sigma_{\phi} \gg 2\pi$ (ou $\sigmae \gg \lambda$), on peut restreindre l'étude de la corrélation du diffuseur sur une zone petite devant $\re$. Ainsi, on peut approximer la fonction de corrélation de la granularité du diffuseur, supposée être une courbe en cloche, par:
+\begin{equation}
+\frac{\overline{e(\xzero)e(\xzero')}}{\sigmae^2}\approx 1- \frac{(\xzero - \xzero')^2}{2\re^2} \quad \text{pour} \quad \left| \xzero-\xzero' \right| \ll \re \text{ .}
+\end{equation}
+
+On obtient donc, pour la fonction de corrélation du diffuseur:
+\begin{align}
+\Cdiff(\xzero,\xzero',\lambda,\lambda') &= \exp{\left( -2 \pi^2 (n-1)^2 \sigmae^2 \left[ \frac{(\xzero - \xzero')^2}{\lambda \lambda' \re^2} + \left( \frac{1}{\lambda} - \frac{1}{\lambda'} \right)^2 \right] \right)} \\
+&= \exp{\left(-\frac{{\delta\phi}^2}{2}\right)} \exp{\left(-\frac{\pi^2 \theta_{\mathrm{diff}}^2}{2} \frac{(\xzero-\xzero')^2}{\lambda \lambda'}\right)} \text{ ,}
+\end{align}
+avec $\delta\phi=\sigma_{\phi} - \sigma_{\phi'}$ et en faisant apparaître l'angle de diffusion $\theta_{\mathrm{diff}}=\lambda /\pi \rdiff$. On retrouve ainsi la formule \ref{eq:correlation_diffuseur} de la section \ref{sc:prop_diffuseur} en prenant $\lambda=\lambda'$: la fonction de corrélation du diffuseur est une gaussienne de largeur $\rdiff=\re/\sigma_{\phi}$ et de maximum 1 pour $\xzero=\xzero'$.
+
+
 
 
 \section{Amplitude rayonnée}
-Notons $\mathbf{x} \equiv \left\lbrace x,y,d \right\rbrace$ et $\mathbf{x}_0 \equiv \left\lbrace x_0,y_0,0 \right\rbrace$
-Pour calculer le champ rayonné au point $\mathbf{x}$, on utilise le principe de Huygens-Fresnel:
+Notons $\xd \equiv \left\lbrace x,y,d \right\rbrace$ et $\xzero \equiv \left\lbrace x_0,y_0,0 \right\rbrace$
+Pour calculer le champ rayonné au point $\xd$, on utilise le principe de Huygens-Fresnel:
 \begin{equation}
-E(\mathbf{x})=\frac{1}{i \lambda} \int {\mathrm{d}\mathbf{x}_0 \: t(\mathbf{x}_0) E_0(\mathbf{x}_0) \frac{e^{ik \left| \mathbf{x}-\mathbf{x}_0 \right| }}{\left| \mathbf{x} - \mathbf{x}_0 \right| }}
+E(\xd)=\frac{1}{i \lambda} \int {\diff\xzero \: t(\xzero) \Ezero(\xzero) \frac{e^{ik \left| \xd-\xzero \right| }}{\left| \xd - \xzero \right| }} \text{ ,}
 \label{eq:Huygens-Fresnel}
 \end{equation}
-avec $t(\mathbf{x}_0)$ la transmittance complexe du diffuseur au point $\mathbf{x}_0$, $k=2\pi /\lambda$, et $t(\mathbf{x}_0)$ est une transmittance comportant l'effet du diffuseur et de la lentille.
+avec $t(\xzero)$ la transmission du montage optique au point $\xzero$ du diffuseur, comportant l'effet du diffuseur et de la lentille. $k=2\pi /\lambda$ est le nombre d'onde.
+
 Appliquons alors l'approximation paraxiale:
 \begin{align}
-\nonumber \left| \mathbf{x} - \mathbf{x}_0 \right| &= \sqrt{(x-x_0)^2+(y-y_0)^2+d^2} \\
+\nonumber \left| \xd - \xzero \right| &= \sqrt{(x-x_0)^2+(y-y_0)^2+d^2} \\
 \nonumber & = d \sqrt{1+\frac{(x-x_0)^2+(y-y_0)^2}{d^2}} \\
 & \approx d+ \frac{(x-x_0)^2+(y-y_0)^2}{2d}
 \label{eq:paraxial}
 \end{align}
-et reportons \ref{eq:paraxial} dans \ref{eq:Huygens-Fresnel}:
+au premier ordre. Reportons \ref{eq:paraxial} dans \ref{eq:Huygens-Fresnel}:
 \begin{equation}
-E(\mathbf{x})=\frac{e^{ikd}}{i \lambda d} \int{\mathrm{d} \mathbf{x}_0 \: t_{\mathrm{diff}}(\mathbf{x}_0) E_0(\mathbf{x}_0) \: e^{-ik \frac{x_0^2+y_0^2}{2f}} e^{ik \frac{(x-x_0)^2+(y-y_0)^2}{2d}}}
+E(\xd)=\frac{e^{ikd}}{i \lambda d} \int{\diff \xzero \: \tdiff(\xzero) \Ezero(\xzero) \: e^{-ik \frac{x_0^2+y_0^2}{2f}} e^{ik \frac{(x-x_0)^2+(y-y_0)^2}{2d}}} \text{ ,}
 \end{equation}
-avec $t_{\mathrm{diff}}(\mathbf{x}_0)$ la transmittance du diffuseur. Développons alors cette dernière expression:
+où nous avons utilisé le premier ordre pour approximer l'exponentielle et l'ordre 0 pour le dénominateur. $\tdiff(\xzero)$ correspond à la transmission du diffuseur. Développons alors cette dernière expression:
 \begin{equation}
-E(\mathbf{x})=\frac{e^{i k \left( d + \frac{x^2 + y^2}{2 d}\right) }}{i \lambda d} \int{\mathrm{d} \mathbf{x}_0 \: t_{\mathrm{diff}}(\mathbf{x}_0) E_0(\mathbf{x}_0) \: e^{ik \frac{\mathbf{x}_0^2}{2 d_{\mathrm{eff}}}} e^{-ik\frac{\mathbf{x} \mathbf{x}_0}{d}}}
+E(\xd)=\frac{e^{i k \left( d + \frac{x^2 + y^2}{2 d}\right) }}{i \lambda d} \int{\diff \xzero \: \tdiff(\xzero) \Ezero(\xzero) \: e^{ik \frac{\xzero^2}{2 \deff}} e^{-ik\frac{\xd. \xzero}{d}}} \text{ ,}
 \end{equation}
-avec $1/d_{\mathrm{eff}}=1/d-1/f$.
+avec $1/\deff=1/d-1/f$.
+
+
+
+
+
 
 \section{Fonction de corrélation}
+
 \subsection{Calcul général}
 La fonction de corrélation en amplitude s'écrit
 \begin{align}
-C_E(\mathbf{x},\mathbf{x}',\lambda,\lambda')&=\overline{E(\mathbf{x},\lambda) E^*(\mathbf{x}',\lambda')} \\
+\CE(\xd,\xd',\lambda,\lambda')&=\overline{E(\xd,\lambda) E^*(\xd',\lambda')} \\
 \nonumber &=\frac{e^{i \left( k (d+ \frac{x^2+y^2}{2d})-k'(d'+\frac{x'^2+y'^2}{2d'}) \right)}}{\lambda \lambda' d d'} 
-&& \int{ \mathrm{d}\mathbf{x}_0 \mathrm{d}\mathbf{x}'_0 \: \overline{t_{\mathrm{diff}}(\mathbf{x}_0) t^*_{\mathrm{diff}}(\mathbf{x}_0)} \: E_0(\mathbf{x}_0) E^*_0(\mathbf{x}'_0)} \\ 
-& && \; e^{i\frac{k \mathbf{x}^2_0}{2d_{\mathrm{eff}}}} e^{-i\frac{k' \mathbf{x}'^2_0}{2d_{\mathrm{eff}}'}} e^{-i\frac{k(\mathbf{x}.\mathbf{x}_0)}{d}} e^{i\frac{k'(\mathbf{x}'.\mathbf{x}'_0)}{d'}}
+&& \int{ \diff\xzero \diff\xzero' \: \overline{\tdiff(\xzero) \tdiff^*(\xzero')} \: \Ezero(\xzero) \Ezero^*(\xzero')} \\ 
+& && \; e^{i\frac{k \xzero^2}{2\deff}} e^{-i\frac{k' \xzero'^2}{2\deff'}} e^{-i\frac{k(\xd.\xzero)}{d}} e^{i\frac{k'(\xd'.\xzero')}{d'}} \text{ .}
 \end{align}
 Appliquons alors le changement de variables $\left\lbrace \mathbf{x}_0, \mathbf{x}'_0\right\rbrace \rightarrow \left\lbrace \mathbf{x}_0, \Delta\mathbf{x}= \mathbf{x}'_0-\mathbf{x}_0\right\rbrace$ (par commodité on omettra le facteur devant l'intégrale):
 \begin{align}
-  C_E \propto &\int{\mathrm{d}\mathbf{x}_0 \mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: E_0(\mathbf{x}_0)E^*_0(\mathbf{x}_0+\Delta\mathbf{x})} \\ 
-  \nonumber & e^{i \frac{\mathbf{x}^2_0}{2}(\frac{k}{d_{\mathrm{eff}}}-\frac{k'}{d_{\mathrm{eff}}'})} e^{-i\frac{k'\Delta\mathbf{x}'^2}{2d_{\mathrm{eff}}'}} e^{-i\frac{k'\mathbf{x}_0 \Delta\mathbf{x}}{d_{\mathrm{eff}}'}} e^{i\frac{k'\mathbf{x} \Delta\mathbf{x}}{d'}} e^{i \mathbf{x}_0.(\frac{k'\mathbf{x}'}{d'}-\frac{k\mathbf{x}}{d})}
+  \CE \propto &\int{\diff\xzero \diff\Deltax \: \Cdiff(\Deltax) \: \Ezero(\xzero)\Ezero^*(\xzero+\Deltax)} \\ 
+  \nonumber & e^{i \frac{\xzero^2}{2}(\frac{k}{\deff}-\frac{k'}{\deff'})} e^{-i\frac{k'\Deltax'^2}{2\deff'}} e^{-i\frac{k'\xzero \Deltax}{\deff'}} e^{i\frac{k'\xd \Deltax}{d'}} e^{i \xzero.(\frac{k'\xd'}{d'}-\frac{k\xd}{d})} \text{ .}
 \end{align}
-Supposons à présent que la taille des grains du diffuseur sont très petits devant la taille typique de l'éclairement incident, c'est à dire qu'à l'échelle de variation de $C_{\mathrm{diff}}$, l'éclairement incident sera constant. $E_0(\mathbf{x}_0)E^*_0(\mathbf{x}_0+\Delta\mathbf{x}) \approx E_0(\mathbf{x}_0)E^*_0(\mathbf{x}_0)=I_0(\mathbf{x}_0)$. En supprimant le terme en $\Delta\mathbf{x}^2$, on a: 
+Supposons à présent que la taille des grains du diffuseur sont très petits devant la taille typique de l'éclairement incident, c'est-à-dire qu'à l'échelle de variation de $\Cdiff$, l'éclairement incident sera constant. $\Ezero(\xzero)\Ezero^*(\xzero+\Deltax) \approx \Ezero(\xzero)\Ezero^*(\xzero)=I_0(\xzero)$. En supprimant le terme en $\Deltax^2$ supposé petit devant toutes les autres échelles de longueur, on obtient: 
 \begin{equation}
-C_E \propto \int{\mathrm{d}\mathbf{x}_0  \: I_0(\mathbf{x}_0) \: e^{i \frac{\mathbf{x}^2_0}{2}(\frac{k}{d_{\mathrm{eff}}}-\frac{k'}{d_{\mathrm{eff}}'})} e^{i \mathbf{x}_0.(\frac{k'\mathbf{x}'}{d'}-\frac{k\mathbf{x}}{d})} \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: e^{i \Delta\mathbf{x} (\frac{k'\mathbf{x}'}{d'}-\frac{k'\mathbf{x}_0}{d_{\mathrm{eff}}'})}}}
+\CE \propto \int{\diff\xzero  \: I_0(\xzero) \: e^{i \frac{\xzero^2}{2}(\frac{k}{\deff}-\frac{k'}{\deff'})} e^{i \xzero.(\frac{k'\xd'}{d'}-\frac{k\xd}{d})} \int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{i \Deltax (\frac{k'\xd'}{d'}-\frac{k'\xzero}{\deff'})}}} \text{ .}
 \end{equation}
+
+
 \subsection{Expression de l'extension transverse du champ de tavelures le long de l'axe optique}
-L'intensité moyenne pour un speckle simple est donnée par
+L'intensité moyenne pour un \speckle\ simple est donnée par le module carré de l'amplitude rayonnée, qui peut se réécrire à l'aide de la fonction de corrélation en amplitude:
 \begin{align}
-\overline{I(\mathbf{x})} &= \overline{E(\mathbf{x,\lambda})E^*(\mathbf{x},\lambda)} \\
-&\propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: \int{\mathrm{d}\Delta \mathbf{x} \: C_{\mathrm{diff}}(\Delta \mathbf{x}) \: e^{i\Delta \mathbf{x} \left( \frac{k\mathbf{x}}{d}-\frac{k\mathbf{x}_0}{d_{\mathrm{eff}}}\right)}}} \\
-&\propto \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: e^{i \Delta\mathbf{x} \frac{k\mathbf{x}}{d}} \: \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{-i \mathbf{x}_0 \frac{k\Delta\mathbf{x}}{d_{\mathrm{eff}}}}}} \\
-&\propto \widetilde{C_{\mathrm{diff}}}(\frac{k\mathbf{x}}{d}) \ast I_0(\frac{\mathbf{x}d_{\mathrm{eff}}}{d})
+\overline{I(\xd)} &= \overline{E(\xd,\lambda)E^*(\xd,\lambda)} \\
+&\propto \int{\diff\xzero \: I_0(\xzero) \: \int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{i\Deltax. \left( \frac{k\xd}{d}-\frac{k\xzero}{\deff}\right)}}} \\
+&\propto \int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{i \Deltax. \frac{k\xd}{d}} \: \int{\diff\xzero \: I_0(\xzero) \: e^{-i \xzero .\frac{k\Deltax}{\deff}}}} \\
+&\propto \widetilde{\Cdiff}(\frac{k\xd}{d}) \ast I_0(\frac{\xd\deff}{d}) \text{ ,}
 \end{align}
-On retrouve bien le résultat de la thèse de Jérémie.
+où $\ast$ dénote le produit de convolution et $\widetilde{\Cdiff}(k\xd/d)=\int{\diff\Cdiff(\Deltax)\exp{(ik\Deltax.\xd/d)}}$ est la transformée de Fourier de la fonction de corrélation de la transmission du diffuseur. On retrouve ainsi le résultat \ref{eq:evolution_extension_transverse_speckle} du chapitre \ref{ch:Speckle}.
 
-\section{Corrélations pour des speckles monochromatiques et bichromatiques}
-\subsection{Corrélation transverse d'un unique speckle le long de l'axe optique}
-Considérons le cas d'un unique speckle, que l'on étudie dans un plan orthogonal à l'axe optique. Posons $\lambda = \lambda'$, $d=d'$ et $\mathbf{x}'=0$:
-\begin{align}
-C_E(\mathrm{x})&=\overline{E(x,y,d)E^*(0,0,d)}\\
-&\propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{-ik\frac{\mathbf{x} \mathbf{x}_0}{d}} \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x})\: e^{-ik\frac{\Delta\mathbf{x}.\mathbf{x}_0}{d_{\mathrm{eff}}}}}}
-\end{align}
-On retrouve bien le résultat de la thèse de Jérémie, équation C.26.
-
-\subsection{Corrélation longitudinale d'un unique speckle autour du plan de Fourier}
-Plaçons nous sur l'axe optique, autour du plan de Fourier, pour une seule longueur d'onde. Pour $\mathbf{x}=\mathbf{x}_0=0$, $\lambda'=\lambda$ et $d'=f$:
-\begin{align}
-C_E&=\overline{E(0,0,d)E^*(0,0,f)} \\
-& \propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{i\frac{\mathbf{x}_0^2 k}{2 d_{\mathrm{eff}}}} \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x})}}
-\end{align}
-Proche du plan de Fourier, on pose $d=f+\delta z$, donc $1/d_{\mathrm{eff}}=1/d-1/f\approx-\delta z/f^2$. Finalement, on obtient:
+Aux alentours du plan de Fourier, $\deff\rightarrow\infty$ et donc on peut assimiler la contribution de l'intensité incidente $I_0(\xf\deff/d)$ à une distribution de Dirac $\delta(\xf)$ de telle sorte que l'intensité moyenne soit donnée par
 \begin{equation}
-C_E \propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{-i\frac{\delta z k \mathbf{x}_0^2}{2f^2}}}
+\overline{I(\xf)} \propto \widetilde{\Cdiff} (\frac{k\xf}{d}) \text{ .}
 \end{equation}
-On retrouve l'expression 4.10 de la thèse de Fred. Supposons à présent un éclairement incident gaussien de taille $w_0$:
+
+
+
+
+
+\section{Corrélations transverse et longitudinales d'un \speckle\ monochromatique}% et bichromatiques}
+\subsection{Corrélation transverse le long de l'axe optique}
+Considérons le cas d'un unique \speckle , que l'on étudie dans un plan orthogonal à l'axe optique. Posons $\lambda = \lambda'$, $d=d'$ et $\xd'=\lbrace 0,0,d \rbrace$:
 \begin{align}
-C_E &\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\mathbf{x}_0^2 \left( 2/w_0^2-i\frac{k}{2d_{\mathrm{eff}}}\right)}} \\
+\CE(x,y,d)&=\overline{E(x,y,d)E^*(0,0,d)}\\
+&\propto \int{\diff\xzero \: I_0(\xzero) \: e^{-ik\frac{\xd .\xzero}{d}} \int{\diff\Deltax \: \Cdiff(\Deltax)\: e^{-ik\frac{\Deltax.\xzero}{\deff}}}}\\
+&\propto \widetilde{I_0}\left(\frac{k\xd}{d}\right) \ast \Cdiff \left( \frac{\deff}{d} \xd\right) \text{ .}
+\end{align}
+On retrouve bien le résultat \ref{eq:correlation_transverse_speckle} à l'aide de l'invariance par translation selon les directions transverses. 
+
+Aux alentours du plan de Fourier, $\deff\rightarrow\infty$ et donc on peut assimiler $\Cdiff(\xf\deff/d)$ à une distribution de Dirac $\delta(\xf)$. On obtient alors que la fonction de corrélation en amplitude est donnée par
+\begin{equation}
+\CE(\xf)\propto \widetilde{I_0}\left(\frac{k\xf}{d}\right) \text{ .}
+\end{equation}
+
+
+\subsection{Corrélation longitudinale autour du plan de Fourier}
+Plaçons nous sur l'axe optique, autour du plan de Fourier, et posons $\lambda=\lambda'$. Pour $\xd=\lbrace 0,0,d \rbrace=0$, et $\xd'=\xf=\lbrace 0,0,f \rbrace$, la fonction de corrélation longitudinale:
+\begin{align}
+\CE&=\overline{E(0,0,d)E^*(0,0,f)} \\
+& \propto \int{\diff\xzero \: I_0(\xzero) \: e^{i\frac{\xzero^2 k}{2 \deff}} \int{\diff\Deltax \: \Cdiff(\Deltax)}}
+\end{align}
+Proche du plan de Fourier, on pose $d=f+\delta z$, donc $1/\deff=1/d-1/f\approx-\delta z/f^2$. Finalement, on obtient:
+\begin{equation}
+\CE \propto \int{\diff\xzero \: I_0(\xzero) \: e^{-i\frac{\delta z k \xzero^2}{2f^2}}} \text{ .}
+\end{equation}
+On retrouve l'expression \ref{eq:correlation_longitudinale_1_speckle} du chapitre \ref{ch:Speckle}.
+
+
+
+%%%%% calcul de la corrélation longitudinale pour un éclairement gaussien, pas nécessaire.
+\begin{comment}
+Supposons à présent un éclairement incident gaussien de taille $w_0$:
+\begin{align}
+\CE &\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\mathbf{x}_0^2 \left( 2/w_0^2-i\frac{k}{2d_{\mathrm{eff}}}\right)}} \\
 &\propto \frac{1}{2/w_0^2-i\frac{k}{2d_{\mathrm{eff}}}}
 \end{align}
-Et donc pour le degré en cohérence $\left| \mu \right|^2=\left| C_E \right|^2$:
+Et donc pour le degré en cohérence $\left| \mu \right|^2=\left| \CE \right|^2$:
 \begin{align}
-\left| C_E \right| ^2 &\propto \frac{1}{\frac{4}{w_0^4}+\frac{k^2}{4d_{\mathrm{eff}}^2}} \\
+\left| \CE \right| ^2 &\propto \frac{1}{\frac{4}{w_0^4}+\frac{k^2}{4d_{\mathrm{eff}}^2}} \\
 &\propto \frac{1}{\frac{4}{w_0^4}+\frac{k^2 \delta z^2}{4f^4}} \\
 &\propto \frac{1}{1+\delta z^2 \frac{k^2 w_0^4}{16f^4}} \\
 &\propto \frac{1}{1+\delta z^2/\sigma_{\parallel}^2}
 \end{align}
-On retrouve bien la lorentzienne avec $\sigma_{\parallel}=4 \sigma_{\perp} / \mathrm{ON}$, c'est à dire la distance de rayleigh. Interprétation: Magati2008 et Magati2009 montrent que dans une géométrie sans lentille, et à grande distance (régime de Fraunhofer), les grains de speckle s'apparentent à des tubes de lumière de corrélation longitudinale tendant vers l'infini (ils font de la physique avec les mains pour expliquer pourquoi). Avec une lentille, ce régime se retrouve autour du plan focal, sur une distance donnée par la longueur de Rayleigh. La forme lorentzienne est aussi typique d'effets longitudinaux en optique gaussienne autour du plan de focalisation.
+On retrouve bien la lorentzienne avec $\sigma_{\parallel}=4 \sigma_{\perp} / \mathrm{ON}$, c'est-à-dire la distance de rayleigh. Interprétation: Magati2008 et Magati2009 montrent que dans une géométrie sans lentille, et à grande distance (régime de Fraunhofer), les grains de \speckle\ s'apparentent à des tubes de lumière de corrélation longitudinale tendant vers l'infini (ils font de la physique avec les mains pour expliquer pourquoi). Avec une lentille, ce régime se retrouve autour du plan focal, sur une distance donnée par la longueur de Rayleigh. La forme lorentzienne est aussi typique d'effets longitudinaux en optique gaussienne autour du plan de focalisation.
+\end{comment}
 
+
+
+
+
+
+\subsection{Corrélation tridimensionnelle aux alentours du plan de Fourier}
+Il est possible de combiner les résultats précédents sous la forme d'une fonction de corrélation tridimensionnelle aux alentours du plan de Fourier. Considérons le cas $\lambda=\lambda'$, $\xd=\lbrace x,y,d=f+\delta z\rbrace$ et $\xd'=\xf=\lbrace 0,0,f \rbrace$. Alors, 
+\begin{align}
+\CE(x,y,\delta z)&\propto \int{\diff\xzero \: I_0(\xzero) \: e^{-ik \frac{\xzero^2 \delta z}{2 f^2}} \: e^{-ik \frac{\xzero.\xd}{f}}} \int{\diff\Deltax \: \Cdiff(\Deltax)}\\
+&\propto \mathrm{TF}{\left[ I_0(\xzero) e^{-ik\xzero^2 \delta z/2f^2} \right]}_{\frac{k\xd}{f}} \text{ .}
+\label{eq:correlation_3D_monochromatique_annexe}
+\end{align}
+On retrouve donc la fonction de corrélation $c_{\mathrm{3D}}$ de la formule \ref{eq:correlation_3D_paraxial_effectif} en prenant le module carré de l'expression \ref{eq:correlation_3D_monochromatique_annexe}.
+
+
+
+
+
+
+
+
+
+
+
+\section{Corrélation d'un \speckle\ bichromatique}
+Regardons maintenant les corrélations entre les champs de même intensité aux deux longueurs d'onde, mais à la même position physique. Posons $\lambda\neq\lambda'$ et $\xd=\xd'=\lbrace x,y,d=f+\delta z \rbrace$:
+\begin{equation}
+\CE(\xd,\lambda,\lambda') \propto \int{\diff\xzero \: I_0(\xzero) \: e^{i\frac{\xzero^2}{2\deff}(k-k')} \: e^{i\frac{\xzero.\xd}{d}(k'-k)} \int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{i k' \Deltax (\frac{\xd}{d}-\frac{\xzero}{\deff})}}} \text{ ,}
+\end{equation}
+et dans la limite où $D\gg \rdiff$, on peut assimiler la fonction de corrélation $\Cdiff(\Deltax)$  à une distribution infiniment fine $\Cdiff(0) \delta(\Deltax)$. La fonction de corrélation devient alors
+\begin{equation}
+\CE(\xd,\lambda,\lambda') \propto  \Cdiff(0) \int{\diff\xzero \: I_0(\xzero) \: e^{i\frac{\xzero^2}{2\deff}(k-k')} \: e^{i\frac{\xzero.\xd}{d}(k'-k)}} \text{ .}
+\end{equation}
+En posant $\lambda'=\lambda+ \delta \lambda$, on obtient
+\begin{align}
+\CE(\xd,\lambda, \lambda+\delta\lambda) &\propto \Cdiff(0) \int{\diff\xzero \: I_0(\xzero) \: e^{-ik \frac{\xzero^2 \delta z}{2f^2} \frac{\delta \lambda}{\lambda}} \: e^{-ik \frac{\xzero.\xd}{f}\frac{\delta \lambda}{\lambda}}} \\
+& \propto e^{-\delta\phi^2/2} \times \mathrm{TF}{\left[ I_0(\xzero)\: e^{-ik\frac{\xzero^2 \delta z}{2f^2} \frac{\delta\lambda}{\lambda}} \right]}_{\frac{k \xd}{f}\frac{\delta \lambda}{\lambda}} \text{ ,}
+\end{align}
+où l'on reconnaît la fonction de corrélation \ref{eq:correlation_3D_monochromatique_annexe} avec un facteur d'échelle $\lambda/\delta\lambda$ dans les trois directions de l'espace.
+
+
+%%%% end
+
+
+
+
+%%%% calculs du speckle bichromatique dans des directions différentes
+\begin{comment}
 \subsection{Corrélation transverse d'un speckle bichromatique dans le plan de Fourier}
 Considérons le cas de deux longueurs d'ondes, étudiées à la même position dans le plan de Fourier. Posons $d=d'=f$, $\mathbf{x}=\mathbf{x}'$:
 \begin{align}
@@ -106,7 +232,7 @@ Prenons un speckle composé de deux longueurs d'onde, étudié selon l'axe optiq
 C_E &= \overline{E(0,0,d,\lambda)E^*(0,0,d,\lambda')} \\
 & \propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{i\frac{\mathbf{x}_0^2}{2d_{\mathrm{eff}}}(k-k')} \: \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: e^{-i\Delta\mathbf{x} \frac{k' \mathbf{x}_0}{d_{\mathrm{eff}}}}}}
 \end{align}
-Supposons à présent que l'on s'éloigne peu du plan de Fourier tel que $r_{\mathrm{diff}} w_0 k'/d_{\mathrm{eff}} \ll 1$, c'est à dire $\delta z \ll W_{\mathrm{speckle}} / \mathrm{ON}$ avec $ \delta z$ tel que définit avant, $W_{\mathrm{speckle}}$ l'extension du faisceau de speckle dans le plan de Fourier et $w_0$ la taille du faisceau incident. Dans ce cas, on peut négliger la dernière exponentielle et on a pour un faisceau gaussien:
+Supposons à présent que l'on s'éloigne peu du plan de Fourier tel que $r_{\mathrm{diff}} w_0 k'/d_{\mathrm{eff}} \ll 1$, c'est-à-dire $\delta z \ll W_{\mathrm{speckle}} / \mathrm{ON}$ avec $ \delta z$ tel que définit avant, $W_{\mathrm{speckle}}$ l'extension du faisceau de speckle dans le plan de Fourier et $w_0$ la taille du faisceau incident. Dans ce cas, on peut négliger la dernière exponentielle et on a pour un faisceau gaussien:
 \begin{align}
 C_E &\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\frac{2\mathbf{x}_0^2}{w_0^2}} \: e^{i\frac{\mathbf{x}_0^2}{2d_{\mathrm{eff}}}(k-k')}} \\ 
 &\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\mathbf{x}_0^2 (2/w_0^2-i\frac{k-k'}{2d_{\mathrm{eff}}})}} \\
@@ -119,11 +245,19 @@ Alors,
 &\propto \frac{1}{1+\delta z^2 \left( \frac{\delta \lambda}{\lambda} \right)^2 \frac{k^2 w_0^4}{16f^4}} \\
 &\propto \frac{1}{1+\frac{\delta z^2}{\sigma_{\parallel}^2} \left(\frac{\delta \lambda}{\lambda}\right)^2}
 \end{align}
+\end{comment}
 
 
 
 
 
+
+
+
+
+
+
+%%%%% outdated, je sais même plus ce qu'il y a dedans
 \begin{comment}
 \begin{equation}
 \begin{split}

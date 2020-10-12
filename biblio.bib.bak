@@ -26,7 +26,7 @@
 }
 @phdthesis{richard2015propagation,
   title={Propagation d'atomes ultra-froids en milieu d{\'e}sordonn{\'e}-{\'E}tude dans l'espace des impulsions de ph{\'e}nom{\`e}nes de diffusion et de localisation},
-  author={Richard, Jérémie},
+  author={Richard, J{\'e}r{\'e}mie},
   year={2015},
   school={Universit{\'e} Paris-Saclay}
 }
@@ -44,7 +44,7 @@
   title={Vers une {\'e}tude spectroscopique de la transition d'Anderson},
   author={Denechaud, Vincent},
   year={2018},
-  school={Paris Saclay}
+  school={Universit{\'e} Paris Saclay}
 }
 @phdthesis{mukhtar2019state,
   title={State-dependent disordered potential for studies of Anderson transition with ultracold atoms},
@@ -90,12 +90,14 @@
 @phdthesis{fauquembergue2004realisation,
   title={R{\'e}alisation d'un dispositif de condensation de Bose-Einstein et de transport d'un {\'e}chantillon coh{\'e}rent d'atomes},
   author={Fauquembergue, Marie},
-  year={2004}
+  year={2004},
+  school={Paris 11}
 }
 @phdthesis{bernard2010transport,
   title={Transport quantique d'ondes atomiques ultrafroides: localisation d'Anderson et laser {\`a} atomes guid{\'e}.},
   author={Bernard, Alain},
-  year={2010}
+  year={2010},
+  school={Universit{\'e} Pierre et Marie Curie}
 }
 @phdthesis{jendrzejewski2012quantum,
   title={Quantum transport of ultracold atoms in disordered potentials},
@@ -112,7 +114,8 @@
 @phdthesis{riou2006etude,
   title={Etude des propri{\'e}t{\'e}s de propagation d'un laser {\`a} atomes},
   author={Riou, Jean-F{\'e}lix},
-  year={2006}
+  year={2006},
+  school={Paris 11}
 }
 @article{jendrzejewski2012three,
   title={Three-dimensional localization of ultracold atoms in an optical disordered potential},
@@ -124,11 +127,14 @@
   year={2012},
   publisher={Nature Publishing Group}
 }
-@article{grimm1999optical,
+@incollection{grimm2000optical,
   title={Optical dipole traps for neutral atoms},
   author={Grimm, Rudolf and Weidem{\"u}ller, Matthias and Ovchinnikov, Yurii B},
-  journal={arXiv preprint physics/9902072},
-  year={1999}
+  booktitle={Advances in atomic, molecular, and optical physics},
+  volume={42},
+  pages={95--170},
+  year={2000},
+  publisher={Elsevier}
 }
 @article{keshet2013distributed,
   title={A distributed, graphical user interface based, computer control system for atomic physics experiments},
@@ -146,4 +152,1067 @@
   year={2008},
   publisher={June},
   url={http://akeshet.github.io/Cicero-Word-Generator/}
+}
+@book{goodman2007speckle,
+  title={Speckle phenomena in optics: theory and applications},
+  author={Goodman, Joseph W},
+  year={2007},
+  publisher={Roberts and Company Publishers}
+}
+@article{gatti2008three,
+  title={Three-dimensional coherence of light speckles: theory},
+  author={Gatti, A and Magatti, D and Ferri, F},
+  journal={Physical Review A},
+  volume={78},
+  number={6},
+  pages={063806},
+  year={2008},
+  publisher={APS}
+}
+@article{magatti2009three,
+  title={Three-dimensional coherence of light speckles: experiment},
+  author={Magatti, D and Gatti, A and Ferri, F},
+  journal={Physical Review A},
+  volume={79},
+  number={5},
+  pages={053831},
+  year={2009},
+  publisher={APS}
+}
+@article{pasek2017anderson,
+  title={Anderson localization of ultracold atoms: Where is the mobility edge?},
+  author={Pasek, Michael and Orso, Giuliano and Delande, Dominique},
+  journal={Physical review letters},
+  volume={118},
+  number={17},
+  pages={170403},
+  year={2017},
+  publisher={APS}
+}
+@phdthesis{piraud2012localisation,
+  title={Localisation d’Anderson d’ondes de mati{\`e}re dans un d{\'e}sordre corr{\'e}l{\'e}: de 1D {\`a} 3D},
+  author={Piraud, Marie},
+  year={2012},
+  school={Paris 11}
+}
+@article{o2001scaling,
+  title={Scaling laws for evaporative cooling in time-dependent optical traps},
+  author={O’hara, KM and Gehm, Michael E and Granade, SR and Thomas, JE},
+  journal={Physical Review A},
+  volume={64},
+  number={5},
+  pages={051403},
+  year={2001},
+  publisher={APS}
+}
+@article{luiten1996kinetic,
+  title={Kinetic theory of the evaporative cooling of a trapped gas},
+  author={Luiten, OJ and Reynolds, MW and Walraven, JTM},
+  journal={Physical Review A},
+  volume={53},
+  number={1},
+  pages={381},
+  year={1996},
+  publisher={APS}
+}
+@article{hu2017creation,
+  title={Creation of a Bose-condensed gas of 87Rb by laser cooling},
+  author={Hu, Jiazhong and Urvoy, Alban and Vendeiro, Zachary and Cr{\'e}pel, Valentin and Chen, Wenlan and Vuleti{\'c}, Vladan},
+  journal={Science},
+  volume={358},
+  number={6366},
+  pages={1078--1080},
+  year={2017},
+  publisher={American Association for the Advancement of Science}
+}
+@article{stellmer2013laser,
+  title={Laser cooling to quantum degeneracy},
+  author={Stellmer, Simon and Pasquiou, Benjamin and Grimm, Rudolf and Schreck, Florian},
+  journal={Physical review letters},
+  volume={110},
+  number={26},
+  pages={263003},
+  year={2013},
+  publisher={APS}
+}
+@article{walraven2010elements,
+  title={Elements of quantum gases: Thermodynamic and collisional properties of trapped atomic gases},
+  author={Walraven, JTM},
+  journal={Les Houches-predoc lectures},
+  volume={2010},
+  pages={207},
+  year={2010}
+}
+@article{cohen1996atomes,
+  title={Atomes ultrafroids: Piegeage non dissipatif et refroidissement {\'e}vaporatif},
+  author={Cohen-Tannoudji, Claude},
+  journal={Cours au College de France},
+  volume={1997},
+  year={1996}
+}
+@article{burt1997coherence,
+  title={Coherence, correlations, and collisions: What one learns about Bose-Einstein condensates from their decay},
+  author={Burt, EA and Ghrist, RW and Myatt, CJ and Holland, MJ and Cornell, Eric A and Wieman, CE},
+  journal={Physical Review Letters},
+  volume={79},
+  number={3},
+  pages={337},
+  year={1997},
+  publisher={APS}
+}
+@article{soding1999three,
+  title={Three-body decay of a rubidium Bose--Einstein condensate},
+  author={S{\"o}ding, J and Gu{\'e}ry-Odelin, D and Desbiolles, P and Chevy, F and Inamori, H and Dalibard, J},
+  journal={Applied physics B},
+  volume={69},
+  number={4},
+  pages={257--261},
+  year={1999},
+  publisher={Springer}
+}
+@phdthesis{brantut2009manipulation,
+  title={Manipulation d'atomes froids dans des potentiels lumineux},
+  author={Brantut, Jean-Philippe},
+  year={2009},
+  school={Paris 11}
+}
+@article{murthy2014matter,
+  title={Matter-wave Fourier optics with a strongly interacting two-dimensional Fermi gas},
+  author={Murthy, PA and Kedar, D and Lompe, T and Neidig, M and Ries, MG and Wenz, AN and Z{\"u}rn, G and Jochim, S},
+  journal={Physical Review A},
+  volume={90},
+  number={4},
+  pages={043611},
+  year={2014},
+  publisher={APS}
+}
+@phdthesis{boyer2000condensation,
+  title={Condensation de Bose-Einstein avec un {\'e}lectroaimant {\`a} noyau ferromagn{\'e}tique: strat{\'e}gies de refroidissement dans des champs magn{\'e}tiques intenses},
+  author={Boyer, Vincent},
+  year={2000},
+  school={Paris 11}
+}
+@incollection{ketterle1996evaporative,
+  title={Evaporative cooling of trapped atoms},
+  author={Ketterle, Wolfgang and Van Druten, NJ},
+  booktitle={Advances in atomic, molecular, and optical physics},
+  volume={37},
+  pages={181--236},
+  year={1996},
+  publisher={Elsevier}
+}
+@article{barrett2001all,
+  title={All-optical formation of an atomic Bose-Einstein condensate},
+  author={Barrett, MD and Sauer, JA and Chapman, MS},
+  journal={Physical Review Letters},
+  volume={87},
+  number={1},
+  pages={010404},
+  year={2001},
+  publisher={APS}
+}
+@article{hung2008accelerating,
+  title={Accelerating evaporative cooling of atoms into Bose-Einstein condensation in optical traps},
+  author={Hung, Chen-Lung and Zhang, Xibo and Gemelke, Nathan and Chin, Cheng},
+  journal={Physical Review A},
+  volume={78},
+  number={1},
+  pages={011604},
+  year={2008},
+  publisher={APS}
+}
+@article{ashcroft2010solid,
+  title={Solid state physics (saunders college, philadelphia, 1976)},
+  author={Ashcroft, Neil W and Mermin, N David},
+  journal={Appendix N},
+  volume={166},
+  year={2010}
+}
+@book{akkermans2007mesoscopic,
+  title={Mesoscopic physics of electrons and photons},
+  author={Akkermans, Eric and Montambaux, Gilles},
+  year={2007},
+  publisher={Cambridge university press}
+}
+@article{anderson1958absence,
+  title={Absence of diffusion in certain random lattices},
+  author={Anderson, Philip W},
+  journal={Physical review},
+  volume={109},
+  number={5},
+  pages={1492},
+  year={1958},
+  publisher={APS}
+}
+@article{abrahams1979scaling,
+  title={Scaling theory of localization: Absence of quantum diffusion in two dimensions},
+  author={Abrahams, Elihu and Anderson, PW and Licciardello, DC and Ramakrishnan, TV},
+  journal={Physical Review Letters},
+  volume={42},
+  number={10},
+  pages={673},
+  year={1979},
+  publisher={APS}
+}
+@article{slevin2014critical,
+  title={Critical exponent for the Anderson transition in the three-dimensional orthogonal universality class},
+  author={Slevin, Keith and Ohtsuki, Tomi},
+  journal={New Journal of Physics},
+  volume={16},
+  number={1},
+  pages={015012},
+  year={2014},
+  publisher={IOP Publishing}
+}
+@article{slevin1999corrections,
+  title={Corrections to scaling at the Anderson transition},
+  author={Slevin, Keith and Ohtsuki, Tomi},
+  journal={Physical review letters},
+  volume={82},
+  number={2},
+  pages={382},
+  year={1999},
+  publisher={APS}
+}
+@article{evers2008anderson,
+  title={Anderson transitions},
+  author={Evers, Ferdinand and Mirlin, Alexander D},
+  journal={Reviews of Modern Physics},
+  volume={80},
+  number={4},
+  pages={1355},
+  year={2008},
+  publisher={APS}
+}
+@article{shlimak1996determination,
+  title={Determination of the critical conductivity exponent for the metal-insulator transition at nonzero temperatures: universality of the transition},
+  author={Shlimak, I and Kaveh, M and Ussyshkin, R and Ginodman, V and Resnick, L},
+  journal={Physical review letters},
+  volume={77},
+  number={6},
+  pages={1103},
+  year={1996},
+  publisher={APS}
+}
+@misc{mott1979electronic,
+  title={Electronic processes in non-crystalline solids, Clarendon},
+  author={Mott, NF and Davis, EA},
+  year={1979},
+  publisher={Oxford}
+}
+@article{paalanen1983critical,
+  title={Critical scaling of the conductance in a disordered insulator},
+  author={Paalanen, MA and Rosenbaum, TF and Thomas, GA and Bhatt, RN},
+  journal={Physical review letters},
+  volume={51},
+  number={20},
+  pages={1896},
+  year={1983},
+  publisher={APS}
+}
+@article{weaver1990anderson,
+  title={Anderson localization of ultrasound},
+  author={Weaver, Richard L},
+  journal={Wave motion},
+  volume={12},
+  number={2},
+  pages={129--142},
+  year={1990},
+  publisher={Elsevier}
+}
+@article{ye1992observation,
+  title={Observation of bending wave localization and quasi mobility edge in two dimensions},
+  author={Ye, Ling and Cody, George and Zhou, Minyao and Sheng, Ping and Norris, Andrew N},
+  journal={Physical review letters},
+  volume={69},
+  number={21},
+  pages={3080},
+  year={1992},
+  publisher={APS}
+}
+@article{skipetrov2014absence,
+  title={Absence of Anderson localization of light in a random ensemble of point scatterers},
+  author={Skipetrov, Sergey E and Sokolov, Igor M},
+  journal={Physical review letters},
+  volume={112},
+  number={2},
+  pages={023905},
+  year={2014},
+  publisher={APS}
+}
+@article{hu2008localization,
+  title={Localization of ultrasound in a three-dimensional elastic network},
+  author={Hu, Hefei and Strybulevych, A and Page, JH and Skipetrov, Sergey E and van Tiggelen, Bart A},
+  journal={Nature Physics},
+  volume={4},
+  number={12},
+  pages={945--948},
+  year={2008},
+  publisher={Nature Publishing Group}
+}
+@article{genack1991observation,
+  title={Observation of photon localization in a three-dimensional disordered system},
+  author={Genack, AZ and Garcia, N},
+  journal={Physical review letters},
+  volume={66},
+  number={16},
+  pages={2064},
+  year={1991},
+  publisher={APS}
+}
+@article{wiersma1997localization,
+  title={Localization of light in a disordered medium},
+  author={Wiersma, Diederik S and Bartolini, Paolo and Lagendijk, Ad and Righini, Roberto},
+  journal={Nature},
+  volume={390},
+  number={6661},
+  pages={671--673},
+  year={1997},
+  publisher={Nature Publishing Group}
+}
+@article{scheffold1999localization,
+  title={Localization or classical diffusion of light?},
+  author={Scheffold, Frank and Lenke, Ralf and Tweer, Ralf and Maret, Georg},
+  journal={Nature},
+  volume={398},
+  number={6724},
+  pages={206--207},
+  year={1999},
+  publisher={Nature Publishing Group}
+}
+@article{weaver1993anomalous,
+  title={Anomalous diffusivity and localization of classical waves in disordered media: the effect of dissipation},
+  author={Weaver, Richard L},
+  journal={Physical Review B},
+  volume={47},
+  number={2},
+  pages={1077},
+  year={1993},
+  publisher={APS}
+}
+@article{nieuwenhuizen1995intensity,
+  title={Intensity distributions of waves transmitted through a multiple scattering medium},
+  author={Nieuwenhuizen, Th M and Van Rossum, MCW},
+  journal={Physical review letters},
+  volume={74},
+  number={14},
+  pages={2674},
+  year={1995},
+  publisher={APS}
+}
+@article{katsumoto1987fine,
+  title={Fine tuning of metal-insulator transition in Al0. 3Ga0. 7As using persistent photoconductivity},
+  author={Katsumoto, Shingo and Komori, Fumio and Sano, Naokatsu and Kobayashi, Shun-ichi},
+  journal={Journal of the Physical Society of Japan},
+  volume={56},
+  number={7},
+  pages={2259--2262},
+  year={1987},
+  publisher={The Physical Society of Japan}
+}
+@article{schwartz2007transport,
+  title={Transport and Anderson localization in disordered two-dimensional photonic lattices},
+  author={Schwartz, Tal and Bartal, Guy and Fishman, Shmuel and Segev, Mordechai},
+  journal={Nature},
+  volume={446},
+  number={7131},
+  pages={52--55},
+  year={2007},
+  publisher={Nature Publishing Group}
+}
+@article{sapienza2010cavity,
+  title={Cavity quantum electrodynamics with Anderson-localized modes},
+  author={Sapienza, Luca and Thyrrestrup, Henri and Stobbe, S{\o}ren and Garcia, Pedro David and Smolka, Stephan and Lodahl, Peter},
+  journal={Science},
+  volume={327},
+  number={5971},
+  pages={1352--1355},
+  year={2010},
+  publisher={American Association for the Advancement of Science}
+}
+@article{robert2010anisotropic,
+  title={Anisotropic 2D diffusive expansion of ultracold atoms in a disordered potential},
+  author={Robert-De-Saint-Vincent, Martin and Brantut, J-P and Allard, Baptiste and Plisson, Thomas and Pezz{\'e}, Luca and Sanchez-Palencia, Laurent and Aspect, Alain and Bourdel, Thomas and Bouyer, Philippe},
+  journal={Physical Review Letters},
+  volume={104},
+  number={22},
+  pages={220602},
+  year={2010},
+  publisher={APS}
+}
+@article{roati2008anderson,
+  title={Anderson localization of a non-interacting Bose--Einstein condensate},
+  author={Roati, Giacomo and D’Errico, Chiara and Fallani, Leonardo and Fattori, Marco and Fort, Chiara and Zaccanti, Matteo and Modugno, Giovanni and Modugno, Michele and Inguscio, Massimo},
+  journal={Nature},
+  volume={453},
+  number={7197},
+  pages={895--898},
+  year={2008},
+  publisher={Nature Publishing Group}
+}
+@article{white2020observation,
+  title={Observation of two-dimensional Anderson localisation of ultracold atoms},
+  author={White, Donald H and Haase, Thomas A and Brown, Dylan J and Hoogerland, Maarten D and Najafabadi, Mojdeh S and Helm, John L and Gies, Christopher and Schumayer, Daniel and Hutchinson, David AW},
+  journal={Nature Communications},
+  volume={11},
+  number={1},
+  pages={1--8},
+  year={2020},
+  publisher={Nature Publishing Group}
+}
+@article{pilati2010dilute,
+  title={Dilute Bose gas with correlated disorder: a path integral Monte Carlo study},
+  author={Pilati, Sebastiano and Giorgini, Stefano and Modugno, Michele and Prokof'ev, Nikolai},
+  journal={New Journal of Physics},
+  volume={12},
+  number={7},
+  pages={073003},
+  year={2010},
+  publisher={IOP Publishing}
+}
+@article{kondov2011three,
+  title={Three-dimensional Anderson localization of ultracold matter},
+  author={Kondov, SS and McGehee, WR and Zirbel, JJ and DeMarco, B},
+  journal={Science},
+  volume={334},
+  number={6052},
+  pages={66--68},
+  year={2011},
+  publisher={American Association for the Advancement of Science}
+}
+@article{semeghini2015measurement,
+  title={Measurement of the mobility edge for 3D Anderson localization},
+  author={Semeghini, Giulia and Landini, Manuele and Castilho, Patricia and Roy, Sanjukta and Spagnolli, Giacomo and Trenkwalder, Andreas and Fattori, Marco and Inguscio, Massimo and Modugno, Giovanni},
+  journal={Nature Physics},
+  volume={11},
+  number={7},
+  pages={554--559},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+@article{moore1995atom,
+  title={Atom optics realization of the quantum $\delta$-kicked rotor},
+  author={Moore, FL and Robinson, JC and Bharucha, CF and Sundaram, Bala and Raizen, MG},
+  journal={Physical Review Letters},
+  volume={75},
+  number={25},
+  pages={4598},
+  year={1995},
+  publisher={APS}
+}
+@phdthesis{lemarietel-00424399,
+  TITLE = {The Anderson transition with atomic matter waves},
+  AUTHOR = {Lemari{\'e}, Gabriel},
+  URL = {https://tel.archives-ouvertes.fr/tel-00424399},
+  SCHOOL = {Universit{\'e} Pierre et Marie Curie - Paris VI},
+  YEAR = {2009},
+  MONTH = Sep,
+  KEYWORDS = {localization ; Anderson transition ; atomic matter waves ; quantum chaos ; disorder ; quantum transport ; localisation ; transition d'Anderson ; ondes de mati{\`e}re atomiques ; chaos quantique ; d{\'e}sordre ; transport quantique},
+  TYPE = {Theses},
+  PDF = {https://tel.archives-ouvertes.fr/tel-00424399/file/these-gabriel-lemarie.pdf},
+  HAL_ID = {tel-00424399},
+  HAL_VERSION = {v1}
+}
+@article{lemarie2009observation,
+  title={Observation of the Anderson metal-insulator transition with atomic matter waves: Theory and experiment},
+  author={Lemari{\'e}, Gabriel and Chab{\'e}, Julien and Szriftgiser, Pascal and Garreau, Jean Claude and Gr{\'e}maud, Beno{\^\i}t and Delande, Dominique},
+  journal={Physical Review A},
+  volume={80},
+  number={4},
+  pages={043626},
+  year={2009},
+  publisher={APS}
+}
+@article{lemarie2009universality,
+  title={Universality of the Anderson transition with the quasiperiodic kicked rotor},
+  author={Lemari{\'e}, G and Gr{\'e}maud, B and Delande, D},
+  journal={EPL (Europhysics Letters)},
+  volume={87},
+  number={3},
+  pages={37007},
+  year={2009},
+  publisher={IOP Publishing}
+}
+@article{casati1989anderson,
+  title={Anderson transition in a one-dimensional system with three incommensurate frequencies},
+  author={Casati, Giulio and Guarneri, Italo and Shepelyansky, DL},
+  journal={Physical review letters},
+  volume={62},
+  number={4},
+  pages={345},
+  year={1989},
+  publisher={APS}
+}
+@article{chabe2008experimental,
+  title={Experimental observation of the Anderson metal-insulator transition with atomic matter waves},
+  author={Chab{\'e}, Julien and Lemari{\'e}, Gabriel and Gr{\'e}maud, Beno{\^\i}t and Delande, Dominique and Szriftgiser, Pascal and Garreau, Jean Claude},
+  journal={Physical review letters},
+  volume={101},
+  number={25},
+  pages={255702},
+  year={2008},
+  publisher={APS}
+}
+@article{lopez2012experimental,
+  title={Experimental test of universality of the Anderson transition},
+  author={Lopez, Matthias and Cl{\'e}ment, Jean-Fran{\c{c}}ois and Szriftgiser, Pascal and Garreau, Jean Claude and Delande, Dominique},
+  journal={Physical Review Letters},
+  volume={108},
+  number={9},
+  pages={095701},
+  year={2012},
+  publisher={APS}
+}
+@article{billy2008direct,
+  title={Direct observation of Anderson localization of matter waves in a controlled disorder},
+  author={Juliette Billy and Vincent Josse and Zhanchun Zuo and Alain Bernard and Ben Hambrecht and Pierre Lugan and David Cl'ement and Laurent Sanchez-Palencia and P Bouyer and Alain Aspect},
+  journal={Nature},
+  year={2008},
+  volume={453},
+  pages={891-894}
+}
+@article{muller2014comment,
+  title={Comment on “Three-Dimensional Anderson Localization in Variable Scale Disorder”},
+  author={M{\"u}ller, Cord A and Shapiro, Boris},
+  journal={Physical review letters},
+  volume={113},
+  number={9},
+  pages={099601},
+  year={2014},
+  publisher={APS}
+}
+@article{shapiro2012cold,
+  title={Cold atoms in the presence of disorder},
+  author={Shapiro, Boris},
+  journal={Journal of Physics A: Mathematical and Theoretical},
+  volume={45},
+  number={14},
+  pages={143001},
+  year={2012},
+  publisher={IOP Publishing}
+}
+@article{kuhn2007coherent,
+  title={Coherent matter wave transport in speckle potentials},
+  author={Kuhn, RC and Sigwarth, O and Miniatura, C and Delande, D and M{\"u}ller, CA},
+  journal={New Journal of Physics},
+  volume={9},
+  number={6},
+  pages={161},
+  year={2007},
+  publisher={IOP Publishing}
+}
+@article{trappe2015semiclassical,
+  title={Semiclassical spectral function for matter waves in random potentials},
+  author={Trappe, Martin I and Delande, Dominique and M{\"u}ller, Cord A},
+  journal={Journal of Physics A: Mathematical and Theoretical},
+  volume={48},
+  number={24},
+  pages={245102},
+  year={2015},
+  publisher={IOP Publishing}
+}
+@article{cherroret2012coherent,
+  title={Coherent backscattering of ultracold matter waves: Momentum space signatures},
+  author={Cherroret, Nicolas and Karpiuk, Tomasz and M{\"u}ller, Cord A and Gr{\'e}maud, Beno{\^\i}t and Miniatura, Christian},
+  journal={Physical Review A},
+  volume={85},
+  number={1},
+  pages={011604},
+  year={2012},
+  publisher={APS}
+}
+@book{grynberg2010introduction,
+  title={Introduction to quantum optics: from the semi-classical approach to quantized light},
+  author={Grynberg, Gilbert and Aspect, Alain and Fabre, Claude},
+  year={2010},
+  publisher={Cambridge university press}
+}
+@article{jacques2012reflectance,
+  title={Reflectance confocal microscopy of optical phantoms},
+  author={Jacques, Steven L and Wang, Bo and Samatham, Ravikant},
+  journal={Biomedical optics express},
+  volume={3},
+  number={6},
+  pages={1162--1172},
+  year={2012},
+  publisher={Optical Society of America}
+}
+@article{martin2016determination,
+  title={Determination of scattering properties and damage thresholds in tissue using ultrafast laser ablation},
+  author={Martin, Chris and Ben-Yakar, Adela},
+  journal={Journal of biomedical optics},
+  volume={21},
+  number={11},
+  pages={115004},
+  year={2016},
+  publisher={International Society for Optics and Photonics}
+}
+@article{hildebrand2014observation,
+  title={Observation of infinite-range intensity correlations above, at, and below the mobility edges of the 3D Anderson localization transition},
+  author={Hildebrand, WK and Strybulevych, A and Skipetrov, SE and Van Tiggelen, BA and Page, JH},
+  journal={Physical Review Letters},
+  volume={112},
+  number={7},
+  pages={073902},
+  year={2014},
+  publisher={APS}
+}
+@article{obermann2014measuring,
+  title={Measuring the scattering mean free path of Rayleigh waves on a volcano from spatial phase decoherence},
+  author={Obermann, Anne and Larose, Eric and Margerin, Ludovic and Rossetto, Vincent},
+  journal={Geophysical Journal International},
+  volume={197},
+  number={1},
+  pages={435--442},
+  year={2014},
+  publisher={Oxford University Press}
+}
+@article{sebbah2002spatial,
+  title={Spatial-field correlation: the building block of mesoscopic fluctuations},
+  author={Sebbah, P and Hu, B and Genack, AZ and Pnini, R and Shapiro, B},
+  journal={Physical review letters},
+  volume={88},
+  number={12},
+  pages={123901},
+  year={2002},
+  publisher={APS}
+}
+@article{page1996group,
+  title={Group velocity in strongly scattering media},
+  author={Page, John H and Sheng, Ping and Schriemer, Henry P and Jones, I and Jing, Xiaodun and Weitz, David A},
+  journal={Science},
+  volume={271},
+  number={5249},
+  pages={634--637},
+  year={1996},
+  publisher={American Association for the Advancement of Science}
+}
+@article{savo2017observation,
+  title={Observation of mean path length invariance in light-scattering media},
+  author={Savo, Romolo and Pierrat, Romain and Najar, Ulysse and Carminati, R{\'e}mi and Rotter, Stefan and Gigan, Sylvain},
+  journal={Science},
+  volume={358},
+  number={6364},
+  pages={765--768},
+  year={2017},
+  publisher={American Association for the Advancement of Science}
+}
+@article{niederer1974magneto,
+  title={Magneto oscillatory conductance in n-type inverted silicon surfaces},
+  author={Niederer, HHJM},
+  journal={Japanese Journal of Applied Physics},
+  volume={13},
+  number={S2},
+  pages={339},
+  year={1974},
+  publisher={IOP Publishing}
+}
+@article{bockelmann1990single,
+  title={Single-particle and transport scattering times in narrow GaAs/Al x Ga 1- x As quantum wells},
+  author={Bockelmann, U and Abstreiter, G and Weimann, G and Schlapp, W},
+  journal={Physical Review B},
+  volume={41},
+  number={11},
+  pages={7864},
+  year={1990},
+  publisher={APS}
+}
+@article{monteverde2010transport,
+  title={Transport and elastic scattering times as probes of the nature of impurity scattering in single-layer and bilayer graphene},
+  author={Monteverde, M and Ojeda-Aristizabal, C and Weil, R and Bennaceur, K and Ferrier, M and Gu{\'e}ron, S and Glattli, C and Bouchiat, H and Fuchs, JN and Maslov, DL},
+  journal={Physical review letters},
+  volume={104},
+  number={12},
+  pages={126801},
+  year={2010},
+  publisher={APS}
+}
+@article{yedjour2010diffusion,
+  title={Diffusion and localization of cold atoms in 3D optical speckle},
+  author={Yedjour, Afifa and Van Tiggelen, BA},
+  journal={The European Physical Journal D},
+  volume={59},
+  number={2},
+  pages={249--255},
+  year={2010},
+  publisher={Springer}
+}
+@article{skipetrov2008anderson,
+  title={Anderson localization of a Bose-Einstein condensate in a 3D random potential},
+  author={Skipetrov, Sergey E and Minguzzi, A and van Tiggelen, Bart A and Shapiro, Boris},
+  journal={Physical review letters},
+  volume={100},
+  number={16},
+  pages={165301},
+  year={2008},
+  publisher={APS}
+}
+@article{prat2016semiclassical,
+  title={Semiclassical spectral function and density of states in speckle potentials},
+  author={Prat, Tony and Cherroret, Nicolas and Delande, Dominique},
+  journal={Physical Review A},
+  volume={94},
+  number={2},
+  pages={022114},
+  year={2016},
+  publisher={APS}
+}
+@article{lugan2009one,
+  title={One-dimensional Anderson localization in certain correlated random potentials},
+  author={Lugan, Pierre and Aspect, Alain and Sanchez-Palencia, Laurent and Delande, Dominique and Gr{\'e}maud, Beno{\^\i}t and M{\"u}ller, Cord A and Miniatura, Christian},
+  journal={Physical Review A},
+  volume={80},
+  number={2},
+  pages={023605},
+  year={2009},
+  publisher={APS}
+}
+@article{pasek2015phase,
+  title={Phase diagram of the three-dimensional Anderson model for short-range speckle potentials},
+  author={Pasek, M and Zhao, Z and Delande, D and Orso, G},
+  journal={Physical Review A},
+  volume={92},
+  number={5},
+  pages={053618},
+  year={2015},
+  publisher={APS}
+}
+@article{bloch2012quantum,
+  title={Quantum simulations with ultracold quantum gases},
+  author={Bloch, Immanuel and Dalibard, Jean and Nascimbene, Sylvain},
+  journal={Nature Physics},
+  volume={8},
+  number={4},
+  pages={267--276},
+  year={2012},
+  publisher={Nature Publishing Group}
+}
+@article{robins2013atom,
+  title={Atom lasers: Production, properties and prospects for precision inertial measurement},
+  author={Robins, NP and Altin, PA and Debs, JE and Close, JD},
+  journal={Physics Reports},
+  volume={529},
+  number={3},
+  pages={265--296},
+  year={2013},
+  publisher={Elsevier}
+}
+@inproceedings{canuel2014matter,
+  title={The matter-wave laser interferometer gravitation antenna (MIGA): New perspectives for fundamental physics and geosciences},
+  author={Canuel, B and Amand, L and Bertoldi, A and Chaibi, W and Geiger, R and Gillot, J and Landragin, A and Merzougui, M and Riou, I and Schmid, SP and others},
+  booktitle={E3S Web of Conferences},
+  volume={4},
+  pages={01004},
+  year={2014},
+  organization={EDP Sciences}
+}
+@article{derevianko2011colloquium,
+  title={Colloquium: Physics of optical lattice clocks},
+  author={Derevianko, Andrei and Katori, Hidetoshi},
+  journal={Reviews of Modern Physics},
+  volume={83},
+  number={2},
+  pages={331},
+  year={2011},
+  publisher={APS}
+}
+@article{eckel2014hysteresis,
+  title={Hysteresis in a quantized superfluid ‘atomtronic’circuit},
+  author={Eckel, Stephen and Lee, Jeffrey G and Jendrzejewski, Fred and Murray, Noel and Clark, Charles W and Lobb, Christopher J and Phillips, William D and Edwards, Mark and Campbell, Gretchen K},
+  journal={Nature},
+  volume={506},
+  number={7487},
+  pages={200--203},
+  year={2014},
+  publisher={Nature Publishing Group}
+}
+@article{ott2016single,
+  title={Single atom detection in ultracold quantum gases: a review of current progress},
+  author={Ott, Herwig},
+  journal={Reports on Progress in Physics},
+  volume={79},
+  number={5},
+  pages={054401},
+  year={2016},
+  publisher={IOP Publishing}
+}
+@article{jendrzejewski2012coherent,
+  title={Coherent backscattering of ultracold atoms},
+  author={Jendrzejewski, Fred and M{\"u}ller, Kilian and Richard, J{\'e}r{\'e}mie and Date, Aditya and Plisson, Thomas and Bouyer, Philippe and Aspect, Alain and Josse, Vincent},
+  journal={Physical Review Letters},
+  volume={109},
+  number={19},
+  pages={195302},
+  year={2012},
+  publisher={APS}
+}
+@article{muller2015suppression,
+  title={Suppression and revival of weak localization through control of time-reversal symmetry},
+  author={M{\"u}ller, Kilian and Richard, J{\'e}r{\'e}mie and Volchkov, Valentin V and Denechaud, Vincent and Bouyer, Philippe and Aspect, Alain and Josse, Vincent},
+  journal={Physical Review Letters},
+  volume={114},
+  number={20},
+  pages={205301},
+  year={2015},
+  publisher={APS}
+}
+@article{delande2014mobility,
+  title={Mobility edge for cold atoms in laser speckle potentials},
+  author={Delande, Dominique and Orso, Giuliano},
+  journal={Physical review letters},
+  volume={113},
+  number={6},
+  pages={060601},
+  year={2014},
+  publisher={APS}
+}
+@article{choi2016exploring,
+  title={Exploring the many-body localization transition in two dimensions},
+  author={Choi, Jae-yoon and Hild, Sebastian and Zeiher, Johannes and Schau{\ss}, Peter and Rubio-Abadal, Antonio and Yefsah, Tarik and Khemani, Vedika and Huse, David A and Bloch, Immanuel and Gross, Christian},
+  journal={Science},
+  volume={352},
+  number={6293},
+  pages={1547--1552},
+  year={2016},
+  publisher={American Association for the Advancement of Science}
+}
+@article{schreiber2015observation,
+  title={Observation of many-body localization of interacting fermions in a quasirandom optical lattice},
+  author={Schreiber, Michael and Hodgman, Sean S and Bordia, Pranjal and L{\"u}schen, Henrik P and Fischer, Mark H and Vosk, Ronen and Altman, Ehud and Schneider, Ulrich and Bloch, Immanuel},
+  journal={Science},
+  volume={349},
+  number={6250},
+  pages={842--845},
+  year={2015},
+  publisher={American Association for the Advancement of Science}
+}
+@article{ghosh2015coherent,
+  title={Coherent backscattering reveals the Anderson transition},
+  author={Ghosh, Sanjib and Delande, Dominique and Miniatura, Christian and Cherroret, Nicolas},
+  journal={Physical Review Letters},
+  volume={115},
+  number={20},
+  pages={200602},
+  year={2015},
+  publisher={APS}
+}
+@article{plisson2013momentum,
+  title={Momentum isotropisation in random potentials},
+  author={Plisson, Thomas and Bourdel, Thomas and M{\"u}ller, Cord A},
+  journal={The European Physical Journal Special Topics},
+  volume={217},
+  number={1},
+  pages={79--84},
+  year={2013},
+  publisher={Springer}
+}
+@article{karpiuk2012coherent,
+  title={Coherent forward scattering peak induced by anderson localization},
+  author={Karpiuk, T and Cherroret, N and Lee, KL and Gr{\'e}maud, B and M{\"u}ller, CA and Miniatura, C},
+  journal={Physical review letters},
+  volume={109},
+  number={19},
+  pages={190601},
+  year={2012},
+  publisher={APS}
+}
+@article{ghosh2017coherent,
+  title={Coherent forward scattering as a signature of Anderson metal-insulator transitions},
+  author={Ghosh, Sanjib and Miniatura, Christian and Cherroret, Nicolas and Delande, Dominique},
+  journal={Physical Review A},
+  volume={95},
+  number={4},
+  pages={041602},
+  year={2017},
+  publisher={APS}
+}
+@article{hainaut2018controlling,
+  title={Controlling symmetry and localization with an artificial gauge field in a disordered quantum system},
+  author={Hainaut, Cl{\'e}ment and Manai, Isam and Cl{\'e}ment, Jean-Fran{\c{c}}ois and Garreau, Jean Claude and Szriftgiser, Pascal and Lemari{\'e}, Gabriel and Cherroret, Nicolas and Delande, Dominique and Chicireanu, Radu},
+  journal={Nature communications},
+  volume={9},
+  number={1},
+  pages={1--9},
+  year={2018},
+  publisher={Nature Publishing Group}
+}
+@article{brantut2008light,
+  title={Light-shift tomography in an optical-dipole trap for neutral atoms},
+  author={Brantut, Jean-Philippe and Cl{\'e}ment, Jean-Fran{\c{c}}ois and de Saint Vincent, M Robert and Varoquaux, Ga{\"e}l and Nyman, Robert A and Aspect, Alain and Bourdel, Thomas and Bouyer, Philippe},
+  journal={Physical Review A},
+  volume={78},
+  number={3},
+  pages={031401},
+  year={2008},
+  publisher={APS}
+}
+@article{bender2018customizing,
+  title={Customizing speckle intensity statistics},
+  author={Bender, Nicholas and Y{\i}lmaz, Hasan and Bromberg, Yaron and Cao, Hui},
+  journal={Optica},
+  volume={5},
+  number={5},
+  pages={595--600},
+  year={2018},
+  publisher={Optical Society of America}
+}
+@article{filoche2012universal,
+  title={Universal mechanism for Anderson and weak localization},
+  author={Filoche, Marcel and Mayboroda, Svitlana},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={109},
+  number={37},
+  pages={14761--14766},
+  year={2012},
+  publisher={National Acad Sciences}
+}
+@article{larose2004weak,
+  title={Weak localization of seismic waves},
+  author={Larose, Eric and Margerin, Ludovic and Van Tiggelen, BA and Campillo, Michel},
+  journal={Physical review letters},
+  volume={93},
+  number={4},
+  pages={048501},
+  year={2004},
+  publisher={APS}
+}
+@article{mishchenko1993nature,
+  title={On the nature of the polarization opposition effect exhibited by Saturn's rings},
+  author={Mishchenko, Michael I},
+  journal={The Astrophysical Journal},
+  volume={411},
+  pages={351--361},
+  year={1993}
+}
+@article{wolf1985weak,
+  title={Weak localization and coherent backscattering of photons in disordered media},
+  author={Wolf, Pierre-Etienne and Maret, Georg},
+  journal={Physical review letters},
+  volume={55},
+  number={24},
+  pages={2696},
+  year={1985},
+  publisher={APS}
+}
+@article{kramer1993localization,
+  title={Localization: theory and experiment},
+  author={Kramer, Bernhard and MacKinnon, Angus},
+  journal={Reports on Progress in Physics},
+  volume={56},
+  number={12},
+  pages={1469},
+  year={1993},
+  publisher={IOP Publishing}
+}
+@article{ying2016anderson,
+  title={Anderson localization of electrons in single crystals: LixFe7Se8},
+  author={Ying, Tianping and Gu, Yueqiang and Chen, Xiao and Wang, Xinbo and Jin, Shifeng and Zhao, Linlin and Zhang, Wei and Chen, Xiaolong},
+  journal={Science advances},
+  volume={2},
+  number={2},
+  pages={e1501283},
+  year={2016},
+  publisher={American Association for the Advancement of Science}
+}
+@article{siegrist2011disorder,
+  title={Disorder-induced localization in crystalline phase-change materials},
+  author={Siegrist, T and Jost, P and Volker, H and Woda, M and Merkelbach, P and Schlockermann, C and Wuttig, M},
+  journal={Nature materials},
+  volume={10},
+  number={3},
+  pages={202--208},
+  year={2011},
+  publisher={Nature Publishing Group}
+}
+@article{sarma1988mobility,
+  title={Mobility edge in a model one-dimensional potential},
+  author={Sarma, S Das and He, Song and Xie, XC},
+  journal={Physical review letters},
+  volume={61},
+  number={18},
+  pages={2144},
+  year={1988},
+  publisher={APS}
+}
+@article{morong2015simulation,
+  title={Simulation of Anderson localization in two-dimensional ultracold gases for pointlike disorder},
+  author={Morong, William and DeMarco, Brian},
+  journal={Physical Review A},
+  volume={92},
+  number={2},
+  pages={023625},
+  year={2015},
+  publisher={APS}
+}
+@book{cohen2012processus,
+  title={Processus d'interaction entre photons et atomes},
+  author={Cohen-Tannoudji, Claude and Dupont-Roc, Jacques and Grynberg, Gilbert},
+  year={2012},
+  publisher={Edp Sciences}
+}
+@article{ertmer1985laser,
+  title={Laser manipulation of atomic beam velocities: demonstration of stopped atoms and velocity reversal},
+  author={Ertmer, W and Blatt, R and Hall, JL and Zhu, M},
+  journal={Physical review letters},
+  volume={54},
+  number={10},
+  pages={996},
+  year={1985},
+  publisher={APS}
+}
+@article{zhu1991continuous,
+  title={Continuous high-flux monovelocity atomic beam based on a broadband laser-cooling technique},
+  author={Zhu, M and Oates, Christopher W and Hall, John L},
+  journal={Physical review letters},
+  volume={67},
+  number={1},
+  pages={46},
+  year={1991},
+  publisher={APS}
+}
+@article{sackett2006limits,
+  title={Limits on weak magnetic confinement of neutral atoms},
+  author={Sackett, CA},
+  journal={Physical Review A},
+  volume={73},
+  number={1},
+  pages={013626},
+  year={2006},
+  publisher={APS}
+}
+@article{savard1997laser,
+  title={Laser-noise-induced heating in far-off resonance optical traps},
+  author={Savard, TA and O’hara, KM and Thomas, JE},
+  journal={Physical Review A},
+  volume={56},
+  number={2},
+  pages={R1095},
+  year={1997},
+  publisher={APS}
+}
+@article{metcalf2007laser,
+  title={Laser cooling and trapping of neutral atoms},
+  author={Metcalf, Harold J and Van der Straten, Peter},
+  journal={The Optics Encyclopedia: Basic Foundations and Practical Applications},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+@article{lagendijk2009fifty,
+  title={Fifty years of Anderson localization},
+  author={Lagendijk, Aart and Van Tiggelen, Bart and Wiersma, Diederik S},
+  journal={Phys. Today},
+  volume={62},
+  number={8},
+  pages={24--29},
+  year={2009}
+}
+@article{sarkany2014controlling,
+  title={Controlling the magnetic-field sensitivity of atomic-clock states by microwave dressing},
+  author={S{\'a}rk{\'a}ny, L and Weiss, P and Hattermann, H and Fort{\'a}gh, J},
+  journal={Physical Review A},
+  volume={90},
+  number={5},
+  pages={053416},
+  year={2014},
+  publisher={APS}
 }

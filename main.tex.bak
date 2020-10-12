@@ -3,131 +3,102 @@
 
 \input{structure}
 
-\title{Transport quantique en milieu désordonné: une tarte à la crème pour Philippe Etchebest}
+\title{Transport quantique d'atomes ultra-froids en milieu désordonné: Temps de diffusion élastique et fonctions spectrales}
 
 \author{Baptiste LECOUTRE}
 
 \institute{Institut d'Optique Graduate School}
-\doctoralschool{ED Onde et Matière}{572}
+\doctoralschool{Ondes et Matière}{572}{EDOM}
 \specialty{Physique}
-\date{Un jour peut-être}
-
+\date{30/11/2020}
+\NNT{2020UPASA000}
 
 %\jurymember{1}{Prénom NOM}{Titre, \'etablissement}{Président}
 %% Faut-il mettre le grade des personnes ?)
-\jurymember{1}{Emmanuel Macron}{Palais de l'Élysée}{Président}
-\jurymember{2}{Rappeur 1}{Banlieue Sud}{Rapporteur}
-\jurymember{3}{Rappeur 2}{Banlieue Ouest}{Rapporteur}
-\jurymember{4}{Philippe Etchebest}{Un super resto quelque part}{Examinateur TopChef}
-\jurymember{5}{Camille Coudert}{Union Sportive Bures-sur-Yvette - USBY Escalade}{Examinateur tyran}
-\jurymember{6}{JBD}{École Normale Supérieure Paris-Saclay}{Dieu}
-\jurymember{7}{Alain ASPECT}{Institut d'Optique Graduate School - LCF}{Membre invité}
-\jurymember{8}{Vincent JOSSE}{Institut d'Optique Graduate School - LCF}{Directeur de thèse}
+\jurymember{4}{Jean-François CLEMENT}{Maître de conférences au Laboratoire de Physique des Lasers, Atomes et Molécules - Université de Lille}{Examinateur}
+\jurymember{1}{Robin KAISER}{Directeur de recherche à l'Institut de Physique de Nice - Université Côte d'Azur}{Rapporteur}
+\jurymember{2}{Dominique DELANDE}{Directeur de recherche au Laboratoire Kastler Brossel - Université Pierre et Marie Curie}{Rapporteur}
+\jurymember{3}{Laurence PRUVOST}{Directrice de recherche au Laboratoire Aimé Cotton - Université Paris Saclay}{Examinateur}
+\jurymember{6}{Alain ASPECT}{Directeur de recherche émérite au Laboratoire Charles Fabry - Institut d'Optique Graduate School - Université Paris Saclay}{Membre invité}
+\jurymember{5}{Vincent JOSSE}{Maître de conférences au Laboratoire Charles Fabry - Institut d'Optique Graduate School - Université Paris Saclay}{Directeur de thèse}
 
+\frtitle{Transport quantique d'atomes ultra-froids en milieu désordonné: Temps de diffusion élastique et fonctions spectrales}
+
+\entitle{Quantum transport of ultracold atoms in disordered media: Elastic scattering time and spectral functions}
 
 \frabstract{
-  Cuius acerbitati uxor grave accesserat incentivum,
-  germanitate Augusti turgida supra modum, quam Hannibaliano
-  regi fratris filio antehac Constantinus iunxerat pater,
-  Megaera quaedam mortalis, inflammatrix saevientis adsidua,
-  humani cruoris avida nihil mitius quam maritus; qui paulatim
-  eruditiores facti processu temporis ad nocendum per
-  clandestinos versutosque rumigerulos conpertis leviter
-  addere quaedam male suetos falsa et placentia sibi
-  discentes, adfectati regni vel artium nefandarum calumnias
-  insontibus adfligebant.
-
-  Saraceni tamen nec amici nobis umquam nec hostes optandi,
-  ultro citroque discursantes quicquid inveniri poterat
-  momento temporis parvi vastabant milvorum rapacium similes,
-  qui si praedam dispexerint celsius, volatu rapiunt celeri,
-  aut nisi impetraverint, non inmorantur.
-
-  Vita est illis semper in fuga uxoresque mercenariae
-  conductae ad tempus ex pacto atque, ut sit species
-  matrimonii, dotis nomine futura coniunx hastam et
-  tabernaculum offert marito, post statum diem si id elegerit
-  discessura, et incredibile est quo ardore apud eos in
-  venerem uterque solvitur sexus.
-
-  Sed tamen haec cum ita tutius observentur, quidam vigore artuum
-  inminuto rogati ad nuptias ubi aurum dextris manibus cavatis
-  offertur, inpigre vel usque Spoletium pergunt.\ haec nobilium sunt
-  instituta.
+Ce manuscrit présente les travaux de thèse traitant du transport quantique d'onde de matière dans des potentiels optiques désordonnés. Le contexte de cette thèse s'inscrit dans la quête de l'étude expérimentale du régime critique de la transition d'Anderson, séparant les états liés d'une particule quantique localisée dans un potentiel désordonné des états diffusifs. Dans un premier temps, nous présenterons les concepts fondamentaux de la propagation d'ondes en milieu désordonné pour introduire le phénomène de localisation d'Anderson, dont nous dresserons un état de l'art de l'étude avec des atomes ultra-froids. Nous présenterons ensuite notre plateforme expérimentale, permettant de générer des condensats de Bose-Einstein servant de source d'onde de matière ainsi que notre dispositif de génération de désordre optique dépendant de l'état de spin. Nous nous attacherons ainsi à décrire les modifications apportées à notre expérience afin de dépasser les limitations expérimentales précédemment rencontrées. Après la présentation de ces concepts, nous nous concentrerons sur la mesure du temps de diffusion élastique, un des paramètres élémentaires de la propagation d'ondes dans le désordre. Nous terminerons par relier ces mesures à la notion de fonction spectrale, précédemment mesurée sur notre expérience. L'ensemble de ces travaux ouvre la voie à l'étude spectroscopique de la transition d'Anderson avec des atomes ultra-froids.
 }
 
 \enabstract{
-  Verum ad istam omnem orationem brevis est defensio. Nam
-  quoad aetas M. Caeli dare potuit isti suspicioni locum, fuit
-  primum ipsius pudore, deinde etiam patris diligentia
-  disciplinaque munita. Qui ut huic virilem togam deditšnihil
-  dicam hoc loco de me; tantum sit, quantum vos existimatis;
-  hoc dicam, hunc a patre continuo ad me esse deductum; nemo
-  hunc M. Caelium in illo aetatis flore vidit nisi aut cum
-  patre aut mecum aut in M. Crassi castissima domo, cum
-  artibus honestissimis erudiretur.
+This manuscript presents the work of a thesis dealing with the quantum transport of matter-waves in optical disordered potentials. This thesis lies in the context of the experimental study of the critical regime of the Anderson transition separating the localized states of a quantum particle in a disordered potential from its diffusive states. We will first present the fundamental concepts of wave propagation in disordered media to introduce the phenomenon of Anderson localization, for which we will establish the state of the art of its study with ultracold atoms. We will then present our apparatus, generating Bose-Einstein condensates as sources of matter-waves as well as our setup generating a spin-dependant optical disorder. We will focus on the upgrades we brought to our experiment to overcome the limitations previously encountered. After the introduction of these concepts, we will focus on the measurement of the elastic scattering time which is one the elmentary parameters of wave propagation in disorder. We will finish by connecting those measurements to the concept of spectral function, previously measured with our experiment. All those works pave the way to the spectrocopic study of the Anderson transition with ultracold atoms.
 
-  Et eodem impetu Domitianum praecipitem per scalas itidem
-  funibus constrinxerunt, eosque coniunctos per ampla spatia
-  civitatis acri raptavere discursu.\ iamque artuum et
-  membrorum divulsa conpage superscandentes corpora mortuorum
-  ad ultimam truncata deformitatem velut exsaturati mox
-  abiecerunt in flumen.
-
-  Erat autem diritatis eius hoc quoque indicium nec obscurum
-  nec latens, quod ludicris cruentis delectabatur et in circo
-  sex vel septem aliquotiens vetitis certaminibus pugilum
-  vicissim se concidentium perfusorumque sanguine specie ut
-  lucratus ingentia laetabatur.
-
-  Ego vero sic intellego, Patres conscripti, nos hoc tempore in
-  provinciis decernendis perpetuae pacis habere oportere rationem. Nam
-  quis hoc non sentit omnia alia esse nobis vacua ab omni periculo
-  atque etiam suspicione belli?
 }
 
-\frkeywords{ Caesar licentia post honoratis haec adhibens urbium
-  honoratis nullum Caesar.}
-\enkeywords{ Delatus delatus nominatus
-  onere aut trahebatur quod tenus et bonorum.}
+\frkeywords{Localisation d'Anderson - Transition de phase - Condensat de Bose-Einstein - Speckle - Temps de diffusion élastique - Fonction spectrale}
+\enkeywords{Anderson Localization - Phase transition - Bose-Einstein condensate - Speckle - Elastic scattering time - Spectral function}
 
 \begin{document}
+\usechapterimagefalse
+\chapterimage{Fig/Localisation/g825.png}
+\maketitle{}
 
-%\maketitle{}
-%{\hypersetup{linkcolor=black}
-%\tableofcontents}
-%\input{Chapters/Introduction.tex}
+
+%\input{Chapters/Remerciements.tex}
+
+{\hypersetup{linkcolor=black}
+\tableofcontents}
+\setlength{\parskip}{\parskipnew}
+
+\input{Chapters/Introduction.tex}
 %\setlength{\parskip}{0.5em}
 %\part{Transport en milieu désordonné: phénomène de localisation}
-%\input{Chapters/Localisation.tex}
+\usechapterimagetrue
+\chapterimage{Fig/Localisation/header.pdf}
+\input{Chapters/Localisation.tex}
 %\stopcontents
 
+%\usechapterimagetrue
+\chapterimage{Fig/BEC_manip/BEC.pdf}
 %\part{Transport d'atomes ultrafroids dans un speckle} 
-%\input{Chapters/BEC_manip.tex}
-%\input{Chapters/Modif_exp.tex}
+\input{Chapters/BEC_manip.tex}
+\usechapterimagefalse
+\input{Chapters/Modif_exp.tex}
+\usechapterimagetrue
+\chapterimage{Fig/Speckle/header.pdf}
 \input{Chapters/Speckle.tex}
+\usechapterimagefalse
 %\stopcontents
 
 %\part{Temps de diffusion élastique}
-%\input{Chapters/Taus_PRL.tex}
-%\input{Chapters/TauS_NJP.tex}
+\input{Chapters/Taus_PRL.tex}
+\input{Chapters/TauS_NJP.tex}
 %\stopcontents
 
-%\input{Chapters/Conclusion.tex}
+\input{Chapters/Conclusion.tex}
 
 
 %\addtocontents{toc}{\bigskip}
 %\part{Annexes}
-%\appendix
-%\input{Appendices/Anex_speckle.tex}
-%\input{Appendices/Anex_Born.tex}
+\appendix
+\input{Appendices/Anex_mesure_temp.tex}
+\input{Appendices/Anex_speckle.tex}
+\input{Appendices/Anex_Born.tex}
 %\stopcontents
 
+
 %%%%%%%%\printbibliography
-%%%%%%%%\bibliographystyle{abbrvnat} 
-\bibliographystyle{dinat-etal}
-\bibliography{biblio} 
-%\addtocontents{toc}{\bigskip}
+\bibliographystyle{abbrvnat} 
+%\bibliographystyle{dinat-etal}
 %\addcontentsline{toc}{chapter}{Bibliographie}
+\cleardoublepage
+\phantomsection
+%\pagestyle{plain} %%% pour virer les headers de la bibliographie
+\addcontentsline{toc}{chapter}{Bibliographie}
+\fancyhead[LO,RE]{\sffamily\normalsize\bfseries Bibliographie}
+\bibliography{biblio} 
+
+%\addtocontents{toc}{\bigskip}
+
 
 \end{document}

@@ -1,3 +1,46 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7380 64-bit)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
 The style file: abbrvnat.bst
 Database file #1: biblio.bib
+You've used 129 entries,
+            2773 wiz_defined-function locations,
+            1277 strings with 27833 characters,
+and the built_in function-call counts, 66204 in all, are:
+= -- 5560
+> -- 4834
+< -- 54
++ -- 1631
+- -- 1500
+* -- 6031
+:= -- 10523
+add.period$ -- 389
+call.type$ -- 129
+change.case$ -- 866
+chr.to.int$ -- 127
+cite$ -- 258
+duplicate$ -- 2643
+empty$ -- 4813
+format.name$ -- 1673
+if$ -- 13479
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 121
+newline$ -- 652
+num.names$ -- 516
+pop$ -- 1592
+preamble$ -- 1
+purify$ -- 755
+quote$ -- 0
+skip$ -- 2118
+stack$ -- 0
+substring$ -- 2167
+swap$ -- 174
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1384
+warning$ -- 0
+while$ -- 526
+width$ -- 0
+write$ -- 1677

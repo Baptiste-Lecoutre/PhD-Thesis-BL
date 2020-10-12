@@ -1,0 +1,5 @@
+modifications apportées depuis la version envoyée au jury:
+
+- modification de la référence white et al. Anderson 2D: publication dans Nature.
+- ajouts des images d'en-tête de chapitres
+- ajout des remerciements
