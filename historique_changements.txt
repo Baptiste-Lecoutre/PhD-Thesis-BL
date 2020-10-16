@@ -1,9 +1,9 @@
 modifications apportées depuis la version envoyée au jury:
 
-- modification de la référence white et al. Anderson 2D: publication dans Nature.
+- modification de la référence white et al. Anderson 2D: publication dans Nature Communications.
 - ajouts des images d'en-tête de chapitres
 - ajout des remerciements
-
+- modification du mot-clé "Condensat de Bose-Einstein" en "Condensation de Bose-Einstein", en accord avec le catalogue de la BNF
 
 
 Changements à apporter: 

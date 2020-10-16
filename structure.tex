@@ -512,7 +512,7 @@ addtohook={%
 \begin{tikzpicture}[remember picture,overlay]
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
-\node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
+\node[anchor=north west,inner sep=0pt, opacity=0.8] at (0,-0.7cm) {\ifusechapterimage\includegraphics[width=0.55\paperwidth]{\thechapterimage}\fi};
 \draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=0pt,draw=MainColor,fill=white,fill opacity=0.8,inner sep=10pt]{\strut\makebox[22cm][l]{\begin{minipage}[h]{\textwidth-10pt}
 \vspace{0.1cm}
 \raggedright\huge\sffamily\bfseries\color{black}#1\strut
