@@ -3,3 +3,9 @@ modifications apportées depuis la version envoyée au jury:
 - modification de la référence white et al. Anderson 2D: publication dans Nature.
 - ajouts des images d'en-tête de chapitres
 - ajout des remerciements
+
+
+
+Changements à apporter: 
+
+- figures 2.11 et 8.1: ajout d'un motif de désordre dans la partie distribution d'énergie dans le désordre, oublié dans la version précédente
