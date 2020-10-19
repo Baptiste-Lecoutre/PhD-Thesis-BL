@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="header_bibliography.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 830.21298 377.75638"
+   height="377.75638mm"
+   width="830.21301mm">
+  <defs
+     id="defs2">
+    <filter
+       id="filter1005"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite991"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix993"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood995"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend997"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend999"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1001"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1003"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1021"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1007"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1009"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1011"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1013"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1015"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1017"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1019"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1037"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1023"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1025"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1027"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1029"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1031"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1033"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1035"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1053"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1039"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1041"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1043"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1045"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1047"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1049"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1051"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1069"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1055"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1057"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1059"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1061"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1063"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1065"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1067"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1085"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1071"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1073"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1075"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1077"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1079"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1081"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1083"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1101"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1087"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1089"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1091"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1093"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1095"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1097"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1099"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1117"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1103"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1105"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1107"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1109"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1111"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1113"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1115"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1133"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1119"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1121"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1123"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1125"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1127"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1129"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1131"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1149"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1135"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1137"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1139"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1141"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1143"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1145"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1147"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1165"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1151"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1153"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1155"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1157"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1159"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1161"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1163"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1181"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1167"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1169"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1171"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1173"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1175"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1177"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1179"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1197"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1183"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1185"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1187"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1189"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1191"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1193"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1195"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1213"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1199"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1201"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1203"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1205"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1207"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1209"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1211"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1229"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1215"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1217"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1219"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1221"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1223"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1225"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1227"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1245"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1231"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1233"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1235"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1237"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1239"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1241"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1243"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1261"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1247"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1249"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1251"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1253"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1255"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1257"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1259"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1277"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1263"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1265"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1267"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1269"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1271"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1273"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1275"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1293"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1279"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1281"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1283"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1285"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1287"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1289"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1291"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1309"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1295"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1297"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1299"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1301"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1303"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1305"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1307"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1325"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1311"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1313"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1315"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1317"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1319"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1321"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1323"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+    <filter
+       id="filter1341"
+       inkscape:label="Colorize"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k4="0"
+         k3="0"
+         id="feComposite1327"
+         result="composite1"
+         k2="0"
+         k1="0"
+         operator="arithmetic"
+         in2="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix1329"
+         result="colormatrix1"
+         type="saturate"
+         values="0"
+         in="composite1" />
+      <feFlood
+         id="feFlood1331"
+         result="flood1"
+         flood-color="rgb(243,102,25)"
+         flood-opacity="1" />
+      <feBlend
+         id="feBlend1333"
+         result="blend1"
+         mode="screen"
+         in2="colormatrix1"
+         in="flood1" />
+      <feBlend
+         id="feBlend1335"
+         result="blend2"
+         mode="screen"
+         in2="blend1" />
+      <feColorMatrix
+         id="feColorMatrix1337"
+         result="colormatrix2"
+         type="saturate"
+         values="1"
+         in="blend2" />
+      <feComposite
+         id="feComposite1339"
+         result="composite2"
+         operator="in"
+         in2="SourceGraphic"
+         in="colormatrix2" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     fit-margin-bottom="-9.5"
+     fit-margin-right="-72"
+     fit-margin-left="-10"
+     fit-margin-top="-12"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="1177.525"
+     inkscape:cx="1242.9196"
+     inkscape:zoom="0.1767767"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(694.51283,117.70194)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Calque 1">
+    <text
+       id="text887"
+       y="332.08569"
+       x="-488.96762"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="332.08569"
+         x="-488.96762"
+         id="tspan885"
+         sodipodi:role="line">CONDENSATION</tspan></text>
+    <text
+       id="text891"
+       y="329.35526"
+       x="-343.97058"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="329.35526"
+         x="-343.97058"
+         id="tspan889"
+         sodipodi:role="line">BOSE</tspan></text>
+    <text
+       id="text895"
+       y="376.84732"
+       x="-326.26233"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="376.84732"
+         x="-326.26233"
+         id="tspan893"
+         sodipodi:role="line">EINSTEIN</tspan></text>
+    <text
+       id="text903"
+       y="362.06647"
+       x="-227.94496"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="362.06647"
+         x="-227.94496"
+         id="tspan901"
+         sodipodi:role="line">LASER</tspan></text>
+    <text
+       id="text907"
+       y="380.66864"
+       x="-180.72826"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="380.66864"
+         x="-180.72826"
+         id="tspan905"
+         sodipodi:role="line">ENERGY</tspan></text>
+    <text
+       id="text911"
+       y="323.97012"
+       x="-310.9762"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.56106px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:0.114026"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.56106px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.114026"
+         y="323.97012"
+         x="-310.9762"
+         id="tspan909"
+         sodipodi:role="line">ATOM</tspan></text>
+    <text
+       id="text927"
+       y="426.3942"
+       x="-418.69058"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="426.3942"
+         x="-418.69058"
+         id="tspan925"
+         sodipodi:role="line">THEORY</tspan></text>
+    <text
+       id="text935"
+       y="298.61658"
+       x="-541.79303"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="298.61658"
+         x="-541.79303"
+         id="tspan933"
+         sodipodi:role="line">RANDOM</tspan></text>
+    <text
+       id="text947"
+       y="338.9364"
+       x="-312.39856"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.89923px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:0.0974804"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.89923px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.0974804"
+         y="338.9364"
+         x="-312.39856"
+         id="tspan945"
+         sodipodi:role="line">COOLING</tspan></text>
+    <text
+       id="text951"
+       y="395.8154"
+       x="-403.30576"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="395.8154"
+         x="-403.30576"
+         id="tspan949"
+         sodipodi:role="line">MOMENTUM</tspan></text>
+    <text
+       id="text959"
+       y="359.55673"
+       x="-454.88745"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="359.55673"
+         x="-454.88745"
+         id="tspan957"
+         sodipodi:role="line">CROSSOVER</tspan></text>
+    <text
+       id="text967"
+       y="327.38208"
+       x="-272.37137"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="327.38208"
+         x="-272.37137"
+         id="tspan965"
+         sodipodi:role="line">SPECTRAL FUNCTIONS</tspan></text>
+    <text
+       id="text971"
+       y="397.77628"
+       x="-310.82916"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="397.77628"
+         x="-310.82916"
+         id="tspan969"
+         sodipodi:role="line">EVAPORATION</tspan></text>
+    <text
+       id="text975"
+       y="406.87421"
+       x="-496.78021"
+       style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="406.87421"
+         x="-496.78021"
+         id="tspan973"
+         sodipodi:role="line">CORRELATIONS</tspan></text>
+    <g
+       style="stroke:none;stroke-width:1.00008834;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="matrix(5.3725254,0,0,5.3725254,1086.1631,-305.75433)"
+       id="g1387">
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:19.2007px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:-0.960038px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1005);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-313.01385"
+         y="75.629784"
+         id="text835"><tspan
+           sodipodi:role="line"
+           id="tspan833"
+           x="-313.01385"
+           y="75.629784"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std Bold';stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">BIBLIOGRAPHY</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:4.75583px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1021);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-60.980068"
+         y="-292.9711"
+         id="text839"
+         transform="rotate(-90)"><tspan
+           sodipodi:role="line"
+           id="tspan837"
+           x="-60.980068"
+           y="-292.9711"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:4.75583px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">REFERENCES</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:4.75583px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1037);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-60.708546"
+         y="-301.89359"
+         id="text843"
+         transform="rotate(-90)"><tspan
+           sodipodi:role="line"
+           x="-60.708546"
+           y="-301.89359"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:4.75583px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+           id="tspan845">ARTICLE</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:4.75583px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1053);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-60.979271"
+         y="-297.43353"
+         id="text851"
+         transform="rotate(-90)"><tspan
+           sodipodi:role="line"
+           id="tspan849"
+           x="-60.979271"
+           y="-297.43353"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:4.75583px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">RESEARCH</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1069);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-270.9563"
+         y="60.321682"
+         id="text855"><tspan
+           sodipodi:role="line"
+           id="tspan853"
+           x="-270.9563"
+           y="60.321682"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10.5833px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">ANDERSON</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.91931px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1085);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-291.18149"
+         y="51.180611"
+         id="text859"><tspan
+           sodipodi:role="line"
+           id="tspan857"
+           x="-291.18149"
+           y="51.180611"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.91931px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">LOCALIZATION</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.30718px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1101);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-294.26035"
+         y="90.274719"
+         id="text863"><tspan
+           sodipodi:role="line"
+           x="-294.26035"
+           y="90.274719"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.30718px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+           id="tspan865">TRANSITION</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.46448px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1117);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-255.9933"
+         y="95.492386"
+         id="text871"><tspan
+           sodipodi:role="line"
+           id="tspan869"
+           x="-255.9933"
+           y="95.492386"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.46448px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">MOBILITY EDGE</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.78348px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1133);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-256.11615"
+         y="91.625717"
+         id="text875"><tspan
+           sodipodi:role="line"
+           id="tspan873"
+           x="-256.11615"
+           y="91.625717"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.78348px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">SCATTERING</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.61496px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1149);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-348.04153"
+         y="46.695152"
+         id="text879"
+         transform="scale(0.83520983,1.1973039)"><tspan
+           sodipodi:role="line"
+           id="tspan877"
+           x="-348.04153"
+           y="46.695152"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.61496px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">TRANSPORT</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.80839px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1165);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-201.14143"
+         y="60.418373"
+         id="text883"><tspan
+           sodipodi:role="line"
+           id="tspan881"
+           x="-201.14143"
+           y="60.418373"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.80839px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">COHERENCE</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.99912px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1181);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-94.398766"
+         y="-181.57687"
+         id="text899"
+         transform="rotate(-90)"><tspan
+           sodipodi:role="line"
+           id="tspan897"
+           x="-94.398766"
+           y="-181.57687"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.99912px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">SPECKLE</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.33779px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1197);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-200.2338"
+         y="89.736588"
+         id="text915"><tspan
+           sodipodi:role="line"
+           id="tspan913"
+           x="-200.2338"
+           y="89.736588"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.33779px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">WAVE</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:10.5833px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1213);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-239.15442"
+         y="84.648964"
+         id="text919"><tspan
+           sodipodi:role="line"
+           id="tspan917"
+           x="-239.15442"
+           y="84.648964"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10.5833px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">DISORDER</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.87003px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1229);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-326.10913"
+         y="53.74892"
+         id="text923"
+         transform="scale(0.89208652,1.1209675)"><tspan
+           sodipodi:role="line"
+           id="tspan921"
+           x="-326.10913"
+           y="53.74892"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.87003px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">DIFFUSION</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.99236px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1245);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-101.83102"
+         y="-256.70001"
+         id="text931"
+         transform="rotate(-90)"><tspan
+           sodipodi:role="line"
+           id="tspan929"
+           x="-101.83102"
+           y="-256.70001"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.99236px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">QUANTUM</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.71659px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1261);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-256.01224"
+         y="84.60865"
+         id="text939"><tspan
+           sodipodi:role="line"
+           id="tspan937"
+           x="-256.01224"
+           y="84.60865"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.71659px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">PHYSICS</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.44432px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1277);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-272.27222"
+         y="80.962692"
+         id="text943"><tspan
+           sodipodi:role="line"
+           id="tspan941"
+           x="-272.27222"
+           y="80.962692"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.44432px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">ULTRACOLD</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.97992px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1293);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-301.78671"
+         y="85.496651"
+         id="text955"><tspan
+           sodipodi:role="line"
+           id="tspan953"
+           x="-301.78671"
+           y="85.496651"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.97992px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">SPECTROSCOPY</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.01417px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1309);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-105.5278"
+         y="-260.55341"
+         id="text963"
+         transform="rotate(-90)"><tspan
+           sodipodi:role="line"
+           id="tspan961"
+           x="-105.5278"
+           y="-260.55341"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.01417px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">IOFFE-REGEL</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:4.75583px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1325);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-60.975037"
+         y="-306.35739"
+         id="text979"
+         transform="rotate(-90)"><tspan
+           sodipodi:role="line"
+           id="tspan977"
+           x="-60.975037"
+           y="-306.35739"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:4.75583px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;">BOOK</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.75111px;line-height:1.25;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:1.00008834;filter:url(#filter1341);stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+         x="-331.47919"
+         y="60.555099"
+         id="text983"><tspan
+           sodipodi:role="line"
+           x="-331.47919"
+           y="60.555099"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.75111px;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.00008834;stroke:none;stroke-miterlimit:4;stroke-dasharray:none;fill:#fe9a30;fill-opacity:1;"
+           id="tspan985">THESIS</tspan></text>
+    </g>
+    <rect
+       ry="11.091677"
+       y="495.94891"
+       x="-365.23679"
+       height="148.17422"
+       width="279.88464"
+       id="rect1389"
+       style="fill:#fe9a30;fill-opacity:1;stroke:none;stroke-width:5.373;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.674797" />
+  </g>
+</svg>
