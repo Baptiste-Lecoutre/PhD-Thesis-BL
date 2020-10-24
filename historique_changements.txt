@@ -5,49 +5,19 @@ modifications apportées depuis la version envoyée au jury:
 - uniformiser les en-têtes de chapitres: le bandeau de titre n'est pas à la même hauteur entre les chapitres numérotés et les autres
 - ajout des remerciements
 - modification du mot-clé "Condensat de Bose-Einstein" en "Condensation de Bose-Einstein", en accord avec le catalogue de la BNF
+- corrections typographiques dans le chapitre 7, page 152 (154 du document total)
+- modification du sectionnage du document lors de l'ouverture dans un lecteur pdf
+- formule 7.10: ajouts de hbar dans les exponentielles complexes
+- uniformisation des notations d'opérateurs dans les chapitres 7 et C
+
 
 
 Changements à apporter: 
 
 - figures 2.11 et 8.1: ajout d'un motif de désordre dans la partie distribution d'énergie dans le désordre, oublié dans la version précédente
-- réaliser l'image d'en-tête de la bibliographie
+- réaliser l'image d'en-tête de la table des matières
 - figure 5.8: illustration des corrélations speckle: revoir la découpe du triangle orange
+- ajout de la démonstration de la formule de la corrélation à trois corps d'un champ de speckle pour estimer l'ordre 2 du développement de Born
 
 
 
-
-Mots pour l'image de la bibliographie
-Bibliography
-References
-Article
-Book
-Research
-Anderson
-Localization
-Condensation
-Speckle
-Bose
-Einstein
-Laser
-Scattering
-Energy
-Atom
-Theory
-Diffusion
-Quantum
-Random
-Disorder
-Physics
-Ultracold
-Correlations
-Evaporation
-Cooling
-Momentum
-Spectroscopy
-Transition
-Mobility edge
-Coherence
-Transport
-Spectral
-Crossover
-Ioffe-Regel

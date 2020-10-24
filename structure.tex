@@ -352,8 +352,11 @@
 open,
 numbered,
 addtohook={%
-	\ifnum\bookmarkget{level}=0 % chapter
-\bookmarksetup{bold}%
+\ifnum\bookmarkget{level}=1 % section
+\bookmarksetup{bold}
+\fi
+\ifnum\bookmarkget{level}=0 % chapter
+\bookmarksetup{color=MainColor,bold}%
 \fi
 \ifnum\bookmarkget{level}=-1 % part
 \bookmarksetup{color=MainColor,bold}%

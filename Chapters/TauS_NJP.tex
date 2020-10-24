@@ -41,6 +41,7 @@ dans la base des énergies \citep{akkermans2007mesoscopic, kuhn2007coherent}. En
 où $\hat{G}_0(E)$ est la \emph{fonction de Green libre}, qui correspond à la fonction de Green en absence de désordre, régissant donc la dynamique des ondes planes $\lbrace\etat{\mathbf{k}}\rbrace$ états propres du hamiltonien non perturbé $\hat{H}_0$. Exprimée dans la base des ondes planes où la fonction de Green libre est diagonale, celle-ci s'écrit 
 \begin{equation}
 G_0(E,\mathbf{k}_{\mathrm{i}})=\left\langle\mathbf{k}_{\mathrm{i}} | \hat{G}_0(E)| \mathbf{k}_{\mathrm{i}} \right\rangle =\frac{1}{E-E_{\mathrm{k}_i}+i0^+} \text{ ,}
+\label{eq:green_libre}
 \end{equation}
 avec $E_{\mathrm{k}_i}$ l'énergie cinétique de la particule. 
 
@@ -87,13 +88,13 @@ comme représenté dans le dernier cadre de la figure \ref{fig:illustration_fonc
 \paragraph*{Lien entre la fonction spectrale et la décroissance de l'état initial}
 Il est possible de déterminer d'autres expressions de la fonction spectrale en revenant à la définition de la fonction de Green \ref{eq:definition_green}. Notamment, on peut montrer que
 \begin{equation}
-A(\mathbf{k}_{\mathrm{i}},E)=-\frac{1}{\pi} \overline{\langle \mathbf{k}_{\mathrm{i}} | \mathrm{Im}\left[G(E)\right]| \mathbf{k}_{\mathrm{i}} \rangle} = \overline{\langle \mathbf{k}_{\mathrm{i}} | \delta(E-\hat{H})|\mathbf{k}_{\mathrm{i}}\rangle} \text{ ,}
+A(\mathbf{k}_{\mathrm{i}},E)=-\frac{1}{\pi} \overline{\langle \mathbf{k}_{\mathrm{i}} | \mathrm{Im}\left[\hat{G}(E)\right]| \mathbf{k}_{\mathrm{i}} \rangle} = \overline{\langle \mathbf{k}_{\mathrm{i}} | \delta(E-\hat{H})|\mathbf{k}_{\mathrm{i}}\rangle} \text{ ,}
 \end{equation}
 en utilisant la relation $ 1/(x+i0^+)=\mathrm{vp}(1/x)-i\pi \delta(x)$. 
 
 En utilisant la représentation exponentielle de la distribution de Dirac, on peut alors montrer que l'opérateur évolution moyen $\overline{U}_{\mathrm{k}_i}$ de l'état initial est simplement donné par la transformée de Fourier de la fonction spectrale
 \begin{equation}
-\overline{U}_{\mathrm{k}_{\mathrm{i}}}(t)=\left\langle \mathbf{k}_{\mathrm{i}} | \overline{\exp(-itH)}  | \mathbf{k}_{\mathrm{i}} \right\rangle = \int{\diff E e^{-iEt} A(\mathbf{k}_{\mathrm{i}},E)} \text{ .}
+\overline{U}_{\mathrm{k}_{\mathrm{i}}}(t)=\left\langle \mathbf{k}_{\mathrm{i}} \left| \overline{\exp(-it\hat{H}/\hb)}  \right| \mathbf{k}_{\mathrm{i}} \right\rangle = \int{\diff E e^{-iEt/\hb} A(\mathbf{k}_{\mathrm{i}},E)} \text{ .}
 \end{equation}
 Un tel résultat n'a rien de surprenant. En effet, l'allumage brusque du désordre sur les atomes projette l'état initial sur les états d'énergie propre du désordre, dont la distribution d'énergie est donnée par la fonction spectrale en vertu de la formule \ref{eq:fonction_spectrale}. L'évolution temporelle de l'état initial est donc naturellement donnée par la transformée de Fourier de cette distribution d'énergie, c'est-à-dire la fonction spectrale. 
 
@@ -109,24 +110,24 @@ Afin d'estimer quantitativement la \selfenergy , une méthode couramment utilis�
 %\label{eq:developpement_born}
 %\end{equation}
 \begin{equation}
-\Sigma = \Sigma^{(1)} + \Sigma^{(2)} + \cdots \text{ ,}
+\hat{\Sigma}(E) = \hat{\Sigma}^{(1)}(E) + \hat{\Sigma}^{(2)}(E) + \cdots \text{ ,}
 \label{eq:developpement_born}
 \end{equation}
-connue sous le nom de développement de Born. La \selfenergy\ est alors donnée par une somme infinie de termes $\Sigma^{(i)}$, où chaque terme est composé de $i+1$ occurrences du potentiel $\hat{V}$ \citep{kuhn2007coherent}. Notamment, les premiers termes du développement de Born s'expriment $\Sigma^{(1)}=\overline{V G_0 V}$ et $\Sigma^{(2)}=\overline{V G_0 V G_0 V}$.
+connue sous le nom de développement de Born. La \selfenergy\ est alors donnée par une somme infinie de termes $\hat{\Sigma}^{(i)}$, où chaque terme est composé de $i+1$ occurrences du potentiel $\hat{V}$ \citep{kuhn2007coherent}. Notamment, les premiers termes du développement de Born s'expriment $\hat{\Sigma}^{(1)}(E)=\overline{\hat{V} \hat{G}_0(E) \hat{V}}$ et $\hat{\Sigma}^{(2)}(E)=\overline{\hat{V} \hat{G}_0(E) \hat{V} \hat{G}_0(E) \hat{V}}$.
 
-Dans la limite de désordre faible, il apparaît de l'équation \ref{eq:developpement_born} que seul le premier terme $\Sigma^{(1)}$ contribue à la \selfenergy , chaque occurrence supplémentaire du potentiel atténuant le poids du terme $\Sigma^{(i)}$ correspondant. L'approximation de Born consiste donc à tronquer l'expression de la \selfenergy\ à son premier terme:
+Dans la limite de désordre faible, il apparaît de l'équation \ref{eq:developpement_born} que seul le premier terme $\hat{\Sigma}^{(1)}$ contribue à la \selfenergy , chaque occurrence supplémentaire du potentiel atténuant le poids du terme $\hat{\Sigma}^{(i)}$ correspondant. L'approximation de Born consiste donc à tronquer l'expression de la \selfenergy\ à son premier terme:
 \begin{equation}
-\Sigma(E,\mathbf{k}_{\mathrm{i}})\approx \Sigma^{(1)}(E,\mathbf{k}_{\mathrm{i}})=\overline{\hat{V}\hat{G}_0 \hat{V}} \text{ .}
+\Sigma(E,\mathbf{k}_{\mathrm{i}})\approx \Sigma^{(1)}(E,\mathbf{k}_{\mathrm{i}})= \left\langle \mathbf{k}_{\mathrm{i}} \left|\overline{\hat{V}\hat{G}_0(E) \hat{V}}\right| \mathbf{k}_{\mathrm{i}}\right\rangle \text{ .}
 \end{equation}
 
-On montre dans l'annexe \ref{ch:anex_taus} que le premier terme du développement de Born $\Sigma^{(1)}$  peut se réécrire comme la convolution du spectre des fréquences spatiales du désordre avec la fonction de Green libre $G_0$:
+On montre dans l'annexe \ref{ch:anex_taus} que le premier terme du développement de Born $\Sigma^{(1)}(E,\mathbf{k}_{\mathrm{i}})$  peut se réécrire comme la convolution du spectre des fréquences spatiales du désordre avec la fonction de Green libre \ref{eq:green_libre}:
 \begin{equation}
 \Sigma^{(1)}(E,\mathbf{k}_{\mathrm{i}})=\sum_{\mathbf{k}'}{\widetilde{C}(\mathbf{k}_{\mathrm{i}}-\mathbf{k}') G_0(E,\mathbf{k}')}
 \end{equation}
 
 
 
-On peut montrer que le premier terme du développement $\Sigma^{(1)}$ varie peu autour de l'énergie cinétique, ce qui permet de remplacer la \selfenergy\ par sa valeur en couche $E=\Eki$ \citep{kuhn2007coherent}. La fonction spectrale obtenue à l'aide de l'équation \ref{eq:fonction_spectrale_self_energy} présente alors un profil lorentzien:
+On peut montrer que le premier terme du développement $\Sigma^{(1)}(E,\mathbf{k}_{\mathrm{i}})$ varie peu autour de l'énergie cinétique, ce qui permet de remplacer la \selfenergy\ par sa valeur en couche $E=\Eki$ \citep{kuhn2007coherent}. La fonction spectrale obtenue à l'aide de l'équation \ref{eq:fonction_spectrale_self_energy} présente alors un profil lorentzien:
 \begin{equation}
 A(\mathbf{k}_{\mathrm{i}},E)= \frac{1}{\pi} \frac{\Delta E/2}{(\Eki - \Eki')^2+\Delta E^2/4} \text{ ,}
 \end{equation}
@@ -143,10 +144,10 @@ On retrouve ainsi le temps de vie de l'état initial prédit par la règle d'or 
 \subsection{Approximation de Born: second ordre}
 La comparaison de nos données expérimentales à l'approximation de Born, issue du premier ordre du développement de Born, a été traitée dans la section \ref{sc:comportement_taus} du chapitre précédent. En particulier, nous avons montré que le domaine de désordre faible et d'impulsion importante permettait de décrire correctement nos données expérimentales et numériques. Cependant, des déviations à la prédiction de Born dépendantes de la distribution de potentiel apparaissent pour des impulsions faibles. 
 
-Afin de décrire le domaine d'impulsions et désordres faibles, nous pouvons étendre l'approximation de Born en calculant le terme de second ordre de la \selfenergy\ $\Sigma^{(2)}= \overline{V G_0 V G_0 V}$, introduisant ainsi une correction $-2 \mathrm{Im}[\Sigma^{(2)}]$ à la largeur $\Delta E$ de la fonction spectrale. De fait, le second terme du développement de la \selfenergy\ étant lié à la fonction de corrélation à trois corps $C_{\mathrm{3}}(\mathbf{x}_{\mathrm{1}}, \mathbf{x}_{\mathrm{2}}, \mathbf{x}_{\mathrm{3}})=\overline{V(\mathbf{x}_{\mathrm{1}}) V(\mathbf{x}_{\mathrm{2}}) V(\mathbf{x}_{\mathrm{3}})}$ du désordre, celui-ci révèle l'effet de l'asymétrie de la distribution de potentiel. Notons qu'une telle correction n'existe pas pour un potentiel gaussien, dont la distribution est symétrique. 
+Afin de décrire le domaine d'impulsions et désordres faibles, nous pouvons étendre l'approximation de Born en calculant le terme de second ordre de la \selfenergy\ $\hat{\Sigma}^{(2)}= \overline{\hat{V} \hat{G}_0 \hat{V} \hat{G}_0 \hat{V}}$, introduisant ainsi une correction $-2 \mathrm{Im}[\Sigma^{(2)}]$ à la largeur $\Delta E$ de la fonction spectrale. De fait, le second terme du développement de la \selfenergy\ étant lié à la fonction de corrélation à trois corps $C_{\mathrm{3}}(\mathbf{x}_{\mathrm{1}}, \mathbf{x}_{\mathrm{2}}, \mathbf{x}_{\mathrm{3}})=\overline{V(\mathbf{x}_{\mathrm{1}}) V(\mathbf{x}_{\mathrm{2}}) V(\mathbf{x}_{\mathrm{3}})}$ du désordre, celui-ci révèle l'effet de l'asymétrie de la distribution de potentiel. Notons qu'une telle correction n'existe pas pour un potentiel gaussien, dont la distribution est symétrique. 
 
 
-On montre dans l'annexe \ref{ch:anex_taus} que le second terme du développement de Born peut s'écrire sous une forme semblable à celle du premier terme $\Sigma^{(1)}$
+On montre dans l'annexe \ref{ch:anex_taus} que le second terme du développement de Born peut s'écrire sous une forme semblable à celle du premier terme $\Sigma^{(1)}(E,\mathbf{k}_{\mathrm{i}})$:
 \begin{equation}
 \Sigma^{(2)}(E,\mathbf{k}_{\mathrm{i}})=\sum_{\mathbf{k}',\mathbf{k}''}{\widetilde{C}_{\mathrm{3}}(\mathbf{k}_{\mathrm{i}}-\mathbf{k}',\mathbf{k}_{\mathrm{i}}-\mathbf{k}'') G_0(E,\mathbf{k}') G_0(E,\mathbf{k}'')} \text{ ,}
 \end{equation}
@@ -322,7 +323,7 @@ Le régime de désordre quantique est obtenu lorsque $|\VR|\ll\ER$. Dans ce rég
 
 De fait, la fonction d'onde s'étale sur plusieurs granularités du potentiel et \emph{lisse} le potentiel vu par la fonction d'onde par effet tunnel. On peut alors montrer que le potentiel effectif issu de ce lissage possède une amplitude $\sim\VR^2/\ER$ assimilable à la largeur de la fonction spectrale, indépendante du caractère attractif ou répulsif du potentiel \citep{bloch2012quantum, pasek2017anderson}. Les fonctions spectrales des figures \ref{fig:mesures_fonctions_spectrales_rouge} et \ref{fig:mesures_fonctions_spectrales_bleu} mesurées pour les désordres les plus faibles présentent donc des similarités (pour $|\VR|/h=\SI{60}{\hertz}$ et $|\VR|/h=\SI{121}{\hertz}$). 
 
-Dans la continuité de la correspondance entre largeur de la fonction spectrale et temps de vie de l'état initial développée en début de chapitre, le temps de vie $\taus^{\mathrm{sf}}$ se comporte selon $\hb\ER/\VR^2$, comme attendu dans le régime de désordre faible (voir section \ref{sc:taus_born}). La forme de la fonction spectrale serait alors de forme Lorentzienne dans ce régime\citep{kuhn2007coherent}.
+Dans la continuité de la correspondance entre largeur de la fonction spectrale et temps de vie de l'état initial développée en début de chapitre, le temps de vie $\taus^{\mathrm{sf}}$ se comporte selon $\hb\ER/\VR^2$, comme attendu dans le régime de désordre faible (voir section \ref{sc:taus_born}). La forme de la fonction spectrale serait alors de forme lorentzienne dans ce régime \citep{kuhn2007coherent}.
 
 En réalité, la condition de désordre perturbatif $E_{\mathrm{k}}\gg \VR^2/\ER$ n'est pas validée. Au contraire, l'état initial étant assimilé à une onde plane d'impulsion nulle $\etat{\mathbf{k}=0}$, l'énergie cinétique des atomes est quasi-nulle $E_{\mathrm{k}}\sim 0$. Il s'agit donc d'un régime très non-perturbatif $E_{\mathrm{k}}\ll\VR^2/\ER$. La forme lorentzienne ne correspond donc pas forcément à celle attendue pour la fonction spectrale dans ce régime. 
 
