@@ -110,13 +110,16 @@
 \contentsline {subsection}{\numberline {B.4.2}Corrélation longitudinale autour du plan de Fourier}{175}{subsection.B.4.2}%
 \contentsline {subsection}{\numberline {B.4.3}Corrélation tridimensionnelle aux alentours du plan de Fourier}{175}{subsection.B.4.3}%
 \contentsline {section}{\numberline {B.5}Corrélation d'un speckle\ bichromatique}{175}{section.B.5}%
-\contentsline {chapter}{\numberline {C}Calculs du temps de diffusion élastique}{177}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Éléments de calcul du temps de diffusion élastique à partir du développement de Born}{177}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Calcul de la self-energy\ au premier ordre}{178}{section.C.2}%
-\contentsline {subsection}{\numberline {C.2.1}Expression du premier ordre de la self-energy}{178}{subsection.C.2.1}%
-\contentsline {subsection}{\numberline {C.2.2}Calcul du temps de diffusion élastique}{179}{subsection.C.2.2}%
-\contentsline {section}{\numberline {C.3}Calcul de la self-energy\ au second ordre}{179}{section.C.3}%
-\contentsline {subsection}{\numberline {C.3.1}Calcul à l'aide la représentation en impulsion}{180}{subsection.C.3.1}%
-\contentsline {subsection}{\numberline {C.3.2}Calcul à l'aide la représentation spatiale}{181}{subsection.C.3.2}%
-\contentsline {chapter}{Bibliographie}{185}{section*.85}%
+\contentsline {section}{\numberline {B.6}Application du théorème de Wick à un speckle}{176}{section.B.6}%
+\contentsline {subsection}{\numberline {B.6.1}Fonction de corrélation à deux corps des fluctuations d'intensité}{176}{subsection.B.6.1}%
+\contentsline {subsection}{\numberline {B.6.2}Fonction de corrélation à trois corps des fluctuations d'intensité}{176}{subsection.B.6.2}%
+\contentsline {chapter}{\numberline {C}Calculs du temps de diffusion élastique}{179}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Éléments de calcul du temps de diffusion élastique à partir du développement de Born}{179}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Calcul de la self-energy\ au premier ordre}{180}{section.C.2}%
+\contentsline {subsection}{\numberline {C.2.1}Expression du premier ordre de la self-energy}{180}{subsection.C.2.1}%
+\contentsline {subsection}{\numberline {C.2.2}Calcul du temps de diffusion élastique}{181}{subsection.C.2.2}%
+\contentsline {section}{\numberline {C.3}Calcul de la self-energy\ au second ordre}{181}{section.C.3}%
+\contentsline {subsection}{\numberline {C.3.1}Calcul à l'aide la représentation en impulsion}{182}{subsection.C.3.1}%
+\contentsline {subsection}{\numberline {C.3.2}Calcul à l'aide la représentation spatiale}{183}{subsection.C.3.2}%
+\contentsline {chapter}{Bibliographie}{187}{section*.85}%
 \contentsfinish 

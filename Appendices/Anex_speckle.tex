@@ -113,7 +113,7 @@ L'intensité moyenne pour un \speckle\ simple est donnée par le module carré d
 &\propto \int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{i \Deltax. \frac{k\xd}{d}} \: \int{\diff\xzero \: I_0(\xzero) \: e^{-i \xzero .\frac{k\Deltax}{\deff}}}} \\
 &\propto \widetilde{\Cdiff}(\frac{k\xd}{d}) \ast I_0(\frac{\xd\deff}{d}) \text{ ,}
 \end{align}
-où $\ast$ dénote le produit de convolution et $\widetilde{\Cdiff}(k\xd/d)=\int{\diff\Cdiff(\Deltax)\exp{(ik\Deltax.\xd/d)}}$ est la transformée de Fourier de la fonction de corrélation de la transmission du diffuseur. On retrouve ainsi le résultat \ref{eq:evolution_extension_transverse_speckle} du chapitre \ref{ch:Speckle}.
+où $\ast$ dénote le produit de convolution et $\widetilde{\Cdiff}(k\xd/d)=\int{\diff\Deltax\:\Cdiff(\Deltax)\exp{(ik\Deltax.\xd/d)}}$ est la transformée de Fourier de la fonction de corrélation de la transmission du diffuseur. On retrouve ainsi le résultat \ref{eq:evolution_extension_transverse_speckle} du chapitre \ref{ch:Speckle}.
 
 Aux alentours du plan de Fourier, $\deff\rightarrow\infty$ et donc on peut assimiler la contribution de l'intensité incidente $I_0(\xf\deff/d)$ à une distribution de Dirac $\delta(\xf)$ de telle sorte que l'intensité moyenne soit donnée par
 \begin{equation}
@@ -215,74 +215,57 @@ où l'on reconnaît la fonction de corrélation \ref{eq:correlation_3D_monochrom
 %%%% end
 
 
+\section{Application du théorème de Wick à un \speckle }
+\subsection{Fonction de corrélation à deux corps des fluctuations d'intensité}
 
-
-%%%% calculs du speckle bichromatique dans des directions différentes
-\begin{comment}
-\subsection{Corrélation transverse d'un speckle bichromatique dans le plan de Fourier}
-Considérons le cas de deux longueurs d'ondes, étudiées à la même position dans le plan de Fourier. Posons $d=d'=f$, $\mathbf{x}=\mathbf{x}'$:
 \begin{align}
-C_E(\mathrm{x},\lambda,\lambda')&=\overline{E(\mathbf{x},\lambda)E^*(\mathbf{x},\lambda')}\\
-&\propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{i\frac{\mathbf{x}_0.\mathbf{x}}{f}(k'-k)} \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: e^{i\frac{\Delta\mathbf{x}.\mathbf{x}}{f}k'}}}
+\overline{\delta I (\mathbf{x}_1) \delta I(\mathbf{x}_2)} &= \overline{(I(\mathbf{x}_1)-\overline{I}(\mathbf{x}_1)) (I(\mathbf{x}_2)-\overline{I}(\mathbf{x}_2))} \\
+&= \overline{I(\mathbf{x}_1)I(\mathbf{x}_2) - I(\mathbf{x}_1) \overline{I}(\mathbf{x}_2) - \overline{I}(\mathbf{x}_1) I(\mathbf{x}_2) + \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2)} \\
+&=\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)} - \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2)
 \end{align}
-On retrouve le résultat de mon rapport de stage. Warning: $C_{\mathrm{diff}}$ est plus compliqué dans cette expression, il faut tenir compte des deux longueurs d'onde dedans. Idem avec $I_0$, il s'agit en réalité du produit des amplitudes à chaque longueur d'onde. Aller un peu plus loin pour donner l'expression de la longueur de corrélation.
 
-
-\subsection{Corrélation longitudinale d'un speckle bichromatique autour du plan de Fourier}
-Prenons un speckle composé de deux longueurs d'onde, étudié selon l'axe optique. Fixons: $\mathbf{x}=\mathbf{x}'=0$ et $d=d'$:
+Appliquons alors le théorème de Wick au terme $\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)}$ en faisant apparaître l'amplitude du champ:
 \begin{align}
-C_E &= \overline{E(0,0,d,\lambda)E^*(0,0,d,\lambda')} \\
-& \propto \int{\mathrm{d}\mathbf{x}_0 \: I_0(\mathbf{x}_0) \: e^{i\frac{\mathbf{x}_0^2}{2d_{\mathrm{eff}}}(k-k')} \: \int{\mathrm{d}\Delta\mathbf{x} \: C_{\mathrm{diff}}(\Delta\mathbf{x}) \: e^{-i\Delta\mathbf{x} \frac{k' \mathbf{x}_0}{d_{\mathrm{eff}}}}}}
+\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)} &= \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)E(\mathbf{x}_2)E^*(\mathbf{x}_2)} \\
+&= \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)} \: \overline{E(\mathbf{x}_2)E^*(\mathbf{x}_2)} + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)} \: \overline{E(\mathbf{x}_2)E^*(\mathbf{x}_1)} \\
+&= \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2) + \left| \overline{E(\mathbf{x}_1) E^*(\mathbf{x}_2)} \right|^2
 \end{align}
-Supposons à présent que l'on s'éloigne peu du plan de Fourier tel que $r_{\mathrm{diff}} w_0 k'/d_{\mathrm{eff}} \ll 1$, c'est-à-dire $\delta z \ll W_{\mathrm{speckle}} / \mathrm{ON}$ avec $ \delta z$ tel que définit avant, $W_{\mathrm{speckle}}$ l'extension du faisceau de speckle dans le plan de Fourier et $w_0$ la taille du faisceau incident. Dans ce cas, on peut négliger la dernière exponentielle et on a pour un faisceau gaussien:
-\begin{align}
-C_E &\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\frac{2\mathbf{x}_0^2}{w_0^2}} \: e^{i\frac{\mathbf{x}_0^2}{2d_{\mathrm{eff}}}(k-k')}} \\ 
-&\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\mathbf{x}_0^2 (2/w_0^2-i\frac{k-k'}{2d_{\mathrm{eff}}})}} \\
-&\propto \frac{1}{2/w_0^2-i\frac{k-k'}{2d_{\mathrm{eff}}}}
-\end{align}
-Alors,
-\begin{align}
-\left| C_E \right| ^2 &\propto \left| \frac{1}{2/w_0^2-i\frac{k-k'}{2d_{\mathrm{eff}}}} \right| ^2 \\
-&\propto \frac{1}{4/w_0^2+\delta z^2 \frac{(k-k')^2}{4f^4}} \\
-&\propto \frac{1}{1+\delta z^2 \left( \frac{\delta \lambda}{\lambda} \right)^2 \frac{k^2 w_0^4}{16f^4}} \\
-&\propto \frac{1}{1+\frac{\delta z^2}{\sigma_{\parallel}^2} \left(\frac{\delta \lambda}{\lambda}\right)^2}
-\end{align}
-\end{comment}
 
-
-
-
-
-
-
-
-
-
-
-%%%%% outdated, je sais même plus ce qu'il y a dedans
-\begin{comment}
+On détermine alors que la fonction de corrélation à deux corps des fluctuations d'intensité s'écrit sous la forme:
 \begin{equation}
-\begin{split}
-C _{\delta I} \left( x_1, x_2, \lambda _1, \lambda _2 \right) &= \left\langle \left( I \left( x_1, \lambda _1 \right) - \left\langle I \left( x_1, \lambda _1 \right) \right\rangle \right) \left( I \left( x_2, \lambda _2 \right) - \left\langle I \left( x_2, \lambda _2 \right) \right\rangle \right) \right\rangle \\
-&= \left| C_E \left( x_1, x_2, \lambda _1, \lambda _2 \right) \right| ^2
-\end{split}
+\overline{\delta I(\mathbf{x}_1) \delta I(\mathbf{x}_2)} = \left| \overline{E(\mathbf{x}_1) E^*(\mathbf{x}_2)} \right|^2
 \end{equation}
-avec
-\begin{equation}
-C_E(x_1 ,x_2 ,y_1 ,y_2 ,d_1 ,d_2 ,\lambda _1,\lambda _2)= \left\langle E(x_1 ,y_1 ,d_1 ,\lambda _1) E^*(x_2 ,y_2 ,d_2 ,\lambda _2) \right\rangle
-\end{equation}
-donne:
-\begin{equation}
-C_E \propto \mathrm{TF} \left[ I_{eff}(x_0,y_0) \times G_{0eff}(x_0,y_0) \right] _{\left[ \frac{x_1 k_1}{d_1}-\frac{x_2 k_2}{d_2} \right]}
-\end{equation}
-avec
-\begin{equation*}
-\begin{split}
-I_{eff}(x_0)= I_0(x_0) \times e^{i \frac{x_0^2}{2} \left( \frac{k_1}{d_{eff1}} + \frac{k_2}{d_{eff2}}\right)} \\ 
-\mathrm{probablement erreur de signe dans cette exponentielle, le + serait sans doute un -}
-\end{split}
-\end{equation*}
-\begin{equation*}
-G_{0eff}(x_0)=\mathrm{TF}^{-1} \left( C_{diff}(\Delta x) \right)_{\left[ \frac{x_0}{2} \left( \frac{k_1}{d_{eff1}} + \frac{k_2}{d_{eff2}} \right) -\frac{x_1 k_1}{d_1} - \frac{x_2 k_2}{d_2}\right]}
-\end{equation*}
-\end{comment}
+
+
+\subsection{Fonction de corrélation à trois corps des fluctuations d'intensité}
+
+
+\begin{align}
+\overline{\delta I(\mathbf{x}_1) \delta I(\mathbf{x}_2) \delta I(\mathbf{x}_3)} &= \overline{(I(\mathbf{x}_1)-\overline{I}(\mathbf{x}_1))(I(\mathbf{x}_2)-\overline{I}(\mathbf{x}_2))(I(\mathbf{x}_3)-\overline{I}(\mathbf{x}_3))} \\
+&= \overline{I(\mathbf{x}_1)I(\mathbf{x}_2)I(\mathbf{x}_3)} +2 \overline{I}(\mathbf{x}_1)\overline{I}(\mathbf{x}_2)\overline{I}(\mathbf{x}_3) \\
+\nonumber & \quad - \overline{I(\mathbf{x}_1)I(\mathbf{x}_2)}\:\overline{I}(\mathbf{x}_3) - \overline{I(\mathbf{x}_2)I(\mathbf{x}_3)}\:\overline{I}(\mathbf{x}_1)- \overline{I(\mathbf{x}_3)I(\mathbf{x}_1)}\:\overline{I}(\mathbf{x}_2) 
+\end{align}
+
+De même que dans la section précédente, appliquons le théorème de Wick au terme $\overline{I(\mathbf{x}_1) I(\mathbf{x}_2) I(\mathbf{x}_3)}$:
+\begin{align}
+\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)I(\mathbf{x}_3)} &= \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)E(\mathbf{x}_2)E^*(\mathbf{x}_2)E(\mathbf{x}_3)E^*(\mathbf{x}_3)} \\
+&= \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_3)} \\
+\nonumber & \quad + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_2)} \\
+\nonumber & \quad + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_1)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_3)} \\
+\nonumber & \quad + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_3)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)} \\
+\nonumber & \quad + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)} \\
+\nonumber & \quad + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_3)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_1)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_2)} \\
+\nonumber&= \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2) \overline{I}(\mathbf{x}_3) +2 \mathrm{Re}\left[ \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)} \right] \\
+& \quad + \overline{I}(\mathbf{x}_1) \left|\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)}\right|^2 + \overline{I}(\mathbf{x}_2) \left|\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)}\right|^2 + \overline{I}(\mathbf{x}_3) \left|\overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)}\right|^2
+\end{align}
+
+On obtient alors 
+\begin{align}
+\overline{\delta I(\mathbf{x}_1) \delta I(\mathbf{x}_2) \delta I(\mathbf{x}_3)} &= 3 \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2) \overline{I}(\mathbf{x}_3)\\
+\nonumber & \quad + \overline{I}(\mathbf{x}_1) \left( \left|\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)} \right|^2 -\overline{I(\mathbf{x}_2)I(\mathbf{x}_3)}\right) \\
+\nonumber & \quad + \overline{I}(\mathbf{x}_2) \left( \left|\overline{E(\mathbf{x}_1)E^*(\mathbf{x}_3)}\right|^2 - \overline{I(\mathbf{x}_1)I(\mathbf{x}_3)}\right)\\
+\nonumber & \quad + \overline{I}(\mathbf{x}_3) \left(\left|E(\mathbf{x}_1)E^*(\mathbf{x}_2)\right|^2 -\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)}\right)\\
+\nonumber & \quad + 2\mathrm{Re}\left[ \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)} \: \overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)} \: \overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)}\right] \\
+&= 2\mathrm{Re}\left[ \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)} \: \overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)} \: \overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)}\right]
+\end{align}
+en appliquant le théorème de Wick à la fonction de corrélation à deux corps de l'intensité.
