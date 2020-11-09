@@ -11,6 +11,7 @@ modifications apportées depuis la version envoyée au jury:
 - uniformisation des notations d'opérateurs dans les chapitres 7 et C
 - correction de l'élément différentiel de la définition de \tilde{Cdiff} dans la ligne suivant la formule B.24, dans l'expression de l'extension transverse du champ de tavelures le long de l'axe optique
 - ajout d'une section "théorème de Wick" dans l'annexe B
+- correction d'une erreur dans la formule 7.14, forme lorentzienne de la fonction spectrale: c'est (E-Eki')² et non pas (Eki-Eki')² au dénominateur
 
 
 Changements à apporter: 
