@@ -12,15 +12,14 @@ modifications apportées depuis la version envoyée au jury:
 - correction de l'élément différentiel de la définition de \tilde{Cdiff} dans la ligne suivant la formule B.24, dans l'expression de l'extension transverse du champ de tavelures le long de l'axe optique
 - ajout d'une section "théorème de Wick" dans l'annexe B
 - correction d'une erreur dans la formule 7.14, forme lorentzienne de la fonction spectrale: c'est (E-Eki')² et non pas (Eki-Eki')² au dénominateur
+- modification mineure de la figure 5.8: meilleur découpage de la zone orange sur la surface du diffuseur
 
 
 Changements à apporter: 
 
 - figures 2.11 et 8.1: ajout d'un motif de désordre dans la partie distribution d'énergie dans le désordre, oublié dans la version précédente
-- réaliser l'image d'en-tête de la table des matières
-- figure 5.8: illustration des corrélations speckle: revoir la découpe du triangle orange
 - ajout de la démonstration de la formule de la corrélation à deux corps en amplitude, avec le calcul complet (même les phases). 
 - retravailler entièrement l'annexe B: démontrer proprement toutes les formules de corrélation normalisées et remettre en ordre les différentes parties.
-
+- retravailler le paragraphe concernant l'expérience de Nouvelle-Zélande de localisation à 2D: discuter le caractère quasi-1D et citer les kicked-rotors pour la localisation 2D.
 
 

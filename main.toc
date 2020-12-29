@@ -113,6 +113,7 @@
 \contentsline {section}{\numberline {B.6}Application du théorème de Wick à un speckle}{176}{section.B.6}%
 \contentsline {subsection}{\numberline {B.6.1}Fonction de corrélation à deux corps des fluctuations d'intensité}{176}{subsection.B.6.1}%
 \contentsline {subsection}{\numberline {B.6.2}Fonction de corrélation à trois corps des fluctuations d'intensité}{176}{subsection.B.6.2}%
+\contentsline {section}{\numberline {B.7}Calcul complet de la fonction de corrélation en amplitude à deux corps}{177}{section.B.7}%
 \contentsline {chapter}{\numberline {C}Calculs du temps de diffusion élastique}{179}{appendix.C}%
 \contentsline {section}{\numberline {C.1}Éléments de calcul du temps de diffusion élastique à partir du développement de Born}{179}{section.C.1}%
 \contentsline {section}{\numberline {C.2}Calcul de la self-energy\ au premier ordre}{180}{section.C.2}%

@@ -246,7 +246,7 @@ On détermine alors que la fonction de corrélation à deux corps des fluctuatio
 \nonumber & \quad - \overline{I(\mathbf{x}_1)I(\mathbf{x}_2)}\:\overline{I}(\mathbf{x}_3) - \overline{I(\mathbf{x}_2)I(\mathbf{x}_3)}\:\overline{I}(\mathbf{x}_1)- \overline{I(\mathbf{x}_3)I(\mathbf{x}_1)}\:\overline{I}(\mathbf{x}_2) 
 \end{align}
 
-De même que dans la section précédente, appliquons le théorème de Wick au terme $\overline{I(\mathbf{x}_1) I(\mathbf{x}_2) I(\mathbf{x}_3)}$:
+De même que dans la section précédente, appliquons le théorème de Wick au premier terme $\overline{I(\mathbf{x}_1) I(\mathbf{x}_2) I(\mathbf{x}_3)}$ de l'équation précédente:
 \begin{align}
 \overline{I(\mathbf{x}_1)I(\mathbf{x}_2)I(\mathbf{x}_3)} &= \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)E(\mathbf{x}_2)E^*(\mathbf{x}_2)E(\mathbf{x}_3)E^*(\mathbf{x}_3)} \\
 &= \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_3)} \\
@@ -264,8 +264,32 @@ On obtient alors
 \overline{\delta I(\mathbf{x}_1) \delta I(\mathbf{x}_2) \delta I(\mathbf{x}_3)} &= 3 \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2) \overline{I}(\mathbf{x}_3)\\
 \nonumber & \quad + \overline{I}(\mathbf{x}_1) \left( \left|\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)} \right|^2 -\overline{I(\mathbf{x}_2)I(\mathbf{x}_3)}\right) \\
 \nonumber & \quad + \overline{I}(\mathbf{x}_2) \left( \left|\overline{E(\mathbf{x}_1)E^*(\mathbf{x}_3)}\right|^2 - \overline{I(\mathbf{x}_1)I(\mathbf{x}_3)}\right)\\
-\nonumber & \quad + \overline{I}(\mathbf{x}_3) \left(\left|E(\mathbf{x}_1)E^*(\mathbf{x}_2)\right|^2 -\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)}\right)\\
+\nonumber & \quad + \overline{I}(\mathbf{x}_3) \left(\left|\overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)}\right|^2 -\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)}\right)\\
 \nonumber & \quad + 2\mathrm{Re}\left[ \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)} \: \overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)} \: \overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)}\right] \\
 &= 2\mathrm{Re}\left[ \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)} \: \overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)} \: \overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)}\right]
 \end{align}
 en appliquant le théorème de Wick à la fonction de corrélation à deux corps de l'intensité.
+
+
+
+
+
+\section{Calcul complet de la fonction de corrélation en amplitude à deux corps}
+La fonction de corrélation à deux corps en amplitude s'écrit:
+\begin{align}
+\overline{E(\mathbf{x}_1,\lambda_1)E^*(\mathbf{x}_2,\lambda_2)} &= \frac{e^{ik_1 \left( d_1+\frac{x_1^2+y_1^2}{2d_1} \right)}}{\lambda_1 d_1} \frac{e^{-i k_2 \left( d_2+ \frac{x_2^2+y_2^2}{2d_2} \right)}}{\lambda_2 d_2} \\
+\nonumber & \quad \times \int{\diff\xzero \diff\xzero' \: \overline{\tdiff(\xzero)\tdiff^*(\xzero')} \Ezero(\xzero) \Ezero^*(\xzero') e^{ik_1\frac{ \xzero^2}{2d_{\mathrm{eff,1}}}} e^{-ik_2\frac{ \xzero'^2}{2d_{\mathrm{eff,2}}}} e^{-ik_1 \frac{\mathbf{x}_1 . \xzero}{d_1}} e^{ik_2 \frac{\mathbf{x}_2 . \xzero'}{d_2}}} \text{ .}
+\end{align}
+Effectuons alors le changement de variables $\lbrace \xzero,\xzero' \rbrace\rightarrow \lbrace \xc=(\xzero+\xzero')/2 ,\: \Deltax=\xzero'-\xzero \rbrace$:
+\begin{align}
+\overline{E(\mathbf{x}_1,\lambda_1)E^*(\mathbf{x}_2,\lambda_2)} &= \frac{e^{ik_1\left( d_1 + \frac{x_1^2+y_1^2}{2d_1} \right)} e^{-ik_2 \left( d_2 + \frac{x_2^2+y_2^2}{2d_2}\right)}}{\lambda_1 \lambda_2 d_1 d_2} \\
+\nonumber & \quad \times \int{\diff\xc \diff\Deltax \: \Cdiff(\Deltax) \Ezero(\xc-\Deltax/2))\Ezero^*(\xc+\Deltax/2)} e^{i\frac{\xc^2}{2} (\frac{k_1}{d_{\mathrm{eff,1}}} - \frac{k_2}{d_{\mathrm{eff,2}}})}\\
+\nonumber & \quad \times  e^{-i \frac{\Deltax . \xc}{2} ( \frac{k_1}{d_{\mathrm{eff,1}}} + \frac{k_2}{d_{\mathrm{eff,2}}})} e^{i \frac{\Deltax^2}{8}(\frac{k_1}{d_{\mathrm{eff,1}}} - \frac{k_2}{d_{\mathrm{eff,2}}})} e^{i\xc.(\frac{k_2 \mathbf{x}_2}{d_2} - \frac{k_1 \mathbf{x}_1}{d_1})} e^{i\frac{\Deltax}{2} . (\frac{k_1 \mathbf{x}_1}{d_1} + \frac{k_2 \mathbf{x}_2}{d_2})}
+\end{align}
+
+Supposons à présent que la taille des grains du diffuseur est très petite devant la taille typique de l'éclairement incident, c'est-à-dire qu'à l'échelle de variation de $\Cdiff$, l'éclairement incident est constant: $\Ezero(\xc-\Deltax/2) \Ezero^*(\xc+\Deltax/2) \approx \Ezero(\xc) \Ezero^*(\xc) = I_0(\xc)$. En supprimant le terme de phase en $\Deltax^2$ supposé petit devant toutes les autres échelles de longueur, on obtient:
+\begin{align}
+\overline{E(\mathbf{x}_1,\lambda_1)E^*(\mathbf{x}_2,\lambda_2)} &= \frac{e^{ik_1\left( d_1 + \frac{x_1^2+y_1^2}{2d_1} \right)} e^{-ik_2 \left( d_2 + \frac{x_2^2+y_2^2}{2d_2}\right)}}{\lambda_1 \lambda_2 d_1 d_2} \\
+\nonumber & \quad \times \int{\diff\xc \: I_0(\xc) e^{i\frac{\xc^2}{2}(\frac{k_1}{d_{\mathrm{eff,1}}} - \frac{k_2}{d_{\mathrm{eff,2}}})} e^{i \xc. (\frac{k_2 \mathbf{x}_2}{d_2}-\frac{k_1 \mathbf{x}_1}{d_1})}} \\
+\nonumber & \quad \times \int{\diff\Deltax \: \Cdiff(\Deltax) e^{-i\Deltax . \xc(\frac{k_1}{d_{\mathrm{eff,1}}} + \frac{k_2}{d_{\mathrm{eff,2}}})} e^{i\frac{\Deltax}{2}. (\frac{k_1 \mathbf{x}_1}{d_1} +\frac{k_2 \mathbf{x}_2}{d_2})}}
+\end{align}
