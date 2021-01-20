@@ -13,7 +13,7 @@ modifications apportées depuis la version envoyée au jury:
 - ajout d'une section "théorème de Wick" dans l'annexe B
 - correction d'une erreur dans la formule 7.14, forme lorentzienne de la fonction spectrale: c'est (E-Eki')² et non pas (Eki-Eki')² au dénominateur
 - modification mineure de la figure 5.8: meilleur découpage de la zone orange sur la surface du diffuseur
-
+- modification des références à l'équation 5.7 (définition Cdiff) vers l'équation 5.8 (formule de Cdiff gaussienne)
 
 Changements à apporter: 
 

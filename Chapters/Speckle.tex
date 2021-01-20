@@ -94,6 +94,7 @@ Les grains du diffuseur sont de plus caractérisés par une certaine extension s
 Puisque l'épaisseur et la phase sont proportionnelles, ces deux grandeurs sont corrélées sur la même taille $r_e$ correspondant à la granularité de la surface du verre. En revanche, dans le cas où $\sigmae \gg \lambda$ (ce qui est le cas sur notre expérience), l'onde oscille plusieurs fois dans le même grain du diffuseur. La transmission étant une fonction $2\pi-$périodique de la phase, celle-ci perd alors sa corrélation sur une taille $\rdiff \ll r_e$, voir figure \ref{fig:diffus_prop}. On montre alors annexe \ref{ch:anex_speckle} que la corrélation de la transmission à courte portée\footnote{La corrélation de la transmission tend suffisamment vite vers 0 pour que l'on puisse considérer que $\left|\mathbf{x}_0-\mathbf{x}'_0 \right| \ll r_e$ dans le cas où $\sigma_\phi \gg 2\pi$.} est de forme gaussienne:
 \begin{equation}
 \Cdiff(\mathbf{x}_0,\mathbf{x}'_0)\approx \exp{\left( -\frac{\left| \mathbf{x}_0 - \mathbf{x}'_0 \right| ^2}{2 \rdiff^2}\right) } \quad \text{avec} \quad \rdiff=r_e/\sigma_\phi \text{ .}
+\label{eq:formule_Cdiff}
 \end{equation}
 $\rdiff$ joue alors le rôle de la taille effective d'un émetteur indépendant tel que considéré dans la section \ref{sc:distribution_speckle}. La condition d'un grand nombre d'émetteurs s'écrit alors $\rdiff \ll D$.
 
@@ -226,7 +227,7 @@ On montre alors (voir annexe \ref{ch:anex_speckle}) que le profil d'intensité m
 où le symbole $\ast$ dénote le produit de convolution. L'évolution du profil d'intensité moyenne en fonction de la distance $d$ est alors dû à deux contributions dont l'interprétation physique est la suivante:
 \begin{itemize}
 \item[\textendash] Le premier terme correspond à l'effet de la lentille dans le cadre de l'optique géométrique, et focalise donc le profil d'intensité initiale $I_0(\xzero)=\left| \Ezero(\xzero) \right|^2$ dans le plan focal $\lbrace x,y,z=f\rbrace$. Cette focalisation se traduit au travers d'un changement d'échelle de l'intensité par le facteur $d/\deff=\left| d-f \right| /f$. Ainsi, la taille de ce faisceau focalisé décroît avec la distance jusqu'à s'annuler dans le plan focal, comme prédit par l'optique géométrique.
-\item[\textendash] Le second terme est la transformée de Fourier de la fonction de corrélation du diffuseur $\Cdiff(\xzero)$. Ce terme traduit la diffraction de l'onde incidente par les grains du diffuseur de taille $\rdiff$. À partir de l'expression \ref{eq:correlation_diffuseur} de $\Cdiff(\xzero)$, on trouve que ce terme correspond à une gaussienne dont la largeur est donnée par $\lambda d/ \pi \rdiff$, qui croît linéairement avec la distance $d$.
+\item[\textendash] Le second terme est la transformée de Fourier de la fonction de corrélation du diffuseur $\Cdiff(\xzero)$. Ce terme traduit la diffraction de l'onde incidente par les grains du diffuseur de taille $\rdiff$. À partir de l'expression \ref{eq:formule_Cdiff} de $\Cdiff(\xzero)$, on trouve que ce terme correspond à une gaussienne dont la largeur est donnée par $\lambda d/ \pi \rdiff$, qui croît linéairement avec la distance $d$.
 \end{itemize}
 Ces dépendances sont illustrées figure \ref{fig:speckle_extension}, où le fond rose correspond au premier terme de focalisation, tandis le fond orange illustre le second terme de diffraction issu du centre du diffuseur. On identifie alors deux régimes pour lesquels un terme est prépondérant. 
 
@@ -695,7 +696,7 @@ Aussi, nous choisissons de fixer le désaccord du laser principal à $\delta_{\m
 
 \begin{table}[!h]
 \begin{center}
-{\rowcolors{2}{white}{MainColor!10}
+{\rowcolors{2}{white}{MainColor!12}
 \begin{tabular}{ c|c|c }
 %\hline
  & {\color{MainColor}\textbf{Désordre attractif}} & {\color{MainColor}\textbf{Désordre répulsif}} \\ [2ex]

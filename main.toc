@@ -14,8 +14,8 @@
 \contentsline {subsection}{\numberline {2.2.1}Etudes expérimentales de la localisation d'Anderson}{20}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}L'approche des atomes froids}{22}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Vers l'étude du régime critique}{26}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Etat de l'art de l'étude de la transition d'Anderson avec des atomes ultra-froids}{26}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Nécessité d'une spectroscopie pour sonder le régime critique}{33}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.1}Etat de l'art de l'étude de la transition d'Anderson avec des atomes ultra-froids}{27}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Nécessité d'une spectroscopie pour sonder le régime critique}{32}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {3}Production d'ondes de matière}{35}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Condensation de Bose-Einstein}{35}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Statistique de Bose-Einstein}{36}{subsection.3.1.1}%
@@ -114,13 +114,17 @@
 \contentsline {subsection}{\numberline {B.6.1}Fonction de corrélation à deux corps des fluctuations d'intensité}{176}{subsection.B.6.1}%
 \contentsline {subsection}{\numberline {B.6.2}Fonction de corrélation à trois corps des fluctuations d'intensité}{176}{subsection.B.6.2}%
 \contentsline {section}{\numberline {B.7}Calcul complet de la fonction de corrélation en amplitude à deux corps}{177}{section.B.7}%
-\contentsline {chapter}{\numberline {C}Calculs du temps de diffusion élastique}{179}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Éléments de calcul du temps de diffusion élastique à partir du développement de Born}{179}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Calcul de la self-energy\ au premier ordre}{180}{section.C.2}%
-\contentsline {subsection}{\numberline {C.2.1}Expression du premier ordre de la self-energy}{180}{subsection.C.2.1}%
-\contentsline {subsection}{\numberline {C.2.2}Calcul du temps de diffusion élastique}{181}{subsection.C.2.2}%
-\contentsline {section}{\numberline {C.3}Calcul de la self-energy\ au second ordre}{181}{section.C.3}%
-\contentsline {subsection}{\numberline {C.3.1}Calcul à l'aide la représentation en impulsion}{182}{subsection.C.3.1}%
-\contentsline {subsection}{\numberline {C.3.2}Calcul à l'aide la représentation spatiale}{183}{subsection.C.3.2}%
-\contentsline {chapter}{Bibliographie}{187}{section*.85}%
+\contentsline {section}{\numberline {B.8}Expression du profil d'intensité moyenne du champ de tavelures le long de l'axe optique}{178}{section.B.8}%
+\contentsline {section}{\numberline {B.9}Fonctions de corrélation d'un speckle\ monochromatique}{179}{section.B.9}%
+\contentsline {subsection}{\numberline {B.9.1}Détermination de la fonction de corrélation à trois corps}{179}{subsection.B.9.1}%
+\contentsline {section}{\numberline {B.10}Fonction de corrélation d'un speckle\ bichromatique}{180}{section.B.10}%
+\contentsline {chapter}{\numberline {C}Calculs du temps de diffusion élastique}{183}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Éléments de calcul du temps de diffusion élastique à partir du développement de Born}{183}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Calcul de la self-energy\ au premier ordre}{184}{section.C.2}%
+\contentsline {subsection}{\numberline {C.2.1}Expression du premier ordre de la self-energy}{184}{subsection.C.2.1}%
+\contentsline {subsection}{\numberline {C.2.2}Calcul du temps de diffusion élastique}{185}{subsection.C.2.2}%
+\contentsline {section}{\numberline {C.3}Calcul de la self-energy\ au second ordre}{185}{section.C.3}%
+\contentsline {subsection}{\numberline {C.3.1}Calcul à l'aide la représentation en impulsion}{186}{subsection.C.3.1}%
+\contentsline {subsection}{\numberline {C.3.2}Calcul à l'aide la représentation spatiale}{187}{subsection.C.3.2}%
+\contentsline {chapter}{Bibliographie}{191}{section*.85}%
 \contentsfinish 
