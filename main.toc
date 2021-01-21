@@ -116,15 +116,17 @@
 \contentsline {section}{\numberline {B.7}Calcul complet de la fonction de corrélation en amplitude à deux corps}{177}{section.B.7}%
 \contentsline {section}{\numberline {B.8}Expression du profil d'intensité moyenne du champ de tavelures le long de l'axe optique}{178}{section.B.8}%
 \contentsline {section}{\numberline {B.9}Fonctions de corrélation d'un speckle\ monochromatique}{179}{section.B.9}%
-\contentsline {subsection}{\numberline {B.9.1}Détermination de la fonction de corrélation à trois corps}{179}{subsection.B.9.1}%
-\contentsline {section}{\numberline {B.10}Fonction de corrélation d'un speckle\ bichromatique}{180}{section.B.10}%
-\contentsline {chapter}{\numberline {C}Calculs du temps de diffusion élastique}{183}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Éléments de calcul du temps de diffusion élastique à partir du développement de Born}{183}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Calcul de la self-energy\ au premier ordre}{184}{section.C.2}%
-\contentsline {subsection}{\numberline {C.2.1}Expression du premier ordre de la self-energy}{184}{subsection.C.2.1}%
-\contentsline {subsection}{\numberline {C.2.2}Calcul du temps de diffusion élastique}{185}{subsection.C.2.2}%
-\contentsline {section}{\numberline {C.3}Calcul de la self-energy\ au second ordre}{185}{section.C.3}%
-\contentsline {subsection}{\numberline {C.3.1}Calcul à l'aide la représentation en impulsion}{186}{subsection.C.3.1}%
-\contentsline {subsection}{\numberline {C.3.2}Calcul à l'aide la représentation spatiale}{187}{subsection.C.3.2}%
-\contentsline {chapter}{Bibliographie}{191}{section*.85}%
+\contentsline {subsection}{\numberline {B.9.1}Corrélation transverse le long de l'axe optique}{179}{subsection.B.9.1}%
+\contentsline {subsection}{\numberline {B.9.2}Corrélation tridimensionnelle aux alentours du plan de Fourier}{180}{subsection.B.9.2}%
+\contentsline {subsection}{\numberline {B.9.3}Détermination de la fonction de corrélation à trois corps}{181}{subsection.B.9.3}%
+\contentsline {section}{\numberline {B.10}Fonction de corrélation d'un speckle\ bichromatique}{181}{section.B.10}%
+\contentsline {chapter}{\numberline {C}Calculs du temps de diffusion élastique}{185}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Éléments de calcul du temps de diffusion élastique à partir du développement de Born}{185}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Calcul de la self-energy\ au premier ordre}{186}{section.C.2}%
+\contentsline {subsection}{\numberline {C.2.1}Expression du premier ordre de la self-energy}{186}{subsection.C.2.1}%
+\contentsline {subsection}{\numberline {C.2.2}Calcul du temps de diffusion élastique}{187}{subsection.C.2.2}%
+\contentsline {section}{\numberline {C.3}Calcul de la self-energy\ au second ordre}{187}{section.C.3}%
+\contentsline {subsection}{\numberline {C.3.1}Calcul à l'aide la représentation en impulsion}{188}{subsection.C.3.1}%
+\contentsline {subsection}{\numberline {C.3.2}Calcul à l'aide la représentation spatiale}{189}{subsection.C.3.2}%
+\contentsline {chapter}{Bibliographie}{193}{section*.85}%
 \contentsfinish 
