@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  21 JAN 2021 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  22 JAN 2021 18:05
 entering extended mode
 **./main.tex
 (main.tex
@@ -2588,17 +2588,13 @@ Package pdftex.def Info: Fig/Anex/header_speckle.pdf  used on input line 3.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [176]
-Overfull \hbox (58.18121pt too wide) detected at line 284
+[177] [178] [179] [180]
+Overfull \hbox (19.90105pt too wide) detected at line 435
 []
  []
 
-
-Overfull \hbox (14.63487pt too wide) detected at line 292
-[]
- []
-
-[177] [178] [179] [180] [181]
-Overfull \hbox (9.07614pt too wide) detected at line 443
+[181]
+Overfull \hbox (95.15878pt too wide) detected at line 455
 []
  []
 
@@ -2762,7 +2758,7 @@ m10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/lecou/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on main.pdf (206 pages, 54331998 bytes).
+Output written on main.pdf (206 pages, 54332159 bytes).
 PDF statistics:
  20297 PDF objects out of 22161 (max. 8388607)
  1034 named destinations out of 1200 (max. 500000)
