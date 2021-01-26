@@ -4,6 +4,71 @@
 \label{ch:anex_speckle}
 
 
+
+
+\section{Application du théorème de Wick à un \speckle }
+Le théorème de Wick est un théorème particulièrement utile lors de l'étude des corrélations d'un champ de \speckle , celui-ci permettant de relier les fonctions de corrélation en intensité aux fonctions de corrélation en amplitude lorsque l'amplitude constitue une variable aléatoire complexe, gaussienne et centrée. 
+
+L'amplitude des fluctuations d'intensité est la grandeur caractérisant l'amplitude d'un désordre \speckle, et ces dernières sont définies par $\delta I = I - \overline{I}$, où $\overline{\:\cdots\:}$ représente la valeur moyenne statistique. 
+
+\subsection{Fonction de corrélation à deux corps des fluctuations d'intensité}
+Par vœu de concision, notons $I_1=I(\mathbf{x},\lambda)$ l'intensité d'un \speckle\ à la longueur d'onde $\lambda$ et au point $\mathbf{x}=\lbrace x,y,z\rbrace$. Notons également $I_2=I(\mathbf{x}', \lambda')$.
+
+La fonction de corrélation des fluctuations d'intensité est alors: 
+\begin{align}
+\overline{\delta I_1\delta I_2} &= \overline{(I_1-\overline{I_1}) (I_2-\overline{I_2})} \\
+&= \overline{I_1 I_2 - I_1 \overline{I_2} - \overline{I_1} I_2 + \overline{I_1} \overline{I_2}} \\
+&=\overline{I_1 I_2} - \overline{I_1}\: \overline{I_2} \text{ .}
+\end{align}
+
+Appliquons alors le théorème de Wick au terme $\overline{I_1 I_2}$ en faisant apparaître l'amplitude du champ:
+\begin{align}
+\overline{I_1 I_2} &= \overline{E_1 E^*_1 E_2 E^*_2} \\
+&= \overline{E_1 E^*_1} \: \overline{E_2 E^*_2} + \overline{E_1 E^*_2} \: \overline{E_2 E^*_1} \\
+&= \overline{I}_1 \overline{I}_2 + \left| \overline{E_1 E^*_2} \right|^2 \text{ .}
+\end{align}
+
+On détermine alors que la fonction de corrélation à deux corps des fluctuations d'intensité s'écrit sous la forme:
+\begin{equation}
+\overline{\delta I_1 \delta I_2} = \left| \overline{E_1 E^*_2} \right|^2 \text{ .}
+\label{eq:theoreme_wick_2corps}
+\end{equation}
+
+
+\subsection{Fonction de corrélation à trois corps des fluctuations d'intensité}
+Reprenons les notations précédentes et notons de plus $I_3=I(\mathbf{x}'',\lambda'')$. La fonction de corrélation à trois corps des fluctuations d'intensité s'écrit:
+\begin{align}
+\overline{\delta I_1 \delta I_2 \delta I_3} &= \overline{(I_1 -\overline{I_1})(I_2 -\overline{I_2})(I_3-\overline{I_3})} \\
+&=\overline{I_1 I_2 I_3} - \overline{I_1} \: \overline{I_2} \: \overline{I_3} + \overline{I_1 \overline{I_2}\:\overline{I_3}} + \overline{\overline{I_1} I_2 \overline{I_3}} + \overline{\overline{I_1} \: \overline{I_2} I_3} \\
+&\nonumber \: - \overline{I_1 I_2} \: \overline{I_3} - \overline{ I_2 I_3} \: \overline{I_1} - \overline{I_3 I_1} \: \overline{I_2} \\
+&= \overline{I_1 I_2 I_3} +2 \overline{I_1}\: \overline{I_2}\: \overline{I_3} - \overline{I_1 I_2}\:\overline{I_3} - \overline{I_2 I_3}\:\overline{I_1}- \overline{I_3 I_1}\:\overline{I_2} \text{ .}
+\end{align}
+
+De même que dans la section précédente, appliquons le théorème de Wick au premier terme $\overline{I_1 I_2 I_3}$ de l'équation précédente:
+\begin{align}
+\overline{I_1 I_2 I_3} &= \overline{E_1 E^*_1 E_2 E^*_2 E_3 E^*_3} \\
+&= \overline{E_1 E^*_1}\:\overline{E_2 E^*_2}\:\overline{E_3 E^*_3} + \overline{E_1 E^*_2}\:\overline{E_2 E^*_3}\:\overline{E_3 E^*_1} + \overline{E_1 E^*_3}\:\overline{E_2 E^*_1}\:\overline{E_3 E^*_2}\\
+\nonumber & \: + \overline{E_1 E^*_1}\:\overline{E_2 E^*_3}\:\overline{E_3 E^*_2} + \overline{E_1 E^*_3}\:\overline{E_2 E^*_2}\:\overline{E_3 E^*_1} + \overline{E_1 E^*_2}\:\overline{E_2 E^*_1}\:\overline{E_3 E^*_3}\\
+&= \overline{I_1}\: \overline{I_2}\: \overline{I_3} + \overline{I_1} \left|\overline{E_2 E^*_3}\right|^2 + \overline{I_2} \left|\overline{E_3 E^*_1}\right|^2 + \overline{I_3} \left|\overline{E_1 E^*_2}\right|^2 \\
+&\nonumber \: +2 \mathrm{Re}\left[ \overline{E_1 E^*_2}\:\overline{E_2 E^*_3}\:\overline{E_3 E^*_1} \right] \text{ .}
+\end{align}
+
+La fonction de corrélation des fluctuations d'intensité se simplifie alors en:
+\begin{align}
+\overline{\delta I_1 \delta I_2 \delta I_3} &= 3 \overline{I_1}\: \overline{I_2}\: \overline{I_3} + 2\mathrm{Re}\left[ \overline{E_1 E^*_2} \: \overline{E_2 E^*_3} \: \overline{E_3 E^*_1}\right]\\
+\nonumber & \: + \overline{I_1} \left( \left|\overline{E_2 E^*_3} \right|^2 -\overline{I_2 I_3}\right) + \overline{I_2} \left( \left|\overline{E_1 E^*_3}\right|^2 - \overline{I_1 I_3}\right)+ \overline{I_3} \left(\left|\overline{E_1 E^*_2}\right|^2 -\overline{I_1 I_2}\right) \\
+&= 2\mathrm{Re}\left[ \overline{E_1 E^*_2} \: \overline{E_2 E^*_3} \: \overline{E_3 E^*_1}\right] \text{ .}
+\label{eq:wick_3corps}
+\end{align}
+en appliquant le théorème de Wick à la fonction de corrélation à deux corps de l'intensité.
+
+
+
+
+
+
+
+
 \section{Fonction de corrélation du diffuseur}
 On s'attache ici à donner l'expression de la fonction de corrélation du diffuseur et à introduire les différents paramètres nécessaires. La géométrie du diffuseur est détaillée dans la section \ref{sc:prop_diffuseur}.
 
@@ -11,7 +76,7 @@ La phase localement accumulée par l'onde laser s'écrit:
 \begin{equation}
 \phi(\xzero)=2\pi (n-1) \frac{e(\xzero)}{\lambda} \text{ ,}
 \end{equation}
-avec $e(\xzero)$ l'épaisseur localement traversée et $\lambda$ la longueur d'onde du laser. La transmission du diffuseur est aussi une grandeur aléatoire (car reliée à l'épaisseur aléatoire traversée) donnée par:
+où les points $\xzero=\lbrace x_0, y_0, z=0\rbrace$ sont dans le plan du diffuseur. $e(\xzero)$ correspond à l'épaisseur localement traversée, $\lambda$ est la longueur d'onde du laser et $n$ l'indice du verre. La transmission du diffuseur est aussi une grandeur aléatoire (car reliée à l'épaisseur aléatoire traversée) donnée par:
 \begin{equation}
 \tdiff(\xzero,\lambda)=e^{i \phi(\xzero)} \text{ .}
 \end{equation}
@@ -19,7 +84,7 @@ En considérant une distribution de phase (et donc d'épaisseur) gaussienne, on 
 \begin{equation}
 \overline{\tdiff}= \overline{e^{i \phi}} = \int{ \mathrm{d}\phi \: e^{i \phi} \: \mathcal{P}(\phi)} \quad \text{avec} \quad \mathcal{P}(\phi) = \frac{1}{\sigma_{\phi} \sqrt{2 \pi}} e^{-(\phi - \overline{\phi})^2 /2 \sigma_{\phi}^2} \text{ ,}
 \end{equation}
-qui correspond alors à la transformée de Fourier de la distribution de phase. On a alors
+où $\sigma_{\phi}^2$ est la variance de la distribution de phase. Il apparaît que la transmission moyenne correspond à la transformée de Fourier de la distribution de phase. On a ainsi
 \begin{equation}
 \overline{\tdiff} = e^{-\overline{\phi^2}/2} = e^{-\sigma_{\phi}^2/2}
 \end{equation}
@@ -36,9 +101,9 @@ Dans le cadre de l'hypothèse où les phases individuelles sont des variables al
 \Cdiff(\xzero,\xzero',\lambda,\lambda') &= \overline{e^{i(\phi(\xzero) - \phi'(\xzero'))}} \\
 &= \exp{\left[-\frac{1}{2} \overline{(\phi(\xzero)-\phi'(\xzero'))^2}\right]} \\
 &= \exp{\left[ -\frac{1}{2} \overline{(\phi(\xzero)^2 + \phi'(\xzero')^2 -2 \phi(\xzero) \phi'(\xzero'))} \right] } \\
-&= \exp{\left[-2\pi^2 (n-1)^2 \sigmae^2 \left( \frac{1}{\lambda^2} + \frac{1}{\lambda'^2} - \frac{2}{\lambda\lambda'} \frac{\overline{e(\xzero)(e\xzero')}}{\sigmae^2}\right)\right]} \text{ ,}
+&= \exp{\left[-2\pi^2 (n-1)^2 \sigmae^2 \left( \frac{1}{\lambda^2} + \frac{1}{\lambda'^2} - \frac{2}{\lambda\lambda'} \frac{\overline{e(\xzero)e(\xzero')}}{\sigmae^2}\right)\right]} \text{ ,}
 \end{align}
-en faisant apparaître la fonction de corrélation de l'épaisseur et l'écart-type de la distribution d'épaisseur $\sigmae$, reliée à la largeur de la distribution de phase par $\sigma_{\phi} = 2\pi (n-1) \sigmae /\lambda$. La largeur $\re$ de celle-ci décrit la taille de la granularité transverse de l'épaisseur du diffuseur. Comme décrit section \ref{sc:prop_diffuseur}, pour une large de distribution de phases $\sigma_{\phi} \gg 2\pi$ (ou $\sigmae \gg \lambda$), on peut restreindre l'étude de la corrélation du diffuseur sur une zone petite devant $\re$. Ainsi, on peut approximer la fonction de corrélation de la granularité du diffuseur, supposée être une courbe en cloche, par:
+en faisant apparaître la fonction de corrélation de l'épaisseur et l'écart-type de la distribution d'épaisseur $\sigmae$, reliée à la largeur de la distribution de phase par $\sigma_{\phi} = 2\pi (n-1) \sigmae /\lambda$. La largeur $\re$ de la fonction de corrélation de l'épaisseur décrit la taille de la granularité transverse de la surface du diffuseur. Comme décrit section \ref{sc:prop_diffuseur}, pour une large de distribution de phases $\sigma_{\phi} \gg 2\pi$ (ou $\sigmae \gg \lambda$), on peut restreindre l'étude de la corrélation du diffuseur sur une zone petite devant $\re$. Ainsi, on peut approximer la fonction de corrélation de la granularité du diffuseur, supposée être une courbe en cloche, par:
 \begin{equation}
 \frac{\overline{e(\xzero)e(\xzero')}}{\sigmae^2}\approx 1- \frac{(\xzero - \xzero')^2}{2\re^2} \quad \text{pour} \quad \left| \xzero-\xzero' \right| \ll \re \text{ .}
 \end{equation}
@@ -46,16 +111,16 @@ en faisant apparaître la fonction de corrélation de l'épaisseur et l'écart-t
 On obtient donc, pour la fonction de corrélation du diffuseur:
 \begin{align}
 \Cdiff(\xzero,\xzero',\lambda,\lambda') &= \exp{\left( -2 \pi^2 (n-1)^2 \sigmae^2 \left[ \frac{(\xzero - \xzero')^2}{\lambda \lambda' \re^2} + \left( \frac{1}{\lambda} - \frac{1}{\lambda'} \right)^2 \right] \right)} \\
-&= \exp{\left(-\frac{{\delta\phi}^2}{2}\right)} \exp{\left(-\frac{\pi^2 \theta_{\mathrm{diff}}^2}{2} \frac{(\xzero-\xzero')^2}{\lambda \lambda'}\right)} \text{ ,}
+&= \exp{\left(-\frac{{\delta\phi}^2}{2}\right)} \exp{\left(-\frac{\pi^2 \theta_{\mathrm{diff}}^2}{2} \frac{(\xzero-\xzero')^2}{\lambda \lambda'}\right)} \\
+&= \exp{\left( -\frac{\delta\phi^2}{2} \right)} \exp{\left( -\frac{(\xzero-\xzero')^2}{2\rdiff\rdiff'}\right)} \text{ ,}
 \end{align}
-avec $\delta\phi=\sigma_{\phi} - \sigma_{\phi'}$ et en faisant apparaître l'angle de diffusion $\theta_{\mathrm{diff}}=\lambda /\pi \rdiff$. On retrouve ainsi la formule \ref{eq:formule_Cdiff} de la section \ref{sc:prop_diffuseur} en prenant $\lambda=\lambda'$: la fonction de corrélation du diffuseur est une gaussienne de largeur $\rdiff=\re/\sigma_{\phi}$ et de maximum 1 pour $\xzero=\xzero'$.
+avec $\delta\phi=|\sigma_{\phi} - \sigma_{\phi'}|$ et en faisant apparaître l'angle de diffusion $\theta_{\mathrm{diff}}=\lambda /\pi \rdiff$. On retrouve ainsi la formule \ref{eq:formule_Cdiff} de la section \ref{sc:prop_diffuseur} en prenant $\lambda=\lambda'$: la fonction de corrélation du diffuseur est une gaussienne de largeur $\rdiff=\re/\sigma_{\phi}$ et de maximum 1 pour $\xzero=\xzero'$.
 
 
 
 
 \section{Amplitude rayonnée}
-Notons $\xd \equiv \left\lbrace x,y,d \right\rbrace$ et $\xzero \equiv \left\lbrace x_0,y_0,0 \right\rbrace$
-Pour calculer le champ rayonné au point $\xd$, on utilise le principe de Huygens-Fresnel:
+Notons $\xd \equiv \left\lbrace x,y,d \right\rbrace$ et $\xzero \equiv \left\lbrace x_0,y_0,0 \right\rbrace$. Pour calculer le champ rayonné au point $\xd$, on utilise le principe de Huygens-Fresnel:
 \begin{equation}
 E(\xd)=\frac{1}{i \lambda} \int {\diff\xzero \: t(\xzero) \Ezero(\xzero) \frac{e^{ik \left| \xd-\xzero \right| }}{\left| \xd - \xzero \right| }} \text{ ,}
 \label{eq:Huygens-Fresnel}
@@ -64,8 +129,8 @@ avec $t(\xzero)$ la transmission du montage optique au point $\xzero$ du diffuse
 
 Appliquons alors l'approximation paraxiale:
 \begin{align}
-\nonumber \left| \xd - \xzero \right| &= \sqrt{(x-x_0)^2+(y-y_0)^2+d^2} \\
-\nonumber & = d \sqrt{1+\frac{(x-x_0)^2+(y-y_0)^2}{d^2}} \\
+\left| \xd - \xzero \right| &= \sqrt{(x-x_0)^2+(y-y_0)^2+d^2} \\
+& = d \sqrt{1+\frac{(x-x_0)^2+(y-y_0)^2}{d^2}} \\
 & \approx d+ \frac{(x-x_0)^2+(y-y_0)^2}{2d}
 \label{eq:paraxial}
 \end{align}
@@ -73,7 +138,7 @@ au premier ordre. Reportons \ref{eq:paraxial} dans \ref{eq:Huygens-Fresnel}:
 \begin{equation}
 E(\xd)=\frac{e^{ikd}}{i \lambda d} \int{\diff \xzero \: \tdiff(\xzero) \Ezero(\xzero) \: e^{-ik \frac{x_0^2+y_0^2}{2f}} e^{ik \frac{(x-x_0)^2+(y-y_0)^2}{2d}}} \text{ ,}
 \end{equation}
-où nous avons utilisé le premier ordre pour approximer l'exponentielle et l'ordre 0 pour le dénominateur. $\tdiff(\xzero)$ correspond à la transmission du diffuseur. Développons alors cette dernière expression:
+où nous avons utilisé le premier ordre pour approximer l'exponentielle et l'ordre 0 pour le dénominateur. $\tdiff(\xzero)$ correspond à la transmission du diffuseur. Développons alors la dernière exponentielle complexe de cette expression:
 \begin{equation}
 E(\xd)=\frac{e^{i k \left( d + \frac{x^2 + y^2}{2 d}\right) }}{i \lambda d} \int{\diff \xzero \: \tdiff(\xzero) \Ezero(\xzero) \: e^{ik \frac{\xzero^2}{2 \deff}} e^{-ik\frac{\xd. \xzero}{d}}} \text{ ,}
 \end{equation}
@@ -82,8 +147,8 @@ avec $1/\deff=1/d-1/f$.
 
 
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
 \section{Fonction de corrélation}
 
 \subsection{Calcul général}
@@ -154,22 +219,7 @@ On retrouve l'expression \ref{eq:correlation_longitudinale_1_speckle} du chapitr
 
 
 
-%%%%% calcul de la corrélation longitudinale pour un éclairement gaussien, pas nécessaire.
-\begin{comment}
-Supposons à présent un éclairement incident gaussien de taille $w_0$:
-\begin{align}
-\CE &\propto \int{\mathrm{d}\mathbf{x}_0 \: e^{-\mathbf{x}_0^2 \left( 2/w_0^2-i\frac{k}{2d_{\mathrm{eff}}}\right)}} \\
-&\propto \frac{1}{2/w_0^2-i\frac{k}{2d_{\mathrm{eff}}}}
-\end{align}
-Et donc pour le degré en cohérence $\left| \mu \right|^2=\left| \CE \right|^2$:
-\begin{align}
-\left| \CE \right| ^2 &\propto \frac{1}{\frac{4}{w_0^4}+\frac{k^2}{4d_{\mathrm{eff}}^2}} \\
-&\propto \frac{1}{\frac{4}{w_0^4}+\frac{k^2 \delta z^2}{4f^4}} \\
-&\propto \frac{1}{1+\delta z^2 \frac{k^2 w_0^4}{16f^4}} \\
-&\propto \frac{1}{1+\delta z^2/\sigma_{\parallel}^2}
-\end{align}
-On retrouve bien la lorentzienne avec $\sigma_{\parallel}=4 \sigma_{\perp} / \mathrm{ON}$, c'est-à-dire la distance de rayleigh. Interprétation: Magati2008 et Magati2009 montrent que dans une géométrie sans lentille, et à grande distance (régime de Fraunhofer), les grains de \speckle\ s'apparentent à des tubes de lumière de corrélation longitudinale tendant vers l'infini (ils font de la physique avec les mains pour expliquer pourquoi). Avec une lentille, ce régime se retrouve autour du plan focal, sur une distance donnée par la longueur de Rayleigh. La forme lorentzienne est aussi typique d'effets longitudinaux en optique gaussienne autour du plan de focalisation.
-\end{comment}
+
 
 
 
@@ -213,6 +263,8 @@ où l'on reconnaît la fonction de corrélation \ref{eq:correlation_3D_monochrom
 
 
 %%%% end
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -222,89 +274,33 @@ où l'on reconnaît la fonction de corrélation \ref{eq:correlation_3D_monochrom
 
 
 
-
-\section{Application du théorème de Wick à un \speckle }
-\subsection{Fonction de corrélation à deux corps des fluctuations d'intensité}
-
-\begin{align}
-\overline{\delta I (\mathbf{x}_1) \delta I(\mathbf{x}_2)} &= \overline{(I(\mathbf{x}_1)-\overline{I}(\mathbf{x}_1)) (I(\mathbf{x}_2)-\overline{I}(\mathbf{x}_2))} \\
-&= \overline{I(\mathbf{x}_1)I(\mathbf{x}_2) - I(\mathbf{x}_1) \overline{I}(\mathbf{x}_2) - \overline{I}(\mathbf{x}_1) I(\mathbf{x}_2) + \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2)} \\
-&=\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)} - \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2)
-\end{align}
-
-Appliquons alors le théorème de Wick au terme $\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)}$ en faisant apparaître l'amplitude du champ:
-\begin{align}
-\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)} &= \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)E(\mathbf{x}_2)E^*(\mathbf{x}_2)} \\
-&= \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)} \: \overline{E(\mathbf{x}_2)E^*(\mathbf{x}_2)} + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)} \: \overline{E(\mathbf{x}_2)E^*(\mathbf{x}_1)} \\
-&= \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2) + \left| \overline{E(\mathbf{x}_1) E^*(\mathbf{x}_2)} \right|^2
-\end{align}
-
-On détermine alors que la fonction de corrélation à deux corps des fluctuations d'intensité s'écrit sous la forme:
-\begin{equation}
-\overline{\delta I(\mathbf{x}_1) \delta I(\mathbf{x}_2)} = \left| \overline{E(\mathbf{x}_1) E^*(\mathbf{x}_2)} \right|^2
-\label{eq:theoreme_wick_2corps}
-\end{equation}
-
-
-\subsection{Fonction de corrélation à trois corps des fluctuations d'intensité}
-
-
-\begin{align}
-\overline{\delta I(\mathbf{x}_1) \delta I(\mathbf{x}_2) \delta I(\mathbf{x}_3)} &= \overline{(I(\mathbf{x}_1)-\overline{I}(\mathbf{x}_1))(I(\mathbf{x}_2)-\overline{I}(\mathbf{x}_2))(I(\mathbf{x}_3)-\overline{I}(\mathbf{x}_3))} \\
-&= \overline{I(\mathbf{x}_1)I(\mathbf{x}_2)I(\mathbf{x}_3)} +2 \overline{I}(\mathbf{x}_1)\overline{I}(\mathbf{x}_2)\overline{I}(\mathbf{x}_3) \\
-\nonumber & \quad - \overline{I(\mathbf{x}_1)I(\mathbf{x}_2)}\:\overline{I}(\mathbf{x}_3) - \overline{I(\mathbf{x}_2)I(\mathbf{x}_3)}\:\overline{I}(\mathbf{x}_1)- \overline{I(\mathbf{x}_3)I(\mathbf{x}_1)}\:\overline{I}(\mathbf{x}_2) 
-\end{align}
-
-De même que dans la section précédente, appliquons le théorème de Wick au premier terme $\overline{I(\mathbf{x}_1) I(\mathbf{x}_2) I(\mathbf{x}_3)}$ de l'équation précédente:
-\begin{align}
-\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)I(\mathbf{x}_3)} &= \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)E(\mathbf{x}_2)E^*(\mathbf{x}_2)E(\mathbf{x}_3)E^*(\mathbf{x}_3)} \\
-&= \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_3)} \\
-\nonumber & \quad + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_1)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_2)} \\
-\nonumber & \quad + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_1)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_3)} \\
-\nonumber & \quad + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_3)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)} \\
-\nonumber & \quad + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)} \\
-\nonumber & \quad + \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_3)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_1)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_2)} \\
-\nonumber&= \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2) \overline{I}(\mathbf{x}_3) +2 \mathrm{Re}\left[ \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)}\:\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)}\:\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)} \right] \\
-& \quad + \overline{I}(\mathbf{x}_1) \left|\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)}\right|^2 + \overline{I}(\mathbf{x}_2) \left|\overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)}\right|^2 + \overline{I}(\mathbf{x}_3) \left|\overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)}\right|^2
-\end{align}
-
-On obtient alors 
-\begin{align}
-\overline{\delta I(\mathbf{x}_1) \delta I(\mathbf{x}_2) \delta I(\mathbf{x}_3)} &= 3 \overline{I}(\mathbf{x}_1) \overline{I}(\mathbf{x}_2) \overline{I}(\mathbf{x}_3)\\
-\nonumber & \quad + \overline{I}(\mathbf{x}_1) \left( \left|\overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)} \right|^2 -\overline{I(\mathbf{x}_2)I(\mathbf{x}_3)}\right) \\
-\nonumber & \quad + \overline{I}(\mathbf{x}_2) \left( \left|\overline{E(\mathbf{x}_1)E^*(\mathbf{x}_3)}\right|^2 - \overline{I(\mathbf{x}_1)I(\mathbf{x}_3)}\right)\\
-\nonumber & \quad + \overline{I}(\mathbf{x}_3) \left(\left|\overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)}\right|^2 -\overline{I(\mathbf{x}_1)I(\mathbf{x}_2)}\right)\\
-\nonumber & \quad + 2\mathrm{Re}\left[ \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)} \: \overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)} \: \overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)}\right] \\
-&= 2\mathrm{Re}\left[ \overline{E(\mathbf{x}_1)E^*(\mathbf{x}_2)} \: \overline{E(\mathbf{x}_2)E^*(\mathbf{x}_3)} \: \overline{E(\mathbf{x}_3)E^*(\mathbf{x}_1)}\right]
-\label{eq:wick_3corps}
-\end{align}
-en appliquant le théorème de Wick à la fonction de corrélation à deux corps de l'intensité.
 
 
 
 
 
 \section{Calcul complet de la fonction de corrélation en amplitude à deux corps}
-L'outil de base permettant de décrire les propriétés spatiales d'un champ de \speckle\ est la fonction de corrélation à deux corps de l'amplitude rayonnée. Celle-ci s'écrit:
+Notons $\xd=\lbrace x,y,z=d\rbrace$ et $\xd'=\lbrace x',y',z=d'\rbrace$. L'outil de base permettant de décrire les propriétés spatiales d'un champ de \speckle\ est la fonction de corrélation à deux corps de l'amplitude rayonnée. Celle-ci s'écrit:
 \begin{align}
-\overline{E(\mathbf{x}_1,\lambda_1)E^*(\mathbf{x}_2,\lambda_2)} &= \frac{e^{ik_1 \left( d_1+\frac{x_1^2+y_1^2}{2d_1} \right)}}{\lambda_1 d_1} \frac{e^{-i k_2 \left( d_2+ \frac{x_2^2+y_2^2}{2d_2} \right)}}{\lambda_2 d_2} \\
-\nonumber & \quad \times \int{\diff\xzero \diff\xzero' \: \overline{\tdiff(\xzero)\tdiff^*(\xzero')} \Ezero(\xzero) \Ezero^*(\xzero')} \\
-&\nonumber \quad \times e^{ik_1\frac{ \xzero^2}{2d_{\mathrm{eff,1}}}} e^{-ik_2\frac{ \xzero'^2}{2d_{\mathrm{eff,2}}}} e^{-ik_1 \frac{\mathbf{x}_1 . \xzero}{d_1}} e^{ik_2 \frac{\mathbf{x}_2 . \xzero'}{d_2}} \text{ ,}
+\overline{E(\xd,\lambda)E^*(\xd',\lambda')} &= \frac{e^{ik \left( d+\frac{x^2+y^2}{2d} \right)}}{\lambda d} \frac{e^{-i k' \left( d'+ \frac{x'^2+y'^2}{2d'} \right)}}{\lambda' d'} \\
+\nonumber & \quad \times \int{\diff\xzero \diff\xzero' \: \overline{\tdiff(\xzero, \lambda)\tdiff^*(\xzero', \lambda')} \Ezero(\xzero,\lambda) \Ezero^*(\xzero',\lambda')} \\
+&\nonumber \quad \times e^{ik\frac{ \xzero^2}{2\deff}} e^{-ik'\frac{ \xzero'^2}{2\deff'}} e^{-ik \frac{\xd . \xzero}{d}} e^{ik' \frac{\xd' . \xzero'}{d'}} \text{ ,}
 \end{align}
-où le moyennage d'ensemble $\overline{\:\cdots\:}$ n'agit que sur les transmissions $\tdiff$.
+dans le cas général d'un éclairement polychromatique, et où le moyennage d'ensemble $\overline{\:\cdots\:}$ n'agit que sur les transmissions $\tdiff$.
 
 Effectuons alors le changement de variables $\lbrace \xzero,\xzero' \rbrace\rightarrow \lbrace \xc=(\xzero+\xzero')/2 ,\: \Deltax=\xzero'-\xzero \rbrace$. En réarrangeant les termes de phase, on peut réécrire l'expression précédente sous la forme:
 \begin{align}
-\overline{E(\mathbf{x}_1,\lambda_1)E^*(\mathbf{x}_2,\lambda_2)} &= \frac{e^{ik_1\left( d_1 + \frac{x_1^2+y_1^2}{2d_1} \right)} e^{-ik_2 \left( d_2 + \frac{x_2^2+y_2^2}{2d_2}\right)}}{\lambda_1 \lambda_2 d_1 d_2} \\
-\nonumber & \times \int{\diff\xc \diff\Deltax \: \Cdiff(\Deltax) \Ezero(\xc-\Deltax/2)\Ezero^*(\xc+\Deltax/2)} e^{i\frac{\xc^2}{2} (\frac{k_1}{d_{\mathrm{eff,1}}} - \frac{k_2}{d_{\mathrm{eff,2}}})}\\
-\nonumber & \times  e^{-i \frac{\Deltax . \xc}{2} ( \frac{k_1}{d_{\mathrm{eff,1}}} + \frac{k_2}{d_{\mathrm{eff,2}}})} e^{i \frac{\Deltax^2}{8}(\frac{k_1}{d_{\mathrm{eff,1}}} - \frac{k_2}{d_{\mathrm{eff,2}}})} e^{i\xc.(\frac{k_2 \mathbf{x}_2}{d_2} - \frac{k_1 \mathbf{x}_1}{d_1})} e^{i\frac{\Deltax}{2} . (\frac{k_1 \mathbf{x}_1}{d_1} + \frac{k_2 \mathbf{x}_2}{d_2})} \text{.}
+\overline{E(\xd,\lambda)E^*(\xd',\lambda')} &= \frac{e^{ik\left( d + \frac{x^2+y^2}{2d} \right)} e^{-ik' \left( d' + \frac{x'^2+y'^2}{2d'}\right)}}{\lambda \lambda' d d'} \\
+\nonumber & \times \int{\diff\xc \diff\Deltax \: \Cdiff(\Deltax,\lambda,\lambda') \Ezero(\xc-\Deltax/2,\lambda)\Ezero^*(\xc+\Deltax/2,\lambda')} \\
+& \nonumber \times e^{i\frac{\xc^2}{2} (\frac{k}{\deff} - \frac{k'}{\deff'})} e^{-i \frac{\Deltax . \xc}{2} ( \frac{k}{\deff} + \frac{k'}{\deff'})} e^{i \frac{\Deltax^2}{8}(\frac{k}{\deff} - \frac{k'}{\deff'})} \\
+&\nonumber \times  e^{i\xc.(\frac{k' \xd'}{d'} - \frac{k \xd}{d})} e^{i\frac{\Deltax}{2} . (\frac{k \xd}{d} + \frac{k' \xd'}{d'})} \text{.}
 \end{align}
 
-Supposons à présent que la taille des grains du diffuseur est très petite devant la taille typique de l'éclairement incident, c'est-à-dire qu'à l'échelle de variation de $\Cdiff$, l'éclairement incident est constant: $\Ezero(\xc-\Deltax/2) \Ezero^*(\xc+\Deltax/2) \approx \Ezero(\xc) \Ezero^*(\xc) = I_0(\xc)$. En supprimant le terme de phase en $\Deltax^2$ supposé petit devant toutes les autres échelles de longueur, on obtient finalement l'expression:
+Supposons à présent que la taille des grains du diffuseur est très petite devant la taille typique de l'éclairement incident, c'est-à-dire qu'à l'échelle de variation de $\Cdiff$, l'éclairement incident est constant: $\Ezero(\xc-\Deltax/2,\lambda) \Ezero^*(\xc+\Deltax/2,\lambda') \approx \Ezero(\xc,\lambda) \Ezero^*(\xc,\lambda') = I_0(\xc)$ en supposant également que les champs sont de même intensité. En supprimant le terme de phase en $\Deltax^2$ supposé petit devant toutes les autres échelles de longueur, on obtient finalement l'expression:
 \begin{align}
-\overline{E(\mathbf{x}_1,\lambda_1)E^*(\mathbf{x}_2,\lambda_2)} &= \frac{e^{ik_1\left( d_1 + \frac{x_1^2+y_1^2}{2d_1} \right)} e^{-ik_2 \left( d_2 + \frac{x_2^2+y_2^2}{2d_2}\right)}}{\lambda_1 \lambda_2 d_1 d_2} \\
-\nonumber & \quad \times \int{\diff\xc \: I_0(\xc) e^{i\frac{\xc^2}{2}(\frac{k_1}{d_{\mathrm{eff,1}}} - \frac{k_2}{d_{\mathrm{eff,2}}})} e^{i \xc. (\frac{k_2 \mathbf{x}_2}{d_2}-\frac{k_1 \mathbf{x}_1}{d_1})}} \\
-\nonumber & \quad \times \int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{-i\frac{\Deltax . \xc}{2}(\frac{k_1}{d_{\mathrm{eff,1}}} + \frac{k_2}{d_{\mathrm{eff,2}}})} e^{i\frac{\Deltax}{2}. (\frac{k_1 \mathbf{x}_1}{d_1} +\frac{k_2 \mathbf{x}_2}{d_2})}} \text{ .}
+\overline{E(\xd,\lambda)E^*(\xd',\lambda')} &= \frac{e^{ik\left( d + \frac{x^2+y^2}{2d} \right)} e^{-ik' \left( d' + \frac{x'^2+y'^2}{2d'}\right)}}{\lambda \lambda' d d'} \\
+\nonumber & \quad \times \int{\diff\xc \: I_0(\xc) e^{i\frac{\xc^2}{2}(\frac{k}{\deff} - \frac{k'}{\deff'})} e^{i \xc. (\frac{k' \xd'}{d'}-\frac{k \xd}{d})}} \\
+\nonumber & \quad \times \int{\diff\Deltax \: \Cdiff(\Deltax,\lambda,\lambda') \: e^{-i\frac{\Deltax . \xc}{2}(\frac{k}{\deff} + \frac{k'}{\deff'})} e^{i\frac{\Deltax}{2}. (\frac{k \xd}{d} +\frac{k' \xd'}{d'})}} \text{ .}
 \label{eq:fonction_correlation_generale}
 \end{align}
 
@@ -337,53 +333,53 @@ Aux alentours du plan de Fourier, $\deff\rightarrow\infty$ et il est alors possi
 
 \section{Fonctions de corrélation d'un \speckle\ monochromatique}
 \subsection{Corrélation transverse le long de l'axe optique}
-Intéressons-nous à présent à la forme de la fonction de corrélation transverse d'un \speckle\ monochromatique en fonction de la distance $d$ au diffuseur. Cette fonction décrit la corrélation entre deux points situés dans le même plan orthogonal à l'axe optique et proches de ce dernier. Notons $\xd=\lbrace x,y,z=d\rbrace$ et $\mathbf{0}=\lbrace 0,0,d \rbrace$, la fonction de corrélation recherchée s'écrit alors:
+Intéressons-nous à présent à la forme de la fonction de corrélation transverse d'un \speckle\ monochromatique en fonction de la distance $d$ au diffuseur. Cette fonction décrit la corrélation entre deux points situés dans le même plan orthogonal à l'axe optique et proches de ce dernier. Notons $\xd=\lbrace x,y,z=d\rbrace$ et $\zerod=\lbrace 0,0,d \rbrace$, la fonction de corrélation en amplitude recherchée s'écrit alors:
 \begin{align}
-\overline{E(\xd,\lambda)E^*(\mathbf{0},\lambda)} &= \frac{e^{i k \xd^2/2d}}{\lambda^2 d^2} \int{\diff\xc \: I_0(\xc) \: e^{-i k \frac{\xc .\xd}{d}}} \\
+\overline{E(\xd,\lambda)E^*(\zerod,\lambda)} &= \frac{e^{i k (x^2+y^2)/2d}}{\lambda^2 d^2} \int{\diff\xc \: I_0(\xc) \: e^{-i k \frac{\xc .\xd}{d}}} \\
 &\nonumber \quad \times \int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{-ik \frac{\Deltax . \xc}{\deff}} \: e^{ik \frac{\Deltax . \xd}{2d}}} \text{ ,}
 \end{align}
 d'après l'équation \ref{eq:fonction_correlation_generale}.
 
 En supposant que les grains du diffuseur sont petits devant la taille typique de l'éclairement incident, il est possible de négliger la dernière exponentielle complexe et on obtient:
 \begin{equation}
-\overline{E(\xd,\lambda)E^*(\mathbf{0},\lambda)} = \frac{e^{i k \xd^2/2d}}{\lambda^2 d^2} \int{\diff\xc \: I_0(\xc) \: e^{-i k \frac{\xc .\xd}{d}}}  \int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{-ik \frac{\Deltax . \xc}{\deff}} } \text{ ,}
+\overline{E(\xd,\lambda)E^*(\zerod,\lambda)} = \frac{e^{i k (x^2+y^2)/2d}}{\lambda^2 d^2} \int{\diff\xc \: I_0(\xc) \: e^{-i k \frac{\xc .\xd}{d}}}  \int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{-ik \frac{\Deltax . \xc}{\deff}} } \text{ ,}
 \end{equation}
 puis intervertissons les intégrales:
 \begin{align}
-\overline{E(\xd,\lambda)E^*(\mathbf{0},\lambda)}&=\frac{e^{ik \xd^2/2d}}{\lambda^2 d^2} \int{\diff\Deltax \: \Cdiff(\Deltax) \int{\diff\xc \: I_0(\xc) \: e^{-i\frac{k\xc}{d} \left(\xd+\frac{\Deltax d}{\deff}\right)}}} \\
-&= \frac{e^{ik\xd^2/2d}}{\lambda^2 d^2} \int{\diff\Deltax \: \Cdiff(\Deltax) \: \widetilde{I_0}\left( \frac{k}{d}\left[ \xd + \frac{\Deltax d}{\deff} \right]\right)} \text{ ,}
+\overline{E(\xd,\lambda)E^*(\zerod,\lambda)}&=\frac{e^{ik (x^2+y^2)/2d}}{\lambda^2 d^2} \int{\diff\Deltax \: \Cdiff(\Deltax) \int{\diff\xc \: I_0(\xc) \: e^{-i\frac{k\xc}{d} \left(\xd+\frac{\Deltax d}{\deff}\right)}}} \\
+&= \frac{e^{ik(x^2+y^2)/2d}}{\lambda^2 d^2} \int{\diff\Deltax \: \Cdiff(\Deltax) \: \widetilde{I_0}\left( \frac{k}{d}\left[ \xd + \frac{\Deltax d}{\deff} \right]\right)} \text{ ,}
 \end{align}
-en faisant apparaître $\widetilde{I_0}(\boldsymbol{\xi})=\int{\diff\xc \: I_0(\xc) e^{i\xc.\boldsymbol{\xi}}}$ la transformée de Fourier de l'éclairement incident et en utilisant le changement de variable $\xc\rightarrow - \xc$.
+en faisant apparaître $\widetilde{I_0}(\boldsymbol{\xi})=\int{\diff\xc \: I_0(\xc) e^{i\xc.\boldsymbol{\xi}}}$ la transformée de Fourier de l'éclairement incident grâce au changement de variable $\xc\rightarrow - \xc$.
 
 Procédons maintenant à un nouveau changement de variable $\Delta\mathbf{p}=\Deltax d/\deff$. La fonction de corrélation se réécrit:
 \begin{align}
-\overline{E(\xd,\lambda) E^*(\mathbf{0},\lambda)}&= \frac{e^{ik \xd^2/2d}}{\lambda^2 d^2} \int{\diff\Delta\mathbf{p} \:\frac{\deff^2}{d^2} \widetilde{I_0}\left( \frac{k}{d}[\xd+\Delta\mathbf{p}]\right) \: \Cdiff\left( \Delta\mathbf{p}\frac{\deff}{d}\right)}\\
-&=\frac{e^{ik \xd^2/2d}}{\lambda^2 d^2} \frac{\deff^2}{d^2} \widetilde{I_0}\left(\xd\frac{\deff}{d} \right) \ast \Cdiff\left(\frac{k\xd}{d}\right) \text{ ,}
+\overline{E(\xd,\lambda) E^*(\zerod,\lambda)}&= \frac{e^{ik (x^2+y^2)/2d}}{\lambda^2 d^2} \int{\diff\Delta\mathbf{p} \:\frac{\deff^2}{d^2} \widetilde{I_0}\left( \frac{k}{d}[\xd+\Delta\mathbf{p}]\right) \: \Cdiff\left( \Delta\mathbf{p}\frac{\deff}{d}\right)}\\
+&=\frac{e^{ik (x^2+y^2)/2d}}{\lambda^2 d^2} \frac{\deff^2}{d^2} \widetilde{I_0}\left(\xd\frac{\deff}{d} \right) \ast \Cdiff\left(\frac{k\xd}{d}\right) \text{ ,}
 \end{align}
 où le symbole $\ast$ dénote le produit de convolution. On retrouve ainsi le résultat \ref{eq:correlation_transverse_speckle} annoncé au chapitre \ref{ch:Speckle}. 
 
 Aux alentours du plan de Fourier, $\deff\rightarrow\infty$ et on peut donc assimiler la contribution de la corrélation du diffuseur $\Cdiff(\xf\deff/d) \times \deff^2/d^2$ à une distribution de Dirac $\delta(\xf)$. On détermine alors que la fonction de corrélation transverse en amplitude aux alentours du plan de Fourier est déterminée par la transformée de Fourier de l'éclairement incident:
 \begin{equation}
-\overline{E(\xf,\lambda)E^*(\mathbf{0},\lambda)} \propto \widetilde{I_0}\left(\frac{k\xf}{f} \right) \text{ .}
+\overline{E(\xf,\lambda)E^*(\zerof,\lambda)} \propto \widetilde{I_0}\left(\frac{k\xf}{f} \right) \text{ .}
 \end{equation}
 
 
 
 \subsection{Corrélation tridimensionnelle aux alentours du plan de Fourier}
-Notons $\Deltax_{\perp}=\lbrace \Delta x, \Delta y\rbrace$ et $\mathbf{0}=\lbrace 0,0 \rbrace$ dans le plan transverse $\lbrace x,y \rbrace$. La fonction de corrélation à deux corps normalisée décrivant les propriétés spatiales d'un \speckle\ monochromatique de longueur d'onde $\lambda$ à trois dimensions est définie par 
+Notons $\mathbf{x}_{\perp}=\lbrace x,y\rbrace$, $\Deltax_{\perp}=\lbrace \Delta x, \Delta y\rbrace$ et $\mathbf{0}=\lbrace 0,0 \rbrace$ dans le plan transverse $\lbrace x,y \rbrace$. La fonction de corrélation à deux corps normalisée décrivant les propriétés spatiales d'un \speckle\ monochromatique de longueur d'onde $\lambda$ à trois dimensions est définie par 
 \begin{equation}
-c_{\mathrm{3D}}(\Delta \mathbf{x}_{\perp},\delta z)=\frac{\overline{\delta I(\Delta \mathbf{x}_{\perp}, f+\Delta z) \delta I(\mathbf{0}, f)}}{\overline{\delta I^2}} \text{ ,}
+c_{\mathrm{3D}}(\Deltax_{\perp},\delta z)=\frac{\overline{\delta I(\mathbf{x}_{\perp} + \Deltax_{\perp}, d+\delta z) \delta I(\mathbf{x}_{\perp}, d)}}{\overline{\delta I^2}} \text{.,}
 \end{equation}
-aux alentours du plan de Fourier ($d\approx f$ et $\delta z \ll \delta f$) et proche de l'axe optique ($|\mathbf{x}_{\perp}|\ll \speckleext$). La fonction de corrélation $\overline{\delta I(\Delta\mathbf{x}_{\perp},f+\delta z) \delta I(\mathbf{0}, f)}$ est obtenue à l'aide du théorème de Wick \ref{eq:theoreme_wick_2corps}. Celle-ci s'écrit
+Aux alentours du plan de Fourier ($d\approx f$ et $\delta z \ll \delta f$) et proche de l'axe optique ($|\mathbf{x}_{\perp}|\ll \speckleext$), le numérateur de cette fonction de corrélation s'écrit $\overline{\delta I(\Delta\mathbf{x}_{\perp},f+\delta z) \delta I(\mathbf{0}, f)}$ et peut être calculé à l'aide du théorème de Wick \ref{eq:theoreme_wick_2corps}. Cette nouvelle fonction de corrélation vaut:
 \begin{align}
 \overline{\delta I (\Deltax_{\perp}, f+\delta z) \delta I(\mathbf{0},f)} &= \left| \overline{E(\Deltax_{\perp},f+\delta z)E^*(\mathbf{0},f)} \right|^2 \\
 &= \left| \frac{1}{\lambda^2 f^2} \int{\diff\xc \: I_0(\xc) \: e^{-i\frac{\xc^2 k \delta z}{2f^2}} \: e^{-i\frac{k \xc. \Deltax_{\perp}}{f}}}\right. \\
-&\nonumber \quad\times \left.\int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{i\frac{\Deltax . \xc k \delta z}{2 f^2}} \: e^{i\frac{k\Deltax . \Deltax_{\perp}}{2f}}} \right|^2
+&\nonumber \quad\times \left.\int{\diff\Deltax \: \Cdiff(\Deltax) \: e^{i\frac{\Deltax . \xc k \delta z}{2 f^2}} \: e^{i\frac{k\Deltax . \Deltax_{\perp}}{2f}}} \right|^2 \text{ .}
 \end{align}
 
 Comparons alors les différents termes de phase. Toujours en supposant que la taille des grains du diffuseur est très petite devant la taille typique de l'éclairement incident, c'est-à-dire $\Deltax \ll \xc$, il est possible de négliger la contribution des exponentielles complexes de la seconde intégrale. L'expression de la fonction de corrélation se réduit alors à
 \begin{align}
-{\left| \overline{E(\Deltax_{\perp},f+\delta z)E^*(\mathbf{0},f}\right|}^2 &= {\left| \frac{1}{\lambda^2 f^2}  \int{\diff\Deltax \: \Cdiff(\Deltax)} \int{\diff\xc \: I_0(\xc) \: e^{-i\frac{\xc^2 k \delta z}{2f^2}} \: e^{-i \frac{k \xc . \Deltax_{\perp}}{f}}} \right|}^2 \\
+{\left| \overline{E(\Deltax_{\perp},f+\delta z)E^*(\mathbf{0},f)}\right|}^2 &= {\left| \frac{1}{\lambda^2 f^2}  \int{\diff\Deltax \: \Cdiff(\Deltax)} \int{\diff\xc \: I_0(\xc) \: e^{-i\frac{\xc^2 k \delta z}{2f^2}} \: e^{-i \frac{k \xc . \Deltax_{\perp}}{f}}} \right|}^2 \\
 &= \frac{1}{\lambda^4 d^4} \left|\int{\diff\Deltax \: \Cdiff(\Deltax)}\right|^2 \: \left|\int{\diff\xc \: I_0(\xc) \: e^{-i\frac{\xc^2 k\delta z}{2f^2}} \: e^{-i\frac{k\xc.\Deltax_{\perp}}{f}}} \right|^2 \text{ .}
 \end{align}
 
@@ -410,7 +406,7 @@ La fonction de corrélation à trois corps des fluctuations d'intensité peut ê
 
 Comme explicité dans la section \ref{sc:speckle_non_paraxial}, la fonction de corrélation transverse à deux corps des fluctuations d'intensité $c_{\mathrm{2D}}$ est très bien décrite par une gaussienne dont la demi-largeur à $1/e$ est donnée par $\sigmap=\SI{0.5}{\micro\metre}$. Il est donc possible d'écrire que
 \begin{equation}
-\left|\CE(\Deltax_{\perp})\right|=|\CE(\mathbf{0})| \times e^{-\Deltax_{\perp}^2/2\sigmap^2} \text{ .}
+\left|\overline{E(\xf,\lambda)E^*(\zerof,\lambda)}\right|=\left|\overline{E(\zerof,\lambda)E^*(\zerof,\lambda)} \right| \times e^{-\xf^2/2\sigmap^2} \text{ .}
 \end{equation}
 
 De plus, les calculs de fonction de corrélation à deux corps en amplitude menés dans la section précédente montrent que la phase de la fonction de corrélation à trois corps s'annule par circularité. On trouve alors que la fonction de corrélation à trois corps normalisée s'exprime:
@@ -419,25 +415,31 @@ c_{\mathrm{3I}}(\mathbf{x}_1,\mathbf{x}_2,\mathbf{x}_3) &= \frac{\overline{\delt
 &= 2 e^{-\frac{(\mathbf{x}_2-\mathbf{x}_1)^2}{2\sigmap^2}} \: e^{-\frac{(\mathbf{x}_3-\mathbf{x}_2)^2}{2\sigmap^2}} \: e^{-\frac{(\mathbf{x}_1-\mathbf{x}_3)^2}{2\sigmap^2}} \text{ .}
 \end{align}
 
+
+
+
+
+
 \section{Fonction de corrélation d'un \speckle\ bichromatique}
-Intéressons-nous à présent à la corrélation entre deux champs de \speckle\ générés par le même diffuseur, à deux longueurs d'onde différentes et observés à la même position physique $\lbrace \mathbf{x}_{\perp}, d \rbrace$.
+\subsection{Cas d'un spectre bichromatique étroit}
+Intéressons-nous à présent à la corrélation entre deux champs de \speckle\ générés par le même diffuseur, à deux longueurs d'onde $\lambda$ et $\lambda'$ légèrement différentes, et observés à la même position physique $\lbrace \mathbf{x}_{\perp}, d=f+\delta z \rbrace$.
 
 
 La fonction de corrélation normalisée décrivant les similitudes entre deux champs de tavelures réalisés par le même diffuseur à deux longueurs d'onde est définie par
 \begin{equation}
-c_{2\lambda}(\mathbf{x}_{\perp},d,\lambda_1, \lambda_2)=\frac{\overline{\delta I (\mathbf{x}_{\perp},d,\lambda_1) \delta I (\mathbf{x}_{\perp},d,\lambda_2)}}{\overline{I(\mathbf{x}_{\perp},d,\lambda_1)}\:\overline{I(\mathbf{x}_{\perp},d,\lambda_2)}}
+c_{2\lambda}(\mathbf{x}_{\perp},d,\lambda, \lambda')=\frac{\overline{\delta I (\mathbf{x}_{\perp},d,\lambda) \delta I (\mathbf{x}_{\perp},d,\lambda')}}{\overline{I(\mathbf{x}_{\perp},d,\lambda)}\:\overline{I(\mathbf{x}_{\perp},d,\lambda')}}
 \end{equation}
 
 La fonction de corrélation des fluctuations d'intensité apparaissant au numérateur peut être obtenue à l'aide du théorème de Wick et vaut:
 \begin{align}
-\left| \overline{E(\mathbf{x}_{\perp},f+\delta z,\lambda_1)E^*(\mathbf{x}_{\perp},f+\Delta z,\lambda_2)} \right|^2 &= \left| \frac{1}{\lambda_1\lambda_2 d^2} \int{\diff\xc \: I_0(\xc) \: e^{-i\frac{\xc^2 \delta z}{2f^2}(k_1-k_2)} \: e^{i \frac{\mathbf{x}_{\perp}.\xc}{f}(k_2-k_1)}}\right. \\
-&\nonumber \quad\times \left. \int{\diff\Deltax \: \Cdiff(\Deltax, \lambda_1, \lambda_2)\: e^{i \frac{\Deltax.\xc \delta z}{f^2}\frac{k_1+k_2}{2}} \: e^{i\frac{\Deltax.\mathbf{x}_{\perp}}{f}\frac{k_1+k_2}{2}}}\right|^2
+\left| \overline{E(\mathbf{x}_{\perp},f+\delta z,\lambda)E^*(\mathbf{x}_{\perp},f+\delta z,\lambda')} \right|^2 &= \left| \frac{1}{\lambda\lambda' d^2} \int{\diff\xc \: I_0(\xc) \: e^{-i\frac{\xc^2 \delta z}{2f^2}(k-k')} \: e^{i \frac{\mathbf{x}_{\perp}.\xc}{f}(k'-k)}}\right. \\
+&\nonumber \quad\times \left. \int{\diff\Deltax \: \Cdiff(\Deltax, \lambda, \lambda')\: e^{i \frac{\Deltax.\xc \delta z}{f^2}\frac{k+k'}{2}} \: e^{i\frac{\Deltax.\mathbf{x}_{\perp}}{f}\frac{k+k'}{2}}}\right|^2 \text{ .}
 \end{align}
 
-Posons $\lambda_1=\lambda$ et $\lambda_2=\lambda+\delta\lambda$. Nous avons alors
+Posons $\lambda'=\lambda+\delta\lambda$, avec $\delta\lambda\ll\lambda$. Nous avons alors
 \begin{align}
-\frac{k_1+k_2}{2} &\approx \frac{2\pi}{\lambda} =k \quad \text{et}\\
-k_1-k_2 &= \frac{2\pi}{\lambda} \frac{\delta\lambda}{\lambda} = k \frac{\delta\lambda}{\lambda}
+\frac{k+k'}{2} &\approx \frac{2\pi}{\lambda} =k \quad \text{et}\\
+k-k' &\approx \frac{2\pi}{\lambda} \frac{\delta\lambda}{\lambda} = k \frac{\delta\lambda}{\lambda}
 \end{align}
 au premier ordre.
 
@@ -450,8 +452,10 @@ qui permettent alors de négliger les exponentielles complexes de la seconde int
 
 La fonction de corrélation bichromatique de simplifie alors en:
 \begin{align}
-\left| \overline{E(\mathbf{x}_{\perp},f+\delta z,\lambda_1)E^*(\mathbf{x}_{\perp},f+\Delta z,\lambda_2)} \right|^2 &= \left| \frac{1}{\lambda_1 \lambda_2 f^2} \int{\diff\xc \: I_0(\xc) \: e^{-ik\frac{\xc^2 \delta z}{2f^2} \frac{\delta\lambda}{\lambda}} \: e^{ik \frac{\mathbf{x}_{\perp}.\xc}{f}\frac{\delta\lambda}{\lambda}}} \int{\diff\Deltax \: \Cdiff(\Deltax,\lambda_1,\lambda_2)} \right|^2 \\
-&= \frac{1}{\lambda_1^2 \lambda_2^2 f^4} \left| \int{\diff\Deltax \: \Cdiff(\Deltax,\lambda_1,\lambda_2)} \right|^2 \left|\int{\diff\xc \: I_0(\xc) \: e^{-ik\frac{\xc^2 \delta z}{2f^2} \frac{\delta\lambda}{\lambda}} \: e^{ik\frac{\mathbf{x}_{\perp}.\xc}{f}\frac{\delta\lambda}{\lambda}}} \right|^2
+\left| \overline{E(\mathbf{x}_{\perp},f+\delta z,\lambda)E^*(\mathbf{x}_{\perp},f+\delta z,\lambda')} \right|^2 &= \left| \frac{1}{\lambda \lambda' f^2} \int{\diff\xc \: I_0(\xc) \: e^{-ik\frac{\xc^2 \delta z}{2f^2} \frac{\delta\lambda}{\lambda}} \: e^{ik \frac{\mathbf{x}_{\perp}.\xc}{f}\frac{\delta\lambda}{\lambda}}} \right. \\
+\nonumber & \qquad \left. \times \int{\diff\Deltax \: \Cdiff(\Deltax,\lambda,\lambda')} \right|^2 \\
+&= \frac{1}{\lambda^2 \lambda'^2 f^4} \left| \int{\diff\Deltax \: \Cdiff(\Deltax,\lambda,\lambda')} \right|^2 \\
+\nonumber & \qquad \times\left|\int{\diff\xc \: I_0(\xc) \: e^{-ik\frac{\xc^2 \delta z}{2f^2} \frac{\delta\lambda}{\lambda}} \: e^{ik\frac{\mathbf{x}_{\perp}.\xc}{f}\frac{\delta\lambda}{\lambda}}} \right|^2
 \end{align}
 
 Rappelons à présent que l'intensité moyenne proche peut être déterminée et son expression aux alentours du centre du champ de \speckle\ est donnée par:
@@ -460,7 +464,7 @@ Rappelons à présent que l'intensité moyenne proche peut être déterminée et
 \end{equation}
 que nous pouvons utiliser afin de calculer la fonction de corrélation bichromatique normalisée. Cette dernière devient donc:
 \begin{align}
-c_{2\lambda}(\mathbf{x}_{\perp},\delta z,\lambda_1,\lambda_2) &= \frac{\left| \displaystyle\int{\diff\Deltax \: \Cdiff(\Deltax,\lambda_1,\lambda_2)}\right|^2}{\displaystyle\int{\diff\Deltax \: \Cdiff(\Deltax,\lambda_1)}\displaystyle\int{\diff\Deltax \: \Cdiff(\Deltax,\lambda_2)}} \\
+c_{2\lambda}(\mathbf{x}_{\perp},\delta z,\lambda,\lambda') &= \frac{\left| \displaystyle\int{\diff\Deltax \: \Cdiff(\Deltax,\lambda,\lambda')}\right|^2}{\displaystyle\int{\diff\Deltax \: \Cdiff(\Deltax,\lambda)}\displaystyle\int{\diff\Deltax \: \Cdiff(\Deltax,\lambda')}} \\
 &\nonumber \quad\times \frac{\left|\displaystyle\int{\diff\xc \: I_0(\xc) \: e^{-ik \frac{\xc^2 \delta z}{2f^2} \frac{\delta\lambda}{\lambda}} \: e^{ik\frac{\mathbf{x}_{\perp}.\xc}{f} \frac{\delta\lambda}{\lambda}}} \right|^2}{\left|\displaystyle\int{\diff\xc \: I_0(\xc)} \right|^2} \text{ ,}
 \end{align}
 et fait apparaître deux termes, le premier caractérisant une décorrélation liée à la propagation dans le diffuseur, et le second lié à un déphasage différent lors de la propagation en espace libre après diffraction.
@@ -478,3 +482,33 @@ c_{2\lambda}(\mathbf{x}_{\perp},\delta z,\lambda,\delta\lambda) &= \Cdiff(\mathb
 &= e^{-\delta\phi^2} c_{\mathrm{3D}}\left(\mathbf{x}_{\perp} \frac{\delta\lambda}{\lambda}, \delta z \frac{\delta\lambda}{\lambda}\right) \text{ ,}
 \end{align}
 en reconnaissant l'expression de la fonction de corrélation tridimensionnelle d'un \speckle\ monochromatique. On retrouve ainsi le résultat \ref{eq:correlation_2_lambda} annoncé dans le chapitre \ref{ch:Speckle}.
+
+
+
+\subsection{Extension au cas d'un spectre arbitraire}
+Il est possible d'étendre l'étude menée précédemment au cas d'un spectre de forme arbitraire. L'intensité totale $I$ résulte alors de l'ensemble des rayonnements émis à toutes les fréquences:
+\begin{equation}
+I=\int{\diff\nu \: I_{\nu}} \text{ ,}
+\end{equation}
+où $I_{\nu}$ est la densité spectrale d'intensité, reliée à la densité spectrale d'amplitude par $I_{\nu}=E_{\nu}E^*_{\nu}$. 
+
+L'intensité totale moyenne est obtenue de manière directe en moyennant les densités spectrales d'intensité:
+\begin{equation}
+\overline{I}=\int{\diff\nu \: \overline{I_{\nu}}} \text{ .}
+\end{equation}
+
+La variance est obtenue en calculant le moment d'ordre 2 de l'intensité totale, qui s'écrit:
+\begin{align}
+\overline{I^2} &= \overline{\int{\diff\nu\diff\nu' \: I_{\nu} I_{\nu'}}} \\
+&= \int{\diff\nu\diff\nu' \: \overline{I_{\nu} I_{\nu'}}} \\
+&=\int{\diff\nu\diff\nu' \: \left( \overline{E_{\nu} E^*_{\nu}} \: \overline{E_{\nu'} E^*_{\nu'}} + \overline{E_{\nu} E^*_{\nu'}} \: \overline{E_{\nu'} E^*_{\nu}} \right)} \\
+&= \overline{I}^2 + \int{\diff\nu\diff\nu' \: \overline{E_{\nu}E^*_{\nu'}}\:\overline{E_{\nu'}E^*_{\nu}}} \text{ ,}
+\end{align}
+à l'aide du théorème de Wick appliqué aux densités spectrales d'amplitude. On fait ainsi apparaître la fonction de corrélation $\overline{E_{\nu}E^*_{\nu'}}$ des densités spectrales d'amplitude.
+
+On détermine finalement que la variance de l'intensité du champ de \speckle\ est donnée par:
+\begin{align}
+\sigma_I^2 &= \overline{I^2} - \overline{I}^2 \\
+&= \int{\diff\nu\diff\nu' \: \left|\overline{E_{\nu}E^*_{\nu'}} \right|^2} \text{ ,}
+\end{align}
+et est donc directement reliée à la fonction de corrélation à deux corps bichromatique identifiée précédemment.
