@@ -1,126 +1,127 @@
 \babel@toc {french}{}
-\contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Localisation d'atomes ultra-froids}{7}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Déroulement de la thèse}{9}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Contribution scientifique}{9}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Contexte expérimental et déroulement de ma thèse}{10}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Structure du manuscrit}{11}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Phénomène de localisation d'Anderson}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Diffusion et interférences}{13}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Phénomène de diffusion}{13}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Localisation faible}{16}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Suppression du transport: Localisation d'Anderson}{18}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Localisation des atomes froids}{20}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Etudes expérimentales de la localisation d'Anderson}{20}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}L'approche des atomes froids}{22}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Vers l'étude du régime critique}{26}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Etat de l'art de l'étude de la transition d'Anderson avec des atomes ultra-froids}{27}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Nécessité d'une spectroscopie pour sonder le régime critique}{32}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Production d'ondes de matière}{35}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Condensation de Bose-Einstein}{35}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Statistique de Bose-Einstein}{36}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Propriétés d'un condensat de Bose-Einstein}{38}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Processus d'interaction lumière-matière}{40}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Le rubidium \isotope [87]{Rb}}{40}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Potentiel magnétique}{42}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Forces lumineuses}{42}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Couplage radio-fréquence}{44}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Description d'un cycle expérimental}{46}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Présentation générale du dispositif}{46}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Première chambre}{46}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Chambre de science}{51}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Imagerie}{56}{subsection.3.3.4}%
-\contentsline {chapter}{\numberline {4}Mises à jour de l'expérience}{61}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Contributions au système informatique de l'expérience}{61}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Contrôle de l'expérience: passage à la suite Cicero}{62}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Développement d'une nouvelle interface d'acquisition et de traitement d'images}{63}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Calibration de la lévitation magnétique}{64}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Implémentation de la lévitation magnétique}{64}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Intervention sur le circuit de refroidissement}{66}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Calibration des champs par radio-fréquences}{67}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}\'Etude du potentiel de lévitation}{68}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Changement du laser infrarouge et calibration du piège optique}{74}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Changement du laser infrarouge fibré Ytterbium }{74}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{76}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{78}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Lois d'échelle du refroidissement évaporatif}{78}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Résultats de l'optimisation de l'évaporation}{83}{subsection.4.4.2}%
-\contentsline {chapter}{\numberline {5}Propriétés d'un désordre de type speckle}{89}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Génération d'un champ de speckle}{89}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Statistiques de l'intensité d'un speckle}{90}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Propriétés du diffuseur}{91}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Implémentation expérimentale}{93}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Propriétés spatiales d'un champ de speckle}{97}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Extension transverse du champ de speckle le long le l'axe optique}{97}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Longueur de corrélation transverse le long de l'axe optique}{99}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Longueur de corrélation longitudinale autour du plan de Fourier}{102}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Effets non-paraxiaux sur les corrélations du speckle\ }{103}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}Propriétés du potentiel de type speckle}{105}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Propriétés du potentiel}{106}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Possibilité d'un potentiel dépendant de l'état interne}{107}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Potentiel composé d'un speckle\ bichromatique}{111}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}S'éloigner de résonance}{112}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Étude de la similitude de deux speckles}{117}{subsection.5.4.2}%
-\contentsline {chapter}{\numberline {6}Temps de diffusion élastique}{125}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Approximation de Born}{126}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Temps de diffusion élastique dans le régime de désordre faible}{126}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Diffusion isotrope et diffusion vers l'avant}{127}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Temps de diffusion élastique dans le régime de Born}{128}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Mesure du temps de diffusion élastique}{131}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Procédure expérimentale}{131}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Extraction du temps de diffusion élastique}{132}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Cartographie du temps de diffusion élastique}{133}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Comportement du temps de diffusion élastique}{134}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Régime de Born}{135}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Déviations au régime de Born}{135}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Déviation à la décroissance exponentielle}{137}{subsection.6.3.3}%
-\contentsline {section}{\numberline {6.4}Conclusion}{139}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Approche spectrale}{141}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Temps de diffusion élastique et fonctions spectrales}{141}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Généralités sur la fonction spectrale}{142}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Approximation de Born}{145}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Approximation de Born: second ordre}{145}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}Approximation de Born auto-consistante}{147}{subsection.7.1.4}%
-\contentsline {section}{\numberline {7.2}Temps de diffusion élastique et fonctions spectrales pour un speckle}{149}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Limite de l'approche auto-consistante pour un désordre de type speckle}{149}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Fonctions spectrales d'un désordre speckle}{150}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}{157}{subsection.7.2.3}%
-\contentsline {section}{\numberline {7.3}Conclusion}{159}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Conclusion et perspectives}{161}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Vers l'étude du régime critique}{161}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Signatures de la localisation d'Anderson dans l'espace des impulsions}{163}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Rétro-diffusion cohérente}{163}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Diffusion cohérente vers l'avant}{163}{subsection.8.2.2}%
-\contentsline {section}{\numberline {8.3}Générer un désordre sur mesure}{165}{section.8.3}%
-\contentsline {chapter}{\numberline {A}Traitement des images expérimentales}{167}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Détermination du profil de densité intégrée}{167}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Analyse d'un nuage thermique}{167}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Analyse d'un nuage partiellement condensé}{168}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A.2}Estimation de la température}{168}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Mesure de la température par temps de vol}{168}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Estimation de la température d'un nuage lévité}{168}{subsection.A.2.2}%
-\contentsline {chapter}{\numberline {B}Propriétés spatiales du speckle}{171}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Application du théorème de Wick à un speckle}{171}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Fonction de corrélation à deux corps des fluctuations d'intensité}{171}{subsection.B.1.1}%
-\contentsline {subsection}{\numberline {B.1.2}Fonction de corrélation à trois corps des fluctuations d'intensité}{172}{subsection.B.1.2}%
-\contentsline {section}{\numberline {B.2}Fonction de corrélation du diffuseur}{172}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Amplitude rayonnée}{174}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Calcul complet de la fonction de corrélation en amplitude à deux corps}{175}{section.B.4}%
-\contentsline {section}{\numberline {B.5}Expression du profil d'intensité moyenne du champ de tavelures le long de l'axe optique}{176}{section.B.5}%
-\contentsline {section}{\numberline {B.6}Fonctions de corrélation d'un speckle\ monochromatique}{176}{section.B.6}%
-\contentsline {subsection}{\numberline {B.6.1}Corrélation transverse le long de l'axe optique}{176}{subsection.B.6.1}%
-\contentsline {subsection}{\numberline {B.6.2}Corrélation tridimensionnelle aux alentours du plan de Fourier}{177}{subsection.B.6.2}%
-\contentsline {subsection}{\numberline {B.6.3}Détermination de la fonction de corrélation à trois corps}{178}{subsection.B.6.3}%
-\contentsline {section}{\numberline {B.7}Fonction de corrélation d'un speckle\ bichromatique}{179}{section.B.7}%
-\contentsline {subsection}{\numberline {B.7.1}Cas d'un spectre bichromatique étroit}{179}{subsection.B.7.1}%
-\contentsline {subsection}{\numberline {B.7.2}Extension au cas d'un spectre arbitraire}{181}{subsection.B.7.2}%
-\contentsline {chapter}{\numberline {C}Calculs du temps de diffusion élastique}{183}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Éléments de calcul du temps de diffusion élastique à partir du développement de Born}{183}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Calcul de la self-energy\ au premier ordre}{184}{section.C.2}%
-\contentsline {subsection}{\numberline {C.2.1}Expression du premier ordre de la self-energy}{184}{subsection.C.2.1}%
-\contentsline {subsection}{\numberline {C.2.2}Calcul du temps de diffusion élastique}{185}{subsection.C.2.2}%
-\contentsline {section}{\numberline {C.3}Calcul de la self-energy\ au second ordre}{185}{section.C.3}%
-\contentsline {subsection}{\numberline {C.3.1}Calcul à l'aide la représentation en impulsion}{186}{subsection.C.3.1}%
-\contentsline {subsection}{\numberline {C.3.2}Calcul à l'aide la représentation spatiale}{187}{subsection.C.3.2}%
-\contentsline {chapter}{Bibliographie}{191}{section*.85}%
+\contentsline {chapter}{Remerciements}{1}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Localisation d'atomes ultra-froids}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Déroulement de la thèse}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Contribution scientifique}{11}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Contexte expérimental et déroulement de ma thèse}{12}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Structure du manuscrit}{13}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Phénomène de localisation d'Anderson}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Diffusion et interférences}{15}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Phénomène de diffusion}{15}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Localisation faible}{18}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Suppression du transport: Localisation d'Anderson}{20}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Localisation des atomes froids}{22}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Etudes expérimentales de la localisation d'Anderson}{22}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}L'approche des atomes froids}{24}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Vers l'étude du régime critique}{28}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Etat de l'art de l'étude de la transition d'Anderson avec des atomes ultra-froids}{29}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Nécessité d'une spectroscopie pour sonder le régime critique}{34}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Production d'ondes de matière}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Condensation de Bose-Einstein}{37}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Statistique de Bose-Einstein}{38}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Propriétés d'un condensat de Bose-Einstein}{40}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Processus d'interaction lumière-matière}{42}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Le rubidium \isotope [87]{Rb}}{42}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Potentiel magnétique}{44}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Forces lumineuses}{44}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Couplage radio-fréquence}{46}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Description d'un cycle expérimental}{48}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Présentation générale du dispositif}{48}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Première chambre}{48}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Chambre de science}{53}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Imagerie}{58}{subsection.3.3.4}%
+\contentsline {chapter}{\numberline {4}Mises à jour de l'expérience}{63}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Contributions au système informatique de l'expérience}{63}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Contrôle de l'expérience: passage à la suite Cicero}{64}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Développement d'une nouvelle interface d'acquisition et de traitement d'images}{65}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Calibration de la lévitation magnétique}{66}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Implémentation de la lévitation magnétique}{66}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Intervention sur le circuit de refroidissement}{68}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Calibration des champs par radio-fréquences}{69}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}\'Etude du potentiel de lévitation}{70}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Changement du laser infrarouge et calibration du piège optique}{76}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Changement du laser infrarouge fibré Ytterbium }{76}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Calibration du piège optique}{78}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Optimisation de l'évaporation tout-optique}{80}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Lois d'échelle du refroidissement évaporatif}{80}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Résultats de l'optimisation de l'évaporation}{85}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Propriétés d'un désordre de type speckle}{91}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Génération d'un champ de speckle}{91}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Statistiques de l'intensité d'un speckle}{92}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Propriétés du diffuseur}{93}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Implémentation expérimentale}{95}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Propriétés spatiales d'un champ de speckle}{99}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Extension transverse du champ de speckle le long le l'axe optique}{99}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Longueur de corrélation transverse le long de l'axe optique}{101}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Longueur de corrélation longitudinale autour du plan de Fourier}{104}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Effets non-paraxiaux sur les corrélations du speckle\ }{105}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Propriétés du potentiel de type speckle}{107}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Propriétés du potentiel}{108}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Possibilité d'un potentiel dépendant de l'état interne}{109}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Potentiel composé d'un speckle\ bichromatique}{113}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}S'éloigner de résonance}{114}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Étude de la similitude de deux speckles}{119}{subsection.5.4.2}%
+\contentsline {chapter}{\numberline {6}Temps de diffusion élastique}{127}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Approximation de Born}{128}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Temps de diffusion élastique dans le régime de désordre faible}{128}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Diffusion isotrope et diffusion vers l'avant}{129}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Temps de diffusion élastique dans le régime de Born}{130}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Mesure du temps de diffusion élastique}{133}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Procédure expérimentale}{133}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Extraction du temps de diffusion élastique}{134}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Cartographie du temps de diffusion élastique}{135}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Comportement du temps de diffusion élastique}{136}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Régime de Born}{137}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Déviations au régime de Born}{137}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Déviation à la décroissance exponentielle}{139}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Conclusion}{141}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Approche spectrale}{143}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Temps de diffusion élastique et fonctions spectrales}{143}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Généralités sur la fonction spectrale}{144}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Approximation de Born}{147}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Approximation de Born: second ordre}{147}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Approximation de Born auto-consistante}{149}{subsection.7.1.4}%
+\contentsline {section}{\numberline {7.2}Temps de diffusion élastique et fonctions spectrales pour un speckle}{151}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Limite de l'approche auto-consistante pour un désordre de type speckle}{151}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Fonctions spectrales d'un désordre speckle}{152}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Comparaison du temps de diffusion élastique avec les fonctions spectrales mesurées}{159}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Conclusion}{161}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Conclusion et perspectives}{163}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Vers l'étude du régime critique}{163}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Signatures de la localisation d'Anderson dans l'espace des impulsions}{165}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Rétro-diffusion cohérente}{165}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Diffusion cohérente vers l'avant}{165}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Générer un désordre sur mesure}{167}{section.8.3}%
+\contentsline {chapter}{\numberline {A}Traitement des images expérimentales}{169}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Détermination du profil de densité intégrée}{169}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Analyse d'un nuage thermique}{169}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Analyse d'un nuage partiellement condensé}{170}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A.2}Estimation de la température}{170}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Mesure de la température par temps de vol}{170}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Estimation de la température d'un nuage lévité}{170}{subsection.A.2.2}%
+\contentsline {chapter}{\numberline {B}Propriétés spatiales du speckle}{173}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Application du théorème de Wick à un speckle}{173}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Fonction de corrélation à deux corps des fluctuations d'intensité}{173}{subsection.B.1.1}%
+\contentsline {subsection}{\numberline {B.1.2}Fonction de corrélation à trois corps des fluctuations d'intensité}{174}{subsection.B.1.2}%
+\contentsline {section}{\numberline {B.2}Fonction de corrélation du diffuseur}{174}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Amplitude rayonnée}{176}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Calcul complet de la fonction de corrélation en amplitude à deux corps}{177}{section.B.4}%
+\contentsline {section}{\numberline {B.5}Expression du profil d'intensité moyenne du champ de tavelures le long de l'axe optique}{178}{section.B.5}%
+\contentsline {section}{\numberline {B.6}Fonctions de corrélation d'un speckle\ monochromatique}{178}{section.B.6}%
+\contentsline {subsection}{\numberline {B.6.1}Corrélation transverse le long de l'axe optique}{178}{subsection.B.6.1}%
+\contentsline {subsection}{\numberline {B.6.2}Corrélation tridimensionnelle aux alentours du plan de Fourier}{179}{subsection.B.6.2}%
+\contentsline {subsection}{\numberline {B.6.3}Détermination de la fonction de corrélation à trois corps}{180}{subsection.B.6.3}%
+\contentsline {section}{\numberline {B.7}Fonction de corrélation d'un speckle\ bichromatique}{181}{section.B.7}%
+\contentsline {subsection}{\numberline {B.7.1}Cas d'un spectre bichromatique étroit}{181}{subsection.B.7.1}%
+\contentsline {subsection}{\numberline {B.7.2}Extension au cas d'un spectre arbitraire}{183}{subsection.B.7.2}%
+\contentsline {chapter}{\numberline {C}Calculs du temps de diffusion élastique}{185}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Éléments de calcul du temps de diffusion élastique à partir du développement de Born}{185}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Calcul de la self-energy\ au premier ordre}{186}{section.C.2}%
+\contentsline {subsection}{\numberline {C.2.1}Expression du premier ordre de la self-energy}{186}{subsection.C.2.1}%
+\contentsline {subsection}{\numberline {C.2.2}Calcul du temps de diffusion élastique}{187}{subsection.C.2.2}%
+\contentsline {section}{\numberline {C.3}Calcul de la self-energy\ au second ordre}{187}{section.C.3}%
+\contentsline {subsection}{\numberline {C.3.1}Calcul à l'aide la représentation en impulsion}{188}{subsection.C.3.1}%
+\contentsline {subsection}{\numberline {C.3.2}Calcul à l'aide la représentation spatiale}{189}{subsection.C.3.2}%
+\contentsline {chapter}{Bibliographie}{193}{section*.85}%
 \contentsfinish 
