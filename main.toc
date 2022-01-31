@@ -123,5 +123,6 @@
 \contentsline {section}{\numberline {C.3}Calcul de la self-energy\ au second ordre}{187}{section.C.3}%
 \contentsline {subsection}{\numberline {C.3.1}Calcul à l'aide la représentation en impulsion}{188}{subsection.C.3.1}%
 \contentsline {subsection}{\numberline {C.3.2}Calcul à l'aide la représentation spatiale}{189}{subsection.C.3.2}%
-\contentsline {chapter}{Bibliographie}{193}{section*.85}%
+\contentsline {chapter}{\numberline {D}Publications}{193}{appendix.D}%
+\contentsline {chapter}{Bibliographie}{217}{section*.85}%
 \contentsfinish 
